@@ -1480,7 +1480,32 @@ function configGitHub(){
 }
 
 // ===== FIT PARSER (LAP-based + GPS track detection) =====
-const dz=document.getElementById("fitDrop");dz.addEventListener("dragover",e=>{e.preventDefault();dz.classList.add("over")});dz.addEventListener("dragleave",()=>dz.classList.remove("over"));dz.addEventListener("drop",e=>{e.preventDefault();dz.classList.remove("over");handleFitFiles(e.dataTransfer.files)});
+const dz = document.getElementById("fitDrop");
+
+dz.addEventListener("dragover", e => { 
+    e.preventDefault(); 
+    dz.classList.add("over");
+});
+
+dz.addEventListener("dragleave", () => {
+    dz.classList.remove("over");
+});
+
+dz.addEventListener("drop", e => {
+    e.preventDefault();
+    dz.classList.remove("over");
+    
+    // 1. On isole le premier fichier déposé
+    let file = e.dataTransfer.files[0];
+    
+    // 2. On l'envoie vers GitHub en arrière-plan
+    if (file) {
+        uploadToGithub(file);
+    }
+    
+    // 3. On laisse ton dashboard l'afficher normalement
+    handleFitFiles(e.dataTransfer.files);
+});
 
 function parseFitBin(buf){
   const dv=new DataView(buf);const hs=dv.getUint8(0),ds=dv.getUint32(4,true);
@@ -1660,9 +1685,67 @@ function handleFitFiles(files){
     const tc=sa.filter(s=>s.track).length;
     log.innerHTML+=`<div class="info" style="font-weight:600">\u2705 ${nw.length} nouvelles${tc?" (dont "+tc+" piste)":""}</div>`}};rd.readAsArrayBuffer(file)})}
 
-initData();renderAll();updateImportCounts();
+initData();
+renderAll();
+updateImportCounts();
 
+// 1. Mémorisation et récupération du Token GitHub
+function getGithubToken() {
+    let token = localStorage.getItem('gh_token');
+    if (!token) {
+        token = prompt("Configuration initiale : Veuillez coller votre Token personnel GitHub (ghp_...)");
+        if (token && token.startsWith("ghp_")) {
+            localStorage.setItem('gh_token', token.trim());
+        } else {
+            alert("Format de Token invalide. L'envoi vers GitHub est désactivé.");
+            return null;
+        }
+    }
+    return token;
+}
 
-    (function(){const bd=new Date("1992-05-22"),now=new Date();let a=now.getFullYear()-bd.getFullYear();if(now.getMonth()<bd.getMonth()||(now.getMonth()===bd.getMonth()&&now.getDate()<bd.getDate()))a--;const el=document.getElementById("dynAge");if(el)el.textContent=a})();
+// 2. Fonction d'envoi du fichier vers seb-run/run-lab
+async function uploadToGithub(file) {
+    const token = getGithubToken();
+    if (!token) return;
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = async function() {
+        const base64Content = reader.result.split(',')[1];
+        const url = `https://api.github.com/repos/seb-run/run-lab/contents/${file.name}`;
+        try {
+            const response = await fetch(url, {
+                method: 'PUT',
+                headers: {
+                    'Authorization': `token ${token}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    message: `Ajout automatique de la séance : ${file.name}`,
+                    content: base64Content
+                })
+            });
+            if (response.ok) {
+                console.log("Fichier sauvegardé avec succès sur GitHub.");
+            } else {
+                const errorData = await response.json();
+                alert(`Erreur de sauvegarde GitHub : ${errorData.message}`);
+                if (response.status === 401) localStorage.removeItem('gh_token');
+            }
+        } catch (error) {
+            console.error("Erreur réseau :", error);
+        }
+    };
+}
+
+// 3. Ta fonction d'âge
+(function(){
+    const bd=new Date("1992-05-22"), now=new Date();
+    let a=now.getFullYear()-bd.getFullYear();
+    if(now.getMonth()<bd.getMonth()||(now.getMonth()===bd.getMonth()&&now.getDate()<bd.getDate())) a--;
+    const el=document.getElementById("dynAge");
+    if(el) el.textContent=a;
+})();
 </script>
-</body></html>
+</body>
+</html>
