@@ -1,0 +1,3193 @@
+/* ============================================================================
+   seb-metrics — styles.css
+   Thème Apple Fitness, fond clair, accents vifs, animations modernes
+   ============================================================================ */
+
+:root {
+  /* === Surfaces === */
+  --bg:        #f5f6fa;
+  --surface:   #ffffff;
+  --surface-2: #fafbfd;
+  --surface-3: #f0f2f7;
+
+  /* === Bordures === */
+  --border:   rgba(15, 23, 42, 0.07);
+  --border-2: rgba(15, 23, 42, 0.12);
+
+  /* === Texte === */
+  --text:    #0f172a;
+  --text-2:  #475569;
+  --text-3:  #94a3b8;
+
+  /* === Couleurs sémantiques Apple-Fitness === */
+  --c-blue:    #5b8af5;
+  --c-cyan:    #22d3a7;
+  --c-orange:  #f0923e;
+  --c-red:     #ef4444;
+  --c-yellow:  #f5c542;
+  --c-purple:  #9b6dff;
+  --c-green:   #10b981;
+
+  --c-blue-soft:   rgba(91, 138, 245, 0.12);
+  --c-cyan-soft:   rgba(34, 211, 167, 0.12);
+  --c-orange-soft: rgba(240, 146, 62, 0.12);
+  --c-red-soft:    rgba(239, 68, 68, 0.12);
+
+  /* === Gradients === */
+  --grad-brand: linear-gradient(135deg, #5b8af5 0%, #22d3a7 100%);
+  --grad-card:  linear-gradient(180deg, #ffffff 0%, #fafbfd 100%);
+
+  /* === Typo === */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', 'Monaco', monospace;
+
+  /* === Espacements === */
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  20px;
+  --sp-6:  24px;
+  --sp-7:  32px;
+  --sp-8:  48px;
+
+  /* === Radii === */
+  --r-sm:  8px;
+  --r-md:  12px;
+  --r-lg:  16px;
+  --r-xl:  20px;
+  --r-2xl: 24px;
+
+  /* === Ombres === */
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04), 0 1px 1px rgba(15, 23, 42, 0.03);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.06), 0 2px 4px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 12px 32px rgba(15, 23, 42, 0.08), 0 4px 8px rgba(15, 23, 42, 0.05);
+
+  /* === Transitions === */
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --t-fast: 180ms var(--ease);
+  --t-base: 280ms var(--ease);
+}
+
+/* === Reset === */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  background: var(--bg);
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+/* === Layout === */
+.wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--sp-5);
+}
+
+/* === HERO === */
+.hero {
+  padding: var(--sp-7) 0 var(--sp-6);
+  background: linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+}
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.hero-row {
+  display: flex;
+  align-items: center;
+}
+
+.hero-row-1 {
+  justify-content: space-between;
+  gap: var(--sp-5);
+  flex-wrap: wrap;
+  padding-bottom: var(--sp-4);
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-row-2 {
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--sp-2);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+}
+
+.logo svg {
+  width: 48px;
+  height: 48px;
+  filter: drop-shadow(0 4px 12px rgba(91, 138, 245, 0.25));
+}
+
+.brand-text h1 {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  background: var(--grad-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.brand-text h1 .dot {
+  color: var(--c-cyan);
+  -webkit-text-fill-color: var(--c-cyan);
+}
+
+.brand-text p {
+  font-size: 12.5px;
+  color: var(--text-2);
+  margin-top: 3px;
+}
+
+/* === HERO COUNTERS (à droite ligne 1) === */
+.hero-counters {
+  display: flex;
+  gap: var(--sp-2);
+}
+
+.hero-counter {
+  text-align: center;
+  padding: 6px 14px;
+  background: var(--surface);
+  border-radius: var(--r-sm);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  min-width: 86px;
+}
+
+.hero-counter .v {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.hero-counter .l {
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-3);
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+/* === HERO PACES (ligne 2) === */
+.hero-paces-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 2px;
+}
+
+.hero-paces-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--text-2);
+}
+
+.hero-paces-sub {
+  font-size: 10.5px;
+  color: var(--text-3);
+}
+
+.hero-paces {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--sp-2);
+}
+
+.pace-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 10px 12px;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--t-base), box-shadow var(--t-base);
+}
+
+.pace-card:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.pace-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+}
+
+.pace-card[data-c="vma"]::before      { background: linear-gradient(90deg, #9b6dff, #5b8af5); }
+.pace-card[data-c="10k"]::before      { background: linear-gradient(90deg, #5b8af5, #22d3a7); }
+.pace-card[data-c="seuil"]::before    { background: #f0923e; }
+.pace-card[data-c="semi"]::before     { background: #22d3a7; }
+.pace-card[data-c="marathon"]::before { background: #ef4444; }
+
+.pace-card .pl {
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-3);
+  font-weight: 700;
+}
+
+.pace-card .pv {
+  font-family: var(--font-mono);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+  margin-top: 4px;
+  letter-spacing: -0.02em;
+}
+
+.pace-card .pu {
+  font-size: 9.5px;
+  color: var(--text-3);
+  font-weight: 500;
+}
+
+.pace-card .pt {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 10.5px;
+  font-weight: 600;
+}
+
+.pace-card .pt.up     { color: var(--c-green); }
+.pace-card .pt.down   { color: var(--c-red); }
+.pace-card .pt.stable { color: var(--text-3); }
+.pace-card .pt.none   { color: var(--text-3); }
+
+.pace-card .pt svg {
+  width: 9px;
+  height: 9px;
+}
+
+/* === YEAR FILTERS === */
+.year-bar {
+  display: flex;
+  gap: var(--sp-2);
+  padding-top: var(--sp-4);
+  padding-bottom: var(--sp-2);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.year-bar::-webkit-scrollbar { display: none; }
+
+.year-btn {
+  padding: var(--sp-2) var(--sp-4);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-2);
+  white-space: nowrap;
+  transition: all var(--t-fast);
+}
+
+.year-btn:hover {
+  border-color: var(--c-blue);
+  color: var(--c-blue);
+}
+
+.year-btn.on {
+  background: var(--text);
+  color: white;
+  border-color: var(--text);
+}
+
+/* === TABS === */
+.tabs {
+  display: flex;
+  gap: var(--sp-1);
+  padding: var(--sp-4) 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  border-bottom: 1px solid var(--border);
+}
+.tabs::-webkit-scrollbar { display: none; }
+
+.tab {
+  padding: var(--sp-2) var(--sp-4);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-3);
+  white-space: nowrap;
+  position: relative;
+  transition: color var(--t-fast);
+}
+
+.tab::after {
+  content: '';
+  position: absolute;
+  left: var(--sp-4);
+  right: var(--sp-4);
+  bottom: -1px;
+  height: 2px;
+  background: var(--c-blue);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform var(--t-base);
+}
+
+.tab:hover { color: var(--text-2); }
+
+.tab.on {
+  color: var(--c-blue);
+}
+
+.tab.on::after {
+  transform: scaleX(1);
+}
+
+/* === MAIN === */
+.main {
+  padding-top: var(--sp-6);
+  padding-bottom: var(--sp-8);
+  min-height: 60vh;
+}
+
+/* === TAB CONTENT === */
+.tab-content {
+  display: none;
+  animation: fadeUp var(--t-base);
+}
+
+.tab-content.on {
+  display: block;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === GRID === */
+.grid {
+  display: grid;
+  gap: var(--sp-4);
+}
+
+.grid-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.grid-3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.grid-4 { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+
+.gap-lg { gap: var(--sp-5); }
+.mt-lg  { margin-top: var(--sp-5); }
+
+/* === CARD === */
+.card {
+  background: var(--grad-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: var(--sp-5);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--t-base), transform var(--t-base);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.card.placeholder {
+  text-align: center;
+  padding: var(--sp-8) var(--sp-5);
+  color: var(--text-3);
+  border-style: dashed;
+  background: var(--surface-2);
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--sp-4);
+  gap: var(--sp-3);
+  flex-wrap: wrap;
+}
+
+.card-head h3 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.card-sub {
+  font-size: 11.5px;
+  color: var(--text-3);
+  font-weight: 500;
+}
+
+/* === KPI === */
+.kpi {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: var(--sp-4);
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--t-base), box-shadow var(--t-base);
+}
+
+.kpi:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.kpi::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--c-blue);
+}
+
+.kpi[data-c="cyan"]::before   { background: var(--c-cyan); }
+.kpi[data-c="orange"]::before { background: var(--c-orange); }
+.kpi[data-c="purple"]::before { background: var(--c-purple); }
+.kpi[data-c="green"]::before  { background: var(--c-green); }
+
+.kpi .label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-3);
+  font-weight: 600;
+}
+
+.kpi .value {
+  font-family: var(--font-mono);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.03em;
+  margin-top: var(--sp-1);
+}
+
+.kpi .sub {
+  font-size: 11.5px;
+  color: var(--text-3);
+  margin-top: var(--sp-1);
+}
+
+/* === CHARTS === */
+.chart-wrap {
+  width: 100%;
+  height: 240px;
+  position: relative;
+}
+
+.chart-wrap > div {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* === LAST SESSION === */
+.last-session-row {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--sp-2) 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.last-session-row:last-child {
+  border-bottom: none;
+}
+
+.last-session-row .l {
+  color: var(--text-3);
+  font-size: 12.5px;
+}
+
+.last-session-row .v {
+  color: var(--text);
+  font-weight: 600;
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+/* === BADGE TYPE SÉANCE === */
+.tag {
+  display: inline-block;
+  padding: 3px 9px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 999px;
+  background: var(--c-blue-soft);
+  color: var(--c-blue);
+}
+
+.tag-marathon { background: var(--c-red-soft); color: var(--c-red); }
+.tag-semi     { background: var(--c-orange-soft); color: var(--c-orange); }
+.tag-sortie_longue { background: var(--c-cyan-soft); color: var(--c-cyan); }
+.tag-frac_court, .tag-frac_long, .tag-fractionne {
+  background: rgba(155, 109, 255, 0.12); color: var(--c-purple);
+}
+.tag-tempo    { background: var(--c-orange-soft); color: var(--c-orange); }
+.tag-footing  { background: rgba(16, 185, 129, 0.12); color: var(--c-green); }
+.tag-endurance { background: var(--c-blue-soft); color: var(--c-blue); }
+
+/* === FOOTER === */
+.footer {
+  padding: var(--sp-5) var(--sp-5) var(--sp-7);
+  text-align: center;
+  font-size: 11.5px;
+  color: var(--text-3);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 640px) {
+  .wrap { padding: 0 var(--sp-4); }
+  .hero { padding: var(--sp-5) 0; }
+  .brand-text h1 { font-size: 22px; }
+  .hero-counters { width: 100%; justify-content: flex-start; }
+  .hero-counter { flex: 1 1 auto; }
+  .hero-paces { grid-template-columns: repeat(2, 1fr); }
+  .pace-card .pv { font-size: 16px; }
+  .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+  .chart-wrap { height: 200px; }
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
+  .hero-paces { grid-template-columns: repeat(3, 1fr); }
+}
+/* ============================================================================
+   seb-metrics — styles_races.css
+   Ajout pour l'onglet Courses & Records (livraison B).
+   À CONCATÉNER en fin de templates/styles.css existant.
+   ============================================================================ */
+
+/* ---- Countdown cards ------------------------------------------------------ */
+.countdown-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.countdown-card.is-primary {
+  border-left: 4px solid #5b8af5;
+  background: linear-gradient(135deg, rgba(91,138,245,0.04) 0%, rgba(91,138,245,0) 60%);
+}
+.countdown-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+.countdown-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.3;
+}
+.countdown-date {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 2px;
+}
+.countdown-phase {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.phase-preparation { background: #eef2ff; color: #4338ca; }
+.phase-specific    { background: #ecfeff; color: #0e7490; }
+.phase-taper       { background: #fef3c7; color: #b45309; }
+.phase-peak        { background: #fee2e2; color: #b91c1c; }
+.phase-past        { background: #f1f5f9; color: #64748b; }
+
+.countdown-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+}
+.cd-days {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cd-days-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+}
+.cd-days-sub {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+.cd-times {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+}
+.cd-time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.cd-time-label {
+  font-size: 10px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.cd-time-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+}
+.cd-time-secondary .cd-time-value {
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* ---- Taper track ---------------------------------------------------------- */
+.taper-card { padding: 20px 24px; }
+.taper-track {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 8px;
+  margin-top: 12px;
+  align-items: end;
+}
+.taper-week {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 4px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+.taper-week.is-current {
+  background: rgba(91,138,245,0.10);
+  outline: 2px solid #5b8af5;
+}
+.taper-week.is-past {
+  opacity: 0.45;
+}
+.tw-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748b;
+}
+.taper-week.is-current .tw-label { color: #5b8af5; }
+.tw-bar {
+  width: 100%;
+  height: 80px;
+  background: #f1f5f9;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+.tw-bar-fill {
+  width: 100%;
+  background: linear-gradient(180deg, #5b8af5 0%, #22d3a7 100%);
+  border-radius: 4px 4px 0 0;
+  transition: height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.taper-week.is-past .tw-bar-fill {
+  background: linear-gradient(180deg, #cbd5e1 0%, #94a3b8 100%);
+}
+.tw-pct {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: #0f172a;
+}
+.tw-note {
+  font-size: 10px;
+  color: #94a3b8;
+  text-align: center;
+  line-height: 1.25;
+  min-height: 26px;
+}
+.taper-help {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+/* ---- Records grid --------------------------------------------------------- */
+.records-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  padding: 8px 0;
+}
+.record-card {
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 12px;
+  padding: 16px 12px;
+  text-align: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.record-card:hover:not(.record-empty) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06);
+}
+.record-card.record-empty {
+  background: #fafbfc;
+  opacity: 0.65;
+}
+.rec-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+.rec-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+}
+.rec-sub {
+  font-size: 11px;
+  color: #94a3b8;
+  line-height: 1.4;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ---- Table des courses ---------------------------------------------------- */
+.race-table-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.race-table-empty {
+  text-align: center;
+  color: #94a3b8;
+  padding: 32px 16px;
+  line-height: 1.6;
+}
+.race-table-empty strong {
+  color: #5b8af5;
+  font-weight: 600;
+}
+.race-table-scroll {
+  overflow-x: auto;
+}
+.race-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.race-table thead th {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #94a3b8;
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+.race-table tbody td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.04);
+  color: #334155;
+}
+.race-table tbody tr:hover {
+  background: rgba(91, 138, 245, 0.03);
+}
+.race-table .mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: #0f172a;
+}
+.race-source {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  font-family: 'JetBrains Mono', monospace;
+  padding: 2px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+}
+.race-source-config {
+  background: #eef2ff;
+  color: #4338ca;
+}
+.race-source-local {
+  background: #ecfdf5;
+  color: #047857;
+}
+.race-row-del {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #cbd5e1;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  transition: all 0.15s ease;
+}
+.race-row-del:hover {
+  background: #fee2e2;
+  color: #dc2626;
+}
+.race-row-del-disabled {
+  color: #e2e8f0;
+  cursor: not-allowed;
+}
+
+/* ---- Bouton primaire ------------------------------------------------------ */
+.btn-primary {
+  background: #5b8af5;
+  color: #fff;
+  border: none;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 9px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+.btn-primary:hover { background: #4a76e0; }
+.btn-primary:active { transform: translateY(1px); }
+
+.btn-ghost {
+  background: transparent;
+  color: #64748b;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 9px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.btn-ghost:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+/* ---- Modal ---------------------------------------------------------------- */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  backdrop-filter: blur(4px);
+}
+.modal-backdrop[hidden] { display: none; }
+.modal {
+  background: #fff;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 520px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.25);
+  animation: modalIn 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(8px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+.modal-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+}
+.modal-head h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+.modal-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #94a3b8;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+.modal-close:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+.modal-body {
+  padding: 20px 24px;
+  overflow-y: auto;
+  flex: 1;
+}
+.modal-help {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0 0 16px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+.field-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.field select,
+.field input[type="text"] {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px 12px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 8px;
+  background: #fff;
+  color: #0f172a;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.field select:focus,
+.field input[type="text"]:focus {
+  outline: none;
+  border-color: #5b8af5;
+  box-shadow: 0 0 0 3px rgba(91, 138, 245, 0.15);
+}
+
+.field-preview {
+  margin-top: 8px;
+  padding: 12px 14px;
+  background: #f8fafc;
+  border-radius: 8px;
+  min-height: 56px;
+}
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  align-items: start;
+}
+.preview-grid > div {
+  display: flex;
+  flex-direction: column;
+}
+.preview-label {
+  font-size: 10px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.preview-val {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-top: 2px;
+}
+.preview-info {
+  grid-column: 1 / -1;
+  margin-top: 4px;
+}
+.preview-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+.preview-badge-ok {
+  background: #ecfdf5;
+  color: #047857;
+}
+.preview-badge-warn {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.modal-foot {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 16px 24px;
+  border-top: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+/* ---- Responsive ----------------------------------------------------------- */
+@media (max-width: 720px) {
+  .records-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .taper-track {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+  }
+  .tw-note { display: none; }
+  .countdown-body {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .cd-times {
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .cd-time, .cd-time-secondary {
+    align-items: flex-start;
+  }
+}
+/* ============================================================================
+   seb-metrics — styles_marathons.css
+   Ajout pour les blocs "Mes marathons en détail" et "Volume de prépa rétrospectif".
+   À CONCATÉNER en fin de templates/styles.css.
+   ============================================================================ */
+
+/* ---- Liste des marathons (rows expandables) ------------------------------ */
+.mara-row {
+  border-bottom: 1px solid rgba(15, 23, 42, 0.05);
+}
+.mara-row:last-child { border-bottom: none; }
+
+.mara-head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  transition: background 0.15s ease;
+}
+.mara-head:hover { background: rgba(91, 138, 245, 0.04); }
+.mara-head.is-open { background: rgba(91, 138, 245, 0.06); }
+
+.mara-head-main {
+  flex: 0 0 240px;
+  min-width: 0;
+}
+.mara-head-title {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.mara-chrono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+}
+.mara-name {
+  font-size: 13px;
+  color: #475569;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.mara-head-date {
+  font-size: 11px;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+
+.mara-head-kpis {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  align-items: center;
+}
+.mara-kpi {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mk-l {
+  font-size: 10px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.mk-v {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-top: 2px;
+}
+
+.mara-chevron {
+  font-size: 18px;
+  color: #94a3b8;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+.mara-head.is-open .mara-chevron { transform: rotate(180deg); }
+
+.mara-detail {
+  padding: 8px 16px 24px;
+  background: rgba(248, 250, 252, 0.5);
+  border-top: 1px dashed rgba(15, 23, 42, 0.06);
+}
+
+/* ---- Splits cards -------------------------------------------------------- */
+.splits-wrap { margin: 16px 0; }
+.splits-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+.splits-grid {
+  display: grid;
+  gap: 10px;
+}
+.splits-grid-2 { grid-template-columns: repeat(2, 1fr); }
+.splits-grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+.split-card {
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 10px;
+  padding: 12px;
+  text-align: left;
+}
+.split-card.split-empty { opacity: 0.5; }
+
+.sc-l {
+  font-size: 10px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+.sc-chrono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 17px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.01em;
+}
+.sc-pace {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: #475569;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.sc-sub {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+.sc-delta {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.delta-faster { background: #ecfdf5; color: #047857; }
+.delta-slower { background: #fef2f2; color: #b91c1c; }
+.delta-stable { background: #f1f5f9; color: #64748b; }
+
+/* ---- Charts marathon ----------------------------------------------------- */
+.mara-charts {
+  display: grid;
+  gap: 16px;
+  margin-top: 20px;
+}
+.mara-chart-card {
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+.mara-chart-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 8px;
+}
+.mara-chart { width: 100%; }
+
+/* ---- Prépa rétro --------------------------------------------------------- */
+.prep-table-scroll { overflow-x: auto; }
+.prep-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  font-family: 'JetBrains Mono', monospace;
+}
+.prep-table thead th {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #94a3b8;
+  padding: 10px 8px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  background: rgba(248, 250, 252, 0.6);
+}
+.prep-table tbody td {
+  padding: 12px 8px;
+  text-align: center;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.04);
+}
+.prep-name-col {
+  text-align: left !important;
+  font-family: 'Inter', system-ui, sans-serif;
+  min-width: 180px;
+}
+.prep-date {
+  font-size: 11px;
+  color: #94a3b8;
+  font-family: 'JetBrains Mono', monospace;
+}
+.prep-cell {
+  font-weight: 600;
+  border-radius: 4px;
+  position: relative;
+}
+.prep-low {
+  background: rgba(34, 211, 167, 0.18);
+  color: #047857;
+}
+.prep-mid {
+  background: rgba(91, 138, 245, 0.12);
+  color: #1e40af;
+}
+.prep-high {
+  background: rgba(239, 91, 91, 0.18);
+  color: #b91c1c;
+}
+.prep-total {
+  font-weight: 700;
+  color: #0f172a;
+  background: rgba(15, 23, 42, 0.03);
+}
+.prep-chrono {
+  font-weight: 700;
+  color: #0f172a;
+}
+.prep-help {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-style: italic;
+}
+.prep-legend {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-style: normal;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin: 0 2px;
+}
+
+/* ---- Responsive ---------------------------------------------------------- */
+@media (max-width: 720px) {
+  .mara-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .mara-head-main { flex: none; width: 100%; }
+  .mara-head-kpis {
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    gap: 8px;
+  }
+  .mk-v { font-size: 12px; }
+  .mara-chevron {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+  }
+  .splits-grid-2, .splits-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .prep-table { font-size: 11px; }
+  .prep-table thead th { padding: 6px 4px; font-size: 9px; }
+  .prep-table tbody td { padding: 8px 4px; }
+}
+
+@media (min-width: 1100px) {
+  .mara-charts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* ============================================================================
+   seb-metrics — styles_marathons.css
+   Ajout pour les blocs "Mes marathons en détail" et "Volume de prépa rétrospectif".
+   À CONCATÉNER en fin de templates/styles.css.
+   ============================================================================ */
+
+/* ---- Liste des marathons (rows expandables) ------------------------------ */
+.mara-row {
+  border-bottom: 1px solid rgba(15, 23, 42, 0.05);
+}
+.mara-row:last-child { border-bottom: none; }
+
+.mara-head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  transition: background 0.15s ease;
+}
+.mara-head:hover { background: rgba(91, 138, 245, 0.04); }
+.mara-head.is-open { background: rgba(91, 138, 245, 0.06); }
+
+.mara-head-main {
+  flex: 0 0 240px;
+  min-width: 0;
+}
+.mara-head-title {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.mara-chrono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+}
+.mara-name {
+  font-size: 13px;
+  color: #475569;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.mara-head-date {
+  font-size: 11px;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+
+.mara-head-kpis {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  align-items: center;
+}
+.mara-kpi {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mk-l {
+  font-size: 10px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.mk-v {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-top: 2px;
+}
+
+.mara-chevron {
+  font-size: 18px;
+  color: #94a3b8;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+.mara-head.is-open .mara-chevron { transform: rotate(180deg); }
+
+.mara-detail {
+  padding: 8px 16px 24px;
+  background: rgba(248, 250, 252, 0.5);
+  border-top: 1px dashed rgba(15, 23, 42, 0.06);
+}
+
+/* ---- Splits cards -------------------------------------------------------- */
+.splits-wrap { margin: 16px 0; }
+.splits-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+.splits-grid {
+  display: grid;
+  gap: 10px;
+}
+.splits-grid-2 { grid-template-columns: repeat(2, 1fr); }
+.splits-grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+.split-card {
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 10px;
+  padding: 12px;
+  text-align: left;
+}
+.split-card.split-empty { opacity: 0.5; }
+
+.sc-l {
+  font-size: 10px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+.sc-chrono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 17px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.01em;
+}
+.sc-pace {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: #475569;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.sc-sub {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+.sc-delta {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.delta-faster { background: #ecfdf5; color: #047857; }
+.delta-slower { background: #fef2f2; color: #b91c1c; }
+.delta-stable { background: #f1f5f9; color: #64748b; }
+
+/* ---- Charts marathon ----------------------------------------------------- */
+.mara-charts {
+  display: grid;
+  gap: 16px;
+  margin-top: 20px;
+}
+.mara-chart-card {
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+.mara-chart-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 8px;
+}
+.mara-chart { width: 100%; }
+
+/* ---- Prépa rétro --------------------------------------------------------- */
+.prep-table-scroll { overflow-x: auto; }
+.prep-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  font-family: 'JetBrains Mono', monospace;
+}
+.prep-table thead th {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #94a3b8;
+  padding: 10px 8px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  background: rgba(248, 250, 252, 0.6);
+}
+.prep-table tbody td {
+  padding: 12px 8px;
+  text-align: center;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.04);
+}
+.prep-name-col {
+  text-align: left !important;
+  font-family: 'Inter', system-ui, sans-serif;
+  min-width: 180px;
+}
+.prep-date {
+  font-size: 11px;
+  color: #94a3b8;
+  font-family: 'JetBrains Mono', monospace;
+}
+.prep-cell {
+  font-weight: 600;
+  border-radius: 4px;
+  position: relative;
+}
+.prep-low {
+  background: rgba(34, 211, 167, 0.18);
+  color: #047857;
+}
+.prep-mid {
+  background: rgba(91, 138, 245, 0.12);
+  color: #1e40af;
+}
+.prep-high {
+  background: rgba(239, 91, 91, 0.18);
+  color: #b91c1c;
+}
+.prep-total {
+  font-weight: 700;
+  color: #0f172a;
+  background: rgba(15, 23, 42, 0.03);
+}
+.prep-chrono {
+  font-weight: 700;
+  color: #0f172a;
+}
+.prep-help {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-style: italic;
+}
+.prep-legend {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-style: normal;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin: 0 2px;
+}
+
+/* ---- Responsive ---------------------------------------------------------- */
+@media (max-width: 720px) {
+  .mara-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .mara-head-main { flex: none; width: 100%; }
+  .mara-head-kpis {
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    gap: 8px;
+  }
+  .mk-v { font-size: 12px; }
+  .mara-chevron {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+  }
+  .splits-grid-2, .splits-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .prep-table { font-size: 11px; }
+  .prep-table thead th { padding: 6px 4px; font-size: 9px; }
+  .prep-table tbody td { padding: 8px 4px; }
+}
+
+@media (min-width: 1100px) {
+  .mara-charts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* ============================================================================
+   seb-metrics — styles_vol_sess.css
+   Ajout pour les onglets Volume et Séances (Lot 1).
+   À CONCATÉNER en fin de templates/styles.css.
+   ============================================================================ */
+
+/* ---- Volume : controls heatmap year bar --------------------------------- */
+.vol-heatmap-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0 16px;
+}
+.heatmap-year-btn {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  background: #fff;
+  color: #64748b;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.heatmap-year-btn:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+.heatmap-year-btn.on {
+  background: #5b8af5;
+  color: #fff;
+  border-color: #5b8af5;
+}
+
+/* Les graphs Volume héritent du .chart-wrap existant pour la hauteur */
+#volWeeklyStacked, #volMonthly, #volTypeDist, #volCumulative {
+  width: 100%;
+  height: 320px;
+}
+
+/* ---- Séances : header avec compteur ------------------------------------- */
+.sess-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.sess-head .card-sub {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* ---- Séances : filtres -------------------------------------------------- */
+.sess-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 16px 0;
+  padding: 14px;
+  background: #f8fafc;
+  border-radius: 10px;
+  align-items: center;
+}
+.sess-search {
+  flex: 1 1 200px;
+  min-width: 200px;
+  font-family: inherit;
+  font-size: 13px;
+  padding: 8px 12px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 6px;
+  background: #fff;
+}
+.sess-search:focus {
+  outline: none;
+  border-color: #5b8af5;
+  box-shadow: 0 0 0 3px rgba(91, 138, 245, 0.15);
+}
+.sess-range-filter {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.sess-range-filter label {
+  font-size: 12px;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.sess-range-filter input[type="number"] {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  width: 60px;
+  padding: 6px 8px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 6px;
+  background: #fff;
+}
+.sess-range-filter input[type="number"]:focus {
+  outline: none;
+  border-color: #5b8af5;
+}
+
+/* ---- Type filter pills -------------------------------------------------- */
+.sess-type-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.sess-type-btn {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  background: #fff;
+  color: #475569;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.sess-type-btn:hover {
+  border-color: var(--c, #5b8af5);
+}
+.sess-type-btn.on {
+  background: var(--c, #5b8af5);
+  color: #fff;
+  border-color: var(--c, #5b8af5);
+}
+.sess-type-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+.sess-type-btn.on .sess-type-count { opacity: 1; }
+
+/* ---- Séances : table ---------------------------------------------------- */
+.sess-table-scroll { overflow-x: auto; }
+.sess-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.sess-table thead th {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #94a3b8;
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  background: rgba(248, 250, 252, 0.6);
+  user-select: none;
+}
+.sess-table thead th:hover {
+  background: rgba(91, 138, 245, 0.06);
+  color: #5b8af5;
+}
+.sort-arrow {
+  font-size: 10px;
+  margin-left: 4px;
+  display: inline-block;
+}
+.sess-table .sess-row {
+  cursor: pointer;
+  transition: background 0.1s ease;
+}
+.sess-table .sess-row:hover {
+  background: rgba(91, 138, 245, 0.04);
+}
+.sess-table tbody td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.04);
+  color: #334155;
+  vertical-align: middle;
+}
+.sess-table .mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: #0f172a;
+}
+.sess-time {
+  display: block;
+  font-size: 11px;
+  color: #94a3b8;
+  font-family: 'JetBrains Mono', monospace;
+}
+.sess-title {
+  max-width: 320px;
+  font-size: 12px;
+  color: #64748b;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: var(--c, #94a3b8);
+  color: #fff;
+  white-space: nowrap;
+}
+.sess-track {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.sess-track-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: #ecfdf5;
+  color: #047857;
+  margin-left: 6px;
+}
+
+/* ---- Pagination --------------------------------------------------------- */
+.sess-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 12px;
+}
+.sess-page-btn {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  background: #fff;
+  color: #475569;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.sess-page-btn:hover:not(:disabled) {
+  background: #f1f5f9;
+  border-color: #5b8af5;
+  color: #5b8af5;
+}
+.sess-page-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.sess-page-info {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* ---- Modal large pour détail séance ------------------------------------ */
+.modal.modal-large {
+  max-width: 880px;
+}
+.sess-modal-head {
+  margin-bottom: 16px;
+}
+.sess-modal-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  color: #64748b;
+}
+.sess-modal-title {
+  font-size: 14px;
+  color: #475569;
+  margin-top: 4px;
+}
+.sess-modal-kpis {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+.smk {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.smk-l {
+  font-size: 10px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.smk-v {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+}
+.sess-modal-charts {
+  display: grid;
+  gap: 14px;
+}
+.sess-modal-chart-card {
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 10px;
+  padding: 12px;
+}
+.sess-modal-chart-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 6px;
+}
+.sess-modal-chart { width: 100%; }
+.sess-modal-empty {
+  text-align: center;
+  color: #94a3b8;
+  padding: 24px;
+  font-size: 13px;
+  font-style: italic;
+}
+
+/* ---- Responsive --------------------------------------------------------- */
+@media (max-width: 720px) {
+  .sess-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .sess-range-filter label {
+    flex-wrap: wrap;
+  }
+  .sess-table thead th {
+    padding: 8px 6px;
+    font-size: 9px;
+  }
+  .sess-table tbody td {
+    padding: 8px 6px;
+  }
+  .sess-title {
+    max-width: 120px;
+  }
+  .sess-modal-kpis {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #volWeeklyStacked, #volMonthly, #volTypeDist, #volCumulative {
+    height: 280px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .sess-modal-charts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* ============================================================================
+   seb-metrics — styles_blocs_patch.css
+   Ajout du tableau "Détail des blocs" dans la modal séance.
+   À CONCATÉNER en fin de templates/styles.css.
+   ============================================================================ */
+
+.sess-blocs-card {
+  margin-top: 14px;
+}
+.sess-blocs-scroll {
+  overflow-x: auto;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.sess-blocs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+.sess-blocs-table thead {
+  position: sticky;
+  top: 0;
+  background: #f8fafc;
+  z-index: 1;
+}
+.sess-blocs-table thead th {
+  text-align: left;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #94a3b8;
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+.sess-blocs-table tbody td {
+  padding: 6px 10px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.04);
+  color: #334155;
+  vertical-align: middle;
+}
+.sess-blocs-table .mono {
+  font-family: 'JetBrains Mono', monospace;
+  color: #0f172a;
+}
+.bloc-intent {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+/* ============================================================================
+   seb-metrics — styles_glossary.css
+   Glossaire des types de séance dans l'onglet Séances.
+   À CONCATÉNER en fin de templates/styles.css.
+   ============================================================================ */
+
+.sess-glossary {
+  margin: 0 0 16px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.sess-glossary > summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  background: rgba(248, 250, 252, 0.6);
+  transition: background 0.15s ease;
+}
+.sess-glossary > summary::-webkit-details-marker {
+  display: none;
+}
+.sess-glossary > summary:hover {
+  background: rgba(91, 138, 245, 0.06);
+}
+.sess-glossary[open] > summary {
+  background: rgba(91, 138, 245, 0.08);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.glossary-icon {
+  font-size: 14px;
+  color: #5b8af5;
+  font-weight: 700;
+}
+.glossary-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+  flex: 1;
+}
+.glossary-hint {
+  font-size: 11px;
+  color: #94a3b8;
+  font-style: italic;
+}
+.sess-glossary[open] .glossary-hint {
+  display: none;
+}
+
+.glossary-body {
+  padding: 16px;
+}
+.glossary-intro {
+  font-size: 12px;
+  color: #64748b;
+  margin: 0 0 12px;
+  font-style: italic;
+}
+.glossary-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.glossary-table thead th {
+  text-align: left;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #94a3b8;
+  padding: 6px 10px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+.glossary-table tbody td {
+  padding: 10px 10px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.04);
+  color: #334155;
+  vertical-align: top;
+  line-height: 1.5;
+}
+.glossary-table tbody tr:last-child td {
+  border-bottom: none;
+}
+.glossary-table td:first-child {
+  white-space: nowrap;
+  width: 120px;
+}
+.glossary-note {
+  font-size: 12px;
+  color: #64748b;
+  margin: 12px 0 0;
+  padding-top: 12px;
+  border-top: 1px dashed rgba(15, 23, 42, 0.08);
+  font-style: italic;
+}
+
+@media (max-width: 720px) {
+  .glossary-hint { display: none; }
+  .glossary-table td:first-child { width: auto; }
+}
+/* ============================================================================
+   seb-metrics — styles_aero_prog.css
+   Onglets Efficacité aérobie et Progression VMA.
+   À CONCATÉNER en fin de templates/styles.css.
+   ============================================================================ */
+
+/* ---- Helpers communs ---------------------------------------------------- */
+.aero-help {
+  font-size: 12px;
+  color: #94a3b8;
+  margin: 12px 0 0;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.aero-table-scroll { overflow-x: auto; }
+.aero-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.aero-table thead th {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #94a3b8;
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  background: rgba(248, 250, 252, 0.6);
+  white-space: nowrap;
+}
+.aero-table tbody td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.04);
+  color: #334155;
+  vertical-align: middle;
+}
+.aero-table tbody tr:hover {
+  background: rgba(91, 138, 245, 0.03);
+}
+.aero-table .mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: #0f172a;
+}
+.aero-table-legend {
+  font-size: 11px;
+  color: #94a3b8;
+  margin-top: 12px;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* ---- Couleurs de seuil (dérive cardiaque) ------------------------------ */
+.drift-cell {
+  font-weight: 600;
+  padding: 4px 10px !important;
+  border-radius: 4px;
+}
+.drift-low {
+  background: rgba(34, 211, 167, 0.18);
+  color: #047857;
+}
+.drift-mid {
+  background: rgba(91, 138, 245, 0.12);
+  color: #1e40af;
+}
+.drift-high {
+  background: rgba(239, 91, 91, 0.18);
+  color: #b91c1c;
+}
+.aero-table-legend .drift-low,
+.aero-table-legend .drift-mid,
+.aero-table-legend .drift-high {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0 2px;
+}
+
+/* ---- Couleurs de seuil (stabilité) ------------------------------------- */
+.std-low {
+  color: #047857;
+  font-weight: 600;
+}
+.std-mid {
+  color: #475569;
+}
+.std-high {
+  color: #b91c1c;
+  font-weight: 600;
+}
+.aero-table-legend .std-low,
+.aero-table-legend .std-mid,
+.aero-table-legend .std-high {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0 2px;
+}
+.aero-table-legend .std-low { background: rgba(34, 211, 167, 0.18); color: #047857; }
+.aero-table-legend .std-mid { background: rgba(91, 138, 245, 0.12); color: #1e40af; }
+.aero-table-legend .std-high { background: rgba(239, 91, 91, 0.18); color: #b91c1c; }
+
+/* ---- Couleurs de seuil (temps de contact) ------------------------------ */
+.ct-good {
+  color: #047857;
+  font-weight: 600;
+}
+.ct-mid {
+  color: #475569;
+}
+.ct-high {
+  color: #b91c1c;
+  font-weight: 600;
+}
+.aero-table-legend .ct-good,
+.aero-table-legend .ct-mid,
+.aero-table-legend .ct-high {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0 2px;
+}
+.aero-table-legend .ct-good { background: rgba(34, 211, 167, 0.18); color: #047857; }
+.aero-table-legend .ct-mid { background: rgba(91, 138, 245, 0.12); color: #1e40af; }
+.aero-table-legend .ct-high { background: rgba(239, 91, 91, 0.18); color: #b91c1c; }
+
+/* ---- Balance side ------------------------------------------------------- */
+.balance-side {
+  font-style: italic;
+  color: #475569;
+}
+/* ============================================================================
+   seb-metrics — styles_charge_pred.css
+   Onglets Charge & Risque + Prédictions.
+   À CONCATÉNER en fin de templates/styles.css.
+   ============================================================================ */
+
+/* ---- Charge KPIs : statuts colorés ------------------------------------- */
+.kpi.tsb-fresh {
+  background: linear-gradient(135deg, rgba(34, 211, 167, 0.10) 0%, transparent 60%);
+  border-left: 3px solid #047857;
+}
+.kpi.tsb-fresh .value-text { color: #047857; }
+
+.kpi.tsb-neutral {
+  background: linear-gradient(135deg, rgba(91, 138, 245, 0.08) 0%, transparent 60%);
+  border-left: 3px solid #5b8af5;
+}
+.kpi.tsb-neutral .value-text { color: #5b8af5; }
+
+.kpi.tsb-fatigue {
+  background: linear-gradient(135deg, rgba(240, 146, 62, 0.10) 0%, transparent 60%);
+  border-left: 3px solid #f0923e;
+}
+.kpi.tsb-fatigue .value-text { color: #f0923e; }
+
+.kpi.tsb-risk {
+  background: linear-gradient(135deg, rgba(239, 91, 91, 0.12) 0%, transparent 60%);
+  border-left: 3px solid #b91c1c;
+}
+.kpi.tsb-risk .value-text { color: #b91c1c; }
+
+.value-text {
+  font-size: 18px !important;  /* plus petit que les valeurs numériques */
+  font-weight: 700;
+}
+
+/* ---- Table TSS : cellules colorées ------------------------------------- */
+.tss-cell {
+  font-weight: 600;
+  padding: 4px 10px !important;
+  border-radius: 4px;
+  text-align: center;
+}
+.tss-low   { background: rgba(34, 211, 167, 0.15); color: #047857; }
+.tss-mid   { background: rgba(91, 138, 245, 0.12); color: #1e40af; }
+.tss-high  { background: rgba(240, 146, 62, 0.18); color: #b45309; }
+.tss-vhigh { background: rgba(239, 91, 91, 0.20);  color: #b91c1c; }
+
+.tss-src {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  font-family: 'JetBrains Mono', monospace;
+  padding: 2px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+}
+.tss-src-hr   { background: #ecfdf5; color: #047857; }
+.tss-src-pace { background: #eef2ff; color: #4338ca; }
+.tss-src-none { background: #f1f5f9; color: #94a3b8; }
+.aero-table-legend .tss-src {
+  font-style: normal;
+  margin: 0 2px;
+}
+
+/* ---- Prédictions : table chronos --------------------------------------- */
+.pred-table .pred-predicted {
+  font-weight: 700;
+  color: #5b8af5;
+  font-size: 14px;
+}
+.pred-table .pred-pace {
+  color: #64748b;
+}
+.pred-delta-none {
+  color: #94a3b8;
+  font-style: italic;
+  font-size: 12px;
+}
+.pred-delta-eq {
+  background: #f1f5f9;
+  color: #475569;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.pred-delta-pb {
+  background: rgba(34, 211, 167, 0.18);
+  color: #047857;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+}
+.pred-delta-no {
+  background: rgba(91, 138, 245, 0.08);
+  color: #64748b;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* ---- Prédictions : allures à viser ------------------------------------- */
+.pred-target-table {
+  width: 100%;
+}
+.pred-target-table tbody td:first-child {
+  width: 180px;
+}
+.pred-pb-ref {
+  font-size: 11px;
+  color: #94a3b8;
+  font-family: 'JetBrains Mono', monospace;
+}
+.pred-no-record {
+  color: #94a3b8;
+  font-style: italic;
+  text-align: center;
+}
+.targets-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.target-cell {
+  padding: 10px;
+  background: #f8fafc;
+  border-radius: 8px;
+  text-align: center;
+}
+.target-label {
+  font-size: 10px;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.target-chrono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+}
+.target-pace {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #5b8af5;
+  margin-top: 2px;
+}
+
+/* ---- Projection NYC ---------------------------------------------------- */
+.pred-nyc-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.pred-nyc-card {
+  padding: 16px;
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 10px;
+  text-align: center;
+}
+.pred-nyc-card[data-c="blue"]   { border-left: 3px solid #5b8af5; }
+.pred-nyc-card[data-c="cyan"]   { border-left: 3px solid #22d3a7; }
+.pred-nyc-card[data-c="purple"] { border-left: 3px solid #9b6dff; }
+.pred-nyc-card[data-c="orange"] { border-left: 3px solid #f0923e; }
+.pnc-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+.pnc-chrono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+}
+.pnc-pace {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: #5b8af5;
+  margin-top: 4px;
+}
+.pnc-sub {
+  font-size: 11px;
+  color: #94a3b8;
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+.pred-nyc-analysis {
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.pred-nyc-analysis.ok {
+  background: rgba(91, 138, 245, 0.10);
+  border-left: 3px solid #5b8af5;
+  color: #1e40af;
+}
+.pred-nyc-analysis.good {
+  background: rgba(34, 211, 167, 0.12);
+  border-left: 3px solid #047857;
+  color: #047857;
+}
+.pred-nyc-analysis.warn {
+  background: rgba(240, 146, 62, 0.12);
+  border-left: 3px solid #f0923e;
+  color: #b45309;
+}
+
+/* ---- Responsive -------------------------------------------------------- */
+@media (max-width: 720px) {
+  .pred-nyc-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .targets-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ============================================================================
+   seb-metrics — styles_reco.css
+   Bandeau recommandation contextuelle dans l'onglet Charge & Risque.
+   À CONCATÉNER en fin de templates/styles.css.
+   ============================================================================ */
+
+.reco-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  background: #fff;
+  border-left: 4px solid #5b8af5;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.reco-icon {
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 700;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.reco-content {
+  flex: 1;
+}
+
+.reco-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.reco-message {
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.reco-action {
+  font-size: 13px;
+  color: #0f172a;
+  line-height: 1.5;
+  font-weight: 500;
+  padding-top: 8px;
+  border-top: 1px dashed rgba(15, 23, 42, 0.08);
+}
+
+/* États sémantiques */
+.reco-card.reco-risk {
+  background: linear-gradient(135deg, rgba(239, 91, 91, 0.06) 0%, #fff 60%);
+  border-left-color: #b91c1c;
+}
+.reco-card.reco-risk .reco-icon { color: #b91c1c; }
+
+.reco-card.reco-warn {
+  background: linear-gradient(135deg, rgba(240, 146, 62, 0.06) 0%, #fff 60%);
+  border-left-color: #f0923e;
+}
+.reco-card.reco-warn .reco-icon { color: #b45309; }
+
+.reco-card.reco-fresh {
+  background: linear-gradient(135deg, rgba(34, 211, 167, 0.08) 0%, #fff 60%);
+  border-left-color: #047857;
+}
+.reco-card.reco-fresh .reco-icon { color: #047857; font-size: 22px; padding-top: 6px; }
+
+.reco-card.reco-detrain {
+  background: linear-gradient(135deg, rgba(155, 109, 255, 0.06) 0%, #fff 60%);
+  border-left-color: #9b6dff;
+}
+.reco-card.reco-detrain .reco-icon { color: #7c3aed; }
+
+.reco-card.reco-good {
+  background: linear-gradient(135deg, rgba(91, 138, 245, 0.06) 0%, #fff 60%);
+  border-left-color: #5b8af5;
+}
+.reco-card.reco-good .reco-icon { color: #5b8af5; }
+
+.reco-card.reco-neutral {
+  background: #fff;
+  border-left-color: #94a3b8;
+}
+.reco-card.reco-neutral .reco-icon { color: #94a3b8; }
+
+@media (max-width: 720px) {
+  .reco-card {
+    flex-direction: column;
+    gap: 8px;
+    padding: 14px;
+  }
+}
+/* ============================================================================
+   seb-metrics — styles_comp_plan.css
+   Onglets Comparateur et Plan d'entraînement.
+   À CONCATÉNER en fin de templates/styles.css.
+   ============================================================================ */
+
+/* ---- Comparateur : sélecteurs ----------------------------------------- */
+.comp-selectors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 10px;
+}
+.comp-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.comp-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.comp-select {
+  font-family: inherit;
+  font-size: 13px;
+  padding: 10px 12px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 6px;
+  background: #fff;
+  color: #0f172a;
+  cursor: pointer;
+}
+.comp-select:focus {
+  outline: none;
+  border-color: #5b8af5;
+  box-shadow: 0 0 0 3px rgba(91, 138, 245, 0.15);
+}
+.comp-suggest-btn {
+  margin-top: 4px;
+}
+
+.comp-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.comp-summary-a, .comp-summary-b {
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #475569;
+}
+.comp-summary-a {
+  background: rgba(91, 138, 245, 0.08);
+  border-left: 3px solid #5b8af5;
+}
+.comp-summary-b {
+  background: rgba(240, 146, 62, 0.08);
+  border-left: 3px solid #f0923e;
+}
+
+/* ---- Comparateur : table KPIs ----------------------------------------- */
+.comp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+.comp-table thead th {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #94a3b8;
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+.comp-table tbody td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.04);
+  color: #334155;
+}
+.comp-label-cell {
+  font-weight: 600;
+  color: #0f172a;
+}
+.comp-val-a {
+  color: #5b8af5;
+  font-weight: 600;
+}
+.comp-val-b {
+  color: #f0923e;
+  font-weight: 600;
+}
+.comp-delta-none { color: #94a3b8; font-style: italic; }
+.comp-delta-neutral {
+  background: #f1f5f9; color: #475569;
+  padding: 3px 8px; border-radius: 4px; font-weight: 600; font-size: 12px;
+}
+.comp-delta-better {
+  background: rgba(34, 211, 167, 0.18); color: #047857;
+  padding: 3px 8px; border-radius: 4px; font-weight: 600; font-size: 12px;
+}
+.comp-delta-worse {
+  background: rgba(239, 91, 91, 0.15); color: #b91c1c;
+  padding: 3px 8px; border-radius: 4px; font-weight: 600; font-size: 12px;
+}
+
+/* ---- Comparateur : graphs --------------------------------------------- */
+.comp-charts {
+  display: grid;
+  gap: 16px;
+}
+.comp-chart-card {
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+.comp-chart-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 8px;
+}
+.comp-no-blocs {
+  text-align: center;
+  color: #94a3b8;
+  padding: 24px;
+  font-size: 13px;
+  font-style: italic;
+}
+
+@media (min-width: 1100px) {
+  .comp-charts { grid-template-columns: 1fr 1fr; }
+}
+
+/* ---- Plan : header phase ---------------------------------------------- */
+.plan-phase-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: center;
+}
+.plan-phase-main {
+  border-right: 1px solid rgba(15, 23, 42, 0.08);
+  padding-right: 24px;
+}
+.plan-phase-label,
+.plan-phase-goal-label {
+  font-size: 10px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.plan-phase-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+.plan-phase-desc {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.5;
+}
+.plan-phase-goal-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+.plan-phase-goal-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  color: #5b8af5;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.plan-phase-goal-target {
+  font-size: 13px;
+  color: #475569;
+}
+
+/* ---- Plan : répartition qualitative ---------------------------------- */
+.plan-distrib-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+}
+.plan-distrib-card:last-child { margin-bottom: 0; }
+.plan-distrib-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+.plan-distrib-bar {
+  display: flex;
+  height: 28px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.plan-distrib-easy,
+.plan-distrib-hard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ---- Plan : table réalité vs reco ------------------------------------ */
+.plan-ok    { color: #047857; font-weight: 600; }
+.plan-under { color: #b45309; font-weight: 600; }
+.plan-over  { color: #b91c1c; font-weight: 600; }
+.plan-off   { color: #b45309; }
+
+.plan-ok-tag, .plan-under-tag, .plan-over-tag {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0 2px;
+}
+.plan-ok-tag    { background: rgba(34, 211, 167, 0.18); color: #047857; }
+.plan-under-tag { background: rgba(240, 146, 62, 0.15); color: #b45309; }
+.plan-over-tag  { background: rgba(239, 91, 91, 0.15);  color: #b91c1c; }
+
+/* ---- Responsive ------------------------------------------------------- */
+@media (max-width: 720px) {
+  .comp-selectors { grid-template-columns: 1fr; }
+  .comp-summary { grid-template-columns: 1fr; }
+  .plan-phase-header {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .plan-phase-main {
+    border-right: none;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+    padding-right: 0;
+    padding-bottom: 12px;
+  }
+}
+
+/* ========================================================================
+   PLAN ENGINE — Séance du jour, semaine courante, calendrier 21 semaines
+   ======================================================================== */
+
+/* Séance du jour - carte hero */
+.plan-today .card-head { margin-bottom: 8px; }
+.plan-today-head {
+  padding: 18px 20px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+}
+.plan-today-meta {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 13px; color: #64748b; margin-bottom: 8px;
+}
+.plan-today-date { text-transform: capitalize; font-weight: 600; }
+.plan-today-week { font-size: 12px; }
+.plan-today-title { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+.plan-today-title h2 { margin: 0; font-size: 22px; color: #0f172a; font-weight: 700; }
+.plan-type-pill {
+  display: inline-block; padding: 4px 10px; border-radius: 999px;
+  color: #fff; font-size: 11px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.plan-today-stats {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px; margin: 14px 0;
+}
+.plan-today-stats > div {
+  display: flex; flex-direction: column; padding: 10px 12px;
+  background: #fff; border-radius: 8px; border: 1px solid rgba(15, 23, 42, 0.06);
+}
+.plan-today-stats .kv-label {
+  font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;
+}
+.plan-today-stats .kv-value { font-size: 16px; font-weight: 700; color: #0f172a; margin-top: 2px; }
+.plan-today-desc {
+  margin: 14px 0 0; color: #334155; font-size: 14px; line-height: 1.6;
+  background: #fff; padding: 12px 14px; border-radius: 8px;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+.plan-actual-line {
+  margin-top: 12px; padding: 10px 14px;
+  background: rgba(34, 211, 167, 0.10); border-left: 4px solid #22d3a7;
+  border-radius: 6px; font-size: 14px; color: #047857;
+}
+.plan-actual-tag {
+  background: #22d3a7; color: #fff; padding: 2px 8px; border-radius: 4px;
+  font-size: 11px; font-weight: 600; margin-right: 8px;
+}
+
+/* Allures plan */
+.plan-paces-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+.plan-pace-card {
+  padding: 14px 16px; background: #fff; border-radius: 8px;
+  border: 1px solid rgba(15, 23, 42, 0.08); display: flex; flex-direction: column;
+}
+.plan-pace-label { font-size: 11px; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; }
+.plan-pace-value { font-size: 20px; font-weight: 700; color: #0f172a; margin-top: 4px; font-family: 'JetBrains Mono', monospace; }
+
+/* Semaine en cours */
+.plan-week-head {
+  display: flex; justify-content: space-between; padding: 10px 0;
+  font-size: 14px; color: #475569; font-weight: 600;
+}
+.plan-week-target strong { color: #5b8af5; }
+.plan-week-table { width: 100%; border-collapse: collapse; }
+.plan-week-table td {
+  padding: 10px 8px; border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+  font-size: 14px;
+}
+.plan-week-table tr.ok { background: rgba(34, 211, 167, 0.06); }
+.plan-week-table tr.missed { background: rgba(239, 91, 91, 0.06); }
+.plan-week-table tr.today { background: rgba(91, 138, 245, 0.10); font-weight: 600; }
+.plan-week-table tr.plan-day-today { box-shadow: inset 4px 0 0 #5b8af5; }
+.plan-day-status { font-size: 18px; text-align: center; width: 30px; color: #94a3b8; }
+.plan-week-table tr.ok .plan-day-status { color: #22d3a7; }
+.plan-week-table tr.missed .plan-day-status { color: #ef4444; }
+.plan-week-table tr.today .plan-day-status { color: #5b8af5; }
+.plan-type-dot {
+  display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+  margin-right: 6px; vertical-align: middle;
+}
+.plan-actual-km { color: #64748b; font-size: 12px; }
+
+/* Calendrier 21 semaines */
+.plan-cal-legend {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  padding: 10px 0; font-size: 12px; color: #64748b; margin-bottom: 12px;
+}
+.plan-cal-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
+.plan-cal-row {
+  display: grid; grid-template-columns: 120px 1fr; gap: 10px;
+  align-items: stretch; padding: 4px 0;
+}
+.plan-cal-row.current {
+  background: rgba(91, 138, 245, 0.06); border-radius: 8px; padding: 6px;
+}
+.plan-cal-meta {
+  padding: 6px 10px; display: flex; flex-direction: column; justify-content: center;
+}
+.plan-cal-wnum { font-size: 14px; font-weight: 700; color: #0f172a; }
+.plan-cal-phase { font-size: 11px; color: #64748b; }
+.plan-cal-km-total { font-size: 12px; color: #5b8af5; font-weight: 600; font-family: 'JetBrains Mono', monospace; }
+.plan-cal-days {
+  display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px;
+}
+.plan-cal-day {
+  height: 34px; border-radius: 4px; background: var(--c, #94a3b8);
+  opacity: 0.20; display: flex; align-items: center; justify-content: center;
+  font-size: 11px; color: #fff; font-weight: 600; cursor: default;
+  transition: opacity 0.15s, transform 0.15s;
+}
+.plan-cal-day:hover { opacity: 0.95; transform: scale(1.05); }
+.plan-cal-day.done { opacity: 0.85; box-shadow: inset 0 0 0 1px rgba(34,211,167,0.5); }
+.plan-cal-day.missed { opacity: 0.95; background: #ef4444; }
+.plan-cal-day.today { opacity: 1; box-shadow: 0 0 0 2px #5b8af5; }
+.plan-cal-km { color: #fff; }
+.plan-cal-day:not(.done):not(.missed):not(.today) .plan-cal-km { color: rgba(15,23,42,0.6); }
+
+@media (max-width: 720px) {
+  .plan-cal-row { grid-template-columns: 80px 1fr; }
+  .plan-cal-wnum { font-size: 12px; }
+  .plan-cal-phase { font-size: 10px; }
+  .plan-cal-day { height: 28px; font-size: 10px; }
+  .plan-today-title h2 { font-size: 18px; }
+}
+
+/* Statuts étendus dans la semaine en cours */
+.plan-week-table tr.bonus { background: rgba(168, 85, 247, 0.08); }
+.plan-week-table tr.bonus .plan-day-status { color: #7c3aed; }
+.plan-week-table tr.over { background: rgba(245, 158, 11, 0.06); }
+.plan-week-table tr.over .plan-day-status { color: #b45309; }
+.plan-week-table tr.under { background: rgba(245, 158, 11, 0.06); }
+.plan-week-table tr.under .plan-day-status { color: #b45309; }
+
+/* Bannière de reprogrammation */
+.plan-reschedule-banner {
+  background: rgba(124, 58, 237, 0.12);
+  color: #5b21b6;
+  padding: 8px 12px; border-radius: 6px; font-size: 13px;
+  font-weight: 600; margin-bottom: 12px;
+  border-left: 3px solid #7c3aed;
+}
+
+/* Carte d'adaptations */
+#planAdaptationsCard:empty,
+#planAdaptations:empty { display: none; }
+.plan-adapt-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+.plan-adapt-item {
+  display: flex; gap: 12px; padding: 14px;
+  background: #fff; border-radius: 8px; border: 1px solid rgba(15,23,42,0.08);
+  border-left: 3px solid #7c3aed;
+}
+.plan-adapt-icon {
+  font-size: 24px; color: #7c3aed; font-weight: 700;
+  min-width: 32px; text-align: center;
+}
+.plan-adapt-reason { font-weight: 600; color: #0f172a; font-size: 14px; }
+.plan-adapt-detail { color: #64748b; font-size: 12px; margin-top: 4px; }
+
+/* ============================================================
+   Validation des séances (scoring réussie/partielle/échouée)
+   ============================================================ */
+.score-ring { display: inline-block; vertical-align: middle; }
+
+.verdict-pill {
+  display: inline-block; margin-left: 6px; padding: 1px 8px;
+  border-radius: 999px; font-size: 11px; font-weight: 700;
+  color: var(--vc); background: color-mix(in srgb, var(--vc) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--vc) 35%, transparent);
+  vertical-align: middle; white-space: nowrap;
+}
+.verdict-cross { color: #94a3b8; font-weight: 700; font-size: 15px; }
+
+/* Bandeau conformité hebdo */
+.plan-week-compliance {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 12px; margin: 8px 0 10px;
+  background: #f8fafc; border-radius: 12px;
+}
+.pwc-body { flex: 1; min-width: 0; }
+.pwc-bar-wrap {
+  height: 8px; border-radius: 999px; background: #e5e9f0; overflow: hidden;
+}
+.pwc-bar { height: 100%; border-radius: 999px; transition: width 0.5s ease; }
+.pwc-detail { margin-top: 6px; font-size: 12px; color: #64748b; }
+
+/* Ligne score dans la carte du jour */
+.plan-score-line {
+  display: flex; align-items: center; gap: 10px; margin-top: 8px;
+}
+.plan-score-reasons { font-size: 12px; color: #64748b; }
+
+/* Calendrier : cellules par verdict */
+.plan-cal-day.v-success { opacity: 1; box-shadow: inset 0 0 0 2px #22c55e; }
+.plan-cal-day.v-partial { opacity: 1; box-shadow: inset 0 0 0 2px #f59e0b; }
+.plan-cal-day.v-failed  { opacity: 1; box-shadow: inset 0 0 0 2px #ef4444; }
+.plan-cal-day.v-missed  { opacity: 0.55; background: #cbd5e1 !important; }
+.plan-cal-day.v-missed .plan-cal-km { text-decoration: line-through; }
+.plan-cal-comp { font-size: 11px; font-weight: 700; margin-top: 2px; }
+
+/* ============================================================
+   Coach IA
+   ============================================================ */
+.coach-headline {
+  font-size: 16px; font-weight: 700; color: #0f172a;
+  padding: 10px 14px; border-left: 4px solid #7c3aed;
+  background: #faf5ff; border-radius: 0 10px 10px 0; margin-bottom: 10px;
+}
+.coach-analysis { font-size: 14px; color: #334155; line-height: 1.6; margin: 0 0 12px; }
+.coach-section-title {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.06em; color: #64748b; margin: 14px 0 6px;
+}
+.coach-item {
+  display: flex; gap: 10px; align-items: flex-start;
+  padding: 8px 10px; border-radius: 10px; margin-bottom: 6px; font-size: 13px;
+}
+.coach-item.coach-applied { background: #f0fdf4; }
+.coach-item.coach-applied .coach-item-icon { color: #22c55e; }
+.coach-item.coach-pending { background: #fffbeb; }
+.coach-item.coach-pending .coach-item-icon { color: #f59e0b; }
+.coach-item-icon { font-weight: 800; font-size: 15px; min-width: 16px; }
+.coach-item-reason { color: #64748b; font-size: 12px; margin-top: 2px; }

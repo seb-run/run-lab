@@ -1,0 +1,82 @@
+# seb-metrics — pipeline autonome
+# Déclencheurs :
+#   - repository_dispatch "strava-activity" : envoyé par le Cloudflare Worker
+#     quand Strava notifie une nouvelle activité (webhook)
+#   - schedule : filet de sécurité quotidien à 05:45 UTC
+#   - workflow_dispatch : lancement manuel depuis l'onglet Actions
+name: build-dashboard
+
+on:
+  repository_dispatch:
+    types: [strava-activity]
+  schedule:
+    - cron: '45 5 * * *'
+  workflow_dispatch:
+    inputs:
+      regen_plan:
+        description: 'Régénérer le plan complet'
+        type: boolean
+        default: false
+
+concurrency:
+  group: build-dashboard
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: pip install jinja2 anthropic
+
+      - name: Sync Strava (API directe)
+        env:
+          STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
+          STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
+          STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
+          SEB_DATA_DIR: ${{ github.workspace }}/data
+        run: python3 scripts/ci/strava_api_sync.py
+
+      - name: Build dashboard
+        env:
+          SEB_DATA_DIR: ${{ github.workspace }}/data
+        run: |
+          REGEN=""
+          if [ "${{ inputs.regen_plan }}" = "true" ]; then REGEN="--regen-plan"; fi
+          python3 build.py --strava-sync --no-push $REGEN
+
+      - name: Coach IA (analyse + ajustements)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SEB_DATA_DIR: ${{ github.workspace }}/data
+        run: python3 scripts/ci/ai_coach.py || echo "⚠ Coach IA indisponible — build publié sans analyse"
+
+      - name: Rebuild HTML (avec analyse coach)
+        env:
+          SEB_DATA_DIR: ${{ github.workspace }}/data
+        run: python3 build.py --rebuild-html
+
+      - name: Publish
+        run: |
+          cp output/index.html index.html
+          git config user.name "seb-metrics-bot"
+          git config user.email "actions@github.com"
+          git add index.html output/index.html data/
+          if git diff --cached --quiet; then
+            echo "Rien à publier."
+          else
+            git commit -m "auto: build $(date -u +%Y-%m-%dT%H:%M)"
+            git pull --rebase origin ${{ github.ref_name }} || true
+            git push origin HEAD:${{ github.ref_name }}
+          fi

@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#5b8af5">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Seb Metrics">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<title>Seb Metrics · Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+{{ css_content|safe }}
+</style>
+</head>
+<body>
+
+<!-- ====== HERO ====== -->
+<header class="hero">
+  <div class="wrap hero-inner">
+
+    <!-- Ligne 1 : identité + compteurs sessions/km -->
+    <div class="hero-row hero-row-1">
+      <div class="brand">
+        <div class="logo">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="64" height="64" rx="16" fill="url(#lg)"/>
+            <path d="M14 46 L24 22 L32 36 L40 22 L50 46" stroke="#fff" stroke-width="4.5"
+                  stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <circle cx="24" cy="22" r="3.2" fill="#fff"/>
+            <circle cx="40" cy="22" r="3.2" fill="#fff"/>
+            <circle cx="50" cy="46" r="3.8" fill="#22d3a7"/>
+            <defs>
+              <linearGradient id="lg" x1="0" y1="0" x2="64" y2="64">
+                <stop offset="0" stop-color="#5b8af5"/>
+                <stop offset="1" stop-color="#3b6dc7"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>seb<span class="dot">.</span>metrics</h1>
+          <p>{{ profile.name }} · <span id="dynAge"></span></p>
+        </div>
+      </div>
+      <div class="hero-counters" id="heroCounters"></div>
+    </div>
+
+    <!-- Ligne 2 : allures de forme avec tendance -->
+    <div class="hero-row hero-row-2">
+      <div class="hero-paces-head">
+        <span class="hero-paces-title">Allures de forme · estimation actuelle</span>
+        <span class="hero-paces-sub">Tendance vs 30j</span>
+      </div>
+      <div class="hero-paces" id="heroPaces"></div>
+    </div>
+
+  </div>
+</header>
+
+<!-- ====== FILTRES ANNÉE ====== -->
+<nav class="wrap year-bar" id="yearBar">
+  <button class="year-btn on" data-y="all">Tout</button>
+  {% for y in overview.years %}
+  <button class="year-btn" data-y="{{ y }}">{{ y }}</button>
+  {% endfor %}
+</nav>
+
+<!-- ====== ONGLETS ====== -->
+<nav class="wrap tabs" id="tabBar">
+  <button class="tab on" data-tab="ov">Vue d'ensemble</button>
+  <button class="tab" data-tab="race">Courses & Records</button>
+  <button class="tab" data-tab="vol">Volume</button>
+  <button class="tab" data-tab="charge">Charge & Risque</button>
+  <button class="tab" data-tab="aero">Efficacité aérobie</button>
+  <button class="tab" data-tab="prog">Progression VMA</button>
+  <button class="tab" data-tab="pred">Prédictions</button>
+  <button class="tab" data-tab="comp">Comparateur</button>
+  <button class="tab" data-tab="plan">Plan</button>
+  <button class="tab" data-tab="sess">Séances</button>
+</nav>
+
+<!-- ====== CONTENU ====== -->
+<main class="wrap main">
+
+  <!-- VUE D'ENSEMBLE -->
+  <section class="tab-content on" id="t-ov">
+    <div class="grid grid-4" id="ovKPIs"></div>
+
+    <div class="grid grid-2 gap-lg mt-lg">
+      <article class="card">
+        <header class="card-head">
+          <h3>Volume hebdomadaire</h3>
+          <span class="card-sub">52 dernières semaines</span>
+        </header>
+        <div class="chart-wrap"><div id="chartWeekly"></div></div>
+      </article>
+      <article class="card">
+        <header class="card-head">
+          <h3>Allure moyenne mensuelle</h3>
+          <span class="card-sub">24 derniers mois</span>
+        </header>
+        <div class="chart-wrap"><div id="chartMonthlyPace"></div></div>
+      </article>
+    </div>
+
+    <div class="grid grid-2 gap-lg mt-lg">
+      <article class="card">
+        <header class="card-head">
+          <h3>Fréquence cardiaque mensuelle</h3>
+        </header>
+        <div class="chart-wrap"><div id="chartMonthlyHR"></div></div>
+      </article>
+      <article class="card">
+        <header class="card-head">
+          <h3>Dernière séance</h3>
+        </header>
+        <div id="lastSession"></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- COURSES & RECORDS -->
+  <section class="tab-content" id="t-race">
+
+    <!-- Bloc 1 : countdowns objectifs -->
+    <div class="grid grid-2 gap-lg" id="raceCountdowns"></div>
+
+    <!-- Bloc 2 : recommandation taper (si fenêtre active) -->
+    <div id="raceTaperWrap" class="mt-lg"></div>
+
+    <!-- Bloc 3 : records -->
+    <article class="card mt-lg">
+      <header class="card-head">
+        <h3>Records personnels</h3>
+        <span class="card-sub">Calculés depuis vos courses officielles</span>
+      </header>
+      <div class="records-grid" id="raceRecords"></div>
+    </article>
+
+    <!-- Bloc 4 : marathons en détail -->
+    <article class="card mt-lg" id="raceMarathonsCard">
+      <header class="card-head">
+        <h3>Mes marathons en détail</h3>
+        <span class="card-sub">Cliquez sur une ligne pour voir splits et graphiques</span>
+      </header>
+      <div id="raceMarathons"></div>
+    </article>
+
+    <!-- Bloc 5 : prépa rétrospective -->
+    <article class="card mt-lg" id="racePrepCard">
+      <header class="card-head">
+        <h3>Volume de prépa rétrospectif</h3>
+        <span class="card-sub">10 semaines avant chaque marathon · vert = légère · rouge = chargée</span>
+      </header>
+      <div id="racePrep"></div>
+    </article>
+
+    <!-- Bloc 6 : table des courses -->
+    <article class="card mt-lg">
+      <header class="card-head race-table-head">
+        <h3>Mes courses officielles</h3>
+        <button class="btn-primary" id="raceAddBtn">+ Ajouter une course</button>
+      </header>
+      <div id="raceTable"></div>
+    </article>
+
+  </section>
+
+  <!-- VOLUME -->
+  <section class="tab-content" id="t-vol">
+    <div class="grid grid-2 gap-lg">
+      <article class="card">
+        <header class="card-head">
+          <h3>Volume hebdomadaire par intensité</h3>
+          <span class="card-sub">52 dernières semaines · moyenne mobile 4 sem.</span>
+        </header>
+        <div class="chart-wrap"><div id="volWeeklyStacked"></div></div>
+      </article>
+      <article class="card">
+        <header class="card-head">
+          <h3>Volume mensuel</h3>
+          <span class="card-sub">24 derniers mois</span>
+        </header>
+        <div class="chart-wrap"><div id="volMonthly"></div></div>
+      </article>
+    </div>
+
+    <div class="grid grid-2 gap-lg mt-lg">
+      <article class="card">
+        <header class="card-head">
+          <h3>Répartition par type de séance</h3>
+          <span class="card-sub">Selon le filtre temporel actif</span>
+        </header>
+        <div class="chart-wrap"><div id="volTypeDist"></div></div>
+      </article>
+      <article class="card">
+        <header class="card-head">
+          <h3>Volume cumulé par année</h3>
+          <span class="card-sub">Comparaison année par année</span>
+        </header>
+        <div class="chart-wrap"><div id="volCumulative"></div></div>
+      </article>
+    </div>
+
+    <article class="card mt-lg">
+      <header class="card-head">
+        <h3>Heatmap calendrier</h3>
+        <span class="card-sub">Volume quotidien en km · navigation par année</span>
+      </header>
+      <div class="vol-heatmap-controls" id="volHeatmapYearBar"></div>
+      <div class="chart-wrap"><div id="volHeatmap" style="height:200px;"></div></div>
+    </article>
+  </section>
+
+  <!-- SÉANCES -->
+  <section class="tab-content" id="t-sess">
+    <article class="card">
+      <header class="card-head sess-head">
+        <h3>Toutes les séances</h3>
+        <span class="card-sub" id="sessSummary"></span>
+      </header>
+
+      <div class="sess-filters">
+        <input type="text" id="sessSearch" placeholder="Rechercher dans les titres…" class="sess-search">
+        <div class="sess-type-filter" id="sessTypeFilter"></div>
+        <div class="sess-range-filter">
+          <label>Distance <input type="number" id="sessKmMin" min="0" step="1" placeholder="min"> – <input type="number" id="sessKmMax" min="0" step="1" placeholder="max"> km</label>
+        </div>
+        <div class="sess-range-filter">
+          <label>FC <input type="number" id="sessFcMin" min="0" step="1" placeholder="min"> – <input type="number" id="sessFcMax" min="0" step="1" placeholder="max"> bpm</label>
+        </div>
+        <button class="btn-ghost" id="sessReset">Reset filtres</button>
+      </div>
+
+      <details class="sess-glossary">
+        <summary>
+          <span class="glossary-icon">ⓘ</span>
+          <span class="glossary-title">Comment les types sont classés</span>
+          <span class="glossary-hint">cliquer pour déplier</span>
+        </summary>
+        <div class="glossary-body">
+          <p class="glossary-intro">L'algorithme évalue les critères dans cet ordre et s'arrête au premier match.</p>
+          <table class="glossary-table">
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Critère retenu</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="tag" style="--c:#5b8af5">Marathon</span></td>
+                <td>Distance ≥ 42 km</td>
+              </tr>
+              <tr>
+                <td><span class="tag" style="--c:#3b82f6">Semi</span></td>
+                <td>Distance entre 21 et 22,5 km et allure moyenne ≤ 4'20"/km</td>
+              </tr>
+              <tr>
+                <td><span class="tag" style="--c:#047857">Sortie longue</span></td>
+                <td>Distance ≥ 25 km (et n'entre pas dans marathon/semi)</td>
+              </tr>
+              <tr>
+                <td><span class="tag" style="--c:#ef4444">Frac. court</span></td>
+                <td>Workout structuré Garmin (≥ 3 blocs actifs avec récup) <strong>ou</strong> détection automatique de 2+ segments rapides (allure &lt; 4'20"/km) mélangés à des lents, avec blocs rapides ≤ 1,2 km en moyenne</td>
+              </tr>
+              <tr>
+                <td><span class="tag" style="--c:#b91c1c">Frac. long</span></td>
+                <td>Même logique que frac. court mais blocs rapides &gt; 1,2 km en moyenne</td>
+              </tr>
+              <tr>
+                <td><span class="tag" style="--c:#f0923e">Tempo</span></td>
+                <td>Allure moyenne &lt; 4'20"/km et pas d'alternance détectée</td>
+              </tr>
+              <tr>
+                <td><span class="tag" style="--c:#22d3a7">Footing</span></td>
+                <td>Allure moyenne &gt; 5'15"/km</td>
+              </tr>
+              <tr>
+                <td><span class="tag" style="--c:#10b981">Endurance</span></td>
+                <td>Tout le reste : allure entre 4'20" et 5'15"/km sans pic d'intensité notable</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="glossary-note">Le coefficient de variation des allures (CV) sert aussi de détecteur : un CV &gt; 12% sur au moins 5 blocs déclenche une classification frac. court ou long même sans alternance évidente.</p>
+        </div>
+      </details>
+
+      <div class="sess-table-scroll">
+        <table class="sess-table">
+          <thead>
+            <tr id="sessTableHead">
+              <th data-sort="date">Date <span class="sort-arrow"></span></th>
+              <th data-sort="tp">Type <span class="sort-arrow"></span></th>
+              <th data-sort="km">Distance <span class="sort-arrow"></span></th>
+              <th data-sort="dur_s">Durée <span class="sort-arrow"></span></th>
+              <th data-sort="ps">Allure <span class="sort-arrow"></span></th>
+              <th data-sort="fc">FC <span class="sort-arrow"></span></th>
+              <th>Titre</th>
+            </tr>
+          </thead>
+          <tbody id="sessTableBody"></tbody>
+        </table>
+      </div>
+
+      <div class="sess-pagination" id="sessPagination"></div>
+    </article>
+  </section>
+
+  <!-- EFFICACITÉ AÉROBIE -->
+  <section class="tab-content" id="t-aero">
+
+    <!-- Bloc 1 : FC vs Allure (scatter) -->
+    <article class="card">
+      <header class="card-head">
+        <h3>FC vs Allure — séances aérobies</h3>
+        <span class="card-sub">Footings et endurance · filtre temporel actif</span>
+      </header>
+      <div class="chart-wrap"><div id="aeroScatter" style="height:380px"></div></div>
+      <p class="aero-help">À allure constante, une FC plus basse traduit une meilleure efficacité aérobie. Comparez les nuages anciens vs récents pour voir la progression.</p>
+    </article>
+
+    <!-- Bloc 2 : Dérive cardiaque sorties longues -->
+    <article class="card mt-lg">
+      <header class="card-head">
+        <h3>Dérive cardiaque — sorties longues</h3>
+        <span class="card-sub">Séances ≥ 60min · delta FC 2nde moitié vs 1ère moitié</span>
+      </header>
+      <div id="aeroDriftTable"></div>
+    </article>
+
+    <!-- Bloc 3 : Balance L/R -->
+    <article class="card mt-lg">
+      <header class="card-head">
+        <h3>Balance gauche / droite</h3>
+        <span class="card-sub">Marathons et sorties longues récents · stabilité intra-séance</span>
+      </header>
+      <div id="aeroBalanceTable"></div>
+    </article>
+
+    <!-- Bloc 4 : Temps de contact -->
+    <article class="card mt-lg">
+      <header class="card-head">
+        <h3>Temps de contact au sol</h3>
+        <span class="card-sub">Marathons et sorties longues récents · variabilité intra-séance</span>
+      </header>
+      <div id="aeroContactTable"></div>
+    </article>
+
+  </section>
+
+  <!-- PROGRESSION VMA -->
+  <section class="tab-content" id="t-prog">
+
+    <article class="card">
+      <header class="card-head">
+        <h3>Historique d'estimation VMA</h3>
+        <span class="card-sub">Estimation glissante 30j · toutes périodes confondues</span>
+      </header>
+      <div class="chart-wrap"><div id="progVmaHistory" style="height:380px"></div></div>
+      <p class="aero-help">L'estimation utilise les fractionnés courts/longs et tempos sur les 30 jours précédant chaque point. Les courses officielles sont annotées sur la courbe.</p>
+    </article>
+
+    <article class="card mt-lg">
+      <header class="card-head">
+        <h3>Allures de forme dérivées</h3>
+        <span class="card-sub">Évolution des allures cibles depuis la VMA estimée</span>
+      </header>
+      <div class="chart-wrap"><div id="progPacesHistory" style="height:380px"></div></div>
+    </article>
+
+  </section>
+
+  <!-- CHARGE & RISQUE -->
+  <section class="tab-content" id="t-charge">
+
+    <!-- Bloc 1 : KPIs du jour -->
+    <div class="grid grid-4" id="chargeKPIs"></div>
+
+    <!-- Bloc 1.5 : Recommandation contextuelle -->
+    <div id="chargeRecommendation" class="mt-lg"></div>
+
+    <!-- Bloc 2 : Graph CTL/ATL/TSB -->
+    <article class="card mt-lg">
+      <header class="card-head">
+        <h3>Charge d'entraînement</h3>
+        <span class="card-sub">12 derniers mois · CTL (forme) · ATL (fatigue) · TSB (fraîcheur)</span>
+      </header>
+      <div class="chart-wrap"><div id="chargeChart" style="height:440px"></div></div>
+      <p class="aero-help">
+        TSS calculé selon TRIMP de Banister (pondération FC exponentielle).
+        CTL = moyenne exponentielle 42j (forme de fond). ATL = moyenne exponentielle 7j (fatigue récente).
+        TSB = CTL − ATL. Positif = fraîcheur, négatif = fatigue accumulée.
+      </p>
+    </article>
+
+    <!-- Bloc 3 : Table 30 dernières séances avec TSS -->
+    <article class="card mt-lg">
+      <header class="card-head">
+        <h3>TSS des 30 dernières séances</h3>
+        <span class="card-sub">Du plus récent au plus ancien</span>
+      </header>
+
+      <details class="sess-glossary">
+        <summary>
+          <span class="glossary-icon">ⓘ</span>
+          <span class="glossary-title">Qu'est-ce que le TSS et comment le lire</span>
+          <span class="glossary-hint">cliquer pour déplier</span>
+        </summary>
+        <div class="glossary-body">
+          <p class="glossary-intro">Le TSS (Training Stress Score) quantifie le coût physiologique d'une séance unique.</p>
+          <table class="glossary-table">
+            <thead>
+              <tr><th>TSS</th><th>Charge ressentie</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="tss-cell tss-low">&lt; 50</span></td>
+                <td>Léger — footing court ou récupération active. Pas de fatigue notable le lendemain.</td>
+              </tr>
+              <tr>
+                <td><span class="tss-cell tss-mid">50 – 100</span></td>
+                <td>Modéré — sortie classique (footing 1h, endurance 12-15 km). Récupération en 24h.</td>
+              </tr>
+              <tr>
+                <td><span class="tss-cell tss-high">100 – 150</span></td>
+                <td>Soutenu — fractionné dur, sortie longue, tempo. Fatigue résiduelle le lendemain.</td>
+              </tr>
+              <tr>
+                <td><span class="tss-cell tss-vhigh">&gt; 150</span></td>
+                <td>Très exigeant — marathon, semi en course, séances key extrêmes. Récup 2-3 jours minimum.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="glossary-note">
+            Le TSS est calculé en priorité depuis la FC (TRIMP de Banister, pondération exponentielle de l'intensité cardiaque).
+            En l'absence de FC, fallback sur l'allure relative à votre allure seuil (rTSS). Un TSS de 100 correspond grossièrement à 1h d'effort à 100% de votre seuil.
+          </p>
+        </div>
+      </details>
+
+      <div id="chargeSessionsTable"></div>
+    </article>
+
+  </section>
+
+  <!-- PRÉDICTIONS -->
+  <section class="tab-content" id="t-pred">
+
+    <article class="card">
+      <header class="card-head">
+        <h3>Chronos prédits par distance</h3>
+        <span class="card-sub">Basé sur la VMA actuelle (table Daniels calibrée)</span>
+      </header>
+      <div id="predChronos"></div>
+    </article>
+
+    <article class="card mt-lg">
+      <header class="card-head">
+        <h3>Allure à viser pour battre votre record</h3>
+        <span class="card-sub">Stratégie d'allure cible sur chaque distance</span>
+      </header>
+      <div id="predTargetPaces"></div>
+    </article>
+
+    <article class="card mt-lg" id="predNycCard">
+      <header class="card-head">
+        <h3>Projection NYC Marathon</h3>
+        <span class="card-sub">Estimation jour J basée sur votre prépa actuelle</span>
+      </header>
+      <div id="predNyc"></div>
+    </article>
+
+  </section>
+
+  <!-- COMPARATEUR -->
+  <section class="tab-content" id="t-comp">
+
+    <article class="card">
+      <header class="card-head">
+        <h3>Comparateur de séances</h3>
+        <span class="card-sub">Sélectionnez 2 séances pour les analyser côte à côte</span>
+      </header>
+
+      <div class="comp-selectors">
+        <div class="comp-selector">
+          <div class="comp-label">Séance A (référence)</div>
+          <select id="compSelectorA" class="comp-select"></select>
+          <button class="btn-ghost comp-suggest-btn" id="compAutoSuggest" title="Proposer automatiquement une séance B similaire">
+            Suggérer une séance B similaire →
+          </button>
+        </div>
+        <div class="comp-selector">
+          <div class="comp-label">Séance B (comparaison)</div>
+          <select id="compSelectorB" class="comp-select"></select>
+        </div>
+      </div>
+
+      <div id="compResult"></div>
+    </article>
+
+  </section>
+
+  <!-- PLAN D'ENTRAÎNEMENT -->
+  <section class="tab-content" id="t-plan">
+
+    <!-- Bloc 0 : SÉANCE DU JOUR -->
+    <article class="card plan-today" id="planTodayCardWrap">
+      <header class="card-head">
+        <h3>Séance du jour</h3>
+        <span class="card-sub">Programme adapté à ton plan NYC</span>
+      </header>
+      <div id="planTodayCard"></div>
+    </article>
+
+    <!-- Bloc 0a : Coach IA -->
+    <article class="card mt-lg" id="coachCard" style="display:none">
+      <header class="card-head">
+        <h3>Coach IA</h3>
+        <span class="card-sub" id="coachDate"></span>
+      </header>
+      <div id="coachContent"></div>
+    </article>
+
+    <!-- Bloc 0a-bis : Adaptations en cours -->
+    <article class="card mt-lg" id="planAdaptationsCard">
+      <header class="card-head">
+        <h3>Adaptations du plan</h3>
+        <span class="card-sub">Ajustements automatiques liés au réel</span>
+      </header>
+      <div id="planAdaptations"></div>
+    </article>
+
+    <!-- Bloc 0b : Allures cibles du plan -->
+    <article class="card mt-lg">
+      <header class="card-head">
+        <h3>Allures cibles du plan</h3>
+        <span class="card-sub">Calibrées sur ton objectif</span>
+      </header>
+      <div id="planPaces" class="plan-paces-grid"></div>
+    </article>
+
+    <!-- Bloc 0c : Semaine en cours -->
+    <article class="card mt-lg">
+      <header class="card-head">
+        <h3>Semaine en cours</h3>
+        <span class="card-sub">Statut jour par jour</span>
+      </header>
+      <div id="planCurrentWeek"></div>
+    </article>
+
+    <!-- Bloc 0d : Calendrier 21 semaines -->
+    <article class="card mt-lg">
+      <header class="card-head">
+        <h3>Plan complet · 21 semaines</h3>
+        <span class="card-sub">Vue calendrier des phases jusqu'à NYC</span>
+      </header>
+      <div id="planCalendar"></div>
+    </article>
+
+    <!-- Bloc 1 : phase actuelle et objectif -->
+    <article class="card mt-lg" id="planPhaseCard">
+      <div id="planPhase"></div>
+    </article>
+
+    <!-- Bloc 2 : volume recommandé 8 semaines -->
+    <article class="card mt-lg">
+      <header class="card-head">
+        <h3>Volume recommandé · 8 prochaines semaines</h3>
+        <span class="card-sub">Dérivé de votre historique récent et de la phase de prépa</span>
+      </header>
+      <div class="chart-wrap"><div id="planVolumeChart" style="height:340px"></div></div>
+    </article>
+
+    <!-- Bloc 3 : répartition qualitative -->
+    <article class="card mt-lg">
+      <header class="card-head">
+        <h3>Répartition qualitative recommandée</h3>
+        <span class="card-sub">Par phase de préparation · règle générique 80/20</span>
+      </header>
+      <div id="planDistribution"></div>
+    </article>
+
+    <!-- Bloc 4 : réalité vs recommandation -->
+    <article class="card mt-lg">
+      <header class="card-head">
+        <h3>Réalité des 4 dernières semaines vs recommandation</h3>
+        <span class="card-sub">Pour identifier les écarts</span>
+      </header>
+      <div id="planRecentVsReco"></div>
+    </article>
+
+  </section>
+
+</main>
+
+<!-- ====== MODAL — Détail d'une séance ====== -->
+<div class="modal-backdrop" id="sessModal" hidden>
+  <div class="modal modal-large" role="dialog" aria-labelledby="sessModalTitle">
+    <header class="modal-head">
+      <h3 id="sessModalTitle">Détail séance</h3>
+      <button class="modal-close" id="sessModalClose" aria-label="Fermer">×</button>
+    </header>
+    <div class="modal-body" id="sessModalBody"></div>
+    <footer class="modal-foot">
+      <button class="btn-ghost" id="sessModalCloseFoot">Fermer</button>
+    </footer>
+  </div>
+</div>
+
+<!-- ====== MODAL — Ajout d'une course ====== -->
+<div class="modal-backdrop" id="raceModal" hidden>
+  <div class="modal" role="dialog" aria-labelledby="raceModalTitle">
+    <header class="modal-head">
+      <h3 id="raceModalTitle">Ajouter une course officielle</h3>
+      <button class="modal-close" id="raceModalClose" aria-label="Fermer">×</button>
+    </header>
+
+    <div class="modal-body">
+      <p class="modal-help">Sélectionnez la séance correspondant à votre course, puis donnez-lui un nom.</p>
+
+      <label class="field">
+        <span class="field-label">Filtrer par distance minimale</span>
+        <select id="raceFilterMinKm">
+          <option value="5">≥ 5 km</option>
+          <option value="10">≥ 10 km</option>
+          <option value="15" selected>≥ 15 km (semis &amp; marathons)</option>
+          <option value="21">≥ 21 km (semis &amp; marathons)</option>
+          <option value="40">≥ 40 km (marathons uniquement)</option>
+        </select>
+      </label>
+
+      <label class="field">
+        <span class="field-label">Séance</span>
+        <select id="raceSessionPicker"></select>
+      </label>
+
+      <label class="field">
+        <span class="field-label">Nom de la course</span>
+        <input type="text" id="raceNameInput" placeholder="Ex: Marathon de Paris 2026" maxlength="80">
+      </label>
+
+      <div class="field-preview" id="raceModalPreview"></div>
+    </div>
+
+    <footer class="modal-foot">
+      <button class="btn-ghost" id="raceCancelBtn">Annuler</button>
+      <button class="btn-primary" id="raceSaveBtn">Enregistrer</button>
+    </footer>
+  </div>
+</div>
+
+<!-- ====== FOOTER ====== -->
+<footer class="wrap footer">
+  <span>Seb Metrics · généré le <span id="genDate"></span></span>
+</footer>
+
+<!-- ====== DONNÉES INLINE ====== -->
+<script id="seb-data" type="application/json">
+{{ data_payload_json|safe }}
+</script>
+
+<!-- ====== ECHARTS ====== -->
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+
+<!-- ====== APP ====== -->
+<script>
+{{ js_content|safe }}
+</script>
+
+<!-- ====== PWA ====== -->
+<script>
+if ('serviceWorker' in navigator && location.protocol === 'https:') {
+  addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+}
+</script>
+
+</body>
+</html>

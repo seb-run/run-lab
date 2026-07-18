@@ -1,0 +1,114 @@
+{
+  "profile": {
+    "hr_zones": {
+      "z1_max": 135,
+      "z2_max": 150,
+      "z3_max": 166,
+      "z4_max": 175
+    },
+    "name": "Sébastien",
+    "birthdate": "22/05/1992",
+    "role": "Chef de Projets FFF",
+    "fitness_target_time": "2h44'00",
+    "fitness_target_range": ["2h43'00", "2h45'00"],
+    "pb_marathon": "2h49'41",
+    "pb_marathon_event": "Amsterdam 2023"
+  },
+  "start_date": "2021-01-01",
+  "goals": [
+    {
+      "name": "Marathon témoin",
+      "date": null,
+      "window": ["2026-08-22", "2026-10-12"],
+      "type": "test_race",
+      "strategy_time": null,
+      "status": "tentative",
+      "priority": "secondary",
+      "notes": "Créneau pour tester la forme avant NYC (Cologne, Berlin, Lyon, Médoc...)"
+    },
+    {
+      "name": "NYC Marathon",
+      "date": "2026-11-01",
+      "type": "main",
+      "target_time": "2h44'00",
+      "strategy_time": "3h00'00",
+      "status": "confirmed",
+      "priority": "primary",
+      "notes": "Sub-3h objectif jour J (parcours dur, stratégie conservative)"
+    }
+  ],
+  "past_races": [
+    {
+      "name": "Marathon de Paris 2026",
+      "start_time": "2026-04-12T08:00",
+      "distance_key": "marathon",
+      "km": 42.43,
+      "time_s": 10203,
+      "note": "2h50'13 · pacing régulier (+5s/km Semi2 vs Semi1)"
+    },
+{
+      "name": "5K Kipchoge JO 2024",
+      "start_time": "2021-10-31T10:19",
+      "distance_key": "5k",
+      "km": 4.76,
+      "time_s": 1020,
+      "note": "17'00 · sous-mesure GPS Apple Watch (course officielle 5K)"
+    },
+    {
+      "name": "10K de Paris 2025",
+      "start_time": "2025-06-08T08:00",
+      "distance_key": "10k",
+      "km": 10.02,
+      "time_s": 2147,
+      "note": "35'47 · PR 10K"
+    },
+    {
+      "name": "Semi de Boulogne 2022",
+      "start_time": "2022-11-27T11:22",
+      "distance_key": "semi",
+      "km": 21.22,
+      "time_s": 4865,
+      "note": "1h21'05 · PR Semi"
+    },
+    {
+      "name": "Marathon de Chicago 2025",
+      "start_time": "2025-10-12T14:38",
+      "distance_key": "marathon",
+      "km": 42.59,
+      "time_s": 10475,
+      "note": "2h54'35"
+    },
+    {
+      "name": "Marathon de Paris 2025",
+      "start_time": "2025-04-13T08:01",
+      "distance_key": "marathon",
+      "km": 42.54,
+      "time_s": 10572,
+      "note": "2h56'12"
+    },
+    {
+      "name": "Marathon d'Amsterdam 2023",
+      "start_time": "2023-10-15T11:50",
+      "distance_key": "marathon",
+      "km": 42.52,
+      "time_s": 10180,
+      "note": "2h49'40 · PB actuel"
+    },
+    {
+      "name": "Marathon de Paris 2023",
+      "start_time": "2023-04-02T11:18",
+      "distance_key": "marathon",
+      "km": 42.51,
+      "time_s": 10573,
+      "note": "2h56'13"
+    },
+    {
+      "name": "Marathon de Paris 2022",
+      "start_time": "2022-04-03T11:33",
+      "distance_key": "marathon",
+      "km": 42.41,
+      "time_s": 10895,
+      "note": "3h01'35"
+    }
+  ]
+}

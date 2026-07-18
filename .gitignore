@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# macOS
+.DS_Store
+._*
+
+# IDE
+.vscode/
+.idea/
+
+# Cache local (les données utilisateur sont hors repo, dans ~/Documents/SebMetrics/)
+*.cache.json
+
+# Logs
+*.log
+
+# Backups locaux
+data/config.json.backup
