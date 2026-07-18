@@ -697,8 +697,18 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet ou mobilité/yoga 20-30min. Récupération.",
-          "status": "done",
-          "actual": null
+          "status": "bonus",
+          "actual": {
+            "km": 8.0,
+            "duration_min": 41,
+            "pace_sec": 305,
+            "pace_str": "5'05\"/km",
+            "fc": 152,
+            "type": "endurance",
+            "title": "#111 : run léger",
+            "n": 1
+          },
+          "score": null
         },
         {
           "type": "intervals",
@@ -710,8 +720,34 @@
           "target_pace": "3'16\"/km",
           "date": "2026-07-07",
           "dow": "Tue",
-          "status": "missed",
-          "actual": null
+          "status": "under",
+          "actual": {
+            "km": 10.0,
+            "duration_min": 49,
+            "pace_sec": 294,
+            "pace_str": "4'54\"/km",
+            "fc": 155,
+            "type": "endurance",
+            "title": "#112 : chaleur même en forêt",
+            "n": 1
+          },
+          "score": {
+            "points": 27,
+            "verdict": "failed",
+            "verdict_label": "Échouée",
+            "volume_pct": 64,
+            "volume_points": 48,
+            "pace_points": 0,
+            "pace_target_s": 196,
+            "pace_actual_s": 294,
+            "pace_actual_str": "4'54\"/km",
+            "pace_delta_s": 98,
+            "is_quality": true,
+            "reasons": [
+              "Volume 64%",
+              "Allure +98\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-07-08",
@@ -722,8 +758,33 @@
           "duration_min": 65,
           "key": false,
           "description": "12km à 5'26\"/km. Allure conversationnelle, FC en zone 2.",
-          "status": "missed",
-          "actual": null
+          "status": "done",
+          "actual": {
+            "km": 10.0,
+            "duration_min": 48,
+            "pace_sec": 285,
+            "pace_str": "4'45\"/km",
+            "fc": 150,
+            "type": "endurance",
+            "title": "#113 : blablarun matinal w/ Kevin",
+            "n": 1
+          },
+          "score": {
+            "points": 85,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 83,
+            "volume_points": 85,
+            "pace_points": null,
+            "pace_target_s": null,
+            "pace_actual_s": null,
+            "pace_actual_str": null,
+            "pace_delta_s": null,
+            "is_quality": false,
+            "reasons": [
+              "Volume 83%"
+            ]
+          }
         },
         {
           "type": "tempo",
@@ -747,8 +808,33 @@
           "duration_min": 52,
           "key": false,
           "description": "9km très facile, allure récupération. FC zone 1-2 bas.",
-          "status": "missed",
-          "actual": null
+          "status": "over",
+          "actual": {
+            "km": 12.0,
+            "duration_min": 58,
+            "pace_sec": 288,
+            "pace_str": "4'48\"/km",
+            "fc": 156,
+            "type": "endurance",
+            "title": "#114 : run « caniculaire » ✌🏼",
+            "n": 1
+          },
+          "score": {
+            "points": 85,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 138,
+            "volume_points": 85,
+            "pace_points": null,
+            "pace_target_s": null,
+            "pace_actual_s": null,
+            "pace_actual_str": null,
+            "pace_delta_s": null,
+            "is_quality": false,
+            "reasons": [
+              "Volume 138%"
+            ]
+          }
         },
         {
           "date": "2026-07-11",
@@ -772,20 +858,46 @@
           "target_pace": "4'51\"/km",
           "date": "2026-07-12",
           "dow": "Sun",
-          "status": "missed",
-          "actual": null
+          "status": "under",
+          "actual": {
+            "km": 10.6,
+            "duration_min": 50,
+            "pace_sec": 282,
+            "pace_str": "4'42\"/km",
+            "fc": 157,
+            "type": "endurance",
+            "title": "#115 : retour à Bouconne",
+            "n": 1
+          },
+          "score": {
+            "points": 49,
+            "verdict": "failed",
+            "verdict_label": "Échouée",
+            "volume_pct": 44,
+            "volume_points": 8,
+            "pace_points": 100,
+            "pace_target_s": 291,
+            "pace_actual_s": 282,
+            "pace_actual_str": "4'42\"/km",
+            "pace_delta_s": -9,
+            "is_quality": false,
+            "reasons": [
+              "Volume 44%",
+              "Allure −9\"/km vs cible"
+            ]
+          }
         }
       ],
       "compliance": {
-        "km_pct": 0,
-        "km_done": 0.0,
+        "km_pct": 56,
+        "km_done": 50.6,
         "km_planned": 90.0,
-        "sessions_done": 0,
+        "sessions_done": 4,
         "sessions_planned": 6,
         "keys_success": 0,
         "keys_total": 3,
-        "points": 0,
-        "verdict": "failed"
+        "points": 58,
+        "verdict": "partial"
       }
     },
     {
@@ -806,8 +918,18 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet ou mobilité/yoga 20-30min. Récupération.",
-          "status": "done",
-          "actual": null
+          "status": "bonus",
+          "actual": {
+            "km": 33.0,
+            "duration_min": 175,
+            "pace_sec": 318,
+            "pace_str": "5'18\"/km",
+            "fc": 156,
+            "type": "sortie_longue",
+            "title": "#116 : Bouconne = forêt tropicale ? 🌡️🥵",
+            "n": 1
+          },
+          "score": null
         },
         {
           "type": "fartlek",
@@ -923,19 +1045,19 @@
           "_rescheduled_pace": "3'43\"/km"
         }
       ],
-      "volume_actual_to_date": 9.0,
+      "volume_actual_to_date": 42.0,
       "volume_planned_to_date": 55.2,
-      "volume_drift_pct": -83.7,
+      "volume_drift_pct": -23.9,
       "compliance": {
-        "km_pct": 16,
-        "km_done": 9.0,
+        "km_pct": 76,
+        "km_done": 42.0,
         "km_planned": 55.2,
         "sessions_done": 1,
         "sessions_planned": 4,
         "keys_success": 0,
         "keys_total": 2,
-        "points": 50,
-        "verdict": "failed"
+        "points": 86,
+        "verdict": "success"
       }
     },
     {
@@ -2418,7 +2540,7 @@
     {
       "kind": "recovery_week",
       "week_num": 6,
-      "reason": "13 séances clés manquées — semaine de récup forcée"
+      "reason": "11 séances clés manquées — semaine de récup forcée"
     }
   ]
 }
