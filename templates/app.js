@@ -4650,7 +4650,7 @@
         <span class="plan-week-target">Objectif volume : <strong>${w.target_km} km</strong></span>
       </div>
       ${complianceBar}
-      <table class="plan-week-table"><tbody>${rows}</tbody></table>`;
+      <div class="plan-week-scroll"><table class="plan-week-table"><tbody>${rows}</tbody></table></div>`;
   }
 
   function planRenderCalendar() {

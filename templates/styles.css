@@ -35,7 +35,7 @@
 
   /* === Gradients === */
   --grad-brand: linear-gradient(135deg, #5b8af5 0%, #22d3a7 100%);
-  --grad-card:  linear-gradient(180deg, #ffffff 0%, #fafbfd 100%);
+  --grad-card:  linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
 
   /* === Typo === */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
@@ -115,7 +115,7 @@ h1, h2, h3, h4 {
 /* === HERO === */
 .hero {
   padding: var(--sp-7) 0 var(--sp-6);
-  background: linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+  background: linear-gradient(180deg, var(--surface) 0%, var(--bg) 100%);
 }
 
 .hero-inner {
@@ -787,7 +787,7 @@ h1, h2, h3, h4 {
   padding: 8px 0;
 }
 .record-card {
-  background: linear-gradient(135deg, var(--surface-2) 0%, #ffffff 100%);
+  background: linear-gradient(135deg, var(--surface-2) 0%, var(--surface) 100%);
   border: 1px solid rgba(15, 23, 42, 0.06);
   border-radius: 12px;
   padding: 16px 12px;
@@ -956,7 +956,7 @@ h1, h2, h3, h4 {
 }
 .modal-backdrop[hidden] { display: none; }
 .modal {
-  background: #fff;
+  background: var(--surface);
   border-radius: 16px;
   width: 100%;
   max-width: 520px;
@@ -1031,7 +1031,7 @@ h1, h2, h3, h4 {
   padding: 10px 12px;
   border: 1px solid rgba(15, 23, 42, 0.12);
   border-radius: 8px;
-  background: #fff;
+  background: var(--surface);
   color: var(--text);
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
@@ -1241,7 +1241,7 @@ h1, h2, h3, h4 {
 .splits-grid-4 { grid-template-columns: repeat(4, 1fr); }
 
 .split-card {
-  background: #fff;
+  background: var(--surface);
   border: 1px solid rgba(15, 23, 42, 0.06);
   border-radius: 10px;
   padding: 12px;
@@ -1295,7 +1295,7 @@ h1, h2, h3, h4 {
   margin-top: 20px;
 }
 .mara-chart-card {
-  background: #fff;
+  background: var(--surface);
   border: 1px solid rgba(15, 23, 42, 0.06);
   border-radius: 10px;
   padding: 14px 16px;
@@ -1535,7 +1535,7 @@ h1, h2, h3, h4 {
 .splits-grid-4 { grid-template-columns: repeat(4, 1fr); }
 
 .split-card {
-  background: #fff;
+  background: var(--surface);
   border: 1px solid rgba(15, 23, 42, 0.06);
   border-radius: 10px;
   padding: 12px;
@@ -1589,7 +1589,7 @@ h1, h2, h3, h4 {
   margin-top: 20px;
 }
 .mara-chart-card {
-  background: #fff;
+  background: var(--surface);
   border: 1px solid rgba(15, 23, 42, 0.06);
   border-radius: 10px;
   padding: 14px 16px;
@@ -1731,7 +1731,7 @@ h1, h2, h3, h4 {
   font-weight: 600;
   padding: 6px 12px;
   border: 1px solid rgba(15, 23, 42, 0.12);
-  background: #fff;
+  background: var(--surface);
   color: var(--text-2);
   border-radius: 6px;
   cursor: pointer;
@@ -1784,7 +1784,7 @@ h1, h2, h3, h4 {
   padding: 8px 12px;
   border: 1px solid rgba(15, 23, 42, 0.12);
   border-radius: 6px;
-  background: #fff;
+  background: var(--surface);
 }
 .sess-search:focus {
   outline: none;
@@ -1810,7 +1810,7 @@ h1, h2, h3, h4 {
   padding: 6px 8px;
   border: 1px solid rgba(15, 23, 42, 0.12);
   border-radius: 6px;
-  background: #fff;
+  background: var(--surface);
 }
 .sess-range-filter input[type="number"]:focus {
   outline: none;
@@ -1829,7 +1829,7 @@ h1, h2, h3, h4 {
   font-weight: 500;
   padding: 5px 10px;
   border: 1px solid rgba(15, 23, 42, 0.12);
-  background: #fff;
+  background: var(--surface);
   color: var(--text-2);
   border-radius: 999px;
   cursor: pointer;
@@ -1956,7 +1956,7 @@ h1, h2, h3, h4 {
   font-weight: 500;
   padding: 6px 14px;
   border: 1px solid rgba(15, 23, 42, 0.12);
-  background: #fff;
+  background: var(--surface);
   color: var(--text-2);
   border-radius: 6px;
   cursor: pointer;
@@ -2025,7 +2025,7 @@ h1, h2, h3, h4 {
   gap: 14px;
 }
 .sess-modal-chart-card {
-  background: #fff;
+  background: var(--surface);
   border: 1px solid rgba(15, 23, 42, 0.06);
   border-radius: 10px;
   padding: 12px;
@@ -2141,7 +2141,7 @@ h1, h2, h3, h4 {
   margin: 0 0 16px;
   border: 1px solid rgba(15, 23, 42, 0.08);
   border-radius: 10px;
-  background: #fff;
+  background: var(--surface);
   overflow: hidden;
 }
 
@@ -2537,7 +2537,7 @@ h1, h2, h3, h4 {
 }
 .pred-nyc-card {
   padding: 16px;
-  background: #fff;
+  background: var(--surface);
   border: 1px solid rgba(15, 23, 42, 0.08);
   border-radius: 10px;
   text-align: center;
@@ -2618,7 +2618,7 @@ h1, h2, h3, h4 {
   gap: 16px;
   padding: 16px 20px;
   border-radius: 12px;
-  background: #fff;
+  background: var(--surface);
   border-left: 4px solid #5b8af5;
   box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
 }
@@ -2690,7 +2690,7 @@ h1, h2, h3, h4 {
 .reco-card.reco-good .reco-icon { color: #5b8af5; }
 
 .reco-card.reco-neutral {
-  background: #fff;
+  background: var(--surface);
   border-left-color: var(--text-3);
 }
 .reco-card.reco-neutral .reco-icon { color: var(--text-3); }
@@ -2736,7 +2736,7 @@ h1, h2, h3, h4 {
   padding: 10px 12px;
   border: 1px solid rgba(15, 23, 42, 0.12);
   border-radius: 6px;
-  background: #fff;
+  background: var(--surface);
   color: var(--text);
   cursor: pointer;
 }
@@ -2824,7 +2824,7 @@ h1, h2, h3, h4 {
   gap: 16px;
 }
 .comp-chart-card {
-  background: #fff;
+  background: var(--surface);
   border: 1px solid rgba(15, 23, 42, 0.06);
   border-radius: 10px;
   padding: 14px 16px;
@@ -2898,7 +2898,7 @@ h1, h2, h3, h4 {
 
 /* ---- Plan : répartition qualitative ---------------------------------- */
 .plan-distrib-card {
-  background: #fff;
+  background: var(--surface);
   border-radius: 8px;
   padding: 12px 16px;
   margin-bottom: 10px;
@@ -2990,7 +2990,7 @@ h1, h2, h3, h4 {
 }
 .plan-today-stats > div {
   display: flex; flex-direction: column; padding: 10px 12px;
-  background: #fff; border-radius: 8px; border: 1px solid rgba(15, 23, 42, 0.06);
+  background: var(--surface); border-radius: 8px; border: 1px solid rgba(15, 23, 42, 0.06);
 }
 .plan-today-stats .kv-label {
   font-size: 11px; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.5px;
@@ -2998,7 +2998,7 @@ h1, h2, h3, h4 {
 .plan-today-stats .kv-value { font-size: 16px; font-weight: 700; color: var(--text); margin-top: 2px; }
 .plan-today-desc {
   margin: 14px 0 0; color: var(--text); font-size: 14px; line-height: 1.6;
-  background: #fff; padding: 12px 14px; border-radius: 8px;
+  background: var(--surface); padding: 12px 14px; border-radius: 8px;
   border: 1px solid rgba(15, 23, 42, 0.06);
 }
 .plan-actual-line {
@@ -3017,7 +3017,7 @@ h1, h2, h3, h4 {
   gap: 12px;
 }
 .plan-pace-card {
-  padding: 14px 16px; background: #fff; border-radius: 8px;
+  padding: 14px 16px; background: var(--surface); border-radius: 8px;
   border: 1px solid rgba(15, 23, 42, 0.08); display: flex; flex-direction: column;
 }
 .plan-pace-label { font-size: 11px; color: var(--text-2); text-transform: uppercase; letter-spacing: 0.5px; }
@@ -3117,7 +3117,7 @@ h1, h2, h3, h4 {
 }
 .plan-adapt-item {
   display: flex; gap: 12px; padding: 14px;
-  background: #fff; border-radius: 8px; border: 1px solid rgba(15,23,42,0.08);
+  background: var(--surface); border-radius: 8px; border: 1px solid rgba(15,23,42,0.08);
   border-left: 3px solid #7c3aed;
 }
 .plan-adapt-icon {
@@ -3331,3 +3331,14 @@ html[data-theme="dark"] .coach-item.coach-applied { background: rgba(34, 197, 94
 html[data-theme="dark"] .coach-item.coach-pending { background: rgba(245, 158, 11, 0.1); }
 html[data-theme="dark"] .plan-week-compliance { background: var(--surface-3); }
 html[data-theme="dark"] .score-ring circle:first-of-type { stroke: var(--surface-3); }
+
+/* ============================================================
+   Anti-débordement horizontal (iOS dézoome sinon toute la page)
+   ============================================================ */
+html, body { overflow-x: hidden; width: 100%; }
+.plan-week-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.plan-week-table { width: 100%; }
+.plan-week-table td { word-break: break-word; }
+@media (max-width: 760px) {
+  .plan-week-table td:nth-child(3) .verdict-pill { display: block; width: max-content; margin: 3px 0 0; }
+}
