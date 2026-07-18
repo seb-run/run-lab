@@ -15,6 +15,12 @@
   const RACES    = RAW.races || { distances: [], past_races: [], goals: [], countdowns: [], tapers: [] };
   const PLAN     = RAW.plan || null;
 
+  // Palette thème (lue depuis les variables CSS → suit le mode clair/sombre)
+  const CSSV = (name, fallback) =>
+    (getComputedStyle(document.documentElement).getPropertyValue(name) || '').trim() || fallback;
+  const INK  = CSSV('--text', '#0f172a');
+  const INK2 = CSSV('--text-2', '#475569');
+
   // Conversion des dates en objets Date pour filtrage
   function parseDate(s) {
     const p = s.split('/');
@@ -414,7 +420,7 @@
   // ===== 6. CHARTS ECHARTS ==================================================
   const CHART_THEME = {
     color: ['#5b8af5', '#22d3a7', '#f0923e', '#9b6dff'],
-    textStyle: { fontFamily: 'Inter, system-ui, sans-serif', color: '#475569' },
+    textStyle: { fontFamily: 'Inter, system-ui, sans-serif', color: INK2 },
     grid: { left: 40, right: 16, top: 16, bottom: 32, containLabel: true },
     xAxis: {
       axisLine: { lineStyle: { color: 'rgba(15, 23, 42, 0.12)' } },
@@ -432,7 +438,7 @@
       backgroundColor: 'rgba(255, 255, 255, 0.96)',
       borderColor: 'rgba(15, 23, 42, 0.08)',
       borderWidth: 1,
-      textStyle: { color: '#0f172a', fontSize: 12 },
+      textStyle: { color: INK, fontSize: 12 },
       extraCssText: 'box-shadow: 0 4px 16px rgba(15,23,42,0.08); border-radius: 10px; padding: 8px 12px;',
     },
   };
@@ -575,13 +581,20 @@
   }
 
   // ===== 8. NAVIGATION ======================================================
-  function setupTabs() {
-    document.querySelectorAll('.tab').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.tab').forEach(b => b.classList.remove('on'));
-        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('on'));
-        btn.classList.add('on');
-        document.getElementById('t-' + btn.dataset.tab).classList.add('on');
+  function activateTab(name) {
+    const target = document.getElementById('t-' + name);
+    if (!target) return;
+    document.querySelectorAll('.tab').forEach(b => b.classList.remove('on'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('on'));
+    target.classList.add('on');
+    const btn = document.querySelector(`.tab[data-tab="${name}"]`);
+    if (btn) btn.classList.add('on');
+    else document.getElementById('tabMoreBtn')?.classList.add('on');
+    resizeAllCharts();
+    window.scrollTo({top: 0});
+  }
+
+  function resizeAllCharts() {
         // Resize tous les charts maintenant que l'onglet est visible.
         // ECharts a besoin d'un resize quand on passe d'un display:none à
         // un display:block (le chart calcule son layout sur 0×0 sinon).
@@ -606,8 +619,51 @@
             Object.values(chartsExtra).forEach(c => c && c.resize());
           }
         }, 50);
+  }
+
+  function setupTabs() {
+    document.querySelectorAll('.tab[data-tab]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        closeMoreMenu();
+        activateTab(btn.dataset.tab);
       });
     });
+
+    // Menu « Plus »
+    const moreBtn = document.getElementById('tabMoreBtn');
+    const moreMenu = document.getElementById('moreMenu');
+    if (moreBtn && moreMenu) {
+      moreBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        moreMenu.hidden = !moreMenu.hidden;
+      });
+      moreMenu.querySelectorAll('.more-item[data-tab]').forEach(item => {
+        item.addEventListener('click', () => {
+          closeMoreMenu();
+          activateTab(item.dataset.tab);
+        });
+      });
+      document.addEventListener('click', (e) => {
+        if (!moreMenu.hidden && !moreMenu.contains(e.target)) closeMoreMenu();
+      });
+    }
+
+    // Bascule thème clair/sombre
+    const themeBtn = document.getElementById('themeToggle');
+    if (themeBtn) {
+      const isDark = () => document.documentElement.dataset.theme === 'dark';
+      const syncLabel = () => { themeBtn.textContent = isDark() ? '☀️ Mode clair' : '🌙 Mode sombre'; };
+      syncLabel();
+      themeBtn.addEventListener('click', () => {
+        localStorage.setItem('seb-theme', isDark() ? 'light' : 'dark');
+        location.reload();  // recharge pour ré-initialiser les charts avec la bonne palette
+      });
+    }
+  }
+
+  function closeMoreMenu() {
+    const m = document.getElementById('moreMenu');
+    if (m) m.hidden = true;
   }
 
   // Rafraîchit l'intégralité de l'onglet Vue d'ensemble et le hero
@@ -1214,7 +1270,7 @@
       c.setOption({
         textStyle: CHART_THEME.textStyle,
         grid: { left: 50, right: 50, top: 30, bottom: 32, containLabel: true },
-        legend: { data: ['Allure', 'FC'], top: 0, textStyle: { color: '#475569', fontSize: 11 } },
+        legend: { data: ['Allure', 'FC'], top: 0, textStyle: { color: INK2, fontSize: 11 } },
         tooltip: {
           ...CHART_THEME.tooltip, trigger: 'axis',
           formatter: (params) => {
@@ -1717,14 +1773,14 @@
       data: ma4,
       smooth: true,
       symbol: 'none',
-      lineStyle: { width: 2.5, color: '#0f172a', type: 'dashed' },
+      lineStyle: { width: 2.5, color: INK, type: 'dashed' },
       z: 10,
     });
 
     const dom = volCharts.weeklyStacked = echarts.init(el);
     dom.setOption({
       ...CHART_THEME,
-      legend: { top: 0, textStyle: { color: '#475569', fontSize: 11 }, type: 'scroll' },
+      legend: { top: 0, textStyle: { color: INK2, fontSize: 11 }, type: 'scroll' },
       grid: { left: 40, right: 16, top: 36, bottom: 32, containLabel: true },
       tooltip: {
         ...CHART_THEME.tooltip, trigger: 'axis', axisPointer: { type: 'shadow' },
@@ -1822,13 +1878,13 @@
       textStyle: CHART_THEME.textStyle,
       tooltip: { ...CHART_THEME.tooltip, trigger: 'item',
                  formatter: p => `<b>${p.name}</b><br/>${p.value.toFixed(1)} km (${p.percent.toFixed(1)}%)` },
-      legend: { orient: 'vertical', left: 'left', top: 'center', textStyle: { color: '#475569', fontSize: 11 } },
+      legend: { orient: 'vertical', left: 'left', top: 'center', textStyle: { color: INK2, fontSize: 11 } },
       series: [{
         type: 'pie',
         radius: ['45%', '70%'],
         center: ['65%', '50%'],
         data,
-        label: { show: true, formatter: '{b}\n{d}%', fontSize: 10, color: '#475569' },
+        label: { show: true, formatter: '{b}\n{d}%', fontSize: 10, color: INK2 },
         labelLine: { length: 8, length2: 8 },
         animationDuration: 700,
       }],
@@ -1891,7 +1947,7 @@
     const dom = volCharts.cumulative = echarts.init(el);
     dom.setOption({
       ...CHART_THEME,
-      legend: { top: 0, textStyle: { color: '#475569', fontSize: 11 } },
+      legend: { top: 0, textStyle: { color: INK2, fontSize: 11 } },
       grid: { left: 40, right: 16, top: 36, bottom: 32, containLabel: true },
       tooltip: { ...CHART_THEME.tooltip, trigger: 'axis',
                  formatter: (params) => {
@@ -2359,7 +2415,7 @@
           c.setOption({
             textStyle: CHART_THEME.textStyle,
             grid: { left: 50, right: 50, top: 30, bottom: 32, containLabel: true },
-            legend: { data: ['Allure', 'FC'], top: 0, textStyle: { color: '#475569', fontSize: 11 } },
+            legend: { data: ['Allure', 'FC'], top: 0, textStyle: { color: INK2, fontSize: 11 } },
             tooltip: {
               ...CHART_THEME.tooltip, trigger: 'axis',
               formatter: (params) => {
@@ -2535,7 +2591,7 @@
     const dom = aeroCharts.scatter = echarts.init(el);
     dom.setOption({
       ...CHART_THEME,
-      legend: { top: 0, textStyle: { color: '#475569', fontSize: 11 } },
+      legend: { top: 0, textStyle: { color: INK2, fontSize: 11 } },
       grid: { left: 50, right: 20, top: 36, bottom: 40, containLabel: true },
       tooltip: {
         ...CHART_THEME.tooltip, trigger: 'item',
@@ -2831,7 +2887,7 @@
         return {
           xAxis: d,
           label: { show: true, formatter: r.name.replace(/Marathon de |Marathon d'/, '').slice(0, 14),
-                   fontSize: 9, color: '#475569', position: 'insideEndTop' },
+                   fontSize: 9, color: INK2, position: 'insideEndTop' },
           lineStyle: { color: '#5b8af5', width: 1.5, type: 'dashed' },
         };
       });
@@ -2903,7 +2959,7 @@
     const dom = progCharts.paces = echarts.init(el);
     dom.setOption({
       ...CHART_THEME,
-      legend: { top: 0, textStyle: { color: '#475569', fontSize: 11 } },
+      legend: { top: 0, textStyle: { color: INK2, fontSize: 11 } },
       grid: { left: 60, right: 16, top: 36, bottom: 40, containLabel: true },
       tooltip: {
         ...CHART_THEME.tooltip, trigger: 'axis',
@@ -3124,7 +3180,7 @@
       ...CHART_THEME,
       legend: {
         top: 0,
-        textStyle: { color: '#475569', fontSize: 12 },
+        textStyle: { color: INK2, fontSize: 12 },
         data: ['CTL (forme)', 'ATL (fatigue)', 'TSB (fraîcheur)'],
         itemGap: 24,
       },
@@ -3887,7 +3943,7 @@
     dom.setOption({
       textStyle: CHART_THEME.textStyle,
       grid: { left: 50, right: 16, top: 30, bottom: 32, containLabel: true },
-      legend: { data: ['Séance A', 'Séance B'], top: 0, textStyle: { color: '#475569', fontSize: 11 } },
+      legend: { data: ['Séance A', 'Séance B'], top: 0, textStyle: { color: INK2, fontSize: 11 } },
       tooltip: {
         ...CHART_THEME.tooltip, trigger: 'axis',
         formatter: (params) => {
@@ -3930,7 +3986,7 @@
     dom.setOption({
       textStyle: CHART_THEME.textStyle,
       grid: { left: 50, right: 16, top: 30, bottom: 32, containLabel: true },
-      legend: { data: ['Séance A', 'Séance B'], top: 0, textStyle: { color: '#475569', fontSize: 11 } },
+      legend: { data: ['Séance A', 'Séance B'], top: 0, textStyle: { color: INK2, fontSize: 11 } },
       tooltip: {
         ...CHART_THEME.tooltip, trigger: 'axis',
         formatter: (params) => {
@@ -4385,14 +4441,19 @@
 
   function planRenderTodayCard() {
     const wrap = document.getElementById('planTodayCard');
-    if (!wrap) return;
+    const homeWrap = document.getElementById('homeToday');
+    if (!wrap && !homeWrap) return;
+    const setHTML = (h) => {
+      if (wrap) wrap.innerHTML = h;
+      if (homeWrap) homeWrap.innerHTML = h;
+    };
     if (!PLAN) {
-      wrap.innerHTML = '<p class="race-table-empty">Pas de plan actif. Définis un objectif principal dans config.json pour activer le plan.</p>';
+      setHTML('<p class="race-table-empty">Pas de plan actif. Définis un objectif principal dans config.json pour activer le plan.</p>');
       return;
     }
     const today = planFindToday();
     if (!today) {
-      wrap.innerHTML = '<p class="race-table-empty">Pas de séance prévue aujourd\'hui.</p>';
+      setHTML('<p class="race-table-empty">Pas de séance prévue aujourd\'hui.</p>');
       return;
     }
     const d = today.day;
@@ -4429,7 +4490,9 @@
       </div>`;
     }
 
-    wrap.innerHTML = `
+    const subEl = document.getElementById('homeTodaySub');
+    if (subEl) subEl.textContent = `W${w.week_num}/${PLAN.meta.weeks_total} · ${w.phase_label} · J−${Math.floor((new Date(PLAN.meta.goal_date) - new Date(d.date)) / 86400000)}`;
+    setHTML(`
       <div class="plan-today-head" style="border-left:6px solid ${color};">
         ${rescheduledBlock}
         <div class="plan-today-meta">
@@ -4447,21 +4510,23 @@
         </div>
         <p class="plan-today-desc">${displayDesc}</p>
         ${actualBlock}
-      </div>`;
+      </div>`);
   }
 
   function planRenderCoach() {
-    const card = document.getElementById('coachCard');
-    const wrap = document.getElementById('coachContent');
-    if (!card || !wrap) return;
+    const targets = [
+      {card: document.getElementById('coachCard'), wrap: document.getElementById('coachContent'), date: document.getElementById('coachDate')},
+      {card: document.getElementById('homeCoachCard'), wrap: document.getElementById('homeCoach'), date: document.getElementById('homeCoachDate')},
+    ].filter(t => t.card && t.wrap);
+    if (!targets.length) return;
     const c = RAW.coach;
-    if (!c || (!c.analysis && !(c.pending || []).length)) { card.style.display = 'none'; return; }
-    card.style.display = '';
-    const dateEl = document.getElementById('coachDate');
-    if (dateEl && c.generated_at) {
-      dateEl.textContent = 'analyse du ' + new Date(c.generated_at)
-        .toLocaleDateString('fr-FR', {weekday: 'long', day: 'numeric', month: 'long'});
+    if (!c || (!c.analysis && !(c.pending || []).length)) {
+      targets.forEach(t => { t.card.style.display = 'none'; });
+      return;
     }
+    const dateStr = c.generated_at
+      ? 'analyse du ' + new Date(c.generated_at).toLocaleDateString('fr-FR', {weekday: 'long', day: 'numeric', month: 'long'})
+      : '';
 
     const KIND_LABELS = {
       volume_adjust: 'Ajustement volume', add_note: 'Consigne',
@@ -4494,7 +4559,11 @@
           <div class="coach-item-reason">${escapeHtml(p.reason || '')}</div></div>
         </div>`).join('');
     }
-    wrap.innerHTML = html;
+    targets.forEach(t => {
+      t.card.style.display = '';
+      t.wrap.innerHTML = html;
+      if (t.date) t.date.textContent = dateStr;
+    });
   }
 
   function planRenderAdaptations() {
@@ -4552,7 +4621,7 @@
       } else {
         statusCell = st.icon;
       }
-      return `<tr class="${st.cls}${isToday}">
+      return `<tr class="${st.cls}${isToday}" data-day-date="${d.date}">
         <td class="plan-day-status">${statusCell}</td>
         <td>${(new Date(d.date)).toLocaleDateString('fr-FR', {weekday:'short', day:'numeric'})}</td>
         <td><span class="plan-type-dot" style="background:${color}"></span> ${titleDisplay} ${d.score ? verdictPill(d.score) : ''}</td>
@@ -4610,7 +4679,7 @@
         const km = d.km > 0 ? Math.round(d.km) : '';
         const scoreInfo = d.score ? ` · ${d.score.verdict_label} ${d.score.points}/100 (${scoreTooltip(d.score)})` : (d.status === 'missed' ? ' · Manquée' : '');
         const titleAttr = `${d.title}${d.km>0 ? ' · '+d.km+'km' : ''}${d.target_pace ? ' · '+d.target_pace : ''}${scoreInfo}`;
-        return `<div class="${cls}" style="--c:${color}" title="${escapeHtml(titleAttr)}">
+        return `<div class="${cls}" style="--c:${color}" title="${escapeHtml(titleAttr)}" data-day-date="${d.date}">
           <span class="plan-cal-km">${km}</span>
         </div>`;
       }).join('');
@@ -4667,6 +4736,148 @@
     wrap.innerHTML = cards;
   }
 
+  // --- Fiche séance (bottom-sheet) --------------------------------------
+  function planFindDay(iso) {
+    for (const w of (PLAN?.weeks || [])) {
+      for (const d of (w.days || [])) {
+        if (d.date === iso) return {day: d, week: w};
+      }
+    }
+    return null;
+  }
+
+  function openDaySheet(iso) {
+    const found = planFindDay(iso);
+    const backdrop = document.getElementById('sheetBackdrop');
+    const content = document.getElementById('sheetContent');
+    if (!found || !backdrop || !content) return;
+    const {day: d, week: w} = found;
+    const color = PLAN_TYPE_COLORS[d.type] || '#5b8af5';
+    const typeLabel = PLAN_TYPE_LABELS[d.type] || d.type;
+    const dateFr = (new Date(d.date)).toLocaleDateString('fr-FR', {weekday: 'long', day: 'numeric', month: 'long'});
+
+    const title = d._rescheduled_title || d.title;
+    const desc = (d._rescheduled_desc || d.description || '').replace(/\n/g, '<br/>');
+    const pace = d._rescheduled_pace || d.target_pace;
+
+    let actualBlock = '';
+    if (d.actual) {
+      const a = d.actual;
+      actualBlock = `<div class="sheet-section">
+        <div class="sheet-section-title">Réalisé</div>
+        <div class="sheet-actual">
+          <strong>${a.km} km</strong>${a.pace_str ? ' · ' + escapeHtml(a.pace_str) : ''}${a.fc ? ' · FC ' + a.fc : ''}
+          ${a.duration_min ? ' · ' + (Math.floor(a.duration_min/60) > 0 ? Math.floor(a.duration_min/60)+'h'+String(a.duration_min%60).padStart(2,'0') : a.duration_min+' min') : ''}
+        </div>
+        ${d.score ? `<div class="sheet-score">${scoreRing(d.score.points, d.score.verdict, 44)}
+          <div><div>${verdictPill(d.score)}</div>
+          <div class="coach-item-reason">${escapeHtml(scoreTooltip(d.score))}</div></div></div>` : ''}
+      </div>`;
+    } else if (d.status === 'missed') {
+      actualBlock = `<div class="sheet-section"><span class="verdict-pill" style="--vc:#94a3b8">✗ Manquée</span></div>`;
+    }
+
+    content.innerHTML = `
+      <div class="sheet-meta">${dateFr} · W${w.week_num}/${PLAN.meta.weeks_total} · ${escapeHtml(w.phase_label)}</div>
+      <div class="sheet-title">
+        <span class="plan-type-pill" style="background:${color}">${typeLabel}</span>
+        <h2>${escapeHtml(title)}</h2>
+      </div>
+      <div class="sheet-stats">
+        ${d.km > 0 ? `<div><span class="kv-label">Distance</span><span class="kv-value">${d.km} km</span></div>` : ''}
+        ${d.duration_min > 0 ? `<div><span class="kv-label">Durée</span><span class="kv-value">~${d.duration_min} min</span></div>` : ''}
+        ${pace ? `<div><span class="kv-label">Allure cible</span><span class="kv-value">${escapeHtml(pace)}</span></div>` : ''}
+      </div>
+      ${desc ? `<div class="sheet-section"><div class="sheet-section-title">Consignes</div><p class="sheet-desc">${desc}</p></div>` : ''}
+      ${actualBlock}`;
+    backdrop.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDaySheet() {
+    const backdrop = document.getElementById('sheetBackdrop');
+    if (backdrop) backdrop.hidden = true;
+    document.body.style.overflow = '';
+  }
+
+  function setupDaySheet() {
+    const backdrop = document.getElementById('sheetBackdrop');
+    if (!backdrop) return;
+    document.getElementById('sheetClose')?.addEventListener('click', closeDaySheet);
+    backdrop.addEventListener('click', (e) => { if (e.target === backdrop) closeDaySheet(); });
+    document.addEventListener('click', (e) => {
+      const el = e.target.closest('[data-day-date]');
+      if (el) openDaySheet(el.getAttribute('data-day-date'));
+    });
+  }
+
+  // --- Accueil ------------------------------------------------------------
+  function homeRenderLast() {
+    const wrap = document.getElementById('homeLast');
+    if (!wrap) return;
+    let best = null;
+    for (const w of (PLAN?.weeks || [])) {
+      for (const d of (w.days || [])) {
+        if (d.actual && d.date) {
+          if (!best || d.date > best.date) best = d;
+        }
+      }
+    }
+    if (!best) { wrap.innerHTML = '<p class="race-table-empty">Aucune séance récente.</p>'; return; }
+    const a = best.actual;
+    wrap.innerHTML = `
+      <div class="home-last" data-day-date="${best.date}">
+        <div class="home-last-main">
+          <div class="home-last-title">${escapeHtml(a.title || best.title || '')}</div>
+          <div class="home-last-sub">${(new Date(best.date)).toLocaleDateString('fr-FR', {weekday: 'long', day: 'numeric', month: 'long'})}</div>
+          <div class="home-last-stats"><strong>${a.km} km</strong>${a.pace_str ? ' · ' + escapeHtml(a.pace_str) : ''}${a.fc ? ' · FC ' + a.fc : ''}</div>
+          ${best.score ? `<div style="margin-top:6px">${verdictPill(best.score)}</div>` : ''}
+        </div>
+        ${best.score ? `<div>${scoreRing(best.score.points, best.score.verdict, 54)}</div>` : ''}
+      </div>`;
+  }
+
+  function homeRenderWeek() {
+    const wrap = document.getElementById('homeWeek');
+    if (!wrap) return;
+    const w = planFindCurrentWeek();
+    if (!w) { wrap.innerHTML = '<p class="race-table-empty">Hors période de plan.</p>'; return; }
+    const sub = document.getElementById('homeWeekSub');
+    if (sub) sub.textContent = `W${w.week_num}/${PLAN.meta.weeks_total} · ${w.phase_label}`;
+    const todayIso = localISODate();
+
+    const dots = (w.days || []).map(d => {
+      const verdict = d.score ? d.score.verdict : (d.status === 'missed' ? 'missed' : null);
+      const m = verdict ? VERDICT_META[verdict] : null;
+      const isToday = d.date === todayIso;
+      const isRest = (d.km || 0) <= 0;
+      const bg = m ? m.color : (isRest ? 'transparent' : 'var(--surface-3)');
+      const border = isToday ? 'var(--c-blue)' : (isRest ? 'var(--border-2)' : 'transparent');
+      return `<div class="home-week-dot" data-day-date="${d.date}"
+        style="background:${bg};border:2px ${isRest && !m ? 'dashed' : 'solid'} ${border}"
+        title="${escapeHtml(d.title || '')}">
+        <span>${['L','M','M','J','V','S','D'][(new Date(d.date)).getDay() === 0 ? 6 : (new Date(d.date)).getDay() - 1]}</span>
+      </div>`;
+    }).join('');
+
+    let bar = '';
+    if (w.compliance) {
+      const c = w.compliance;
+      const m = VERDICT_META[c.verdict] || VERDICT_META.partial;
+      bar = `<div class="pwc-bar-wrap" style="margin-top:12px"><div class="pwc-bar" style="width:${Math.min(c.km_pct, 100)}%;background:${m.color}"></div></div>
+        <div class="pwc-detail">${c.km_done} / ${c.km_planned} km (${c.km_pct}%)${c.keys_total ? ` · clés ${c.keys_success}/${c.keys_total}` : ''}</div>`;
+    } else {
+      const target = w.target_km ? `<div class="pwc-detail">Objectif : ${w.target_km} km</div>` : '';
+      bar = target;
+    }
+    wrap.innerHTML = `<div class="home-week-dots">${dots}</div>${bar}`;
+  }
+
+  function renderHomeTab() {
+    homeRenderLast();
+    homeRenderWeek();
+  }
+
   function renderPlanTab() {
     // Nouvelles vues plan engine
     planRenderTodayCard();
@@ -4684,6 +4895,8 @@
 
   function initPlanTab() {
     renderPlanTab();
+    renderHomeTab();
+    setupDaySheet();
   }
 
   // ===== 11. INIT ===========================================================
