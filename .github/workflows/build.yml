@@ -11,6 +11,17 @@ on:
     types: [strava-activity]
   schedule:
     - cron: '45 5 * * *'
+  # Rebuild auto quand le code du dashboard change (pas de boucle : les commits
+  # du CI ne touchent que index.html/output/data, hors de ces paths)
+  push:
+    branches: [main]
+    paths:
+      - 'templates/**'
+      - 'modules/**'
+      - 'scripts/**'
+      - 'build.py'
+      - 'manifest.webmanifest'
+      - 'sw.js'
   workflow_dispatch:
     inputs:
       regen_plan:
