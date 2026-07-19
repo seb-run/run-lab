@@ -5112,7 +5112,6 @@
     homeRenderDuel();
     homeRenderLast();
     homeRenderWeek();
-    homeRenderPrint();
   }
 
   function renderPlanTab() {
