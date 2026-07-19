@@ -4873,9 +4873,245 @@
     wrap.innerHTML = `<div class="home-week-dots">${dots}</div>${bar}`;
   }
 
+  // --- Compteurs odomètre ---------------------------------------------
+  function animateNum(el, target, dec, suffix) {
+    if (!el) return;
+    const dur = 1300, t0 = performance.now();
+    const fmt = (v) => v.toLocaleString('fr-FR', {minimumFractionDigits: dec, maximumFractionDigits: dec}) + (suffix || '');
+    function frame(t) {
+      const p = Math.min(1, (t - t0) / dur);
+      const e = 1 - Math.pow(1 - p, 3);
+      el.textContent = fmt(target * e);
+      if (p < 1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+
+  // --- La route vers NYC ----------------------------------------------
+  function homeRenderRoute() {
+    const wrap = document.getElementById('homeRoute');
+    if (!wrap || !PLAN || !PLAN.weeks?.length) { if (wrap) wrap.innerHTML = ''; return; }
+    const weeks = PLAN.weeks;
+    const N = weeks.length;
+    const todayIso = localISODate();
+    const curIdx = Math.max(0, weeks.findIndex(w => w.start_date <= todayIso && todayIso <= w.end_date));
+    const daysLeft = Math.max(0, Math.round((new Date(PLAN.meta.goal_date) - new Date()) / 86400000));
+
+    const W = 1000, H = 230, padX = 40, topY = 46, botY = 196;
+    const kms = weeks.map(w => w.target_km || 0);
+    const kmin = Math.min(...kms), kmax = Math.max(...kms) || 1;
+    const pts = weeks.map((w, i) => [
+      padX + i * (W - 2 * padX) / (N - 1),
+      botY - ((kms[i] - kmin) / (kmax - kmin || 1)) * (botY - topY),
+    ]);
+    // Lissage : courbe passant par les milieux
+    let dRoute = `M ${pts[0][0]} ${pts[0][1]}`;
+    for (let i = 1; i < N; i++) {
+      const [x0, y0] = pts[i - 1], [x1, y1] = pts[i];
+      const mx = (x0 + x1) / 2;
+      dRoute += ` C ${mx} ${y0}, ${mx} ${y1}, ${x1} ${y1}`;
+    }
+    const nodes = weeks.map((w, i) => {
+      const [x, y] = pts[i];
+      const v = w.compliance ? w.compliance.verdict : null;
+      const isCur = i === curIdx, isRace = w.phase === 'race';
+      let fill = 'none', stroke = '#94a3b8';
+      if (v) { fill = (VERDICT_META[v] || {}).color; stroke = fill; }
+      if (isCur) { fill = '#5b8af5'; stroke = '#5b8af5'; }
+      if (isRace) { fill = '#dc2626'; stroke = '#dc2626'; }
+      return `<g class="route-node${isCur ? ' current' : ''}" data-week="${w.week_num}" transform="translate(${x},${y})">
+        ${isCur ? '<circle r="13" class="route-pulse" fill="#5b8af5" opacity="0.25"/>' : ''}
+        <circle r="${isRace ? 8 : isCur ? 7 : 5}" fill="${fill}" stroke="${stroke}" stroke-width="2"/>
+        ${isRace ? `<text y="-14" text-anchor="middle" font-size="15">🏁</text>` : ''}
+        <title>W${w.week_num} · ${w.phase_label} · ${w.target_km} km${w.compliance ? ` · ${w.compliance.km_pct}%` : ''}</title>
+      </g>`;
+    }).join('');
+
+    wrap.innerHTML = `
+      <div class="route-card">
+        <div class="route-head">
+          <div class="route-title">La route vers <strong>NYC</strong></div>
+          <div class="route-stats">
+            <div class="route-stat"><span class="route-stat-v" id="routeDays">0</span><span class="route-stat-l">jours</span></div>
+            <div class="route-stat"><span class="route-stat-v" id="routeWeekKm">0</span><span class="route-stat-l">km cette sem.</span></div>
+            <div class="route-stat"><span class="route-stat-v" id="routeVma">0</span><span class="route-stat-l">VMA</span></div>
+          </div>
+        </div>
+        <svg viewBox="0 0 ${W} ${H}" class="route-svg" preserveAspectRatio="xMidYMid meet">
+          <path d="${dRoute}" class="route-bg" />
+          <path d="${dRoute}" class="route-done" id="routeDonePath" />
+          ${nodes}
+        </svg>
+        <div class="route-legend">W${curIdx + 1}/${N} · ${escapeHtml(weeks[curIdx]?.phase_label || '')} · objectif <strong>${escapeHtml(PLAN.meta.strategy_time || PLAN.meta.target_time || '')}</strong></div>
+      </div>`;
+
+    // Progression du tracé jusqu'à la semaine courante
+    requestAnimationFrame(() => {
+      const done = document.getElementById('routeDonePath');
+      if (!done || !done.getTotalLength) return;
+      const L = done.getTotalLength();
+      const frac = curIdx / (N - 1);
+      done.style.strokeDasharray = `${L}`;
+      done.style.strokeDashoffset = `${L}`;
+      done.getBoundingClientRect();
+      done.style.transition = 'stroke-dashoffset 1.6s cubic-bezier(0.16,1,0.3,1)';
+      done.style.strokeDashoffset = `${L * (1 - frac)}`;
+    });
+
+    // Compteurs
+    const curW = weeks[curIdx];
+    animateNum(document.getElementById('routeDays'), daysLeft, 0, '');
+    animateNum(document.getElementById('routeWeekKm'),
+      curW?.compliance ? curW.compliance.km_done : (curW?.target_km || 0), 1, '');
+    animateNum(document.getElementById('routeVma'), PLAN.meta.vma_used || 0, 1, '');
+
+    wrap.querySelectorAll('.route-node').forEach(n =>
+      n.addEventListener('click', (e) => { e.stopPropagation(); activateTab('plan'); }));
+  }
+
+  // --- Le duel ----------------------------------------------------------
+  function parsePaceLoose(v) {
+    if (v == null) return null;
+    if (typeof v === 'number') return v > 20 ? v : null;
+    const m = String(v).match(/(\d+)'(\d{1,2})/);
+    return m ? (+m[1]) * 60 + (+m[2]) : null;
+  }
+
+  function homeRenderDuel() {
+    const card = document.getElementById('homeDuelCard');
+    const wrap = document.getElementById('homeDuel');
+    if (!card || !wrap || !PLAN) return;
+    const target = PLAN.meta?.paces_sec?.mp_strategy || parsePaceLoose(PLAN.meta?.paces_str?.mp_strategy) || 255;
+    const cur = parsePaceLoose(PERF.now?.paces?.marathon);
+    const past = parsePaceLoose(PERF.past?.paces?.marathon) || (cur ? cur + 15 : null);
+    if (!cur) { card.style.display = 'none'; return; }
+    card.style.display = '';
+
+    const span = Math.max(1, past - target);
+    const youPct = Math.max(6, Math.min(100, ((past - cur) / span) * 100));
+    const weeksTotal = PLAN.meta.weeks_total || 21;
+    const curWeek = (PLAN.weeks || []).findIndex(w => w.start_date <= localISODate() && localISODate() <= w.end_date) + 1;
+    const ghostPct = Math.max(6, Math.min(100, (curWeek / weeksTotal) * 100));
+    const gap = cur - target;
+    const gapTxt = gap <= 0
+      ? `${Math.abs(gap)}" d'avance sur l'allure cible`
+      : `${gap}" à gagner d'ici novembre`;
+
+    wrap.innerHTML = `
+      <div class="duel-lane">
+        <div class="duel-label">TOI · allure marathon estimée <strong>${fmtPaceApp(cur)}</strong></div>
+        <div class="duel-track"><div class="duel-fill duel-you" style="width:${youPct}%"><span class="duel-runner">🏃</span></div></div>
+      </div>
+      <div class="duel-lane">
+        <div class="duel-label">SUB-3H · le rythme à tenir <strong>${fmtPaceApp(target)}</strong></div>
+        <div class="duel-track"><div class="duel-fill duel-ghost" style="width:${ghostPct}%"><span class="duel-runner">👻</span></div></div>
+      </div>
+      <div class="duel-gap ${gap <= 0 ? 'ahead' : 'behind'}">${gapTxt}</div>`;
+  }
+
+  function fmtPaceApp(s) {
+    if (!s) return '—';
+    const m = Math.floor(s / 60), r = Math.round(s % 60);
+    return `${m}'${String(r).padStart(2, '0')}"/km`;
+  }
+
+  // --- L'empreinte du coureur ------------------------------------------
+  function printWeeksData() {
+    const byWeek = new Map();
+    SESSIONS.forEach(s => {
+      const d = s._date;
+      const jan = new Date(d.getFullYear(), 0, 1);
+      const wk = d.getFullYear() * 100 + Math.floor(((d - jan) / 86400000 + jan.getDay()) / 7);
+      if (!byWeek.has(wk)) byWeek.set(wk, {km: 0, ps: [], sessions: []});
+      const b = byWeek.get(wk);
+      b.km += s.km || 0;
+      if (s.ps) b.ps.push(s.ps);
+      b.sessions.push(s.km || 0);
+    });
+    return [...byWeek.entries()].sort((a, b) => a[0] - b[0]).map(([, v]) => v);
+  }
+
+  function paceColor(ps) {
+    if (!ps) return '#5b8af5';
+    if (ps <= 250) return '#ef4444';
+    if (ps <= 280) return '#f0923e';
+    if (ps <= 310) return '#9b6dff';
+    if (ps <= 340) return '#5b8af5';
+    return '#22d3a7';
+  }
+
+  function drawPrint(canvas, size) {
+    const weeks = printWeeksData();
+    if (!weeks.length || !canvas) return 0;
+    const dpr = Math.min(2, window.devicePixelRatio || 1);
+    canvas.width = size * dpr; canvas.height = size * dpr;
+    canvas.style.width = size + 'px'; canvas.style.height = size + 'px';
+    const ctx = canvas.getContext('2d');
+    ctx.scale(dpr, dpr);
+    ctx.clearRect(0, 0, size, size);
+    const cx = size / 2, cy = size / 2;
+    const r0 = size * 0.045, rMax = size * 0.47;
+    const step = (rMax - r0) / weeks.length;
+    const kmMax = Math.max(...weeks.map(w => w.km)) || 1;
+    weeks.forEach((w, i) => {
+      const r = r0 + i * step;
+      const lw = Math.max(0.5, (w.km / kmMax) * step * 2.4);
+      const avgPs = w.ps.length ? w.ps.reduce((a, b) => a + b, 0) / w.ps.length : null;
+      ctx.strokeStyle = paceColor(avgPs);
+      ctx.globalAlpha = 0.35 + 0.55 * (w.km / kmMax);
+      ctx.lineWidth = Math.min(lw, step * 1.6);
+      ctx.lineCap = 'round';
+      const total = w.sessions.reduce((a, b) => a + b, 0) || 1;
+      let ang = i * 0.35;
+      const gapA = 0.06;
+      const avail = Math.PI * 2 - gapA * w.sessions.length;
+      w.sessions.forEach(km => {
+        const a1 = ang + (km / total) * avail;
+        ctx.beginPath();
+        ctx.arc(cx, cy, r, ang, a1);
+        ctx.stroke();
+        ang = a1 + gapA;
+      });
+    });
+    ctx.globalAlpha = 1;
+    return weeks.length;
+  }
+
+  function homeRenderPrint() {
+    const canvas = document.getElementById('printCanvas');
+    if (!canvas) return;
+    const n = drawPrint(canvas, Math.min(320, (canvas.parentElement?.clientWidth || 320)));
+    const sub = document.getElementById('homePrintSub');
+    if (sub) sub.textContent = `${n} semaines · ${SESSIONS.length} séances`;
+    document.getElementById('printFullBtn')?.addEventListener('click', openPrintFull);
+    canvas.addEventListener('click', openPrintFull);
+    document.getElementById('printClose')?.addEventListener('click', () => {
+      document.getElementById('printOverlay').hidden = true;
+      document.body.style.overflow = '';
+    });
+  }
+
+  function openPrintFull() {
+    const ov = document.getElementById('printOverlay');
+    const canvas = document.getElementById('printFullCanvas');
+    if (!ov || !canvas) return;
+    ov.hidden = false;
+    document.body.style.overflow = 'hidden';
+    const size = Math.min(window.innerWidth, window.innerHeight) * 0.9;
+    drawPrint(canvas, size);
+    const cap = document.getElementById('printCaption');
+    if (cap) {
+      const totKm = Math.round(SESSIONS.reduce((a, s) => a + (s.km || 0), 0));
+      cap.textContent = `${PROFILE.name || 'Toi'} · ${SESSIONS.length} séances · ${totKm.toLocaleString('fr-FR')} km — une empreinte unique`;
+    }
+  }
+
   function renderHomeTab() {
+    homeRenderRoute();
+    homeRenderDuel();
     homeRenderLast();
     homeRenderWeek();
+    homeRenderPrint();
   }
 
   function renderPlanTab() {

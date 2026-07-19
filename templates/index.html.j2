@@ -121,12 +121,25 @@
 
   <!-- ACCUEIL -->
   <section class="tab-content on" id="t-home">
+
+    <!-- Route vers NYC -->
+    <div id="homeRoute"></div>
+
     <article class="card plan-today">
       <header class="card-head">
         <h3>Séance du jour</h3>
         <span class="card-sub" id="homeTodaySub"></span>
       </header>
       <div id="homeToday"></div>
+    </article>
+
+    <!-- Le duel : toi vs sub-3h -->
+    <article class="card mt-lg" id="homeDuelCard" style="display:none">
+      <header class="card-head">
+        <h3>Le duel</h3>
+        <span class="card-sub">ton allure marathon vs l'objectif</span>
+      </header>
+      <div id="homeDuel"></div>
     </article>
 
     <article class="card mt-lg" id="homeCoachCard" style="display:none">
@@ -153,6 +166,21 @@
         <div id="homeWeek"></div>
       </article>
     </div>
+
+    <!-- Empreinte du coureur -->
+    <article class="card mt-lg" id="homePrintCard">
+      <header class="card-head">
+        <h3>Ton empreinte de coureur</h3>
+        <span class="card-sub" id="homePrintSub"></span>
+      </header>
+      <div class="home-print-row">
+        <canvas id="printCanvas" width="320" height="320"></canvas>
+        <div class="home-print-side">
+          <p>Chaque anneau est une semaine de ta vie de coureur. L'épaisseur, c'est le volume ; la couleur, l'intensité. Elle est unique — et elle grandit à chaque séance.</p>
+          <button class="home-print-btn" id="printFullBtn" type="button">Voir en plein écran</button>
+        </div>
+      </div>
+    </article>
   </section>
 
   <!-- VUE D'ENSEMBLE -->
@@ -740,6 +768,13 @@
 <script>
 {{ js_content|safe }}
 </script>
+
+<!-- ====== EMPREINTE PLEIN ÉCRAN ====== -->
+<div class="print-overlay" id="printOverlay" hidden>
+  <button class="sheet-close" id="printClose" aria-label="Fermer">✕</button>
+  <canvas id="printFullCanvas"></canvas>
+  <div class="print-overlay-caption" id="printCaption"></div>
+</div>
 
 <!-- ====== FICHE SÉANCE (bottom-sheet) ====== -->
 <div class="sheet-backdrop" id="sheetBackdrop" hidden>

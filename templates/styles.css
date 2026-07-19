@@ -3342,3 +3342,72 @@ html, body { overflow-x: hidden; width: 100%; }
 @media (max-width: 760px) {
   .plan-week-table td:nth-child(3) .verdict-pill { display: block; width: max-content; margin: 3px 0 0; }
 }
+
+/* ============================================================
+   Accueil waou : route NYC, duel, empreinte
+   ============================================================ */
+[hidden] { display: none !important; }
+
+.route-card {
+  background: linear-gradient(160deg, var(--surface) 0%, var(--surface-2) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+  padding: 18px 18px 12px;
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--sp-5);
+  overflow: hidden;
+}
+.route-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap; }
+.route-title { font-size: 18px; color: var(--text-2); letter-spacing: -0.01em; }
+.route-title strong { font-size: 22px; color: var(--text); font-weight: 800; }
+.route-stats { display: flex; gap: 18px; }
+.route-stat { text-align: right; }
+.route-stat-v {
+  display: block; font-family: var(--font-mono); font-size: 22px;
+  font-weight: 700; color: var(--text); line-height: 1.05; letter-spacing: -0.02em;
+}
+.route-stat-l { font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-3); font-weight: 700; }
+.route-svg { width: 100%; height: auto; display: block; margin-top: 4px; }
+.route-bg { fill: none; stroke: var(--border-2); stroke-width: 4; stroke-linecap: round; }
+.route-done { fill: none; stroke: var(--c-blue); stroke-width: 5; stroke-linecap: round; filter: drop-shadow(0 0 6px rgba(91,138,245,0.5)); }
+.route-node { cursor: pointer; }
+.route-pulse { animation: routePulse 2s ease-out infinite; transform-origin: center; transform-box: fill-box; }
+@keyframes routePulse { 0% { transform: scale(0.6); opacity: 0.45; } 70% { transform: scale(1.6); opacity: 0; } 100% { opacity: 0; } }
+.route-legend { font-size: 12px; color: var(--text-3); text-align: center; padding: 6px 0 2px; }
+.route-legend strong { color: var(--text); }
+
+/* Duel */
+.duel-lane { margin-bottom: 14px; }
+.duel-label { font-size: 11px; letter-spacing: 0.05em; color: var(--text-3); font-weight: 700; margin-bottom: 6px; }
+.duel-label strong { color: var(--text); font-family: var(--font-mono); letter-spacing: 0; }
+.duel-track { height: 18px; border-radius: 999px; background: var(--surface-3); position: relative; overflow: visible; }
+.duel-fill { height: 100%; border-radius: 999px; position: relative; transition: width 1.4s cubic-bezier(0.16,1,0.3,1); }
+.duel-you { background: linear-gradient(90deg, #5b8af5, #9b6dff); }
+.duel-ghost { background: linear-gradient(90deg, #22d3a7, #10b981); opacity: 0.8; }
+.duel-runner { position: absolute; right: -6px; top: 50%; transform: translateY(-52%); font-size: 17px; }
+.duel-gap { text-align: center; font-size: 13px; font-weight: 700; padding: 6px 0 2px; }
+.duel-gap.ahead { color: #10b981; }
+.duel-gap.behind { color: #f0923e; }
+
+/* Empreinte */
+.home-print-row { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+#printCanvas { border-radius: 50%; cursor: pointer; animation: printSpin 240s linear infinite; flex-shrink: 0; }
+@keyframes printSpin { to { transform: rotate(360deg); } }
+.home-print-side { flex: 1; min-width: 200px; }
+.home-print-side p { font-size: 13.5px; color: var(--text-2); line-height: 1.6; margin-bottom: 12px; }
+.home-print-btn {
+  padding: 9px 16px; border-radius: 999px; border: 1px solid var(--border-2);
+  background: var(--surface); color: var(--text); font: 600 13px var(--font-sans);
+  cursor: pointer; transition: transform var(--t-fast), box-shadow var(--t-fast);
+}
+.home-print-btn:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); }
+
+.print-overlay {
+  position: fixed; inset: 0; z-index: 400;
+  background: color-mix(in srgb, var(--bg) 96%, transparent);
+  backdrop-filter: blur(8px);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px;
+}
+#printFullCanvas { animation: printSpin 240s linear infinite; }
+.print-overlay-caption { font-size: 14px; color: var(--text-2); text-align: center; padding: 0 20px; }
+.print-overlay .sheet-close { position: absolute; top: max(16px, env(safe-area-inset-top)); right: 16px; }
