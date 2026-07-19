@@ -1,0 +1,496 @@
+{
+ "activities": [
+  {
+   "id": "19375754812",
+   "name": "Lunch Run",
+   "description": "",
+   "sport_type": "Run",
+   "start_local": "2026-07-19T11:29:50",
+   "summary": {
+    "distance": 3004.1,
+    "moving_time": 933,
+    "elapsed_time": 933,
+    "elevation_gain": 19.0,
+    "avg_speed": 3.22,
+    "max_speed": 5.4,
+    "avg_cadence": 89.8,
+    "relative_effort": 12.0,
+    "total_calories": 212.0,
+    "kudos_count": 0,
+    "achievement_count": 0,
+    "pr_count": 0
+   },
+   "performance": {
+    "average_heartrate": 138.4,
+    "max_heartrate": 157.0,
+    "average_watts": 353.7,
+    "laps": [
+     {
+      "elapsed_time": 316,
+      "moving_time": 316,
+      "distance": 999.97,
+      "avg_hr": 126.4,
+      "avg_cadence": 179,
+      "avg_watts": 332.8
+     },
+     {
+      "elapsed_time": 301,
+      "moving_time": 301,
+      "distance": 1000.0,
+      "avg_hr": 141.6,
+      "avg_cadence": 181,
+      "avg_watts": 354.6
+     },
+     {
+      "elapsed_time": 314,
+      "moving_time": 314,
+      "distance": 1003.05,
+      "avg_hr": 147.3,
+      "avg_cadence": 179,
+      "avg_watts": 374.0
+     }
+    ]
+   }
+  },
+  {
+   "id": "19375754869",
+   "name": "Lunch Run",
+   "description": "",
+   "sport_type": "Run",
+   "start_local": "2026-07-19T11:51:25",
+   "summary": {
+    "distance": 1994.4,
+    "moving_time": 476,
+    "elapsed_time": 476,
+    "elevation_gain": 7.0,
+    "avg_speed": 4.19,
+    "max_speed": 4.58,
+    "avg_cadence": 89.6,
+    "relative_effort": 21.0,
+    "total_calories": 130.0,
+    "kudos_count": 0,
+    "achievement_count": 0,
+    "pr_count": 0
+   },
+   "performance": {
+    "average_heartrate": 164.6,
+    "max_heartrate": 171.0,
+    "average_watts": 421.5,
+    "laps": [
+     {
+      "elapsed_time": 237,
+      "moving_time": 237,
+      "distance": 1000.0,
+      "avg_hr": 161.5,
+      "avg_cadence": 181,
+      "avg_watts": 426.0
+     },
+     {
+      "elapsed_time": 238,
+      "moving_time": 238,
+      "distance": 996.0,
+      "avg_hr": 167.6,
+      "avg_cadence": 177,
+      "avg_watts": 417.0
+     }
+    ]
+   }
+  },
+  {
+   "id": "19375754798",
+   "name": "Lunch Run",
+   "description": "",
+   "sport_type": "Run",
+   "start_local": "2026-07-19T12:05:19",
+   "summary": {
+    "distance": 1997.2,
+    "moving_time": 468,
+    "elapsed_time": 468,
+    "elevation_gain": 6.0,
+    "avg_speed": 4.268,
+    "max_speed": 4.94,
+    "avg_cadence": 89.7,
+    "relative_effort": 21.0,
+    "total_calories": 127.0,
+    "kudos_count": 0,
+    "achievement_count": 0,
+    "pr_count": 0
+   },
+   "performance": {
+    "average_heartrate": 164.6,
+    "max_heartrate": 177.0,
+    "average_watts": 459.9,
+    "laps": [
+     {
+      "elapsed_time": 234,
+      "moving_time": 234,
+      "distance": 1000.0,
+      "avg_hr": 159.9,
+      "avg_cadence": 181,
+      "avg_watts": 463.9
+     },
+     {
+      "elapsed_time": 233,
+      "moving_time": 233,
+      "distance": 997.4,
+      "avg_hr": 169.4,
+      "avg_cadence": 178,
+      "avg_watts": 456.0
+     }
+    ]
+   }
+  },
+  {
+   "id": "19375754947",
+   "name": "Lunch Run",
+   "description": "",
+   "sport_type": "Run",
+   "start_local": "2026-07-19T12:18:59",
+   "summary": {
+    "distance": 1993.7,
+    "moving_time": 470,
+    "elapsed_time": 470,
+    "elevation_gain": 6.0,
+    "avg_speed": 4.242,
+    "max_speed": 4.72,
+    "avg_cadence": 88.7,
+    "relative_effort": 22.0,
+    "total_calories": 129.0,
+    "kudos_count": 0,
+    "achievement_count": 0,
+    "pr_count": 0
+   },
+   "performance": {
+    "average_heartrate": 165.7,
+    "max_heartrate": 171.0,
+    "average_watts": 429.7,
+    "laps": [
+     {
+      "elapsed_time": 231,
+      "moving_time": 231,
+      "distance": 1000.0,
+      "avg_hr": 164.7,
+      "avg_cadence": 178,
+      "avg_watts": 434.6
+     },
+     {
+      "elapsed_time": 238,
+      "moving_time": 238,
+      "distance": 994.1,
+      "avg_hr": 166.7,
+      "avg_cadence": 177,
+      "avg_watts": 424.9
+     }
+    ]
+   }
+  },
+  {
+   "id": "19375754875",
+   "name": "Lunch Run",
+   "description": "",
+   "sport_type": "Run",
+   "start_local": "2026-07-19T12:32:40",
+   "summary": {
+    "distance": 1995.4,
+    "moving_time": 472,
+    "elapsed_time": 472,
+    "elevation_gain": 7.0,
+    "avg_speed": 4.228,
+    "max_speed": 5.0,
+    "avg_cadence": 89.1,
+    "relative_effort": 21.0,
+    "total_calories": 128.0,
+    "kudos_count": 0,
+    "achievement_count": 1,
+    "pr_count": 0
+   },
+   "performance": {
+    "average_heartrate": 164.7,
+    "max_heartrate": 172.0,
+    "average_watts": 447.6,
+    "laps": [
+     {
+      "elapsed_time": 231,
+      "moving_time": 231,
+      "distance": 1000.0,
+      "avg_hr": 161.0,
+      "avg_cadence": 179,
+      "avg_watts": 464.2
+     },
+     {
+      "elapsed_time": 240,
+      "moving_time": 240,
+      "distance": 995.8,
+      "avg_hr": 168.3,
+      "avg_cadence": 177,
+      "avg_watts": 431.5
+     }
+    ]
+   }
+  },
+  {
+   "id": "19375754885",
+   "name": "Lunch Run",
+   "description": "",
+   "sport_type": "Run",
+   "start_local": "2026-07-19T12:46:28",
+   "summary": {
+    "distance": 1994.3,
+    "moving_time": 465,
+    "elapsed_time": 465,
+    "elevation_gain": 6.0,
+    "avg_speed": 4.289,
+    "max_speed": 4.72,
+    "avg_cadence": 89.5,
+    "relative_effort": 20.0,
+    "total_calories": 125.0,
+    "kudos_count": 0,
+    "achievement_count": 0,
+    "pr_count": 0
+   },
+   "performance": {
+    "average_heartrate": 164.1,
+    "max_heartrate": 171.0,
+    "average_watts": 446.9,
+    "laps": [
+     {
+      "elapsed_time": 231,
+      "moving_time": 231,
+      "distance": 1000.0,
+      "avg_hr": 160.2,
+      "avg_cadence": 180,
+      "avg_watts": 442.5
+     },
+     {
+      "elapsed_time": 233,
+      "moving_time": 233,
+      "distance": 993.3,
+      "avg_hr": 168.0,
+      "avg_cadence": 178,
+      "avg_watts": 451.2
+     }
+    ]
+   }
+  },
+  {
+   "id": "19375754802",
+   "name": "Afternoon Run",
+   "description": "",
+   "sport_type": "Run",
+   "start_local": "2026-07-19T13:01:01",
+   "summary": {
+    "distance": 1992.8,
+    "moving_time": 467,
+    "elapsed_time": 467,
+    "elevation_gain": 9.0,
+    "avg_speed": 4.267,
+    "max_speed": 4.88,
+    "avg_cadence": 89.1,
+    "relative_effort": 27.0,
+    "total_calories": 130.0,
+    "kudos_count": 0,
+    "achievement_count": 0,
+    "pr_count": 0
+   },
+   "performance": {
+    "average_heartrate": 170.0,
+    "max_heartrate": 176.0,
+    "average_watts": 446.9,
+    "laps": [
+     {
+      "elapsed_time": 232,
+      "moving_time": 232,
+      "distance": 1000.0,
+      "avg_hr": 166.9,
+      "avg_cadence": 181,
+      "avg_watts": 458.3
+     },
+     {
+      "elapsed_time": 234,
+      "moving_time": 234,
+      "distance": 989.3,
+      "avg_hr": 173.0,
+      "avg_cadence": 176,
+      "avg_watts": 435.7
+     }
+    ]
+   }
+  },
+  {
+   "id": "19375755169",
+   "name": "Afternoon Run",
+   "description": "",
+   "sport_type": "Run",
+   "start_local": "2026-07-19T13:14:20",
+   "summary": {
+    "distance": 1994.4,
+    "moving_time": 462,
+    "elapsed_time": 462,
+    "elevation_gain": 5.0,
+    "avg_speed": 4.317,
+    "max_speed": 5.06,
+    "avg_cadence": 90.3,
+    "relative_effort": 24.0,
+    "total_calories": 127.0,
+    "kudos_count": 0,
+    "achievement_count": 0,
+    "pr_count": 0
+   },
+   "performance": {
+    "average_heartrate": 167.4,
+    "max_heartrate": 174.0,
+    "average_watts": 470.8,
+    "laps": [
+     {
+      "elapsed_time": 226,
+      "moving_time": 226,
+      "distance": 1000.0,
+      "avg_hr": 162.5,
+      "avg_cadence": 181,
+      "avg_watts": 472.8
+     },
+     {
+      "elapsed_time": 235,
+      "moving_time": 235,
+      "distance": 996.7,
+      "avg_hr": 172.2,
+      "avg_cadence": 180,
+      "avg_watts": 468.8
+     }
+    ]
+   }
+  },
+  {
+   "id": "19375754865",
+   "name": "Afternoon Run",
+   "description": "",
+   "sport_type": "Run",
+   "start_local": "2026-07-19T13:27:39",
+   "summary": {
+    "distance": 1993.8,
+    "moving_time": 470,
+    "elapsed_time": 470,
+    "elevation_gain": 7.0,
+    "avg_speed": 4.242,
+    "max_speed": 4.68,
+    "avg_cadence": 89.9,
+    "relative_effort": 26.0,
+    "total_calories": 130.0,
+    "kudos_count": 0,
+    "achievement_count": 0,
+    "pr_count": 0
+   },
+   "performance": {
+    "average_heartrate": 168.5,
+    "max_heartrate": 174.0,
+    "average_watts": 433.0,
+    "laps": [
+     {
+      "elapsed_time": 235,
+      "moving_time": 235,
+      "distance": 1000.0,
+      "avg_hr": 165.1,
+      "avg_cadence": 180,
+      "avg_watts": 442.3
+     },
+     {
+      "elapsed_time": 234,
+      "moving_time": 234,
+      "distance": 992.3,
+      "avg_hr": 171.9,
+      "avg_cadence": 179,
+      "avg_watts": 423.7
+     }
+    ]
+   }
+  },
+  {
+   "id": "19375754876",
+   "name": "Afternoon Run",
+   "description": "",
+   "sport_type": "Run",
+   "start_local": "2026-07-19T13:40:58",
+   "summary": {
+    "distance": 1993.1,
+    "moving_time": 473,
+    "elapsed_time": 473,
+    "elevation_gain": 6.0,
+    "avg_speed": 4.214,
+    "max_speed": 4.82,
+    "avg_cadence": 90.2,
+    "relative_effort": 26.0,
+    "total_calories": 130.0,
+    "kudos_count": 0,
+    "achievement_count": 0,
+    "pr_count": 0
+   },
+   "performance": {
+    "average_heartrate": 168.7,
+    "max_heartrate": 174.0,
+    "average_watts": 459.6,
+    "laps": [
+     {
+      "elapsed_time": 231,
+      "moving_time": 231,
+      "distance": 1000.0,
+      "avg_hr": 165.7,
+      "avg_cadence": 182,
+      "avg_watts": 476.6
+     },
+     {
+      "elapsed_time": 241,
+      "moving_time": 241,
+      "distance": 995.4,
+      "avg_hr": 171.6,
+      "avg_cadence": 179,
+      "avg_watts": 443.4
+     }
+    ]
+   }
+  },
+  {
+   "id": "19375754900",
+   "name": "Afternoon Run",
+   "description": "",
+   "sport_type": "Run",
+   "start_local": "2026-07-19T13:54:14",
+   "summary": {
+    "distance": 1996.5,
+    "moving_time": 461,
+    "elapsed_time": 484,
+    "elevation_gain": 4.0,
+    "avg_speed": 4.331,
+    "max_speed": 4.96,
+    "avg_cadence": 89.8,
+    "relative_effort": 26.0,
+    "total_calories": 127.0,
+    "kudos_count": 0,
+    "achievement_count": 2,
+    "pr_count": 0
+   },
+   "performance": {
+    "average_heartrate": 169.7,
+    "max_heartrate": 177.0,
+    "average_watts": 435.2,
+    "laps": [
+     {
+      "elapsed_time": 229,
+      "moving_time": 229,
+      "distance": 1000.0,
+      "avg_hr": 169.3,
+      "avg_cadence": 181,
+      "avg_watts": 429.1
+     },
+     {
+      "elapsed_time": 253,
+      "moving_time": 229,
+      "distance": 990.3,
+      "avg_hr": 170.2,
+      "avg_cadence": 179,
+      "avg_watts": 441.3
+     }
+    ]
+   }
+  }
+ ]
+}

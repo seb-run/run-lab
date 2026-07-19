@@ -1032,8 +1032,17 @@
           "target_pace": "4'51\"/km",
           "date": "2026-07-19",
           "dow": "Sun",
-          "status": "today",
-          "actual": null,
+          "status": "under",
+          "actual": {
+            "km": 5.0,
+            "duration_min": 23,
+            "pace_sec": 282,
+            "pace_str": "4'42\"/km",
+            "fc": 152,
+            "type": "tempo",
+            "title": "Lunch Run",
+            "n": 2
+          },
           "_downgraded_from": {
             "title": "Sortie longue 25km",
             "km": 29.9,
@@ -1042,7 +1051,24 @@
           "_rescheduled_from": "2026-07-16",
           "_rescheduled_title": "Tempo 20min seuil",
           "_rescheduled_desc": "15min échauffement 5'26\"/km\n20min en continu allure seuil 3'43\"/km\n10min retour calme",
-          "_rescheduled_pace": "3'43\"/km"
+          "_rescheduled_pace": "3'43\"/km",
+          "score": {
+            "points": 45,
+            "verdict": "failed",
+            "verdict_label": "Échouée",
+            "volume_pct": 24,
+            "volume_points": 0,
+            "pace_points": 100,
+            "pace_target_s": 291,
+            "pace_actual_s": 282,
+            "pace_actual_str": "4'42\"/km",
+            "pace_delta_s": -9,
+            "is_quality": false,
+            "reasons": [
+              "Volume 24%",
+              "Allure −9\"/km vs cible"
+            ]
+          }
         }
       ],
       "volume_actual_to_date": 42.0,
