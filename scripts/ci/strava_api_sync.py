@@ -146,6 +146,14 @@ def main():
 
     token = get_access_token()
     known = existing_strava_ids(cache_path)
+    blocklist = set()
+    blp = data_dir / 'strava_blocklist.json'
+    if blp.exists():
+        try:
+            blocklist = set(str(x) for x in json.loads(blp.read_text()))
+        except Exception:
+            pass
+    known |= blocklist
     print(f'▸ Cache : {len(known)} activités Strava connues')
 
     acts = _get(f'{API}/athlete/activities', token,

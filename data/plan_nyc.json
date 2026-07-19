@@ -1032,17 +1032,8 @@
           "target_pace": "4'51\"/km",
           "date": "2026-07-19",
           "dow": "Sun",
-          "status": "over",
-          "actual": {
-            "km": 35.6,
-            "duration_min": 162,
-            "pace_sec": 274,
-            "pace_str": "4'34\"/km",
-            "fc": 152,
-            "type": "sortie_longue",
-            "title": "#118 : run & Bike w/ Sab'",
-            "n": 1
-          },
+          "status": "today",
+          "actual": null,
           "_downgraded_from": {
             "title": "Sortie longue 25km",
             "km": 29.9,

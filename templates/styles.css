@@ -3411,3 +3411,4 @@ html, body { overflow-x: hidden; width: 100%; }
 #printFullCanvas { animation: printSpin 240s linear infinite; }
 .print-overlay-caption { font-size: 14px; color: var(--text-2); text-align: center; padding: 0 20px; }
 .print-overlay .sheet-close { position: absolute; top: max(16px, env(safe-area-inset-top)); right: 16px; }
+.plan-today-desc.is-done { opacity: 0.55; font-size: 12.5px; }

@@ -4504,12 +4504,12 @@
           <h2>${escapeHtml(displayTitle)}</h2>
         </div>
         <div class="plan-today-stats">
-          ${d.km > 0 ? `<div><span class="kv-label">Distance</span><span class="kv-value">${d.km} km</span></div>` : ''}
+          ${d.km > 0 ? `<div><span class="kv-label">${d.key ? 'Volume jour' : 'Distance'}</span><span class="kv-value">${d.km} km</span></div>` : ''}
           ${d.duration_min > 0 ? `<div><span class="kv-label">Durée</span><span class="kv-value">${Math.floor(d.duration_min/60)>0 ? Math.floor(d.duration_min/60)+'h'+String(d.duration_min%60).padStart(2,'0') : d.duration_min+' min'}</span></div>` : ''}
-          ${displayPace ? `<div><span class="kv-label">Allure</span><span class="kv-value">${escapeHtml(displayPace)}</span></div>` : ''}
+          ${displayPace ? `<div><span class="kv-label">${d.key ? 'Allure du bloc' : 'Allure'}</span><span class="kv-value">${escapeHtml(displayPace)}</span></div>` : ''}
         </div>
-        <p class="plan-today-desc">${displayDesc}</p>
         ${actualBlock}
+        <p class="plan-today-desc${d.actual ? ' is-done' : ''}">${displayDesc}</p>
       </div>`);
   }
 
@@ -5028,7 +5028,8 @@
       if (s.ps) b.ps.push(s.ps);
       b.sessions.push(s.km || 0);
     });
-    return [...byWeek.entries()].sort((a, b) => a[0] - b[0]).map(([, v]) => v);
+    // 52 dernières semaines seulement : au-delà, l'empreinte devient illisible
+    return [...byWeek.entries()].sort((a, b) => a[0] - b[0]).map(([, v]) => v).slice(-52);
   }
 
   function paceColor(ps) {
@@ -5082,7 +5083,7 @@
     if (!canvas) return;
     const n = drawPrint(canvas, Math.min(320, (canvas.parentElement?.clientWidth || 320)));
     const sub = document.getElementById('homePrintSub');
-    if (sub) sub.textContent = `${n} semaines · ${SESSIONS.length} séances`;
+    if (sub) sub.textContent = `${n} dernières semaines`;
     document.getElementById('printFullBtn')?.addEventListener('click', openPrintFull);
     canvas.addEventListener('click', openPrintFull);
     document.getElementById('printClose')?.addEventListener('click', () => {
