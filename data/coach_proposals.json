@@ -1,0 +1,49 @@
+{
+ "proposals": [
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-07-21",
+   "field": null,
+   "new_value": "Remplacer la séance VMA 10×400m par un footing progressif de 12km (finir sur 2km allure seuil max)",
+   "reason": "3 séances d'intensité consécutives ratées ou très sous-volume (07/07, 09/07, 14/07, 16/07) : le corps n'est pas prêt à encaisser du travail rapide, risque de blessure ou nouvel échec démoralisant.",
+   "id": "8ba79e92",
+   "status": "pending",
+   "created_at": "2026-07-19T13:45:55"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-07-23",
+   "field": null,
+   "new_value": "Remplacer le tempo 20min seuil par un footing normal de 14km, sans allure imposée",
+   "reason": "Le tempo a été manqué 2 fois d'affilée sur les 2 dernières semaines ; mieux vaut sécuriser le volume facile avant de réintroduire du seuil.",
+   "id": "6c2533a8",
+   "status": "pending",
+   "created_at": "2026-07-19T13:45:55"
+  },
+  {
+   "severity": "major",
+   "kind": "volume_adjust",
+   "date": "2026-07-26",
+   "field": "km",
+   "new_value": 18,
+   "reason": "Les 2 dernières sorties longues ont été manquée puis stoppée à 44% du volume prévu (10.6/24.2km) ; repartir sur 18km réalistes pour recréer une réussite plutôt que viser 25.6km et risquer un 3e échec.",
+   "id": "48df52a3",
+   "status": "pending",
+   "created_at": "2026-07-19T13:45:55"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-07-19",
+   "field": "description_note",
+   "new_value": "Avant de reprendre : identifie ce qui a bloqué ces 2 dernières semaines (fatigue, emploi du temps, douleur ?) et dis-le-moi. On ajustera le plan en conséquence.",
+   "reason": "Taux d'échec très élevé et généralisé sur 2 semaines, besoin de comprendre la cause avant d'ajuster davantage la charge.",
+   "id": "70b351d3",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-07-19T13:45:55"
+  }
+ ]
+}

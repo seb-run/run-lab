@@ -1034,14 +1034,14 @@
           "dow": "Sun",
           "status": "over",
           "actual": {
-            "km": 42.4,
-            "duration_min": 195,
-            "pace_sec": 277,
-            "pace_str": "4'37\"/km",
-            "fc": 154,
-            "type": "endurance",
-            "title": "Afternoon Run",
-            "n": 4
+            "km": 35.6,
+            "duration_min": 162,
+            "pace_sec": 274,
+            "pace_str": "4'34\"/km",
+            "fc": 152,
+            "type": "sortie_longue",
+            "title": "#118 : run & Bike w/ Sab'",
+            "n": 1
           },
           "_downgraded_from": {
             "title": "Sortie longue 25km",
@@ -1056,17 +1056,17 @@
             "points": 84,
             "verdict": "success",
             "verdict_label": "Réussie",
-            "volume_pct": 203,
+            "volume_pct": 170,
             "volume_points": 70,
             "pace_points": 100,
             "pace_target_s": 291,
-            "pace_actual_s": 277,
-            "pace_actual_str": "4'37\"/km",
-            "pace_delta_s": -14,
+            "pace_actual_s": 274,
+            "pace_actual_str": "4'34\"/km",
+            "pace_delta_s": -17,
             "is_quality": false,
             "reasons": [
-              "Volume 203%",
-              "Allure −14\"/km vs cible"
+              "Volume 170%",
+              "Allure −17\"/km vs cible"
             ]
           }
         }
