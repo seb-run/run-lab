@@ -1034,14 +1034,14 @@
           "dow": "Sun",
           "status": "under",
           "actual": {
-            "km": 5.0,
-            "duration_min": 23,
-            "pace_sec": 282,
-            "pace_str": "4'42\"/km",
-            "fc": 152,
-            "type": "tempo",
-            "title": "Lunch Run",
-            "n": 2
+            "km": 6.8,
+            "duration_min": 33,
+            "pace_sec": 290,
+            "pace_str": "4'50\"/km",
+            "fc": 154,
+            "type": "endurance",
+            "title": "Afternoon Run",
+            "n": 3
           },
           "_downgraded_from": {
             "title": "Sortie longue 25km",
@@ -1056,17 +1056,17 @@
             "points": 45,
             "verdict": "failed",
             "verdict_label": "Échouée",
-            "volume_pct": 24,
+            "volume_pct": 33,
             "volume_points": 0,
             "pace_points": 100,
             "pace_target_s": 291,
-            "pace_actual_s": 282,
-            "pace_actual_str": "4'42\"/km",
-            "pace_delta_s": -9,
+            "pace_actual_s": 290,
+            "pace_actual_str": "4'50\"/km",
+            "pace_delta_s": -1,
             "is_quality": false,
             "reasons": [
-              "Volume 24%",
-              "Allure −9\"/km vs cible"
+              "Volume 33%",
+              "Allure −1\"/km vs cible"
             ]
           }
         }
