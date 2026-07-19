@@ -1032,16 +1032,16 @@
           "target_pace": "4'51\"/km",
           "date": "2026-07-19",
           "dow": "Sun",
-          "status": "under",
+          "status": "over",
           "actual": {
-            "km": 6.8,
-            "duration_min": 33,
-            "pace_sec": 290,
-            "pace_str": "4'50\"/km",
+            "km": 42.4,
+            "duration_min": 195,
+            "pace_sec": 277,
+            "pace_str": "4'37\"/km",
             "fc": 154,
             "type": "endurance",
             "title": "Afternoon Run",
-            "n": 3
+            "n": 4
           },
           "_downgraded_from": {
             "title": "Sortie longue 25km",
@@ -1053,20 +1053,20 @@
           "_rescheduled_desc": "15min échauffement 5'26\"/km\n20min en continu allure seuil 3'43\"/km\n10min retour calme",
           "_rescheduled_pace": "3'43\"/km",
           "score": {
-            "points": 45,
-            "verdict": "failed",
-            "verdict_label": "Échouée",
-            "volume_pct": 33,
-            "volume_points": 0,
+            "points": 84,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 203,
+            "volume_points": 70,
             "pace_points": 100,
             "pace_target_s": 291,
-            "pace_actual_s": 290,
-            "pace_actual_str": "4'50\"/km",
-            "pace_delta_s": -1,
+            "pace_actual_s": 277,
+            "pace_actual_str": "4'37\"/km",
+            "pace_delta_s": -14,
             "is_quality": false,
             "reasons": [
-              "Volume 33%",
-              "Allure −1\"/km vs cible"
+              "Volume 203%",
+              "Allure −14\"/km vs cible"
             ]
           }
         }
