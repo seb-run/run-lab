@@ -16,6 +16,7 @@ on:
   push:
     branches: [main]
     paths:
+      - '.github/workflows/**'
       - 'templates/**'
       - 'modules/**'
       - 'scripts/**'
@@ -101,7 +102,7 @@ jobs:
           cp output/index.html site/index.html
           cp manifest.webmanifest sw.js icon-192.png icon-512.png icon-512-maskable.png apple-touch-icon.png site/
 
-      - uses: actions/upload-pages-artifact@v4
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: site
 
