@@ -1,9 +1,40 @@
 {
- "generated_at": "2026-07-19T13:45:55",
+ "generated_at": "2026-07-20T08:29:30",
  "model": "claude-sonnet-5",
- "headline": "Deux semaines de décrochage quasi total : c'est le moment de réduire la charge, pas de la maintenir.",
- "analysis": "Les 14 derniers jours sont alarmants : VMA, tempo, fartlek et même la sortie longue ont tous été ratés ou fortement écourtés, avec un seul footing correctement terminé sur la dernière semaine. La semaine 4 est à 0% et les semaines suivantes plafonnent à 56-62% du volume prévu, avec 0 séance clé réussie sur 4 semaines consécutives. Ça sent moins le manque de motivation ponctuel qu'un problème de fond : fatigue accumulée, contrainte de temps ou petit pépin physique non signalé. Continuer à enchaîner VMA + tempo + sortie longue de 26km cette semaine, sur cette base, c'est prendre un vrai risque de blessure ou de rejet complet du plan. Le focus de la semaine doit être de reconstruire la régularité avec des séances faciles et courtes, pas d'ajouter de l'intensité tant que 2-3 sorties d'affilée n'auront pas été bouclées normalement. On sécurise d'abord la routine, la performance suivra.",
- "applied": [],
+ "headline": "Un mois de base quasi à l'arrêt (0/11 séances clés réussies) : priorité absolue à la reprise en douceur, pas à la performance.",
+ "analysis": "Les 4 dernières semaines sont un signal d'alarme clair : volume moyen autour de 40-60% du prévu, une semaine à 0%, et surtout zéro séance clé réussie sur les 11 programmées (VMA, tempo, fartlek, sortie longue tous ratés ou sous-réalisés). Le moteur a déjà réagi en forçant une semaine de récup et en repositionnant le tempo manqué, c'est la bonne décision. Les footings réalisés montrent que tu cours plutôt bien en aisance (allures cohérentes, FC contrôlée), le problème n'est pas physiologique mais bien la régularité et la présence aux séances. Le risque principal maintenant est de replonger direct dans l'intensité dès le 28/07 (6×800m) et le 30/07 (2×15min seuil) alors que tu sors d'un mois quasi blanc — ça peut recréer un nouvel échec et une spirale de découragement. Le focus de la semaine doit être : reconstruire une base de fréquence (juste enchaîner les footings prévus, même courts) avant de remettre de l'intensité. Je préfère alléger légèrement les deux séances clés à venir plutôt que les laisser telles quelles.",
+ "applied": [
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-07-21",
+   "field": "description_note",
+   "new_value": "Semaine de reprise : l'objectif n'est pas la performance mais la régularité. Coche toutes les cases, même en dessous du volume prévu si besoin.",
+   "reason": "4 semaines à forte irrégularité (0/11 clés réussies) : reconstruire la confiance et la fréquence avant l'intensité.",
+   "id": "25977a8d",
+   "detail": "2026-07-21 : note ajoutée"
+  },
+  {
+   "severity": "minor",
+   "kind": "volume_adjust",
+   "date": "2026-07-28",
+   "field": "km",
+   "new_value": 16.0,
+   "reason": "Réduction de ~10% du volume de la séance intervalles pour une reprise progressive après un mois quasi sans séance clé réussie.",
+   "id": "4fa553b0",
+   "detail": "2026-07-28 : 17.8→16 km"
+  },
+  {
+   "severity": "minor",
+   "kind": "volume_adjust",
+   "date": "2026-07-30",
+   "field": "km",
+   "new_value": 18.0,
+   "reason": "Réduction modérée du tempo pour sécuriser une première séance clé réussie après la semaine de récup, plutôt que viser le volume plein directement.",
+   "id": "8d805b96",
+   "detail": "2026-07-30 : 19.8→18 km"
+  }
+ ],
  "pending": [
   {
    "severity": "major",
@@ -35,18 +66,6 @@
    "new_value": 18,
    "reason": "Les 2 dernières sorties longues ont été manquée puis stoppée à 44% du volume prévu (10.6/24.2km) ; repartir sur 18km réalistes pour recréer une réussite plutôt que viser 25.6km et risquer un 3e échec.",
    "id": "48df52a3",
-   "status": "pending",
-   "created_at": "2026-07-19T13:45:55"
-  },
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-07-19",
-   "field": "description_note",
-   "new_value": "Avant de reprendre : identifie ce qui a bloqué ces 2 dernières semaines (fatigue, emploi du temps, douleur ?) et dis-le-moi. On ajustera le plan en conséquence.",
-   "reason": "Taux d'échec très élevé et généralisé sur 2 semaines, besoin de comprendre la cause avant d'ajuster davantage la charge.",
-   "id": "70b351d3",
-   "guardrail_reject": "jour passé ou en cours",
    "status": "pending",
    "created_at": "2026-07-19T13:45:55"
   }

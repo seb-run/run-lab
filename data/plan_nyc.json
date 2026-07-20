@@ -1032,7 +1032,7 @@
           "target_pace": "4'51\"/km",
           "date": "2026-07-19",
           "dow": "Sun",
-          "status": "today",
+          "status": "missed",
           "actual": null,
           "_downgraded_from": {
             "title": "Sortie longue 25km",
@@ -1066,14 +1066,14 @@
       "volume_planned_to_date": 67.7,
       "volume_drift_pct": -38.0,
       "compliance": {
-        "km_pct": 62,
+        "km_pct": 47,
         "km_done": 42.0,
-        "km_planned": 67.7,
+        "km_planned": 88.6,
         "sessions_done": 1,
-        "sessions_planned": 5,
+        "sessions_planned": 6,
         "keys_success": 0,
         "keys_total": 2,
-        "points": 77,
+        "points": 65,
         "verdict": "partial"
       }
     },
@@ -1095,21 +1095,30 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet ou mobilité/yoga 20-30min. Récupération.",
-          "status": "pending",
+          "status": "today",
           "actual": null
         },
         {
-          "type": "intervals",
-          "title": "VMA courte · 10×400m",
-          "km": 16.5,
+          "type": "recovery",
+          "title": "Footing récup 12km",
+          "km": 11.5,
           "duration_min": 91,
-          "key": true,
-          "description": "20min échauffement 5'26\"/km\n10×400m à VMA 3'16\"/km · récup 1min trot\n10min retour calme 5'26\"/km",
+          "key": false,
+          "description": "Séance qualité downgradée en récup. Plusieurs séances clés manquées récemment — priorité à la régénération.\n[COACH IA : Semaine de reprise : l'objectif n'est pas la performance mais la régularité. Coche toutes les cases, même en dessous du volume prévu si besoin.]",
           "target_pace": "3'16\"/km",
           "date": "2026-07-21",
           "dow": "Tue",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "_downgraded_from": {
+            "title": "VMA courte · 10×400m",
+            "km": 16.5,
+            "description": "20min échauffement 5'26\"/km\n10×400m à VMA 3'16\"/km · récup 1min trot\n10min retour calme 5'26\"/km"
+          },
+          "_rescheduled_from": "2026-07-16",
+          "_rescheduled_title": "Tempo 20min seuil",
+          "_rescheduled_desc": "15min échauffement 5'26\"/km\n20min en continu allure seuil 3'43\"/km\n10min retour calme",
+          "_rescheduled_pace": "3'43\"/km"
         },
         {
           "date": "2026-07-22",
@@ -1121,20 +1130,29 @@
           "key": false,
           "description": "13km à 5'26\"/km. Allure conversationnelle, FC en zone 2.",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "_rescheduled_from": "2026-07-16",
+          "_rescheduled_title": "Tempo 20min seuil",
+          "_rescheduled_desc": "15min échauffement 5'26\"/km\n20min en continu allure seuil 3'43\"/km\n10min retour calme",
+          "_rescheduled_pace": "3'43\"/km"
         },
         {
-          "type": "tempo",
-          "title": "Tempo 20min seuil",
-          "km": 18.3,
+          "type": "recovery",
+          "title": "Footing récup 13km",
+          "km": 12.8,
           "duration_min": 95,
-          "key": true,
-          "description": "15min échauffement 5'26\"/km\n20min en continu allure seuil 3'43\"/km\n10min retour calme",
+          "key": false,
+          "description": "Séance qualité downgradée en récup. Plusieurs séances clés manquées récemment — priorité à la régénération.",
           "target_pace": "3'43\"/km",
           "date": "2026-07-23",
           "dow": "Thu",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "_downgraded_from": {
+            "title": "Tempo 20min seuil",
+            "km": 18.3,
+            "description": "15min échauffement 5'26\"/km\n20min en continu allure seuil 3'43\"/km\n10min retour calme"
+          }
         },
         {
           "date": "2026-07-24",
@@ -1161,19 +1179,27 @@
           "actual": null
         },
         {
-          "type": "long",
-          "title": "Sortie longue 26km",
-          "km": 25.6,
+          "type": "recovery",
+          "title": "Footing récup 18km",
+          "km": 17.9,
           "duration_min": 136,
-          "key": true,
-          "description": "26km en endurance 4'51\"/km. Apprends à tenir le rythme sans monter dans les tours.",
+          "key": false,
+          "description": "Séance qualité downgradée en récup. Plusieurs séances clés manquées récemment — priorité à la régénération.",
           "target_pace": "4'51\"/km",
           "date": "2026-07-26",
           "dow": "Sun",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "_downgraded_from": {
+            "title": "Sortie longue 26km",
+            "km": 25.6,
+            "description": "26km en endurance 4'51\"/km. Apprends à tenir le rythme sans monter dans les tours."
+          }
         }
-      ]
+      ],
+      "volume_actual_to_date": 0.0,
+      "volume_planned_to_date": 0.0,
+      "volume_drift_pct": 0
     },
     {
       "week_num": 8,
@@ -1199,10 +1225,10 @@
         {
           "type": "intervals",
           "title": "6×800m allure 5K",
-          "km": 17.8,
+          "km": 16.0,
           "duration_min": 98,
           "key": true,
-          "description": "20min échauffement\n6×800m à allure 5K (≈3'26\"/km) · récup 1'30 trot\n10min retour calme",
+          "description": "20min échauffement\n6×800m à allure 5K (≈3'26\"/km) · récup 1'30 trot\n10min retour calme\n[COACH IA : volume ajusté 17.8→16 km — Réduction de ~10% du volume de la séance intervalles pour une reprise progressive après un mois quasi sans séance clé réussie.]",
           "target_pace": "3'26\"/km",
           "date": "2026-07-28",
           "dow": "Tue",
@@ -1224,10 +1250,10 @@
         {
           "type": "tempo",
           "title": "2×15min seuil",
-          "km": 19.8,
+          "km": 18.0,
           "duration_min": 103,
           "key": true,
-          "description": "15min échauffement\n2×15min seuil 3'43\"/km · récup 3min trot\n10min retour calme",
+          "description": "15min échauffement\n2×15min seuil 3'43\"/km · récup 3min trot\n10min retour calme\n[COACH IA : volume ajusté 19.8→18 km — Réduction modérée du tempo pour sécuriser une première séance clé réussie après la semaine de récup, plutôt que viser le volume plein directement.]",
           "target_pace": "3'43\"/km",
           "date": "2026-07-30",
           "dow": "Thu",
@@ -2546,5 +2572,18 @@
       ]
     }
   ],
-  "adaptations": []
+  "adaptations": [
+    {
+      "kind": "reschedule_key",
+      "from_date": "2026-07-16",
+      "to_date": "2026-07-21",
+      "title": "Tempo 20min seuil",
+      "reason": "Séance clé manquée — repositionnée sur un jour libre"
+    },
+    {
+      "kind": "recovery_week",
+      "week_num": 7,
+      "reason": "11 séances clés manquées — semaine de récup forcée"
+    }
+  ]
 }
