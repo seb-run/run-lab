@@ -1108,8 +1108,17 @@
           "target_pace": "3'16\"/km",
           "date": "2026-07-21",
           "dow": "Tue",
-          "status": "today",
-          "actual": null,
+          "status": "done",
+          "actual": {
+            "km": 11.0,
+            "duration_min": 56,
+            "pace_sec": 306,
+            "pace_str": "5'06\"/km",
+            "fc": 149,
+            "type": "endurance",
+            "title": "Course à pied en soirée",
+            "n": 1
+          },
           "_downgraded_from": {
             "title": "VMA courte · 10×400m",
             "km": 16.5,
@@ -1118,7 +1127,24 @@
           "_rescheduled_from": "2026-07-16",
           "_rescheduled_title": "Tempo 20min seuil",
           "_rescheduled_desc": "15min échauffement 5'26\"/km\n20min en continu allure seuil 3'43\"/km\n10min retour calme",
-          "_rescheduled_pace": "3'43\"/km"
+          "_rescheduled_pace": "3'43\"/km",
+          "score": {
+            "points": 55,
+            "verdict": "partial",
+            "verdict_label": "Partielle",
+            "volume_pct": 96,
+            "volume_points": 100,
+            "pace_points": 0,
+            "pace_target_s": 196,
+            "pace_actual_s": 306,
+            "pace_actual_str": "5'06\"/km",
+            "pace_delta_s": 110,
+            "is_quality": false,
+            "reasons": [
+              "Volume 96%",
+              "Allure +110\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-07-22",
