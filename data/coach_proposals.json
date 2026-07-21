@@ -44,6 +44,18 @@
    "guardrail_reject": "jour passé ou en cours",
    "status": "expired",
    "created_at": "2026-07-19T13:45:55"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-07-21",
+   "field": "description_note",
+   "new_value": "Objectif de la semaine : juste finir chaque footing/récup prévu, même court, avant de repenser vitesse. La régularité compte plus que la performance en ce moment.",
+   "reason": "Taux d'assiduité très faible sur 4 semaines (0-61% du volume) : besoin de reconstruire l'habitude avant de viser les allures.",
+   "id": "cf5eff27",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-07-21T07:58:45"
   }
  ]
 }

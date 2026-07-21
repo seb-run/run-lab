@@ -1,38 +1,28 @@
 {
- "generated_at": "2026-07-20T08:29:30",
+ "generated_at": "2026-07-21T07:58:45",
  "model": "claude-sonnet-5",
- "headline": "Un mois de base quasi à l'arrêt (0/11 séances clés réussies) : priorité absolue à la reprise en douceur, pas à la performance.",
- "analysis": "Les 4 dernières semaines sont un signal d'alarme clair : volume moyen autour de 40-60% du prévu, une semaine à 0%, et surtout zéro séance clé réussie sur les 11 programmées (VMA, tempo, fartlek, sortie longue tous ratés ou sous-réalisés). Le moteur a déjà réagi en forçant une semaine de récup et en repositionnant le tempo manqué, c'est la bonne décision. Les footings réalisés montrent que tu cours plutôt bien en aisance (allures cohérentes, FC contrôlée), le problème n'est pas physiologique mais bien la régularité et la présence aux séances. Le risque principal maintenant est de replonger direct dans l'intensité dès le 28/07 (6×800m) et le 30/07 (2×15min seuil) alors que tu sors d'un mois quasi blanc — ça peut recréer un nouvel échec et une spirale de découragement. Le focus de la semaine doit être : reconstruire une base de fréquence (juste enchaîner les footings prévus, même courts) avant de remettre de l'intensité. Je préfère alléger légèrement les deux séances clés à venir plutôt que les laisser telles quelles.",
+ "headline": "Quatre semaines compliquées avec un taux d'assiduité très bas : la priorité absolue est de reconstruire la régularité avant de reparler performance.",
+ "analysis": "Les 4 dernières semaines sont dans le rouge : 0 à 61% du volume prévu, et surtout 0 séance clé réussie sur un total de 11. Sur les 14 derniers jours, tempo, fartlek et VMA ont été manqués ou fortement sous-réalisés, seules les sorties faciles/récup passent bien quand elles sont faites. Le moteur a déjà réagi avec une semaine de récup forcée et un reschedule du tempo, ce qui est cohérent. Le vrai risque maintenant n'est pas la charge mais l'assiduité : tu enchaînes après cette semaine allégée directement sur des intervalles à allure 5K puis un tempo à volume plein (16-18km), sans palier de reprise. Si le pattern des dernières semaines se répète, ces deux séances clés vont encore échouer et fragiliser la confiance. Le focus de la semaine doit être simple : boucler les footings faciles/récup sans exception pour recréer une base d'assiduité, et aborder les deux séances clés à venir avec un volume légèrement réduit pour sécuriser la réussite plutôt que viser le plein volume.",
  "applied": [
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-07-21",
-   "field": "description_note",
-   "new_value": "Semaine de reprise : l'objectif n'est pas la performance mais la régularité. Coche toutes les cases, même en dessous du volume prévu si besoin.",
-   "reason": "4 semaines à forte irrégularité (0/11 clés réussies) : reconstruire la confiance et la fréquence avant l'intensité.",
-   "id": "25977a8d",
-   "detail": "2026-07-21 : note ajoutée"
-  },
   {
    "severity": "minor",
    "kind": "volume_adjust",
    "date": "2026-07-28",
    "field": "km",
-   "new_value": 16.0,
-   "reason": "Réduction de ~10% du volume de la séance intervalles pour une reprise progressive après un mois quasi sans séance clé réussie.",
-   "id": "4fa553b0",
-   "detail": "2026-07-28 : 17.8→16 km"
+   "new_value": 14.5,
+   "reason": "Reprise en intensité après 4 semaines très irrégulières et une semaine de récup : réduire légèrement le volume des 6x800m pour sécuriser une séance clé réussie plutôt que viser le plein volume.",
+   "id": "f7046943",
+   "detail": "2026-07-28 : 16→14.5 km"
   },
   {
    "severity": "minor",
    "kind": "volume_adjust",
    "date": "2026-07-30",
    "field": "km",
-   "new_value": 18.0,
-   "reason": "Réduction modérée du tempo pour sécuriser une première séance clé réussie après la semaine de récup, plutôt que viser le volume plein directement.",
-   "id": "8d805b96",
-   "detail": "2026-07-30 : 19.8→18 km"
+   "new_value": 16.5,
+   "reason": "Deuxième séance clé de la semaine de reprise : volume légèrement réduit pour éviter un nouvel échec après plusieurs tempos manqués ces dernières semaines.",
+   "id": "1935fbb1",
+   "detail": "2026-07-30 : 18→16.5 km"
   }
  ],
  "pending": [
@@ -68,6 +58,18 @@
    "id": "48df52a3",
    "status": "pending",
    "created_at": "2026-07-19T13:45:55"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-07-21",
+   "field": "description_note",
+   "new_value": "Objectif de la semaine : juste finir chaque footing/récup prévu, même court, avant de repenser vitesse. La régularité compte plus que la performance en ce moment.",
+   "reason": "Taux d'assiduité très faible sur 4 semaines (0-61% du volume) : besoin de reconstruire l'habitude avant de viser les allures.",
+   "id": "cf5eff27",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-07-21T07:58:45"
   }
  ]
 }
