@@ -1155,12 +1155,37 @@
           "duration_min": 69,
           "key": false,
           "description": "13km à 5'26\"/km. Allure conversationnelle, FC en zone 2.",
-          "status": "today",
-          "actual": null,
+          "status": "done",
+          "actual": {
+            "km": 10.3,
+            "duration_min": 50,
+            "pace_sec": 292,
+            "pace_str": "4'52\"/km",
+            "fc": 149,
+            "type": "footing",
+            "title": "Course à pied en soirée",
+            "n": 1
+          },
           "_rescheduled_from": "2026-07-16",
           "_rescheduled_title": "Tempo 20min seuil",
           "_rescheduled_desc": "15min échauffement 5'26\"/km\n20min en continu allure seuil 3'43\"/km\n10min retour calme",
-          "_rescheduled_pace": "3'43\"/km"
+          "_rescheduled_pace": "3'43\"/km",
+          "score": {
+            "points": 81,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 80,
+            "volume_points": 81,
+            "pace_points": null,
+            "pace_target_s": null,
+            "pace_actual_s": null,
+            "pace_actual_str": null,
+            "pace_delta_s": null,
+            "is_quality": false,
+            "reasons": [
+              "Volume 80%"
+            ]
+          }
         },
         {
           "type": "recovery",
