@@ -1197,7 +1197,7 @@
           "target_pace": "3'43\"/km",
           "date": "2026-07-23",
           "dow": "Thu",
-          "status": "pending",
+          "status": "today",
           "actual": null,
           "_downgraded_from": {
             "title": "Tempo 20min seuil",
@@ -1219,7 +1219,11 @@
           "key": false,
           "description": "9km très facile, allure récupération. FC zone 1-2 bas.",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "_rescheduled_from": "2026-07-16",
+          "_rescheduled_title": "Tempo 20min seuil",
+          "_rescheduled_desc": "15min échauffement 5'26\"/km\n20min en continu allure seuil 3'43\"/km\n10min retour calme",
+          "_rescheduled_pace": "3'43\"/km"
         },
         {
           "date": "2026-07-25",
@@ -1252,18 +1256,18 @@
           }
         }
       ],
-      "volume_actual_to_date": 11.0,
-      "volume_planned_to_date": 11.5,
-      "volume_drift_pct": -4.3,
+      "volume_actual_to_date": 21.3,
+      "volume_planned_to_date": 24.3,
+      "volume_drift_pct": -12.3,
       "compliance": {
-        "km_pct": 96,
-        "km_done": 11.0,
-        "km_planned": 11.5,
-        "sessions_done": 1,
-        "sessions_planned": 1,
+        "km_pct": 88,
+        "km_done": 21.3,
+        "km_planned": 24.3,
+        "sessions_done": 2,
+        "sessions_planned": 2,
         "keys_success": 0,
         "keys_total": 0,
-        "points": 79,
+        "points": 80,
         "verdict": "partial"
       }
     },
@@ -2642,7 +2646,7 @@
     {
       "kind": "reschedule_key",
       "from_date": "2026-07-16",
-      "to_date": "2026-07-23",
+      "to_date": "2026-07-24",
       "title": "Tempo 20min seuil",
       "reason": "Séance clé manquée — repositionnée sur un jour libre"
     },
