@@ -1,0 +1,120 @@
+{
+ "activities": [
+  {
+   "id": "19444598853",
+   "name": "Lunch Run",
+   "description": "",
+   "sport_type": "Run",
+   "start_local": "2026-07-24T12:56:43",
+   "summary": {
+    "distance": 10072.0,
+    "moving_time": 2988,
+    "elapsed_time": 3268,
+    "elevation_gain": 55.0,
+    "avg_speed": 3.371,
+    "max_speed": 4.72,
+    "avg_cadence": 88.4,
+    "relative_effort": 88.0,
+    "total_calories": 745.0,
+    "kudos_count": 0,
+    "achievement_count": 0,
+    "pr_count": 0
+   },
+   "performance": {
+    "average_heartrate": 154.6,
+    "max_heartrate": 170.0,
+    "average_watts": 360.0,
+    "laps": [
+     {
+      "elapsed_time": 314,
+      "moving_time": 314,
+      "distance": 1000.0,
+      "avg_hr": 132.7,
+      "avg_cadence": 175,
+      "avg_watts": 347.3
+     },
+     {
+      "elapsed_time": 298,
+      "moving_time": 298,
+      "distance": 1000.0,
+      "avg_hr": 149.9,
+      "avg_cadence": 177,
+      "avg_watts": 371.7
+     },
+     {
+      "elapsed_time": 322,
+      "moving_time": 298,
+      "distance": 1000.0,
+      "avg_hr": 152.8,
+      "avg_cadence": 177,
+      "avg_watts": 365.3
+     },
+     {
+      "elapsed_time": 305,
+      "moving_time": 295,
+      "distance": 1000.0,
+      "avg_hr": 157.8,
+      "avg_cadence": 177,
+      "avg_watts": 356.2
+     },
+     {
+      "elapsed_time": 291,
+      "moving_time": 291,
+      "distance": 1000.0,
+      "avg_hr": 159.4,
+      "avg_cadence": 177,
+      "avg_watts": 362.7
+     },
+     {
+      "elapsed_time": 293,
+      "moving_time": 293,
+      "distance": 1000.0,
+      "avg_hr": 160.2,
+      "avg_cadence": 177,
+      "avg_watts": 356.5
+     },
+     {
+      "elapsed_time": 288,
+      "moving_time": 288,
+      "distance": 1000.0,
+      "avg_hr": 160.6,
+      "avg_cadence": 177,
+      "avg_watts": 354.5
+     },
+     {
+      "elapsed_time": 290,
+      "moving_time": 290,
+      "distance": 1000.0,
+      "avg_hr": 158.2,
+      "avg_cadence": 176,
+      "avg_watts": 353.6
+     },
+     {
+      "elapsed_time": 296,
+      "moving_time": 296,
+      "distance": 1000.0,
+      "avg_hr": 164.2,
+      "avg_cadence": 177,
+      "avg_watts": 357.5
+     },
+     {
+      "elapsed_time": 544,
+      "moving_time": 298,
+      "distance": 1000.0,
+      "avg_hr": 152.5,
+      "avg_cadence": 176,
+      "avg_watts": 374.5
+     },
+     {
+      "elapsed_time": 22,
+      "moving_time": 22,
+      "distance": 71.98,
+      "avg_hr": 156.0,
+      "avg_cadence": 174,
+      "avg_watts": 365.0
+     }
+    ]
+   }
+  }
+ ]
+}

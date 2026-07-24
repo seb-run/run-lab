@@ -1218,12 +1218,37 @@
           "duration_min": 55,
           "key": false,
           "description": "9km très facile, allure récupération. FC zone 1-2 bas.",
-          "status": "today",
-          "actual": null,
+          "status": "done",
+          "actual": {
+            "km": 10.1,
+            "duration_min": 50,
+            "pace_sec": 297,
+            "pace_str": "4'57\"/km",
+            "fc": 155,
+            "type": "frac_court",
+            "title": "Lunch Run",
+            "n": 1
+          },
           "_rescheduled_from": "2026-07-16",
           "_rescheduled_title": "Tempo 20min seuil",
           "_rescheduled_desc": "15min échauffement 5'26\"/km\n20min en continu allure seuil 3'43\"/km\n10min retour calme",
-          "_rescheduled_pace": "3'43\"/km"
+          "_rescheduled_pace": "3'43\"/km",
+          "score": {
+            "points": 100,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 110,
+            "volume_points": 100,
+            "pace_points": null,
+            "pace_target_s": null,
+            "pace_actual_s": null,
+            "pace_actual_str": null,
+            "pace_delta_s": null,
+            "is_quality": false,
+            "reasons": [
+              "Volume 110%"
+            ]
+          }
         },
         {
           "date": "2026-07-25",
