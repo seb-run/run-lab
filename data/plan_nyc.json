@@ -1197,7 +1197,7 @@
           "target_pace": "3'43\"/km",
           "date": "2026-07-23",
           "dow": "Thu",
-          "status": "today",
+          "status": "missed",
           "actual": null,
           "_downgraded_from": {
             "title": "Tempo 20min seuil",
@@ -1218,7 +1218,7 @@
           "duration_min": 55,
           "key": false,
           "description": "9km très facile, allure récupération. FC zone 1-2 bas.",
-          "status": "pending",
+          "status": "today",
           "actual": null,
           "_rescheduled_from": "2026-07-16",
           "_rescheduled_title": "Tempo 20min seuil",
@@ -1235,7 +1235,11 @@
           "key": false,
           "description": "13km à 5'26\"/km + 4×100m lignes droites en fin. Activation pour la SL de dimanche.",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "_rescheduled_from": "2026-07-16",
+          "_rescheduled_title": "Tempo 20min seuil",
+          "_rescheduled_desc": "15min échauffement 5'26\"/km\n20min en continu allure seuil 3'43\"/km\n10min retour calme",
+          "_rescheduled_pace": "3'43\"/km"
         },
         {
           "type": "recovery",
@@ -1257,17 +1261,17 @@
         }
       ],
       "volume_actual_to_date": 21.3,
-      "volume_planned_to_date": 24.3,
-      "volume_drift_pct": -12.3,
+      "volume_planned_to_date": 37.1,
+      "volume_drift_pct": -42.6,
       "compliance": {
-        "km_pct": 88,
+        "km_pct": 57,
         "km_done": 21.3,
-        "km_planned": 24.3,
+        "km_planned": 37.1,
         "sessions_done": 2,
-        "sessions_planned": 2,
+        "sessions_planned": 3,
         "keys_success": 0,
         "keys_total": 0,
-        "points": 80,
+        "points": 62,
         "verdict": "partial"
       }
     },
@@ -2646,7 +2650,7 @@
     {
       "kind": "reschedule_key",
       "from_date": "2026-07-16",
-      "to_date": "2026-07-24",
+      "to_date": "2026-07-25",
       "title": "Tempo 20min seuil",
       "reason": "Séance clé manquée — repositionnée sur un jour libre"
     },
