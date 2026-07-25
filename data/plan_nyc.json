@@ -1356,7 +1356,7 @@
           "km": 14.5,
           "duration_min": 98,
           "key": true,
-          "description": "20min échauffement\n6×800m à allure 5K (≈3'26\"/km) · récup 1'30 trot\n10min retour calme\n[COACH IA : volume ajusté 17.8→16 km — Réduction de ~10% du volume de la séance intervalles pour une reprise progressive après un mois quasi sans séance clé réussie.]\n[COACH IA : volume ajusté 16→14.5 km — Reprise en intensité après 4 semaines très irrégulières et une semaine de récup : réduire légèrement le volume des 6x800m pour sécuriser une séance clé réussie plutôt que viser le plein volume.]",
+          "description": "20min échauffement\n6×800m à allure 5K (≈3'26\"/km) · récup 1'30 trot\n10min retour calme\n[COACH IA : volume ajusté 17.8→16 km — Réduction de ~10% du volume de la séance intervalles pour une reprise progressive après un mois quasi sans séance clé réussie.]\n[COACH IA : volume ajusté 16→14.5 km — Reprise en intensité après 4 semaines très irrégulières et une semaine de récup : réduire légèrement le volume des 6x800m pour sécuriser une séance clé réussie plutôt que viser le plein volume.]\n[COACH IA : Priorité à la qualité d'exécution, pas à l'allure cible : si les 3 premières 800m sont dures, ralentis légèrement plutôt que d'abandonner la séance.]",
           "target_pace": "3'26\"/km",
           "date": "2026-07-28",
           "dow": "Tue",

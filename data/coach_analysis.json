@@ -1,53 +1,21 @@
 {
- "generated_at": "2026-07-21T07:58:45",
+ "generated_at": "2026-07-25T13:08:48",
  "model": "claude-sonnet-5",
- "headline": "Quatre semaines compliquées avec un taux d'assiduité très bas : la priorité absolue est de reconstruire la régularité avant de reparler performance.",
- "analysis": "Les 4 dernières semaines sont dans le rouge : 0 à 61% du volume prévu, et surtout 0 séance clé réussie sur un total de 11. Sur les 14 derniers jours, tempo, fartlek et VMA ont été manqués ou fortement sous-réalisés, seules les sorties faciles/récup passent bien quand elles sont faites. Le moteur a déjà réagi avec une semaine de récup forcée et un reschedule du tempo, ce qui est cohérent. Le vrai risque maintenant n'est pas la charge mais l'assiduité : tu enchaînes après cette semaine allégée directement sur des intervalles à allure 5K puis un tempo à volume plein (16-18km), sans palier de reprise. Si le pattern des dernières semaines se répète, ces deux séances clés vont encore échouer et fragiliser la confiance. Le focus de la semaine doit être simple : boucler les footings faciles/récup sans exception pour recréer une base d'assiduité, et aborder les deux séances clés à venir avec un volume légèrement réduit pour sécuriser la réussite plutôt que viser le plein volume.",
+ "headline": "Trois semaines quasi sans clés réussies : il faut rebâtir la base avant de recharger l'intensité, pas l'inverse.",
+ "analysis": "Les semaines 4 à 7 sont catastrophiques sur le plan clé : 0 succès sur 3, 3, 2 séances clés respectivement, et le volume tombe régulièrement sous 50-70% du prévu. Le moteur a déjà réagi avec une semaine de récup forcée et un repositionnement du tempo manqué, c'est la bonne décision. Mais les 10 prochains jours repartent très fort : intervalles 6×800m, tempo 2×15min, une sortie longue de 27km avec 12km à allure marathon, puis une VMA longue 5×1000m quatre jours après — soit 4 séances clés en 10 jours après un mois quasi à vide. Le risque principal est la blessure ou un nouvel échec en cascade si tu enchaînes ces séances à pleine intensité sans avoir reconstruit l'endurance de base. Ton focus cette semaine doit être la régularité du footing et de la récup, pas la performance sur les séances clés. Mieux vaut valider deux séances clés propres à intensité modérée que d'en louper quatre en visant trop haut.",
  "applied": [
   {
    "severity": "minor",
-   "kind": "volume_adjust",
+   "kind": "add_note",
    "date": "2026-07-28",
-   "field": "km",
-   "new_value": 14.5,
-   "reason": "Reprise en intensité après 4 semaines très irrégulières et une semaine de récup : réduire légèrement le volume des 6x800m pour sécuriser une séance clé réussie plutôt que viser le plein volume.",
-   "id": "f7046943",
-   "detail": "2026-07-28 : 16→14.5 km"
-  },
-  {
-   "severity": "minor",
-   "kind": "volume_adjust",
-   "date": "2026-07-30",
-   "field": "km",
-   "new_value": 16.5,
-   "reason": "Deuxième séance clé de la semaine de reprise : volume légèrement réduit pour éviter un nouvel échec après plusieurs tempos manqués ces dernières semaines.",
-   "id": "1935fbb1",
-   "detail": "2026-07-30 : 18→16.5 km"
+   "field": "description_note",
+   "new_value": "Priorité à la qualité d'exécution, pas à l'allure cible : si les 3 premières 800m sont dures, ralentis légèrement plutôt que d'abandonner la séance.",
+   "reason": "Historique récent montre un abandon systématique des séances clés dès qu'elles sont exigeantes ; il vaut mieux finir à allure légèrement réduite que manquer encore.",
+   "id": "895f750b",
+   "detail": "2026-07-28 : note ajoutée"
   }
  ],
  "pending": [
-  {
-   "severity": "major",
-   "kind": "change_type",
-   "date": "2026-07-21",
-   "field": null,
-   "new_value": "Remplacer la séance VMA 10×400m par un footing progressif de 12km (finir sur 2km allure seuil max)",
-   "reason": "3 séances d'intensité consécutives ratées ou très sous-volume (07/07, 09/07, 14/07, 16/07) : le corps n'est pas prêt à encaisser du travail rapide, risque de blessure ou nouvel échec démoralisant.",
-   "id": "8ba79e92",
-   "status": "pending",
-   "created_at": "2026-07-19T13:45:55"
-  },
-  {
-   "severity": "major",
-   "kind": "change_type",
-   "date": "2026-07-23",
-   "field": null,
-   "new_value": "Remplacer le tempo 20min seuil par un footing normal de 14km, sans allure imposée",
-   "reason": "Le tempo a été manqué 2 fois d'affilée sur les 2 dernières semaines ; mieux vaut sécuriser le volume facile avant de réintroduire du seuil.",
-   "id": "6c2533a8",
-   "status": "pending",
-   "created_at": "2026-07-19T13:45:55"
-  },
   {
    "severity": "major",
    "kind": "volume_adjust",
@@ -60,16 +28,26 @@
    "created_at": "2026-07-19T13:45:55"
   },
   {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-07-21",
+   "severity": "major",
+   "kind": "restructure_week",
+   "date": "2026-08-02",
    "field": "description_note",
-   "new_value": "Objectif de la semaine : juste finir chaque footing/récup prévu, même court, avant de repenser vitesse. La régularité compte plus que la performance en ce moment.",
-   "reason": "Taux d'assiduité très faible sur 4 semaines (0-61% du volume) : besoin de reconstruire l'habitude avant de viser les allures.",
-   "id": "cf5eff27",
-   "guardrail_reject": "jour passé ou en cours",
+   "new_value": "Réduire la sortie longue à 20-22km, garder seulement 6-8km à allure marathon au lieu de 12km",
+   "reason": "Après 4 semaines à volume très réduit et 0 clé réussie, un bloc MP de 12km sur 27km est trop ambitieux et risque un nouvel échec ou une blessure.",
+   "id": "7e4375e9",
    "status": "pending",
-   "created_at": "2026-07-21T07:58:45"
+   "created_at": "2026-07-25T13:08:48"
+  },
+  {
+   "severity": "major",
+   "kind": "move_session",
+   "date": "2026-08-04",
+   "field": null,
+   "new_value": "Décaler la VMA longue 5×1000m de 2-3 jours plus tard ou la remplacer par un fartlek plus doux",
+   "reason": "Enchaîner une sortie longue avec bloc MP et une VMA longue exigeante à seulement 2 jours d'intervalle est risqué compte tenu de la faible charge accumulée récemment ; espacer permet une meilleure récupération avant la reprise complète d'intensité.",
+   "id": "02ea381f",
+   "status": "pending",
+   "created_at": "2026-07-25T13:08:48"
   }
  ]
 }
