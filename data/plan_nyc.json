@@ -1259,7 +1259,7 @@
           "duration_min": 68,
           "key": false,
           "description": "13km à 5'26\"/km + 4×100m lignes droites en fin. Activation pour la SL de dimanche.",
-          "status": "pending",
+          "status": "today",
           "actual": null,
           "_rescheduled_from": "2026-07-16",
           "_rescheduled_title": "Tempo 20min seuil",
@@ -1282,21 +1282,25 @@
             "title": "Sortie longue 26km",
             "km": 25.6,
             "description": "26km en endurance 4'51\"/km. Apprends à tenir le rythme sans monter dans les tours."
-          }
+          },
+          "_rescheduled_from": "2026-07-16",
+          "_rescheduled_title": "Tempo 20min seuil",
+          "_rescheduled_desc": "15min échauffement 5'26\"/km\n20min en continu allure seuil 3'43\"/km\n10min retour calme",
+          "_rescheduled_pace": "3'43\"/km"
         }
       ],
-      "volume_actual_to_date": 21.3,
-      "volume_planned_to_date": 37.1,
-      "volume_drift_pct": -42.6,
+      "volume_actual_to_date": 31.4,
+      "volume_planned_to_date": 46.3,
+      "volume_drift_pct": -32.2,
       "compliance": {
-        "km_pct": 57,
-        "km_done": 21.3,
-        "km_planned": 37.1,
-        "sessions_done": 2,
-        "sessions_planned": 3,
+        "km_pct": 68,
+        "km_done": 31.4,
+        "km_planned": 46.3,
+        "sessions_done": 3,
+        "sessions_planned": 4,
         "keys_success": 0,
         "keys_total": 0,
-        "points": 62,
+        "points": 72,
         "verdict": "partial"
       }
     },
@@ -2675,7 +2679,7 @@
     {
       "kind": "reschedule_key",
       "from_date": "2026-07-16",
-      "to_date": "2026-07-25",
+      "to_date": "2026-07-26",
       "title": "Tempo 20min seuil",
       "reason": "Séance clé manquée — repositionnée sur un jour libre"
     },
