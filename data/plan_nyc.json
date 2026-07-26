@@ -1301,7 +1301,7 @@
           "target_pace": "4'51\"/km",
           "date": "2026-07-26",
           "dow": "Sun",
-          "status": "pending",
+          "status": "today",
           "actual": null,
           "_downgraded_from": {
             "title": "Sortie longue 26km",
@@ -1314,18 +1314,18 @@
           "_rescheduled_pace": "3'43\"/km"
         }
       ],
-      "volume_actual_to_date": 31.4,
-      "volume_planned_to_date": 46.3,
-      "volume_drift_pct": -32.2,
+      "volume_actual_to_date": 43.4,
+      "volume_planned_to_date": 59.1,
+      "volume_drift_pct": -26.6,
       "compliance": {
-        "km_pct": 68,
-        "km_done": 31.4,
-        "km_planned": 46.3,
-        "sessions_done": 3,
-        "sessions_planned": 4,
+        "km_pct": 73,
+        "km_done": 43.4,
+        "km_planned": 59.1,
+        "sessions_done": 4,
+        "sessions_planned": 5,
         "keys_success": 0,
         "keys_total": 0,
-        "points": 72,
+        "points": 78,
         "verdict": "partial"
       }
     },
@@ -2700,18 +2700,5 @@
       ]
     }
   ],
-  "adaptations": [
-    {
-      "kind": "reschedule_key",
-      "from_date": "2026-07-16",
-      "to_date": "2026-07-26",
-      "title": "Tempo 20min seuil",
-      "reason": "Séance clé manquée — repositionnée sur un jour libre"
-    },
-    {
-      "kind": "recovery_week",
-      "week_num": 7,
-      "reason": "11 séances clés manquées — semaine de récup forcée"
-    }
-  ]
+  "adaptations": []
 }
