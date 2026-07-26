@@ -1,0 +1,120 @@
+{
+ "activities": [
+  {
+   "id": "19471892703",
+   "name": "Course à pied le midi",
+   "description": "",
+   "sport_type": "Run",
+   "start_local": "2026-07-26T12:36:10",
+   "summary": {
+    "distance": 10397.0,
+    "moving_time": 3846,
+    "elapsed_time": 3980,
+    "elevation_gain": 58.0,
+    "avg_speed": 2.703,
+    "max_speed": 4.74,
+    "avg_cadence": 90.2,
+    "relative_effort": 22.0,
+    "total_calories": 751.0,
+    "kudos_count": 0,
+    "achievement_count": 2,
+    "pr_count": 0
+   },
+   "performance": {
+    "average_heartrate": 131.5,
+    "max_heartrate": 157.0,
+    "average_watts": 311.3,
+    "laps": [
+     {
+      "elapsed_time": 386,
+      "moving_time": 386,
+      "distance": 1000.0,
+      "avg_hr": 127.5,
+      "avg_cadence": 183,
+      "avg_watts": 292.4
+     },
+     {
+      "elapsed_time": 383,
+      "moving_time": 383,
+      "distance": 1000.0,
+      "avg_hr": 134.3,
+      "avg_cadence": 182,
+      "avg_watts": 316.4
+     },
+     {
+      "elapsed_time": 388,
+      "moving_time": 380,
+      "distance": 1000.0,
+      "avg_hr": 132.6,
+      "avg_cadence": 180,
+      "avg_watts": 296.1
+     },
+     {
+      "elapsed_time": 396,
+      "moving_time": 396,
+      "distance": 1000.0,
+      "avg_hr": 133.3,
+      "avg_cadence": 180,
+      "avg_watts": 301.0
+     },
+     {
+      "elapsed_time": 451,
+      "moving_time": 385,
+      "distance": 1000.0,
+      "avg_hr": 131.0,
+      "avg_cadence": 181,
+      "avg_watts": 301.1
+     },
+     {
+      "elapsed_time": 376,
+      "moving_time": 376,
+      "distance": 1000.0,
+      "avg_hr": 128.1,
+      "avg_cadence": 180,
+      "avg_watts": 291.0
+     },
+     {
+      "elapsed_time": 369,
+      "moving_time": 369,
+      "distance": 1000.0,
+      "avg_hr": 129.0,
+      "avg_cadence": 178,
+      "avg_watts": 330.0
+     },
+     {
+      "elapsed_time": 355,
+      "moving_time": 355,
+      "distance": 1000.0,
+      "avg_hr": 127.7,
+      "avg_cadence": 180,
+      "avg_watts": 303.9
+     },
+     {
+      "elapsed_time": 370,
+      "moving_time": 370,
+      "distance": 1000.0,
+      "avg_hr": 131.1,
+      "avg_cadence": 179,
+      "avg_watts": 320.7
+     },
+     {
+      "elapsed_time": 385,
+      "moving_time": 325,
+      "distance": 1000.0,
+      "avg_hr": 133.7,
+      "avg_cadence": 181,
+      "avg_watts": 330.4
+     },
+     {
+      "elapsed_time": 116,
+      "moving_time": 116,
+      "distance": 397.02,
+      "avg_hr": 152.0,
+      "avg_cadence": 179,
+      "avg_watts": 419.9
+     }
+    ]
+   }
+  }
+ ]
+}

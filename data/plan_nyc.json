@@ -1301,8 +1301,17 @@
           "target_pace": "4'51\"/km",
           "date": "2026-07-26",
           "dow": "Sun",
-          "status": "today",
-          "actual": null,
+          "status": "under",
+          "actual": {
+            "km": 10.4,
+            "duration_min": 64,
+            "pace_sec": 370,
+            "pace_str": "6'10\"/km",
+            "fc": 132,
+            "type": "footing",
+            "title": "Course à pied le midi",
+            "n": 1
+          },
           "_downgraded_from": {
             "title": "Sortie longue 26km",
             "km": 25.6,
@@ -1311,7 +1320,24 @@
           "_rescheduled_from": "2026-07-16",
           "_rescheduled_title": "Tempo 20min seuil",
           "_rescheduled_desc": "15min échauffement 5'26\"/km\n20min en continu allure seuil 3'43\"/km\n10min retour calme",
-          "_rescheduled_pace": "3'43\"/km"
+          "_rescheduled_pace": "3'43\"/km",
+          "score": {
+            "points": 20,
+            "verdict": "failed",
+            "verdict_label": "Échouée",
+            "volume_pct": 58,
+            "volume_points": 36,
+            "pace_points": 0,
+            "pace_target_s": 291,
+            "pace_actual_s": 370,
+            "pace_actual_str": "6'10\"/km",
+            "pace_delta_s": 79,
+            "is_quality": false,
+            "reasons": [
+              "Volume 58%",
+              "Allure +79\"/km vs cible"
+            ]
+          }
         }
       ],
       "volume_actual_to_date": 43.4,
