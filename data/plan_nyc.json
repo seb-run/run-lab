@@ -1344,14 +1344,14 @@
       "volume_planned_to_date": 59.1,
       "volume_drift_pct": -26.6,
       "compliance": {
-        "km_pct": 73,
-        "km_done": 43.4,
-        "km_planned": 59.1,
-        "sessions_done": 4,
-        "sessions_planned": 5,
+        "km_pct": 70,
+        "km_done": 53.8,
+        "km_planned": 77.0,
+        "sessions_done": 5,
+        "sessions_planned": 6,
         "keys_success": 0,
         "keys_total": 0,
-        "points": 78,
+        "points": 70,
         "verdict": "partial"
       }
     },
@@ -1373,21 +1373,36 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet ou mobilité/yoga 20-30min. Récupération.",
-          "status": "pending",
-          "actual": null
+          "status": "bonus",
+          "actual": {
+            "km": 15.4,
+            "duration_min": 76,
+            "pace_sec": 296,
+            "pace_str": "4'56\"/km",
+            "fc": 143,
+            "type": "frac_court",
+            "title": "Course à pied le matin",
+            "n": 1
+          },
+          "score": null
         },
         {
-          "type": "intervals",
-          "title": "6×800m allure 5K",
-          "km": 14.5,
+          "type": "recovery",
+          "title": "Footing récup 10km",
+          "km": 10.1,
           "duration_min": 98,
-          "key": true,
-          "description": "20min échauffement\n6×800m à allure 5K (≈3'26\"/km) · récup 1'30 trot\n10min retour calme\n[COACH IA : volume ajusté 17.8→16 km — Réduction de ~10% du volume de la séance intervalles pour une reprise progressive après un mois quasi sans séance clé réussie.]\n[COACH IA : volume ajusté 16→14.5 km — Reprise en intensité après 4 semaines très irrégulières et une semaine de récup : réduire légèrement le volume des 6x800m pour sécuriser une séance clé réussie plutôt que viser le plein volume.]\n[COACH IA : Priorité à la qualité d'exécution, pas à l'allure cible : si les 3 premières 800m sont dures, ralentis légèrement plutôt que d'abandonner la séance.]",
+          "key": false,
+          "description": "Séance qualité downgradée en récup. Plusieurs séances clés manquées récemment — priorité à la régénération.",
           "target_pace": "3'26\"/km",
           "date": "2026-07-28",
           "dow": "Tue",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "_downgraded_from": {
+            "title": "6×800m allure 5K",
+            "km": 14.5,
+            "description": "20min échauffement\n6×800m à allure 5K (≈3'26\"/km) · récup 1'30 trot\n10min retour calme\n[COACH IA : volume ajusté 17.8→16 km — Réduction de ~10% du volume de la séance intervalles pour une reprise progressive après un mois quasi sans séance clé réussie.]\n[COACH IA : volume ajusté 16→14.5 km — Reprise en intensité après 4 semaines très irrégulières et une semaine de récup : réduire légèrement le volume des 6x800m pour sécuriser une séance clé réussie plutôt que viser le plein volume.]\n[COACH IA : Priorité à la qualité d'exécution, pas à l'allure cible : si les 3 premières 800m sont dures, ralentis légèrement plutôt que d'abandonner la séance.]"
+          }
         },
         {
           "date": "2026-07-29",
@@ -1402,17 +1417,22 @@
           "actual": null
         },
         {
-          "type": "tempo",
-          "title": "2×15min seuil",
-          "km": 16.5,
+          "type": "recovery",
+          "title": "Footing récup 12km",
+          "km": 11.5,
           "duration_min": 103,
-          "key": true,
-          "description": "15min échauffement\n2×15min seuil 3'43\"/km · récup 3min trot\n10min retour calme\n[COACH IA : volume ajusté 19.8→18 km — Réduction modérée du tempo pour sécuriser une première séance clé réussie après la semaine de récup, plutôt que viser le volume plein directement.]\n[COACH IA : volume ajusté 18→16.5 km — Deuxième séance clé de la semaine de reprise : volume légèrement réduit pour éviter un nouvel échec après plusieurs tempos manqués ces dernières semaines.]",
+          "key": false,
+          "description": "Séance qualité downgradée en récup. Plusieurs séances clés manquées récemment — priorité à la régénération.",
           "target_pace": "3'43\"/km",
           "date": "2026-07-30",
           "dow": "Thu",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "_downgraded_from": {
+            "title": "2×15min seuil",
+            "km": 16.5,
+            "description": "15min échauffement\n2×15min seuil 3'43\"/km · récup 3min trot\n10min retour calme\n[COACH IA : volume ajusté 19.8→18 km — Réduction modérée du tempo pour sécuriser une première séance clé réussie après la semaine de récup, plutôt que viser le volume plein directement.]\n[COACH IA : volume ajusté 18→16.5 km — Deuxième séance clé de la semaine de reprise : volume légèrement réduit pour éviter un nouvel échec après plusieurs tempos manqués ces dernières semaines.]"
+          }
         },
         {
           "date": "2026-07-31",
@@ -1439,19 +1459,27 @@
           "actual": null
         },
         {
-          "type": "long_mp",
-          "title": "SL 27km · 12km MP au milieu",
-          "km": 26.7,
+          "type": "recovery",
+          "title": "Footing récup 19km",
+          "km": 18.7,
           "duration_min": 134,
-          "key": true,
-          "description": "27km dont 12km à allure marathon 3'53\"/km insérés au milieu. Le reste 4'51\"/km.",
+          "key": false,
+          "description": "Séance qualité downgradée en récup. Plusieurs séances clés manquées récemment — priorité à la régénération.",
           "target_pace": "3'53\"/km",
           "date": "2026-08-02",
           "dow": "Sun",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "_downgraded_from": {
+            "title": "SL 27km · 12km MP au milieu",
+            "km": 26.7,
+            "description": "27km dont 12km à allure marathon 3'53\"/km insérés au milieu. Le reste 4'51\"/km."
+          }
         }
-      ]
+      ],
+      "volume_actual_to_date": 0.0,
+      "volume_planned_to_date": 0.0,
+      "volume_drift_pct": 0
     },
     {
       "week_num": 9,
@@ -2726,5 +2754,11 @@
       ]
     }
   ],
-  "adaptations": []
+  "adaptations": [
+    {
+      "kind": "recovery_week",
+      "week_num": 8,
+      "reason": "11 séances clés manquées — semaine de récup forcée"
+    }
+  ]
 }
