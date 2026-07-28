@@ -1396,7 +1396,7 @@
           "target_pace": "3'26\"/km",
           "date": "2026-07-28",
           "dow": "Tue",
-          "status": "pending",
+          "status": "today",
           "actual": null,
           "_downgraded_from": {
             "title": "6×800m allure 5K",
@@ -1477,7 +1477,7 @@
           }
         }
       ],
-      "volume_actual_to_date": 0.0,
+      "volume_actual_to_date": 15.4,
       "volume_planned_to_date": 0.0,
       "volume_drift_pct": 0
     },
