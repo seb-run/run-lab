@@ -30,7 +30,7 @@
    "new_value": 18,
    "reason": "Les 2 dernières sorties longues ont été manquée puis stoppée à 44% du volume prévu (10.6/24.2km) ; repartir sur 18km réalistes pour recréer une réussite plutôt que viser 25.6km et risquer un 3e échec.",
    "id": "48df52a3",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-07-19T13:45:55"
   },
   {

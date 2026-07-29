@@ -1,32 +1,41 @@
 {
- "generated_at": "2026-07-25T13:08:48",
+ "generated_at": "2026-07-29T08:11:01",
  "model": "claude-sonnet-5",
- "headline": "Trois semaines quasi sans clés réussies : il faut rebâtir la base avant de recharger l'intensité, pas l'inverse.",
- "analysis": "Les semaines 4 à 7 sont catastrophiques sur le plan clé : 0 succès sur 3, 3, 2 séances clés respectivement, et le volume tombe régulièrement sous 50-70% du prévu. Le moteur a déjà réagi avec une semaine de récup forcée et un repositionnement du tempo manqué, c'est la bonne décision. Mais les 10 prochains jours repartent très fort : intervalles 6×800m, tempo 2×15min, une sortie longue de 27km avec 12km à allure marathon, puis une VMA longue 5×1000m quatre jours après — soit 4 séances clés en 10 jours après un mois quasi à vide. Le risque principal est la blessure ou un nouvel échec en cascade si tu enchaînes ces séances à pleine intensité sans avoir reconstruit l'endurance de base. Ton focus cette semaine doit être la régularité du footing et de la récup, pas la performance sur les séances clés. Mieux vaut valider deux séances clés propres à intensité modérée que d'en louper quatre en visant trop haut.",
+ "headline": "Quatre semaines de forme actuelle, zéro séance clé réussie : il faut sécuriser l'exécution avant d'ajouter de l'intensité.",
+ "analysis": "Sur les 4 dernières semaines, ton taux de complétion oscille entre 47% et 70% du volume prévu, avec un pic à 152% en semaine 8 qui a justifié la réduction automatique et la semaine de récup forcée — logique vu les 11 séances clés manquées. Sur les 14 derniers jours, plus de la moitié des séances sont manquées ou incomplètes, et ta longue sortie du 26/07 est un échec net (58% du volume, allure largement ratée). Le point positif : quand tu cours, les footings faciles sont propres et les FC restent basses, donc la fraîcheur physiologique est là. Le vrai risque, c'est la régularité et la discipline sur les jours de repos — tu as transformé un repos en sortie de 15km le 27/07, ce qui casse la récupération et alimente le cycle raté/manqué. Cette semaine enchaîne deux séances clés importantes (VMA longue mardi, 12km allure marathon jeudi) après un bloc chaotique : mieux vaut les aborder à volume légèrement réduit pour garantir la qualité d'exécution plutôt que viser le chiffre plein et les rater encore. Focus de la semaine : zéro séance manquée, respect strict des jours de repos, et réussir ces deux clés même à moindre volume plutôt que les échouer à 100%.",
  "applied": [
   {
    "severity": "minor",
+   "kind": "volume_adjust",
+   "date": "2026-08-04",
+   "field": "km",
+   "new_value": 16.5,
+   "reason": "Réduction ~9% pour sécuriser l'exécution de la VMA longue après un bloc à faible taux de complétion (0 clé réussie sur 4 semaines)",
+   "id": "9aaed819",
+   "detail": "2026-08-04 : 18.2→16.5 km"
+  },
+  {
+   "severity": "minor",
+   "kind": "volume_adjust",
+   "date": "2026-08-06",
+   "field": "km",
+   "new_value": 18.2,
+   "reason": "Réduction ~10% du volume de la sortie allure marathon pour prioriser la qualité d'exécution plutôt que le kilométrage",
+   "id": "3cbbb3ae",
+   "detail": "2026-08-06 : 20.2→18.2 km"
+  },
+  {
+   "severity": "minor",
    "kind": "add_note",
-   "date": "2026-07-28",
+   "date": "2026-08-03",
    "field": "description_note",
-   "new_value": "Priorité à la qualité d'exécution, pas à l'allure cible : si les 3 premières 800m sont dures, ralentis légèrement plutôt que d'abandonner la séance.",
-   "reason": "Historique récent montre un abandon systématique des séances clés dès qu'elles sont exigeantes ; il vaut mieux finir à allure légèrement réduite que manquer encore.",
-   "id": "895f750b",
-   "detail": "2026-07-28 : note ajoutée"
+   "new_value": "Repos strict aujourd'hui : pas de sortie bonus. Le 27/07 tu as couru 15km un jour de repos, ça casse la récup avant les séances clés qui suivent.",
+   "reason": "Un jour de repos a été remplacé par une sortie non prévue la semaine dernière, ce qui nuit à la récupération avant les séances clés",
+   "id": "ff9638f7",
+   "detail": "2026-08-03 : note ajoutée"
   }
  ],
  "pending": [
-  {
-   "severity": "major",
-   "kind": "volume_adjust",
-   "date": "2026-07-26",
-   "field": "km",
-   "new_value": 18,
-   "reason": "Les 2 dernières sorties longues ont été manquée puis stoppée à 44% du volume prévu (10.6/24.2km) ; repartir sur 18km réalistes pour recréer une réussite plutôt que viser 25.6km et risquer un 3e échec.",
-   "id": "48df52a3",
-   "status": "pending",
-   "created_at": "2026-07-19T13:45:55"
-  },
   {
    "severity": "major",
    "kind": "restructure_week",
