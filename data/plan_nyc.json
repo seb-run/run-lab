@@ -1396,7 +1396,7 @@
           "target_pace": "3'26\"/km",
           "date": "2026-07-28",
           "dow": "Tue",
-          "status": "today",
+          "status": "missed",
           "actual": null,
           "_downgraded_from": {
             "title": "6×800m allure 5K",
@@ -1413,16 +1413,41 @@
           "duration_min": 70,
           "key": false,
           "description": "13km à 5'26\"/km. Allure conversationnelle, FC en zone 2.",
-          "status": "pending",
-          "actual": null
+          "status": "done",
+          "actual": {
+            "km": 10.0,
+            "duration_min": 56,
+            "pace_sec": 334,
+            "pace_str": "5'34\"/km",
+            "fc": 133,
+            "type": "footing",
+            "title": "Course à pied le matin",
+            "n": 1
+          },
+          "score": {
+            "points": 75,
+            "verdict": "partial",
+            "verdict_label": "Partielle",
+            "volume_pct": 78,
+            "volume_points": 75,
+            "pace_points": null,
+            "pace_target_s": null,
+            "pace_actual_s": null,
+            "pace_actual_str": null,
+            "pace_delta_s": null,
+            "is_quality": false,
+            "reasons": [
+              "Volume 78%"
+            ]
+          }
         },
         {
           "type": "recovery",
           "title": "Footing récup 12km",
-          "km": 11.5,
+          "km": 9.3,
           "duration_min": 103,
           "key": false,
-          "description": "Séance qualité downgradée en récup. Plusieurs séances clés manquées récemment — priorité à la régénération.",
+          "description": "Séance qualité downgradée en récup. Plusieurs séances clés manquées récemment — priorité à la régénération.\n[ADAPTÉ : -10% pour gérer la charge de la semaine.]\n[ADAPTÉ : -10% pour gérer la charge de la semaine.]",
           "target_pace": "3'43\"/km",
           "date": "2026-07-30",
           "dow": "Thu",
@@ -1439,10 +1464,10 @@
           "dow": "Fri",
           "type": "recovery",
           "title": "Footing récup 10km",
-          "km": 9.9,
+          "km": 8.0,
           "duration_min": 59,
           "key": false,
-          "description": "10km très facile, allure récupération. FC zone 1-2 bas.",
+          "description": "10km très facile, allure récupération. FC zone 1-2 bas.\n[ADAPTÉ : -10% pour gérer la charge de la semaine.]\n[ADAPTÉ : -10% pour gérer la charge de la semaine.]",
           "status": "pending",
           "actual": null
         },
@@ -1451,20 +1476,20 @@
           "dow": "Sat",
           "type": "easy",
           "title": "Footing 12km + lignes",
-          "km": 11.9,
+          "km": 9.6,
           "duration_min": 63,
           "key": false,
-          "description": "12km à 5'26\"/km + 4×100m lignes droites en fin. Activation pour la SL de dimanche.",
+          "description": "12km à 5'26\"/km + 4×100m lignes droites en fin. Activation pour la SL de dimanche.\n[ADAPTÉ : -10% pour gérer la charge de la semaine.]\n[ADAPTÉ : -10% pour gérer la charge de la semaine.]",
           "status": "pending",
           "actual": null
         },
         {
           "type": "recovery",
           "title": "Footing récup 19km",
-          "km": 18.7,
+          "km": 15.1,
           "duration_min": 134,
           "key": false,
-          "description": "Séance qualité downgradée en récup. Plusieurs séances clés manquées récemment — priorité à la régénération.",
+          "description": "Séance qualité downgradée en récup. Plusieurs séances clés manquées récemment — priorité à la régénération.\n[ADAPTÉ : -10% pour gérer la charge de la semaine.]\n[ADAPTÉ : -10% pour gérer la charge de la semaine.]",
           "target_pace": "3'53\"/km",
           "date": "2026-08-02",
           "dow": "Sun",
@@ -1478,8 +1503,19 @@
         }
       ],
       "volume_actual_to_date": 15.4,
-      "volume_planned_to_date": 0.0,
-      "volume_drift_pct": 0
+      "volume_planned_to_date": 10.1,
+      "volume_drift_pct": 52.5,
+      "compliance": {
+        "km_pct": 152,
+        "km_done": 15.4,
+        "km_planned": 10.1,
+        "sessions_done": 0,
+        "sessions_planned": 1,
+        "keys_success": 0,
+        "keys_total": 0,
+        "points": 60,
+        "verdict": "partial"
+      }
     },
     {
       "week_num": 9,
@@ -2755,6 +2791,12 @@
     }
   ],
   "adaptations": [
+    {
+      "kind": "volume_reduce",
+      "week_num": 8,
+      "delta_pct": -10,
+      "reason": "Sur-volume +52%"
+    },
     {
       "kind": "recovery_week",
       "week_num": 8,
