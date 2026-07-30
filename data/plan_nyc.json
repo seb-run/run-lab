@@ -1451,7 +1451,7 @@
           "target_pace": "3'43\"/km",
           "date": "2026-07-30",
           "dow": "Thu",
-          "status": "pending",
+          "status": "today",
           "actual": null,
           "_downgraded_from": {
             "title": "2×15min seuil",
@@ -1502,19 +1502,19 @@
           }
         }
       ],
-      "volume_actual_to_date": 15.4,
-      "volume_planned_to_date": 10.1,
-      "volume_drift_pct": 52.5,
+      "volume_actual_to_date": 25.4,
+      "volume_planned_to_date": 23.0,
+      "volume_drift_pct": 10.4,
       "compliance": {
-        "km_pct": 152,
-        "km_done": 15.4,
-        "km_planned": 10.1,
-        "sessions_done": 0,
-        "sessions_planned": 1,
+        "km_pct": 110,
+        "km_done": 25.4,
+        "km_planned": 23.0,
+        "sessions_done": 1,
+        "sessions_planned": 2,
         "keys_success": 0,
         "keys_total": 0,
-        "points": 60,
-        "verdict": "partial"
+        "points": 90,
+        "verdict": "success"
       }
     },
     {
@@ -2791,12 +2791,6 @@
     }
   ],
   "adaptations": [
-    {
-      "kind": "volume_reduce",
-      "week_num": 8,
-      "delta_pct": -10,
-      "reason": "Sur-volume +52%"
-    },
     {
       "kind": "recovery_week",
       "week_num": 8,
