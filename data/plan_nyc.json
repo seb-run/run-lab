@@ -1451,7 +1451,7 @@
           "target_pace": "3'43\"/km",
           "date": "2026-07-30",
           "dow": "Thu",
-          "status": "today",
+          "status": "missed",
           "actual": null,
           "_downgraded_from": {
             "title": "2×15min seuil",
@@ -1468,7 +1468,7 @@
           "duration_min": 59,
           "key": false,
           "description": "10km très facile, allure récupération. FC zone 1-2 bas.\n[ADAPTÉ : -10% pour gérer la charge de la semaine.]\n[ADAPTÉ : -10% pour gérer la charge de la semaine.]\n[ADAPTÉ : -10% pour gérer la charge de la semaine.]\n[ADAPTÉ : -10% pour gérer la charge de la semaine.]",
-          "status": "pending",
+          "status": "today",
           "actual": null
         },
         {
@@ -1503,18 +1503,18 @@
         }
       ],
       "volume_actual_to_date": 25.4,
-      "volume_planned_to_date": 23.0,
-      "volume_drift_pct": 10.4,
+      "volume_planned_to_date": 30.6,
+      "volume_drift_pct": -17.0,
       "compliance": {
-        "km_pct": 110,
+        "km_pct": 83,
         "km_done": 25.4,
-        "km_planned": 23.0,
+        "km_planned": 30.6,
         "sessions_done": 1,
-        "sessions_planned": 2,
+        "sessions_planned": 3,
         "keys_success": 0,
         "keys_total": 0,
-        "points": 90,
-        "verdict": "success"
+        "points": 80,
+        "verdict": "partial"
       }
     },
     {
@@ -1544,7 +1544,7 @@
           "km": 16.5,
           "duration_min": 100,
           "key": true,
-          "description": "20min échauffement 5'26\"/km\n5×1000m à 95-100% VMA 3'16\"/km · récup 2min trot\n10min retour calme\n[COACH IA : volume ajusté 18.2→16.5 km — Réduction ~9% pour sécuriser l'exécution de la VMA longue après un bloc à faible taux de complétion (0 clé réussie sur 4 semaines)]",
+          "description": "20min échauffement 5'26\"/km\n5×1000m à 95-100% VMA 3'16\"/km · récup 2min trot\n10min retour calme\n[COACH IA : volume ajusté 18.2→16.5 km — Réduction ~9% pour sécuriser l'exécution de la VMA longue après un bloc à faible taux de complétion (0 clé réussie sur 4 semaines)]\n[COACH IA : Reprise d'intensité après plusieurs semaines irrégulières : privilégie la qualité des premières répétitions, arrête si les allures VMA ne viennent pas naturellement.]",
           "target_pace": "3'16\"/km",
           "date": "2026-08-04",
           "dow": "Tue",
@@ -1603,10 +1603,10 @@
         {
           "type": "long_prog",
           "title": "SL progressive 27km",
-          "km": 27.3,
+          "km": 24.6,
           "duration_min": 136,
           "key": true,
-          "description": "27km progressif : démarre 4'51\"/km, finis allure marathon 4'16\"/km. Travail mental de fin.",
+          "description": "27km progressif : démarre 4'51\"/km, finis allure marathon 4'16\"/km. Travail mental de fin.\n[COACH IA : volume ajusté 27.3→24.6 km — Après 4 semaines de sous-charge chronique et une récup forcée en semaine 8, une SL progressive à 27km enchaînée avec 2 autres séances clés dans la même semaine est risquée — réduction de ~10% pour sécuriser la reprise.]",
           "target_pace": "4'16\"/km",
           "date": "2026-08-09",
           "dow": "Sun",

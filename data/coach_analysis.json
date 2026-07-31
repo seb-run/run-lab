@@ -1,38 +1,28 @@
 {
- "generated_at": "2026-07-29T08:11:01",
+ "generated_at": "2026-07-31T08:20:53",
  "model": "claude-sonnet-5",
- "headline": "Quatre semaines de forme actuelle, zéro séance clé réussie : il faut sécuriser l'exécution avant d'ajouter de l'intensité.",
- "analysis": "Sur les 4 dernières semaines, ton taux de complétion oscille entre 47% et 70% du volume prévu, avec un pic à 152% en semaine 8 qui a justifié la réduction automatique et la semaine de récup forcée — logique vu les 11 séances clés manquées. Sur les 14 derniers jours, plus de la moitié des séances sont manquées ou incomplètes, et ta longue sortie du 26/07 est un échec net (58% du volume, allure largement ratée). Le point positif : quand tu cours, les footings faciles sont propres et les FC restent basses, donc la fraîcheur physiologique est là. Le vrai risque, c'est la régularité et la discipline sur les jours de repos — tu as transformé un repos en sortie de 15km le 27/07, ce qui casse la récupération et alimente le cycle raté/manqué. Cette semaine enchaîne deux séances clés importantes (VMA longue mardi, 12km allure marathon jeudi) après un bloc chaotique : mieux vaut les aborder à volume légèrement réduit pour garantir la qualité d'exécution plutôt que viser le chiffre plein et les rater encore. Focus de la semaine : zéro séance manquée, respect strict des jours de repos, et réussir ces deux clés même à moindre volume plutôt que les échouer à 100%.",
+ "headline": "Trois semaines de sous-charge chronique et une séance de récup déjà imposée : la reprise qui arrive doit être prudente, pas héroïque.",
+ "analysis": "Depuis 4 semaines tu tournes entre 47% et 83% du volume prévu, avec zéro séance clé réussie sur les semaines 5 à 8. Le moteur a déjà dû forcer une semaine de récup en semaine 8, signe que la charge accumulée était ingérable. Sur les 14 derniers jours, 5 séances sont carrément manquées et la sortie longue du 26/07 a fini en échec net (58% du volume, allure dégradée). Les jours réussis montrent une bonne caisse aérobie mais des allures souvent plus lentes que prévu, ce qui traduit de la fatigue ou un manque de récupération réelle plutôt qu'un manque de motivation. Le risque principal maintenant : repartir trop vite sur 3 séances clés d'affilée (VMA longue, MP run, SL progressive 27km) alors que le corps n'a pas encore prouvé qu'il absorbe le volume de base. Le focus de la semaine doit être la régularité sur le footing avant de viser l'intensité — mieux vaut boucler 100% des sorties faciles que rater encore une séance clé.",
  "applied": [
   {
    "severity": "minor",
    "kind": "volume_adjust",
-   "date": "2026-08-04",
+   "date": "2026-08-09",
    "field": "km",
-   "new_value": 16.5,
-   "reason": "Réduction ~9% pour sécuriser l'exécution de la VMA longue après un bloc à faible taux de complétion (0 clé réussie sur 4 semaines)",
-   "id": "9aaed819",
-   "detail": "2026-08-04 : 18.2→16.5 km"
-  },
-  {
-   "severity": "minor",
-   "kind": "volume_adjust",
-   "date": "2026-08-06",
-   "field": "km",
-   "new_value": 18.2,
-   "reason": "Réduction ~10% du volume de la sortie allure marathon pour prioriser la qualité d'exécution plutôt que le kilométrage",
-   "id": "3cbbb3ae",
-   "detail": "2026-08-06 : 20.2→18.2 km"
+   "new_value": 24.6,
+   "reason": "Après 4 semaines de sous-charge chronique et une récup forcée en semaine 8, une SL progressive à 27km enchaînée avec 2 autres séances clés dans la même semaine est risquée — réduction de ~10% pour sécuriser la reprise.",
+   "id": "5c2a6a1c",
+   "detail": "2026-08-09 : 27.3→24.6 km"
   },
   {
    "severity": "minor",
    "kind": "add_note",
-   "date": "2026-08-03",
+   "date": "2026-08-04",
    "field": "description_note",
-   "new_value": "Repos strict aujourd'hui : pas de sortie bonus. Le 27/07 tu as couru 15km un jour de repos, ça casse la récup avant les séances clés qui suivent.",
-   "reason": "Un jour de repos a été remplacé par une sortie non prévue la semaine dernière, ce qui nuit à la récupération avant les séances clés",
-   "id": "ff9638f7",
-   "detail": "2026-08-03 : note ajoutée"
+   "new_value": "Reprise d'intensité après plusieurs semaines irrégulières : privilégie la qualité des premières répétitions, arrête si les allures VMA ne viennent pas naturellement.",
+   "reason": "Historique récent montre des allures dégradées et fatigue — prudence sur la première séance clé de la reprise.",
+   "id": "69d1b099",
+   "detail": "2026-08-04 : note ajoutée"
   }
  ],
  "pending": [
