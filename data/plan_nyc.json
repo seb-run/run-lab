@@ -1468,7 +1468,7 @@
           "duration_min": 59,
           "key": false,
           "description": "10km très facile, allure récupération. FC zone 1-2 bas.\n[ADAPTÉ : -10% pour gérer la charge de la semaine.]\n[ADAPTÉ : -10% pour gérer la charge de la semaine.]\n[ADAPTÉ : -10% pour gérer la charge de la semaine.]\n[ADAPTÉ : -10% pour gérer la charge de la semaine.]",
-          "status": "today",
+          "status": "missed",
           "actual": null
         },
         {
@@ -1480,8 +1480,33 @@
           "duration_min": 63,
           "key": false,
           "description": "12km à 5'26\"/km + 4×100m lignes droites en fin. Activation pour la SL de dimanche.\n[ADAPTÉ : -10% pour gérer la charge de la semaine.]\n[ADAPTÉ : -10% pour gérer la charge de la semaine.]\n[ADAPTÉ : -10% pour gérer la charge de la semaine.]\n[ADAPTÉ : -10% pour gérer la charge de la semaine.]",
-          "status": "pending",
-          "actual": null
+          "status": "over",
+          "actual": {
+            "km": 10.1,
+            "duration_min": 51,
+            "pace_sec": 305,
+            "pace_str": "5'05\"/km",
+            "fc": 140,
+            "type": "frac_court",
+            "title": "Course à pied le matin",
+            "n": 1
+          },
+          "score": {
+            "points": 85,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 131,
+            "volume_points": 85,
+            "pace_points": null,
+            "pace_target_s": null,
+            "pace_actual_s": null,
+            "pace_actual_str": null,
+            "pace_delta_s": null,
+            "is_quality": false,
+            "reasons": [
+              "Volume 131%"
+            ]
+          }
         },
         {
           "type": "recovery",
@@ -1503,17 +1528,17 @@
         }
       ],
       "volume_actual_to_date": 25.4,
-      "volume_planned_to_date": 30.6,
-      "volume_drift_pct": -17.0,
+      "volume_planned_to_date": 37.1,
+      "volume_drift_pct": -31.5,
       "compliance": {
-        "km_pct": 83,
+        "km_pct": 68,
         "km_done": 25.4,
-        "km_planned": 30.6,
+        "km_planned": 37.1,
         "sessions_done": 1,
-        "sessions_planned": 3,
+        "sessions_planned": 4,
         "keys_success": 0,
         "keys_total": 0,
-        "points": 80,
+        "points": 71,
         "verdict": "partial"
       }
     },
