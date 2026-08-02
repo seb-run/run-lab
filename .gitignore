@@ -21,3 +21,10 @@ venv/
 
 # Backups locaux
 data/config.json.backup
+
+# Fichiers temporaires d'écriture atomique (restes de crash)
+*.json.new
+
+# Notes de travail perso — NE PAS publier (repo public)
+NOTE_PRODUIT_run-lab.md
+econ.py
