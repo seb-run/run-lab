@@ -33,7 +33,7 @@
       "recup": 340
     },
     "generated_at": "2026-06-09T19:18:39",
-    "recalibrated_at": "2026-08-02T15:12:05",
+    "recalibrated_at": "2026-08-02T15:54:57",
     "recalibration_note": "Allures recalibrées le 2026-08-02 sur les performances réelles (marathon 2h50'03 le 12/04/2026, 2h54'35 le 12/10/2025, semi 1h22'40) et non plus sur une VMA estimée. Objectif NYC : sub-3h maîtrisé, étape vers un 2h44 au marathon de Milan du 04/04/2027."
   },
   "weeks": [
@@ -1564,8 +1564,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-04",
@@ -1577,8 +1576,7 @@
           "key": false,
           "description": "12 km en endurance fondamentale VRAIE : 5'10-5'25/km, FC < 140. Puis 6×20\" de lignes en souplesse sur herbe, récup marche 40\". Objectif : relancer le neuromusculaire sans agresser l'Achille.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-05",
@@ -1590,8 +1588,7 @@
           "key": false,
           "description": "10 km très lent, 5'25-5'40/km. Sur chemin souple à Bouconne. Si raideur au démarrage : 10 min de marche avant de courir.",
           "target_pace": "5'40\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-06",
@@ -1603,8 +1600,7 @@
           "key": false,
           "description": "Échauffement 4 km, puis 2×10 min à 4'30-4'35/km (récup 3 min trot), retour au calme. Ce n'est PAS du seuil : allure « confortablement soutenue », tu dois pouvoir dire une phrase courte.",
           "target_pace": "4'05\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-07",
@@ -1615,8 +1611,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-08",
@@ -1628,8 +1623,7 @@
           "key": false,
           "description": "11 km à 5'10-5'25/km + 8×20\" de lignes sur herbe. Sortie avant 8h : la chaleur d'août à Mondonville plombe la FC.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-09",
@@ -1641,8 +1635,7 @@
           "key": false,
           "description": "21 km à 4'55-5'10/km, sous les arbres de Bouconne. Départ 6h30-7h. Ravitaillement : 500 ml + 1 gel à mi-parcours pour réhabituer l'estomac.",
           "target_pace": "4'55\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         }
       ],
       "focus": "Refaire du volume propre. Zéro intensité dure : on réinstalle l'allure facile et on charge le tendon progressivement."
@@ -1665,8 +1658,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-11",
@@ -1678,8 +1670,7 @@
           "key": true,
           "description": "Échauffement 4 km + gammes. Puis 6×3 min à 3'50-3'55/km, récup 90\" en trot. Retour au calme 3 km.\nSur chemin roulant de Bouconne, PAS sur bitume : c'est ta première séance rapide depuis 3 mois, le tendon doit encaisser du souple.",
           "target_pace": "3'50\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-12",
@@ -1691,8 +1682,7 @@
           "key": false,
           "description": "11 km à 5'25-5'40/km. Vérifie la raideur matinale : si elle a augmenté après la séance d'hier, remplace par 30 min de vélo.",
           "target_pace": "5'40\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-13",
@@ -1702,10 +1692,9 @@
           "km": 15.0,
           "duration_min": 71,
           "key": true,
-          "description": "Échauffement 4 km, puis 3×8 min à 4'10-4'12/km (allure objectif NYC), récup 2 min trot. Retour 3 km.\nObjectif : réapprendre la sensation. Ne cherche pas plus vite.",
+          "description": "Échauffement 4 km, puis 3×8 min à 4'10-4'12/km (allure objectif NYC), récup 2 min trot. Retour 3 km.\nObjectif : réapprendre la sensation.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
           "target_pace": "4'12\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-14",
@@ -1716,8 +1705,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-15",
@@ -1729,8 +1717,7 @@
           "key": false,
           "description": "11 km + 6×20\" en côte modérée (5-6%), montée en souplesse, descente en marchant.\n⚠️ À faire seulement si l'Achille est silencieux au démarrage. Sinon : 8 lignes sur le plat à la place.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-16",
@@ -1742,8 +1729,7 @@
           "key": false,
           "description": "24 km : 18 km à 4'55-5'05/km puis les 6 derniers à 4'20-4'25/km. Premier vrai test de fin de sortie en fatigue.",
           "target_pace": "4'55\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         }
       ],
       "focus": "Première vraie séance de seuil depuis le 3 mai, et premier contact avec l'allure marathon. Tout sur sol souple."
@@ -1766,8 +1752,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-18",
@@ -1777,10 +1762,9 @@
           "km": 15.0,
           "duration_min": 71,
           "key": true,
-          "description": "Échauffement 4 km. 5×2000 m à 3'50/km, récup 2'30 trot. Retour 2 km.\nSéance de référence du bloc : tu la reverras. Note tes sensations.",
+          "description": "Échauffement 4 km. 5×2000 m à 3'50/km, récup 2'30 trot. Retour 2 km.\nSéance de référence du bloc : tu la reverras en S16. Note tes sensations et ta FC moyenne sur les répétitions.",
           "target_pace": "3'50\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-19",
@@ -1792,8 +1776,7 @@
           "key": false,
           "description": "13 km à 5'10-5'25/km, FC < 140. Sortie tôt.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-20",
@@ -1803,10 +1786,9 @@
           "km": 15.0,
           "duration_min": 71,
           "key": true,
-          "description": "Échauffement 4 km + 4×8 min à 4'10-4'12/km, récup 2 min. Retour 3 km.",
+          "description": "Échauffement 4 km + 4×8 min à 4'10-4'12/km, récup 2 min. Retour 3 km.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
           "target_pace": "4'12\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-21",
@@ -1818,8 +1800,7 @@
           "key": false,
           "description": "8 km très lent. Renforcement mollets après.",
           "target_pace": "5'40\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-22",
@@ -1831,8 +1812,7 @@
           "key": false,
           "description": "11 km + 8×20\" de lignes en souplesse.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-23",
@@ -1844,8 +1824,7 @@
           "key": false,
           "description": "22 km à 4'50-5'00/km. Régulier, sans accélération finale.",
           "target_pace": "4'55\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         }
       ],
       "focus": "Début du plan définitif. Structure fixe : seuil le mardi, allure marathon le jeudi, sortie longue le dimanche."
@@ -1857,7 +1836,7 @@
       "phase_label": "Spécifique · bloc 1",
       "start_date": "2026-08-24",
       "end_date": "2026-08-30",
-      "target_km": 92.0,
+      "target_km": 88.0,
       "days": [
         {
           "date": "2026-08-24",
@@ -1868,8 +1847,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-25",
@@ -1881,34 +1859,31 @@
           "key": true,
           "description": "Échauffement 4 km. 3×12 min à 3'52/km, récup 3 min trot. Retour 3 km.\nAllonger la durée à allure seuil : c'est le moteur du marathon.",
           "target_pace": "3'50\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-26",
           "dow": "Wed",
           "type": "easy",
           "title": "Endurance",
-          "km": 14.0,
-          "duration_min": 74,
+          "km": 13.0,
+          "duration_min": 69,
           "key": false,
-          "description": "14 km à 5'10-5'25/km.",
+          "description": "13 km à 5'10-5'25/km.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-27",
           "dow": "Thu",
           "type": "progressive",
           "title": "Moyen-long progressif",
-          "km": 16.0,
-          "duration_min": 76,
+          "km": 15.0,
+          "duration_min": 71,
           "key": false,
-          "description": "16 km : 10 km à 4'55 puis 6 km à 4'20/km. Progression continue.",
+          "description": "15 km : 9 km à 4'55 puis 6 km à 4'20/km. Progression continue, sans à-coup.",
           "target_pace": "4'55\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-28",
@@ -1920,34 +1895,31 @@
           "key": false,
           "description": "9 km très lent.",
           "target_pace": "5'40\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-29",
           "dow": "Sat",
           "type": "easy",
           "title": "Endurance + côtes",
-          "km": 11.0,
-          "duration_min": 58,
+          "km": 10.0,
+          "duration_min": 53,
           "key": false,
-          "description": "11 km + 8×20\" en côte modérée. Travail de force pour les ponts de NYC.",
+          "description": "10 km + 8×20\" en côte modérée. Travail de force pour les ponts de NYC.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-08-30",
           "dow": "Sun",
           "type": "long_mp",
-          "title": "SL 26 km · 10 km AM",
-          "km": 26.0,
-          "duration_min": 124,
+          "title": "SL 25 km · 10 km AM",
+          "km": 25.0,
+          "duration_min": 119,
           "key": true,
-          "description": "26 km : 8 km d'échauffement à 5'00, puis 10 km à 4'12/km (allure NYC), puis 8 km de retour au calme.\nLA séance clé de la semaine. Le bloc AM doit être régulier, pas en dents de scie. Ravito : gel toutes les 40 min.",
+          "description": "25 km : 8 km d'échauffement à 5'00, puis 10 km à 4'12/km, puis 7 km de retour au calme.\nLA séance clé de la semaine. Le bloc doit être régulier au chrono, pas en dents de scie. Ravito : gel toutes les 40 min.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
           "target_pace": "4'12\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         }
       ],
       "focus": "Premier gros bloc à allure marathon dans la sortie longue."
@@ -1959,7 +1931,7 @@
       "phase_label": "Spécifique · bloc 1",
       "start_date": "2026-08-31",
       "end_date": "2026-09-06",
-      "target_km": 98.0,
+      "target_km": 94.0,
       "days": [
         {
           "date": "2026-08-31",
@@ -1971,8 +1943,7 @@
           "key": false,
           "description": "8 km très lent après la SL d'hier.",
           "target_pace": "5'40\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-09-01",
@@ -1984,60 +1955,55 @@
           "key": true,
           "description": "Échauffement 4 km + gammes. 8×1000 m à 3'40/km, récup 2 min trot. Retour 3 km.\nSur chemin roulant ou piste si l'Achille est totalement silencieux.",
           "target_pace": "3'40\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-09-02",
           "dow": "Wed",
           "type": "easy",
           "title": "Endurance",
-          "km": 14.0,
-          "duration_min": 74,
+          "km": 13.0,
+          "duration_min": 69,
           "key": false,
-          "description": "14 km à 5'10-5'25/km.",
+          "description": "13 km à 5'10-5'25/km.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-09-03",
           "dow": "Thu",
           "type": "mp",
           "title": "Allure marathon · 2×15 min",
-          "km": 17.0,
-          "duration_min": 81,
+          "km": 16.0,
+          "duration_min": 76,
           "key": true,
-          "description": "Échauffement 4 km + 2×15 min à 4'08-4'10/km, récup 3 min. Retour 4 km.\nOn allonge les blocs : 15 min continues à allure course.",
+          "description": "Échauffement 4 km + 2×15 min à 4'08-4'10/km, récup 3 min. Retour 3 km.\nOn allonge les blocs : 15 min continues à allure course.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
           "target_pace": "4'12\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-09-04",
           "dow": "Fri",
           "type": "recovery",
           "title": "Récupération",
-          "km": 9.0,
-          "duration_min": 51,
+          "km": 8.0,
+          "duration_min": 45,
           "key": false,
-          "description": "9 km très lent.",
+          "description": "8 km très lent.",
           "target_pace": "5'40\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-09-05",
           "dow": "Sat",
           "type": "easy",
           "title": "Endurance + lignes",
-          "km": 12.0,
-          "duration_min": 64,
+          "km": 11.0,
+          "duration_min": 58,
           "key": false,
-          "description": "12 km + 8×20\" de lignes.",
+          "description": "11 km + 8×20\" de lignes.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-09-06",
@@ -2049,8 +2015,7 @@
           "key": false,
           "description": "22 km à 4'50-5'00/km, sans bloc rapide : la semaine est déjà chargée.",
           "target_pace": "4'55\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         }
       ],
       "focus": "Semaine la plus dure du bloc 1. Introduction du travail à allure 10 km pour réveiller la cylindrée."
@@ -2062,20 +2027,19 @@
       "phase_label": "Récupération · test",
       "start_date": "2026-09-07",
       "end_date": "2026-09-13",
-      "target_km": 74.0,
+      "target_km": 70.0,
       "days": [
         {
           "date": "2026-09-07",
           "dow": "Mon",
           "type": "recovery",
           "title": "Récupération",
-          "km": 8.0,
-          "duration_min": 45,
+          "km": 6.0,
+          "duration_min": 34,
           "key": false,
-          "description": "8 km très lent.",
+          "description": "6 km très lent.",
           "target_pace": "5'40\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-09-08",
@@ -2087,21 +2051,19 @@
           "key": false,
           "description": "12 km + 6×20\" de lignes.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-09-09",
           "dow": "Wed",
           "type": "easy",
           "title": "Endurance",
-          "km": 12.0,
-          "duration_min": 64,
+          "km": 11.0,
+          "duration_min": 58,
           "key": false,
-          "description": "12 km à 5'10-5'25/km.",
+          "description": "11 km à 5'10-5'25/km.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-09-10",
@@ -2113,8 +2075,7 @@
           "key": false,
           "description": "Échauffement 4 km + 20 min à 3'57/km + retour 3 km. Séance d'entretien.",
           "target_pace": "3'57\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-09-11",
@@ -2125,21 +2086,19 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-09-12",
           "dow": "Sat",
           "type": "easy",
           "title": "Déblocage",
-          "km": 8.0,
-          "duration_min": 42,
+          "km": 7.0,
+          "duration_min": 37,
           "key": false,
-          "description": "8 km très facile + 4 lignes. Jambes fraîches pour demain.",
+          "description": "7 km très facile + 4 lignes. Jambes fraîches pour demain.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-09-13",
@@ -2149,13 +2108,12 @@
           "km": 21.0,
           "duration_min": 88,
           "key": true,
-          "description": "Échauffement 5 km + gammes. **10 km chrono à fond** (viser 37'00-37'30). Retour au calme 5 km.\nUn dossard local est idéal ; sinon en solo sur parcours plat et roulant. Le résultat recalibre toutes les allures du bloc 2 :\n  · 37'30 → marathon ≈ 2h53 → on garde 4'12/km à NYC\n  · 36'30 → marathon ≈ 2h48 → on peut viser 4'05/km\n  · > 38'30 → on sécurise à 4'18/km",
+          "description": "Échauffement 5 km + gammes. **10 km chrono à fond** (viser 37'00-37'30). Retour au calme 5 km.\nUn dossard local est idéal ; sinon en solo sur parcours plat et roulant. Le résultat recalibre toutes les allures du bloc 2 :\n  · 37'30 → marathon ≈ 2h52 → on garde 4'12/km à NYC\n  · 36'30 → marathon ≈ 2h47 → on peut viser 4'05/km\n  · > 38'30 → on sécurise à 4'18/km\nDeuxième objectif, aussi important : t'entraîner à partir juste. Premier km à l'allure cible, pas 10 s plus vite.",
           "target_pace": "3'40\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         }
       ],
-      "focus": "Semaine allégée (-25%) puis test 10 km pour recalibrer les allures sur du concret plutôt que sur des estimations."
+      "focus": "Semaine allégée (-25 %) puis test 10 km pour recalibrer les allures sur du concret plutôt que sur des estimations."
     },
     {
       "week_num": 15,
@@ -2164,7 +2122,7 @@
       "phase_label": "Spécifique · bloc 2",
       "start_date": "2026-09-14",
       "end_date": "2026-09-20",
-      "target_km": 95.0,
+      "target_km": 90.0,
       "days": [
         {
           "date": "2026-09-14",
@@ -2175,47 +2133,43 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-09-15",
           "dow": "Tue",
           "type": "seuil",
           "title": "Seuil · 6×1500 m",
-          "km": 16.0,
-          "duration_min": 76,
+          "km": 15.0,
+          "duration_min": 71,
           "key": true,
-          "description": "Échauffement 4 km. 6×1500 m à 3'45-3'48/km, récup 2'30. Retour 3 km.",
+          "description": "Échauffement 4 km + 6×1500 m à 3'45-3'48/km, récup 2'30. Retour 2 km.",
           "target_pace": "3'50\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-09-16",
           "dow": "Wed",
           "type": "easy",
           "title": "Endurance",
-          "km": 14.0,
-          "duration_min": 74,
+          "km": 13.0,
+          "duration_min": 69,
           "key": false,
-          "description": "14 km à 5'10-5'25/km.",
+          "description": "13 km à 5'10-5'25/km.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-09-17",
           "dow": "Thu",
           "type": "mp",
           "title": "Allure marathon · 3×10 min",
-          "km": 16.0,
-          "duration_min": 76,
+          "km": 15.0,
+          "duration_min": 71,
           "key": true,
-          "description": "Échauffement 4 km + 3×10 min à 4'10/km, récup 2 min. Retour 3 km.",
+          "description": "Échauffement 4 km + 3×10 min à 4'10/km, récup 2 min. Retour 3 km.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
           "target_pace": "4'12\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-09-18",
@@ -2227,34 +2181,31 @@
           "key": false,
           "description": "9 km très lent.",
           "target_pace": "5'40\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-09-19",
           "dow": "Sat",
           "type": "easy",
           "title": "Endurance + côtes",
-          "km": 12.0,
-          "duration_min": 64,
+          "km": 11.0,
+          "duration_min": 58,
           "key": false,
-          "description": "12 km + 10×20\" en côte modérée.",
+          "description": "11 km + 10×20\" en côte modérée.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-09-20",
           "dow": "Sun",
           "type": "long_mp",
-          "title": "SL 28 km · 2×6 km AM",
-          "km": 28.0,
-          "duration_min": 133,
+          "title": "SL 27 km · 2×6 km AM",
+          "km": 27.0,
+          "duration_min": 128,
           "key": true,
-          "description": "28 km : 6 km à 5'00, puis 2×6 km à 4'12/km avec 2 km de trot entre les blocs, puis retour au calme.\nSimulation de relance en fatigue — exactement ce que demande NYC après le pont de Queensboro.",
+          "description": "27 km : 6 km à 5'00, puis 2×6 km à 4'12/km avec 2 km de trot entre les blocs, puis retour au calme.\nSimulation de relance en fatigue — exactement ce que demande NYC après le pont de Queensboro.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
           "target_pace": "4'12\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         }
       ],
       "focus": "Reprise de la charge après le test. Les allures peuvent être ajustées selon le chrono du 10 km."
@@ -2266,11 +2217,59 @@
       "phase_label": "Pic · volume max",
       "start_date": "2026-09-21",
       "end_date": "2026-09-27",
-      "target_km": 106.0,
+      "target_km": 98.0,
       "days": [
         {
           "date": "2026-09-21",
           "dow": "Mon",
+          "type": "recovery",
+          "title": "Récupération",
+          "km": 6.0,
+          "duration_min": 34,
+          "key": false,
+          "description": "6 km très lent.",
+          "target_pace": "5'40\"/km",
+          "status": "pending"
+        },
+        {
+          "date": "2026-09-22",
+          "dow": "Tue",
+          "type": "seuil",
+          "title": "Seuil · 5×2000 m",
+          "km": 16.0,
+          "duration_min": 76,
+          "key": true,
+          "description": "Échauffement 4 km + 5×2000 m à 3'48/km, récup 2'30. Retour 2 km.\nMême séance qu'en S11 : compare directement les sensations et la FC. C'est ton marqueur de progression le plus fiable.",
+          "target_pace": "3'50\"/km",
+          "status": "pending"
+        },
+        {
+          "date": "2026-09-23",
+          "dow": "Wed",
+          "type": "easy",
+          "title": "Endurance",
+          "km": 12.0,
+          "duration_min": 64,
+          "key": false,
+          "description": "12 km à 5'10-5'25/km.",
+          "target_pace": "5'20\"/km",
+          "status": "pending"
+        },
+        {
+          "date": "2026-09-24",
+          "dow": "Thu",
+          "type": "mp",
+          "title": "Allure marathon · 2×20 min",
+          "km": 17.0,
+          "duration_min": 81,
+          "key": true,
+          "description": "Échauffement 4 km + 2×20 min à 4'10/km, récup 3 min. Retour 4 km.\n40 min cumulées à allure course : la séance la plus spécifique du bloc.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
+          "target_pace": "4'12\"/km",
+          "status": "pending"
+        },
+        {
+          "date": "2026-09-25",
+          "dow": "Fri",
           "type": "recovery",
           "title": "Récupération",
           "km": 8.0,
@@ -2278,89 +2277,34 @@
           "key": false,
           "description": "8 km très lent.",
           "target_pace": "5'40\"/km",
-          "status": "pending",
-          "actual": null
-        },
-        {
-          "date": "2026-09-22",
-          "dow": "Tue",
-          "type": "seuil",
-          "title": "Seuil · 5×2000 m",
-          "km": 17.0,
-          "duration_min": 81,
-          "key": true,
-          "description": "Échauffement 4 km. 5×2000 m à 3'48/km, récup 2'30. Retour 3 km.\nMême séance qu'en S11 : compare directement les sensations et la FC.",
-          "target_pace": "3'50\"/km",
-          "status": "pending",
-          "actual": null
-        },
-        {
-          "date": "2026-09-23",
-          "dow": "Wed",
-          "type": "easy",
-          "title": "Endurance",
-          "km": 13.0,
-          "duration_min": 69,
-          "key": false,
-          "description": "13 km à 5'10-5'25/km.",
-          "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
-        },
-        {
-          "date": "2026-09-24",
-          "dow": "Thu",
-          "type": "mp",
-          "title": "Allure marathon · 2×20 min",
-          "km": 18.0,
-          "duration_min": 86,
-          "key": true,
-          "description": "Échauffement 4 km + 2×20 min à 4'10/km, récup 3 min. Retour 4 km.\n40 min cumulées à allure course : la séance la plus spécifique du bloc.",
-          "target_pace": "4'12\"/km",
-          "status": "pending",
-          "actual": null
-        },
-        {
-          "date": "2026-09-25",
-          "dow": "Fri",
-          "type": "recovery",
-          "title": "Récupération",
-          "km": 9.0,
-          "duration_min": 51,
-          "key": false,
-          "description": "9 km très lent.",
-          "target_pace": "5'40\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-09-26",
           "dow": "Sat",
           "type": "easy",
           "title": "Endurance + lignes",
-          "km": 11.0,
-          "duration_min": 58,
+          "km": 10.0,
+          "duration_min": 53,
           "key": false,
-          "description": "11 km + 8 lignes.",
+          "description": "10 km + 8 lignes.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-09-27",
           "dow": "Sun",
           "type": "long_mp",
-          "title": "SL 30 km · 2×8 km AM",
-          "km": 30.0,
-          "duration_min": 142,
+          "title": "SL 29 km · 2×8 km AM",
+          "km": 29.0,
+          "duration_min": 138,
           "key": true,
-          "description": "30 km : 6 km à 5'00, 2×8 km à 4'12/km (2 km de trot entre), retour au calme.\n16 km à allure course en fin de grosse semaine. Ravito complet : gel toutes les 35 min, 500 ml/h.",
+          "description": "29 km : 6 km à 5'00, 2×8 km à 4'12/km (2 km de trot entre), retour au calme.\n16 km à allure course en fin de grosse semaine. Ravito complet : gel toutes les 35 min, 500 ml/h.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
           "target_pace": "4'12\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         }
       ],
-      "focus": "Semaine la plus volumineuse du plan (~106 km). Si le corps proteste, c'est le volume qu'on coupe, pas la qualité."
+      "focus": "Semaine la plus volumineuse du plan (98 km). C'est le plafond : au-delà, l'historique dit que tu paies en fraîcheur le jour J."
     },
     {
       "week_num": 17,
@@ -2369,7 +2313,7 @@
       "phase_label": "Récupération · assimilation",
       "start_date": "2026-09-28",
       "end_date": "2026-10-04",
-      "target_km": 76.0,
+      "target_km": 72.0,
       "days": [
         {
           "date": "2026-09-28",
@@ -2380,47 +2324,43 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-09-29",
           "dow": "Tue",
           "type": "seuil",
           "title": "Seuil continu · 20 min",
-          "km": 14.0,
-          "duration_min": 66,
+          "km": 13.0,
+          "duration_min": 62,
           "key": true,
-          "description": "Échauffement 4 km + 20 min continues à 3'52/km + retour 4 km. Volume réduit, intensité maintenue.",
+          "description": "Échauffement 4 km + 20 min continues à 3'52/km + retour 3 km. Volume réduit, intensité maintenue.",
           "target_pace": "3'50\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-09-30",
           "dow": "Wed",
           "type": "easy",
           "title": "Endurance",
-          "km": 13.0,
-          "duration_min": 69,
+          "km": 12.0,
+          "duration_min": 64,
           "key": false,
-          "description": "13 km à 5'10-5'25/km.",
+          "description": "12 km à 5'10-5'25/km.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-10-01",
           "dow": "Thu",
           "type": "easy",
           "title": "Endurance + lignes",
-          "km": 14.0,
-          "duration_min": 74,
+          "km": 13.0,
+          "duration_min": 69,
           "key": false,
-          "description": "14 km + 8×20\" de lignes. Pas de bloc AM cette semaine.",
+          "description": "13 km + 8×20\" de lignes. Pas de bloc AM cette semaine.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-10-02",
@@ -2431,21 +2371,19 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-10-03",
           "dow": "Sat",
           "type": "easy",
           "title": "Endurance",
-          "km": 11.0,
-          "duration_min": 58,
+          "km": 10.0,
+          "duration_min": 53,
           "key": false,
-          "description": "11 km facile.",
+          "description": "10 km facile.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-10-04",
@@ -2457,11 +2395,10 @@
           "key": false,
           "description": "24 km : 19 km à 4'55 puis 5 km à 4'20/km.",
           "target_pace": "4'55\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         }
       ],
-      "focus": "Décharge nette (-30%) pour assimiler le bloc 2 et arriver frais sur la sortie longue signature de la semaine suivante."
+      "focus": "Décharge nette (-27 %) pour assimiler le bloc 2 et arriver frais sur la sortie longue signature de la semaine suivante."
     },
     {
       "week_num": 18,
@@ -2470,11 +2407,59 @@
       "phase_label": "Pic · séance signature",
       "start_date": "2026-10-05",
       "end_date": "2026-10-11",
-      "target_km": 102.0,
+      "target_km": 94.0,
       "days": [
         {
           "date": "2026-10-05",
           "dow": "Mon",
+          "type": "recovery",
+          "title": "Récupération",
+          "km": 6.0,
+          "duration_min": 34,
+          "key": false,
+          "description": "6 km très lent.",
+          "target_pace": "5'40\"/km",
+          "status": "pending"
+        },
+        {
+          "date": "2026-10-06",
+          "dow": "Tue",
+          "type": "vma",
+          "title": "Allure 10 km · 6×1200 m",
+          "km": 14.0,
+          "duration_min": 66,
+          "key": true,
+          "description": "Échauffement 4 km + 6×1200 m à 3'42/km, récup 2 min. Retour 2 km.",
+          "target_pace": "3'40\"/km",
+          "status": "pending"
+        },
+        {
+          "date": "2026-10-07",
+          "dow": "Wed",
+          "type": "easy",
+          "title": "Endurance",
+          "km": 12.0,
+          "duration_min": 64,
+          "key": false,
+          "description": "12 km à 5'10-5'25/km.",
+          "target_pace": "5'20\"/km",
+          "status": "pending"
+        },
+        {
+          "date": "2026-10-08",
+          "dow": "Thu",
+          "type": "mp",
+          "title": "Allure marathon · 3×10 min",
+          "km": 14.0,
+          "duration_min": 66,
+          "key": true,
+          "description": "Échauffement 4 km + 3×10 min à 4'10/km, récup 2 min. Retour 2 km. Séance courte : on garde le jus pour dimanche.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
+          "target_pace": "4'12\"/km",
+          "status": "pending"
+        },
+        {
+          "date": "2026-10-09",
+          "dow": "Fri",
           "type": "recovery",
           "title": "Récupération",
           "km": 8.0,
@@ -2482,73 +2467,19 @@
           "key": false,
           "description": "8 km très lent.",
           "target_pace": "5'40\"/km",
-          "status": "pending",
-          "actual": null
-        },
-        {
-          "date": "2026-10-06",
-          "dow": "Tue",
-          "type": "vma",
-          "title": "Allure 10 km · 6×1200 m",
-          "km": 15.0,
-          "duration_min": 71,
-          "key": true,
-          "description": "Échauffement 4 km + 6×1200 m à 3'42/km, récup 2 min. Retour 3 km.",
-          "target_pace": "3'40\"/km",
-          "status": "pending",
-          "actual": null
-        },
-        {
-          "date": "2026-10-07",
-          "dow": "Wed",
-          "type": "easy",
-          "title": "Endurance",
-          "km": 13.0,
-          "duration_min": 69,
-          "key": false,
-          "description": "13 km à 5'10-5'25/km.",
-          "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
-        },
-        {
-          "date": "2026-10-08",
-          "dow": "Thu",
-          "type": "mp",
-          "title": "Allure marathon · 3×10 min",
-          "km": 15.0,
-          "duration_min": 71,
-          "key": true,
-          "description": "Échauffement 4 km + 3×10 min à 4'10/km, récup 2 min. Retour 3 km. Séance courte : on garde le jus pour dimanche.",
-          "target_pace": "4'12\"/km",
-          "status": "pending",
-          "actual": null
-        },
-        {
-          "date": "2026-10-09",
-          "dow": "Fri",
-          "type": "recovery",
-          "title": "Récupération",
-          "km": 9.0,
-          "duration_min": 51,
-          "key": false,
-          "description": "9 km très lent.",
-          "target_pace": "5'40\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-10-10",
           "dow": "Sat",
           "type": "easy",
           "title": "Déblocage",
-          "km": 10.0,
-          "duration_min": 53,
+          "km": 8.0,
+          "duration_min": 42,
           "key": false,
-          "description": "10 km facile + 6 lignes.",
+          "description": "8 km facile + 6 lignes.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-10-11",
@@ -2558,10 +2489,9 @@
           "km": 32.0,
           "duration_min": 152,
           "key": true,
-          "description": "32 km : 8 km à 5'00, puis **18 km en continu à 4'12/km**, puis 6 km de retour au calme.\nRépétition générale complète : mêmes chaussures, mêmes gels, même petit-déjeuner et même horaire que le jour J. Si tu tiens les 18 km sans dériver, le sub-3h à NYC est acquis.",
+          "description": "32 km : 8 km à 5'00, puis **18 km en continu à 4'12/km**, puis 6 km de retour au calme.\nRépétition générale complète : mêmes chaussures, mêmes gels, même petit-déjeuner et même horaire que le jour J.\nDeux critères de réussite, à noter :\n  1. Les 18 km tenus sans dérive de plus de 5 s/km entre le 1er et le dernier tiers.\n  2. Aucun kilomètre couru plus vite que 4'08.\nSi les deux sont validés, le sub-3h à NYC est acquis.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
           "target_pace": "4'12\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         }
       ],
       "focus": "LA semaine du plan. La sortie longue de dimanche est le meilleur prédicteur de ta performance à NYC — 3 semaines avant, timing idéal."
@@ -2573,7 +2503,7 @@
       "phase_label": "Dernier bloc solide",
       "start_date": "2026-10-12",
       "end_date": "2026-10-18",
-      "target_km": 86.0,
+      "target_km": 80.0,
       "days": [
         {
           "date": "2026-10-12",
@@ -2584,47 +2514,43 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-10-13",
           "dow": "Tue",
           "type": "seuil",
           "title": "Seuil · 4×1500 m",
-          "km": 15.0,
-          "duration_min": 71,
+          "km": 14.0,
+          "duration_min": 66,
           "key": true,
-          "description": "Échauffement 4 km + 4×1500 m à 3'45/km, récup 2'30. Retour 3 km.",
+          "description": "Échauffement 4 km + 4×1500 m à 3'45/km, récup 2'30. Retour 2 km.",
           "target_pace": "3'50\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-10-14",
           "dow": "Wed",
           "type": "easy",
           "title": "Endurance",
-          "km": 13.0,
-          "duration_min": 69,
+          "km": 12.0,
+          "duration_min": 64,
           "key": false,
-          "description": "13 km à 5'10-5'25/km.",
+          "description": "12 km à 5'10-5'25/km.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-10-15",
           "dow": "Thu",
           "type": "mp",
           "title": "Allure marathon · 2×12 min",
-          "km": 15.0,
-          "duration_min": 71,
+          "km": 14.0,
+          "duration_min": 66,
           "key": true,
-          "description": "Échauffement 4 km + 2×12 min à 4'10/km, récup 3 min. Retour 3 km.",
+          "description": "Échauffement 4 km + 2×12 min à 4'10/km, récup 3 min. Retour 2 km.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
           "target_pace": "4'12\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-10-16",
@@ -2636,46 +2562,43 @@
           "key": false,
           "description": "8 km très lent.",
           "target_pace": "5'40\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-10-17",
           "dow": "Sat",
           "type": "easy",
           "title": "Endurance + lignes",
-          "km": 11.0,
-          "duration_min": 58,
+          "km": 10.0,
+          "duration_min": 53,
           "key": false,
-          "description": "11 km + 8 lignes.",
+          "description": "10 km + 8 lignes.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-10-18",
           "dow": "Sun",
           "type": "long_mp",
-          "title": "SL 24 km · 8 km AM en fin",
-          "km": 24.0,
-          "duration_min": 114,
+          "title": "SL 22 km · 8 km AM en fin",
+          "km": 22.0,
+          "duration_min": 104,
           "key": true,
-          "description": "24 km : 14 km à 4'55, puis 8 km à 4'12/km, puis 2 km de retour au calme. Dernière sortie longue avec du contenu.",
+          "description": "22 km : 12 km à 4'55, puis 8 km à 4'12/km, puis 2 km de retour au calme. Dernière sortie longue avec du contenu.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
           "target_pace": "4'12\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         }
       ],
-      "focus": "Dernière semaine consistante. À partir de dimanche, tout descend jusqu'à la course."
+      "focus": "Dernière semaine consistante. À partir de lundi prochain, tout descend jusqu'à la course."
     },
     {
       "week_num": 20,
       "weeks_left": 1,
       "phase": "taper",
-      "phase_label": "Affûtage",
+      "phase_label": "Affûtage · J-14",
       "start_date": "2026-10-19",
       "end_date": "2026-10-25",
-      "target_km": 66.0,
+      "target_km": 56.0,
       "days": [
         {
           "date": "2026-10-19",
@@ -2686,47 +2609,43 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-10-20",
           "dow": "Tue",
           "type": "seuil",
-          "title": "Seuil court · 5×1000 m",
-          "km": 13.0,
-          "duration_min": 62,
+          "title": "Seuil court · 4×1000 m",
+          "km": 11.0,
+          "duration_min": 52,
           "key": true,
-          "description": "Échauffement 4 km + 5×1000 m à 3'45/km, récup 2 min. Retour 3 km. Ça doit sembler facile — c'est le but.",
+          "description": "Échauffement 4 km + 4×1000 m à 3'45/km, récup 2 min. Retour 2 km. Ça doit sembler facile — c'est le signe que l'affûtage fonctionne.",
           "target_pace": "3'50\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-10-21",
           "dow": "Wed",
           "type": "easy",
           "title": "Endurance",
-          "km": 12.0,
-          "duration_min": 64,
+          "km": 10.0,
+          "duration_min": 53,
           "key": false,
-          "description": "12 km à 5'10-5'25/km.",
+          "description": "10 km à 5'10-5'25/km.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-10-22",
           "dow": "Thu",
           "type": "mp",
-          "title": "Allure marathon · 6 km",
-          "km": 13.0,
-          "duration_min": 62,
+          "title": "Allure marathon · 5 km",
+          "km": 11.0,
+          "duration_min": 52,
           "key": true,
-          "description": "Échauffement 4 km + 6 km en continu à 4'12/km + retour 3 km. Dernier vrai contact avec l'allure course.",
+          "description": "Échauffement 4 km + 5 km en continu à 4'12/km + retour 2 km.\nDernier vrai contact avec l'allure course. Mémorise la sensation : c'est celle que tu dois retrouver au km 5 à New York.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
           "target_pace": "4'12\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-10-23",
@@ -2737,37 +2656,34 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-10-24",
           "dow": "Sat",
           "type": "easy",
           "title": "Endurance + lignes",
-          "km": 10.0,
-          "duration_min": 53,
+          "km": 8.0,
+          "duration_min": 42,
           "key": false,
-          "description": "10 km + 6 lignes.",
+          "description": "8 km + 6 lignes.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-10-25",
           "dow": "Sun",
           "type": "long",
           "title": "Dernière sortie longue",
-          "km": 18.0,
-          "duration_min": 88,
+          "km": 16.0,
+          "duration_min": 79,
           "key": false,
-          "description": "18 km : 14 km à 4'55 puis 4 km à 4'20/km. Courte et tonique.",
+          "description": "16 km : 12 km à 4'55 puis 4 km à 4'20/km. Courte et tonique.",
           "target_pace": "4'55\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         }
       ],
-      "focus": "Volume -40 %, intensité maintenue mais raccourcie. La forme ne se construit plus : elle se révèle. Résiste à l'envie d'en faire plus."
+      "focus": "Volume -45 %, mais on garde 5 sorties et toute l'intensité. Réduire le nombre de sorties dégrade la performance ; c'est la DURÉE qui s'effondre, pas la fréquence. Ça va te sembler trop peu : c'est exactement le but."
     },
     {
       "week_num": 21,
@@ -2776,84 +2692,79 @@
       "phase_label": "Semaine de course",
       "start_date": "2026-10-26",
       "end_date": "2026-11-01",
-      "target_km": 81.2,
+      "target_km": 77.2,
       "days": [
         {
           "date": "2026-10-26",
           "dow": "Mon",
-          "type": "easy",
-          "title": "Dernier footing en France",
-          "km": 10.0,
-          "duration_min": 53,
+          "type": "recovery",
+          "title": "Récupération",
+          "km": 6.0,
+          "duration_min": 34,
           "key": false,
-          "description": "10 km facile + 6×20\" de lignes. Dernière sortie avant le voyage.",
-          "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "description": "6 km très lent après la sortie longue d'hier. Dernier jour où tu peux te sentir lourd sans que ce soit un signal.",
+          "target_pace": "5'40\"/km",
+          "status": "pending"
         },
         {
           "date": "2026-10-27",
           "dow": "Tue",
-          "type": "rest",
-          "title": "Voyage",
-          "km": 0.0,
-          "duration_min": 0,
-          "key": false,
-          "description": "Vol vers New York. Marche, hydratation, compression si tu en as. Cale-toi sur l'heure de NY dès l'embarquement.",
-          "status": "pending",
-          "actual": null
+          "type": "mp",
+          "title": "Dernier réveil musculaire",
+          "km": 8.0,
+          "duration_min": 38,
+          "key": true,
+          "description": "Échauffement 3 km + 3×3 min à 4'10/km (récup 2 min) + retour 2 km.\nDernière touche d'allure course. Courte, tonique, zéro fatigue. À partir de ce soir : recharge glucidique 8-10 g/kg/jour.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
+          "target_pace": "4'12\"/km",
+          "status": "pending"
         },
         {
           "date": "2026-10-28",
           "dow": "Wed",
           "type": "easy",
-          "title": "Déblocage à NYC",
-          "km": 8.0,
-          "duration_min": 42,
+          "title": "Endurance + lignes",
+          "km": 6.0,
+          "duration_min": 32,
           "key": false,
-          "description": "8 km très facile, le matin, pour caler l'horloge biologique. Central Park ou Hudson River Greenway.",
+          "description": "6 km facile + 6×20\" de lignes en souplesse.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-10-29",
           "dow": "Thu",
-          "type": "mp",
-          "title": "Réveil musculaire",
-          "km": 10.0,
-          "duration_min": 48,
-          "key": true,
-          "description": "Échauffement 4 km + 3×3 min à 4'05-4'10/km (récup 2 min) + retour 3 km. Courte piqûre de rappel, aucune fatigue.\nRecharge glucidique à partir de ce soir : 8-10 g/kg/jour.",
-          "target_pace": "4'12\"/km",
-          "status": "pending",
-          "actual": null
+          "type": "easy",
+          "title": "Dernier footing en France",
+          "km": 6.0,
+          "duration_min": 32,
+          "key": false,
+          "description": "6 km très facile. Valise le soir : chaussures de course, dossard, gels et tenue de course **dans le bagage cabine** — jamais en soute.",
+          "target_pace": "5'20\"/km",
+          "status": "pending"
         },
         {
           "date": "2026-10-30",
           "dow": "Fri",
           "type": "easy",
-          "title": "Footing court",
-          "km": 6.0,
-          "duration_min": 32,
+          "title": "Déverrouillage avant le vol",
+          "km": 5.0,
+          "duration_min": 26,
           "key": false,
-          "description": "6 km très facile + 4 lignes. Expo le matin, jambes en l'air l'après-midi.",
-          "target_pace": "5'20\"/km",
-          "status": "pending",
-          "actual": null
+          "description": "5 km très lent au lever, avant de partir à l'aéroport. Vol à midi.\nDans l'avion : boire beaucoup, se lever toutes les 90 min, chaussettes de compression. Cale-toi sur l'heure de New York dès l'embarquement — tu arrives en fin d'après-midi, tiens jusqu'à 22 h locales avant de dormir.",
+          "target_pace": "5'40\"/km",
+          "status": "pending"
         },
         {
           "date": "2026-10-31",
           "dow": "Sat",
           "type": "shake",
-          "title": "Déblocage",
-          "km": 5.0,
-          "duration_min": 28,
+          "title": "Déblocage + expo",
+          "km": 4.0,
+          "duration_min": 23,
           "key": false,
-          "description": "5 km très lent. Préparation du sac, épinglage du dossard, petit-déjeuner testé. Couché tôt (départ à Staten Island très matinal).",
+          "description": "4 km très lent le matin dans Central Park — la lumière du matin recale l'horloge biologique bien mieux qu'une grasse matinée.\n**Expo au Javits Center dans la foulée** : c'est le seul retrait possible du dossard, il n'y en a pas le jour de la course, et l'expo ferme le samedi en fin d'après-midi. Vas-y tôt, reste 1 h maximum, puis jambes en l'air.\nPréparation du sac, épinglage du dossard, petit-déjeuner testé. Couché tôt : départ pour Staten Island au milieu de la nuit.",
           "target_pace": "5'40\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         },
         {
           "date": "2026-11-01",
@@ -2863,13 +2774,12 @@
           "km": 42.2,
           "duration_min": 177,
           "key": true,
-          "description": "**Objectif : 2h57 — 4'12/km de moyenne.**\n\nPlan de course :\n· km 1-3 (pont de Verrazzano) : 4'20-4'25 en montée, ne PAS courir après le chrono, puis laisser filer en descente sans forcer.\n· km 4-25 (Brooklyn) : 4'10-4'12 régulier, c'est plat et grisant — le piège est de partir à 4'02.\n· km 25-26 (pont de Queensboro) : +15 à 20\"/km, silencieux et raide. Tu perds du temps ici, c'est normal, tu le reprends sur la 1re Avenue.\n· km 27-32 (1re Avenue) : la foule pousse, tiens 4'10. Ne pas s'emballer.\n· km 33-37 (Bronx + retour) : le vrai marathon commence. Objectif : ne pas dépasser 4'18.\n· km 38-42 (Central Park) : ça monte par paliers. Tout donner sur les 2 derniers km.\n\nRavitaillement : 1 gel toutes les 35-40 min à partir du km 8, boire à chaque poste.",
+          "description": "**Objectif : 2h57 — 4'12/km de moyenne, en négatif.**\n\nTes 7 marathons disent une seule chose : quand tu pars à moins de 8 s/km de ton allure moyenne finale, tu négatives et tu performes. Quand tu pars 18 s/km trop vite, tu perds 3 à 6 minutes. Sans exception, corrélation 0,97. Chicago = départ à 3'47.\n\n**La seule règle qui compte : aucun kilomètre sous 4'08 avant le 30e.**\n\n· km 1-3 (pont de Verrazzano) : 4'20-4'25 en montée. Le pont te protège de toi-même, laisse-le faire. En descente, ne pas relancer.\n· km 4-25 (Brooklyn) : 4'12-4'14. C'est plat, la foule est énorme, tu vas te sentir invincible. C'EST LE PIÈGE — c'est exactement là que Chicago s'est joué. Regarde ta montre tous les kilomètres.\n· km 25-26 (pont de Queensboro) : +15 à 20 s/km, silencieux et raide. Tu perds du temps ici, c'est prévu, ne compense pas.\n· km 27-32 (1re Avenue) : la foule pousse. Tiens 4'10-4'12. Ne convertis pas l'émotion en vitesse.\n· km 33-37 (Bronx et retour) : le vrai marathon commence. Objectif : ne pas dépasser 4'16.\n· km 38-42 (Central Park) : ça monte par paliers. Si tu as respecté les 37 premiers, c'est ici que tu doubles des dizaines de coureurs. Tout donner sur les 2 derniers.\n\nRavitaillement : 1 gel toutes les 35-40 min à partir du km 8, boire à chaque poste.",
           "target_pace": "4'12\"/km",
-          "status": "pending",
-          "actual": null
+          "status": "pending"
         }
       ],
-      "focus": "Voyage, décalage horaire, expo. Peu de course, beaucoup de sommeil. Recharge glucidique à partir de jeudi soir."
+      "focus": "35 km d'entraînement, soit -63 % : la charge la plus basse du plan. Quatre jours en France, vol le vendredi 30 à midi, arrivée à NYC en fin d'après-midi. Beaucoup de sommeil."
     }
   ],
   "adaptations": []
