@@ -249,6 +249,42 @@ def render(plan: dict) -> str:
       "<li>Chaussures habituelles, drop normal. Les pointes et le carbone seulement si "
       "le tendon est totalement silencieux — et pas avant octobre.</li></ul>")
 
+    # ---- Chaussures
+    a("<h2>Les chaussures — plus important que d'habitude</h2>")
+    a("<p>Avec un tendon d'Achille réactif, le drop et l'usure du couple de chaussures "
+      "ne sont plus un détail de confort : un drop bas allonge le tendon davantage à "
+      "chaque foulée, et une semelle morte augmente les contraintes globales. "
+      "Kilométrages relevés sur Strava au 2 août :</p>")
+    a("<table><tr><th>Paire</th><th>Km</th><th>Drop</th><th>Rôle</th></tr>"
+      "<tr><td><strong>Adidas Boston 13</strong></td><td>157 km</td><td>~6-7 mm</td>"
+      "<td style='color:#7dd3a0'>Séances de qualité et sorties longues. La seule paire "
+      "en bon état.</td></tr>"
+      "<tr><td><strong>Adidas Evo SL</strong></td><td>749 km</td><td>~6 mm</td>"
+      "<td style='color:#e0b46a'>Footings faciles, tant qu'elle tient. Mousse "
+      "supercritique légère : elle est en fin de vie.</td></tr>"
+      "<tr><td><strong>Nike Pegasus 40</strong></td><td>1 137 km</td><td>~10 mm</td>"
+      "<td style='color:#f08fa3'>À retirer. Uniquement les footings de récup les plus "
+      "courts, en attendant le remplacement.</td></tr>"
+      "</table>")
+    a("<div class='warn'><strong>Il te manque une paire, et c'est urgent.</strong><br>"
+      "Sur les 144 km des deux prochaines semaines, tu n'as qu'une seule paire saine — "
+      "et c'est un 6-7 mm de drop avec des tiges (EnergyRods), donc la plus exigeante "
+      "pour ton mollet et ton tendon.<br><br>"
+      "Basculer l'essentiel de ton volume d'un 10 mm vers du 6 mm, au moment précis où "
+      "ton Achille est réactif, c'est le scénario classique de la tendinopathie qui "
+      "s'installe. <strong>Commande cette semaine un entraînement quotidien à drop "
+      "8-10 mm bien amorti</strong> — une Pegasus récente fait très bien le travail et "
+      "tu connais la chaussure par cœur. C'est le meilleur euro que tu puisses mettre "
+      "dans ta préparation en ce moment.<br><br>"
+      "Accessoirement, faire tourner plusieurs paires de géométries différentes réduit "
+      "nettement le risque de blessure : les contraintes ne se répètent pas au même "
+      "endroit à chaque foulée.</div>")
+    a("<h3>Pour la course</h3>"
+      "<p>Ton Alphafly 3 « Chicago 25 » est à 126 km, largement dans sa fenêtre utile "
+      "pour le 1<sup>er</sup> novembre. Deux règles : rien en carbone avant octobre "
+      "(tendon), et la <strong>sortie longue signature du 11 octobre se court avec les "
+      "chaussures de course</strong> — c'est aussi une répétition générale du matériel.</p>")
+
     # ---- Chaleur
     a("<h2>La chaleur — août à Mondonville</h2><ul>"
       "<li>Séances de qualité et sorties longues <strong>avant 8 h</strong>. "
