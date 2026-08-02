@@ -156,45 +156,59 @@ WEEKS: dict[int, dict] = {
         ],
     },
 
+    # ===== À partir du 2 septembre : piste avec Harbat le mercredi soir =====
+    # La semaine bascule sur 2 séances dures espacées de 4 jours (mercredi piste,
+    # dimanche sortie longue) au lieu de 3. Le travail à allure marathon migre
+    # dans la sortie longue, là où il est le plus spécifique.
     13: {
         "phase": "specific",
-        "phase_label": "Spécifique · bloc 1",
-        "focus": "Semaine la plus dure du bloc 1. Introduction du travail à "
-                 "allure 10 km pour réveiller la cylindrée.",
+        "phase_label": "Spécifique · bascule piste",
+        "focus": "Première semaine du nouveau rythme : la piste du mercredi soir "
+                 "devient le pilier qualité, la sortie longue du dimanche l'autre. "
+                 "Mardi et vendredi passent en endurance pure.",
         "days": [
             ("recovery", "Récupération", 8.0, False, "recup",
              "8 km très lent après la SL d'hier."),
-            ("vma", "Allure 10 km · 8×1000 m", 16.0, True, "10k",
-             "Échauffement 4 km + gammes. 8×1000 m à 3'40/km, récup 2 min trot. "
-             "Retour 3 km.\n"
-             "Sur chemin roulant ou piste si l'Achille est totalement silencieux."),
-            ("easy", "Endurance", 13.0, False, "footing", "13 km à 5'10-5'25/km."),
-            ("mp", "Allure marathon · 2×15 min", 16.0, True, "mp_target",
-             "Échauffement 4 km + 2×15 min à 4'08-4'10/km, récup 3 min. Retour 3 km.\n"
-             "On allonge les blocs : 15 min continues à allure course." + DISCIPLINE),
-            ("recovery", "Récupération", 8.0, False, "recup", "8 km très lent."),
-            ("easy", "Endurance + lignes", 11.0, False, "footing",
-             "11 km + 8×20\" de lignes."),
-            ("long", "Sortie longue", 22.0, False, "le_long",
-             "22 km à 4'50-5'00/km, sans bloc rapide : la semaine est déjà chargée."),
+            ("easy", "Endurance + lignes", 13.0, False, "footing",
+             "13 km à 5'10-5'25/km + 6×20\" de lignes. Jambes fraîches pour la piste demain."),
+            ("vma", "🏟️ PISTE · Harbat", 15.0, True, "10k",
+             "**Première séance piste depuis mai — la plus risquée de tout le plan "
+             "pour ton Achille.**\n"
+             "· Échauffement 20 min minimum, pas 10. Gammes complètes.\n"
+             "· **Pas de pointes.** Chaussures d'entraînement habituelles, drop normal. "
+             "La piste est déjà une surface dure et les virages chargent le tendon en torsion.\n"
+             "· Fais **la moitié du volume du groupe** cette première fois. "
+             "Tu peux finir la séance en trottinant à côté.\n"
+             "· Retour au calme 15 min.\n"
+             "Le lendemain matin, teste la raideur au démarrage : c'est ton indicateur."),
+            ("recovery", "Récupération", 9.0, False, "recup",
+             "9 km très lent, l'après-midi si possible — la piste était hier soir, "
+             "laisse 16 h au tendon. Si la raideur matinale a nettement augmenté, "
+             "remplace par 30 min de vélo."),
+            ("easy", "Endurance", 14.0, False, "footing", "14 km à 5'10-5'25/km."),
+            ("easy", "Endurance + lignes", 11.0, False, "footing", "11 km + 8 lignes."),
+            ("long", "Sortie longue", 24.0, False, "le_long",
+             "24 km à 4'50-5'00/km, sans bloc rapide : la semaine change déjà de "
+             "structure, on ne cumule pas."),
         ],
     },
 
     14: {
         "phase": "specific",
         "phase_label": "Récupération · test",
-        "focus": "Semaine allégée (-25 %) puis test 10 km pour recalibrer les "
-                 "allures sur du concret plutôt que sur des estimations.",
+        "focus": "Semaine allégée (-25 %) puis test 10 km. Préviens le groupe que "
+                 "tu fais une séance courte mercredi : tu cours dimanche.",
         "days": [
             ("recovery", "Récupération", 6.0, False, "recup", "6 km très lent."),
-            ("easy", "Endurance + lignes", 12.0, False, "footing",
-             "12 km + 6×20\" de lignes."),
-            ("easy", "Endurance", 11.0, False, "footing", "11 km à 5'10-5'25/km."),
-            ("tempo", "Footing avec 20 min à allure semi", 13.0, False, "semi",
-             "Échauffement 4 km + 20 min à 3'57/km + retour 3 km. Séance d'entretien."),
-            R,
-            ("easy", "Déblocage", 7.0, False, "footing",
-             "7 km très facile + 4 lignes. Jambes fraîches pour demain."),
+            ("easy", "Endurance + lignes", 11.0, False, "footing", "11 km + 6 lignes."),
+            ("vma", "🏟️ PISTE · version allégée", 12.0, True, "10k",
+             "Séance du groupe mais **volume réduit de moitié**, et tu t'arrêtes "
+             "franchement avant la dernière série. Tu as un test dimanche.\n"
+             "Toujours sans pointes."),
+            ("recovery", "Récupération", 7.0, False, "recup", "7 km très lent."),
+            ("easy", "Endurance", 8.0, False, "footing", "8 km facile."),
+            ("easy", "Déblocage", 5.0, False, "footing",
+             "5 km très facile + 4 lignes. Jambes fraîches pour demain."),
             ("race", "TEST 10 km chrono", 21.0, True, "10k",
              "Échauffement 5 km + gammes. **10 km chrono à fond** (viser 37'00-37'30). "
              "Retour au calme 5 km.\n"
@@ -208,23 +222,27 @@ WEEKS: dict[int, dict] = {
         ],
     },
 
-    # ======================= BLOC 2 — spécifique lourd =======================
     15: {
         "phase": "specific",
         "phase_label": "Spécifique · bloc 2",
         "focus": "Reprise de la charge après le test. Les allures peuvent être "
                  "ajustées selon le chrono du 10 km.",
         "days": [
-            R,
-            ("seuil", "Seuil · 6×1500 m", 15.0, True, "seuil",
-             "Échauffement 4 km + 6×1500 m à 3'45-3'48/km, récup 2'30. Retour 2 km."),
-            ("easy", "Endurance", 13.0, False, "footing", "13 km à 5'10-5'25/km."),
-            ("mp", "Allure marathon · 3×10 min", 15.0, True, "mp_target",
-             "Échauffement 4 km + 3×10 min à 4'10/km, récup 2 min. Retour 3 km."
-             + DISCIPLINE),
+            ("recovery", "Récupération", 6.0, False, "recup", "6 km très lent."),
+            ("easy", "Endurance", 12.0, False, "footing", "12 km à 5'10-5'25/km."),
+            ("vma", "🏟️ PISTE · Harbat", 16.0, True, "10k",
+             "Séance complète du groupe.\n"
+             "**Si le format est en répétitions longues (1000 m et plus)** : c'est ta "
+             "séance de seuil de la semaine, vise 3'45-3'50/km et ne cours pas plus vite.\n"
+             "**Si le format est court (200-400 m)** : c'est du neuromusculaire, laisse "
+             "le groupe partir devant sur les dernières et ajoute 10 min à 3'52/km "
+             "en fin de séance.\n"
+             "⏱️ Le vrai exercice du mercredi soir n'est pas la vitesse, c'est de "
+             "courir TA séance et pas celle du voisin."),
             ("recovery", "Récupération", 9.0, False, "recup", "9 km très lent."),
-            ("easy", "Endurance + côtes", 11.0, False, "footing",
-             "11 km + 10×20\" en côte modérée."),
+            ("easy", "Endurance", 12.0, False, "footing", "12 km à 5'10-5'25/km."),
+            ("easy", "Endurance + côtes", 8.0, False, "footing",
+             "8 km + 8×20\" en côte modérée."),
             ("long_mp", "SL 27 km · 2×6 km AM", 27.0, True, "mp_target",
              "27 km : 6 km à 5'00, puis 2×6 km à 4'12/km avec 2 km de trot entre "
              "les blocs, puis retour au calme.\n"
@@ -240,16 +258,15 @@ WEEKS: dict[int, dict] = {
                  "au-delà, l'historique dit que tu paies en fraîcheur le jour J.",
         "days": [
             ("recovery", "Récupération", 6.0, False, "recup", "6 km très lent."),
-            ("seuil", "Seuil · 5×2000 m", 16.0, True, "seuil",
-             "Échauffement 4 km + 5×2000 m à 3'48/km, récup 2'30. Retour 2 km.\n"
-             "Même séance qu'en S11 : compare directement les sensations et la FC. "
-             "C'est ton marqueur de progression le plus fiable."),
-            ("easy", "Endurance", 12.0, False, "footing", "12 km à 5'10-5'25/km."),
-            ("mp", "Allure marathon · 2×20 min", 17.0, True, "mp_target",
-             "Échauffement 4 km + 2×20 min à 4'10/km, récup 3 min. Retour 4 km.\n"
-             "40 min cumulées à allure course : la séance la plus spécifique du bloc."
-             + DISCIPLINE),
-            ("recovery", "Récupération", 8.0, False, "recup", "8 km très lent."),
+            ("easy", "Endurance", 14.0, False, "footing", "14 km à 5'10-5'25/km."),
+            ("vma", "🏟️ PISTE · Harbat", 17.0, True, "10k",
+             "Séance complète. Demande à Harbat si le format peut inclure des "
+             "répétitions longues (1000-2000 m) : c'est ce dont un marathonien a besoin, "
+             "bien plus que du 400 m.\n"
+             "Note ta FC moyenne sur les répétitions et compare à la S13 : "
+             "c'est ton marqueur de progression le plus fiable."),
+            ("recovery", "Récupération", 9.0, False, "recup", "9 km très lent."),
+            ("easy", "Endurance", 13.0, False, "footing", "13 km à 5'10-5'25/km."),
             ("easy", "Endurance + lignes", 10.0, False, "footing", "10 km + 8 lignes."),
             ("long_mp", "SL 29 km · 2×8 km AM", 29.0, True, "mp_target",
              "29 km : 6 km à 5'00, 2×8 km à 4'12/km (2 km de trot entre), retour au calme.\n"
@@ -265,33 +282,34 @@ WEEKS: dict[int, dict] = {
                  "sur la sortie longue signature de la semaine suivante.",
         "days": [
             R,
-            ("seuil", "Seuil continu · 20 min", 13.0, True, "seuil",
-             "Échauffement 4 km + 20 min continues à 3'52/km + retour 3 km. "
-             "Volume réduit, intensité maintenue."),
             ("easy", "Endurance", 12.0, False, "footing", "12 km à 5'10-5'25/km."),
-            ("easy", "Endurance + lignes", 13.0, False, "footing",
-             "13 km + 8×20\" de lignes. Pas de bloc AM cette semaine."),
-            R,
-            ("easy", "Endurance", 10.0, False, "footing", "10 km facile."),
-            ("long", "Sortie longue avec finish", 24.0, False, "le_long",
-             "24 km : 19 km à 4'55 puis 5 km à 4'20/km."),
+            ("vma", "🏟️ PISTE · version allégée", 14.0, True, "10k",
+             "Séance du groupe à volume réduit d'un tiers. Semaine de décharge : "
+             "l'intensité reste, le volume descend."),
+            ("recovery", "Récupération", 8.0, False, "recup", "8 km très lent."),
+            ("easy", "Endurance", 11.0, False, "footing", "11 km à 5'10-5'25/km."),
+            ("easy", "Endurance + lignes", 8.0, False, "footing", "8 km + 8 lignes."),
+            ("long", "Sortie longue avec finish", 19.0, False, "le_long",
+             "19 km : 15 km à 4'55 puis 4 km à 4'20/km."),
         ],
     },
 
     18: {
         "phase": "peak",
         "phase_label": "Pic · séance signature",
-        "focus": "LA semaine du plan. La sortie longue de dimanche est le meilleur "
-                 "prédicteur de ta performance à NYC — 3 semaines avant, timing idéal.",
+        "focus": "LA semaine du plan. Dimanche est prioritaire sur tout le reste — "
+                 "mercredi soir, tu lèves le pied même si le groupe part fort.",
         "days": [
             ("recovery", "Récupération", 6.0, False, "recup", "6 km très lent."),
-            ("vma", "Allure 10 km · 6×1200 m", 14.0, True, "10k",
-             "Échauffement 4 km + 6×1200 m à 3'42/km, récup 2 min. Retour 2 km."),
-            ("easy", "Endurance", 12.0, False, "footing", "12 km à 5'10-5'25/km."),
-            ("mp", "Allure marathon · 3×10 min", 14.0, True, "mp_target",
-             "Échauffement 4 km + 3×10 min à 4'10/km, récup 2 min. Retour 2 km. "
-             "Séance courte : on garde le jus pour dimanche." + DISCIPLINE),
+            ("easy", "Endurance", 13.0, False, "footing", "13 km à 5'10-5'25/km."),
+            ("vma", "🏟️ PISTE · modérée", 15.0, True, "10k",
+             "**Séance volontairement bridée : 60-70 % du volume du groupe, et tu "
+             "restes 2-3 s/km en retrait sur chaque répétition.**\n"
+             "La sortie longue de dimanche est le meilleur prédicteur de ta course. "
+             "Arriver dessus avec des jambes fraîches vaut infiniment plus qu'une "
+             "belle séance de piste le mercredi."),
             ("recovery", "Récupération", 8.0, False, "recup", "8 km très lent."),
+            ("easy", "Endurance", 12.0, False, "footing", "12 km à 5'10-5'25/km."),
             ("easy", "Déblocage", 8.0, False, "footing", "8 km facile + 6 lignes."),
             ("long_mp", "🎯 SL SIGNATURE 32 km · 18 km AM", 32.0, True, "mp_target",
              "32 km : 8 km à 5'00, puis **18 km en continu à 4'12/km**, puis 6 km "
@@ -309,18 +327,17 @@ WEEKS: dict[int, dict] = {
     19: {
         "phase": "peak",
         "phase_label": "Dernier bloc solide",
-        "focus": "Dernière semaine consistante. À partir de lundi prochain, "
-                 "tout descend jusqu'à la course.",
+        "focus": "Dernière semaine consistante, et dernière vraie séance de piste. "
+                 "À partir de lundi prochain, tout descend jusqu'à la course.",
         "days": [
             R,
-            ("seuil", "Seuil · 4×1500 m", 14.0, True, "seuil",
-             "Échauffement 4 km + 4×1500 m à 3'45/km, récup 2'30. Retour 2 km."),
             ("easy", "Endurance", 12.0, False, "footing", "12 km à 5'10-5'25/km."),
-            ("mp", "Allure marathon · 2×12 min", 14.0, True, "mp_target",
-             "Échauffement 4 km + 2×12 min à 4'10/km, récup 3 min. Retour 2 km."
-             + DISCIPLINE),
+            ("vma", "🏟️ PISTE · dernière complète", 15.0, True, "10k",
+             "Dernière séance de piste à volume plein. Profite-en : à partir de la "
+             "semaine prochaine, tout est raccourci."),
             ("recovery", "Récupération", 8.0, False, "recup", "8 km très lent."),
-            ("easy", "Endurance + lignes", 10.0, False, "footing", "10 km + 8 lignes."),
+            ("easy", "Endurance", 12.0, False, "footing", "12 km à 5'10-5'25/km."),
+            ("easy", "Endurance + lignes", 11.0, False, "footing", "11 km + 8 lignes."),
             ("long_mp", "SL 22 km · 8 km AM en fin", 22.0, True, "mp_target",
              "22 km : 12 km à 4'55, puis 8 km à 4'12/km, puis 2 km de retour au calme. "
              "Dernière sortie longue avec du contenu." + DISCIPLINE),
@@ -337,16 +354,20 @@ WEEKS: dict[int, dict] = {
                  "c'est exactement le but.",
         "days": [
             R,
-            ("seuil", "Seuil court · 4×1000 m", 11.0, True, "seuil",
-             "Échauffement 4 km + 4×1000 m à 3'45/km, récup 2 min. Retour 2 km. "
-             "Ça doit sembler facile — c'est le signe que l'affûtage fonctionne."),
-            ("easy", "Endurance", 10.0, False, "footing", "10 km à 5'10-5'25/km."),
+            ("easy", "Endurance + lignes", 12.0, False, "footing",
+             "12 km à 5'10-5'25/km + 6 lignes."),
+            ("vma", "🏟️ PISTE · raccourcie", 11.0, True, "10k",
+             "**Moitié du volume du groupe, et tu pars avant la fin.** Allure "
+             "habituelle, pas plus vite.\n"
+             "C'est la séance où l'ego fait le plus de dégâts : tu vas te sentir "
+             "très bien (c'est l'affûtage qui commence à agir) et vouloir en faire plus. "
+             "Le bénéfice est nul, le risque ne l'est pas."),
+            ("recovery", "Récupération", 6.0, False, "recup", "6 km très lent."),
             ("mp", "Allure marathon · 5 km", 11.0, True, "mp_target",
              "Échauffement 4 km + 5 km en continu à 4'12/km + retour 2 km.\n"
              "Dernier vrai contact avec l'allure course. Mémorise la sensation : "
              "c'est celle que tu dois retrouver au km 5 à New York." + DISCIPLINE),
             R,
-            ("easy", "Endurance + lignes", 8.0, False, "footing", "8 km + 6 lignes."),
             ("long", "Dernière sortie longue", 16.0, False, "le_long",
              "16 km : 12 km à 4'55 puis 4 km à 4'20/km. Courte et tonique."),
         ],
@@ -367,7 +388,10 @@ WEEKS: dict[int, dict] = {
              "Dernière touche d'allure course. Courte, tonique, zéro fatigue. "
              "À partir de ce soir : recharge glucidique 8-10 g/kg/jour." + DISCIPLINE),
             ("easy", "Endurance + lignes", 6.0, False, "footing",
-             "6 km facile + 6×20\" de lignes en souplesse."),
+             "6 km facile + 6×20\" de lignes en souplesse.\n"
+             "🏟️ **Pas de piste ce soir.** Préviens Harbat maintenant, pas mercredi : "
+             "une séance de groupe à 4 jours du marathon est le meilleur moyen de "
+             "gâcher 13 semaines de travail."),
             ("easy", "Dernier footing en France", 6.0, False, "footing",
              "6 km très facile. Valise le soir : chaussures de course, dossard, gels "
              "et tenue de course **dans le bagage cabine** — jamais en soute."),

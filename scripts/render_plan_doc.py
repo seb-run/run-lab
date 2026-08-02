@@ -263,20 +263,63 @@ def render(plan: dict) -> str:
 
     # ---- Structure
     a("<h2>La structure de la semaine</h2>")
-    a("<p>Trois rendez-vous fixes, le reste est du volume facile. C'est volontairement "
-      "simple : un plan qu'on retient est un plan qu'on suit.</p>")
+    a("<p>Deux régimes, la bascule se fait le <strong>2 septembre</strong> avec la reprise "
+      "de la piste avec Harbat le mercredi soir.</p>")
+
+    a("<h3>Jusqu'au 30 août — trois séances</h3>")
     a("<table><tr><th>Jour</th><th>Contenu</th><th>Pourquoi</th></tr>"
       "<tr><td><strong>Mardi</strong></td><td>Seuil</td>"
-      "<td>Le meilleur rapport bénéfice/fatigue pour le marathon. Repousse le seuil "
-      "au-dessus de l'allure course.</td></tr>"
+      "<td>Le meilleur rapport bénéfice/fatigue pour le marathon.</td></tr>"
       "<tr><td><strong>Jeudi</strong></td><td>Allure marathon</td>"
       "<td>Spécificité pure : le geste et l'allure du jour J, à l'état frais.</td></tr>"
       "<tr><td><strong>Dimanche</strong></td><td>Sortie longue</td>"
-      "<td>Endurance, économie de course, et sur les grosses semaines un bloc à allure "
-      "course en fatigue — le plus proche de ce que demande la course.</td></tr>"
+      "<td>Endurance et économie de course.</td></tr>"
       "<tr><td>Lun / Ven</td><td>Repos ou récup</td><td>C'est là que le progrès se fabrique.</td></tr>"
       "<tr><td>Mer / Sam</td><td>Endurance</td><td>Volume aérobie. Lent. Vraiment lent.</td></tr>"
       "</table>")
+
+    a("<h3>À partir du 2 septembre — deux séances, espacées de 4 jours</h3>")
+    a("<table><tr><th>Jour</th><th>Contenu</th><th>Pourquoi</th></tr>"
+      "<tr><td>Lundi</td><td>Récup</td><td>Lendemain de sortie longue.</td></tr>"
+      "<tr><td>Mardi</td><td>Endurance</td><td>Jambes fraîches pour la piste.</td></tr>"
+      "<tr><td><strong>Mercredi soir</strong></td><td><strong>🏟️ Piste · Harbat</strong></td>"
+      "<td>Devient le pilier qualité de la semaine.</td></tr>"
+      "<tr><td>Jeudi</td><td>Récup très lente</td>"
+      "<td>Seulement 12 h après la piste. L'après-midi si possible.</td></tr>"
+      "<tr><td>Vendredi</td><td>Endurance</td><td>Volume.</td></tr>"
+      "<tr><td>Samedi</td><td>Endurance + lignes</td><td>Volume.</td></tr>"
+      "<tr><td><strong>Dimanche</strong></td><td><strong>Sortie longue + bloc allure marathon</strong></td>"
+      "<td>Le travail spécifique migre ici — l'endroit où il compte le plus.</td></tr>"
+      "</table>")
+
+    a("<div class='info'><strong>Pourquoi on passe de trois séances dures à deux.</strong><br>"
+      "Mardi seuil + mercredi piste + jeudi allure marathon, ce serait trois jours durs "
+      "consécutifs : intenable, et c'est la recette d'une blessure d'Achille.<br><br>"
+      "Le mercredi devient donc ta séance de qualité et le travail à allure marathon "
+      "migre dans la sortie longue du dimanche — où il est de toute façon plus spécifique, "
+      "puisqu'il s'y court en fatigue, comme le jour J. Résultat : deux séances dures "
+      "espacées de 4 jours, le volume est préservé, et tu récupères mieux qu'avant.</div>")
+
+    a("<h3>Comment piloter la séance de piste</h3>")
+    a("<table><tr><th>Format du soir</th><th>Ce que tu en fais</th></tr>"
+      "<tr><td><strong>Répétitions longues</strong><br><span class='d-day'>1000 m et +</span></td>"
+      "<td>C'est ta séance de seuil de la semaine. Vise 3'45-3'50/km et n'accélère pas. "
+      "C'est le format le plus utile pour toi — demande à Harbat s'il peut en programmer "
+      "régulièrement.</td></tr>"
+      "<tr><td><strong>Répétitions courtes</strong><br><span class='d-day'>200-400 m</span></td>"
+      "<td>C'est du neuromusculaire : utile mais peu spécifique du marathon. Laisse le "
+      "groupe partir devant sur les dernières et ajoute 10 min continues à 3'52/km "
+      "en fin de séance.</td></tr>"
+      "</table>")
+    a("<div class='warn'><strong>Le mercredi soir est ton laboratoire de discipline d'allure.</strong><br>"
+      "Un groupe tire toujours plus vite que prévu, et c'est exactement le réflexe qui t'a "
+      "coûté Chicago, Paris 2025 et août 2024. Chaque mercredi où tu cours TA séance et "
+      "pas celle du voisin est une répétition du kilomètre 4 à Brooklyn.<br><br>"
+      "<strong>Et pour l'Achille :</strong> la piste est la surface la plus dure de ton "
+      "environnement, avec des virages qui chargent le tendon en torsion. "
+      "Pas de pointes — chaussures d'entraînement habituelles, drop normal. "
+      "Échauffement de 20 minutes, pas 10. Et la première séance du 2 septembre se fait "
+      "à la moitié du volume du groupe, quoi qu'il arrive.</div>")
 
     # ---- Semaines
     a("<h2>Le plan, semaine par semaine</h2>")
