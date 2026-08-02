@@ -101,6 +101,11 @@ jobs:
           mkdir -p site
           cp output/index.html site/index.html
           cp manifest.webmanifest sw.js icon-192.png icon-512.png icon-512-maskable.png apple-touch-icon.png site/
+          # Calendrier iCal : publié à la racine du site pour que l'abonnement
+          # iPhone se resynchronise tout seul à chaque build.
+          python3 scripts/build_ics.py site/plan_nyc.ics
+          # Document de référence du plan
+          python3 scripts/render_plan_doc.py site/plan.html
 
       - uses: actions/upload-pages-artifact@v3
         with:

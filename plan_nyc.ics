@@ -1,0 +1,2107 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Seb-Metrics//Plan NYC 2026//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Plan NYC 2026 · Seb-Metrics
+X-WR-CALDESC:Plan marathon de New York — objectif 2h57'00. Mis à jour 
+ automatiquement.
+X-WR-TIMEZONE:Europe/Paris
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-03@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:275
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20260804
+SUMMARY:😴 Repos · protocole Achille
+DESCRIPTION:Repos complet. Protocole mollets/Achille : 3×15 excentriques
+  jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min
+ .\n\nSemaine 9/21 · Pont · reprise · 68 km\nJ−90 avant New York\n\nO
+ bjectif de la semaine : Refaire du volume propre. Zéro intensité dure :
+  on réinstalle l'allure facile et on charge le tendon progressivement.
+CATEGORIES:Repos
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-04@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:331
+DTSTART:20260804T070000
+DTEND:20260804T080400
+SUMMARY:🏃 Footing + lignes souples · 12 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : Evo SL (usagée) — Fo
+ otings faciles jusqu'à épuisement de la paire.\n\n12 km en endurance fo
+ ndamentale VRAIE : 5'10-5'25/km\, FC < 140. Puis 6×20" de lignes en soup
+ lesse sur herbe\, récup marche 40". Objectif : relancer le neuromusculai
+ re sans agresser l'Achille.\n\nSemaine 9/21 · Pont · reprise · 68 km\n
+ J−89 avant New York\n\nObjectif de la semaine : Refaire du volume propr
+ e. Zéro intensité dure : on réinstalle l'allure facile et on charge le
+  tendon progressivement.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Footing + lignes souples
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-05@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:778
+DTSTART:20260805T070000
+DTEND:20260805T075700
+SUMMARY:🫧 Récupération · 10 km
+DESCRIPTION:Allure cible : 5'40"/km\nChaussures : Pegasus 40 (fin de vie)
+  — Uniquement les récups courtes et lentes : c'est ton seul 10 mm\, ma
+ is la semelle est morte.\n\n10 km très lent\, 5'25-5'40/km. Sur chemin s
+ ouple à Bouconne. Si raideur au démarrage : 10 min de marche avant de c
+ ourir.\n\nSemaine 9/21 · Pont · reprise · 68 km\nJ−88 avant New York
+ \n\nObjectif de la semaine : Refaire du volume propre. Zéro intensité d
+ ure : on réinstalle l'allure facile et on charge le tendon progressiveme
+ nt.
+CATEGORIES:Récup
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Récupération
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-06@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:412
+DTSTART:20260806T070000
+DTEND:20260806T080800
+SUMMARY:🌡️ Footing avec 2×10' en confort soutenu · 14 km
+DESCRIPTION:Allure cible : 4'05"/km\nChaussures : Adizero Boston 13 — L
+ a seule paire fraîche : elle prend tout ce qui compte.\n\nÉchauffement 
+ 4 km\, puis 2×10 min à 4'30-4'35/km (récup 3 min trot)\, retour au cal
+ me. Ce n'est PAS du seuil : allure « confortablement soutenue »\, tu do
+ is pouvoir dire une phrase courte.\n\nSemaine 9/21 · Pont · reprise · 
+ 68 km\nJ−87 avant New York\n\nObjectif de la semaine : Refaire du volum
+ e propre. Zéro intensité dure : on réinstalle l'allure facile et on ch
+ arge le tendon progressivement.
+CATEGORIES:Tempo
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Footing avec 2×10' en confort soutenu
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-07@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:342
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260808
+SUMMARY:😴 Repos · protocole Achille
+DESCRIPTION:Repos complet. Protocole mollets/Achille : 3×15 excentriques
+  jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min
+ .\n\nSemaine 9/21 · Pont · reprise · 68 km\nJ−86 avant New York\n\nO
+ bjectif de la semaine : Refaire du volume propre. Zéro intensité dure :
+  on réinstalle l'allure facile et on charge le tendon progressivement.
+CATEGORIES:Repos
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-08@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:570
+DTSTART:20260808T070000
+DTEND:20260808T075800
+SUMMARY:🏃 Footing + lignes · 11 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : Evo SL (usagée) — Fo
+ otings faciles jusqu'à épuisement de la paire.\n\n11 km à 5'10-5'25/km
+  + 8×20" de lignes sur herbe. Sortie avant 8h : la chaleur d'août à Mo
+ ndonville plombe la FC.\n\nSemaine 9/21 · Pont · reprise · 68 km\nJ−
+ 85 avant New York\n\nObjectif de la semaine : Refaire du volume propre. Z
+ éro intensité dure : on réinstalle l'allure facile et on charge le ten
+ don progressivement.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Footing + lignes
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-09@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:200
+DTSTART:20260809T070000
+DTEND:20260809T084300
+SUMMARY:🛣️ Sortie longue de reprise · 21 km
+DESCRIPTION:Allure cible : 4'55"/km\nChaussures : Adizero Boston 13 — L
+ a seule paire fraîche : elle prend tout ce qui compte.\n\n21 km à 4'55-
+ 5'10/km\, sous les arbres de Bouconne. Départ 6h30-7h. Ravitaillement : 
+ 500 ml + 1 gel à mi-parcours pour réhabituer l'estomac.\n\nSemaine 9/21
+  · Pont · reprise · 68 km\nJ−84 avant New York\n\nObjectif de la sem
+ aine : Refaire du volume propre. Zéro intensité dure : on réinstalle l
+ 'allure facile et on charge le tendon progressivement.
+CATEGORIES:Sortie longue
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Sortie longue de reprise
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-10@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:420
+DTSTART;VALUE=DATE:20260810
+DTEND;VALUE=DATE:20260811
+SUMMARY:😴 Repos · protocole Achille
+DESCRIPTION:Repos complet. Protocole mollets/Achille : 3×15 excentriques
+  jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min
+ .\n\nSemaine 10/21 · Pont · réintroduction qualité · 76 km\nJ−83 a
+ vant New York\n\nObjectif de la semaine : Première vraie séance de seui
+ l depuis le 3 mai\, et premier contact avec l'allure marathon. Tout sur s
+ ol souple.
+CATEGORIES:Repos
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-11@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:676
+DTSTART:20260811T070000
+DTEND:20260811T081100
+SUMMARY:🔥 Seuil fractionné · 6×3 min · 15 km ★
+DESCRIPTION:Allure cible : 3'50"/km\nChaussures : Adizero Boston 13 — L
+ a seule paire fraîche : elle prend tout ce qui compte.\n\nÉchauffement 
+ 4 km + gammes. Puis 6×3 min à 3'50-3'55/km\, récup 90" en trot. Retour
+  au calme 3 km.\nSur chemin roulant de Bouconne\, PAS sur bitume : c'est 
+ ta première séance rapide depuis 3 mois\, le tendon doit encaisser du s
+ ouple.\n\nSemaine 10/21 · Pont · réintroduction qualité · 76 km\nJ
+ −82 avant New York\n\nObjectif de la semaine : Première vraie séance 
+ de seuil depuis le 3 mai\, et premier contact avec l'allure marathon. Tou
+ t sur sol souple.
+CATEGORIES:Seuil
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Demain : Seuil fractionné · 6×3 min
+TRIGGER:-PT13H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Seuil fractionné · 6×3 min
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-12@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:993
+DTSTART:20260812T070000
+DTEND:20260812T080200
+SUMMARY:🫧 Récupération · 11 km
+DESCRIPTION:Allure cible : 5'40"/km\nChaussures : Pegasus 40 (fin de vie)
+  — Uniquement les récups courtes et lentes : c'est ton seul 10 mm\, ma
+ is la semelle est morte.\n\n11 km à 5'25-5'40/km. Vérifie la raideur ma
+ tinale : si elle a augmenté après la séance d'hier\, remplace par 30 m
+ in de vélo.\n\nSemaine 10/21 · Pont · réintroduction qualité · 76 k
+ m\nJ−81 avant New York\n\nObjectif de la semaine : Première vraie séa
+ nce de seuil depuis le 3 mai\, et premier contact avec l'allure marathon.
+  Tout sur sol souple.
+CATEGORIES:Récup
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Récupération
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-13@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:8
+DTSTART:20260813T070000
+DTEND:20260813T081100
+SUMMARY:🎯 Allure marathon · 3×8 min · 15 km ★
+DESCRIPTION:Allure cible : 4'12"/km\nChaussures : Adizero Boston 13 — L
+ a seule paire fraîche : elle prend tout ce qui compte.\n\nÉchauffement 
+ 4 km\, puis 3×8 min à 4'10-4'12/km (allure objectif NYC)\, récup 2 min
+  trot. Retour 3 km.\nObjectif : réapprendre la sensation.\n⏱️ Règle
+  absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance 
+ ratée\, au même titre que trop lent. C'est ici que se joue ta course.\n
+ \nSemaine 10/21 · Pont · réintroduction qualité · 76 km\nJ−80 avan
+ t New York\n\nObjectif de la semaine : Première vraie séance de seuil d
+ epuis le 3 mai\, et premier contact avec l'allure marathon. Tout sur sol 
+ souple.
+CATEGORIES:Allure marathon
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Demain : Allure marathon · 3×8 min
+TRIGGER:-PT13H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Allure marathon · 3×8 min
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-14@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:796
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260815
+SUMMARY:😴 Repos · protocole Achille
+DESCRIPTION:Repos complet. Protocole mollets/Achille : 3×15 excentriques
+  jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min
+ .\n\nSemaine 10/21 · Pont · réintroduction qualité · 76 km\nJ−79 a
+ vant New York\n\nObjectif de la semaine : Première vraie séance de seui
+ l depuis le 3 mai\, et premier contact avec l'allure marathon. Tout sur s
+ ol souple.
+CATEGORIES:Repos
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-15@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:589
+DTSTART:20260815T070000
+DTEND:20260815T075800
+SUMMARY:🏃 Footing + côtes courtes · 11 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : Evo SL (usagée) — Fo
+ otings faciles jusqu'à épuisement de la paire.\n\n11 km + 6×20" en cô
+ te modérée (5-6%)\, montée en souplesse\, descente en marchant.\n⚠
+ ️ À faire seulement si l'Achille est silencieux au démarrage. Sinon :
+  8 lignes sur le plat à la place.\n\nSemaine 10/21 · Pont · réintrodu
+ ction qualité · 76 km\nJ−78 avant New York\n\nObjectif de la semaine 
+ : Première vraie séance de seuil depuis le 3 mai\, et premier contact a
+ vec l'allure marathon. Tout sur sol souple.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Footing + côtes courtes
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-16@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:485
+DTSTART:20260816T070000
+DTEND:20260816T085800
+SUMMARY:🛣️ Sortie longue avec finish · 24 km
+DESCRIPTION:Allure cible : 4'55"/km\nChaussures : Adizero Boston 13 — L
+ a seule paire fraîche : elle prend tout ce qui compte.\n\n24 km : 18 km 
+ à 4'55-5'05/km puis les 6 derniers à 4'20-4'25/km. Premier vrai test de
+  fin de sortie en fatigue.\n\nSemaine 10/21 · Pont · réintroduction qu
+ alité · 76 km\nJ−77 avant New York\n\nObjectif de la semaine : Premi
+ ère vraie séance de seuil depuis le 3 mai\, et premier contact avec l'a
+ llure marathon. Tout sur sol souple.
+CATEGORIES:Sortie longue
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Sortie longue avec finish
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-17@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:628
+DTSTART;VALUE=DATE:20260817
+DTEND;VALUE=DATE:20260818
+SUMMARY:😴 Repos · protocole Achille
+DESCRIPTION:Repos complet. Protocole mollets/Achille : 3×15 excentriques
+  jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min
+ .\n\nSemaine 11/21 · Spécifique · bloc 1 · 84 km\nJ−76 avant New Yo
+ rk\n\nObjectif de la semaine : Début du plan définitif. Structure fixe 
+ : seuil le mardi\, allure marathon le jeudi\, sortie longue le dimanche.
+CATEGORIES:Repos
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-18@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:767
+DTSTART:20260818T070000
+DTEND:20260818T081100
+SUMMARY:🔥 Seuil · 5×2000 m · 15 km ★
+DESCRIPTION:Allure cible : 3'50"/km\nChaussures : Adizero Boston 13 — D
+ ynamique et ferme\, pour le travail rapide.\n\nÉchauffement 4 km. 5×200
+ 0 m à 3'50/km\, récup 2'30 trot. Retour 2 km.\nSéance de référence d
+ u bloc : tu la reverras en S16. Note tes sensations et ta FC moyenne sur 
+ les répétitions.\n\nSemaine 11/21 · Spécifique · bloc 1 · 84 km\nJ
+ −75 avant New York\n\nObjectif de la semaine : Début du plan définiti
+ f. Structure fixe : seuil le mardi\, allure marathon le jeudi\, sortie lo
+ ngue le dimanche.
+CATEGORIES:Seuil
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Demain : Seuil · 5×2000 m
+TRIGGER:-PT13H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Seuil · 5×2000 m
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-19@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:549
+DTSTART:20260819T070000
+DTEND:20260819T080900
+SUMMARY:🏃 Endurance · 13 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : On Cloudsurfer — 10 m
+ m : le drop élevé porte le gros du volume facile.\n\n13 km à 5'10-5'25
+ /km\, FC < 140. Sortie tôt.\n\nSemaine 11/21 · Spécifique · bloc 1 ·
+  84 km\nJ−74 avant New York\n\nObjectif de la semaine : Début du plan 
+ définitif. Structure fixe : seuil le mardi\, allure marathon le jeudi\, 
+ sortie longue le dimanche.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-20@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:3
+DTSTART:20260820T070000
+DTEND:20260820T081100
+SUMMARY:🎯 Allure marathon · 4×8 min · 15 km ★
+DESCRIPTION:Allure cible : 4'12"/km\nChaussures : Adizero Boston 13 — A
+ llure marathon : la paire la plus proche de tes sensations de course.\n\n
+ Échauffement 4 km + 4×8 min à 4'10-4'12/km\, récup 2 min. Retour 3 km
+ .\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus r
+ apide = séance ratée\, au même titre que trop lent. C'est ici que se j
+ oue ta course.\n\nSemaine 11/21 · Spécifique · bloc 1 · 84 km\nJ−73
+  avant New York\n\nObjectif de la semaine : Début du plan définitif. St
+ ructure fixe : seuil le mardi\, allure marathon le jeudi\, sortie longue 
+ le dimanche.
+CATEGORIES:Allure marathon
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Demain : Allure marathon · 4×8 min
+TRIGGER:-PT13H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Allure marathon · 4×8 min
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-21@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:412
+DTSTART:20260821T070000
+DTEND:20260821T074500
+SUMMARY:🫧 Récupération · 8 km
+DESCRIPTION:Allure cible : 5'40"/km\nChaussures : Pegasus 41 — 10 mm de
+  drop sur les lendemains de séance : le tendon respire.\n\n8 km très le
+ nt. Renforcement mollets après.\n\nSemaine 11/21 · Spécifique · bloc 
+ 1 · 84 km\nJ−72 avant New York\n\nObjectif de la semaine : Début du p
+ lan définitif. Structure fixe : seuil le mardi\, allure marathon le jeud
+ i\, sortie longue le dimanche.
+CATEGORIES:Récup
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Récupération
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-22@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:307
+DTSTART:20260822T070000
+DTEND:20260822T075800
+SUMMARY:🏃 Endurance + lignes · 11 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : Hyperboost Edge (neuve)
+  — Stack maximal : amorti maximal sur les kilomètres faciles.\n\n11 km
+  + 8×20" de lignes en souplesse.\n\nSemaine 11/21 · Spécifique · bloc
+  1 · 84 km\nJ−71 avant New York\n\nObjectif de la semaine : Début du 
+ plan définitif. Structure fixe : seuil le mardi\, allure marathon le jeu
+ di\, sortie longue le dimanche.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance + lignes
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-23@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:890
+DTSTART:20260823T070000
+DTEND:20260823T084800
+SUMMARY:🛣️ Sortie longue · 22 km
+DESCRIPTION:Allure cible : 4'55"/km\nChaussures : Evo SL (neuve) — Lég
+ ère et amortie\, confortable sur la durée.\n\n22 km à 4'50-5'00/km. R
+ égulier\, sans accélération finale.\n\nSemaine 11/21 · Spécifique ·
+  bloc 1 · 84 km\nJ−70 avant New York\n\nObjectif de la semaine : Débu
+ t du plan définitif. Structure fixe : seuil le mardi\, allure marathon l
+ e jeudi\, sortie longue le dimanche.
+CATEGORIES:Sortie longue
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Sortie longue
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-24@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:691
+DTSTART;VALUE=DATE:20260824
+DTEND;VALUE=DATE:20260825
+SUMMARY:😴 Repos · protocole Achille
+DESCRIPTION:Repos complet. Protocole mollets/Achille : 3×15 excentriques
+  jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min
+ .\n\nSemaine 12/21 · Spécifique · bloc 1 · 88 km\nJ−69 avant New Yo
+ rk\n\nObjectif de la semaine : Premier gros bloc à allure marathon dans 
+ la sortie longue.
+CATEGORIES:Repos
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-25@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:151
+DTSTART:20260825T070000
+DTEND:20260825T081600
+SUMMARY:🔥 Seuil long · 3×12 min · 16 km ★
+DESCRIPTION:Allure cible : 3'50"/km\nChaussures : Adizero Boston 13 — D
+ ynamique et ferme\, pour le travail rapide.\n\nÉchauffement 4 km. 3×12 
+ min à 3'52/km\, récup 3 min trot. Retour 3 km.\nAllonger la durée à a
+ llure seuil : c'est le moteur du marathon.\n\nSemaine 12/21 · Spécifiqu
+ e · bloc 1 · 88 km\nJ−68 avant New York\n\nObjectif de la semaine : P
+ remier gros bloc à allure marathon dans la sortie longue.
+CATEGORIES:Seuil
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Demain : Seuil long · 3×12 min
+TRIGGER:-PT13H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Seuil long · 3×12 min
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-26@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:97
+DTSTART:20260826T070000
+DTEND:20260826T080900
+SUMMARY:🏃 Endurance · 13 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : Pegasus 41 — 10 mm\, 
+ la valeur sûre du volume.\n\n13 km à 5'10-5'25/km.\n\nSemaine 12/21 · 
+ Spécifique · bloc 1 · 88 km\nJ−67 avant New York\n\nObjectif de la s
+ emaine : Premier gros bloc à allure marathon dans la sortie longue.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-27@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:728
+DTSTART:20260827T070000
+DTEND:20260827T081100
+SUMMARY:📈 Moyen-long progressif · 15 km
+DESCRIPTION:Allure cible : 4'55"/km\nChaussures : Evo SL (neuve) — Lég
+ ère et amortie\, confortable sur la durée.\n\n15 km : 9 km à 4'55 puis
+  6 km à 4'20/km. Progression continue\, sans à-coup.\n\nSemaine 12/21 
+ · Spécifique · bloc 1 · 88 km\nJ−66 avant New York\n\nObjectif de l
+ a semaine : Premier gros bloc à allure marathon dans la sortie longue.
+CATEGORIES:Progressif
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Moyen-long progressif
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-28@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:17
+DTSTART:20260828T070000
+DTEND:20260828T075100
+SUMMARY:🫧 Récupération · 9 km
+DESCRIPTION:Allure cible : 5'40"/km\nChaussures : Pegasus 41 — 10 mm de
+  drop sur les lendemains de séance : le tendon respire.\n\n9 km très le
+ nt.\n\nSemaine 12/21 · Spécifique · bloc 1 · 88 km\nJ−65 avant New 
+ York\n\nObjectif de la semaine : Premier gros bloc à allure marathon dan
+ s la sortie longue.
+CATEGORIES:Récup
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Récupération
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-29@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:41
+DTSTART:20260829T070000
+DTEND:20260829T075300
+SUMMARY:🏃 Endurance + côtes · 10 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : On Cloudsurfer — 10 m
+ m : le drop élevé porte le gros du volume facile.\n\n10 km + 8×20" en 
+ côte modérée. Travail de force pour les ponts de NYC.\n\nSemaine 12/21
+  · Spécifique · bloc 1 · 88 km\nJ−64 avant New York\n\nObjectif de 
+ la semaine : Premier gros bloc à allure marathon dans la sortie longue.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance + côtes
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-30@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:566
+DTSTART:20260830T070000
+DTEND:20260830T085900
+SUMMARY:🎯 SL 25 km · 10 km AM · 25 km ★
+DESCRIPTION:Allure cible : 4'12"/km\nChaussures : Adizero Boston 13 — B
+ loc à allure marathon en fin de sortie longue.\n\n25 km : 8 km d'échauf
+ fement à 5'00\, puis 10 km à 4'12/km\, puis 7 km de retour au calme.\nL
+ A séance clé de la semaine. Le bloc doit être régulier au chrono\, pa
+ s en dents de scie. Ravito : gel toutes les 40 min.\n⏱️ Règle absolu
+ e : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée\
+ , au même titre que trop lent. C'est ici que se joue ta course.\n\nSemai
+ ne 12/21 · Spécifique · bloc 1 · 88 km\nJ−63 avant New York\n\nObje
+ ctif de la semaine : Premier gros bloc à allure marathon dans la sortie 
+ longue.
+CATEGORIES:SL + allure marathon
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Demain : SL 25 km · 10 km AM
+TRIGGER:-PT13H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SL 25 km · 10 km AM
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-08-31@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:320
+DTSTART:20260831T070000
+DTEND:20260831T074500
+SUMMARY:🫧 Récupération · 8 km
+DESCRIPTION:Allure cible : 5'40"/km\nChaussures : Pegasus 41 — 10 mm de
+  drop sur les lendemains de séance : le tendon respire.\n\n8 km très le
+ nt après la SL d'hier.\n\nSemaine 13/21 · Spécifique · bascule piste 
+ · 94 km\nJ−62 avant New York\n\nObjectif de la semaine : Première sem
+ aine du nouveau rythme : la piste du mercredi soir devient le pilier qual
+ ité\, la sortie longue du dimanche l'autre. Mardi et vendredi passent en
+  endurance pure.
+CATEGORIES:Récup
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Récupération
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-01@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:901
+DTSTART:20260901T070000
+DTEND:20260901T080900
+SUMMARY:🏃 Endurance + lignes · 13 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : Hyperboost Edge (neuve)
+  — Stack maximal : amorti maximal sur les kilomètres faciles.\n\n13 km
+  à 5'10-5'25/km + 6×20" de lignes. Jambes fraîches pour la piste demai
+ n.\n\nSemaine 13/21 · Spécifique · bascule piste · 94 km\nJ−61 avan
+ t New York\n\nObjectif de la semaine : Première semaine du nouveau rythm
+ e : la piste du mercredi soir devient le pilier qualité\, la sortie long
+ ue du dimanche l'autre. Mardi et vendredi passent en endurance pure.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance + lignes
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-02@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:469
+DTSTART:20260902T190000
+DTEND:20260902T201100
+SUMMARY:🏟️ PISTE · Harbat · 15 km ★
+DESCRIPTION:Allure cible : 3'40"/km\nChaussures : Adizero Boston 13 — D
+ ynamique et ferme\, pour le travail rapide.\n\n**Première séance piste 
+ depuis mai — la plus risquée de tout le plan pour ton Achille.**\n· 
+ Échauffement 20 min minimum\, pas 10. Gammes complètes.\n· **Pas de po
+ intes.** Chaussures d'entraînement habituelles\, drop normal. La piste e
+ st déjà une surface dure et les virages chargent le tendon en torsion.\
+ n· Fais **la moitié du volume du groupe** cette première fois. Tu peux
+  finir la séance en trottinant à côté.\n· Retour au calme 15 min.\nL
+ e lendemain matin\, teste la raideur au démarrage : c'est ton indicateur
+ .\n\nSemaine 13/21 · Spécifique · bascule piste · 94 km\nJ−60 avant
+  New York\n\nObjectif de la semaine : Première semaine du nouveau rythme
+  : la piste du mercredi soir devient le pilier qualité\, la sortie longu
+ e du dimanche l'autre. Mardi et vendredi passent en endurance pure.
+CATEGORIES:VMA / 10K
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Demain : 🏟️ PISTE · Harbat
+TRIGGER:-PT13H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🏟️ PISTE · Harbat
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-03@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:462
+DTSTART:20260903T070000
+DTEND:20260903T075100
+SUMMARY:🫧 Récupération · 9 km
+DESCRIPTION:Allure cible : 5'40"/km\nChaussures : Pegasus 41 — 10 mm de
+  drop sur les lendemains de séance : le tendon respire.\n\n9 km très le
+ nt\, l'après-midi si possible — la piste était hier soir\, laisse 16 
+ h au tendon. Si la raideur matinale a nettement augmenté\, remplace par 
+ 30 min de vélo.\n\nSemaine 13/21 · Spécifique · bascule piste · 94 k
+ m\nJ−59 avant New York\n\nObjectif de la semaine : Première semaine du
+  nouveau rythme : la piste du mercredi soir devient le pilier qualité\, 
+ la sortie longue du dimanche l'autre. Mardi et vendredi passent en endura
+ nce pure.
+CATEGORIES:Récup
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Récupération
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-04@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:493
+DTSTART:20260904T070000
+DTEND:20260904T081400
+SUMMARY:🏃 Endurance · 14 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : Pegasus 41 — 10 mm\, 
+ la valeur sûre du volume.\n\n14 km à 5'10-5'25/km.\n\nSemaine 13/21 · 
+ Spécifique · bascule piste · 94 km\nJ−58 avant New York\n\nObjectif 
+ de la semaine : Première semaine du nouveau rythme : la piste du mercred
+ i soir devient le pilier qualité\, la sortie longue du dimanche l'autre.
+  Mardi et vendredi passent en endurance pure.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-05@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:637
+DTSTART:20260905T070000
+DTEND:20260905T075800
+SUMMARY:🏃 Endurance + lignes · 11 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : On Cloudsurfer — 10 m
+ m : le drop élevé porte le gros du volume facile.\n\n11 km + 8 lignes.\
+ n\nSemaine 13/21 · Spécifique · bascule piste · 94 km\nJ−57 avant N
+ ew York\n\nObjectif de la semaine : Première semaine du nouveau rythme :
+  la piste du mercredi soir devient le pilier qualité\, la sortie longue 
+ du dimanche l'autre. Mardi et vendredi passent en endurance pure.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance + lignes
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-06@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:351
+DTSTART:20260906T070000
+DTEND:20260906T085800
+SUMMARY:🛣️ Sortie longue · 24 km
+DESCRIPTION:Allure cible : 4'55"/km\nChaussures : Evo SL (neuve) — Lég
+ ère et amortie\, confortable sur la durée.\n\n24 km à 4'50-5'00/km\, s
+ ans bloc rapide : la semaine change déjà de structure\, on ne cumule pa
+ s.\n\nSemaine 13/21 · Spécifique · bascule piste · 94 km\nJ−56 avan
+ t New York\n\nObjectif de la semaine : Première semaine du nouveau rythm
+ e : la piste du mercredi soir devient le pilier qualité\, la sortie long
+ ue du dimanche l'autre. Mardi et vendredi passent en endurance pure.
+CATEGORIES:Sortie longue
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Sortie longue
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-07@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:988
+DTSTART:20260907T070000
+DTEND:20260907T073400
+SUMMARY:🫧 Récupération · 6 km
+DESCRIPTION:Allure cible : 5'40"/km\nChaussures : Pegasus 41 — 10 mm de
+  drop sur les lendemains de séance : le tendon respire.\n\n6 km très le
+ nt.\n\nSemaine 14/21 · Récupération · test · 70 km\nJ−55 avant New
+  York\n\nObjectif de la semaine : Semaine allégée (-25 %) puis test 10 
+ km. Préviens le groupe que tu fais une séance courte mercredi : tu cour
+ s dimanche.
+CATEGORIES:Récup
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Récupération
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-08@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:894
+DTSTART:20260908T070000
+DTEND:20260908T075800
+SUMMARY:🏃 Endurance + lignes · 11 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : Hyperboost Edge (neuve)
+  — Stack maximal : amorti maximal sur les kilomètres faciles.\n\n11 km
+  + 6 lignes.\n\nSemaine 14/21 · Récupération · test · 70 km\nJ−54 
+ avant New York\n\nObjectif de la semaine : Semaine allégée (-25 %) puis
+  test 10 km. Préviens le groupe que tu fais une séance courte mercredi 
+ : tu cours dimanche.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance + lignes
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-09@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:347
+DTSTART:20260909T190000
+DTEND:20260909T195700
+SUMMARY:🏟️ PISTE · version allégée · 12 km ★
+DESCRIPTION:Allure cible : 3'40"/km\nChaussures : Adizero Boston 13 — D
+ ynamique et ferme\, pour le travail rapide.\n\nSéance du groupe mais **v
+ olume réduit de moitié**\, et tu t'arrêtes franchement avant la derni
+ ère série. Tu as un test dimanche.\nToujours sans pointes.\n\nSemaine 1
+ 4/21 · Récupération · test · 70 km\nJ−53 avant New York\n\nObjecti
+ f de la semaine : Semaine allégée (-25 %) puis test 10 km. Préviens le
+  groupe que tu fais une séance courte mercredi : tu cours dimanche.
+CATEGORIES:VMA / 10K
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Demain : 🏟️ PISTE · version allégée
+TRIGGER:-PT13H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🏟️ PISTE · version allégée
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-10@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:806
+DTSTART:20260910T070000
+DTEND:20260910T074000
+SUMMARY:🫧 Récupération · 7 km
+DESCRIPTION:Allure cible : 5'40"/km\nChaussures : Pegasus 41 — 10 mm de
+  drop sur les lendemains de séance : le tendon respire.\n\n7 km très le
+ nt.\n\nSemaine 14/21 · Récupération · test · 70 km\nJ−52 avant New
+  York\n\nObjectif de la semaine : Semaine allégée (-25 %) puis test 10 
+ km. Préviens le groupe que tu fais une séance courte mercredi : tu cour
+ s dimanche.
+CATEGORIES:Récup
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Récupération
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-11@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:816
+DTSTART:20260911T070000
+DTEND:20260911T074200
+SUMMARY:🏃 Endurance · 8 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : Pegasus 41 — 10 mm\, 
+ la valeur sûre du volume.\n\n8 km facile.\n\nSemaine 14/21 · Récupéra
+ tion · test · 70 km\nJ−51 avant New York\n\nObjectif de la semaine : 
+ Semaine allégée (-25 %) puis test 10 km. Préviens le groupe que tu fai
+ s une séance courte mercredi : tu cours dimanche.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-12@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:48
+DTSTART:20260912T070000
+DTEND:20260912T072600
+SUMMARY:🏃 Déblocage · 5 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : On Cloudsurfer — 10 m
+ m : le drop élevé porte le gros du volume facile.\n\n5 km très facile 
+ + 4 lignes. Jambes fraîches pour demain.\n\nSemaine 14/21 · Récupérat
+ ion · test · 70 km\nJ−50 avant New York\n\nObjectif de la semaine : S
+ emaine allégée (-25 %) puis test 10 km. Préviens le groupe que tu fais
+  une séance courte mercredi : tu cours dimanche.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Déblocage
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-13@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:332
+DTSTART:20260913T083000
+DTEND:20260913T095800
+SUMMARY:🏁 TEST 10 km chrono · 21 km ★
+DESCRIPTION:Allure cible : 3'40"/km\nChaussures : Alphafly 3 Prototype 
+ — Test 10 km : l'occasion d'écouler les derniers kilomètres utiles d'
+ une paire de course en fin de vie.\n\nÉchauffement 5 km + gammes. **10 k
+ m chrono à fond** (viser 37'00-37'30). Retour au calme 5 km.\nUn dossard
+  local est idéal \; sinon en solo sur parcours plat et roulant. Le résu
+ ltat recalibre toutes les allures du bloc 2 :\n  · 37'30 → marathon 
+ ≈ 2h52 → on garde 4'12/km à NYC\n  · 36'30 → marathon ≈ 2h47 
+ → on peut viser 4'05/km\n  · > 38'30 → on sécurise à 4'18/km\nDeux
+ ième objectif\, aussi important : t'entraîner à partir juste. Premier 
+ km à l'allure cible\, pas 10 s plus vite.\n\nSemaine 14/21 · Récupéra
+ tion · test · 70 km\nJ−49 avant New York\n\nObjectif de la semaine : 
+ Semaine allégée (-25 %) puis test 10 km. Préviens le groupe que tu fai
+ s une séance courte mercredi : tu cours dimanche.
+CATEGORIES:Course
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Demain : TEST 10 km chrono
+TRIGGER:-PT13H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TEST 10 km chrono
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-14@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:26
+DTSTART:20260914T070000
+DTEND:20260914T073400
+SUMMARY:🫧 Récupération · 6 km
+DESCRIPTION:Allure cible : 5'40"/km\nChaussures : Pegasus 41 — 10 mm de
+  drop sur les lendemains de séance : le tendon respire.\n\n6 km très le
+ nt.\n\nSemaine 15/21 · Spécifique · bloc 2 · 90 km\nJ−48 avant New 
+ York\n\nObjectif de la semaine : Reprise de la charge après le test. Les
+  allures peuvent être ajustées selon le chrono du 10 km.
+CATEGORIES:Récup
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Récupération
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-15@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:499
+DTSTART:20260915T070000
+DTEND:20260915T080400
+SUMMARY:🏃 Endurance · 12 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : Hyperboost Edge (neuve)
+  — Stack maximal : amorti maximal sur les kilomètres faciles.\n\n12 km
+  à 5'10-5'25/km.\n\nSemaine 15/21 · Spécifique · bloc 2 · 90 km\nJ
+ −47 avant New York\n\nObjectif de la semaine : Reprise de la charge apr
+ ès le test. Les allures peuvent être ajustées selon le chrono du 10 km
+ .
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-16@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:79
+DTSTART:20260916T190000
+DTEND:20260916T201600
+SUMMARY:🏟️ PISTE · Harbat · 16 km ★
+DESCRIPTION:Allure cible : 3'40"/km\nChaussures : Adizero Boston 13 — D
+ ynamique et ferme\, pour le travail rapide.\n\nSéance complète du group
+ e.\n**Si le format est en répétitions longues (1000 m et plus)** : c'es
+ t ta séance de seuil de la semaine\, vise 3'45-3'50/km et ne cours pas p
+ lus vite.\n**Si le format est court (200-400 m)** : c'est du neuromuscula
+ ire\, laisse le groupe partir devant sur les dernières et ajoute 10 min 
+ à 3'52/km en fin de séance.\n⏱️ Le vrai exercice du mercredi soir n
+ 'est pas la vitesse\, c'est de courir TA séance et pas celle du voisin.\
+ n\nSemaine 15/21 · Spécifique · bloc 2 · 90 km\nJ−46 avant New York
+ \n\nObjectif de la semaine : Reprise de la charge après le test. Les all
+ ures peuvent être ajustées selon le chrono du 10 km.
+CATEGORIES:VMA / 10K
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Demain : 🏟️ PISTE · Harbat
+TRIGGER:-PT13H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🏟️ PISTE · Harbat
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-17@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:283
+DTSTART:20260917T070000
+DTEND:20260917T075100
+SUMMARY:🫧 Récupération · 9 km
+DESCRIPTION:Allure cible : 5'40"/km\nChaussures : Pegasus 41 — 10 mm de
+  drop sur les lendemains de séance : le tendon respire.\n\n9 km très le
+ nt.\n\nSemaine 15/21 · Spécifique · bloc 2 · 90 km\nJ−45 avant New 
+ York\n\nObjectif de la semaine : Reprise de la charge après le test. Les
+  allures peuvent être ajustées selon le chrono du 10 km.
+CATEGORIES:Récup
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Récupération
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-18@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:610
+DTSTART:20260918T070000
+DTEND:20260918T080400
+SUMMARY:🏃 Endurance · 12 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : Pegasus 41 — 10 mm\, 
+ la valeur sûre du volume.\n\n12 km à 5'10-5'25/km.\n\nSemaine 15/21 · 
+ Spécifique · bloc 2 · 90 km\nJ−44 avant New York\n\nObjectif de la s
+ emaine : Reprise de la charge après le test. Les allures peuvent être a
+ justées selon le chrono du 10 km.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-19@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:245
+DTSTART:20260919T070000
+DTEND:20260919T074200
+SUMMARY:🏃 Endurance + côtes · 8 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : On Cloudsurfer — 10 m
+ m : le drop élevé porte le gros du volume facile.\n\n8 km + 8×20" en c
+ ôte modérée.\n\nSemaine 15/21 · Spécifique · bloc 2 · 90 km\nJ−4
+ 3 avant New York\n\nObjectif de la semaine : Reprise de la charge après 
+ le test. Les allures peuvent être ajustées selon le chrono du 10 km.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance + côtes
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-20@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:699
+DTSTART:20260920T070000
+DTEND:20260920T090800
+SUMMARY:🎯 SL 27 km · 2×6 km AM · 27 km ★
+DESCRIPTION:Allure cible : 4'12"/km\nChaussures : Adizero Boston 13 — B
+ loc à allure marathon en fin de sortie longue.\n\n27 km : 6 km à 5'00\,
+  puis 2×6 km à 4'12/km avec 2 km de trot entre les blocs\, puis retour 
+ au calme.\nSimulation de relance en fatigue — exactement ce que demande
+  NYC après le pont de Queensboro.\n⏱️ Règle absolue : ne JAMAIS all
+ er plus vite que la cible. Plus rapide = séance ratée\, au même titre 
+ que trop lent. C'est ici que se joue ta course.\n\nSemaine 15/21 · Spéc
+ ifique · bloc 2 · 90 km\nJ−42 avant New York\n\nObjectif de la semain
+ e : Reprise de la charge après le test. Les allures peuvent être ajust
+ ées selon le chrono du 10 km.
+CATEGORIES:SL + allure marathon
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Demain : SL 27 km · 2×6 km AM
+TRIGGER:-PT13H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SL 27 km · 2×6 km AM
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-21@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:625
+DTSTART:20260921T070000
+DTEND:20260921T073400
+SUMMARY:🫧 Récupération · 6 km
+DESCRIPTION:Allure cible : 5'40"/km\nChaussures : Pegasus 41 — 10 mm de
+  drop sur les lendemains de séance : le tendon respire.\n\n6 km très le
+ nt.\n\nSemaine 16/21 · Pic · volume max · 98 km\nJ−41 avant New York
+ \n\nObjectif de la semaine : Semaine la plus volumineuse du plan (98 km).
+  C'est le plafond : au-delà\, l'historique dit que tu paies en fraîcheu
+ r le jour J.
+CATEGORIES:Récup
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Récupération
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-22@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:885
+DTSTART:20260922T070000
+DTEND:20260922T081400
+SUMMARY:🏃 Endurance · 14 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : Hyperboost Edge (neuve)
+  — Stack maximal : amorti maximal sur les kilomètres faciles.\n\n14 km
+  à 5'10-5'25/km.\n\nSemaine 16/21 · Pic · volume max · 98 km\nJ−40 
+ avant New York\n\nObjectif de la semaine : Semaine la plus volumineuse du
+  plan (98 km). C'est le plafond : au-delà\, l'historique dit que tu paie
+ s en fraîcheur le jour J.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-23@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:570
+DTSTART:20260923T190000
+DTEND:20260923T202100
+SUMMARY:🏟️ PISTE · Harbat · 17 km ★
+DESCRIPTION:Allure cible : 3'40"/km\nChaussures : Adizero Boston 13 — D
+ ynamique et ferme\, pour le travail rapide.\n\nSéance complète. Demande
+  à Harbat si le format peut inclure des répétitions longues (1000-2000
+  m) : c'est ce dont un marathonien a besoin\, bien plus que du 400 m.\nNo
+ te ta FC moyenne sur les répétitions et compare à la S13 : c'est ton m
+ arqueur de progression le plus fiable.\n\nSemaine 16/21 · Pic · volume 
+ max · 98 km\nJ−39 avant New York\n\nObjectif de la semaine : Semaine l
+ a plus volumineuse du plan (98 km). C'est le plafond : au-delà\, l'histo
+ rique dit que tu paies en fraîcheur le jour J.
+CATEGORIES:VMA / 10K
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Demain : 🏟️ PISTE · Harbat
+TRIGGER:-PT13H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🏟️ PISTE · Harbat
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-24@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:518
+DTSTART:20260924T070000
+DTEND:20260924T075100
+SUMMARY:🫧 Récupération · 9 km
+DESCRIPTION:Allure cible : 5'40"/km\nChaussures : Pegasus 41 — 10 mm de
+  drop sur les lendemains de séance : le tendon respire.\n\n9 km très le
+ nt.\n\nSemaine 16/21 · Pic · volume max · 98 km\nJ−38 avant New York
+ \n\nObjectif de la semaine : Semaine la plus volumineuse du plan (98 km).
+  C'est le plafond : au-delà\, l'historique dit que tu paies en fraîcheu
+ r le jour J.
+CATEGORIES:Récup
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Récupération
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-25@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:663
+DTSTART:20260925T070000
+DTEND:20260925T080900
+SUMMARY:🏃 Endurance · 13 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : Pegasus 41 — 10 mm\, 
+ la valeur sûre du volume.\n\n13 km à 5'10-5'25/km.\n\nSemaine 16/21 · 
+ Pic · volume max · 98 km\nJ−37 avant New York\n\nObjectif de la semai
+ ne : Semaine la plus volumineuse du plan (98 km). C'est le plafond : au-d
+ elà\, l'historique dit que tu paies en fraîcheur le jour J.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-26@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:41
+DTSTART:20260926T070000
+DTEND:20260926T075300
+SUMMARY:🏃 Endurance + lignes · 10 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : On Cloudsurfer — 10 m
+ m : le drop élevé porte le gros du volume facile.\n\n10 km + 8 lignes.\
+ n\nSemaine 16/21 · Pic · volume max · 98 km\nJ−36 avant New York\n\n
+ Objectif de la semaine : Semaine la plus volumineuse du plan (98 km). C'e
+ st le plafond : au-delà\, l'historique dit que tu paies en fraîcheur le
+  jour J.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance + lignes
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-27@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:410
+DTSTART:20260927T070000
+DTEND:20260927T091800
+SUMMARY:🎯 SL 29 km · 2×8 km AM · 29 km ★
+DESCRIPTION:Allure cible : 4'12"/km\nChaussures : Adizero Boston 13 — B
+ loc à allure marathon en fin de sortie longue.\n\n29 km : 6 km à 5'00\,
+  2×8 km à 4'12/km (2 km de trot entre)\, retour au calme.\n16 km à all
+ ure course en fin de grosse semaine. Ravito complet : gel toutes les 35 m
+ in\, 500 ml/h.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la 
+ cible. Plus rapide = séance ratée\, au même titre que trop lent. C'est
+  ici que se joue ta course.\n\nSemaine 16/21 · Pic · volume max · 98 k
+ m\nJ−35 avant New York\n\nObjectif de la semaine : Semaine la plus volu
+ mineuse du plan (98 km). C'est le plafond : au-delà\, l'historique dit q
+ ue tu paies en fraîcheur le jour J.
+CATEGORIES:SL + allure marathon
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Demain : SL 29 km · 2×8 km AM
+TRIGGER:-PT13H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SL 29 km · 2×8 km AM
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-28@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:371
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+SUMMARY:😴 Repos · protocole Achille
+DESCRIPTION:Repos complet. Protocole mollets/Achille : 3×15 excentriques
+  jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min
+ .\n\nSemaine 17/21 · Récupération · assimilation · 72 km\nJ−34 ava
+ nt New York\n\nObjectif de la semaine : Décharge nette (-27 %) pour assi
+ miler le bloc 2 et arriver frais sur la sortie longue signature de la sem
+ aine suivante.
+CATEGORIES:Repos
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-29@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:285
+DTSTART:20260929T070000
+DTEND:20260929T080400
+SUMMARY:🏃 Endurance · 12 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : Hyperboost Edge (neuve)
+  — Stack maximal : amorti maximal sur les kilomètres faciles.\n\n12 km
+  à 5'10-5'25/km.\n\nSemaine 17/21 · Récupération · assimilation · 7
+ 2 km\nJ−33 avant New York\n\nObjectif de la semaine : Décharge nette (
+ -27 %) pour assimiler le bloc 2 et arriver frais sur la sortie longue sig
+ nature de la semaine suivante.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-09-30@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:680
+DTSTART:20260930T190000
+DTEND:20260930T200600
+SUMMARY:🏟️ PISTE · version allégée · 14 km ★
+DESCRIPTION:Allure cible : 3'40"/km\nChaussures : Adizero Boston 13 — D
+ ynamique et ferme\, pour le travail rapide.\n\nSéance du groupe à volum
+ e réduit d'un tiers. Semaine de décharge : l'intensité reste\, le volu
+ me descend.\n\nSemaine 17/21 · Récupération · assimilation · 72 km\n
+ J−32 avant New York\n\nObjectif de la semaine : Décharge nette (-27 %)
+  pour assimiler le bloc 2 et arriver frais sur la sortie longue signature
+  de la semaine suivante.
+CATEGORIES:VMA / 10K
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Demain : 🏟️ PISTE · version allégée
+TRIGGER:-PT13H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🏟️ PISTE · version allégée
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-01@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:920
+DTSTART:20261001T070000
+DTEND:20261001T074500
+SUMMARY:🫧 Récupération · 8 km
+DESCRIPTION:Allure cible : 5'40"/km\nChaussures : Pegasus 41 — 10 mm de
+  drop sur les lendemains de séance : le tendon respire.\n\n8 km très le
+ nt.\n\nSemaine 17/21 · Récupération · assimilation · 72 km\nJ−31 a
+ vant New York\n\nObjectif de la semaine : Décharge nette (-27 %) pour as
+ similer le bloc 2 et arriver frais sur la sortie longue signature de la s
+ emaine suivante.
+CATEGORIES:Récup
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Récupération
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-02@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:273
+DTSTART:20261002T070000
+DTEND:20261002T075800
+SUMMARY:🏃 Endurance · 11 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : Pegasus 41 — 10 mm\, 
+ la valeur sûre du volume.\n\n11 km à 5'10-5'25/km.\n\nSemaine 17/21 · 
+ Récupération · assimilation · 72 km\nJ−30 avant New York\n\nObjecti
+ f de la semaine : Décharge nette (-27 %) pour assimiler le bloc 2 et arr
+ iver frais sur la sortie longue signature de la semaine suivante.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-03@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:177
+DTSTART:20261003T070000
+DTEND:20261003T074200
+SUMMARY:🏃 Endurance + lignes · 8 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : On Cloudsurfer — 10 m
+ m : le drop élevé porte le gros du volume facile.\n\n8 km + 8 lignes.\n
+ \nSemaine 17/21 · Récupération · assimilation · 72 km\nJ−29 avant 
+ New York\n\nObjectif de la semaine : Décharge nette (-27 %) pour assimil
+ er le bloc 2 et arriver frais sur la sortie longue signature de la semain
+ e suivante.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance + lignes
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-04@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:260
+DTSTART:20261004T070000
+DTEND:20261004T083300
+SUMMARY:🛣️ Sortie longue avec finish · 19 km
+DESCRIPTION:Allure cible : 4'55"/km\nChaussures : Evo SL (neuve) — Lég
+ ère et amortie\, confortable sur la durée.\n\n19 km : 15 km à 4'55 pui
+ s 4 km à 4'20/km.\n\nSemaine 17/21 · Récupération · assimilation · 
+ 72 km\nJ−28 avant New York\n\nObjectif de la semaine : Décharge nette 
+ (-27 %) pour assimiler le bloc 2 et arriver frais sur la sortie longue si
+ gnature de la semaine suivante.
+CATEGORIES:Sortie longue
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Sortie longue avec finish
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-05@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:818
+DTSTART:20261005T070000
+DTEND:20261005T073400
+SUMMARY:🫧 Récupération · 6 km
+DESCRIPTION:Allure cible : 5'40"/km\nChaussures : Pegasus 41 — 10 mm de
+  drop sur les lendemains de séance : le tendon respire.\n\n6 km très le
+ nt.\n\nSemaine 18/21 · Pic · séance signature · 94 km\nJ−27 avant N
+ ew York\n\nObjectif de la semaine : LA semaine du plan. Dimanche est prio
+ ritaire sur tout le reste — mercredi soir\, tu lèves le pied même si 
+ le groupe part fort.
+CATEGORIES:Récup
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Récupération
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-06@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:153
+DTSTART:20261006T070000
+DTEND:20261006T080900
+SUMMARY:🏃 Endurance · 13 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : Hyperboost Edge (neuve)
+  — Stack maximal : amorti maximal sur les kilomètres faciles.\n\n13 km
+  à 5'10-5'25/km.\n\nSemaine 18/21 · Pic · séance signature · 94 km\n
+ J−26 avant New York\n\nObjectif de la semaine : LA semaine du plan. Dim
+ anche est prioritaire sur tout le reste — mercredi soir\, tu lèves le 
+ pied même si le groupe part fort.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-07@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:458
+DTSTART:20261007T190000
+DTEND:20261007T201100
+SUMMARY:🏟️ PISTE · modérée · 15 km ★
+DESCRIPTION:Allure cible : 3'40"/km\nChaussures : Adizero Boston 13 — D
+ ynamique et ferme\, pour le travail rapide.\n\n**Séance volontairement b
+ ridée : 60-70 % du volume du groupe\, et tu restes 2-3 s/km en retrait s
+ ur chaque répétition.**\nLa sortie longue de dimanche est le meilleur p
+ rédicteur de ta course. Arriver dessus avec des jambes fraîches vaut in
+ finiment plus qu'une belle séance de piste le mercredi.\n\nSemaine 18/21
+  · Pic · séance signature · 94 km\nJ−25 avant New York\n\nObjectif 
+ de la semaine : LA semaine du plan. Dimanche est prioritaire sur tout le 
+ reste — mercredi soir\, tu lèves le pied même si le groupe part fort.
+CATEGORIES:VMA / 10K
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Demain : 🏟️ PISTE · modérée
+TRIGGER:-PT13H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🏟️ PISTE · modérée
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-08@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:980
+DTSTART:20261008T070000
+DTEND:20261008T074500
+SUMMARY:🫧 Récupération · 8 km
+DESCRIPTION:Allure cible : 5'40"/km\nChaussures : Pegasus 41 — 10 mm de
+  drop sur les lendemains de séance : le tendon respire.\n\n8 km très le
+ nt.\n\nSemaine 18/21 · Pic · séance signature · 94 km\nJ−24 avant N
+ ew York\n\nObjectif de la semaine : LA semaine du plan. Dimanche est prio
+ ritaire sur tout le reste — mercredi soir\, tu lèves le pied même si 
+ le groupe part fort.
+CATEGORIES:Récup
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Récupération
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-09@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:305
+DTSTART:20261009T070000
+DTEND:20261009T080400
+SUMMARY:🏃 Endurance · 12 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : Pegasus 41 — 10 mm\, 
+ la valeur sûre du volume.\n\n12 km à 5'10-5'25/km.\n\nSemaine 18/21 · 
+ Pic · séance signature · 94 km\nJ−23 avant New York\n\nObjectif de l
+ a semaine : LA semaine du plan. Dimanche est prioritaire sur tout le rest
+ e — mercredi soir\, tu lèves le pied même si le groupe part fort.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-10@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:761
+DTSTART:20261010T070000
+DTEND:20261010T074200
+SUMMARY:🏃 Déblocage · 8 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : On Cloudsurfer — 10 m
+ m : le drop élevé porte le gros du volume facile.\n\n8 km facile + 6 li
+ gnes.\n\nSemaine 18/21 · Pic · séance signature · 94 km\nJ−22 avant
+  New York\n\nObjectif de la semaine : LA semaine du plan. Dimanche est pr
+ ioritaire sur tout le reste — mercredi soir\, tu lèves le pied même s
+ i le groupe part fort.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Déblocage
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-11@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:39
+DTSTART:20261011T070000
+DTEND:20261011T093200
+SUMMARY:🎯 SL SIGNATURE 32 km · 18 km AM · 32 km ★
+DESCRIPTION:Allure cible : 4'12"/km\nChaussures : Alphafly 3 « Chicago 
+ » — Sortie longue avec bloc à allure course en octobre : on rode la c
+ haussure de course.\n\n32 km : 8 km à 5'00\, puis **18 km en continu à 
+ 4'12/km**\, puis 6 km de retour au calme.\nRépétition générale compl
+ ète : mêmes chaussures\, mêmes gels\, même petit-déjeuner et même h
+ oraire que le jour J.\nDeux critères de réussite\, à noter :\n  1. Les
+  18 km tenus sans dérive de plus de 5 s/km entre le 1er et le dernier ti
+ ers.\n  2. Aucun kilomètre couru plus vite que 4'08.\nSi les deux sont v
+ alidés\, le sub-3h à NYC est acquis.\n⏱️ Règle absolue : ne JAMAIS
+  aller plus vite que la cible. Plus rapide = séance ratée\, au même ti
+ tre que trop lent. C'est ici que se joue ta course.\n\nSemaine 18/21 · P
+ ic · séance signature · 94 km\nJ−21 avant New York\n\nObjectif de la
+  semaine : LA semaine du plan. Dimanche est prioritaire sur tout le reste
+  — mercredi soir\, tu lèves le pied même si le groupe part fort.
+CATEGORIES:SL + allure marathon
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Demain : 🎯 SL SIGNATURE 32 km · 18 km AM
+TRIGGER:-PT13H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🎯 SL SIGNATURE 32 km · 18 km AM
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-12@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:397
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:😴 Repos · protocole Achille
+DESCRIPTION:Repos complet. Protocole mollets/Achille : 3×15 excentriques
+  jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min
+ .\n\nSemaine 19/21 · Dernier bloc solide · 80 km\nJ−20 avant New York
+ \n\nObjectif de la semaine : Dernière semaine consistante\, et dernière
+  vraie séance de piste. À partir de lundi prochain\, tout descend jusqu
+ 'à la course.
+CATEGORIES:Repos
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-13@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:693
+DTSTART:20261013T070000
+DTEND:20261013T080400
+SUMMARY:🏃 Endurance · 12 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : Hyperboost Edge (neuve)
+  — Stack maximal : amorti maximal sur les kilomètres faciles.\n\n12 km
+  à 5'10-5'25/km.\n\nSemaine 19/21 · Dernier bloc solide · 80 km\nJ−1
+ 9 avant New York\n\nObjectif de la semaine : Dernière semaine consistant
+ e\, et dernière vraie séance de piste. À partir de lundi prochain\, to
+ ut descend jusqu'à la course.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-14@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:684
+DTSTART:20261014T190000
+DTEND:20261014T201100
+SUMMARY:🏟️ PISTE · dernière complète · 15 km ★
+DESCRIPTION:Allure cible : 3'40"/km\nChaussures : Adizero Boston 13 — D
+ ynamique et ferme\, pour le travail rapide.\n\nDernière séance de piste
+  à volume plein. Profite-en : à partir de la semaine prochaine\, tout e
+ st raccourci.\n\nSemaine 19/21 · Dernier bloc solide · 80 km\nJ−18 av
+ ant New York\n\nObjectif de la semaine : Dernière semaine consistante\, 
+ et dernière vraie séance de piste. À partir de lundi prochain\, tout d
+ escend jusqu'à la course.
+CATEGORIES:VMA / 10K
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Demain : 🏟️ PISTE · dernière complète
+TRIGGER:-PT13H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🏟️ PISTE · dernière complète
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-15@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:231
+DTSTART:20261015T070000
+DTEND:20261015T074500
+SUMMARY:🫧 Récupération · 8 km
+DESCRIPTION:Allure cible : 5'40"/km\nChaussures : Pegasus 41 — 10 mm de
+  drop sur les lendemains de séance : le tendon respire.\n\n8 km très le
+ nt.\n\nSemaine 19/21 · Dernier bloc solide · 80 km\nJ−17 avant New Yo
+ rk\n\nObjectif de la semaine : Dernière semaine consistante\, et derniè
+ re vraie séance de piste. À partir de lundi prochain\, tout descend jus
+ qu'à la course.
+CATEGORIES:Récup
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Récupération
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-16@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:289
+DTSTART:20261016T070000
+DTEND:20261016T080400
+SUMMARY:🏃 Endurance · 12 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : Pegasus 41 — 10 mm\, 
+ la valeur sûre du volume.\n\n12 km à 5'10-5'25/km.\n\nSemaine 19/21 · 
+ Dernier bloc solide · 80 km\nJ−16 avant New York\n\nObjectif de la sem
+ aine : Dernière semaine consistante\, et dernière vraie séance de pist
+ e. À partir de lundi prochain\, tout descend jusqu'à la course.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-17@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:53
+DTSTART:20261017T070000
+DTEND:20261017T075800
+SUMMARY:🏃 Endurance + lignes · 11 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : On Cloudsurfer — 10 m
+ m : le drop élevé porte le gros du volume facile.\n\n11 km + 8 lignes.\
+ n\nSemaine 19/21 · Dernier bloc solide · 80 km\nJ−15 avant New York\n
+ \nObjectif de la semaine : Dernière semaine consistante\, et dernière v
+ raie séance de piste. À partir de lundi prochain\, tout descend jusqu'
+ à la course.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance + lignes
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-18@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:811
+DTSTART:20261018T070000
+DTEND:20261018T084400
+SUMMARY:🎯 SL 22 km · 8 km AM en fin · 22 km ★
+DESCRIPTION:Allure cible : 4'12"/km\nChaussures : Alphafly 3 « Chicago 
+ » — Sortie longue avec bloc à allure course en octobre : on rode la c
+ haussure de course.\n\n22 km : 12 km à 4'55\, puis 8 km à 4'12/km\, pui
+ s 2 km de retour au calme. Dernière sortie longue avec du contenu.\n⏱
+ ️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide 
+ = séance ratée\, au même titre que trop lent. C'est ici que se joue ta
+  course.\n\nSemaine 19/21 · Dernier bloc solide · 80 km\nJ−14 avant N
+ ew York\n\nObjectif de la semaine : Dernière semaine consistante\, et de
+ rnière vraie séance de piste. À partir de lundi prochain\, tout descen
+ d jusqu'à la course.
+CATEGORIES:SL + allure marathon
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Demain : SL 22 km · 8 km AM en fin
+TRIGGER:-PT13H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SL 22 km · 8 km AM en fin
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-19@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:38
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:😴 Repos · protocole Achille
+DESCRIPTION:Repos complet. Protocole mollets/Achille : 3×15 excentriques
+  jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min
+ .\n\nSemaine 20/21 · Affûtage · J-14 · 56 km\nJ−13 avant New York\n
+ \nObjectif de la semaine : Volume -45 %\, mais on garde 5 sorties et tout
+ e l'intensité. Réduire le nombre de sorties dégrade la performance \; 
+ c'est la DURÉE qui s'effondre\, pas la fréquence. Ça va te sembler tro
+ p peu : c'est exactement le but.
+CATEGORIES:Repos
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-20@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:807
+DTSTART:20261020T070000
+DTEND:20261020T080400
+SUMMARY:🏃 Endurance + lignes · 12 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : Hyperboost Edge (neuve)
+  — Stack maximal : amorti maximal sur les kilomètres faciles.\n\n12 km
+  à 5'10-5'25/km + 6 lignes.\n\nSemaine 20/21 · Affûtage · J-14 · 56 
+ km\nJ−12 avant New York\n\nObjectif de la semaine : Volume -45 %\, mais
+  on garde 5 sorties et toute l'intensité. Réduire le nombre de sorties 
+ dégrade la performance \; c'est la DURÉE qui s'effondre\, pas la fréqu
+ ence. Ça va te sembler trop peu : c'est exactement le but.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance + lignes
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-21@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:628
+DTSTART:20261021T190000
+DTEND:20261021T195200
+SUMMARY:🏟️ PISTE · raccourcie · 11 km ★
+DESCRIPTION:Allure cible : 3'40"/km\nChaussures : Adizero Boston 13 — D
+ ynamique et ferme\, pour le travail rapide.\n\n**Moitié du volume du gro
+ upe\, et tu pars avant la fin.** Allure habituelle\, pas plus vite.\nC'es
+ t la séance où l'ego fait le plus de dégâts : tu vas te sentir très 
+ bien (c'est l'affûtage qui commence à agir) et vouloir en faire plus. L
+ e bénéfice est nul\, le risque ne l'est pas.\n\nSemaine 20/21 · Affût
+ age · J-14 · 56 km\nJ−11 avant New York\n\nObjectif de la semaine : V
+ olume -45 %\, mais on garde 5 sorties et toute l'intensité. Réduire le 
+ nombre de sorties dégrade la performance \; c'est la DURÉE qui s'effond
+ re\, pas la fréquence. Ça va te sembler trop peu : c'est exactement le 
+ but.
+CATEGORIES:VMA / 10K
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Demain : 🏟️ PISTE · raccourcie
+TRIGGER:-PT13H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🏟️ PISTE · raccourcie
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-22@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:253
+DTSTART:20261022T070000
+DTEND:20261022T073400
+SUMMARY:🫧 Récupération · 6 km
+DESCRIPTION:Allure cible : 5'40"/km\nChaussures : Pegasus 41 — 10 mm de
+  drop sur les lendemains de séance : le tendon respire.\n\n6 km très le
+ nt.\n\nSemaine 20/21 · Affûtage · J-14 · 56 km\nJ−10 avant New York
+ \n\nObjectif de la semaine : Volume -45 %\, mais on garde 5 sorties et to
+ ute l'intensité. Réduire le nombre de sorties dégrade la performance \
+ ; c'est la DURÉE qui s'effondre\, pas la fréquence. Ça va te sembler t
+ rop peu : c'est exactement le but.
+CATEGORIES:Récup
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Récupération
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-23@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:558
+DTSTART:20261023T070000
+DTEND:20261023T075200
+SUMMARY:🎯 Allure marathon · 5 km · 11 km ★
+DESCRIPTION:Allure cible : 4'12"/km\nChaussures : Adizero Boston 13 — A
+ llure marathon : la paire la plus proche de tes sensations de course.\n\n
+ Échauffement 4 km + 5 km en continu à 4'12/km + retour 2 km.\nDernier v
+ rai contact avec l'allure course. Mémorise la sensation : c'est celle qu
+ e tu dois retrouver au km 5 à New York.\n⏱️ Règle absolue : ne JAMA
+ IS aller plus vite que la cible. Plus rapide = séance ratée\, au même 
+ titre que trop lent. C'est ici que se joue ta course.\n\nSemaine 20/21 ·
+  Affûtage · J-14 · 56 km\nJ−9 avant New York\n\nObjectif de la semai
+ ne : Volume -45 %\, mais on garde 5 sorties et toute l'intensité. Rédui
+ re le nombre de sorties dégrade la performance \; c'est la DURÉE qui s'
+ effondre\, pas la fréquence. Ça va te sembler trop peu : c'est exacteme
+ nt le but.
+CATEGORIES:Allure marathon
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Demain : Allure marathon · 5 km
+TRIGGER:-PT13H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Allure marathon · 5 km
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-24@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:778
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:😴 Repos · protocole Achille
+DESCRIPTION:Repos complet. Protocole mollets/Achille : 3×15 excentriques
+  jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min
+ .\n\nSemaine 20/21 · Affûtage · J-14 · 56 km\nJ−8 avant New York\n\
+ nObjectif de la semaine : Volume -45 %\, mais on garde 5 sorties et toute
+  l'intensité. Réduire le nombre de sorties dégrade la performance \; c
+ 'est la DURÉE qui s'effondre\, pas la fréquence. Ça va te sembler trop
+  peu : c'est exactement le but.
+CATEGORIES:Repos
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-25@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:342
+DTSTART:20261025T070000
+DTEND:20261025T081900
+SUMMARY:🛣️ Dernière sortie longue · 16 km
+DESCRIPTION:Allure cible : 4'55"/km\nChaussures : Evo SL (neuve) — Lég
+ ère et amortie\, confortable sur la durée.\n\n16 km : 12 km à 4'55 pui
+ s 4 km à 4'20/km. Courte et tonique.\n\nSemaine 20/21 · Affûtage · J-
+ 14 · 56 km\nJ−7 avant New York\n\nObjectif de la semaine : Volume -45 
+ %\, mais on garde 5 sorties et toute l'intensité. Réduire le nombre de 
+ sorties dégrade la performance \; c'est la DURÉE qui s'effondre\, pas l
+ a fréquence. Ça va te sembler trop peu : c'est exactement le but.
+CATEGORIES:Sortie longue
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dernière sortie longue
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-26@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:264
+DTSTART:20261026T070000
+DTEND:20261026T073400
+SUMMARY:🫧 Récupération · 6 km
+DESCRIPTION:Allure cible : 5'40"/km\nChaussures : Pegasus 41 — 10 mm de
+  drop sur les lendemains de séance : le tendon respire.\n\n6 km très le
+ nt après la sortie longue d'hier. Dernier jour où tu peux te sentir lou
+ rd sans que ce soit un signal.\n\nSemaine 21/21 · Semaine de course · 7
+ 7 km\nJ−6 avant New York\n\nObjectif de la semaine : 35 km d'entraînem
+ ent\, soit -63 % : la charge la plus basse du plan. Quatre jours en Franc
+ e\, vol le vendredi 30 à midi\, arrivée à NYC en fin d'après-midi. Be
+ aucoup de sommeil.
+CATEGORIES:Récup
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Récupération
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-27@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:717
+DTSTART:20261027T070000
+DTEND:20261027T073800
+SUMMARY:🎯 Dernier réveil musculaire · 8 km ★
+DESCRIPTION:Allure cible : 4'12"/km\nChaussures : Adizero Boston 13 — A
+ llure marathon : la paire la plus proche de tes sensations de course.\n\n
+ Échauffement 3 km + 3×3 min à 4'10/km (récup 2 min) + retour 2 km.\nD
+ ernière touche d'allure course. Courte\, tonique\, zéro fatigue. À par
+ tir de ce soir : recharge glucidique 8-10 g/kg/jour.\n⏱️ Règle absol
+ ue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée
+ \, au même titre que trop lent. C'est ici que se joue ta course.\n\nSema
+ ine 21/21 · Semaine de course · 77 km\nJ−5 avant New York\n\nObjectif
+  de la semaine : 35 km d'entraînement\, soit -63 % : la charge la plus b
+ asse du plan. Quatre jours en France\, vol le vendredi 30 à midi\, arriv
+ ée à NYC en fin d'après-midi. Beaucoup de sommeil.
+CATEGORIES:Allure marathon
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Demain : Dernier réveil musculaire
+TRIGGER:-PT13H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dernier réveil musculaire
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-28@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:239
+DTSTART:20261028T070000
+DTEND:20261028T073200
+SUMMARY:🏃 Endurance + lignes · 6 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : Pegasus 41 — 10 mm\, 
+ la valeur sûre du volume.\n\n6 km facile + 6×20" de lignes en souplesse
+ .\n🏟️ **Pas de piste ce soir.** Préviens Harbat maintenant\, pas me
+ rcredi : une séance de groupe à 4 jours du marathon est le meilleur moy
+ en de gâcher 13 semaines de travail.\n\nSemaine 21/21 · Semaine de cour
+ se · 77 km\nJ−4 avant New York\n\nObjectif de la semaine : 35 km d'ent
+ raînement\, soit -63 % : la charge la plus basse du plan. Quatre jours e
+ n France\, vol le vendredi 30 à midi\, arrivée à NYC en fin d'après-m
+ idi. Beaucoup de sommeil.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Endurance + lignes
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-29@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:641
+DTSTART:20261029T070000
+DTEND:20261029T073200
+SUMMARY:🏃 Dernier footing en France · 6 km
+DESCRIPTION:Allure cible : 5'20"/km\nChaussures : On Cloudsurfer — 10 m
+ m : le drop élevé porte le gros du volume facile.\n\n6 km très facile.
+  Valise le soir : chaussures de course\, dossard\, gels et tenue de cours
+ e **dans le bagage cabine** — jamais en soute.\n\nSemaine 21/21 · Sema
+ ine de course · 77 km\nJ−3 avant New York\n\nObjectif de la semaine : 
+ 35 km d'entraînement\, soit -63 % : la charge la plus basse du plan. Qua
+ tre jours en France\, vol le vendredi 30 à midi\, arrivée à NYC en fin
+  d'après-midi. Beaucoup de sommeil.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dernier footing en France
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-30@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:250
+DTSTART:20261030T070000
+DTEND:20261030T072600
+SUMMARY:🏃 Déverrouillage avant le vol · 5 km
+DESCRIPTION:Allure cible : 5'40"/km\nChaussures : Hyperboost Edge (neuve)
+  — Stack maximal : amorti maximal sur les kilomètres faciles.\n\n5 km 
+ très lent au lever\, avant de partir à l'aéroport. Vol à midi.\nDans 
+ l'avion : boire beaucoup\, se lever toutes les 90 min\, chaussettes de co
+ mpression. Cale-toi sur l'heure de New York dès l'embarquement — tu ar
+ rives en fin d'après-midi\, tiens jusqu'à 22 h locales avant de dormir.
+ \n\nSemaine 21/21 · Semaine de course · 77 km\nJ−2 avant New York\n\n
+ Objectif de la semaine : 35 km d'entraînement\, soit -63 % : la charge l
+ a plus basse du plan. Quatre jours en France\, vol le vendredi 30 à midi
+ \, arrivée à NYC en fin d'après-midi. Beaucoup de sommeil.
+CATEGORIES:Endurance
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Déverrouillage avant le vol
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-10-31@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:345
+DTSTART:20261031T070000
+DTEND:20261031T072300
+SUMMARY:🫧 Déblocage + expo · 4 km
+DESCRIPTION:Allure cible : 5'40"/km\nChaussures : On Cloudsurfer — Déb
+ locage très lent\, drop élevé.\n\n4 km très lent le matin dans Centra
+ l Park — la lumière du matin recale l'horloge biologique bien mieux qu
+ 'une grasse matinée.\n**Expo au Javits Center dans la foulée** : c'est 
+ le seul retrait possible du dossard\, il n'y en a pas le jour de la cours
+ e\, et l'expo ferme le samedi en fin d'après-midi. Vas-y tôt\, reste 1 
+ h maximum\, puis jambes en l'air.\nPréparation du sac\, épinglage du do
+ ssard\, petit-déjeuner testé. Couché tôt : départ pour Staten Island
+  au milieu de la nuit.\n\nSemaine 21/21 · Semaine de course · 77 km\nJ
+ −1 avant New York\n\nObjectif de la semaine : 35 km d'entraînement\, s
+ oit -63 % : la charge la plus basse du plan. Quatre jours en France\, vol
+  le vendredi 30 à midi\, arrivée à NYC en fin d'après-midi. Beaucoup 
+ de sommeil.
+CATEGORIES:Déblocage
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Déblocage + expo
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sebmetrics-2026-11-01@run-lab.seb-run.github.io
+DTSTAMP:20260802T205208Z
+SEQUENCE:541
+DTSTART:20261101T083000
+DTEND:20261101T112700
+SUMMARY:🏁 MARATHON DE NEW YORK · 42.2 km ★
+DESCRIPTION:Allure cible : 4'12"/km\nChaussures : Alphafly 3 « Chicago 
+ » ou Vaporfly Next% 3 — Choix tranché sur la sortie longue du 11 octo
+ bre.\n\n**Objectif : 2h57 — 4'12/km de moyenne\, en négatif.**\n\nTes 
+ 7 marathons disent une seule chose : quand tu pars à moins de 8 s/km de 
+ ton allure moyenne finale\, tu négatives et tu performes. Quand tu pars 
+ 18 s/km trop vite\, tu perds 3 à 6 minutes. Sans exception\, corrélatio
+ n 0\,97. Chicago = départ à 3'47.\n\n**La seule règle qui compte : auc
+ un kilomètre sous 4'08 avant le 30e.**\n\n· km 1-3 (pont de Verrazzano)
+  : 4'20-4'25 en montée. Le pont te protège de toi-même\, laisse-le fai
+ re. En descente\, ne pas relancer.\n· km 4-25 (Brooklyn) : 4'12-4'14. C'
+ est plat\, la foule est énorme\, tu vas te sentir invincible. C'EST LE P
+ IÈGE — c'est exactement là que Chicago s'est joué. Regarde ta montre
+  tous les kilomètres.\n· km 25-26 (pont de Queensboro) : +15 à 20 s/km
+ \, silencieux et raide. Tu perds du temps ici\, c'est prévu\, ne compens
+ e pas.\n· km 27-32 (1re Avenue) : la foule pousse. Tiens 4'10-4'12. Ne c
+ onvertis pas l'émotion en vitesse.\n· km 33-37 (Bronx et retour) : le v
+ rai marathon commence. Objectif : ne pas dépasser 4'16.\n· km 38-42 (Ce
+ ntral Park) : ça monte par paliers. Si tu as respecté les 37 premiers\,
+  c'est ici que tu doubles des dizaines de coureurs. Tout donner sur les 2
+  derniers.\n\nRavitaillement : 1 gel toutes les 35-40 min à partir du km
+  8\, boire à chaque poste.\n\nSemaine 21/21 · Semaine de course · 77 k
+ m\nJ−0 avant New York\n\nObjectif de la semaine : 35 km d'entraînement
+ \, soit -63 % : la charge la plus basse du plan. Quatre jours en France\,
+  vol le vendredi 30 à midi\, arrivée à NYC en fin d'après-midi. Beauc
+ oup de sommeil.
+CATEGORIES:Course
+TRANSP:OPAQUE
+LOCATION:Départ Staten Island\, New York City
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Demain : 🏁 MARATHON DE NEW YORK
+TRIGGER:-PT13H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🏁 MARATHON DE NEW YORK
+TRIGGER:-PT45M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -4412,13 +4412,13 @@
     missed:  {color: '#94a3b8', label: 'Manquée',   icon: '✗'},
   };
 
-  function scoreRing(points, verdict, size) {
+  function scoreRing(points, verdict, size, animate) {
     const m = VERDICT_META[verdict] || VERDICT_META.partial;
     const s = size || 30;
     const r = (s - 5) / 2;
     const c = 2 * Math.PI * r;
     const filled = c * Math.min(points, 100) / 100;
-    return `<svg class="score-ring" width="${s}" height="${s}" viewBox="0 0 ${s} ${s}" role="img" aria-label="${m.label} ${points}/100">
+    return `<svg class="score-ring${animate ? ' is-drawing' : ''}" width="${s}" height="${s}" viewBox="0 0 ${s} ${s}" role="img" aria-label="${m.label} ${points}/100">
       <circle cx="${s/2}" cy="${s/2}" r="${r}" fill="none" stroke="#e5e9f0" stroke-width="3.5"/>
       <circle cx="${s/2}" cy="${s/2}" r="${r}" fill="none" stroke="${m.color}" stroke-width="3.5"
         stroke-linecap="round" stroke-dasharray="${filled.toFixed(1)} ${c.toFixed(1)}"
@@ -4437,6 +4437,77 @@
   function scoreTooltip(score) {
     if (!score) return '';
     return (score.reasons || []).join(' · ');
+  }
+
+
+  // --- Célébration d'une séance validée ---------------------------------
+  // Se déclenche une fois par séance, à la première ouverture de l'appli après
+  // que le CI l'a scorée. L'état est mémorisé localement.
+  const CELEB_KEY = 'sebmetrics.celebrated.v1';
+
+  function celebratedSet() {
+    try { return new Set(JSON.parse(localStorage.getItem(CELEB_KEY) || '[]')); }
+    catch (e) { return new Set(); }
+  }
+  function markCelebrated(iso) {
+    try {
+      const s = celebratedSet(); s.add(iso);
+      localStorage.setItem(CELEB_KEY, JSON.stringify([...s].slice(-120)));
+    } catch (e) { /* stockage indisponible : on animera à nouveau, sans gravité */ }
+  }
+  function shouldCelebrate(day) {
+    return !!(day && day.score && !celebratedSet().has(day.date));
+  }
+
+  const CELEB_COPY = {
+    success: ['Séance validée', 'Exactement ce qui était prévu.'],
+    partial: ['Séance en partie tenue', 'Elle compte quand même. On enchaîne.'],
+    failed:  ['Séance difficile', "Une séance ne fait pas une préparation."],
+  };
+
+  function validBanner(score) {
+    const m = VERDICT_META[score.verdict] || VERDICT_META.partial;
+    const c = CELEB_COPY[score.verdict] || CELEB_COPY.partial;
+    return `<div class="valid-banner" style="--vcol:${m.color}">
+      <span class="vb-check">${score.verdict === 'success' ? '✓' : m.icon}</span>
+      <span>${c[0]} · ${score.points}/100<br><span class="vb-sub">${c[1]}</span></span>
+    </div>`;
+  }
+
+  // Particules projetées depuis le centre de la carte
+  function burstLayer(color) {
+    const N = 16, out = [];
+    for (let i = 0; i < N; i++) {
+      const ang = (Math.PI * 2 * i) / N + (Math.random() - 0.5) * 0.4;
+      const dist = 90 + Math.random() * 130;
+      out.push(`<i style="--dx:${(Math.cos(ang) * dist).toFixed(0)}px;`
+        + `--dy:${(Math.sin(ang) * dist - 40).toFixed(0)}px;`
+        + `--rot:${(Math.random() * 540 - 270).toFixed(0)}deg;`
+        + `background:${color};animation-delay:${(Math.random() * 160).toFixed(0)}ms"></i>`);
+    }
+    return `<div class="valid-burst" aria-hidden="true">${out.join('')}</div>`;
+  }
+
+  function playCelebration(root, score) {
+    if (!root) return;
+    const m = VERDICT_META[score.verdict] || VERDICT_META.partial;
+    const head = root.querySelector('.plan-today-head');
+    if (!head) return;
+    head.style.setProperty('--vcol', m.color);
+    head.classList.add('is-validated');
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        && score.verdict === 'success') {
+      head.insertAdjacentHTML('beforeend', burstLayer(m.color));
+      setTimeout(() => head.querySelector('.valid-burst')?.remove(), 1600);
+    }
+    if (navigator.vibrate) { try { navigator.vibrate([12, 40, 18]); } catch (e) {} }
+  }
+
+  // Bloc chaussure recommandée
+  function shoeLine(d) {
+    if (!d.shoe) return '';
+    return `<div class="plan-shoe">👟 <b>${escapeHtml(d.shoe)}</b>`
+      + (d.shoe_note ? `<span>${escapeHtml(d.shoe_note)}</span>` : '') + `</div>`;
   }
 
   function planRenderTodayCard() {
@@ -4460,6 +4531,7 @@
     const w = today.week;
     const color = PLAN_TYPE_COLORS[d.type] || '#5b8af5';
     const planTypeLabel = PLAN_TYPE_LABELS[d.type] || d.type;
+    const celebrate = shouldCelebrate(d);
 
     let actualBlock = '';
     if (d.actual && ['done','over','under','bonus'].includes(d.status)) {
@@ -4471,7 +4543,7 @@
         ${a.fc ? ` · FC ${a.fc}` : ''}
         ${d.score ? verdictPill(d.score) : ''}
       </div>
-      ${d.score ? `<div class="plan-score-line" title="${escapeHtml(scoreTooltip(d.score))}">${scoreRing(d.score.points, d.score.verdict, 38)}<span class="plan-score-reasons">${escapeHtml(scoreTooltip(d.score))}</span></div>` : ''}`;
+      ${d.score ? `<div class="plan-score-line" title="${escapeHtml(scoreTooltip(d.score))}">${scoreRing(d.score.points, d.score.verdict, 38, celebrate)}<span class="plan-score-reasons">${escapeHtml(scoreTooltip(d.score))}</span></div>` : ''}`;
     }
 
     let descHtml = escapeHtml(d.description || '').replace(/\n/g, '<br/>');
@@ -4494,6 +4566,7 @@
     if (subEl) subEl.textContent = `W${w.week_num}/${PLAN.meta.weeks_total} · ${w.phase_label} · J−${Math.floor((new Date(PLAN.meta.goal_date) - new Date(d.date)) / 86400000)}`;
     setHTML(`
       <div class="plan-today-head" style="border-left:6px solid ${color};">
+        ${celebrate ? validBanner(d.score) : ''}
         ${rescheduledBlock}
         <div class="plan-today-meta">
           <span class="plan-today-date">${(new Date(d.date)).toLocaleDateString('fr-FR', {weekday:'long', day:'numeric', month:'long'})}</span>
@@ -4510,7 +4583,13 @@
         </div>
         ${actualBlock}
         <p class="plan-today-desc${d.actual ? ' is-done' : ''}">${displayDesc}</p>
+        ${shoeLine(d)}
       </div>`);
+
+    if (celebrate) {
+      [wrap, homeWrap].forEach(r => playCelebration(r, d.score));
+      markCelebrated(d.date);
+    }
   }
 
   function planRenderCoach() {
@@ -5107,7 +5186,74 @@
     }
   }
 
+
+  // --- Bandeau plan en tête d'accueil -----------------------------------
+  // Donne en un coup d'œil : où on en est dans les 21 semaines, le volume de la
+  // semaine, la conformité, et la prochaine séance clé.
+  function homeRenderPlanHero() {
+    const wrap = document.getElementById('homePlanHero');
+    if (!wrap) return;
+    if (!PLAN || !PLAN.weeks?.length) { wrap.innerHTML = ''; return; }
+
+    const meta = PLAN.meta || {};
+    const iso = localISODate();
+    const w = planFindCurrentWeek();
+    const goal = new Date(meta.goal_date);
+    const daysLeft = Math.max(0, Math.round((goal - new Date()) / 86400000));
+    const weeksLeft = Math.ceil(daysLeft / 7);
+
+    // Volume réalisé de la semaine
+    let done = 0, planned = 0;
+    if (w) for (const d of w.days || []) {
+      planned += d.km || 0;
+      if (d.actual) done += d.actual.km || 0;
+    }
+    const pct = planned ? Math.round(done / planned * 100) : 0;
+
+    // Prochaine séance clé à venir
+    let next = null;
+    outer: for (const wk of PLAN.weeks) {
+      for (const d of wk.days || []) {
+        if (d.date >= iso && d.key && (d.km || 0) > 0) { next = d; break outer; }
+      }
+    }
+    const nextTxt = next
+      ? (next.date === iso
+          ? `<b>Aujourd'hui</b> · ${escapeHtml(next.title)}`
+          : `<b>${new Date(next.date).toLocaleDateString('fr-FR', {weekday:'long', day:'numeric', month:'short'})}</b> · ${escapeHtml(next.title)}`)
+      : '—';
+
+    const totalW = meta.weeks_total || PLAN.weeks.length;
+    wrap.innerHTML = `
+      <div class="plan-hero">
+        <div class="plan-hero-top">
+          <span class="plan-hero-title">${escapeHtml(meta.goal_name || 'Plan')}</span>
+          <span class="plan-hero-goal">objectif ${escapeHtml(meta.target_time || '')}</span>
+          <span class="plan-hero-countdown">J−${daysLeft} · ${weeksLeft} sem.</span>
+        </div>
+        <div class="plan-hero-stats">
+          <div class="plan-hero-stat">
+            <div class="k">Semaine</div>
+            <div class="v">${w ? w.week_num : '—'}<span class="n"> / ${totalW}</span></div>
+            <div class="n">${w ? escapeHtml(w.phase_label) : ''}</div>
+          </div>
+          <div class="plan-hero-stat">
+            <div class="k">Volume</div>
+            <div class="v">${done.toFixed(0)}<span class="n"> / ${planned.toFixed(0)} km</span></div>
+            <div class="plan-hero-bar"><i style="width:${Math.min(pct,100)}%"></i></div>
+          </div>
+          <div class="plan-hero-stat">
+            <div class="k">Conformité</div>
+            <div class="v">${w && w.compliance ? w.compliance.km_pct + ' %' : pct + ' %'}</div>
+            <div class="n">${w && w.compliance ? (VERDICT_META[w.compliance.verdict] || {}).label || '' : 'en cours'}</div>
+          </div>
+        </div>
+        <div class="plan-hero-next">Prochaine séance clé : ${nextTxt}</div>
+      </div>`;
+  }
+
   function renderHomeTab() {
+    homeRenderPlanHero();
     homeRenderRoute();
     homeRenderDuel();
     homeRenderLast();

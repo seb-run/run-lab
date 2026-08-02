@@ -1676,7 +1676,8 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending"
+          "status": "pending",
+          "actual": null
         },
         {
           "date": "2026-08-04",
@@ -1692,7 +1693,8 @@
           "_easy_idx": 0,
           "shoe": "Evo SL (usagée)",
           "shoe_note": "Footings faciles jusqu'à épuisement de la paire.",
-          "_shoe_key": "evosl_old"
+          "_shoe_key": "evosl_old",
+          "actual": null
         },
         {
           "date": "2026-08-05",
@@ -1707,7 +1709,8 @@
           "status": "pending",
           "shoe": "Pegasus 40 (fin de vie)",
           "shoe_note": "Uniquement les récups courtes et lentes : c'est ton seul 10 mm, mais la semelle est morte.",
-          "_shoe_key": "peg40"
+          "_shoe_key": "peg40",
+          "actual": null
         },
         {
           "date": "2026-08-06",
@@ -1722,7 +1725,8 @@
           "status": "pending",
           "shoe": "Adizero Boston 13",
           "shoe_note": "La seule paire fraîche : elle prend tout ce qui compte.",
-          "_shoe_key": "boston13"
+          "_shoe_key": "boston13",
+          "actual": null
         },
         {
           "date": "2026-08-07",
@@ -1733,7 +1737,8 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending"
+          "status": "pending",
+          "actual": null
         },
         {
           "date": "2026-08-08",
@@ -1749,7 +1754,8 @@
           "_easy_idx": 1,
           "shoe": "Evo SL (usagée)",
           "shoe_note": "Footings faciles jusqu'à épuisement de la paire.",
-          "_shoe_key": "evosl_old"
+          "_shoe_key": "evosl_old",
+          "actual": null
         },
         {
           "date": "2026-08-09",
@@ -1764,7 +1770,8 @@
           "status": "pending",
           "shoe": "Adizero Boston 13",
           "shoe_note": "La seule paire fraîche : elle prend tout ce qui compte.",
-          "_shoe_key": "boston13"
+          "_shoe_key": "boston13",
+          "actual": null
         }
       ],
       "focus": "Refaire du volume propre. Zéro intensité dure : on réinstalle l'allure facile et on charge le tendon progressivement."
@@ -1787,7 +1794,8 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending"
+          "status": "pending",
+          "actual": null
         },
         {
           "date": "2026-08-11",
@@ -1802,7 +1810,8 @@
           "status": "pending",
           "shoe": "Adizero Boston 13",
           "shoe_note": "La seule paire fraîche : elle prend tout ce qui compte.",
-          "_shoe_key": "boston13"
+          "_shoe_key": "boston13",
+          "actual": null
         },
         {
           "date": "2026-08-12",
@@ -1817,7 +1826,8 @@
           "status": "pending",
           "shoe": "Pegasus 40 (fin de vie)",
           "shoe_note": "Uniquement les récups courtes et lentes : c'est ton seul 10 mm, mais la semelle est morte.",
-          "_shoe_key": "peg40"
+          "_shoe_key": "peg40",
+          "actual": null
         },
         {
           "date": "2026-08-13",
@@ -1832,7 +1842,8 @@
           "status": "pending",
           "shoe": "Adizero Boston 13",
           "shoe_note": "La seule paire fraîche : elle prend tout ce qui compte.",
-          "_shoe_key": "boston13"
+          "_shoe_key": "boston13",
+          "actual": null
         },
         {
           "date": "2026-08-14",
@@ -1843,7 +1854,8 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending"
+          "status": "pending",
+          "actual": null
         },
         {
           "date": "2026-08-15",
@@ -1859,7 +1871,8 @@
           "_easy_idx": 2,
           "shoe": "Evo SL (usagée)",
           "shoe_note": "Footings faciles jusqu'à épuisement de la paire.",
-          "_shoe_key": "evosl_old"
+          "_shoe_key": "evosl_old",
+          "actual": null
         },
         {
           "date": "2026-08-16",
@@ -1874,7 +1887,8 @@
           "status": "pending",
           "shoe": "Adizero Boston 13",
           "shoe_note": "La seule paire fraîche : elle prend tout ce qui compte.",
-          "_shoe_key": "boston13"
+          "_shoe_key": "boston13",
+          "actual": null
         }
       ],
       "focus": "Première vraie séance de seuil depuis le 3 mai, et premier contact avec l'allure marathon. Tout sur sol souple."
@@ -1897,7 +1911,8 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending"
+          "status": "pending",
+          "actual": null
         },
         {
           "date": "2026-08-18",
@@ -1912,7 +1927,8 @@
           "status": "pending",
           "shoe": "Adizero Boston 13",
           "shoe_note": "Dynamique et ferme, pour le travail rapide.",
-          "_shoe_key": "boston13"
+          "_shoe_key": "boston13",
+          "actual": null
         },
         {
           "date": "2026-08-19",
@@ -1928,7 +1944,8 @@
           "_easy_idx": 3,
           "shoe": "On Cloudsurfer",
           "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
-          "_shoe_key": "on_cs"
+          "_shoe_key": "on_cs",
+          "actual": null
         },
         {
           "date": "2026-08-20",
@@ -1943,7 +1960,8 @@
           "status": "pending",
           "shoe": "Adizero Boston 13",
           "shoe_note": "Allure marathon : la paire la plus proche de tes sensations de course.",
-          "_shoe_key": "boston13"
+          "_shoe_key": "boston13",
+          "actual": null
         },
         {
           "date": "2026-08-21",
@@ -1958,7 +1976,8 @@
           "status": "pending",
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-08-22",
@@ -1974,7 +1993,8 @@
           "_easy_idx": 4,
           "shoe": "Hyperboost Edge (neuve)",
           "shoe_note": "Stack maximal : amorti maximal sur les kilomètres faciles.",
-          "_shoe_key": "hyper"
+          "_shoe_key": "hyper",
+          "actual": null
         },
         {
           "date": "2026-08-23",
@@ -1989,7 +2009,8 @@
           "status": "pending",
           "shoe": "Evo SL (neuve)",
           "shoe_note": "Légère et amortie, confortable sur la durée.",
-          "_shoe_key": "evosl_new"
+          "_shoe_key": "evosl_new",
+          "actual": null
         }
       ],
       "focus": "Début du plan définitif. Structure fixe : seuil le mardi, allure marathon le jeudi, sortie longue le dimanche."
@@ -2012,7 +2033,8 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending"
+          "status": "pending",
+          "actual": null
         },
         {
           "date": "2026-08-25",
@@ -2027,7 +2049,8 @@
           "status": "pending",
           "shoe": "Adizero Boston 13",
           "shoe_note": "Dynamique et ferme, pour le travail rapide.",
-          "_shoe_key": "boston13"
+          "_shoe_key": "boston13",
+          "actual": null
         },
         {
           "date": "2026-08-26",
@@ -2043,7 +2066,8 @@
           "_easy_idx": 5,
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm, la valeur sûre du volume.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-08-27",
@@ -2058,7 +2082,8 @@
           "status": "pending",
           "shoe": "Evo SL (neuve)",
           "shoe_note": "Légère et amortie, confortable sur la durée.",
-          "_shoe_key": "evosl_new"
+          "_shoe_key": "evosl_new",
+          "actual": null
         },
         {
           "date": "2026-08-28",
@@ -2073,7 +2098,8 @@
           "status": "pending",
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-08-29",
@@ -2089,7 +2115,8 @@
           "_easy_idx": 6,
           "shoe": "On Cloudsurfer",
           "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
-          "_shoe_key": "on_cs"
+          "_shoe_key": "on_cs",
+          "actual": null
         },
         {
           "date": "2026-08-30",
@@ -2104,7 +2131,8 @@
           "status": "pending",
           "shoe": "Adizero Boston 13",
           "shoe_note": "Bloc à allure marathon en fin de sortie longue.",
-          "_shoe_key": "boston13"
+          "_shoe_key": "boston13",
+          "actual": null
         }
       ],
       "focus": "Premier gros bloc à allure marathon dans la sortie longue."
@@ -2131,7 +2159,8 @@
           "status": "pending",
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-09-01",
@@ -2147,7 +2176,8 @@
           "_easy_idx": 7,
           "shoe": "Hyperboost Edge (neuve)",
           "shoe_note": "Stack maximal : amorti maximal sur les kilomètres faciles.",
-          "_shoe_key": "hyper"
+          "_shoe_key": "hyper",
+          "actual": null
         },
         {
           "date": "2026-09-02",
@@ -2162,7 +2192,8 @@
           "status": "pending",
           "shoe": "Adizero Boston 13",
           "shoe_note": "Dynamique et ferme, pour le travail rapide.",
-          "_shoe_key": "boston13"
+          "_shoe_key": "boston13",
+          "actual": null
         },
         {
           "date": "2026-09-03",
@@ -2177,7 +2208,8 @@
           "status": "pending",
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-09-04",
@@ -2193,7 +2225,8 @@
           "_easy_idx": 8,
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm, la valeur sûre du volume.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-09-05",
@@ -2209,7 +2242,8 @@
           "_easy_idx": 9,
           "shoe": "On Cloudsurfer",
           "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
-          "_shoe_key": "on_cs"
+          "_shoe_key": "on_cs",
+          "actual": null
         },
         {
           "date": "2026-09-06",
@@ -2224,7 +2258,8 @@
           "status": "pending",
           "shoe": "Evo SL (neuve)",
           "shoe_note": "Légère et amortie, confortable sur la durée.",
-          "_shoe_key": "evosl_new"
+          "_shoe_key": "evosl_new",
+          "actual": null
         }
       ],
       "focus": "Première semaine du nouveau rythme : la piste du mercredi soir devient le pilier qualité, la sortie longue du dimanche l'autre. Mardi et vendredi passent en endurance pure."
@@ -2251,7 +2286,8 @@
           "status": "pending",
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-09-08",
@@ -2267,7 +2303,8 @@
           "_easy_idx": 10,
           "shoe": "Hyperboost Edge (neuve)",
           "shoe_note": "Stack maximal : amorti maximal sur les kilomètres faciles.",
-          "_shoe_key": "hyper"
+          "_shoe_key": "hyper",
+          "actual": null
         },
         {
           "date": "2026-09-09",
@@ -2282,7 +2319,8 @@
           "status": "pending",
           "shoe": "Adizero Boston 13",
           "shoe_note": "Dynamique et ferme, pour le travail rapide.",
-          "_shoe_key": "boston13"
+          "_shoe_key": "boston13",
+          "actual": null
         },
         {
           "date": "2026-09-10",
@@ -2297,7 +2335,8 @@
           "status": "pending",
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-09-11",
@@ -2313,7 +2352,8 @@
           "_easy_idx": 11,
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm, la valeur sûre du volume.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-09-12",
@@ -2329,7 +2369,8 @@
           "_easy_idx": 12,
           "shoe": "On Cloudsurfer",
           "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
-          "_shoe_key": "on_cs"
+          "_shoe_key": "on_cs",
+          "actual": null
         },
         {
           "date": "2026-09-13",
@@ -2344,7 +2385,8 @@
           "status": "pending",
           "shoe": "Alphafly 3 Prototype",
           "shoe_note": "Test 10 km : l'occasion d'écouler les derniers kilomètres utiles d'une paire de course en fin de vie.",
-          "_shoe_key": "af3_proto"
+          "_shoe_key": "af3_proto",
+          "actual": null
         }
       ],
       "focus": "Semaine allégée (-25 %) puis test 10 km. Préviens le groupe que tu fais une séance courte mercredi : tu cours dimanche."
@@ -2371,7 +2413,8 @@
           "status": "pending",
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-09-15",
@@ -2387,7 +2430,8 @@
           "_easy_idx": 13,
           "shoe": "Hyperboost Edge (neuve)",
           "shoe_note": "Stack maximal : amorti maximal sur les kilomètres faciles.",
-          "_shoe_key": "hyper"
+          "_shoe_key": "hyper",
+          "actual": null
         },
         {
           "date": "2026-09-16",
@@ -2402,7 +2446,8 @@
           "status": "pending",
           "shoe": "Adizero Boston 13",
           "shoe_note": "Dynamique et ferme, pour le travail rapide.",
-          "_shoe_key": "boston13"
+          "_shoe_key": "boston13",
+          "actual": null
         },
         {
           "date": "2026-09-17",
@@ -2417,7 +2462,8 @@
           "status": "pending",
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-09-18",
@@ -2433,7 +2479,8 @@
           "_easy_idx": 14,
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm, la valeur sûre du volume.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-09-19",
@@ -2449,7 +2496,8 @@
           "_easy_idx": 15,
           "shoe": "On Cloudsurfer",
           "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
-          "_shoe_key": "on_cs"
+          "_shoe_key": "on_cs",
+          "actual": null
         },
         {
           "date": "2026-09-20",
@@ -2464,7 +2512,8 @@
           "status": "pending",
           "shoe": "Adizero Boston 13",
           "shoe_note": "Bloc à allure marathon en fin de sortie longue.",
-          "_shoe_key": "boston13"
+          "_shoe_key": "boston13",
+          "actual": null
         }
       ],
       "focus": "Reprise de la charge après le test. Les allures peuvent être ajustées selon le chrono du 10 km."
@@ -2491,7 +2540,8 @@
           "status": "pending",
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-09-22",
@@ -2507,7 +2557,8 @@
           "_easy_idx": 16,
           "shoe": "Hyperboost Edge (neuve)",
           "shoe_note": "Stack maximal : amorti maximal sur les kilomètres faciles.",
-          "_shoe_key": "hyper"
+          "_shoe_key": "hyper",
+          "actual": null
         },
         {
           "date": "2026-09-23",
@@ -2522,7 +2573,8 @@
           "status": "pending",
           "shoe": "Adizero Boston 13",
           "shoe_note": "Dynamique et ferme, pour le travail rapide.",
-          "_shoe_key": "boston13"
+          "_shoe_key": "boston13",
+          "actual": null
         },
         {
           "date": "2026-09-24",
@@ -2537,7 +2589,8 @@
           "status": "pending",
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-09-25",
@@ -2553,7 +2606,8 @@
           "_easy_idx": 17,
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm, la valeur sûre du volume.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-09-26",
@@ -2569,7 +2623,8 @@
           "_easy_idx": 18,
           "shoe": "On Cloudsurfer",
           "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
-          "_shoe_key": "on_cs"
+          "_shoe_key": "on_cs",
+          "actual": null
         },
         {
           "date": "2026-09-27",
@@ -2584,7 +2639,8 @@
           "status": "pending",
           "shoe": "Adizero Boston 13",
           "shoe_note": "Bloc à allure marathon en fin de sortie longue.",
-          "_shoe_key": "boston13"
+          "_shoe_key": "boston13",
+          "actual": null
         }
       ],
       "focus": "Semaine la plus volumineuse du plan (98 km). C'est le plafond : au-delà, l'historique dit que tu paies en fraîcheur le jour J."
@@ -2607,7 +2663,8 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending"
+          "status": "pending",
+          "actual": null
         },
         {
           "date": "2026-09-29",
@@ -2623,7 +2680,8 @@
           "_easy_idx": 19,
           "shoe": "Hyperboost Edge (neuve)",
           "shoe_note": "Stack maximal : amorti maximal sur les kilomètres faciles.",
-          "_shoe_key": "hyper"
+          "_shoe_key": "hyper",
+          "actual": null
         },
         {
           "date": "2026-09-30",
@@ -2638,7 +2696,8 @@
           "status": "pending",
           "shoe": "Adizero Boston 13",
           "shoe_note": "Dynamique et ferme, pour le travail rapide.",
-          "_shoe_key": "boston13"
+          "_shoe_key": "boston13",
+          "actual": null
         },
         {
           "date": "2026-10-01",
@@ -2653,7 +2712,8 @@
           "status": "pending",
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-10-02",
@@ -2669,7 +2729,8 @@
           "_easy_idx": 20,
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm, la valeur sûre du volume.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-10-03",
@@ -2685,7 +2746,8 @@
           "_easy_idx": 21,
           "shoe": "On Cloudsurfer",
           "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
-          "_shoe_key": "on_cs"
+          "_shoe_key": "on_cs",
+          "actual": null
         },
         {
           "date": "2026-10-04",
@@ -2700,7 +2762,8 @@
           "status": "pending",
           "shoe": "Evo SL (neuve)",
           "shoe_note": "Légère et amortie, confortable sur la durée.",
-          "_shoe_key": "evosl_new"
+          "_shoe_key": "evosl_new",
+          "actual": null
         }
       ],
       "focus": "Décharge nette (-27 %) pour assimiler le bloc 2 et arriver frais sur la sortie longue signature de la semaine suivante."
@@ -2727,7 +2790,8 @@
           "status": "pending",
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-10-06",
@@ -2743,7 +2807,8 @@
           "_easy_idx": 22,
           "shoe": "Hyperboost Edge (neuve)",
           "shoe_note": "Stack maximal : amorti maximal sur les kilomètres faciles.",
-          "_shoe_key": "hyper"
+          "_shoe_key": "hyper",
+          "actual": null
         },
         {
           "date": "2026-10-07",
@@ -2758,7 +2823,8 @@
           "status": "pending",
           "shoe": "Adizero Boston 13",
           "shoe_note": "Dynamique et ferme, pour le travail rapide.",
-          "_shoe_key": "boston13"
+          "_shoe_key": "boston13",
+          "actual": null
         },
         {
           "date": "2026-10-08",
@@ -2773,7 +2839,8 @@
           "status": "pending",
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-10-09",
@@ -2789,7 +2856,8 @@
           "_easy_idx": 23,
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm, la valeur sûre du volume.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-10-10",
@@ -2805,7 +2873,8 @@
           "_easy_idx": 24,
           "shoe": "On Cloudsurfer",
           "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
-          "_shoe_key": "on_cs"
+          "_shoe_key": "on_cs",
+          "actual": null
         },
         {
           "date": "2026-10-11",
@@ -2820,7 +2889,8 @@
           "status": "pending",
           "shoe": "Alphafly 3 « Chicago »",
           "shoe_note": "Sortie longue avec bloc à allure course en octobre : on rode la chaussure de course.",
-          "_shoe_key": "af3_chi"
+          "_shoe_key": "af3_chi",
+          "actual": null
         }
       ],
       "focus": "LA semaine du plan. Dimanche est prioritaire sur tout le reste — mercredi soir, tu lèves le pied même si le groupe part fort."
@@ -2843,7 +2913,8 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending"
+          "status": "pending",
+          "actual": null
         },
         {
           "date": "2026-10-13",
@@ -2859,7 +2930,8 @@
           "_easy_idx": 25,
           "shoe": "Hyperboost Edge (neuve)",
           "shoe_note": "Stack maximal : amorti maximal sur les kilomètres faciles.",
-          "_shoe_key": "hyper"
+          "_shoe_key": "hyper",
+          "actual": null
         },
         {
           "date": "2026-10-14",
@@ -2874,7 +2946,8 @@
           "status": "pending",
           "shoe": "Adizero Boston 13",
           "shoe_note": "Dynamique et ferme, pour le travail rapide.",
-          "_shoe_key": "boston13"
+          "_shoe_key": "boston13",
+          "actual": null
         },
         {
           "date": "2026-10-15",
@@ -2889,7 +2962,8 @@
           "status": "pending",
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-10-16",
@@ -2905,7 +2979,8 @@
           "_easy_idx": 26,
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm, la valeur sûre du volume.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-10-17",
@@ -2921,7 +2996,8 @@
           "_easy_idx": 27,
           "shoe": "On Cloudsurfer",
           "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
-          "_shoe_key": "on_cs"
+          "_shoe_key": "on_cs",
+          "actual": null
         },
         {
           "date": "2026-10-18",
@@ -2936,7 +3012,8 @@
           "status": "pending",
           "shoe": "Alphafly 3 « Chicago »",
           "shoe_note": "Sortie longue avec bloc à allure course en octobre : on rode la chaussure de course.",
-          "_shoe_key": "af3_chi"
+          "_shoe_key": "af3_chi",
+          "actual": null
         }
       ],
       "focus": "Dernière semaine consistante, et dernière vraie séance de piste. À partir de lundi prochain, tout descend jusqu'à la course."
@@ -2959,7 +3036,8 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending"
+          "status": "pending",
+          "actual": null
         },
         {
           "date": "2026-10-20",
@@ -2975,7 +3053,8 @@
           "_easy_idx": 28,
           "shoe": "Hyperboost Edge (neuve)",
           "shoe_note": "Stack maximal : amorti maximal sur les kilomètres faciles.",
-          "_shoe_key": "hyper"
+          "_shoe_key": "hyper",
+          "actual": null
         },
         {
           "date": "2026-10-21",
@@ -2990,7 +3069,8 @@
           "status": "pending",
           "shoe": "Adizero Boston 13",
           "shoe_note": "Dynamique et ferme, pour le travail rapide.",
-          "_shoe_key": "boston13"
+          "_shoe_key": "boston13",
+          "actual": null
         },
         {
           "date": "2026-10-22",
@@ -3005,7 +3085,8 @@
           "status": "pending",
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-10-23",
@@ -3020,7 +3101,8 @@
           "status": "pending",
           "shoe": "Adizero Boston 13",
           "shoe_note": "Allure marathon : la paire la plus proche de tes sensations de course.",
-          "_shoe_key": "boston13"
+          "_shoe_key": "boston13",
+          "actual": null
         },
         {
           "date": "2026-10-24",
@@ -3031,7 +3113,8 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending"
+          "status": "pending",
+          "actual": null
         },
         {
           "date": "2026-10-25",
@@ -3046,7 +3129,8 @@
           "status": "pending",
           "shoe": "Evo SL (neuve)",
           "shoe_note": "Légère et amortie, confortable sur la durée.",
-          "_shoe_key": "evosl_new"
+          "_shoe_key": "evosl_new",
+          "actual": null
         }
       ],
       "focus": "Volume -45 %, mais on garde 5 sorties et toute l'intensité. Réduire le nombre de sorties dégrade la performance ; c'est la DURÉE qui s'effondre, pas la fréquence. Ça va te sembler trop peu : c'est exactement le but."
@@ -3073,7 +3157,8 @@
           "status": "pending",
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-10-27",
@@ -3088,7 +3173,8 @@
           "status": "pending",
           "shoe": "Adizero Boston 13",
           "shoe_note": "Allure marathon : la paire la plus proche de tes sensations de course.",
-          "_shoe_key": "boston13"
+          "_shoe_key": "boston13",
+          "actual": null
         },
         {
           "date": "2026-10-28",
@@ -3104,7 +3190,8 @@
           "_easy_idx": 29,
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm, la valeur sûre du volume.",
-          "_shoe_key": "peg41"
+          "_shoe_key": "peg41",
+          "actual": null
         },
         {
           "date": "2026-10-29",
@@ -3120,7 +3207,8 @@
           "_easy_idx": 30,
           "shoe": "On Cloudsurfer",
           "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
-          "_shoe_key": "on_cs"
+          "_shoe_key": "on_cs",
+          "actual": null
         },
         {
           "date": "2026-10-30",
@@ -3136,7 +3224,8 @@
           "_easy_idx": 31,
           "shoe": "Hyperboost Edge (neuve)",
           "shoe_note": "Stack maximal : amorti maximal sur les kilomètres faciles.",
-          "_shoe_key": "hyper"
+          "_shoe_key": "hyper",
+          "actual": null
         },
         {
           "date": "2026-10-31",
@@ -3151,7 +3240,8 @@
           "status": "pending",
           "shoe": "On Cloudsurfer",
           "shoe_note": "Déblocage très lent, drop élevé.",
-          "_shoe_key": "on_cs"
+          "_shoe_key": "on_cs",
+          "actual": null
         },
         {
           "date": "2026-11-01",
@@ -3165,7 +3255,8 @@
           "target_pace": "4'12\"/km",
           "status": "pending",
           "shoe": "Alphafly 3 « Chicago » ou Vaporfly Next% 3",
-          "shoe_note": "Choix tranché sur la sortie longue du 11 octobre."
+          "shoe_note": "Choix tranché sur la sortie longue du 11 octobre.",
+          "actual": null
         }
       ],
       "focus": "35 km d'entraînement, soit -63 % : la charge la plus basse du plan. Quatre jours en France, vol le vendredi 30 à midi, arrivée à NYC en fin d'après-midi. Beaucoup de sommeil."
