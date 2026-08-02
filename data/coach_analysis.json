@@ -1,27 +1,17 @@
 {
- "generated_at": "2026-07-31T08:20:53",
+ "generated_at": "2026-08-02T07:53:30",
  "model": "claude-sonnet-5",
- "headline": "Trois semaines de sous-charge chronique et une séance de récup déjà imposée : la reprise qui arrive doit être prudente, pas héroïque.",
- "analysis": "Depuis 4 semaines tu tournes entre 47% et 83% du volume prévu, avec zéro séance clé réussie sur les semaines 5 à 8. Le moteur a déjà dû forcer une semaine de récup en semaine 8, signe que la charge accumulée était ingérable. Sur les 14 derniers jours, 5 séances sont carrément manquées et la sortie longue du 26/07 a fini en échec net (58% du volume, allure dégradée). Les jours réussis montrent une bonne caisse aérobie mais des allures souvent plus lentes que prévu, ce qui traduit de la fatigue ou un manque de récupération réelle plutôt qu'un manque de motivation. Le risque principal maintenant : repartir trop vite sur 3 séances clés d'affilée (VMA longue, MP run, SL progressive 27km) alors que le corps n'a pas encore prouvé qu'il absorbe le volume de base. Le focus de la semaine doit être la régularité sur le footing avant de viser l'intensité — mieux vaut boucler 100% des sorties faciles que rater encore une séance clé.",
+ "headline": "Charge d'entraînement en dette majeure : conformité sous 80% depuis 4 semaines et zéro séance clé réussie, alors que la semaine à venir enchaîne 4 séances clés lourdes.",
+ "analysis": "Les 4 dernières semaines montrent un déficit de volume constant (47 à 79% du planifié) et surtout un 0/2, 0/3 sur les séances clés : ton corps ne suit pas le plan actuel, que ce soit en distance ou en allure. Sur les 14 derniers jours, 5 séances sont carrément manquées et plusieurs autres sont réalisées bien en dessous du volume prévu avec des allures dégradées (footings à 5'30-6'10/km au lieu de 4'51). C'est le signe classique d'une fatigue accumulée ou d'un planning trop ambitieux par rapport à ta disponibilité réelle. Le risque principal maintenant, c'est d'enchaîner cette semaine 3 séances clés intenses (VMA longue, 18km avec MP, SL progressive 27km) sur une base non consolidée, ce qui augmente fortement le risque de blessure ou d'un nouvel échec qui minera ta confiance. Le focus de la semaine doit être la régularité et la qualité d'exécution plutôt que le volume : mieux vaut réussir des séances raccourcies que rater des séances pleines. Je propose d'alléger les deux séances clés les plus volumineuses pour sécuriser leur réussite avant de remonter en charge.",
  "applied": [
-  {
-   "severity": "minor",
-   "kind": "volume_adjust",
-   "date": "2026-08-09",
-   "field": "km",
-   "new_value": 24.6,
-   "reason": "Après 4 semaines de sous-charge chronique et une récup forcée en semaine 8, une SL progressive à 27km enchaînée avec 2 autres séances clés dans la même semaine est risquée — réduction de ~10% pour sécuriser la reprise.",
-   "id": "5c2a6a1c",
-   "detail": "2026-08-09 : 27.3→24.6 km"
-  },
   {
    "severity": "minor",
    "kind": "add_note",
    "date": "2026-08-04",
    "field": "description_note",
-   "new_value": "Reprise d'intensité après plusieurs semaines irrégulières : privilégie la qualité des premières répétitions, arrête si les allures VMA ne viennent pas naturellement.",
-   "reason": "Historique récent montre des allures dégradées et fatigue — prudence sur la première séance clé de la reprise.",
-   "id": "69d1b099",
+   "new_value": "Priorise la qualité d'exécution sur les allures plutôt que le nombre de répétitions : si tu sens que ça ne passe pas, coupe une répétition mais garde l'allure cible.",
+   "reason": "Aucune séance clé réussie sur 4 semaines : recentrer sur la qualité pour reconstruire la confiance avant de viser le volume complet.",
+   "id": "be8c9d39",
    "detail": "2026-08-04 : note ajoutée"
   }
  ],
@@ -47,6 +37,28 @@
    "id": "02ea381f",
    "status": "pending",
    "created_at": "2026-07-25T13:08:48"
+  },
+  {
+   "severity": "major",
+   "kind": "volume_adjust",
+   "date": "2026-08-06",
+   "field": "km",
+   "new_value": 15.0,
+   "reason": "18.2km à allure MP est trop ambitieux vu 0 séance clé réussie récemment et un déficit de volume chronique ; réduire pour sécuriser la réussite de l'allure plutôt que la distance.",
+   "id": "7ed29c7b",
+   "status": "pending",
+   "created_at": "2026-08-02T07:53:30"
+  },
+  {
+   "severity": "major",
+   "kind": "volume_adjust",
+   "date": "2026-08-09",
+   "field": "km",
+   "new_value": 19.0,
+   "reason": "SL progressive de 24.6km trop lourde après 4 semaines sous le volume planifié ; risque de surcharge et d'échec supplémentaire, mieux vaut consolider avant d'augmenter.",
+   "id": "07a1f63f",
+   "status": "pending",
+   "created_at": "2026-08-02T07:53:30"
   }
  ]
 }
