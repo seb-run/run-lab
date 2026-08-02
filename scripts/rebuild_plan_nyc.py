@@ -61,6 +61,7 @@ PACE_STR = {k: fmt_pace(v) for k, v in PACES.items()}
 #     STEADY_TYPES  = easy, recovery, long, long_mp, shake, progressive
 # ---------------------------------------------------------------------------
 
+import _shoes_nyc as shoes_nyc  # noqa: E402
 from _weeks_nyc import WEEKS, R, DISCIPLINE  # noqa: E402  (défini à côté)
 
 
@@ -111,7 +112,7 @@ def main(dry_run: bool = False) -> int:
         "et non plus sur une VMA estimée. Objectif NYC : sub-3h maîtrisé, "
         "étape vers un 2h44 au marathon de Milan du 04/04/2027."
     )
-    meta["plan_peak_km"] = 106.0
+    meta["plan_peak_km"] = 98.0
 
     # --- index des jours existants pour préserver le réalisé
     existing = {}
@@ -154,6 +155,10 @@ def main(dry_run: bool = False) -> int:
         rebuilt += 1
 
     plan["adaptations"] = []
+
+    # --- rotation chaussures
+    projection = shoes_nyc.annotate(plan)
+    plan["meta"]["shoe_projection"] = projection
 
     print(f"Semaines réécrites : {rebuilt}")
     print()

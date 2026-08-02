@@ -105,6 +105,11 @@ tr:last-child td{border-bottom:none}
  border-radius:8px;padding:.85rem 1rem;margin:1rem 0}
 .info{background:#151f26;border:1px solid #24384a;border-left:3px solid #79a8c9;
  border-radius:8px;padding:.85rem 1rem;margin:1rem 0}
+.shoe{margin-top:.35rem;font-size:.8rem;color:#8fbfa8;background:#16211c;
+ border:1px solid #23372e;border-radius:6px;padding:.2rem .45rem;display:inline-block}
+.shoe-n{color:#7b8494}
+.bar{height:6px;border-radius:3px;background:#22262f;overflow:hidden;margin-top:.25rem}
+.bar>i{display:block;height:100%}
 ul{margin:.5rem 0;padding-left:1.2rem}li{margin:.25rem 0}
 code{background:#22262f;padding:.1rem .3rem;border-radius:4px;font-size:.87em}
 @media print{body{background:#fff;color:#000;max-width:none}
@@ -255,7 +260,28 @@ def render(plan: dict) -> str:
       "ne sont plus un détail de confort : un drop bas allonge le tendon davantage à "
       "chaque foulée, et une semelle morte augmente les contraintes globales. "
       "Kilométrages relevés sur Strava au 2 août :</p>")
+    a("<div class='warn'><strong>Deux régimes, parce que ton placard est à la maison.</strong><br>"
+      "Du 3 au 16 août à Mondonville tu n'as que <strong>trois paires</strong> : "
+      "Boston 13, Evo SL usagée et Pegasus 40. C'est peu pour 144 km, et la seule "
+      "vraiment saine est la Boston 13.<br><br>"
+      "Conséquence : <strong>la Pegasus 40 ne part pas encore au recyclage.</strong> "
+      "Morte ou pas, c'est ton unique 10 mm sur ces deux semaines, et garder un peu "
+      "de variété de drop vaut mieux que tout faire en 6 mm. Elle est donc cantonnée "
+      "aux deux footings de récup les plus courts et les plus lents — 21 km au total, "
+      "à faible vitesse, où la semelle écrasée fait peu de dégâts. Elle passe à la "
+      "poubelle le 17 août, pas avant.<br><br>"
+      "Sur ces deux semaines, les talonnettes de 8-10 mm dans la Boston 13 et l'Evo SL "
+      "sont donc plus utiles que jamais : c'est ce qui compense l'absence de vrai "
+      "drop élevé.</div>")
+    a("<h3>À partir du 17 août — le placard complet</h3>")
     a("<table><tr><th>Paire</th><th>Km</th><th>Drop</th><th>Rôle</th></tr>"
+      "<tr><td><strong>Pegasus 41</strong></td><td>477 km</td><td>10 mm</td>"
+      "<td style='color:#7dd3a0'>Récups et footings. Avec la On, c'est ce qui protège "
+      "ton tendon.</td></tr>"
+      "<tr><td><strong>On Cloudsurfer</strong></td><td>163 km</td>"
+      "<td>10 mm<br><span class='d-day'>stack 37/27</span></td>"
+      "<td style='color:#7dd3a0'>Ta meilleure carte pour l'Achille : drop élevé et "
+      "peu usée. Elle porte le gros du volume facile.</td></tr>"
       "<tr><td><strong>Hyperboost Edge</strong><br><span class='d-day'>neuve</span></td>"
       "<td>0 km</td><td>6 mm<br><span class='d-day'>stack 45/39</span></td>"
       "<td style='color:#7dd3a0'>Le gros du volume facile et les récups. Stack maximal, "
@@ -278,24 +304,47 @@ def render(plan: dict) -> str:
       "<td style='color:#79a8c9'>Intacte jusqu'en octobre. Durée de vie utile "
       "250-350 km : chaque kilomètre d'entraînement est volé à la course.</td></tr>"
       "<tr><td><strong>Nike Pegasus 40</strong></td><td>1 137 km</td><td>10 mm annoncés</td>"
-      "<td style='color:#f08fa3'>À retirer. Tu retires habituellement tes Pegasus entre "
-      "800 et 1 000 km.</td></tr>"
+      "<td style='color:#f08fa3'>Récups courtes jusqu'au 16 août, puis au recyclage.</td></tr>"
       "</table>")
 
-    a("<div class='warn'><strong>Le vrai sujet : ta rotation est passée en tout-6 mm.</strong><br>"
-      "Tu n'as besoin d'acheter aucune chaussure — les trois paires neuves couvrent tout. "
-      "Mais en retirant la Pegasus 40, il ne te reste plus une seule paire à drop élevé : "
-      "quatre paires à 6 mm, et des chaussures de course à 8 mm réservées à octobre.<br><br>"
-      "Or tu viens d'une rotation Nike historiquement à 10 mm (Pegasus 38, 39, 40, 41, "
-      "Zoom Fly). Passer tout ton volume de 10 à 6 mm au moment précis où ton Achille "
-      "est réactif, c'est un facteur de risque documenté : un drop plus faible allonge "
-      "le tendon davantage à chaque foulée.<br><br>"
-      "<strong>La solution ne coûte pas 150 € mais une dizaine :</strong> des talonnettes "
-      "de 8 à 10 mm dans la paire que tu utilises pour le volume facile. C'est une des "
-      "interventions les mieux documentées sur la tendinopathie d'Achille — elle réduit "
-      "directement la contrainte sur le tendon, et tu la retires progressivement en "
-      "septembre à mesure que les symptômes disparaissent. Mets-les dans les deux "
-      "chaussures, jamais dans une seule.</div>")
+    a("<div class='info'><strong>Bonne nouvelle : tu n'as rien à acheter.</strong> "
+      "Avec la Pegasus 41 et la On Cloudsurfer, tu retrouves deux paires à 10 mm dès le "
+      "17 août — c'est exactement ce qui manquait. Elles portent donc en priorité les "
+      "récups et les footings, là où se concentre le volume, pendant que les 6 mm "
+      "(Boston, Evo SL, Hyperboost) prennent les séances rapides, où le temps passé "
+      "est court.<br><br>"
+      "Les talonnettes restent utiles en août ; tu peux les retirer progressivement en "
+      "septembre à mesure que la raideur matinale disparaît.</div>")
+
+    # ---- Projection d'usure
+    proj = m.get("shoe_projection") or []
+    if proj:
+        a("<h3>Usure projetée au 1<sup>er</sup> novembre</h3>")
+        a("<p>Kilométrage de chaque paire si tu suis la rotation du plan, "
+          "rapporté à sa durée de vie estimée.</p>")
+        a("<table><tr><th>Paire</th><th>Drop</th><th>Aujourd'hui</th><th>+ plan</th>"
+          "<th>Au 1<sup>er</sup> nov.</th><th>Usure</th></tr>")
+        for x in proj:
+            if x["added_km"] == 0 and x["start_km"] == 0:
+                continue
+            pct = x["pct"]
+            col = "#f08fa3" if pct >= 100 else ("#e0b46a" if pct >= 85 else "#7dd3a0")
+            a(f"<tr><td><strong>{html.escape(x['name'])}</strong></td>"
+              f"<td>{x['drop']} mm</td><td>{x['start_km']} km</td>"
+              f"<td>+{x['added_km']} km</td><td>{x['end_km']} km</td>"
+              f"<td><span style='color:{col};font-weight:600'>{pct} %</span>"
+              f"<div class='bar'><i style='width:{min(pct,100)}%;background:{col}'></i></div></td></tr>")
+        a("</table>")
+        a("<div class='info'>Seules les deux paires déjà condamnées dépassent leur "
+          "durée de vie, et elles ne portent que 55 km à elles deux. "
+          "<strong>Tout le reste finit la préparation avec de la marge</strong> — "
+          "la Boston 13 à 72 %, la Pegasus 41 à 82 %. Aucun achat nécessaire d'ici "
+          "le 1<sup>er</sup> novembre.<br><br>"
+          "Une nuance sur l'Alphafly « Prototype » : tu la crois peu utilisée, elle est "
+          "en réalité à <strong>238 km</strong>, contre 126 km pour la « Chicago 25 ». "
+          "C'est la Chicago la plus fraîche des deux — d'où son rôle de candidate "
+          "principale pour la course, et la Prototype réservée au test 10 km de "
+          "septembre pour écouler ses derniers kilomètres utiles.</div>")
 
     a("<h3>Rodage des trois paires neuves</h3>"
       "<p>Trois paires neuves d'un coup et un tendon réactif, ça ne va pas ensemble. "
@@ -422,10 +471,14 @@ def render(plan: dict) -> str:
             km = f"{d['km']:g} km" if d["km"] else "—"
             pace = (f"<div class='pace'>{html.escape(d['target_pace'])}</div>"
                     if d.get("target_pace") else "")
+            shoe = ""
+            if d.get("shoe"):
+                shoe = (f"<div class='shoe'>👟 {html.escape(d['shoe'])}"
+                        f"<span class='shoe-n'> — {html.escape(d.get('shoe_note',''))}</span></div>")
             a(f"<tr><td class='d-day'>{JOURS[d['dow']]} {date.fromisoformat(d['date']).day}</td>"
               f"<td><span class='badge {cls}'>{lbl}</span></td>"
               f"<td><div class='d-t'>{html.escape(d['title'])}{star}</div>"
-              f"<div class='d-desc'>{md_inline(d['description'])}</div></td>"
+              f"<div class='d-desc'>{md_inline(d['description'])}</div>{shoe}</td>"
               f"<td class='d-km'>{km}{pace}</td></tr>")
         a("</table></div>")
 

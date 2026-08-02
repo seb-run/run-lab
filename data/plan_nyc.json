@@ -5,7 +5,7 @@
     "target_time": "2h57'00",
     "strategy_time": "3h00'00",
     "weeks_total": 21,
-    "plan_peak_km": 106.0,
+    "plan_peak_km": 98.0,
     "user_peak_km": 90.0,
     "vma_used": 18.37,
     "paces_str": {
@@ -33,8 +33,120 @@
       "recup": 340
     },
     "generated_at": "2026-06-09T19:18:39",
-    "recalibrated_at": "2026-08-02T18:29:14",
-    "recalibration_note": "Allures recalibrées le 2026-08-02 sur les performances réelles (marathon 2h50'03 le 12/04/2026, 2h54'35 le 12/10/2025, semi 1h22'40) et non plus sur une VMA estimée. Objectif NYC : sub-3h maîtrisé, étape vers un 2h44 au marathon de Milan du 04/04/2027."
+    "recalibrated_at": "2026-08-02T22:38:44",
+    "recalibration_note": "Allures recalibrées le 2026-08-02 sur les performances réelles (marathon 2h50'03 le 12/04/2026, 2h54'35 le 12/10/2025, semi 1h22'40) et non plus sur une VMA estimée. Objectif NYC : sub-3h maîtrisé, étape vers un 2h44 au marathon de Milan du 04/04/2027.",
+    "shoe_projection": [
+      {
+        "key": "evosl_old",
+        "name": "Evo SL (usagée)",
+        "start_km": 749,
+        "added_km": 34,
+        "end_km": 783,
+        "drop": 6,
+        "life": 600,
+        "pct": 130,
+        "available": "2026-08-03"
+      },
+      {
+        "key": "peg40",
+        "name": "Pegasus 40 (fin de vie)",
+        "start_km": 1137,
+        "added_km": 21,
+        "end_km": 1158,
+        "drop": 10,
+        "life": 900,
+        "pct": 129,
+        "available": "2026-08-03"
+      },
+      {
+        "key": "peg41",
+        "name": "Pegasus 41",
+        "start_km": 477,
+        "added_km": 220,
+        "end_km": 697,
+        "drop": 10,
+        "life": 850,
+        "pct": 82,
+        "available": "2026-08-17"
+      },
+      {
+        "key": "af3_proto",
+        "name": "Alphafly 3 Prototype",
+        "start_km": 238,
+        "added_km": 21,
+        "end_km": 259,
+        "drop": 8,
+        "life": 320,
+        "pct": 81,
+        "available": "2026-08-17"
+      },
+      {
+        "key": "boston13",
+        "name": "Adizero Boston 13",
+        "start_km": 157,
+        "added_km": 350,
+        "end_km": 507,
+        "drop": 6,
+        "life": 700,
+        "pct": 72,
+        "available": "2026-08-03"
+      },
+      {
+        "key": "af3_chi",
+        "name": "Alphafly 3 « Chicago »",
+        "start_km": 126,
+        "added_km": 54,
+        "end_km": 180,
+        "drop": 8,
+        "life": 320,
+        "pct": 56,
+        "available": "2026-08-17"
+      },
+      {
+        "key": "on_cs",
+        "name": "On Cloudsurfer",
+        "start_km": 163,
+        "added_km": 94,
+        "end_km": 257,
+        "drop": 10,
+        "life": 700,
+        "pct": 37,
+        "available": "2026-08-17"
+      },
+      {
+        "key": "hyper",
+        "name": "Hyperboost Edge (neuve)",
+        "start_km": 0,
+        "added_km": 115,
+        "end_km": 115,
+        "drop": 6,
+        "life": 700,
+        "pct": 16,
+        "available": "2026-08-17"
+      },
+      {
+        "key": "evosl_new",
+        "name": "Evo SL (neuve)",
+        "start_km": 0,
+        "added_km": 96,
+        "end_km": 96,
+        "drop": 6,
+        "life": 600,
+        "pct": 16,
+        "available": "2026-08-17"
+      },
+      {
+        "key": "vf3",
+        "name": "Vaporfly Next% 3 (neuve)",
+        "start_km": 0,
+        "added_km": 0,
+        "end_km": 0,
+        "drop": 8,
+        "life": 320,
+        "pct": 0,
+        "available": "2026-08-17"
+      }
+    ]
   },
   "weeks": [
     {
@@ -1576,7 +1688,11 @@
           "key": false,
           "description": "12 km en endurance fondamentale VRAIE : 5'10-5'25/km, FC < 140. Puis 6×20\" de lignes en souplesse sur herbe, récup marche 40\". Objectif : relancer le neuromusculaire sans agresser l'Achille.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 0,
+          "shoe": "Evo SL (usagée)",
+          "shoe_note": "Footings faciles jusqu'à épuisement de la paire.",
+          "_shoe_key": "evosl_old"
         },
         {
           "date": "2026-08-05",
@@ -1588,7 +1704,10 @@
           "key": false,
           "description": "10 km très lent, 5'25-5'40/km. Sur chemin souple à Bouconne. Si raideur au démarrage : 10 min de marche avant de courir.",
           "target_pace": "5'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Pegasus 40 (fin de vie)",
+          "shoe_note": "Uniquement les récups courtes et lentes : c'est ton seul 10 mm, mais la semelle est morte.",
+          "_shoe_key": "peg40"
         },
         {
           "date": "2026-08-06",
@@ -1600,7 +1719,10 @@
           "key": false,
           "description": "Échauffement 4 km, puis 2×10 min à 4'30-4'35/km (récup 3 min trot), retour au calme. Ce n'est PAS du seuil : allure « confortablement soutenue », tu dois pouvoir dire une phrase courte.",
           "target_pace": "4'05\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Adizero Boston 13",
+          "shoe_note": "La seule paire fraîche : elle prend tout ce qui compte.",
+          "_shoe_key": "boston13"
         },
         {
           "date": "2026-08-07",
@@ -1623,7 +1745,11 @@
           "key": false,
           "description": "11 km à 5'10-5'25/km + 8×20\" de lignes sur herbe. Sortie avant 8h : la chaleur d'août à Mondonville plombe la FC.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 1,
+          "shoe": "Evo SL (usagée)",
+          "shoe_note": "Footings faciles jusqu'à épuisement de la paire.",
+          "_shoe_key": "evosl_old"
         },
         {
           "date": "2026-08-09",
@@ -1635,7 +1761,10 @@
           "key": false,
           "description": "21 km à 4'55-5'10/km, sous les arbres de Bouconne. Départ 6h30-7h. Ravitaillement : 500 ml + 1 gel à mi-parcours pour réhabituer l'estomac.",
           "target_pace": "4'55\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Adizero Boston 13",
+          "shoe_note": "La seule paire fraîche : elle prend tout ce qui compte.",
+          "_shoe_key": "boston13"
         }
       ],
       "focus": "Refaire du volume propre. Zéro intensité dure : on réinstalle l'allure facile et on charge le tendon progressivement."
@@ -1670,7 +1799,10 @@
           "key": true,
           "description": "Échauffement 4 km + gammes. Puis 6×3 min à 3'50-3'55/km, récup 90\" en trot. Retour au calme 3 km.\nSur chemin roulant de Bouconne, PAS sur bitume : c'est ta première séance rapide depuis 3 mois, le tendon doit encaisser du souple.",
           "target_pace": "3'50\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Adizero Boston 13",
+          "shoe_note": "La seule paire fraîche : elle prend tout ce qui compte.",
+          "_shoe_key": "boston13"
         },
         {
           "date": "2026-08-12",
@@ -1682,7 +1814,10 @@
           "key": false,
           "description": "11 km à 5'25-5'40/km. Vérifie la raideur matinale : si elle a augmenté après la séance d'hier, remplace par 30 min de vélo.",
           "target_pace": "5'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Pegasus 40 (fin de vie)",
+          "shoe_note": "Uniquement les récups courtes et lentes : c'est ton seul 10 mm, mais la semelle est morte.",
+          "_shoe_key": "peg40"
         },
         {
           "date": "2026-08-13",
@@ -1694,7 +1829,10 @@
           "key": true,
           "description": "Échauffement 4 km, puis 3×8 min à 4'10-4'12/km (allure objectif NYC), récup 2 min trot. Retour 3 km.\nObjectif : réapprendre la sensation.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
           "target_pace": "4'12\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Adizero Boston 13",
+          "shoe_note": "La seule paire fraîche : elle prend tout ce qui compte.",
+          "_shoe_key": "boston13"
         },
         {
           "date": "2026-08-14",
@@ -1717,7 +1855,11 @@
           "key": false,
           "description": "11 km + 6×20\" en côte modérée (5-6%), montée en souplesse, descente en marchant.\n⚠️ À faire seulement si l'Achille est silencieux au démarrage. Sinon : 8 lignes sur le plat à la place.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 2,
+          "shoe": "Evo SL (usagée)",
+          "shoe_note": "Footings faciles jusqu'à épuisement de la paire.",
+          "_shoe_key": "evosl_old"
         },
         {
           "date": "2026-08-16",
@@ -1729,7 +1871,10 @@
           "key": false,
           "description": "24 km : 18 km à 4'55-5'05/km puis les 6 derniers à 4'20-4'25/km. Premier vrai test de fin de sortie en fatigue.",
           "target_pace": "4'55\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Adizero Boston 13",
+          "shoe_note": "La seule paire fraîche : elle prend tout ce qui compte.",
+          "_shoe_key": "boston13"
         }
       ],
       "focus": "Première vraie séance de seuil depuis le 3 mai, et premier contact avec l'allure marathon. Tout sur sol souple."
@@ -1764,7 +1909,10 @@
           "key": true,
           "description": "Échauffement 4 km. 5×2000 m à 3'50/km, récup 2'30 trot. Retour 2 km.\nSéance de référence du bloc : tu la reverras en S16. Note tes sensations et ta FC moyenne sur les répétitions.",
           "target_pace": "3'50\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Adizero Boston 13",
+          "shoe_note": "Dynamique et ferme, pour le travail rapide.",
+          "_shoe_key": "boston13"
         },
         {
           "date": "2026-08-19",
@@ -1776,7 +1924,11 @@
           "key": false,
           "description": "13 km à 5'10-5'25/km, FC < 140. Sortie tôt.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 3,
+          "shoe": "On Cloudsurfer",
+          "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
+          "_shoe_key": "on_cs"
         },
         {
           "date": "2026-08-20",
@@ -1788,7 +1940,10 @@
           "key": true,
           "description": "Échauffement 4 km + 4×8 min à 4'10-4'12/km, récup 2 min. Retour 3 km.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
           "target_pace": "4'12\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Adizero Boston 13",
+          "shoe_note": "Allure marathon : la paire la plus proche de tes sensations de course.",
+          "_shoe_key": "boston13"
         },
         {
           "date": "2026-08-21",
@@ -1800,7 +1955,10 @@
           "key": false,
           "description": "8 km très lent. Renforcement mollets après.",
           "target_pace": "5'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-08-22",
@@ -1812,7 +1970,11 @@
           "key": false,
           "description": "11 km + 8×20\" de lignes en souplesse.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 4,
+          "shoe": "Hyperboost Edge (neuve)",
+          "shoe_note": "Stack maximal : amorti maximal sur les kilomètres faciles.",
+          "_shoe_key": "hyper"
         },
         {
           "date": "2026-08-23",
@@ -1824,7 +1986,10 @@
           "key": false,
           "description": "22 km à 4'50-5'00/km. Régulier, sans accélération finale.",
           "target_pace": "4'55\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Evo SL (neuve)",
+          "shoe_note": "Légère et amortie, confortable sur la durée.",
+          "_shoe_key": "evosl_new"
         }
       ],
       "focus": "Début du plan définitif. Structure fixe : seuil le mardi, allure marathon le jeudi, sortie longue le dimanche."
@@ -1859,7 +2024,10 @@
           "key": true,
           "description": "Échauffement 4 km. 3×12 min à 3'52/km, récup 3 min trot. Retour 3 km.\nAllonger la durée à allure seuil : c'est le moteur du marathon.",
           "target_pace": "3'50\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Adizero Boston 13",
+          "shoe_note": "Dynamique et ferme, pour le travail rapide.",
+          "_shoe_key": "boston13"
         },
         {
           "date": "2026-08-26",
@@ -1871,7 +2039,11 @@
           "key": false,
           "description": "13 km à 5'10-5'25/km.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 5,
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm, la valeur sûre du volume.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-08-27",
@@ -1883,7 +2055,10 @@
           "key": false,
           "description": "15 km : 9 km à 4'55 puis 6 km à 4'20/km. Progression continue, sans à-coup.",
           "target_pace": "4'55\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Evo SL (neuve)",
+          "shoe_note": "Légère et amortie, confortable sur la durée.",
+          "_shoe_key": "evosl_new"
         },
         {
           "date": "2026-08-28",
@@ -1895,7 +2070,10 @@
           "key": false,
           "description": "9 km très lent.",
           "target_pace": "5'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-08-29",
@@ -1907,7 +2085,11 @@
           "key": false,
           "description": "10 km + 8×20\" en côte modérée. Travail de force pour les ponts de NYC.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 6,
+          "shoe": "On Cloudsurfer",
+          "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
+          "_shoe_key": "on_cs"
         },
         {
           "date": "2026-08-30",
@@ -1919,7 +2101,10 @@
           "key": true,
           "description": "25 km : 8 km d'échauffement à 5'00, puis 10 km à 4'12/km, puis 7 km de retour au calme.\nLA séance clé de la semaine. Le bloc doit être régulier au chrono, pas en dents de scie. Ravito : gel toutes les 40 min.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
           "target_pace": "4'12\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Adizero Boston 13",
+          "shoe_note": "Bloc à allure marathon en fin de sortie longue.",
+          "_shoe_key": "boston13"
         }
       ],
       "focus": "Premier gros bloc à allure marathon dans la sortie longue."
@@ -1943,7 +2128,10 @@
           "key": false,
           "description": "8 km très lent après la SL d'hier.",
           "target_pace": "5'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-09-01",
@@ -1955,7 +2143,11 @@
           "key": false,
           "description": "13 km à 5'10-5'25/km + 6×20\" de lignes. Jambes fraîches pour la piste demain.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 7,
+          "shoe": "Hyperboost Edge (neuve)",
+          "shoe_note": "Stack maximal : amorti maximal sur les kilomètres faciles.",
+          "_shoe_key": "hyper"
         },
         {
           "date": "2026-09-02",
@@ -1967,7 +2159,10 @@
           "key": true,
           "description": "**Première séance piste depuis mai — la plus risquée de tout le plan pour ton Achille.**\n· Échauffement 20 min minimum, pas 10. Gammes complètes.\n· **Pas de pointes.** Chaussures d'entraînement habituelles, drop normal. La piste est déjà une surface dure et les virages chargent le tendon en torsion.\n· Fais **la moitié du volume du groupe** cette première fois. Tu peux finir la séance en trottinant à côté.\n· Retour au calme 15 min.\nLe lendemain matin, teste la raideur au démarrage : c'est ton indicateur.",
           "target_pace": "3'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Adizero Boston 13",
+          "shoe_note": "Dynamique et ferme, pour le travail rapide.",
+          "_shoe_key": "boston13"
         },
         {
           "date": "2026-09-03",
@@ -1979,7 +2174,10 @@
           "key": false,
           "description": "9 km très lent, l'après-midi si possible — la piste était hier soir, laisse 16 h au tendon. Si la raideur matinale a nettement augmenté, remplace par 30 min de vélo.",
           "target_pace": "5'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-09-04",
@@ -1991,7 +2189,11 @@
           "key": false,
           "description": "14 km à 5'10-5'25/km.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 8,
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm, la valeur sûre du volume.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-09-05",
@@ -2003,7 +2205,11 @@
           "key": false,
           "description": "11 km + 8 lignes.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 9,
+          "shoe": "On Cloudsurfer",
+          "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
+          "_shoe_key": "on_cs"
         },
         {
           "date": "2026-09-06",
@@ -2015,7 +2221,10 @@
           "key": false,
           "description": "24 km à 4'50-5'00/km, sans bloc rapide : la semaine change déjà de structure, on ne cumule pas.",
           "target_pace": "4'55\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Evo SL (neuve)",
+          "shoe_note": "Légère et amortie, confortable sur la durée.",
+          "_shoe_key": "evosl_new"
         }
       ],
       "focus": "Première semaine du nouveau rythme : la piste du mercredi soir devient le pilier qualité, la sortie longue du dimanche l'autre. Mardi et vendredi passent en endurance pure."
@@ -2039,7 +2248,10 @@
           "key": false,
           "description": "6 km très lent.",
           "target_pace": "5'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-09-08",
@@ -2051,7 +2263,11 @@
           "key": false,
           "description": "11 km + 6 lignes.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 10,
+          "shoe": "Hyperboost Edge (neuve)",
+          "shoe_note": "Stack maximal : amorti maximal sur les kilomètres faciles.",
+          "_shoe_key": "hyper"
         },
         {
           "date": "2026-09-09",
@@ -2063,7 +2279,10 @@
           "key": true,
           "description": "Séance du groupe mais **volume réduit de moitié**, et tu t'arrêtes franchement avant la dernière série. Tu as un test dimanche.\nToujours sans pointes.",
           "target_pace": "3'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Adizero Boston 13",
+          "shoe_note": "Dynamique et ferme, pour le travail rapide.",
+          "_shoe_key": "boston13"
         },
         {
           "date": "2026-09-10",
@@ -2075,7 +2294,10 @@
           "key": false,
           "description": "7 km très lent.",
           "target_pace": "5'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-09-11",
@@ -2087,7 +2309,11 @@
           "key": false,
           "description": "8 km facile.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 11,
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm, la valeur sûre du volume.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-09-12",
@@ -2099,7 +2325,11 @@
           "key": false,
           "description": "5 km très facile + 4 lignes. Jambes fraîches pour demain.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 12,
+          "shoe": "On Cloudsurfer",
+          "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
+          "_shoe_key": "on_cs"
         },
         {
           "date": "2026-09-13",
@@ -2111,7 +2341,10 @@
           "key": true,
           "description": "Échauffement 5 km + gammes. **10 km chrono à fond** (viser 37'00-37'30). Retour au calme 5 km.\nUn dossard local est idéal ; sinon en solo sur parcours plat et roulant. Le résultat recalibre toutes les allures du bloc 2 :\n  · 37'30 → marathon ≈ 2h52 → on garde 4'12/km à NYC\n  · 36'30 → marathon ≈ 2h47 → on peut viser 4'05/km\n  · > 38'30 → on sécurise à 4'18/km\nDeuxième objectif, aussi important : t'entraîner à partir juste. Premier km à l'allure cible, pas 10 s plus vite.",
           "target_pace": "3'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Alphafly 3 Prototype",
+          "shoe_note": "Test 10 km : l'occasion d'écouler les derniers kilomètres utiles d'une paire de course en fin de vie.",
+          "_shoe_key": "af3_proto"
         }
       ],
       "focus": "Semaine allégée (-25 %) puis test 10 km. Préviens le groupe que tu fais une séance courte mercredi : tu cours dimanche."
@@ -2135,7 +2368,10 @@
           "key": false,
           "description": "6 km très lent.",
           "target_pace": "5'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-09-15",
@@ -2147,7 +2383,11 @@
           "key": false,
           "description": "12 km à 5'10-5'25/km.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 13,
+          "shoe": "Hyperboost Edge (neuve)",
+          "shoe_note": "Stack maximal : amorti maximal sur les kilomètres faciles.",
+          "_shoe_key": "hyper"
         },
         {
           "date": "2026-09-16",
@@ -2159,7 +2399,10 @@
           "key": true,
           "description": "Séance complète du groupe.\n**Si le format est en répétitions longues (1000 m et plus)** : c'est ta séance de seuil de la semaine, vise 3'45-3'50/km et ne cours pas plus vite.\n**Si le format est court (200-400 m)** : c'est du neuromusculaire, laisse le groupe partir devant sur les dernières et ajoute 10 min à 3'52/km en fin de séance.\n⏱️ Le vrai exercice du mercredi soir n'est pas la vitesse, c'est de courir TA séance et pas celle du voisin.",
           "target_pace": "3'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Adizero Boston 13",
+          "shoe_note": "Dynamique et ferme, pour le travail rapide.",
+          "_shoe_key": "boston13"
         },
         {
           "date": "2026-09-17",
@@ -2171,7 +2414,10 @@
           "key": false,
           "description": "9 km très lent.",
           "target_pace": "5'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-09-18",
@@ -2183,7 +2429,11 @@
           "key": false,
           "description": "12 km à 5'10-5'25/km.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 14,
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm, la valeur sûre du volume.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-09-19",
@@ -2195,7 +2445,11 @@
           "key": false,
           "description": "8 km + 8×20\" en côte modérée.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 15,
+          "shoe": "On Cloudsurfer",
+          "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
+          "_shoe_key": "on_cs"
         },
         {
           "date": "2026-09-20",
@@ -2207,7 +2461,10 @@
           "key": true,
           "description": "27 km : 6 km à 5'00, puis 2×6 km à 4'12/km avec 2 km de trot entre les blocs, puis retour au calme.\nSimulation de relance en fatigue — exactement ce que demande NYC après le pont de Queensboro.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
           "target_pace": "4'12\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Adizero Boston 13",
+          "shoe_note": "Bloc à allure marathon en fin de sortie longue.",
+          "_shoe_key": "boston13"
         }
       ],
       "focus": "Reprise de la charge après le test. Les allures peuvent être ajustées selon le chrono du 10 km."
@@ -2231,7 +2488,10 @@
           "key": false,
           "description": "6 km très lent.",
           "target_pace": "5'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-09-22",
@@ -2243,7 +2503,11 @@
           "key": false,
           "description": "14 km à 5'10-5'25/km.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 16,
+          "shoe": "Hyperboost Edge (neuve)",
+          "shoe_note": "Stack maximal : amorti maximal sur les kilomètres faciles.",
+          "_shoe_key": "hyper"
         },
         {
           "date": "2026-09-23",
@@ -2255,7 +2519,10 @@
           "key": true,
           "description": "Séance complète. Demande à Harbat si le format peut inclure des répétitions longues (1000-2000 m) : c'est ce dont un marathonien a besoin, bien plus que du 400 m.\nNote ta FC moyenne sur les répétitions et compare à la S13 : c'est ton marqueur de progression le plus fiable.",
           "target_pace": "3'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Adizero Boston 13",
+          "shoe_note": "Dynamique et ferme, pour le travail rapide.",
+          "_shoe_key": "boston13"
         },
         {
           "date": "2026-09-24",
@@ -2267,7 +2534,10 @@
           "key": false,
           "description": "9 km très lent.",
           "target_pace": "5'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-09-25",
@@ -2279,7 +2549,11 @@
           "key": false,
           "description": "13 km à 5'10-5'25/km.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 17,
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm, la valeur sûre du volume.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-09-26",
@@ -2291,7 +2565,11 @@
           "key": false,
           "description": "10 km + 8 lignes.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 18,
+          "shoe": "On Cloudsurfer",
+          "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
+          "_shoe_key": "on_cs"
         },
         {
           "date": "2026-09-27",
@@ -2303,7 +2581,10 @@
           "key": true,
           "description": "29 km : 6 km à 5'00, 2×8 km à 4'12/km (2 km de trot entre), retour au calme.\n16 km à allure course en fin de grosse semaine. Ravito complet : gel toutes les 35 min, 500 ml/h.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
           "target_pace": "4'12\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Adizero Boston 13",
+          "shoe_note": "Bloc à allure marathon en fin de sortie longue.",
+          "_shoe_key": "boston13"
         }
       ],
       "focus": "Semaine la plus volumineuse du plan (98 km). C'est le plafond : au-delà, l'historique dit que tu paies en fraîcheur le jour J."
@@ -2338,7 +2619,11 @@
           "key": false,
           "description": "12 km à 5'10-5'25/km.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 19,
+          "shoe": "Hyperboost Edge (neuve)",
+          "shoe_note": "Stack maximal : amorti maximal sur les kilomètres faciles.",
+          "_shoe_key": "hyper"
         },
         {
           "date": "2026-09-30",
@@ -2350,7 +2635,10 @@
           "key": true,
           "description": "Séance du groupe à volume réduit d'un tiers. Semaine de décharge : l'intensité reste, le volume descend.",
           "target_pace": "3'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Adizero Boston 13",
+          "shoe_note": "Dynamique et ferme, pour le travail rapide.",
+          "_shoe_key": "boston13"
         },
         {
           "date": "2026-10-01",
@@ -2362,7 +2650,10 @@
           "key": false,
           "description": "8 km très lent.",
           "target_pace": "5'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-10-02",
@@ -2374,7 +2665,11 @@
           "key": false,
           "description": "11 km à 5'10-5'25/km.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 20,
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm, la valeur sûre du volume.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-10-03",
@@ -2386,7 +2681,11 @@
           "key": false,
           "description": "8 km + 8 lignes.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 21,
+          "shoe": "On Cloudsurfer",
+          "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
+          "_shoe_key": "on_cs"
         },
         {
           "date": "2026-10-04",
@@ -2398,7 +2697,10 @@
           "key": false,
           "description": "19 km : 15 km à 4'55 puis 4 km à 4'20/km.",
           "target_pace": "4'55\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Evo SL (neuve)",
+          "shoe_note": "Légère et amortie, confortable sur la durée.",
+          "_shoe_key": "evosl_new"
         }
       ],
       "focus": "Décharge nette (-27 %) pour assimiler le bloc 2 et arriver frais sur la sortie longue signature de la semaine suivante."
@@ -2422,7 +2724,10 @@
           "key": false,
           "description": "6 km très lent.",
           "target_pace": "5'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-10-06",
@@ -2434,7 +2739,11 @@
           "key": false,
           "description": "13 km à 5'10-5'25/km.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 22,
+          "shoe": "Hyperboost Edge (neuve)",
+          "shoe_note": "Stack maximal : amorti maximal sur les kilomètres faciles.",
+          "_shoe_key": "hyper"
         },
         {
           "date": "2026-10-07",
@@ -2446,7 +2755,10 @@
           "key": true,
           "description": "**Séance volontairement bridée : 60-70 % du volume du groupe, et tu restes 2-3 s/km en retrait sur chaque répétition.**\nLa sortie longue de dimanche est le meilleur prédicteur de ta course. Arriver dessus avec des jambes fraîches vaut infiniment plus qu'une belle séance de piste le mercredi.",
           "target_pace": "3'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Adizero Boston 13",
+          "shoe_note": "Dynamique et ferme, pour le travail rapide.",
+          "_shoe_key": "boston13"
         },
         {
           "date": "2026-10-08",
@@ -2458,7 +2770,10 @@
           "key": false,
           "description": "8 km très lent.",
           "target_pace": "5'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-10-09",
@@ -2470,7 +2785,11 @@
           "key": false,
           "description": "12 km à 5'10-5'25/km.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 23,
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm, la valeur sûre du volume.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-10-10",
@@ -2482,7 +2801,11 @@
           "key": false,
           "description": "8 km facile + 6 lignes.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 24,
+          "shoe": "On Cloudsurfer",
+          "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
+          "_shoe_key": "on_cs"
         },
         {
           "date": "2026-10-11",
@@ -2494,7 +2817,10 @@
           "key": true,
           "description": "32 km : 8 km à 5'00, puis **18 km en continu à 4'12/km**, puis 6 km de retour au calme.\nRépétition générale complète : mêmes chaussures, mêmes gels, même petit-déjeuner et même horaire que le jour J.\nDeux critères de réussite, à noter :\n  1. Les 18 km tenus sans dérive de plus de 5 s/km entre le 1er et le dernier tiers.\n  2. Aucun kilomètre couru plus vite que 4'08.\nSi les deux sont validés, le sub-3h à NYC est acquis.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
           "target_pace": "4'12\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Alphafly 3 « Chicago »",
+          "shoe_note": "Sortie longue avec bloc à allure course en octobre : on rode la chaussure de course.",
+          "_shoe_key": "af3_chi"
         }
       ],
       "focus": "LA semaine du plan. Dimanche est prioritaire sur tout le reste — mercredi soir, tu lèves le pied même si le groupe part fort."
@@ -2529,7 +2855,11 @@
           "key": false,
           "description": "12 km à 5'10-5'25/km.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 25,
+          "shoe": "Hyperboost Edge (neuve)",
+          "shoe_note": "Stack maximal : amorti maximal sur les kilomètres faciles.",
+          "_shoe_key": "hyper"
         },
         {
           "date": "2026-10-14",
@@ -2541,7 +2871,10 @@
           "key": true,
           "description": "Dernière séance de piste à volume plein. Profite-en : à partir de la semaine prochaine, tout est raccourci.",
           "target_pace": "3'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Adizero Boston 13",
+          "shoe_note": "Dynamique et ferme, pour le travail rapide.",
+          "_shoe_key": "boston13"
         },
         {
           "date": "2026-10-15",
@@ -2553,7 +2886,10 @@
           "key": false,
           "description": "8 km très lent.",
           "target_pace": "5'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-10-16",
@@ -2565,7 +2901,11 @@
           "key": false,
           "description": "12 km à 5'10-5'25/km.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 26,
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm, la valeur sûre du volume.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-10-17",
@@ -2577,7 +2917,11 @@
           "key": false,
           "description": "11 km + 8 lignes.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 27,
+          "shoe": "On Cloudsurfer",
+          "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
+          "_shoe_key": "on_cs"
         },
         {
           "date": "2026-10-18",
@@ -2589,7 +2933,10 @@
           "key": true,
           "description": "22 km : 12 km à 4'55, puis 8 km à 4'12/km, puis 2 km de retour au calme. Dernière sortie longue avec du contenu.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
           "target_pace": "4'12\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Alphafly 3 « Chicago »",
+          "shoe_note": "Sortie longue avec bloc à allure course en octobre : on rode la chaussure de course.",
+          "_shoe_key": "af3_chi"
         }
       ],
       "focus": "Dernière semaine consistante, et dernière vraie séance de piste. À partir de lundi prochain, tout descend jusqu'à la course."
@@ -2624,7 +2971,11 @@
           "key": false,
           "description": "12 km à 5'10-5'25/km + 6 lignes.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 28,
+          "shoe": "Hyperboost Edge (neuve)",
+          "shoe_note": "Stack maximal : amorti maximal sur les kilomètres faciles.",
+          "_shoe_key": "hyper"
         },
         {
           "date": "2026-10-21",
@@ -2636,7 +2987,10 @@
           "key": true,
           "description": "**Moitié du volume du groupe, et tu pars avant la fin.** Allure habituelle, pas plus vite.\nC'est la séance où l'ego fait le plus de dégâts : tu vas te sentir très bien (c'est l'affûtage qui commence à agir) et vouloir en faire plus. Le bénéfice est nul, le risque ne l'est pas.",
           "target_pace": "3'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Adizero Boston 13",
+          "shoe_note": "Dynamique et ferme, pour le travail rapide.",
+          "_shoe_key": "boston13"
         },
         {
           "date": "2026-10-22",
@@ -2648,7 +3002,10 @@
           "key": false,
           "description": "6 km très lent.",
           "target_pace": "5'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-10-23",
@@ -2660,7 +3017,10 @@
           "key": true,
           "description": "Échauffement 4 km + 5 km en continu à 4'12/km + retour 2 km.\nDernier vrai contact avec l'allure course. Mémorise la sensation : c'est celle que tu dois retrouver au km 5 à New York.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
           "target_pace": "4'12\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Adizero Boston 13",
+          "shoe_note": "Allure marathon : la paire la plus proche de tes sensations de course.",
+          "_shoe_key": "boston13"
         },
         {
           "date": "2026-10-24",
@@ -2683,7 +3043,10 @@
           "key": false,
           "description": "16 km : 12 km à 4'55 puis 4 km à 4'20/km. Courte et tonique.",
           "target_pace": "4'55\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Evo SL (neuve)",
+          "shoe_note": "Légère et amortie, confortable sur la durée.",
+          "_shoe_key": "evosl_new"
         }
       ],
       "focus": "Volume -45 %, mais on garde 5 sorties et toute l'intensité. Réduire le nombre de sorties dégrade la performance ; c'est la DURÉE qui s'effondre, pas la fréquence. Ça va te sembler trop peu : c'est exactement le but."
@@ -2707,7 +3070,10 @@
           "key": false,
           "description": "6 km très lent après la sortie longue d'hier. Dernier jour où tu peux te sentir lourd sans que ce soit un signal.",
           "target_pace": "5'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-10-27",
@@ -2719,7 +3085,10 @@
           "key": true,
           "description": "Échauffement 3 km + 3×3 min à 4'10/km (récup 2 min) + retour 2 km.\nDernière touche d'allure course. Courte, tonique, zéro fatigue. À partir de ce soir : recharge glucidique 8-10 g/kg/jour.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
           "target_pace": "4'12\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Adizero Boston 13",
+          "shoe_note": "Allure marathon : la paire la plus proche de tes sensations de course.",
+          "_shoe_key": "boston13"
         },
         {
           "date": "2026-10-28",
@@ -2731,7 +3100,11 @@
           "key": false,
           "description": "6 km facile + 6×20\" de lignes en souplesse.\n🏟️ **Pas de piste ce soir.** Préviens Harbat maintenant, pas mercredi : une séance de groupe à 4 jours du marathon est le meilleur moyen de gâcher 13 semaines de travail.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 29,
+          "shoe": "Pegasus 41",
+          "shoe_note": "10 mm, la valeur sûre du volume.",
+          "_shoe_key": "peg41"
         },
         {
           "date": "2026-10-29",
@@ -2743,7 +3116,11 @@
           "key": false,
           "description": "6 km très facile. Valise le soir : chaussures de course, dossard, gels et tenue de course **dans le bagage cabine** — jamais en soute.",
           "target_pace": "5'20\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 30,
+          "shoe": "On Cloudsurfer",
+          "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
+          "_shoe_key": "on_cs"
         },
         {
           "date": "2026-10-30",
@@ -2755,7 +3132,11 @@
           "key": false,
           "description": "5 km très lent au lever, avant de partir à l'aéroport. Vol à midi.\nDans l'avion : boire beaucoup, se lever toutes les 90 min, chaussettes de compression. Cale-toi sur l'heure de New York dès l'embarquement — tu arrives en fin d'après-midi, tiens jusqu'à 22 h locales avant de dormir.",
           "target_pace": "5'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "_easy_idx": 31,
+          "shoe": "Hyperboost Edge (neuve)",
+          "shoe_note": "Stack maximal : amorti maximal sur les kilomètres faciles.",
+          "_shoe_key": "hyper"
         },
         {
           "date": "2026-10-31",
@@ -2767,7 +3148,10 @@
           "key": false,
           "description": "4 km très lent le matin dans Central Park — la lumière du matin recale l'horloge biologique bien mieux qu'une grasse matinée.\n**Expo au Javits Center dans la foulée** : c'est le seul retrait possible du dossard, il n'y en a pas le jour de la course, et l'expo ferme le samedi en fin d'après-midi. Vas-y tôt, reste 1 h maximum, puis jambes en l'air.\nPréparation du sac, épinglage du dossard, petit-déjeuner testé. Couché tôt : départ pour Staten Island au milieu de la nuit.",
           "target_pace": "5'40\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "On Cloudsurfer",
+          "shoe_note": "Déblocage très lent, drop élevé.",
+          "_shoe_key": "on_cs"
         },
         {
           "date": "2026-11-01",
@@ -2779,7 +3163,9 @@
           "key": true,
           "description": "**Objectif : 2h57 — 4'12/km de moyenne, en négatif.**\n\nTes 7 marathons disent une seule chose : quand tu pars à moins de 8 s/km de ton allure moyenne finale, tu négatives et tu performes. Quand tu pars 18 s/km trop vite, tu perds 3 à 6 minutes. Sans exception, corrélation 0,97. Chicago = départ à 3'47.\n\n**La seule règle qui compte : aucun kilomètre sous 4'08 avant le 30e.**\n\n· km 1-3 (pont de Verrazzano) : 4'20-4'25 en montée. Le pont te protège de toi-même, laisse-le faire. En descente, ne pas relancer.\n· km 4-25 (Brooklyn) : 4'12-4'14. C'est plat, la foule est énorme, tu vas te sentir invincible. C'EST LE PIÈGE — c'est exactement là que Chicago s'est joué. Regarde ta montre tous les kilomètres.\n· km 25-26 (pont de Queensboro) : +15 à 20 s/km, silencieux et raide. Tu perds du temps ici, c'est prévu, ne compense pas.\n· km 27-32 (1re Avenue) : la foule pousse. Tiens 4'10-4'12. Ne convertis pas l'émotion en vitesse.\n· km 33-37 (Bronx et retour) : le vrai marathon commence. Objectif : ne pas dépasser 4'16.\n· km 38-42 (Central Park) : ça monte par paliers. Si tu as respecté les 37 premiers, c'est ici que tu doubles des dizaines de coureurs. Tout donner sur les 2 derniers.\n\nRavitaillement : 1 gel toutes les 35-40 min à partir du km 8, boire à chaque poste.",
           "target_pace": "4'12\"/km",
-          "status": "pending"
+          "status": "pending",
+          "shoe": "Alphafly 3 « Chicago » ou Vaporfly Next% 3",
+          "shoe_note": "Choix tranché sur la sortie longue du 11 octobre."
         }
       ],
       "focus": "35 km d'entraînement, soit -63 % : la charge la plus basse du plan. Quatre jours en France, vol le vendredi 30 à midi, arrivée à NYC en fin d'après-midi. Beaucoup de sommeil."
