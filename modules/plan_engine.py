@@ -859,47 +859,74 @@ def adapt_plan(plan: dict) -> dict:
             sl = next((d for d in future_days if d.get('type','').startswith('long')), None)
             if sl:
                 bonus = min(5, max(2, abs(drift) / 2))
-                sl['km'] = round(sl['km'] + bonus, 1)
-                sl['description'] += f"\n[ADAPTÉ : +{bonus:.0f}km pour compenser le déficit volume de la semaine.]"
-                plan['adaptations'].append({
-                    'kind': 'volume_boost',
-                    'date': sl.get('date'),
-                    'delta_km': bonus,
-                    'reason': f"Déficit volume {abs(drift_pct):.0f}%",
-                })
+                # Idempotence : le CI tourne plusieurs fois par jour et resauve
+                # le plan. Sans ce garde-fou, le bonus se cumule à chaque build.
+                if not sl.get('_adapt_volume'):
+                    sl['km'] = round(sl['km'] + bonus, 1)
+                    sl['description'] += f"\n[ADAPTÉ : +{bonus:.0f}km pour compenser le déficit volume de la semaine.]"
+                    sl['_adapt_volume'] = True
+                    plan['adaptations'].append({
+                        'kind': 'volume_boost',
+                        'date': sl.get('date'),
+                        'delta_km': bonus,
+                        'reason': f"Déficit volume {abs(drift_pct):.0f}%",
+                    })
         elif drift_pct > 15:
             # Sur-volume : -10% sur les footings/qualité à venir
+            reduced = False
             for d in future_days:
-                if d.get('type') in ('easy', 'recovery'):
-                    new_km = round(d['km'] * 0.9, 1)
-                    d['km'] = new_km
+                if d.get('type') in ('easy', 'recovery') and not d.get('_adapt_volume'):
+                    d['km'] = round(d['km'] * 0.9, 1)
                     d['description'] += "\n[ADAPTÉ : -10% pour gérer la charge de la semaine.]"
-            plan['adaptations'].append({
-                'kind': 'volume_reduce',
-                'week_num': cur_week['week_num'],
-                'delta_pct': -10,
-                'reason': f"Sur-volume {drift_pct:+.0f}%",
-            })
+                    d['_adapt_volume'] = True
+                    reduced = True
+            if reduced:
+                plan['adaptations'].append({
+                    'kind': 'volume_reduce',
+                    'week_num': cur_week['week_num'],
+                    'delta_pct': -10,
+                    'reason': f"Sur-volume {drift_pct:+.0f}%",
+                })
 
     # --- 5. Fatigue accumulée
-    missed_recent = sum(1 for w in plan['weeks'] for d in w.get('days', [])
-                       if d.get('status') == 'missed' and d.get('key'))
+    # Borné aux 21 derniers jours : sinon le compteur ne redescend jamais et
+    # toute séance clé future finit downgradée en footing, indéfiniment.
+    fatigue_cutoff = today - timedelta(days=21)
+    missed_recent = 0
+    for w in plan['weeks']:
+        for d in w.get('days', []):
+            if not (d.get('status') == 'missed' and d.get('key')):
+                continue
+            try:
+                dd = date.fromisoformat(d['date'])
+            except Exception:
+                continue
+            if fatigue_cutoff <= dd < today:
+                missed_recent += 1
     if missed_recent >= 3 and future_days:
+        downgraded = False
         for d in future_days:
-            if d.get('key'):
+            if d.get('key') and not d.get('_downgraded_from'):
                 # Downgrade la qualité en footing
+                new_km = round(d['km'] * 0.7, 1)
                 d['_downgraded_from'] = {'title': d.get('title'), 'km': d.get('km'),
-                                         'description': d.get('description')}
-                d['title'] = f"Footing récup {round(d['km'] * 0.7)}km"
+                                         'description': d.get('description'),
+                                         'target_pace': d.get('target_pace')}
+                d['title'] = f"Footing récup {new_km:g}km"
                 d['type']  = 'recovery'
-                d['km']    = round(d['km'] * 0.7, 1)
+                d['km']    = new_km
                 d['key']   = False
+                # L'allure cible de la séance d'origine n'a plus de sens sur un
+                # footing de récup : on la retire pour ne pas induire en erreur.
+                d.pop('target_pace', None)
                 d['description'] = "Séance qualité downgradée en récup. Plusieurs séances clés manquées récemment — priorité à la régénération."
-        plan['adaptations'].append({
-            'kind': 'recovery_week',
-            'week_num': cur_week['week_num'],
-            'reason': f"{missed_recent} séances clés manquées — semaine de récup forcée",
-        })
+                downgraded = True
+        if downgraded:
+            plan['adaptations'].append({
+                'kind': 'recovery_week',
+                'week_num': cur_week['week_num'],
+                'reason': f"{missed_recent} séances clés manquées sur 21 jours — semaine de récup forcée",
+            })
 
     return plan
 
