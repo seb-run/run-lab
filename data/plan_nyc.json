@@ -1634,7 +1634,7 @@
           "target_pace": "3'53\"/km",
           "date": "2026-08-02",
           "dow": "Sun",
-          "status": "today",
+          "status": "missed",
           "actual": null,
           "_downgraded_from": {
             "title": "SL 27km · 12km MP au milieu",
@@ -1647,14 +1647,14 @@
       "volume_planned_to_date": 44.8,
       "volume_drift_pct": -20.8,
       "compliance": {
-        "km_pct": 79,
+        "km_pct": 62,
         "km_done": 35.5,
-        "km_planned": 44.8,
+        "km_planned": 57.0,
         "sessions_done": 2,
-        "sessions_planned": 5,
+        "sessions_planned": 6,
         "keys_success": 0,
         "keys_total": 0,
-        "points": 80,
+        "points": 69,
         "verdict": "partial"
       }
     },
@@ -1676,7 +1676,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending",
+          "status": "today",
           "actual": null
         },
         {
@@ -1774,7 +1774,10 @@
           "actual": null
         }
       ],
-      "focus": "Refaire du volume propre. Zéro intensité dure : on réinstalle l'allure facile et on charge le tendon progressivement."
+      "focus": "Refaire du volume propre. Zéro intensité dure : on réinstalle l'allure facile et on charge le tendon progressivement.",
+      "volume_actual_to_date": 0.0,
+      "volume_planned_to_date": 0.0,
+      "volume_drift_pct": 0
     },
     {
       "week_num": 10,
