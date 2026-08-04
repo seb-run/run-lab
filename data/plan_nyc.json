@@ -177,7 +177,8 @@
             "type": "endurance",
             "title": "#98 : run léger matinal",
             "n": 1,
-            "note": null
+            "note": null,
+            "dyn": null
           },
           "status": "bonus",
           "score": null
@@ -215,7 +216,8 @@
             "type": "endurance",
             "title": "#99 : run w/ CB",
             "n": 1,
-            "note": null
+            "note": null,
+            "dyn": null
           },
           "score": {
             "points": 71,
@@ -262,7 +264,8 @@
             "type": "endurance",
             "title": "#100 : run léger w/ Lau’",
             "n": 1,
-            "note": null
+            "note": null,
+            "dyn": null
           },
           "score": {
             "points": 49,
@@ -342,7 +345,8 @@
             "type": "marathon",
             "title": "#101 : Manhattan Loop 🗽",
             "n": 1,
-            "note": "Depuis le temps que je l’avais en tête, mais tellement dur avec cette chaleur…\nQuelques moments de marche, parfois proche d’abandonner 🥵\nMerci CHRISTOPHE BEL pour les 25km de fin, merci Olivier LEDOUX Enzo VP Lucas Dupont pour les 11 derniers 🙏🏼"
+            "note": "Depuis le temps que je l’avais en tête, mais tellement dur avec cette chaleur…\nQuelques moments de marche, parfois proche d’abandonner 🥵\nMerci CHRISTOPHE BEL pour les 25km de fin, merci Olivier LEDOUX Enzo VP Lucas Dupont pour les 11 derniers 🙏🏼",
+            "dyn": null
           },
           "score": {
             "points": 41,
@@ -430,7 +434,8 @@
             "type": "footing",
             "title": "#102 : run jour de match 🇫🇷",
             "n": 1,
-            "note": null
+            "note": null,
+            "dyn": null
           },
           "score": {
             "points": 55,
@@ -477,7 +482,8 @@
             "type": "footing",
             "title": "#103 : dernière a NYC avant le Marathon",
             "n": 1,
-            "note": "J-150"
+            "note": "J-150",
+            "dyn": null
           },
           "score": {
             "points": 64,
@@ -596,6 +602,7 @@
             "title": "#104 : 26 degrés à 5h10 🥵",
             "n": 1,
             "note": "Belle séance bla-bla avec Mohamed Azzam 🙏🏼",
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
@@ -755,6 +762,7 @@
             "title": "#105 : quelques degrés de gagné à Clairf’",
             "n": 1,
             "note": "Malgré 2 attaques de rapace 🦅🥵",
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
@@ -967,6 +975,7 @@
             "title": "#106 : run du dimanche",
             "n": 1,
             "note": null,
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
@@ -1110,6 +1119,7 @@
             "title": "#107 : run à la fraîche w/ CB",
             "n": 1,
             "note": null,
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
@@ -1227,6 +1237,7 @@
             "title": "#108 : retour avec la team HRL",
             "n": 1,
             "note": "4 x (600 - 1’ - 400 - 1’ - 200 - 3’)",
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
@@ -1507,6 +1518,7 @@
             "title": "#109 : run entre collègues",
             "n": 1,
             "note": null,
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
@@ -1616,6 +1628,7 @@
             "title": "#110 : run tracteur = sieste Méa",
             "n": 1,
             "note": null,
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
@@ -1777,6 +1790,7 @@
             "title": "#111 : run léger",
             "n": 1,
             "note": null,
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
@@ -1852,6 +1866,7 @@
             "title": "#112 : chaleur même en forêt",
             "n": 1,
             "note": null,
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
@@ -1961,6 +1976,7 @@
             "title": "#113 : blablarun matinal w/ Kevin",
             "n": 1,
             "note": null,
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
@@ -2082,6 +2098,7 @@
             "title": "#114 : run « caniculaire » ✌🏼",
             "n": 1,
             "note": "Portion bla-bla avec l’argentin (👿) David Nasset et en croisant Loréna Méningand 💪🏼",
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
@@ -2215,6 +2232,7 @@
             "title": "#115 : retour à Bouconne",
             "n": 1,
             "note": null,
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
@@ -2352,6 +2370,7 @@
             "title": "#116 : Bouconne = forêt tropicale ? 🌡️🥵",
             "n": 1,
             "note": "SL découverte avec Xavier LABARRERE mais retour sur la ligne droite signature 🤯",
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
@@ -2614,6 +2633,7 @@
             "title": "#117 : run matin",
             "n": 1,
             "note": null,
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
@@ -2733,6 +2753,7 @@
             "title": "Afternoon Run",
             "n": 4,
             "note": null,
+            "dyn": null,
             "splits": [
               {
                 "km": 0.94,
@@ -2943,6 +2964,7 @@
             "title": "#119 : run impro",
             "n": 1,
             "note": "👋🏼 Sébastien Jonvaux",
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
@@ -3067,6 +3089,7 @@
             "title": "#120 : pensant que les jardins fermaient à 20h… 😅",
             "n": 1,
             "note": null,
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
@@ -3207,6 +3230,7 @@
             "title": "#121 : run à midi",
             "n": 1,
             "note": null,
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
@@ -3325,6 +3349,7 @@
             "title": "#122 : agréable sortie du samedi",
             "n": 1,
             "note": null,
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
@@ -3450,6 +3475,7 @@
             "title": "#123 : run en duo",
             "n": 1,
             "note": null,
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
@@ -3599,6 +3625,7 @@
             "title": "#124 : run matinal ensoleillé",
             "n": 1,
             "note": null,
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
@@ -3739,6 +3766,7 @@
             "title": "#125 : run aux BPM",
             "n": 1,
             "note": null,
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
@@ -3877,6 +3905,7 @@
             "title": "#126 : run matinal",
             "n": 1,
             "note": null,
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
@@ -4051,6 +4080,7 @@
             "title": "Course à pied le matin",
             "n": 1,
             "note": null,
+            "dyn": null,
             "splits": [
               {
                 "km": 1.0,
