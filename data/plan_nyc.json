@@ -172,8 +172,8 @@
             "duration_min": 41,
             "pace_sec": 306,
             "pace_str": "5'06\"/km",
-            "fc": null,
-            "cadence": null,
+            "fc": 140,
+            "cadence": 180,
             "type": "endurance",
             "title": "#98 : run léger matinal",
             "n": 1,
@@ -210,8 +210,8 @@
             "duration_min": 39,
             "pace_sec": 289,
             "pace_str": "4'49\"/km",
-            "fc": null,
-            "cadence": null,
+            "fc": 144,
+            "cadence": 179,
             "type": "endurance",
             "title": "#99 : run w/ CB",
             "n": 1,
@@ -229,7 +229,13 @@
             "pace_actual_str": null,
             "pace_delta_s": null,
             "is_quality": false,
-            "hr": null,
+            "hr": {
+              "avg": 144,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 3.8,
+              "flags": []
+            },
             "reasons": [
               "Volume 76%"
             ]
@@ -251,10 +257,10 @@
             "duration_min": 65,
             "pace_sec": 299,
             "pace_str": "4'59\"/km",
-            "fc": null,
-            "cadence": null,
+            "fc": 146,
+            "cadence": 178,
             "type": "endurance",
-            "title": "#100 : run léger w/ Lau'",
+            "title": "#100 : run léger w/ Lau’",
             "n": 1,
             "note": null
           },
@@ -270,7 +276,13 @@
             "pace_actual_str": "4'59\"/km",
             "pace_delta_s": 76,
             "is_quality": true,
-            "hr": null,
+            "hr": {
+              "avg": 146,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 0.7,
+              "flags": []
+            },
             "reasons": [
               "Volume 85%",
               "Allure +76\"/km vs cible"
@@ -325,12 +337,12 @@
             "duration_min": 297,
             "pace_sec": 349,
             "pace_str": "5'49\"/km",
-            "fc": null,
-            "cadence": null,
+            "fc": 159,
+            "cadence": 172,
             "type": "marathon",
             "title": "#101 : Manhattan Loop 🗽",
             "n": 1,
-            "note": null
+            "note": "Depuis le temps que je l’avais en tête, mais tellement dur avec cette chaleur…\nQuelques moments de marche, parfois proche d’abandonner 🥵\nMerci CHRISTOPHE BEL pour les 25km de fin, merci Olivier LEDOUX Enzo VP Lucas Dupont pour les 11 derniers 🙏🏼"
           },
           "score": {
             "points": 41,
@@ -344,10 +356,19 @@
             "pace_actual_str": "5'49\"/km",
             "pace_delta_s": 58,
             "is_quality": false,
-            "hr": null,
+            "hr": {
+              "avg": 159,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 14.5,
+              "flags": [
+                "drift_high"
+              ]
+            },
             "reasons": [
               "Volume 174%",
-              "Allure +58\"/km vs cible"
+              "Allure +58\"/km vs cible",
+              "Dérive cardiaque +14.5%"
             ]
           }
         }
@@ -404,8 +425,8 @@
             "duration_min": 75,
             "pace_sec": 337,
             "pace_str": "5'37\"/km",
-            "fc": null,
-            "cadence": null,
+            "fc": 137,
+            "cadence": 176,
             "type": "footing",
             "title": "#102 : run jour de match 🇫🇷",
             "n": 1,
@@ -423,7 +444,13 @@
             "pace_actual_str": "5'37\"/km",
             "pace_delta_s": 131,
             "is_quality": true,
-            "hr": null,
+            "hr": {
+              "avg": 137,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": -10.7,
+              "flags": []
+            },
             "reasons": [
               "Volume 94%",
               "Allure +131\"/km vs cible"
@@ -445,12 +472,12 @@
             "duration_min": 42,
             "pace_sec": 316,
             "pace_str": "5'16\"/km",
-            "fc": null,
-            "cadence": null,
+            "fc": 138,
+            "cadence": 178,
             "type": "footing",
             "title": "#103 : dernière a NYC avant le Marathon",
             "n": 1,
-            "note": null
+            "note": "J-150"
           },
           "score": {
             "points": 64,
@@ -464,7 +491,13 @@
             "pace_actual_str": null,
             "pace_delta_s": null,
             "is_quality": false,
-            "hr": null,
+            "hr": {
+              "avg": 138,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": -5.9,
+              "flags": []
+            },
             "reasons": [
               "Volume 72%"
             ]
@@ -557,12 +590,134 @@
             "duration_min": 100,
             "pace_sec": 311,
             "pace_str": "5'11\"/km",
-            "fc": null,
-            "cadence": null,
+            "fc": 146,
+            "cadence": 179,
             "type": "endurance",
             "title": "#104 : 26 degrés à 5h10 🥵",
             "n": 1,
-            "note": null
+            "note": "Belle séance bla-bla avec Mohamed Azzam 🙏🏼",
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 340,
+                "fc": 125,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 322,
+                "fc": 136,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 321,
+                "fc": 143,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 310,
+                "fc": 144,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 331,
+                "fc": 129,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 336,
+                "fc": 133,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 334,
+                "fc": 138,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 329,
+                "fc": 140,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 319,
+                "fc": 142,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 307,
+                "fc": 146,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 305,
+                "fc": 148,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 306,
+                "fc": 148,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 302,
+                "fc": 154,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 303,
+                "fc": 155,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 291,
+                "fc": 158,
+                "ca": 181
+              },
+              {
+                "km": 1.0,
+                "ps": 294,
+                "fc": 158,
+                "ca": 181
+              },
+              {
+                "km": 1.0,
+                "ps": 295,
+                "fc": 155,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 285,
+                "fc": 162,
+                "ca": 182
+              },
+              {
+                "km": 1.0,
+                "ps": 281,
+                "fc": 161,
+                "ca": 182
+              },
+              {
+                "km": 0.37,
+                "ps": 296,
+                "fc": 163,
+                "ca": 181
+              }
+            ]
           },
           "score": null
         },
@@ -594,12 +749,140 @@
             "duration_min": 100,
             "pace_sec": 299,
             "pace_str": "4'59\"/km",
-            "fc": null,
-            "cadence": null,
+            "fc": 150,
+            "cadence": 178,
             "type": "endurance",
-            "title": "#105 : quelques degrés de gagné à Clairf'",
+            "title": "#105 : quelques degrés de gagné à Clairf’",
             "n": 1,
-            "note": null
+            "note": "Malgré 2 attaques de rapace 🦅🥵",
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 328,
+                "fc": 128,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 291,
+                "fc": 130,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 303,
+                "fc": 137,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 315,
+                "fc": 149,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 300,
+                "fc": 148,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 299,
+                "fc": 149,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 300,
+                "fc": 151,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 295,
+                "fc": 151,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 298,
+                "fc": 153,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 297,
+                "fc": 152,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 300,
+                "fc": 152,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 302,
+                "fc": 151,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 299,
+                "fc": 153,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 295,
+                "fc": 154,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 290,
+                "fc": 156,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 292,
+                "fc": 156,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 294,
+                "fc": 157,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 290,
+                "fc": 159,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 291,
+                "fc": 162,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 291,
+                "fc": 162,
+                "ca": 178
+              },
+              {
+                "km": 0.07,
+                "ps": 283,
+                "fc": 161,
+                "ca": 175
+              }
+            ]
           },
           "score": {
             "points": 70,
@@ -613,7 +896,13 @@
             "pace_actual_str": null,
             "pace_delta_s": null,
             "is_quality": false,
-            "hr": null,
+            "hr": {
+              "avg": 150,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 2.6,
+              "flags": []
+            },
             "reasons": [
               "Volume 176%"
             ]
@@ -673,9 +962,9 @@
             "pace_sec": 282,
             "pace_str": "4'42\"/km",
             "fc": 155,
-            "cadence": 89,
-            "type": "frac_court",
-            "title": "Course à pied le midi",
+            "cadence": 178,
+            "type": "endurance",
+            "title": "#106 : run du dimanche",
             "n": 1,
             "note": null,
             "splits": [
@@ -683,73 +972,73 @@
                 "km": 1.0,
                 "ps": 291,
                 "fc": 133,
-                "ca": 90
+                "ca": 179
               },
               {
                 "km": 1.0,
                 "ps": 276,
                 "fc": 154,
-                "ca": 89
+                "ca": 178
               },
               {
                 "km": 1.0,
-                "ps": 289,
+                "ps": 279,
                 "fc": 155,
-                "ca": 89
+                "ca": 177
               },
               {
                 "km": 1.0,
                 "ps": 274,
                 "fc": 157,
-                "ca": 89
+                "ca": 178
               },
               {
                 "km": 1.0,
-                "ps": 281,
+                "ps": 268,
                 "fc": 157,
-                "ca": 89
+                "ca": 177
               },
               {
                 "km": 1.0,
                 "ps": 276,
                 "fc": 160,
-                "ca": 89
+                "ca": 178
               },
               {
                 "km": 1.0,
                 "ps": 261,
                 "fc": 166,
-                "ca": 90
+                "ca": 179
               },
               {
                 "km": 1.0,
-                "ps": 739,
+                "ps": 290,
                 "fc": 156,
-                "ca": 88
+                "ca": 177
               },
               {
                 "km": 1.0,
                 "ps": 281,
                 "fc": 151,
-                "ca": 89
+                "ca": 178
               },
               {
                 "km": 1.0,
-                "ps": 306,
+                "ps": 290,
                 "fc": 157,
-                "ca": 89
+                "ca": 177
               },
               {
                 "km": 1.0,
                 "ps": 285,
                 "fc": 160,
-                "ca": 88
+                "ca": 176
               },
               {
                 "km": 1.0,
-                "ps": 557,
+                "ps": 304,
                 "fc": 154,
-                "ca": 88
+                "ca": 176
               }
             ]
           },
@@ -769,7 +1058,7 @@
               "avg": 155,
               "cap": null,
               "over_cap": null,
-              "decoupling_pct": 1.9,
+              "decoupling_pct": 4.3,
               "flags": []
             },
             "reasons": [
@@ -809,8 +1098,100 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet ou mobilité/yoga 20-30min. Récupération.",
-          "status": "done",
-          "actual": null
+          "status": "bonus",
+          "actual": {
+            "km": 12.4,
+            "duration_min": 63,
+            "pace_sec": 303,
+            "pace_str": "5'03\"/km",
+            "fc": 142,
+            "cadence": 177,
+            "type": "endurance",
+            "title": "#107 : run à la fraîche w/ CB",
+            "n": 1,
+            "note": null,
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 334,
+                "fc": 126,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 293,
+                "fc": 137,
+                "ca": 181
+              },
+              {
+                "km": 1.0,
+                "ps": 299,
+                "fc": 128,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 298,
+                "fc": 139,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 304,
+                "fc": 144,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 311,
+                "fc": 152,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 297,
+                "fc": 144,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 291,
+                "fc": 146,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 299,
+                "fc": 144,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 299,
+                "fc": 145,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 297,
+                "fc": 146,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 303,
+                "fc": 148,
+                "ca": 177
+              },
+              {
+                "km": 0.45,
+                "ps": 314,
+                "fc": 146,
+                "ca": 172
+              }
+            ]
+          },
+          "score": null
         },
         {
           "type": "fartlek",
@@ -834,8 +1215,275 @@
           "duration_min": 64,
           "key": false,
           "description": "12km à 5'26\"/km. Allure conversationnelle, FC en zone 2.",
-          "status": "missed",
-          "actual": null
+          "status": "over",
+          "actual": {
+            "km": 20.5,
+            "duration_min": 104,
+            "pace_sec": 303,
+            "pace_str": "5'03\"/km",
+            "fc": 154,
+            "cadence": 169,
+            "type": "frac_court",
+            "title": "#108 : retour avec la team HRL",
+            "n": 1,
+            "note": "4 x (600 - 1’ - 400 - 1’ - 200 - 3’)",
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 303,
+                "fc": 131,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 309,
+                "fc": 151,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 293,
+                "fc": 156,
+                "ca": 175
+              },
+              {
+                "km": 1.0,
+                "ps": 291,
+                "fc": 156,
+                "ca": 175
+              },
+              {
+                "km": 1.0,
+                "ps": 311,
+                "fc": 145,
+                "ca": 175
+              },
+              {
+                "km": 1.0,
+                "ps": 314,
+                "fc": 146,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 310,
+                "fc": 152,
+                "ca": 174
+              },
+              {
+                "km": 0.24,
+                "ps": 326,
+                "fc": 141,
+                "ca": 178
+              },
+              {
+                "km": 0.62,
+                "ps": 212,
+                "fc": 166,
+                "ca": 187
+              },
+              {
+                "km": 0.14,
+                "ps": 416,
+                "fc": 158,
+                "ca": 159
+              },
+              {
+                "km": 0.39,
+                "ps": 205,
+                "fc": 170,
+                "ca": 181
+              },
+              {
+                "km": 0.13,
+                "ps": 469,
+                "fc": 155,
+                "ca": 128
+              },
+              {
+                "km": 0.2,
+                "ps": 183,
+                "fc": 166,
+                "ca": 184
+              },
+              {
+                "km": 0.43,
+                "ps": 419,
+                "fc": 142,
+                "ca": 153
+              },
+              {
+                "km": 0.6,
+                "ps": 205,
+                "fc": 173,
+                "ca": 184
+              },
+              {
+                "km": 0.14,
+                "ps": 423,
+                "fc": 160,
+                "ca": 138
+              },
+              {
+                "km": 0.4,
+                "ps": 190,
+                "fc": 176,
+                "ca": 187
+              },
+              {
+                "km": 0.13,
+                "ps": 453,
+                "fc": 164,
+                "ca": 134
+              },
+              {
+                "km": 0.2,
+                "ps": 189,
+                "fc": 170,
+                "ca": 187
+              },
+              {
+                "km": 0.38,
+                "ps": 468,
+                "fc": 140,
+                "ca": 133
+              },
+              {
+                "km": 0.6,
+                "ps": 204,
+                "fc": 175,
+                "ca": 183
+              },
+              {
+                "km": 0.12,
+                "ps": 473,
+                "fc": 162,
+                "ca": 136
+              },
+              {
+                "km": 0.4,
+                "ps": 193,
+                "fc": 175,
+                "ca": 189
+              },
+              {
+                "km": 0.12,
+                "ps": 464,
+                "fc": 166,
+                "ca": 137
+              },
+              {
+                "km": 0.2,
+                "ps": 171,
+                "fc": 175,
+                "ca": 194
+              },
+              {
+                "km": 0.4,
+                "ps": 452,
+                "fc": 144,
+                "ca": 137
+              },
+              {
+                "km": 0.6,
+                "ps": 197,
+                "fc": 180,
+                "ca": 188
+              },
+              {
+                "km": 0.14,
+                "ps": 442,
+                "fc": 167,
+                "ca": 142
+              },
+              {
+                "km": 0.4,
+                "ps": 176,
+                "fc": 182,
+                "ca": 190
+              },
+              {
+                "km": 0.13,
+                "ps": 471,
+                "fc": 171,
+                "ca": 138
+              },
+              {
+                "km": 0.21,
+                "ps": 155,
+                "fc": 180,
+                "ca": 195
+              },
+              {
+                "km": 1.0,
+                "ps": 362,
+                "fc": 152,
+                "ca": 169
+              },
+              {
+                "km": 1.0,
+                "ps": 323,
+                "fc": 146,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 317,
+                "fc": 150,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 327,
+                "fc": 153,
+                "ca": 181
+              },
+              {
+                "km": 1.0,
+                "ps": 318,
+                "fc": 158,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 321,
+                "fc": 156,
+                "ca": 175
+              },
+              {
+                "km": 0.17,
+                "ps": 342,
+                "fc": 157,
+                "ca": 174
+              }
+            ]
+          },
+          "score": {
+            "points": 70,
+            "verdict": "partial",
+            "verdict_label": "Partielle",
+            "volume_pct": 174,
+            "volume_points": 70,
+            "pace_points": null,
+            "pace_target_s": null,
+            "pace_actual_s": null,
+            "pace_actual_str": null,
+            "pace_delta_s": null,
+            "is_quality": false,
+            "hr": {
+              "avg": 154,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 11.7,
+              "flags": [
+                "drift_high"
+              ]
+            },
+            "reasons": [
+              "Volume 174%",
+              "Dérive cardiaque +11.7%"
+            ]
+          }
         },
         {
           "type": "tempo",
@@ -847,8 +1495,93 @@
           "target_pace": "3'43\"/km",
           "date": "2026-07-02",
           "dow": "Thu",
-          "status": "missed",
-          "actual": null
+          "status": "under",
+          "actual": {
+            "km": 8.0,
+            "duration_min": 41,
+            "pace_sec": 311,
+            "pace_str": "5'11\"/km",
+            "fc": 146,
+            "cadence": 176,
+            "type": "endurance",
+            "title": "#109 : run entre collègues",
+            "n": 1,
+            "note": null,
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 324,
+                "fc": 127,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 309,
+                "fc": 140,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 313,
+                "fc": 144,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 309,
+                "fc": 143,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 300,
+                "fc": 154,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 291,
+                "fc": 155,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 306,
+                "fc": 154,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 329,
+                "fc": 149,
+                "ca": 173
+              }
+            ]
+          },
+          "score": {
+            "points": 8,
+            "verdict": "failed",
+            "verdict_label": "Échouée",
+            "volume_pct": 48,
+            "volume_points": 15,
+            "pace_points": 0,
+            "pace_target_s": 223,
+            "pace_actual_s": 311,
+            "pace_actual_str": "5'11\"/km",
+            "pace_delta_s": 88,
+            "is_quality": true,
+            "hr": {
+              "avg": 146,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 4.1,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 48%",
+              "Allure +88\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-07-03",
@@ -871,8 +1604,122 @@
           "duration_min": 63,
           "key": false,
           "description": "12km à 5'26\"/km + 4×100m lignes droites en fin. Activation pour la SL de dimanche.",
-          "status": "missed",
-          "actual": null
+          "status": "done",
+          "actual": {
+            "km": 12.8,
+            "duration_min": 66,
+            "pace_sec": 307,
+            "pace_str": "5'07\"/km",
+            "fc": 161,
+            "cadence": 180,
+            "type": "endurance",
+            "title": "#110 : run tracteur = sieste Méa",
+            "n": 1,
+            "note": null,
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 341,
+                "fc": 144,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 324,
+                "fc": 155,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 309,
+                "fc": 161,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 300,
+                "fc": 166,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 302,
+                "fc": 158,
+                "ca": 181
+              },
+              {
+                "km": 1.0,
+                "ps": 303,
+                "fc": 162,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 299,
+                "fc": 163,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 300,
+                "fc": 166,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 307,
+                "fc": 164,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 284,
+                "fc": 161,
+                "ca": 181
+              },
+              {
+                "km": 1.0,
+                "ps": 300,
+                "fc": 167,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 293,
+                "fc": 163,
+                "ca": 179
+              },
+              {
+                "km": 0.81,
+                "ps": 329,
+                "fc": 164,
+                "ca": 177
+              }
+            ]
+          },
+          "score": {
+            "points": 100,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 108,
+            "volume_points": 100,
+            "pace_points": null,
+            "pace_target_s": null,
+            "pace_actual_s": null,
+            "pace_actual_str": null,
+            "pace_delta_s": null,
+            "is_quality": false,
+            "hr": {
+              "avg": 161,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 0.5,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 108%"
+            ]
+          }
         },
         {
           "type": "long",
@@ -889,15 +1736,15 @@
         }
       ],
       "compliance": {
-        "km_pct": 0,
-        "km_done": 0.0,
+        "km_pct": 61,
+        "km_done": 53.7,
         "km_planned": 87.4,
-        "sessions_done": 0,
+        "sessions_done": 3,
         "sessions_planned": 6,
         "keys_success": 0,
         "keys_total": 3,
-        "points": 0,
-        "verdict": "failed"
+        "points": 61,
+        "verdict": "partial"
       }
     },
     {
@@ -1141,13 +1988,13 @@
               },
               {
                 "km": 1.0,
-                "ps": 324,
+                "ps": 284,
                 "fc": 148,
                 "ca": 181
               },
               {
                 "km": 1.0,
-                "ps": 300,
+                "ps": 292,
                 "fc": 152,
                 "ca": 180
               },
@@ -1159,7 +2006,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 306,
+                "ps": 279,
                 "fc": 156,
                 "ca": 182
               },
@@ -1193,7 +2040,7 @@
               "avg": 150,
               "cap": null,
               "over_cap": null,
-              "decoupling_pct": 1.7,
+              "decoupling_pct": 3.4,
               "flags": []
             },
             "reasons": [
@@ -1234,7 +2081,7 @@
             "type": "endurance",
             "title": "#114 : run « caniculaire » ✌🏼",
             "n": 1,
-            "note": null,
+            "note": "Portion bla-bla avec l’argentin (👿) David Nasset et en croisant Loréna Méningand 💪🏼",
             "splits": [
               {
                 "km": 1.0,
@@ -1262,7 +2109,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 288,
+                "ps": 274,
                 "fc": 158,
                 "ca": 179
               },
@@ -1274,7 +2121,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 324,
+                "ps": 301,
                 "fc": 158,
                 "ca": 176
               },
@@ -1286,13 +2133,13 @@
               },
               {
                 "km": 1.0,
-                "ps": 294,
+                "ps": 281,
                 "fc": 163,
                 "ca": 179
               },
               {
                 "km": 1.0,
-                "ps": 286,
+                "ps": 279,
                 "fc": 161,
                 "ca": 179
               },
@@ -1304,7 +2151,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 331,
+                "ps": 288,
                 "fc": 164,
                 "ca": 178
               }
@@ -1326,7 +2173,7 @@
               "avg": 156,
               "cap": null,
               "over_cap": null,
-              "decoupling_pct": 7.3,
+              "decoupling_pct": 5.7,
               "flags": []
             },
             "reasons": [
@@ -1504,11 +2351,11 @@
             "type": "sortie_longue",
             "title": "#116 : Bouconne = forêt tropicale ? 🌡️🥵",
             "n": 1,
-            "note": null,
+            "note": "SL découverte avec Xavier LABARRERE mais retour sur la ligne droite signature 🤯",
             "splits": [
               {
                 "km": 1.0,
-                "ps": 342,
+                "ps": 341,
                 "fc": 123,
                 "ca": 181
               },
@@ -1532,13 +2379,13 @@
               },
               {
                 "km": 1.0,
-                "ps": 347,
+                "ps": 328,
                 "fc": 142,
                 "ca": 178
               },
               {
                 "km": 1.0,
-                "ps": 617,
+                "ps": 320,
                 "fc": 136,
                 "ca": 180
               },
@@ -1550,7 +2397,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 430,
+                "ps": 360,
                 "fc": 141,
                 "ca": 172
               },
@@ -1562,7 +2409,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 372,
+                "ps": 339,
                 "fc": 144,
                 "ca": 175
               },
@@ -1574,7 +2421,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 351,
+                "ps": 311,
                 "fc": 160,
                 "ca": 176
               },
@@ -1592,7 +2439,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 488,
+                "ps": 316,
                 "fc": 154,
                 "ca": 176
               },
@@ -1616,7 +2463,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 386,
+                "ps": 315,
                 "fc": 160,
                 "ca": 178
               },
@@ -1628,7 +2475,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 559,
+                "ps": 274,
                 "fc": 157,
                 "ca": 181
               },
@@ -1664,7 +2511,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 560,
+                "ps": 310,
                 "fc": 158,
                 "ca": 178
               },
@@ -1676,7 +2523,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 423,
+                "ps": 320,
                 "fc": 164,
                 "ca": 176
               },
@@ -1762,9 +2609,9 @@
             "pace_sec": 306,
             "pace_str": "5'06\"/km",
             "fc": 134,
-            "cadence": 88,
+            "cadence": 176,
             "type": "endurance",
-            "title": "Course à pied le matin",
+            "title": "#117 : run matin",
             "n": 1,
             "note": null,
             "splits": [
@@ -1772,55 +2619,55 @@
                 "km": 1.0,
                 "ps": 321,
                 "fc": 124,
-                "ca": 89
+                "ca": 178
               },
               {
                 "km": 1.0,
                 "ps": 300,
                 "fc": 131,
-                "ca": 89
+                "ca": 178
               },
               {
                 "km": 1.0,
                 "ps": 301,
                 "fc": 132,
-                "ca": 89
+                "ca": 177
               },
               {
                 "km": 1.0,
                 "ps": 304,
-                "fc": 129,
-                "ca": 88
+                "fc": 130,
+                "ca": 176
               },
               {
                 "km": 1.0,
                 "ps": 313,
                 "fc": 135,
-                "ca": 88
+                "ca": 176
               },
               {
                 "km": 1.0,
                 "ps": 298,
                 "fc": 137,
-                "ca": 89
+                "ca": 178
               },
               {
                 "km": 1.0,
                 "ps": 301,
                 "fc": 137,
-                "ca": 89
+                "ca": 177
               },
               {
                 "km": 1.0,
                 "ps": 310,
                 "fc": 137,
-                "ca": 88
+                "ca": 176
               },
               {
                 "km": 1.0,
                 "ps": 304,
                 "fc": 139,
-                "ca": 88
+                "ca": 177
               }
             ]
           },
@@ -1840,7 +2687,7 @@
               "avg": 134,
               "cap": null,
               "over_cap": null,
-              "decoupling_pct": 3.5,
+              "decoupling_pct": 3.3,
               "flags": []
             },
             "reasons": [
@@ -1874,8 +2721,135 @@
           "target_pace": "4'51\"/km",
           "date": "2026-07-19",
           "dow": "Sun",
-          "status": "missed",
-          "actual": null,
+          "status": "over",
+          "actual": {
+            "km": 42.4,
+            "duration_min": 195,
+            "pace_sec": 277,
+            "pace_str": "4'37\"/km",
+            "fc": 154,
+            "cadence": 179,
+            "type": "endurance",
+            "title": "Afternoon Run",
+            "n": 4,
+            "note": null,
+            "splits": [
+              {
+                "km": 0.94,
+                "ps": 317,
+                "fc": 158,
+                "ca": 178
+              },
+              {
+                "km": 0.86,
+                "ps": 307,
+                "fc": 160,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 237,
+                "fc": 162,
+                "ca": 181
+              },
+              {
+                "km": 1.0,
+                "ps": 239,
+                "fc": 168,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 316,
+                "fc": 126,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 301,
+                "fc": 142,
+                "ca": 181
+              },
+              {
+                "km": 1.0,
+                "ps": 313,
+                "fc": 147,
+                "ca": 179
+              },
+              {
+                "km": 3.0,
+                "ps": 311,
+                "fc": 138,
+                "ca": null
+              },
+              {
+                "km": 2.0,
+                "ps": 238,
+                "fc": 164,
+                "ca": null
+              },
+              {
+                "km": 2.0,
+                "ps": 234,
+                "fc": 165,
+                "ca": null
+              },
+              {
+                "km": 2.0,
+                "ps": 236,
+                "fc": 166,
+                "ca": null
+              },
+              {
+                "km": 2.0,
+                "ps": 236,
+                "fc": 165,
+                "ca": null
+              },
+              {
+                "km": 2.0,
+                "ps": 233,
+                "fc": 164,
+                "ca": null
+              },
+              {
+                "km": 2.0,
+                "ps": 234,
+                "fc": 170,
+                "ca": null
+              },
+              {
+                "km": 2.0,
+                "ps": 231,
+                "fc": 167,
+                "ca": null
+              },
+              {
+                "km": 2.0,
+                "ps": 236,
+                "fc": 168,
+                "ca": null
+              },
+              {
+                "km": 2.0,
+                "ps": 237,
+                "fc": 169,
+                "ca": null
+              },
+              {
+                "km": 2.0,
+                "ps": 219,
+                "fc": 169,
+                "ca": null
+              },
+              {
+                "km": 1.82,
+                "ps": 312,
+                "fc": 159,
+                "ca": null
+              }
+            ]
+          },
           "_downgraded_from": {
             "title": "Sortie longue 25km",
             "km": 29.9,
@@ -1889,17 +2863,24 @@
             "points": 84,
             "verdict": "success",
             "verdict_label": "Réussie",
-            "volume_pct": 170,
+            "volume_pct": 203,
             "volume_points": 70,
             "pace_points": 100,
             "pace_target_s": 291,
-            "pace_actual_s": 274,
-            "pace_actual_str": "4'34\"/km",
-            "pace_delta_s": -17,
+            "pace_actual_s": 277,
+            "pace_actual_str": "4'37\"/km",
+            "pace_delta_s": -14,
             "is_quality": false,
+            "hr": {
+              "avg": 154,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": -1.4,
+              "flags": []
+            },
             "reasons": [
-              "Volume 170%",
-              "Allure −17\"/km vs cible"
+              "Volume 203%",
+              "Allure −14\"/km vs cible"
             ]
           }
         }
@@ -1908,15 +2889,15 @@
       "volume_planned_to_date": 67.7,
       "volume_drift_pct": -38.0,
       "compliance": {
-        "km_pct": 47,
-        "km_done": 42.0,
+        "km_pct": 95,
+        "km_done": 84.4,
         "km_planned": 88.6,
-        "sessions_done": 1,
+        "sessions_done": 2,
         "sessions_planned": 6,
         "keys_success": 0,
         "keys_total": 2,
-        "points": 65,
-        "verdict": "partial"
+        "points": 94,
+        "verdict": "success"
       }
     },
     {
@@ -1959,9 +2940,9 @@
             "fc": 149,
             "cadence": 177,
             "type": "endurance",
-            "title": "Course à pied en soirée",
+            "title": "#119 : run impro",
             "n": 1,
-            "note": null,
+            "note": "👋🏼 Sébastien Jonvaux",
             "splits": [
               {
                 "km": 1.0,
@@ -1995,7 +2976,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 343,
+                "ps": 299,
                 "fc": 154,
                 "ca": 177
               },
@@ -2056,7 +3037,7 @@
               "avg": 149,
               "cap": null,
               "over_cap": null,
-              "decoupling_pct": 0.1,
+              "decoupling_pct": 2.9,
               "flags": []
             },
             "reasons": [
@@ -2082,26 +3063,26 @@
             "pace_str": "4'52\"/km",
             "fc": 149,
             "cadence": 176,
-            "type": "footing",
-            "title": "Course à pied en soirée",
+            "type": "endurance",
+            "title": "#120 : pensant que les jardins fermaient à 20h… 😅",
             "n": 1,
             "note": null,
             "splits": [
               {
                 "km": 1.0,
-                "ps": 324,
+                "ps": 297,
                 "fc": 130,
                 "ca": 177
               },
               {
                 "km": 1.0,
-                "ps": 319,
+                "ps": 285,
                 "fc": 143,
                 "ca": 178
               },
               {
                 "km": 1.0,
-                "ps": 336,
+                "ps": 288,
                 "fc": 144,
                 "ca": 178
               },
@@ -2113,7 +3094,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 333,
+                "ps": 294,
                 "fc": 147,
                 "ca": 176
               },
@@ -2137,7 +3118,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 393,
+                "ps": 284,
                 "fc": 156,
                 "ca": 176
               },
@@ -2175,7 +3156,7 @@
               "avg": 149,
               "cap": null,
               "over_cap": null,
-              "decoupling_pct": 6.7,
+              "decoupling_pct": 5.1,
               "flags": []
             },
             "reasons": [
@@ -2222,8 +3203,8 @@
             "pace_str": "4'57\"/km",
             "fc": 155,
             "cadence": 176,
-            "type": "frac_court",
-            "title": "Lunch Run",
+            "type": "endurance",
+            "title": "#121 : run à midi",
             "n": 1,
             "note": null,
             "splits": [
@@ -2241,13 +3222,13 @@
               },
               {
                 "km": 1.0,
-                "ps": 322,
+                "ps": 298,
                 "fc": 153,
                 "ca": 177
               },
               {
                 "km": 1.0,
-                "ps": 305,
+                "ps": 295,
                 "fc": 158,
                 "ca": 177
               },
@@ -2283,7 +3264,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 544,
+                "ps": 298,
                 "fc": 152,
                 "ca": 176
               },
@@ -2315,7 +3296,7 @@
               "avg": 155,
               "cap": null,
               "over_cap": null,
-              "decoupling_pct": -1.7,
+              "decoupling_pct": 0.4,
               "flags": []
             },
             "reasons": [
@@ -2341,7 +3322,7 @@
             "fc": 157,
             "cadence": 178,
             "type": "endurance",
-            "title": "Course à pied le midi",
+            "title": "#122 : agréable sortie du samedi",
             "n": 1,
             "note": null,
             "splits": [
@@ -2359,7 +3340,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 291,
+                "ps": 283,
                 "fc": 154,
                 "ca": 178
               },
@@ -2383,7 +3364,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 284,
+                "ps": 272,
                 "fc": 161,
                 "ca": 177
               },
@@ -2439,7 +3420,7 @@
               "avg": 157,
               "cap": null,
               "over_cap": null,
-              "decoupling_pct": 3.3,
+              "decoupling_pct": 4.7,
               "flags": []
             },
             "reasons": [
@@ -2466,7 +3447,7 @@
             "fc": 132,
             "cadence": 180,
             "type": "footing",
-            "title": "Course à pied le midi",
+            "title": "#123 : run en duo",
             "n": 1,
             "note": null,
             "splits": [
@@ -2484,7 +3465,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 388,
+                "ps": 380,
                 "fc": 133,
                 "ca": 180
               },
@@ -2496,7 +3477,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 451,
+                "ps": 385,
                 "fc": 131,
                 "ca": 181
               },
@@ -2526,7 +3507,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 385,
+                "ps": 325,
                 "fc": 134,
                 "ca": 181
               },
@@ -2563,7 +3544,7 @@
               "avg": 132,
               "cap": null,
               "over_cap": null,
-              "decoupling_pct": -9.6,
+              "decoupling_pct": -8.9,
               "flags": []
             },
             "reasons": [
@@ -2614,8 +3595,8 @@
             "pace_str": "4'56\"/km",
             "fc": 143,
             "cadence": 180,
-            "type": "frac_court",
-            "title": "Course à pied le matin",
+            "type": "endurance",
+            "title": "#124 : run matinal ensoleillé",
             "n": 1,
             "note": null,
             "splits": [
@@ -2699,7 +3680,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 557,
+                "ps": 289,
                 "fc": 144,
                 "ca": 178
               },
@@ -2755,7 +3736,7 @@
             "fc": 133,
             "cadence": 177,
             "type": "footing",
-            "title": "Course à pied le matin",
+            "title": "#125 : run aux BPM",
             "n": 1,
             "note": null,
             "splits": [
@@ -2773,7 +3754,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 365,
+                "ps": 327,
                 "fc": 128,
                 "ca": 179
               },
@@ -2837,7 +3818,7 @@
               "avg": 133,
               "cap": null,
               "over_cap": null,
-              "decoupling_pct": 2.1,
+              "decoupling_pct": 4.8,
               "flags": []
             },
             "reasons": [
@@ -2892,8 +3873,8 @@
             "pace_str": "5'05\"/km",
             "fc": 140,
             "cadence": 177,
-            "type": "frac_court",
-            "title": "Course à pied le matin",
+            "type": "endurance",
+            "title": "#126 : run matinal",
             "n": 1,
             "note": null,
             "splits": [
@@ -2935,7 +3916,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 536,
+                "ps": 296,
                 "fc": 143,
                 "ca": 179
               },
@@ -2981,7 +3962,7 @@
               "avg": 140,
               "cap": null,
               "over_cap": null,
-              "decoupling_pct": 1.9,
+              "decoupling_pct": 1.4,
               "flags": []
             },
             "reasons": [
