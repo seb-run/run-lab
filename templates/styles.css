@@ -599,6 +599,9 @@ h1, h2, h3, h4 {
   .hero-counters { width: 100%; justify-content: flex-start; }
   .hero-counter { flex: 1 1 auto; }
   .hero-paces { grid-template-columns: repeat(2, 1fr); }
+  /* Cinq allures sur deux colonnes laissaient la cinquième — l'allure
+     marathon, la plus importante — orpheline sur sa propre ligne. */
+  .hero-paces > .pace-card:last-child { grid-column: 1 / -1; }
   .pace-card .pv { font-size: 16px; }
   .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr; }
   .chart-wrap { height: 200px; }
@@ -2050,6 +2053,12 @@ h1, h2, h3, h4 {
   .sess-filters {
     flex-direction: column;
     align-items: stretch;
+  }
+  /* En colonne, flex-basis s'applique à la HAUTEUR : sans ce reset, le champ
+     de recherche hérite d'une hauteur de 200px et occupe la moitié de l'écran. */
+  .sess-search {
+    flex: 0 0 auto;
+    min-width: 0;
   }
   .sess-range-filter label {
     flex-wrap: wrap;
@@ -3677,4 +3686,20 @@ html, body { overflow-x: hidden; width: 100%; }
   .debrief-point-val { font-size: 15px; }
   .debrief-point-read { font-size: 11px; }
   .debrief-bullets li { font-size: 12.5px; }
+}
+
+/* ---- Tableau des blocs : lisibilité téléphone ---------------------------- */
+/* `width: 100%` force le tableau à tenir dans l'écran : les cellules se
+   compressent, « 5m 18s » passe à la ligne et la dernière colonne se fait
+   couper. On laisse le tableau prendre sa largeur naturelle et défiler. */
+.sess-blocs-table { width: auto; min-width: 100%; }
+.sess-blocs-table th, .sess-blocs-table td { white-space: nowrap; }
+.sess-blocs-scroll { -webkit-overflow-scrolling: touch; }
+
+@media (max-width: 560px) {
+  .sess-blocs-table { font-size: 11.5px; }
+  .sess-blocs-table th, .sess-blocs-table td { padding-left: 7px; padding-right: 7px; }
+  /* La colonne Intent est la moins utile sur petit écran : l'information est
+     déjà lisible dans l'allure de chaque bloc. */
+  .sess-blocs-table th:nth-child(7), .sess-blocs-table td:nth-child(7) { display: none; }
 }

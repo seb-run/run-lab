@@ -2456,7 +2456,9 @@
 
     // Construction charts
     if (hasBlocs) {
-      const xLabels = blocs.map(b => 'km ' + b.n);
+      // Étiquettes réduites au numéro : « km 12 » répété 24 fois se chevauche
+      // en bouillie sur un écran de téléphone. L'unité est dans le titre.
+      const xLabels = blocs.map(b => String(b.n));
       const paces = blocs.map(b => b.ps || null);
       const fcs   = blocs.map(b => b.fc || null);
       const cads  = blocs.map(b => b.ca || null);
@@ -2472,12 +2474,13 @@
           const c = echarts.init(paceFcEl);
           c.setOption({
             textStyle: CHART_THEME.textStyle,
-            grid: { left: 50, right: 50, top: 30, bottom: 32, containLabel: true },
-            legend: { data: ['Allure', 'FC'], top: 0, textStyle: { color: INK2, fontSize: 11 } },
+            grid: { left: 8, right: 8, top: 34, bottom: 8, containLabel: true },
+            legend: { data: ['Allure', 'FC'], top: 0, itemHeight: 8, itemWidth: 14,
+                      textStyle: { color: INK2, fontSize: 11 } },
             tooltip: {
               ...CHART_THEME.tooltip, trigger: 'axis',
               formatter: (params) => {
-                let s = '<b>' + params[0].axisValue + '</b><br/>';
+                let s = '<b>km ' + params[0].axisValue + '</b><br/>';
                 params.forEach(p => {
                   if (p.seriesName === 'Allure' && p.data != null) s += `Allure : ${fmtPace(p.data)}/km<br/>`;
                   else if (p.seriesName === 'FC' && p.data != null) s += `FC : ${p.data} bpm<br/>`;
@@ -2487,16 +2490,16 @@
             },
             xAxis: { ...CHART_THEME.xAxis, type: 'category', data: xLabels,
                      axisLabel: { ...CHART_THEME.xAxis.axisLabel,
-                                  interval: Math.max(0, Math.floor(blocs.length / 10) - 1) } },
+                                  interval: 'auto', hideOverlap: true } },
+            // Pas de `name` sur les axes : la légende dit déjà Allure et FC, et
+            // le nom d'axe venait se superposer à elle en haut du graphique.
             yAxis: [
-              { ...CHART_THEME.yAxis, type: 'value', name: 'Allure',
+              { ...CHART_THEME.yAxis, type: 'value',
                 min: yPaceMin, max: yPaceMax,
-                nameTextStyle: { color: '#94a3b8', fontSize: 10 },
                 axisLabel: { ...CHART_THEME.yAxis.axisLabel,
                              formatter: v => Math.floor(v/60) + "'" + String(Math.round(v%60)).padStart(2,'0') } },
-              { ...CHART_THEME.yAxis, type: 'value', name: 'FC',
+              { ...CHART_THEME.yAxis, type: 'value',
                 position: 'right',
-                nameTextStyle: { color: '#94a3b8', fontSize: 10 },
                 splitLine: { show: false } },
             ],
             series: [
@@ -2526,15 +2529,14 @@
           const c = echarts.init(cadEl);
           c.setOption({
             textStyle: CHART_THEME.textStyle,
-            grid: { left: 40, right: 16, top: 16, bottom: 32, containLabel: true },
+            grid: { left: 8, right: 8, top: 16, bottom: 8, containLabel: true },
             tooltip: { ...CHART_THEME.tooltip, trigger: 'axis',
                        formatter: p => p[0].data != null
-                         ? `<b>${p[0].axisValue}</b><br/>${p[0].data} ppm` : `<b>${p[0].axisValue}</b><br/>—` },
+                         ? `<b>km ${p[0].axisValue}</b><br/>${p[0].data} ppm` : `<b>km ${p[0].axisValue}</b><br/>—` },
             xAxis: { ...CHART_THEME.xAxis, type: 'category', data: xLabels,
                      axisLabel: { ...CHART_THEME.xAxis.axisLabel,
-                                  interval: Math.max(0, Math.floor(blocs.length / 10) - 1) } },
-            yAxis: { ...CHART_THEME.yAxis, type: 'value', min: yMin, max: yMax,
-                     name: 'ppm', nameTextStyle: { color: '#94a3b8', fontSize: 10 } },
+                                  interval: 'auto', hideOverlap: true } },
+            yAxis: { ...CHART_THEME.yAxis, type: 'value', min: yMin, max: yMax },
             series: [{
               type: 'bar', data: cads,
               itemStyle: {
@@ -2632,7 +2634,10 @@
     const bucketLabels = buckets.map((bucket, i) => {
       if (!bucket.length) return `Période ${i + 1}`;
       // Première et dernière date du bucket
-      const dates = bucket.map(p => p[2]);
+      // Mois/année suffisent : quatre libellés en dates complètes débordaient
+      // du graphique et recouvraient le nuage de points.
+      const short = d => (d || '').slice(3);   // 04/08/2026 → 08/2026
+      const dates = bucket.map(p => short(p[2]));
       return `${dates[0]} → ${dates[dates.length - 1]}`;
     });
 
@@ -2649,8 +2654,9 @@
     const dom = aeroCharts.scatter = echarts.init(el);
     dom.setOption({
       ...CHART_THEME,
-      legend: { top: 0, textStyle: { color: INK2, fontSize: 11 } },
-      grid: { left: 50, right: 20, top: 36, bottom: 40, containLabel: true },
+      legend: { bottom: 0, type: 'scroll', itemHeight: 8, itemWidth: 10,
+                textStyle: { color: INK2, fontSize: 10 } },
+      grid: { left: 8, right: 14, top: 12, bottom: 62, containLabel: true },
       tooltip: {
         ...CHART_THEME.tooltip, trigger: 'item',
         formatter: p => `<b>${p.data[2]}</b><br/>
@@ -2658,12 +2664,12 @@
           Allure : ${fmtPace(p.data[0])}/km<br/>
           FC : ${p.data[1]} bpm`,
       },
-      xAxis: { ...CHART_THEME.xAxis, type: 'value', name: 'Allure (sec/km)', inverse: true,
-               nameLocation: 'middle', nameGap: 28, nameTextStyle: { color: '#94a3b8', fontSize: 10 },
+      // `scale: true` est indispensable ici : sans lui, ECharts ancre les axes
+      // à zéro (0 bpm, 0'00/km) et tout le nuage se tasse dans un coin.
+      xAxis: { ...CHART_THEME.xAxis, type: 'value', inverse: true, scale: true,
                axisLabel: { ...CHART_THEME.xAxis.axisLabel,
                             formatter: v => Math.floor(v/60) + "'" + String(Math.round(v%60)).padStart(2,'0') } },
-      yAxis: { ...CHART_THEME.yAxis, type: 'value', name: 'FC (bpm)',
-               nameTextStyle: { color: '#94a3b8', fontSize: 10 } },
+      yAxis: { ...CHART_THEME.yAxis, type: 'value', scale: true },
       series,
       animationDuration: 600,
     });
