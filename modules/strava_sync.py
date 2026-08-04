@@ -50,6 +50,44 @@ def _fmt_duration(sec: float) -> str:
     return f"{m}m {s:02d}s"
 
 
+def _lap_time(lap: dict) -> float:
+    """
+    Temps retenu pour un lap : le temps EN MOUVEMENT.
+
+    Strava expose `elapsed_time` (montre non coupée : feu rouge, pause boulangerie,
+    pause gastrique) et `moving_time`. Prendre elapsed transforme un km régulier en
+    km à 9'/km, ce qui fait exploser le CV et fait classer un footing en fractionné.
+    On prend donc le minimum des deux, comme le fait déjà parser_fit sur les .fit.
+    """
+    mv = lap.get('moving_time') or 0
+    el = lap.get('elapsed_time') or 0
+    if mv and el:
+        return min(mv, el)
+    return mv or el or 0
+
+
+def _lap_stop_s(lap: dict) -> Optional[int]:
+    """Durée d'arrêt sur le lap (elapsed − moving), si significative."""
+    mv = lap.get('moving_time') or 0
+    el = lap.get('elapsed_time') or 0
+    if mv and el and el - mv >= 20:
+        return int(el - mv)
+    return None
+
+
+def _trimmed_paces(paces: list[float]) -> list[float]:
+    """
+    Écarte les laps anormalement lents (arrêt malgré tout compté, marche) avant
+    tout calcul de dispersion : sinon un seul arrêt suffit à requalifier la séance.
+    """
+    if len(paces) < 4:
+        return paces
+    ordered = sorted(paces)
+    median = ordered[len(ordered) // 2]
+    kept = [p for p in paces if p <= median + 90]
+    return kept if len(kept) >= 3 else paces
+
+
 def _classify_from_laps(laps: list[dict], total_km: float, avg_pace_s: float) -> tuple[str, float]:
     """Reproduit la logique de parser_fit._classify_session de façon simplifiée."""
     if total_km >= 42.0:
@@ -62,7 +100,7 @@ def _classify_from_laps(laps: list[dict], total_km: float, avg_pace_s: float) ->
     # Calcul CV sur les laps
     paces = []
     for lap in laps or []:
-        et = lap.get('elapsed_time') or lap.get('moving_time') or 0
+        et = _lap_time(lap)
         dist = lap.get('distance', 0)
         if et > 0 and dist > 0:
             pace_s_per_km = et / (dist / 1000.0)
@@ -76,9 +114,14 @@ def _classify_from_laps(laps: list[dict], total_km: float, avg_pace_s: float) ->
             return ('footing', 0)
         return ('endurance', 0)
 
-    mean = sum(paces) / len(paces)
+    # Le CV se calcule sur les laps élagués : un arrêt isolé ne doit pas suffire
+    # à faire passer une séance pour du fractionné. En revanche la détection de
+    # fractionné (laps rapides + alternance) reste sur les laps BRUTS, sinon on
+    # supprimerait les récups d'un vrai fractionné et on le raterait.
+    trimmed = _trimmed_paces(paces)
+    mean = sum(trimmed) / len(trimmed)
     if mean > 0:
-        var = sum((p - mean) ** 2 for p in paces) / len(paces)
+        var = sum((p - mean) ** 2 for p in trimmed) / len(trimmed)
         cv = (var ** 0.5 / mean) * 100
     else:
         cv = 0
@@ -88,9 +131,9 @@ def _classify_from_laps(laps: list[dict], total_km: float, avg_pace_s: float) ->
     has_mix = len(fast) >= 2 and len(slow) >= 1
 
     fast_lap_dists = [(l.get('distance', 0)/1000.0)
-                       for l in laps if (l.get('elapsed_time') or l.get('moving_time') or 0) > 0
+                       for l in laps if _lap_time(l) > 0
                        and l.get('distance', 0) > 0
-                       and (l.get('elapsed_time') or l.get('moving_time'))/(l['distance']/1000.0) <= 240]
+                       and _lap_time(l)/(l['distance']/1000.0) <= 240]
     avg_fast_km = sum(fast_lap_dists)/len(fast_lap_dists) if fast_lap_dists else 0
 
     if len(fast) >= 3 and has_mix:
@@ -110,12 +153,13 @@ def _build_blocs_from_laps(laps: list[dict]) -> list[dict]:
     """Convertit les laps Strava au format bloc du cache."""
     blocs = []
     for i, lap in enumerate(laps or [], 1):
-        et = lap.get('elapsed_time') or lap.get('moving_time') or 0
+        et = _lap_time(lap)
         dist_m = lap.get('distance', 0)
         if et <= 0 or dist_m <= 0:
             continue
         km = round(dist_m / 1000.0, 3)
         pace_s = round(et / (dist_m / 1000.0))
+        stop_s = _lap_stop_s(lap)
         blocs.append({
             'n': i,
             'km': km,
@@ -130,6 +174,9 @@ def _build_blocs_from_laps(laps: list[dict]) -> list[dict]:
             'ct': None,
             'intent': 'active' if (pace_s and pace_s < 260) else None,
             'fl': None,
+            # Arrêt montre non coupée sur ce km (feu, ravito, pause) — l'allure
+            # ci-dessus l'exclut déjà, on garde l'info pour le contexte.
+            'stop_s': stop_s,
         })
     return blocs
 
@@ -204,6 +251,11 @@ def strava_to_session(activity: dict) -> Optional[dict]:
         'cv': round(cv, 2) if cv else 0,
         'track': False,
         'b': blocs,
+        # Journal de sensations : la description de l'activité Strava, saisie
+        # depuis le téléphone après la séance. Le webhook re-déclenche une sync
+        # à chaque update d'activité, donc une description ajoutée a posteriori
+        # remonte bien.
+        'note': (activity.get('description') or '').strip() or None,
         'source': f"strava_{activity.get('id')}",
         '_strava_id': str(activity.get('id', '')),
         '_md5': f"strava-{activity.get('id', '')}",

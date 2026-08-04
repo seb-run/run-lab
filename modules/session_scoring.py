@@ -113,6 +113,124 @@ def _fast_laps_pace(sessions: list[dict], target_s: int) -> Optional[int]:
     return round(tot_t / tot_d)
 
 
+_HR_CAP_RE = re.compile(r"FC\s*(?:<|≤|<=|max\.?|inf(?:érieure)?\s*à)\s*(\d{2,3})", re.I)
+
+
+def parse_hr_cap(description: Optional[str]) -> Optional[int]:
+    """
+    Extrait une consigne de FC plafond depuis la description d'une séance.
+    "12 km ... FC < 140." → 140. Retourne None si aucune consigne.
+    """
+    if not description or not isinstance(description, str):
+        return None
+    m = _HR_CAP_RE.search(description)
+    return int(m.group(1)) if m else None
+
+
+def _flat_laps(sessions: list[dict], min_lap_km: float = 0.05
+               ) -> list[tuple[float, int, int]]:
+    """Laps exploitables (km, allure s/km, FC) de la/des séance(s)."""
+    out = []
+    for s in sessions:
+        for lap in (s.get('b') or []):
+            km, ps, fc = lap.get('km') or 0, lap.get('ps'), lap.get('fc')
+            if km > min_lap_km and ps and fc:
+                out.append((km, ps, fc))
+    return out
+
+
+def hr_decoupling_pct(sessions: list[dict], skip_km: float = 2.0,
+                      min_km: float = 6.0) -> Optional[float]:
+    """
+    Découplage aérobie (méthode Friel) : dérive du rapport vitesse/FC entre la
+    première et la seconde moitié de la séance, échauffement exclu.
+
+    > 0  = la FC monte à vitesse égale (dérive cardiaque : chaleur, déshydratation,
+           fatigue, glycogène bas). Repère classique : < 5 % bon, > 8 % notable.
+    < 0  = la FC baisse / la vitesse monte (négatif split, échauffement long).
+
+    Retourne None si la séance est trop courte ou trop fractionnée pour que la
+    mesure ait un sens.
+    """
+    # Les laps courts (lignes droites, récups, fractions) sont exclus : ils
+    # feraient passer une accélération volontaire pour une dérive cardiaque.
+    laps = _flat_laps(sessions, min_lap_km=0.4)
+    if sum(k for k, _, _ in laps) < min_km:
+        return None
+
+    # Laps anormalement lents (feu rouge, pause, marche) : la FC reste haute
+    # alors que la vitesse s'effondre → fausse dérive massive. On les écarte.
+    paces = sorted(ps for _, ps, _ in laps)
+    median_ps = paces[len(paces) // 2]
+    laps = [l for l in laps if l[1] <= median_ps + 90]
+    if sum(k for k, _, _ in laps) < min_km:
+        return None
+
+    kept, acc = [], 0.0
+    for km, ps, fc in laps:
+        acc += km
+        if acc <= skip_km:
+            continue
+        kept.append((km, ps, fc))
+    if len(kept) < 4:
+        return None
+
+    half = sum(k for k, _, _ in kept) / 2
+    first, second, acc = [], [], 0.0
+    for lap in kept:
+        (first if acc < half else second).append(lap)
+        acc += lap[0]
+    if len(first) < 2 or len(second) < 2:
+        return None
+
+    def eff(group):
+        # vitesse moyenne (km/s) / FC moyenne, pondérées par la distance
+        dist = sum(k for k, _, _ in group)
+        if dist <= 0:
+            return None
+        time_s = sum(k * ps for k, ps, _ in group)
+        fc_avg = sum(k * fc for k, _, fc in group) / dist
+        if time_s <= 0 or fc_avg <= 0:
+            return None
+        return (dist / time_s) / fc_avg
+
+    e1, e2 = eff(first), eff(second)
+    if not e1 or not e2:
+        return None
+    return round((e1 - e2) / e1 * 100, 1)
+
+
+def hr_block(day: dict, actual_sessions: list[dict],
+             actual: dict, quality: bool) -> Optional[dict]:
+    """
+    Bloc cardiaque d'une séance : FC moyenne, consigne éventuelle, dépassement,
+    découplage. Purement descriptif — n'entre PAS dans le score.
+
+    Raison : sans donnée météo, une dérive estivale (chaleur, humidité) est
+    indiscernable d'une dérive de fatigue. On mesure et on transmet au coach,
+    on ne sanctionne pas.
+    """
+    avg = actual.get('fc')
+    cap = parse_hr_cap(day.get('description'))
+    drift = hr_decoupling_pct(actual_sessions)
+    if avg is None and drift is None:
+        return None
+
+    over = (avg - cap) if (avg and cap) else None
+    flags = []
+    if over is not None and over > 3:
+        flags.append('over_cap')
+    if drift is not None and not quality and drift >= 8:
+        flags.append('drift_high')
+    return {
+        'avg': avg,
+        'cap': cap,
+        'over_cap': over,
+        'decoupling_pct': drift,
+        'flags': flags,
+    }
+
+
 def _volume_points(pct: float) -> float:
     """Score volume : plateau 100 entre 90% et 115%, dégressif au-delà/en-deçà."""
     if pct >= 150:
@@ -192,6 +310,14 @@ def score_day(day: dict, actual_sessions: list[dict]) -> Optional[dict]:
             sign = '+' if delta_s >= 0 else '−'
             reasons.append(f"Allure {sign}{abs(delta_s):.0f}\"/km vs cible")
 
+    # --- Cardiaque (descriptif, hors score) ---
+    hrb = hr_block(day, actual_sessions, actual, quality)
+    if hrb:
+        if hrb.get('over_cap') is not None and 'over_cap' in hrb['flags']:
+            reasons.append(f"FC moy {hrb['avg']} vs consigne <{hrb['cap']}")
+        if hrb.get('decoupling_pct') is not None and 'drift_high' in hrb['flags']:
+            reasons.append(f"Dérive cardiaque {hrb['decoupling_pct']:+.1f}%")
+
     # --- Score global ---
     if pace_pts is not None:
         points = 0.55 * vol_pts + 0.45 * pace_pts
@@ -217,6 +343,7 @@ def score_day(day: dict, actual_sessions: list[dict]) -> Optional[dict]:
         'pace_actual_str': fmt_pace(pace_actual_s),
         'pace_delta_s': round(delta_s) if delta_s is not None else None,
         'is_quality': quality,
+        'hr': hrb,
         'reasons': reasons,
     }
 

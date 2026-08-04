@@ -48,6 +48,28 @@ MINOR_HORIZON_DAYS = 10          # on ne touche pas au-delà de 10 jours
 # CONTEXTE POUR LE MODÈLE
 # ============================================================================
 
+def _fmt_splits(splits: list[dict], max_laps: int = 30) -> str:
+    """
+    Splits compactés : "1:5'18/136 2:5'21/141 ..." (km : allure/FC[/cadence]).
+    Tronqué au-delà de max_laps pour borner la taille du contexte.
+    """
+    out = []
+    for i, s in enumerate(splits[:max_laps], 1):
+        ps = s.get('ps')
+        if not ps:
+            continue
+        m, sec = divmod(int(ps), 60)
+        piece = f"{i}:{m}'{sec:02d}"
+        if s.get('fc'):
+            piece += f"/{s['fc']}"
+        if s.get('ca'):
+            piece += f"/{s['ca']}spm"
+        out.append(piece)
+    if len(splits) > max_laps:
+        out.append(f"(+{len(splits) - max_laps} laps)")
+    return ' '.join(out)
+
+
 def build_context(plan: dict) -> dict:
     today = date.today()
     recent, upcoming, weeks_summary = [], [], []
@@ -72,11 +94,24 @@ def build_context(plan: dict) -> dict:
                     'status': d.get('status'), 'target_pace': d.get('target_pace'),
                 }
                 if d.get('actual'):
-                    entry['actual'] = {k: d['actual'].get(k) for k in
-                                       ('km', 'pace_str', 'fc', 'duration_min')}
+                    a = d['actual']
+                    entry['actual'] = {k: a.get(k) for k in
+                                       ('km', 'pace_str', 'fc', 'cadence',
+                                        'duration_min')}
+                    # Ressenti saisi par Sébastien (description Strava)
+                    if a.get('note'):
+                        entry['sensations'] = a['note']
+                    # Splits km/km : allure, FC, cadence — compactés en texte
+                    # pour rester lisibles sans exploser le contexte.
+                    if a.get('splits'):
+                        entry['splits'] = _fmt_splits(a['splits'])
                 if d.get('score'):
                     entry['score'] = {k: d['score'].get(k) for k in
                                       ('points', 'verdict', 'volume_pct', 'pace_delta_s')}
+                    if d['score'].get('hr'):
+                        entry['hr'] = {k: d['score']['hr'].get(k) for k in
+                                       ('avg', 'cap', 'over_cap',
+                                        'decoupling_pct', 'flags')}
                 recent.append(entry)
             elif today <= dd <= today + timedelta(days=MINOR_HORIZON_DAYS):
                 upcoming.append({
@@ -101,6 +136,21 @@ def build_context(plan: dict) -> dict:
 
 SYSTEM_PROMPT = """Tu es le coach running de Sébastien. Objectif : NYC Marathon (2026-11-01), sub-3h.
 Tu reçois l'état du plan : 14 derniers jours scorés (réussie/partielle/échouée/manquée), conformité hebdo, 10 prochains jours.
+
+Pour les séances récentes tu peux aussi recevoir :
+  · "splits" : allure/FC/cadence km par km, format "3:5'21/141/176spm". Sers-t'en pour
+    distinguer une séance mal partie d'une séance qui s'effondre à la fin.
+  · "hr" : FC moyenne, consigne du jour (cap), dépassement, et "decoupling_pct" =
+    dérive du rapport vitesse/FC entre 1re et 2e moitié (méthode Friel).
+    Repères : < 5 % normal, > 8 % notable. ATTENTION : la chaleur, l'humidité et la
+    déshydratation produisent la même dérive que la fatigue. Ne conclus jamais à la
+    fatigue sur la seule dérive — croise avec les sensations, la période de l'année
+    et l'historique récent. Une FC au-dessus de la consigne avec des sensations
+    faciles par temps chaud n'est pas un signal d'alerte.
+  · "sensations" : texte écrit par Sébastien lui-même après la séance (météo, RPE,
+    douleurs, contexte). C'est la source la plus fiable du lot : elle prime sur
+    l'interprétation des chiffres en cas de contradiction. Si elle est absente, ne
+    l'invente pas et ne suppose pas que tout allait bien.
 
 Réponds UNIQUEMENT avec un JSON valide, sans markdown :
 {

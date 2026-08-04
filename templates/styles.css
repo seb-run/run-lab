@@ -3192,6 +3192,29 @@ h1, h2, h3, h4 {
 .coach-item-icon { font-weight: 800; font-size: 15px; min-width: 16px; }
 .coach-item-reason { color: var(--text-2); font-size: 12px; margin-top: 2px; }
 
+/* Boutons de validation des propositions majeures.
+   Cibles tactiles de 32 px minimum : la validation se fait souvent au téléphone,
+   juste après une séance. */
+.coach-actions {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 8px;
+}
+.coach-btn {
+  font: inherit; font-size: 12px; font-weight: 700; line-height: 1;
+  padding: 9px 14px; min-height: 32px; border-radius: 8px;
+  border: 1px solid transparent; cursor: pointer;
+  transition: opacity .15s ease, transform .05s ease;
+}
+.coach-btn:active { transform: scale(.97); }
+.coach-btn:disabled { opacity: .45; cursor: default; }
+.coach-btn-accept { background: #16a34a; color: #fff; }
+.coach-btn-reject { background: transparent; color: var(--text-2); border-color: var(--line, #d4d4d8); }
+.coach-fb { font-size: 12px; color: var(--text-2); }
+.coach-fb-ok { color: #16a34a; font-weight: 600; }
+.coach-fb-err { color: #dc2626; font-weight: 600; }
+.coach-item-done { opacity: .6; }
+
+html[data-theme="dark"] .coach-btn-reject { border-color: rgba(255, 255, 255, .18); }
+
 /* ============================================================
    Navigation v2 : icônes, menu Plus, barre mobile en bas
    ============================================================ */

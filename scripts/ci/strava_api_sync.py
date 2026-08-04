@@ -143,6 +143,10 @@ def main():
 
     lookback = int(os.environ.get('SYNC_LOOKBACK_DAYS', '14'))
     after_epoch = int((datetime.now() - timedelta(days=lookback)).timestamp())
+    # SYNC_FORCE=1 : re-télécharge même les activités déjà en cache. Sert aux
+    # backfills quand la logique de conversion a changé (ex : correction des laps
+    # comptés en temps écoulé au lieu du temps en mouvement).
+    force = os.environ.get('SYNC_FORCE', '').strip() in ('1', 'true', 'yes')
 
     token = get_access_token()
     known = existing_strava_ids(cache_path)
@@ -159,9 +163,14 @@ def main():
     acts = _get(f'{API}/athlete/activities', token,
                 {'after': after_epoch, 'per_page': 50})
     runs = [a for a in acts if a.get('sport_type') in RUN_TYPES]
-    new_runs = [a for a in runs if str(a['id']) not in known]
-    print(f'▸ API Strava : {len(acts)} activités sur {lookback}j, '
-          f'{len(runs)} runs, {len(new_runs)} nouvelles')
+    if force:
+        new_runs = [a for a in runs if str(a['id']) not in blocklist]
+        print(f'▸ API Strava : {len(acts)} activités sur {lookback}j, '
+              f'{len(runs)} runs, {len(new_runs)} re-téléchargées (SYNC_FORCE)')
+    else:
+        new_runs = [a for a in runs if str(a['id']) not in known]
+        print(f'▸ API Strava : {len(acts)} activités sur {lookback}j, '
+              f'{len(runs)} runs, {len(new_runs)} nouvelles')
 
     if not new_runs:
         print('✓ Rien de nouveau.')

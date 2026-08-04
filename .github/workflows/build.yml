@@ -8,7 +8,7 @@ name: build-dashboard
 
 on:
   repository_dispatch:
-    types: [strava-activity]
+    types: [strava-activity, coach-validate]
   schedule:
     - cron: '45 5 * * *'
   # Rebuild auto quand le code du dashboard change (pas de boucle : les commits
@@ -29,6 +29,18 @@ on:
         description: 'Régénérer le plan complet'
         type: boolean
         default: false
+      repair_cache:
+        description: "Réparer l'historique (laps comptés en temps écoulé)"
+        type: boolean
+        default: false
+      force_resync:
+        description: 'Re-télécharger les activités Strava déjà en cache'
+        type: boolean
+        default: false
+      lookback_days:
+        description: 'Fenêtre de sync Strava en jours'
+        type: string
+        default: '14'
 
 concurrency:
   group: build-dashboard
@@ -54,13 +66,33 @@ jobs:
       - name: Install deps
         run: pip install jinja2 anthropic
 
+      # Validation d'une proposition du coach depuis le dashboard.
+      # Le payload vient d'Internet : il transite par des variables
+      # d'environnement et jamais par interpolation directe dans le shell,
+      # sinon un identifiant forgé permettrait d'exécuter du code ici.
+      - name: Appliquer une validation du coach
+        if: github.event_name == 'repository_dispatch' && github.event.action == 'coach-validate'
+        env:
+          PROP_ID: ${{ github.event.client_payload.id }}
+          PROP_ACTION: ${{ github.event.client_payload.action }}
+          SEB_DATA_DIR: ${{ github.workspace }}/data
+        run: python3 scripts/ci/apply_proposal.py --id "$PROP_ID" --action "$PROP_ACTION"
+
       - name: Sync Strava (API directe)
         env:
           STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
           STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
           STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
           SEB_DATA_DIR: ${{ github.workspace }}/data
+          SYNC_LOOKBACK_DAYS: ${{ inputs.lookback_days || '14' }}
+          SYNC_FORCE: ${{ inputs.force_resync && '1' || '' }}
         run: python3 scripts/ci/strava_api_sync.py
+
+      # Correctif rétroactif : laps Strava comptés en temps écoulé (pause montre)
+      # → séances régulières classées à tort en fractionné. Lancement manuel.
+      - name: Réparer l'historique
+        if: inputs.repair_cache == true
+        run: python3 scripts/repair_stop_laps.py --data "${{ github.workspace }}/data"
 
       - name: Build dashboard
         env:

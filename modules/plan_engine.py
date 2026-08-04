@@ -683,16 +683,37 @@ def attach_actuals(plan: dict, sessions: list[dict]) -> dict:
                     tot_w = sum(w_ for _, w_ in paces)
                     if tot_w > 0:
                         avg_pace = round(sum(p*w_ for p, w_ in paces)/tot_w)
+                cads = [c for c in (b.get('ca') for s in actuals
+                                    for b in (s.get('b') or [])) if c]
+                notes = [s.get('note') for s in actuals if s.get('note')]
                 day['actual'] = {
                     'km': round(total_km, 1),
                     'duration_min': round(sum(s.get('dur_s', 0) for s in actuals) / 60),
                     'pace_sec': avg_pace,
                     'pace_str': _fmt_pace(avg_pace) if avg_pace else None,
                     'fc': avg_fc,
+                    'cadence': round(sum(cads)/len(cads)) if cads else None,
                     'type': actuals[0].get('tp'),
                     'title': actuals[0].get('t'),
                     'n': len(actuals),
+                    # Journal de sensations (description Strava)
+                    'note': ' | '.join(notes) if notes else None,
                 }
+                # Splits km/km, conservés uniquement sur la fenêtre que lit le
+                # coach IA (évite de tripler le poids de plan_nyc.json).
+                if 0 <= (today - dd).days <= 45:
+                    splits = []
+                    for s in actuals:
+                        for b in (s.get('b') or []):
+                            if (b.get('km') or 0) > 0.05 and b.get('ps'):
+                                splits.append({
+                                    'km': round(b['km'], 2),
+                                    'ps': b['ps'],
+                                    'fc': b.get('fc'),
+                                    'ca': b.get('ca'),
+                                })
+                    if splits:
+                        day['actual']['splits'] = splits
                 planned_km = day.get('km', 0) or 0
                 # Classification de la séance réalisée vs prévue
                 if planned_km == 0 or day.get('type') == 'rest':

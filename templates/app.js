@@ -4630,20 +4630,106 @@
 
     const pending = c.pending || [];
     if (pending.length) {
-      html += `<div class="coach-section-title">En attente de ta validation (briefing du matin)</div>` +
-        pending.map(p => `<div class="coach-item coach-pending">
+      html += `<div class="coach-section-title">En attente de ta validation</div>` +
+        pending.map(p => `<div class="coach-item coach-pending" data-prop-id="${escapeHtml(p.id || '')}">
           <span class="coach-item-icon">?</span>
           <div><strong>${KIND_LABELS[p.kind] || p.kind}</strong>${p.date ? ' · ' + p.date : ''}
           · ${escapeHtml(typeof p.new_value === 'string' ? p.new_value : JSON.stringify(p.new_value || ''))}
-          <div class="coach-item-reason">${escapeHtml(p.reason || '')}</div></div>
+          <div class="coach-item-reason">${escapeHtml(p.reason || '')}</div>
+          ${p.id ? `<div class="coach-actions">
+            <button class="coach-btn coach-btn-accept" data-act="accept" data-id="${escapeHtml(p.id)}">Valider</button>
+            <button class="coach-btn coach-btn-reject" data-act="reject" data-id="${escapeHtml(p.id)}">Refuser</button>
+            <span class="coach-fb" data-fb="${escapeHtml(p.id)}"></span>
+          </div>` : ''}
+          </div>
         </div>`).join('');
     }
     targets.forEach(t => {
       t.card.style.display = '';
       t.wrap.innerHTML = html;
       if (t.date) t.date.textContent = dateStr;
+      t.wrap.querySelectorAll('.coach-btn').forEach(btn => {
+        btn.addEventListener('click', () => coachDecide(btn));
+      });
     });
   }
+
+  // ==========================================================================
+  // VALIDATION DES PROPOSITIONS DU COACH
+  // --------------------------------------------------------------------------
+  // Le dashboard est public : l'URL du Worker et le jeton de validation ne sont
+  // donc PAS dans le code source. Ils sont saisis une fois sur l'appareil et
+  // gardés en localStorage. Sans eux, les boutons ne font rien de sensible.
+  // ==========================================================================
+  const VALIDATE_URL_KEY = 'runlab.validate.url';
+  const VALIDATE_TOKEN_KEY = 'runlab.validate.token';
+
+  function coachConfig(force) {
+    let base = localStorage.getItem(VALIDATE_URL_KEY) || '';
+    let token = localStorage.getItem(VALIDATE_TOKEN_KEY) || '';
+    if (force || !base) {
+      base = (prompt('URL du Worker Cloudflare (ex. https://xxx.workers.dev)', base) || '').trim();
+      if (!base) return null;
+      base = base.replace(/\/+$/, '');
+      localStorage.setItem(VALIDATE_URL_KEY, base);
+    }
+    if (force || !token) {
+      token = (prompt('Jeton de validation (VALIDATE_TOKEN du Worker)', '') || '').trim();
+      if (!token) return null;
+      localStorage.setItem(VALIDATE_TOKEN_KEY, token);
+    }
+    return {base, token};
+  }
+
+  async function coachDecide(btn) {
+    const id = btn.dataset.id;
+    const action = btn.dataset.act;
+    if (!id || !action) return;
+    if (action === 'accept' && !confirm('Appliquer cette proposition au plan ?')) return;
+    if (action === 'reject' && !confirm('Refuser cette proposition ?')) return;
+
+    const cfg = coachConfig(false);
+    if (!cfg) return;
+
+    const row = btn.closest('.coach-item');
+    const fb = row ? row.querySelector('[data-fb]') : null;
+    const btns = row ? row.querySelectorAll('.coach-btn') : [];
+    btns.forEach(b => { b.disabled = true; });
+    if (fb) { fb.textContent = 'envoi…'; fb.className = 'coach-fb'; }
+
+    try {
+      const r = await fetch(cfg.base + '/validate', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({id, action, token: cfg.token}),
+      });
+      if (r.status === 401) {
+        localStorage.removeItem(VALIDATE_TOKEN_KEY);
+        throw new Error('jeton refusé — il te sera redemandé');
+      }
+      if (!r.ok) {
+        let msg = 'HTTP ' + r.status;
+        try { const j = await r.json(); if (j && j.error) msg = j.error; } catch {}
+        throw new Error(msg);
+      }
+      if (fb) {
+        fb.textContent = action === 'accept'
+          ? '✓ envoyé — le plan se met à jour dans ~2 min'
+          : '✓ refusée';
+        fb.className = 'coach-fb coach-fb-ok';
+      }
+      if (row) row.classList.add('coach-item-done');
+    } catch (e) {
+      if (fb) {
+        fb.textContent = '✗ ' + (e && e.message ? e.message : 'échec');
+        fb.className = 'coach-fb coach-fb-err';
+      }
+      btns.forEach(b => { b.disabled = false; });
+    }
+  }
+
+  // Réinitialiser la configuration : coachResetValidateConfig() dans la console
+  window.coachResetValidateConfig = () => coachConfig(true);
 
   function planRenderAdaptations() {
     const wrap = document.getElementById('planAdaptations');
