@@ -1,42 +1,31 @@
 {
- "generated_at": "2026-08-02T21:13:30",
+ "generated_at": "2026-08-04T08:08:58",
  "model": "claude-sonnet-5",
- "headline": "Trois semaines de charge en dents de scie et une régularité en berne : la priorité cette semaine est de sécuriser les séances avant de reparler d'intensité.",
- "analysis": "Depuis la semaine 5, ton volume réalisé s'effondre progressivement (56% puis 47% puis 70% puis 79%, mais sur un plan déjà réduit), et le nombre de séances bouclées est très faible, notamment la semaine 6 avec seulement 1 séance sur 6. Sur les 14 derniers jours, tu as manqué 5 sorties récupération et une sortie longue a été très écourtée avec une allure totalement dégradée (58% du volume, +79s/km) : c'est un signal de fatigue ou de gestion d'emploi du temps qui craque, pas un problème d'allure. À l'inverse, quand tu cours, les footings easy sont plutôt bien exécutés en termes de sensations (FC contenue, allures cohérentes), donc la caisse physiologique n'est pas le souci, c'est la constance qui manque. Le risque principal maintenant est d'enchaîner une sortie longue de reprise (21km) et une séance de seuil clé 48h plus tard sans marge de récupération, alors que le corps vient de connaître une période erratique. Le focus de la semaine doit être : retrouver la régularité sur les footings faciles, ne pas chercher à rattraper le volume perdu, et n'aborder la séance seuil du 11/08 qu'avec des jambes fraîches, quitte à la dégrader en séance plus courte si la fatigue est là.",
+ "headline": "Deux semaines très irrégulières (nombreuses séances manquées, volume à 47-70%) : il faut sécuriser la reprise avant de remettre de l'intensité.",
+ "analysis": "Tes 14 derniers jours montrent un vrai trou dans la régularité : 5 séances manquées, une sortie longue tronquée à 58% (10,4km au lieu de 17,9), et des allures souvent bien plus lentes que prévu même sur les footings faciles. Les semaines 6 et 8 tournent autour de 47-62% du volume planifié avec seulement 1 à 2 séances sur 6 réalisées certaines semaines. Bonne nouvelle : quand tu cours, les sensations et FC sont correctes, donc ce n'est pas un problème de forme physique mais de disponibilité/motivation récente. Le risque principal maintenant, c'est d'enchaîner directement sur une sortie longue de reprise à 19km puis deux séances clés (seuil et MP) dans la même semaine, sans avoir retrouvé de régularité — ça peut mener à une blessure ou un nouvel échec qui casse la dynamique. Le focus de cette semaine doit être : reconstruire la régularité sur les footings faciles, sécuriser la sortie longue de reprise sans forcer le volume, et aborder les séances clés avec prudence plutôt qu'en visant la perf.",
  "applied": [
   {
    "severity": "minor",
    "kind": "volume_adjust",
    "date": "2026-08-09",
    "field": "km",
-   "new_value": 19.0,
-   "reason": "Sortie longue de reprise après une semaine très irrégulière (5 séances manquées sur 14j) : réduire légèrement le volume (21→19km) pour sécuriser la reprise avant la séance clé de mardi.",
-   "id": "16356c1c",
-   "detail": "2026-08-09 : 21→19 km"
+   "new_value": 17.0,
+   "reason": "Après une semaine à 62% de conformité et une sortie longue précédente très écourtée (58%), mieux vaut reprendre progressivement plutôt que revenir direct à 19km.",
+   "id": "dbc2e126",
+   "detail": "2026-08-09 : 19→17.1 km"
   },
   {
    "severity": "minor",
    "kind": "add_note",
    "date": "2026-08-11",
    "field": "description_note",
-   "new_value": "Séance clé après une période de charge très irrégulière : si fatigue ou jambes lourdes au réveil, réduire à 4×3min plutôt que forcer les 6×3min à l'allure seuil.",
-   "reason": "Aucune séance clé n'a été validée depuis plusieurs semaines et le pattern récent montre des ratés sur les sorties les plus exigeantes ; mieux vaut sécuriser cette séance que la manquer ou la dégrader en échec.",
-   "id": "d61b824a",
+   "new_value": "Priorise les sensations sur cette séance seuil : si les jambes sont lourdes après la reprise, réduis le nombre de répétitions plutôt que de forcer l'allure.",
+   "reason": "Séance clé après une période très irrégulière : éviter de transformer un retour en échec supplémentaire.",
+   "id": "d19b307d",
    "detail": "2026-08-11 : note ajoutée"
   }
  ],
  "pending": [
-  {
-   "severity": "major",
-   "kind": "restructure_week",
-   "date": "2026-08-02",
-   "field": "description_note",
-   "new_value": "Réduire la sortie longue à 20-22km, garder seulement 6-8km à allure marathon au lieu de 12km",
-   "reason": "Après 4 semaines à volume très réduit et 0 clé réussie, un bloc MP de 12km sur 27km est trop ambitieux et risque un nouvel échec ou une blessure.",
-   "id": "7e4375e9",
-   "status": "pending",
-   "created_at": "2026-07-25T13:08:48"
-  },
   {
    "severity": "major",
    "kind": "move_session",
@@ -89,18 +78,6 @@
    "new_value": "Réduire la séance VMA longue de 5×1000m à 4×1000m, même allure",
    "reason": "Aucune séance clé réussie sur les 4 dernières semaines et volume hebdo sous 80% : réduire légèrement le stimulus permet de retrouver une réussite complète plutôt qu'un nouvel échec partiel.",
    "id": "629138b2",
-   "status": "pending",
-   "created_at": "2026-08-02T09:53:50"
-  },
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-08-02",
-   "field": "description_note",
-   "new_value": "Reste strictement sur l'allure footing/récup aujourd'hui, ignore la cible 3'53 affichée par erreur — objectif : relâcher les jambes avant la semaine chargée.",
-   "reason": "Cible affichée incohérente avec le type recovery ; risque de partir trop vite comme les jours précédents.",
-   "id": "ed1f9e49",
-   "guardrail_reject": "jour passé ou en cours",
    "status": "pending",
    "created_at": "2026-08-02T09:53:50"
   }

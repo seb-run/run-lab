@@ -65,7 +65,7 @@
    "new_value": "Réduire la sortie longue à 20-22km, garder seulement 6-8km à allure marathon au lieu de 12km",
    "reason": "Après 4 semaines à volume très réduit et 0 clé réussie, un bloc MP de 12km sur 27km est trop ambitieux et risque un nouvel échec ou une blessure.",
    "id": "7e4375e9",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-07-25T13:08:48"
   },
   {
@@ -132,7 +132,7 @@
    "reason": "Cible affichée incohérente avec le type recovery ; risque de partir trop vite comme les jours précédents.",
    "id": "ed1f9e49",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-08-02T09:53:50"
   }
  ]
