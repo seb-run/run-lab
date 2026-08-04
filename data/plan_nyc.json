@@ -1689,12 +1689,38 @@
           "key": false,
           "description": "12 km en endurance fondamentale VRAIE : 5'10-5'25/km, FC < 140. Puis 6×20\" de lignes en souplesse sur herbe, récup marche 40\". Objectif : relancer le neuromusculaire sans agresser l'Achille.",
           "target_pace": "5'20\"/km",
-          "status": "today",
+          "status": "done",
           "_easy_idx": 0,
           "shoe": "Evo SL (usagée)",
           "shoe_note": "Footings faciles jusqu'à épuisement de la paire.",
           "_shoe_key": "evosl_old",
-          "actual": null
+          "actual": {
+            "km": 12.5,
+            "duration_min": 67,
+            "pace_sec": 322,
+            "pace_str": "5'22\"/km",
+            "fc": 144,
+            "type": "frac_court",
+            "title": "Course à pied le matin",
+            "n": 1
+          },
+          "score": {
+            "points": 100,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 104,
+            "volume_points": 100,
+            "pace_points": 100,
+            "pace_target_s": 320,
+            "pace_actual_s": 322,
+            "pace_actual_str": "5'22\"/km",
+            "pace_delta_s": 2,
+            "is_quality": false,
+            "reasons": [
+              "Volume 104%",
+              "Allure +2\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-08-05",
