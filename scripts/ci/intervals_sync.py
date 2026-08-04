@@ -39,10 +39,16 @@ TIMEOUT = 45
 # L'API ne documente pas un chemin unique pour le fichier d'origine selon les
 # versions. On essaie les variantes connues dans l'ordre et on retient celle qui
 # répond — la variante gagnante est affichée dans les logs du job.
+# ORDRE IMPORTANT : intervals.icu sert deux fichiers différents pour une même
+# séance — l'ORIGINAL reçu de Garmin, et son propre ré-encodage. Le ré-encodage
+# perd la dynamique par lap, la température, la puissance, l'effet
+# d'entraînement et le RPE saisi sur la montre. On cherche donc l'original
+# d'abord, et on ne se rabat sur le ré-encodage qu'en dernier recours.
 FILE_ENDPOINTS = (
-    '{api}/activity/{aid}/fit-file',
     '{api}/activity/{aid}/file',
+    '{api}/activity/{aid}/original',
     '{api}/athlete/{ath}/activities/{aid}/file',
+    '{api}/activity/{aid}/fit-file',
 )
 
 
@@ -98,23 +104,29 @@ def list_activities(key: str, athlete: str, days: int) -> list[dict]:
     return runs
 
 
-def download_fit(key: str, athlete: str, activity_id: str) -> bytes | None:
+def download_fit(key: str, athlete: str, activity_id: str,
+                 verbose: bool = False) -> bytes | None:
     last_error = None
     for tpl in FILE_ENDPOINTS:
         url = tpl.format(api=API, aid=activity_id, ath=athlete)
+        short = tpl.split('{api}')[-1]
         try:
             blob = _request(url, key)
         except urllib.error.HTTPError as e:
             last_error = f'HTTP {e.code}'
+            if verbose:
+                print(f'      {short} → HTTP {e.code}')
             continue
         except Exception as e:  # noqa: BLE001
             last_error = str(e)
             continue
         # Un .fit commence par un en-tête dont l'octet 8-11 vaut ".FIT"
         if blob[:2] and (b'.FIT' in blob[:16] or blob[:2] == b'\x1f\x8b'):
-            print(f'    (endpoint retenu : {tpl.split("{api}")[-1]})')
+            print(f'    (endpoint retenu : {short} — {len(blob) // 1024} Ko)')
             return blob
         last_error = 'réponse non reconnue comme .fit'
+        if verbose:
+            print(f'      {short} → {len(blob)} octets, pas un .fit')
     print(f'    ⚠ téléchargement impossible ({last_error})')
     return None
 
@@ -147,7 +159,12 @@ def main() -> int:
                + list(processed.glob('*.fit'))} if inbox.exists() else set()
 
     days = int(os.environ.get('INTERVALS_LOOKBACK', '7'))
-    print(f'▸ intervals.icu · athlète {athlete} · fenêtre {days} j')
+    # Re-télécharge même les séances déjà enrichies. Utile quand on change de
+    # variante de fichier (original vs ré-encodage) : sans ça, la déduplication
+    # gèlerait définitivement la première version récupérée.
+    force = os.environ.get('INTERVALS_FORCE', '').strip() in ('1', 'true', 'yes')
+    print(f'▸ intervals.icu · athlète {athlete} · fenêtre {days} j'
+          + (' · FORCE' if force else ''))
     probe_athlete(key, athlete)
     try:
         acts = list_activities(key, athlete, days)
@@ -168,13 +185,13 @@ def main() -> int:
             continue
         # Date locale au format du cache (JJ/MM/AAAA)
         iso = str(a.get('start_date_local') or '')[:10]
-        if len(iso) == 10:
+        if len(iso) == 10 and not force:
             jour = f'{iso[8:10]}/{iso[5:7]}/{iso[0:4]}'
             if jour in done_dates:
                 continue
         print(f"  ↓ {a.get('start_date_local', '')[:10]} · "
               f"{str(a.get('name', ''))[:40]}")
-        blob = download_fit(key, athlete, aid)
+        blob = download_fit(key, athlete, aid, verbose=(got == 0))
         if blob:
             (inbox / name).write_bytes(blob)
             got += 1

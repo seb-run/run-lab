@@ -37,6 +37,10 @@ on:
         description: 'Re-télécharger les activités Strava déjà en cache'
         type: boolean
         default: false
+      force_garmin:
+        description: 'Re-télécharger les .fit Garmin déjà traités'
+        type: boolean
+        default: false
       lookback_days:
         description: 'Fenêtre de sync Strava en jours'
         type: string
@@ -101,6 +105,7 @@ jobs:
           INTERVALS_API_KEY: ${{ secrets.INTERVALS_API_KEY }}
           INTERVALS_ATHLETE_ID: ${{ secrets.INTERVALS_ATHLETE_ID }}
           INTERVALS_LOOKBACK: ${{ inputs.lookback_days || '7' }}
+          INTERVALS_FORCE: ${{ inputs.force_garmin && '1' || '' }}
           SEB_DATA_DIR: ${{ github.workspace }}/data
         run: python3 scripts/ci/intervals_sync.py
 
