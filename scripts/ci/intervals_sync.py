@@ -60,13 +60,42 @@ def _request(url: str, key: str) -> bytes:
         return r.read()
 
 
+def probe_athlete(key: str, athlete: str) -> None:
+    """Vérifie que l'identifiant athlète résout bien vers un compte."""
+    try:
+        prof = json.loads(_request(f'{API}/athlete/{athlete}/profile',
+                                   key).decode('utf-8'))
+        who = (prof.get('athlete') or prof)
+        print(f"  compte : {who.get('name') or who.get('id') or athlete}")
+    except Exception as e:  # noqa: BLE001
+        print(f'  ⚠ profil athlète illisible ({e}) — vérifier INTERVALS_ATHLETE_ID')
+
+
 def list_activities(key: str, athlete: str, days: int) -> list[dict]:
     oldest = (date.today() - timedelta(days=days)).isoformat()
     newest = date.today().isoformat()
     url = (f'{API}/athlete/{athlete}/activities'
            f'?oldest={oldest}&newest={newest}')
     data = json.loads(_request(url, key).decode('utf-8'))
-    return [a for a in data if str(a.get('type', '')).lower().startswith('run')]
+    if not isinstance(data, list):
+        print(f'  ⚠ réponse inattendue : {str(data)[:200]}')
+        return []
+
+    # Diagnostic : sans ça, un filtre trop strict et un compte réellement vide
+    # produisent exactement le même « 0 course ».
+    types = sorted({str(a.get('type') or a.get('sport') or '?') for a in data})
+    print(f'  {len(data)} activité(s) toutes disciplines sur la fenêtre'
+          + (f" — types vus : {', '.join(types)}" if types else ''))
+    if data:
+        first = data[0]
+        print(f"  exemple de champs : {', '.join(sorted(first.keys())[:14])}")
+
+    runs = [a for a in data
+            if str(a.get('type') or a.get('sport') or '').lower().startswith('run')]
+    if data and not runs:
+        print('  ⚠ aucune activité reconnue comme course : le filtre de type '
+              'ne correspond pas aux valeurs ci-dessus.')
+    return runs
 
 
 def download_fit(key: str, athlete: str, activity_id: str) -> bytes | None:
@@ -103,23 +132,46 @@ def main() -> int:
     processed = inbox / 'processed'
     inbox.mkdir(parents=True, exist_ok=True)
 
+    # Déduplication par la donnée, pas par le fichier : une séance dont la
+    # dynamique est déjà extraite n'a aucune raison d'être re-téléchargée. Ça
+    # évite d'archiver les .fit dans le dépôt (plusieurs Mo par séance).
+    done_dates: set[str] = set()
+    cache_path = data_dir / 'sessions_cache.json'
+    if cache_path.exists():
+        try:
+            cache = json.loads(cache_path.read_text(encoding='utf-8'))
+            done_dates = {v.get('d') for v in cache.values() if v.get('dyn')}
+        except Exception:  # noqa: BLE001
+            pass
     already = {p.name for p in list(inbox.glob('*.fit'))
                + list(processed.glob('*.fit'))} if inbox.exists() else set()
 
     days = int(os.environ.get('INTERVALS_LOOKBACK', '7'))
+    print(f'▸ intervals.icu · athlète {athlete} · fenêtre {days} j')
+    probe_athlete(key, athlete)
     try:
         acts = list_activities(key, athlete, days)
     except Exception as e:  # noqa: BLE001
         print(f'✗ Liste des activités impossible : {e}')
         return 0  # jamais bloquant : le reste du build doit passer
 
-    print(f'▸ intervals.icu : {len(acts)} course(s) sur {days} j')
+    print(f'▸ {len(acts)} course(s) retenue(s)')
+    if not acts:
+        print('  → si intervals.icu affiche pourtant tes séances sur son site, '
+              'dis-le-moi : le problème est ici. Sinon, la reprise '
+              "d'historique depuis Garmin est encore en cours côté Garmin.")
     got = 0
     for a in acts:
         aid = str(a.get('id') or '')
         name = f'{aid}.fit'
         if not aid or name in already:
             continue
+        # Date locale au format du cache (JJ/MM/AAAA)
+        iso = str(a.get('start_date_local') or '')[:10]
+        if len(iso) == 10:
+            jour = f'{iso[8:10]}/{iso[5:7]}/{iso[0:4]}'
+            if jour in done_dates:
+                continue
         print(f"  ↓ {a.get('start_date_local', '')[:10]} · "
               f"{str(a.get('name', ''))[:40]}")
         blob = download_fit(key, athlete, aid)

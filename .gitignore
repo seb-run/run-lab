@@ -28,3 +28,6 @@ data/config.json.backup
 # Notes de travail perso — NE PAS publier (repo public)
 NOTE_PRODUIT_run-lab.md
 econ.py
+
+# Fichiers .fit bruts : la donnée utile part dans sessions_cache.json
+data/fit_inbox/

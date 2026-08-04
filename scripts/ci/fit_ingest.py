@@ -58,7 +58,10 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument('--data', default=str(REPO_ROOT / 'data'))
     ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--keep', action='store_true',
+                    help='conserver les .fit traités dans fit_inbox/processed/')
     args = ap.parse_args()
+    keep = args.keep
 
     data_dir = Path(args.data)
     inbox = data_dir / 'fit_inbox'
@@ -117,8 +120,14 @@ def main() -> int:
             print(f"  + {sess['d']} {sess['km']}km — nouvelle séance depuis .fit")
 
         if not args.dry_run:
-            processed.mkdir(parents=True, exist_ok=True)
-            shutil.move(str(fp), str(processed / fp.name))
+            # Le .fit a livré ce qu'il contenait : on ne le conserve pas dans le
+            # dépôt (plusieurs Mo par séance, et la donnée utile est déjà dans
+            # le cache). Il reste récupérable depuis intervals.icu si besoin.
+            if keep:
+                processed.mkdir(parents=True, exist_ok=True)
+                shutil.move(str(fp), str(processed / fp.name))
+            else:
+                fp.unlink()
 
     if not args.dry_run:
         cache_path.write_text(json.dumps(cache, ensure_ascii=False, default=str),
