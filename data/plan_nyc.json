@@ -2964,7 +2964,75 @@
             "title": "#119 : run impro",
             "n": 1,
             "note": "👋🏼 Sébastien Jonvaux",
-            "dyn": null,
+            "dyn": {
+              "stance_ms": 230.0,
+              "osc_cm": 9.9,
+              "vratio": 8.81,
+              "balance_l": 51.37,
+              "step_m": 1.09,
+              "temp_c": 28,
+              "temp_max": 29,
+              "resp": 31.2,
+              "power": 368,
+              "np": 370,
+              "te_aero": 3.6,
+              "te_ana": 0.0,
+              "load": 136.9,
+              "strides": 4971,
+              "rpe": 3.0,
+              "feel": 50,
+              "feel_label": "Normal",
+              "drift": {
+                "stance": {
+                  "start": 229.0,
+                  "end": 231.0,
+                  "pct": 0.9
+                },
+                "step": {
+                  "start": 1069.0,
+                  "end": 1104.0,
+                  "pct": 3.3
+                },
+                "vratio": {
+                  "start": 8.89,
+                  "end": 8.87,
+                  "pct": -0.2
+                },
+                "osc": {
+                  "start": 97.0,
+                  "end": 100.0,
+                  "pct": 3.3
+                },
+                "hr": {
+                  "start": 141.0,
+                  "end": 154.0,
+                  "pct": 9.5
+                },
+                "cad": {
+                  "start": 89.0,
+                  "end": 88.0,
+                  "pct": -1.1
+                }
+              },
+              "balance_min": 50.8,
+              "balance_max": 52.57,
+              "balance_series": [
+                52.57,
+                50.95,
+                51.48,
+                51.17,
+                51.06,
+                51.59,
+                51.9,
+                51.26,
+                50.8,
+                51.26,
+                50.95
+              ],
+              "rr_beats": 9040,
+              "rmssd_effort": 21.2,
+              "flags": []
+            },
             "splits": [
               {
                 "km": 1.0,
@@ -3084,36 +3152,103 @@
             "pace_sec": 292,
             "pace_str": "4'52\"/km",
             "fc": 149,
-            "cadence": 176,
+            "cadence": 175,
             "type": "endurance",
             "title": "#120 : pensant que les jardins fermaient à 20h… 😅",
             "n": 1,
             "note": null,
-            "dyn": null,
+            "dyn": {
+              "stance_ms": 217.0,
+              "osc_cm": 11.0,
+              "vratio": 9.31,
+              "balance_l": 51.57,
+              "step_m": 1.16,
+              "temp_c": 29,
+              "temp_max": 31,
+              "resp": 33.2,
+              "power": 396,
+              "np": 397,
+              "te_aero": 3.6,
+              "te_ana": 0.0,
+              "load": 141.2,
+              "strides": 4390,
+              "rpe": 3.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 216.0,
+                  "end": 219.0,
+                  "pct": 1.7
+                },
+                "step": {
+                  "start": 1150.0,
+                  "end": 1154.0,
+                  "pct": 0.3
+                },
+                "vratio": {
+                  "start": 9.22,
+                  "end": 9.47,
+                  "pct": 2.7
+                },
+                "osc": {
+                  "start": 108.0,
+                  "end": 111.0,
+                  "pct": 2.9
+                },
+                "hr": {
+                  "start": 142.0,
+                  "end": 155.0,
+                  "pct": 9.4
+                },
+                "cad": {
+                  "start": 88.0,
+                  "end": 87.3,
+                  "pct": -0.8
+                }
+              },
+              "balance_min": 51.28,
+              "balance_max": 52.0,
+              "balance_series": [
+                52.0,
+                51.48,
+                51.47,
+                51.67,
+                51.28,
+                51.34,
+                51.69,
+                51.44,
+                51.75,
+                51.63
+              ],
+              "rr_beats": 8038,
+              "rmssd_effort": 10.1,
+              "flags": []
+            },
             "splits": [
               {
                 "km": 1.0,
-                "ps": 297,
+                "ps": 298,
                 "fc": 130,
-                "ca": 177
+                "ca": 176
               },
               {
                 "km": 1.0,
                 "ps": 285,
                 "fc": 143,
-                "ca": 178
+                "ca": 176
               },
               {
                 "km": 1.0,
                 "ps": 288,
                 "fc": 144,
-                "ca": 178
+                "ca": 176
               },
               {
                 "km": 1.0,
-                "ps": 295,
+                "ps": 296,
                 "fc": 151,
-                "ca": 177
+                "ca": 176
               },
               {
                 "km": 1.0,
@@ -3123,37 +3258,37 @@
               },
               {
                 "km": 1.0,
-                "ps": 283,
+                "ps": 284,
                 "fc": 150,
-                "ca": 178
+                "ca": 176
               },
               {
                 "km": 1.0,
-                "ps": 288,
+                "ps": 289,
                 "fc": 154,
                 "ca": 176
               },
               {
                 "km": 1.0,
-                "ps": 298,
+                "ps": 299,
                 "fc": 155,
-                "ca": 175
+                "ca": 174
               },
               {
                 "km": 1.0,
                 "ps": 284,
-                "fc": 156,
+                "fc": 155,
                 "ca": 176
               },
               {
                 "km": 1.0,
                 "ps": 295,
                 "fc": 156,
-                "ca": 175
+                "ca": 174
               },
               {
                 "km": 0.28,
-                "ps": 307,
+                "ps": 310,
                 "fc": 158,
                 "ca": 174
               }
@@ -3179,7 +3314,7 @@
               "avg": 149,
               "cap": null,
               "over_cap": null,
-              "decoupling_pct": 5.1,
+              "decoupling_pct": 4.9,
               "flags": []
             },
             "reasons": [
@@ -3230,7 +3365,56 @@
             "title": "#121 : run à midi",
             "n": 1,
             "note": null,
-            "dyn": null,
+            "dyn": {
+              "stance_ms": 244.0,
+              "osc_cm": 8.7,
+              "vratio": 7.68,
+              "step_m": 1.13,
+              "temp_c": 31,
+              "temp_max": 33,
+              "power": 360,
+              "np": 362,
+              "te_aero": 3.9,
+              "te_ana": 0.0,
+              "load": 167.6,
+              "strides": 4394,
+              "rpe": 2.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 245.0,
+                  "end": 243.0,
+                  "pct": -0.9
+                },
+                "step": {
+                  "start": 1109.0,
+                  "end": 1142.0,
+                  "pct": 3.0
+                },
+                "vratio": {
+                  "start": 7.76,
+                  "end": 7.66,
+                  "pct": -1.3
+                },
+                "osc": {
+                  "start": 86.0,
+                  "end": 87.0,
+                  "pct": 1.6
+                },
+                "hr": {
+                  "start": 148.0,
+                  "end": 158.0,
+                  "pct": 6.4
+                },
+                "cad": {
+                  "start": 87.2,
+                  "end": 87.7,
+                  "pct": 0.5
+                }
+              },
+              "flags": []
+            },
             "splits": [
               {
                 "km": 1.0,
@@ -3349,19 +3533,88 @@
             "title": "#122 : agréable sortie du samedi",
             "n": 1,
             "note": null,
-            "dyn": null,
+            "dyn": {
+              "stance_ms": 214.0,
+              "osc_cm": 10.4,
+              "vratio": 8.56,
+              "balance_l": 50.04,
+              "step_m": 1.18,
+              "temp_c": 31,
+              "temp_max": 33,
+              "resp": 35.7,
+              "power": 393,
+              "np": 395,
+              "te_aero": 4.2,
+              "te_ana": 0.0,
+              "load": 213.0,
+              "strides": 5002,
+              "rpe": 3.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 217.0,
+                  "end": 217.0,
+                  "pct": -0.0
+                },
+                "step": {
+                  "start": 1157.0,
+                  "end": 1183.0,
+                  "pct": 2.3
+                },
+                "vratio": {
+                  "start": 8.55,
+                  "end": 8.66,
+                  "pct": 1.3
+                },
+                "osc": {
+                  "start": 101.0,
+                  "end": 105.0,
+                  "pct": 3.7
+                },
+                "hr": {
+                  "start": 147.0,
+                  "end": 164.0,
+                  "pct": 11.9
+                },
+                "cad": {
+                  "start": 89.0,
+                  "end": 89.0,
+                  "pct": 0.0
+                }
+              },
+              "balance_min": 49.09,
+              "balance_max": 50.92,
+              "balance_series": [
+                50.92,
+                50.11,
+                49.78,
+                49.75,
+                49.86,
+                49.4,
+                49.09,
+                50.23,
+                49.69,
+                50.57,
+                50.19,
+                50.79
+              ],
+              "rr_beats": 8917,
+              "rmssd_effort": 6.5,
+              "flags": []
+            },
             "splits": [
               {
                 "km": 1.0,
-                "ps": 300,
-                "fc": 130,
-                "ca": 179
+                "ps": 301,
+                "fc": 129,
+                "ca": 178
               },
               {
                 "km": 1.0,
-                "ps": 288,
+                "ps": 289,
                 "fc": 147,
-                "ca": 177
+                "ca": 176
               },
               {
                 "km": 1.0,
@@ -3371,7 +3624,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 279,
+                "ps": 280,
                 "fc": 157,
                 "ca": 180
               },
@@ -3385,31 +3638,31 @@
                 "km": 1.0,
                 "ps": 274,
                 "fc": 159,
-                "ca": 179
+                "ca": 178
               },
               {
                 "km": 1.0,
-                "ps": 272,
+                "ps": 273,
                 "fc": 161,
-                "ca": 177
+                "ca": 176
               },
               {
                 "km": 1.0,
-                "ps": 276,
+                "ps": 277,
                 "fc": 161,
-                "ca": 179
+                "ca": 178
               },
               {
                 "km": 1.0,
-                "ps": 272,
+                "ps": 273,
                 "fc": 162,
-                "ca": 179
+                "ca": 178
               },
               {
                 "km": 1.0,
                 "ps": 281,
                 "fc": 167,
-                "ca": 179
+                "ca": 178
               },
               {
                 "km": 1.0,
@@ -3419,8 +3672,8 @@
               },
               {
                 "km": 1.0,
-                "ps": 287,
-                "fc": 166,
+                "ps": 288,
+                "fc": 165,
                 "ca": 178
               }
             ]
@@ -3445,7 +3698,7 @@
               "avg": 157,
               "cap": null,
               "over_cap": null,
-              "decoupling_pct": 4.7,
+              "decoupling_pct": 4.6,
               "flags": []
             },
             "reasons": [
@@ -3475,13 +3728,80 @@
             "title": "#123 : run en duo",
             "n": 1,
             "note": null,
-            "dyn": null,
+            "dyn": {
+              "stance_ms": 233.0,
+              "osc_cm": 9.0,
+              "vratio": 9.9,
+              "balance_l": 49.35,
+              "step_m": 0.89,
+              "temp_c": 27,
+              "temp_max": 30,
+              "resp": 36.4,
+              "power": 311,
+              "np": 315,
+              "te_aero": 2.8,
+              "te_ana": 0.0,
+              "load": 70.1,
+              "strides": 5762,
+              "rpe": 2.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 237.0,
+                  "end": 229.0,
+                  "pct": -3.1
+                },
+                "step": {
+                  "start": 851.0,
+                  "end": 943.0,
+                  "pct": 10.8
+                },
+                "vratio": {
+                  "start": 9.93,
+                  "end": 9.65,
+                  "pct": -2.8
+                },
+                "osc": {
+                  "start": 86.0,
+                  "end": 93.0,
+                  "pct": 7.5
+                },
+                "hr": {
+                  "start": 132.0,
+                  "end": 131.0,
+                  "pct": -0.6
+                },
+                "cad": {
+                  "start": 90.8,
+                  "end": 89.7,
+                  "pct": -1.2
+                }
+              },
+              "balance_min": 48.54,
+              "balance_max": 50.59,
+              "balance_series": [
+                50.0,
+                50.59,
+                49.08,
+                48.9,
+                49.28,
+                49.04,
+                48.68,
+                49.44,
+                48.54,
+                49.56
+              ],
+              "rr_beats": 9225,
+              "rmssd_effort": 11.1,
+              "flags": []
+            },
             "splits": [
               {
                 "km": 1.0,
-                "ps": 386,
-                "fc": 128,
-                "ca": 183
+                "ps": 387,
+                "fc": 127,
+                "ca": 184
               },
               {
                 "km": 1.0,
@@ -3491,13 +3811,13 @@
               },
               {
                 "km": 1.0,
-                "ps": 380,
+                "ps": 381,
                 "fc": 133,
                 "ca": 180
               },
               {
                 "km": 1.0,
-                "ps": 396,
+                "ps": 397,
                 "fc": 133,
                 "ca": 180
               },
@@ -3505,17 +3825,17 @@
                 "km": 1.0,
                 "ps": 385,
                 "fc": 131,
-                "ca": 181
+                "ca": 180
               },
               {
                 "km": 1.0,
-                "ps": 376,
+                "ps": 377,
                 "fc": 128,
                 "ca": 180
               },
               {
                 "km": 1.0,
-                "ps": 369,
+                "ps": 370,
                 "fc": 129,
                 "ca": 178
               },
@@ -3527,21 +3847,21 @@
               },
               {
                 "km": 1.0,
-                "ps": 370,
+                "ps": 371,
                 "fc": 131,
-                "ca": 179
+                "ca": 178
               },
               {
                 "km": 1.0,
                 "ps": 325,
                 "fc": 134,
-                "ca": 181
+                "ca": 180
               },
               {
                 "km": 0.4,
-                "ps": 292,
+                "ps": 294,
                 "fc": 152,
-                "ca": 179
+                "ca": 178
               }
             ]
           },
@@ -3570,7 +3890,7 @@
               "avg": 132,
               "cap": null,
               "over_cap": null,
-              "decoupling_pct": -8.9,
+              "decoupling_pct": -9.0,
               "flags": []
             },
             "reasons": [
@@ -3625,23 +3945,96 @@
             "title": "#124 : run matinal ensoleillé",
             "n": 1,
             "note": null,
-            "dyn": null,
+            "dyn": {
+              "stance_ms": 227.0,
+              "osc_cm": 9.7,
+              "vratio": 8.43,
+              "balance_l": 51.37,
+              "step_m": 1.12,
+              "temp_c": 22,
+              "temp_max": 29,
+              "resp": 34.2,
+              "power": 382,
+              "np": 387,
+              "te_aero": 3.8,
+              "te_ana": 0.0,
+              "load": 166.9,
+              "strides": 6840,
+              "rpe": 3.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 226.0,
+                  "end": 231.0,
+                  "pct": 2.2
+                },
+                "step": {
+                  "start": 1088.0,
+                  "end": 1141.0,
+                  "pct": 4.9
+                },
+                "vratio": {
+                  "start": 8.46,
+                  "end": 8.64,
+                  "pct": 2.2
+                },
+                "osc": {
+                  "start": 94.0,
+                  "end": 101.0,
+                  "pct": 7.0
+                },
+                "hr": {
+                  "start": 135.0,
+                  "end": 147.0,
+                  "pct": 8.9
+                },
+                "cad": {
+                  "start": 91.0,
+                  "end": 88.5,
+                  "pct": -2.8
+                }
+              },
+              "balance_min": 50.48,
+              "balance_max": 52.0,
+              "balance_series": [
+                52.0,
+                50.48,
+                51.39,
+                51.51,
+                50.88,
+                51.54,
+                50.68,
+                51.86,
+                51.57,
+                51.54,
+                51.22,
+                51.49,
+                51.44,
+                51.42,
+                51.49,
+                51.37
+              ],
+              "rr_beats": 11921,
+              "rmssd_effort": 12.5,
+              "flags": []
+            },
             "splits": [
               {
                 "km": 1.0,
                 "ps": 324,
                 "fc": 124,
-                "ca": 185
+                "ca": 184
               },
               {
                 "km": 1.0,
-                "ps": 298,
+                "ps": 299,
                 "fc": 122,
                 "ca": 180
               },
               {
                 "km": 1.0,
-                "ps": 308,
+                "ps": 309,
                 "fc": 139,
                 "ca": 182
               },
@@ -3649,12 +4042,6 @@
                 "km": 1.0,
                 "ps": 303,
                 "fc": 143,
-                "ca": 183
-              },
-              {
-                "km": 1.0,
-                "ps": 288,
-                "fc": 142,
                 "ca": 182
               },
               {
@@ -3665,7 +4052,13 @@
               },
               {
                 "km": 1.0,
-                "ps": 277,
+                "ps": 289,
+                "fc": 142,
+                "ca": 182
+              },
+              {
+                "km": 1.0,
+                "ps": 278,
                 "fc": 143,
                 "ca": 182
               },
@@ -3677,7 +4070,7 @@
               },
               {
                 "km": 1.0,
-                "ps": 290,
+                "ps": 291,
                 "fc": 149,
                 "ca": 180
               },
@@ -3689,9 +4082,9 @@
               },
               {
                 "km": 1.0,
-                "ps": 291,
+                "ps": 292,
                 "fc": 145,
-                "ca": 181
+                "ca": 180
               },
               {
                 "km": 1.0,
@@ -3707,19 +4100,19 @@
               },
               {
                 "km": 1.0,
-                "ps": 289,
-                "fc": 144,
+                "ps": 290,
+                "fc": 143,
                 "ca": 178
               },
               {
                 "km": 1.0,
-                "ps": 302,
+                "ps": 303,
                 "fc": 156,
-                "ca": 177
+                "ca": 176
               },
               {
                 "km": 0.43,
-                "ps": 297,
+                "ps": 298,
                 "fc": 144,
                 "ca": 176
               }
@@ -3761,7 +4154,7 @@
             "pace_sec": 334,
             "pace_str": "5'34\"/km",
             "fc": 133,
-            "cadence": 175,
+            "cadence": 176,
             "type": "footing",
             "title": "#125 : run aux BPM",
             "n": 1,
@@ -3772,22 +4165,73 @@
               "vratio": 9.47,
               "balance_l": 51.01,
               "step_m": 1.01,
+              "temp_c": 24,
+              "temp_max": 30,
+              "resp": 37.4,
+              "power": 344,
+              "np": 344,
+              "te_aero": 3.0,
+              "te_ana": 0.0,
+              "load": 82.1,
+              "strides": 4904,
+              "rpe": 2.0,
+              "feel": 50,
+              "feel_label": "Normal",
               "drift": {
+                "stance": {
+                  "start": 246.0,
+                  "end": 251.0,
+                  "pct": 1.9
+                },
+                "step": {
+                  "start": 998.0,
+                  "end": 1028.0,
+                  "pct": 3.0
+                },
+                "vratio": {
+                  "start": 9.34,
+                  "end": 9.59,
+                  "pct": 2.6
+                },
+                "osc": {
+                  "start": 95.0,
+                  "end": 101.0,
+                  "pct": 6.0
+                },
                 "hr": {
-                  "start": 128.0,
-                  "end": 137.0,
-                  "pct": 7.0
+                  "start": 129.0,
+                  "end": 138.0,
+                  "pct": 7.2
+                },
+                "cad": {
+                  "start": 88.8,
+                  "end": 87.0,
+                  "pct": -2.0
                 }
               },
-              "rr_beats": 7156,
-              "rmssd_effort": 80.1,
+              "balance_min": 50.55,
+              "balance_max": 51.31,
+              "balance_series": [
+                51.31,
+                50.9,
+                50.72,
+                50.55,
+                50.6,
+                51.08,
+                51.31,
+                51.15,
+                51.22,
+                51.24
+              ],
+              "rr_beats": 7261,
+              "rmssd_effort": 79.8,
               "flags": []
             },
             "splits": [
               {
                 "km": 1.0,
-                "ps": 340,
-                "fc": 123,
+                "ps": 339,
+                "fc": 124,
                 "ca": 178
               },
               {
@@ -3798,51 +4242,51 @@
               },
               {
                 "km": 1.0,
-                "ps": 366,
-                "fc": 127,
+                "ps": 327,
+                "fc": 128,
                 "ca": 178
               },
               {
                 "km": 1.0,
                 "ps": 332,
-                "fc": 131,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 331,
                 "fc": 132,
                 "ca": 176
               },
               {
                 "km": 1.0,
-                "ps": 335,
+                "ps": 332,
                 "fc": 133,
-                "ca": 174
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 335,
+                "fc": 134,
+                "ca": 176
               },
               {
                 "km": 1.0,
                 "ps": 336,
                 "fc": 134,
-                "ca": 174
+                "ca": 176
               },
               {
                 "km": 1.0,
                 "ps": 332,
-                "fc": 137,
+                "fc": 138,
                 "ca": 174
               },
               {
                 "km": 1.0,
                 "ps": 341,
-                "fc": 137,
+                "fc": 138,
                 "ca": 174
               },
               {
                 "km": 1.0,
                 "ps": 332,
-                "fc": 137,
-                "ca": 172
+                "fc": 138,
+                "ca": 174
               }
             ]
           },
@@ -3862,7 +4306,7 @@
               "avg": 133,
               "cap": null,
               "over_cap": null,
-              "decoupling_pct": 2.6,
+              "decoupling_pct": 4.9,
               "flags": []
             },
             "reasons": [
@@ -3927,15 +4371,66 @@
               "vratio": 8.85,
               "balance_l": 50.13,
               "step_m": 1.1,
+              "temp_c": 22,
+              "temp_max": 30,
+              "resp": 36.2,
+              "power": 367,
+              "np": 368,
+              "te_aero": 3.3,
+              "te_ana": 0.0,
+              "load": 111.6,
+              "strides": 4551,
+              "rpe": 2.0,
+              "feel": 75,
+              "feel_label": "Fort",
               "drift": {
+                "stance": {
+                  "start": 227.0,
+                  "end": 226.0,
+                  "pct": -0.7
+                },
+                "step": {
+                  "start": 1076.0,
+                  "end": 1125.0,
+                  "pct": 4.6
+                },
+                "vratio": {
+                  "start": 8.89,
+                  "end": 8.9,
+                  "pct": 0.1
+                },
+                "osc": {
+                  "start": 98.0,
+                  "end": 103.0,
+                  "pct": 5.2
+                },
                 "hr": {
                   "start": 135.0,
-                  "end": 143.0,
-                  "pct": 6.4
+                  "end": 144.0,
+                  "pct": 6.5
+                },
+                "cad": {
+                  "start": 89.0,
+                  "end": 88.0,
+                  "pct": -1.1
                 }
               },
-              "rr_beats": 7203,
-              "rmssd_effort": 6.4,
+              "balance_min": 49.64,
+              "balance_max": 51.27,
+              "balance_series": [
+                51.27,
+                50.13,
+                50.2,
+                50.12,
+                49.95,
+                49.77,
+                50.0,
+                50.09,
+                50.12,
+                49.64
+              ],
+              "rr_beats": 8197,
+              "rmssd_effort": 8.7,
               "flags": []
             },
             "splits": [
