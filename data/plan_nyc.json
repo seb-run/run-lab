@@ -328,6 +328,11 @@
                 49.96,
                 50.51
               ],
+              "balance_lent": 50.43,
+              "balance_rapide": 49.94,
+              "asym_vs_allure": -0.37,
+              "allure_lent_s": 300,
+              "allure_rapide_s": 280,
               "rr_beats": 5672,
               "rmssd_effort": 8.4,
               "flags": []
@@ -446,6 +451,11 @@
                 50.52,
                 50.72
               ],
+              "balance_lent": 50.45,
+              "balance_rapide": 49.97,
+              "asym_vs_allure": -0.42,
+              "allure_lent_s": 317,
+              "allure_rapide_s": 286,
               "rr_beats": 10939,
               "rmssd_effort": 10.9,
               "flags": []
@@ -635,6 +645,11 @@
                 50.75,
                 51.46
               ],
+              "balance_lent": 51.41,
+              "balance_rapide": 50.92,
+              "asym_vs_allure": -0.49,
+              "allure_lent_s": 403,
+              "allure_rapide_s": 305,
               "rr_beats": 54001,
               "rmssd_effort": 7.7,
               "flags": [
@@ -797,6 +812,11 @@
                 50.61,
                 50.42
               ],
+              "balance_lent": 50.76,
+              "balance_rapide": 50.52,
+              "asym_vs_allure": -0.24,
+              "allure_lent_s": 374,
+              "allure_rapide_s": 298,
               "rr_beats": 11635,
               "rmssd_effort": 9.0,
               "flags": []
@@ -910,6 +930,11 @@
                 49.26,
                 50.59
               ],
+              "balance_lent": 50.43,
+              "balance_rapide": 49.92,
+              "asym_vs_allure": -0.35,
+              "allure_lent_s": 347,
+              "allure_rapide_s": 290,
               "rr_beats": 6416,
               "rmssd_effort": 8.5,
               "flags": []
@@ -1105,6 +1130,11 @@
                 50.51,
                 49.65
               ],
+              "balance_lent": 50.34,
+              "balance_rapide": 50.23,
+              "asym_vs_allure": -0.12,
+              "allure_lent_s": 333,
+              "allure_rapide_s": 292,
               "rr_beats": 15542,
               "rmssd_effort": 5.3,
               "flags": []
@@ -1342,6 +1372,11 @@
                 50.86,
                 50.64
               ],
+              "balance_lent": 50.0,
+              "balance_rapide": 50.31,
+              "asym_vs_allure": 0.31,
+              "allure_lent_s": 308,
+              "allure_rapide_s": 291,
               "rr_beats": 15080,
               "rmssd_effort": 5.4,
               "flags": []
@@ -1993,6 +2028,11 @@
                 51.66,
                 51.56
               ],
+              "balance_lent": 51.31,
+              "balance_rapide": 49.41,
+              "asym_vs_allure": -0.72,
+              "allure_lent_s": 333,
+              "allure_rapide_s": 199,
               "rr_beats": 17867,
               "rmssd_effort": 8.3,
               "flags": [
@@ -2342,6 +2382,11 @@
                 50.62,
                 51.83
               ],
+              "balance_lent": 51.51,
+              "balance_rapide": 50.06,
+              "asym_vs_allure": -1.45,
+              "allure_lent_s": 327,
+              "allure_rapide_s": 296,
               "rr_beats": 6163,
               "rmssd_effort": 8.6,
               "flags": []
@@ -2522,6 +2567,11 @@
                 50.31,
                 50.96
               ],
+              "balance_lent": 51.22,
+              "balance_rapide": 50.14,
+              "asym_vs_allure": -1.08,
+              "allure_lent_s": 326,
+              "allure_rapide_s": 294,
               "rr_beats": 11648,
               "rmssd_effort": 5.8,
               "flags": []
@@ -3208,6 +3258,11 @@
                 50.27,
                 50.01
               ],
+              "balance_lent": 49.79,
+              "balance_rapide": 48.76,
+              "asym_vs_allure": 1.04,
+              "allure_lent_s": 301,
+              "allure_rapide_s": 277,
               "rr_beats": 9647,
               "rmssd_effort": 6.8,
               "flags": []
@@ -3410,6 +3465,11 @@
                 50.6,
                 50.7
               ],
+              "balance_lent": 50.68,
+              "balance_rapide": 49.86,
+              "asym_vs_allure": -0.54,
+              "allure_lent_s": 295,
+              "allure_rapide_s": 274,
               "rr_beats": 7935,
               "rmssd_effort": 4.6,
               "flags": []
@@ -3638,6 +3698,11 @@
                 50.57,
                 50.42
               ],
+              "balance_lent": 50.66,
+              "balance_rapide": 50.61,
+              "asym_vs_allure": -0.06,
+              "allure_lent_s": 339,
+              "allure_rapide_s": 296,
               "rr_beats": 30537,
               "rmssd_effort": 11.3,
               "flags": []
@@ -3967,6 +4032,11 @@
                 51.44,
                 51.45
               ],
+              "balance_lent": 51.46,
+              "balance_rapide": 50.86,
+              "asym_vs_allure": -0.61,
+              "allure_lent_s": 315,
+              "allure_rapide_s": 300,
               "rr_beats": 6185,
               "rmssd_effort": 11.1,
               "flags": []
@@ -4166,6 +4236,11 @@
                 50.61,
                 51.33
               ],
+              "balance_lent": 49.61,
+              "balance_rapide": 49.32,
+              "asym_vs_allure": 0.28,
+              "allure_lent_s": 280,
+              "allure_rapide_s": 231,
               "rr_beats": 24408,
               "rmssd_effort": 6.6,
               "flags": []
@@ -4655,6 +4730,11 @@
                 51.26,
                 50.95
               ],
+              "balance_lent": 51.67,
+              "balance_rapide": 51.52,
+              "asym_vs_allure": -0.15,
+              "allure_lent_s": 316,
+              "allure_rapide_s": 299,
               "rr_beats": 9040,
               "rmssd_effort": 21.2,
               "flags": []
@@ -4847,6 +4927,11 @@
                 51.75,
                 51.63
               ],
+              "balance_lent": 51.7,
+              "balance_rapide": 51.52,
+              "asym_vs_allure": -0.18,
+              "allure_lent_s": 297,
+              "allure_rapide_s": 284,
               "rr_beats": 8038,
               "rmssd_effort": 10.1,
               "flags": []
@@ -5225,6 +5310,11 @@
                 50.19,
                 50.79
               ],
+              "balance_lent": 50.5,
+              "balance_rapide": 49.51,
+              "asym_vs_allure": -0.01,
+              "allure_lent_s": 290,
+              "allure_rapide_s": 274,
               "rr_beats": 8917,
               "rmssd_effort": 6.5,
               "flags": []
@@ -5418,6 +5508,11 @@
                 48.54,
                 49.56
               ],
+              "balance_lent": 49.39,
+              "balance_rapide": 49.23,
+              "asym_vs_allure": 0.17,
+              "allure_lent_s": 389,
+              "allure_rapide_s": 349,
               "rr_beats": 9225,
               "rmssd_effort": 11.1,
               "flags": []
@@ -5641,6 +5736,11 @@
                 51.49,
                 51.37
               ],
+              "balance_lent": 51.37,
+              "balance_rapide": 51.2,
+              "asym_vs_allure": -0.17,
+              "allure_lent_s": 307,
+              "allure_rapide_s": 287,
               "rr_beats": 11921,
               "rmssd_effort": 12.5,
               "flags": []
@@ -6055,6 +6155,11 @@
                 50.12,
                 49.64
               ],
+              "balance_lent": 50.35,
+              "balance_rapide": 50.01,
+              "asym_vs_allure": -0.33,
+              "allure_lent_s": 313,
+              "allure_rapide_s": 298,
               "rr_beats": 8197,
               "rmssd_effort": 8.7,
               "flags": []
