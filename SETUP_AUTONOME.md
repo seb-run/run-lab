@@ -143,3 +143,52 @@ Icône, plein écran, consultable hors-ligne (dernière version en cache).
 - Webhook muet : dash.cloudflare.com → worker → Logs, puis
   `curl https://www.strava.com/api/v3/push_subscriptions -d client_id=... -d client_secret=... -G` pour vérifier l'abonnement.
 - PWA pas à jour : tirer pour rafraîchir (le service worker recharge le réseau d'abord).
+
+---
+
+## §8 — Données Garmin automatiques (10 min, une seule fois)
+
+Objectif : récupérer ce que Strava ne transmet pas (dynamique de course, charge,
+ressenti saisi sur la montre, intervalles R-R) sans jamais déposer un fichier à
+la main.
+
+Chemin des données :
+`montre → Garmin Connect → intervals.icu (automatique) → CI → dashboard`
+
+### a. Compte intervals.icu et connexion Garmin
+1. **intervals.icu** → créer un compte (gratuit).
+2. Settings → **Connect to Garmin** → autoriser.
+   Les séances passées remontent toutes seules, les nouvelles arrivent
+   quelques minutes après la synchro de la montre.
+
+### b. Récupérer les deux identifiants
+Sur intervals.icu → **Settings** → section **Developer** :
+- **API key** : une longue chaîne de caractères.
+- **Athlete ID** : de la forme `i123456`, visible aussi dans l'URL de ton profil.
+
+### c. Poser les deux secrets sur GitHub
+github.com/seb-run/run-lab → Settings → Secrets and variables → Actions →
+**New repository secret**, deux fois :
+
+| Nom | Valeur |
+|---|---|
+| `INTERVALS_API_KEY` | la clé du §b |
+| `INTERVALS_ATHLETE_ID` | `i123456` |
+
+C'est tout. Au build suivant, le CI télécharge les `.fit` des 7 derniers jours,
+les fusionne avec les séances déjà synchronisées depuis Strava (pas de doublon :
+appariement date + distance + durée) et le bloc « Dynamique de course » apparaît
+dans la fiche de séance du dashboard.
+
+Tant que les deux secrets sont absents, l'étape est simplement sautée — le
+pipeline continue de tourner comme avant.
+
+### Rattraper l'historique
+Onglet Actions → build-dashboard → Run workflow → mettre `90` dans
+« Fenêtre de sync ». Les `.fit` des 90 derniers jours sont récupérés d'un coup.
+
+### Si ça ne marche pas
+Le job affiche dans ses logs quel point d'accès a répondu pour le téléchargement
+du fichier d'origine. En cas d'échec sur les trois variantes testées, le message
+« téléchargement impossible » apparaît et le reste du build se déroule
+normalement — rien n'est cassé, il n'y a que l'enrichissement qui manque.

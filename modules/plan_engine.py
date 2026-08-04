@@ -698,6 +698,8 @@ def attach_actuals(plan: dict, sessions: list[dict]) -> dict:
                     'n': len(actuals),
                     # Journal de sensations (description Strava)
                     'note': ' | '.join(notes) if notes else None,
+                    # Dynamique de course / charge, si le .fit Garmin est arrivé
+                    'dyn': next((s.get('dyn') for s in actuals if s.get('dyn')), None),
                 }
                 # Splits km/km, conservés uniquement sur la fenêtre que lit le
                 # coach IA (évite de tripler le poids de plan_nyc.json).

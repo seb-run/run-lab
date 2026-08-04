@@ -4911,6 +4911,99 @@
     return null;
   }
 
+  // ---- Dynamique de course (données Garmin absentes de l'API Strava) -------
+  // Trois lectures : la mécanique tient-elle jusqu'au bout, l'appui est-il
+  // symétrique, et ce que la séance a coûté.
+  function renderDynBlock(dyn) {
+    if (!dyn) return '';
+    const f = dyn.flags || [];
+    const num = (v, u, d) => (v === null || v === undefined)
+      ? '—' : (d ? v.toFixed(d) : v) + (u || '');
+
+    // 1. Fatigue mécanique : début vs fin de séance
+    let mech = '';
+    const dr = dyn.drift || {};
+    if (dr.stance || dr.step) {
+      const row = (label, o, unit, fac, inverse, nd) => {
+        if (!o) return '';
+        const pct = o.pct === null || o.pct === undefined ? null : o.pct;
+        // Pour le temps de contact, "plus" = moins bien. Pour la foulée, l'inverse.
+        const bad = pct === null ? false
+          : (inverse ? pct <= -3 : pct >= 4);
+        const col = bad ? 'var(--c-orange)' : 'var(--c-green)';
+        const width = Math.min(100, Math.abs(pct || 0) * 12);
+        return `<div class="dyn-row">
+          <span class="dyn-label">${label}</span>
+          <span class="dyn-vals">${(o.start * fac).toFixed(nd)}${unit}
+            <span class="dyn-arrow">→</span>
+            ${(o.end * fac).toFixed(nd)}${unit}</span>
+          <span class="dyn-bar"><i style="width:${width}%;background:${col}"></i></span>
+          <span class="dyn-pct" style="color:${col}">${pct > 0 ? '+' : ''}${num(pct, '%', 1)}</span>
+        </div>`;
+      };
+      const verdict = (f.includes('stance_fade') || f.includes('step_fade'))
+        ? `<p class="dyn-note dyn-note-warn">La mécanique se dégrade en fin de séance : la foulée se raccourcit ou l'appui s'allonge. Signe de fatigue réelle, pas seulement cardiaque.</p>`
+        : `<p class="dyn-note">Mécanique stable du début à la fin. Si la FC a monté, c'est la chaleur ou l'hydratation, pas la fatigue musculaire.</p>`;
+      mech = `<div class="dyn-card">
+        <div class="dyn-card-title">Fatigue mécanique · 1er tiers → dernier tiers</div>
+        ${row('Contact au sol', dr.stance, ' ms', 1, false, 0)}
+        ${row('Longueur de foulée', dr.step, ' m', 0.001, true, 2)}
+        ${row('Ratio vertical', dr.vratio, ' %', 1, false, 1)}
+        ${dr.hr ? row('Fréquence cardiaque', dr.hr, ' bpm', 1, false, 0) : ''}
+        ${verdict}
+      </div>`;
+    }
+
+    // 2. Asymétrie d'appui — jauge centrée sur 50 %
+    let asym = '';
+    if (dyn.balance_l !== undefined && dyn.balance_l !== null) {
+      const dev = dyn.balance_l - 50;
+      const pos = Math.max(2, Math.min(98, 50 + dev * 10)); // ±5 % → toute la largeur
+      const col = Math.abs(dev) > 2 ? 'var(--c-orange)' : 'var(--c-green)';
+      const range = (dyn.balance_min !== undefined)
+        ? `<span class="dyn-sub">amplitude sur la séance : ${dyn.balance_min}% – ${dyn.balance_max}%</span>` : '';
+      asym = `<div class="dyn-card">
+        <div class="dyn-card-title">Équilibre d'appui gauche / droite</div>
+        <div class="dyn-gauge">
+          <span class="dyn-gauge-end">G</span>
+          <span class="dyn-gauge-track"><i class="dyn-gauge-mid"></i>
+            <i class="dyn-gauge-dot" style="left:${pos}%;background:${col}"></i></span>
+          <span class="dyn-gauge-end">D</span>
+        </div>
+        <div class="dyn-gauge-val" style="color:${col}">${dyn.balance_l.toFixed(2)} % à gauche
+          <small>(${dev >= 0 ? '+' : ''}${dev.toFixed(2)} pt vs équilibre parfait)</small></div>
+        ${range}
+        ${f.includes('asym') ? `<p class="dyn-note dyn-note-warn">Asymétrie marquée. À surveiller côté Achille si elle persiste sur plusieurs séances.</p>` : ''}
+      </div>`;
+    }
+
+    // 3. Charge et ressenti
+    let load = '';
+    const chips = [];
+    if (dyn.te_aero !== undefined) chips.push(['Effet aérobie', dyn.te_aero.toFixed(1) + ' / 5']);
+    if (dyn.te_ana !== undefined) chips.push(['Effet anaérobie', dyn.te_ana.toFixed(1) + ' / 5']);
+    if (dyn.load !== undefined) chips.push(['Charge', Math.round(dyn.load)]);
+    if (dyn.rpe !== undefined) chips.push(['Effort ressenti', dyn.rpe.toFixed(0) + ' / 10']);
+    if (dyn.feel_label) chips.push(['Sensation', dyn.feel_label]);
+    if (dyn.temp_c !== undefined) chips.push(['Température', dyn.temp_c + ' °C']);
+    if (dyn.power !== undefined) chips.push(['Puissance', dyn.power + ' W']);
+    if (dyn.rmssd_effort !== undefined) chips.push(['Variabilité R-R', dyn.rmssd_effort + ' ms']);
+    if (chips.length) {
+      load = `<div class="dyn-card">
+        <div class="dyn-card-title">Charge et ressenti</div>
+        <div class="dyn-chips">${chips.map(([k, v]) =>
+          `<div class="dyn-chip"><span>${k}</span><strong>${v}</strong></div>`).join('')}</div>
+        ${dyn.rmssd_effort !== undefined ? `<p class="dyn-note dyn-note-small">La variabilité R-R est mesurée pendant l'effort : elle se compare à tes propres séances équivalentes, pas au statut HRV nocturne de Garmin.</p>` : ''}
+      </div>`;
+    }
+
+    if (!mech && !asym && !load) return '';
+    return `<div class="sheet-section">
+      <div class="sheet-section-title">Dynamique de course · Garmin</div>
+      ${mech}${asym}${load}
+    </div>`;
+  }
+
   function openDaySheet(iso) {
     const found = planFindDay(iso);
     const backdrop = document.getElementById('sheetBackdrop');
@@ -4942,6 +5035,8 @@
       actualBlock = `<div class="sheet-section"><span class="verdict-pill" style="--vc:#94a3b8">✗ Manquée</span></div>`;
     }
 
+    const dynBlock = d.actual ? renderDynBlock(d.actual.dyn) : '';
+
     content.innerHTML = `
       <div class="sheet-meta">${dateFr} · W${w.week_num}/${PLAN.meta.weeks_total} · ${escapeHtml(w.phase_label)}</div>
       <div class="sheet-title">
@@ -4954,7 +5049,8 @@
         ${pace ? `<div><span class="kv-label">Allure cible</span><span class="kv-value">${escapeHtml(pace)}</span></div>` : ''}
       </div>
       ${desc ? `<div class="sheet-section"><div class="sheet-section-title">Consignes</div><p class="sheet-desc">${desc}</p></div>` : ''}
-      ${actualBlock}`;
+      ${actualBlock}
+      ${dynBlock}`;
     backdrop.hidden = false;
     document.body.style.overflow = 'hidden';
   }

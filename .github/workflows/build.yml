@@ -94,6 +94,21 @@ jobs:
         if: inputs.repair_cache == true
         run: python3 scripts/repair_stop_laps.py --data "${{ github.workspace }}/data"
 
+      # Données Garmin que Strava ne transmet pas (dynamique de course, charge,
+      # ressenti montre, R-R). Étape silencieuse tant que les secrets sont absents.
+      - name: Récupérer les .fit Garmin (via intervals.icu)
+        env:
+          INTERVALS_API_KEY: ${{ secrets.INTERVALS_API_KEY }}
+          INTERVALS_ATHLETE_ID: ${{ secrets.INTERVALS_ATHLETE_ID }}
+          INTERVALS_LOOKBACK: ${{ inputs.lookback_days || '7' }}
+          SEB_DATA_DIR: ${{ github.workspace }}/data
+        run: python3 scripts/ci/intervals_sync.py
+
+      - name: Intégrer les .fit au cache
+        env:
+          SEB_DATA_DIR: ${{ github.workspace }}/data
+        run: pip install fitdecode -q && python3 scripts/ci/fit_ingest.py --data "${{ github.workspace }}/data"
+
       - name: Build dashboard
         env:
           SEB_DATA_DIR: ${{ github.workspace }}/data
@@ -139,7 +154,7 @@ jobs:
           # Document de référence du plan
           python3 scripts/render_plan_doc.py site/plan.html
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: site
 
@@ -151,4 +166,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

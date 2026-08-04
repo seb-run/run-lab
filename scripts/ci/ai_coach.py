@@ -105,6 +105,19 @@ def build_context(plan: dict) -> dict:
                     # pour rester lisibles sans exploser le contexte.
                     if a.get('splits'):
                         entry['splits'] = _fmt_splits(a['splits'])
+                    # Dynamique de course Garmin, si le .fit est remonté
+                    if a.get('dyn'):
+                        dy = a['dyn']
+                        entry['garmin'] = {k: dy.get(k) for k in
+                                           ('te_aero', 'te_ana', 'load', 'rpe',
+                                            'feel_label', 'temp_c', 'balance_l',
+                                            'flags') if dy.get(k) is not None}
+                        if (dy.get('drift') or {}).get('stance'):
+                            entry['garmin']['stance_drift_pct'] = \
+                                dy['drift']['stance'].get('pct')
+                        if (dy.get('drift') or {}).get('step'):
+                            entry['garmin']['step_drift_pct'] = \
+                                dy['drift']['step'].get('pct')
                 if d.get('score'):
                     entry['score'] = {k: d['score'].get(k) for k in
                                       ('points', 'verdict', 'volume_pct', 'pace_delta_s')}
@@ -147,6 +160,13 @@ Pour les séances récentes tu peux aussi recevoir :
     fatigue sur la seule dérive — croise avec les sensations, la période de l'année
     et l'historique récent. Une FC au-dessus de la consigne avec des sensations
     faciles par temps chaud n'est pas un signal d'alerte.
+  · "garmin" : données de la montre absentes de Strava. "stance_drift_pct" et
+    "step_drift_pct" = évolution du temps de contact au sol et de la longueur de
+    foulée entre le 1er et le dernier tiers. Un contact qui s'allonge de plus de
+    4 % ou une foulée qui raccourcit de plus de 3 % = fatigue MÉCANIQUE réelle,
+    à distinguer d'une simple dérive cardiaque. "rpe" (0-10) et "feel_label" sont
+    saisis par Sébastien sur la montre en fin de séance : traite-les comme sa
+    parole. "balance_l" = % d'appui à gauche, pertinent vu son historique Achille.
   · "sensations" : texte écrit par Sébastien lui-même après la séance (météo, RPE,
     douleurs, contexte). C'est la source la plus fiable du lot : elle prime sur
     l'interprétation des chiffres en cas de contradiction. Si elle est absente, ne

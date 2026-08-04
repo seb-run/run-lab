@@ -138,6 +138,12 @@ def _read_fit_raw(fit_path: str) -> dict:
     session = None
     records: list[dict[int, Any]] = []
     laps: list[dict[int, Any]] = []
+    # Valeurs décodées par NOM de champ (déjà mises à l'échelle par fitdecode).
+    # Utilisées pour la dynamique de course : éviter de refaire à la main les
+    # facteurs d'échelle (÷10, ÷100…) qui diffèrent d'un champ à l'autre.
+    session_named: dict[str, Any] = {}
+    laps_named: list[dict[str, Any]] = []
+    hrv_rr: list[float] = []
 
     # fitdecode expose les champs par nom ET par def_num — on extrait par def_num
     # pour garder une compatibilité 1:1 avec les fields utilisés dans v8_app.js.
@@ -146,6 +152,12 @@ def _read_fit_raw(fit_path: str) -> dict:
             if not isinstance(frame, fitdecode.FitDataMessage):
                 continue
             msg_type = frame.name  # 'session', 'record', 'lap', ...
+            if msg_type == 'hrv':
+                # Intervalles R-R (secondes) enregistrés par la ceinture
+                for field in frame.fields:
+                    if field.name == 'time' and field.value:
+                        hrv_rr.extend([v for v in field.value if v])
+                continue
             if msg_type not in ('session', 'record', 'lap'):
                 continue
 
@@ -158,19 +170,167 @@ def _read_fit_raw(fit_path: str) -> dict:
                 # fitdecode peut renvoyer datetime pour timestamp — on garde
                 rec[field.def_num] = val
 
+            named = {f.name: f.value for f in frame.fields if f.value is not None}
             if msg_type == 'session' and session is None:
                 session = rec
+                session_named = named
             elif msg_type == 'record':
                 records.append(rec)
             elif msg_type == 'lap':
                 laps.append(rec)
+                laps_named.append(named)
 
-    return {'session': session or {}, 'records': records, 'laps': laps}
+    return {'session': session or {}, 'records': records, 'laps': laps,
+            'session_named': session_named, 'laps_named': laps_named,
+            'hrv_rr': hrv_rr}
 
 
 # ============================================================================
 # CONSTRUCTION SÉANCE DEPUIS PARSED FIT
 # ============================================================================
+
+_FEEL_LABELS = {0: 'Très faible', 25: 'Faible', 50: 'Normal',
+                75: 'Fort', 100: 'Très fort'}
+
+# Écart au-delà duquel l'appui gauche/droite mérite d'être regardé. Garmin
+# considère qu'un coureur symétrique reste dans ±1 % ; on alerte à 2 %.
+_ASYM_THRESHOLD = 2.0
+# Allongement du temps de contact au sol entre le 1er et le dernier tiers
+# au-delà duquel on parle de dégradation mécanique.
+_STANCE_FADE_PCT = 4.0
+_STEP_FADE_PCT = -3.0
+
+
+def _thirds(laps_named: list[dict], min_lap_m: float = 400.0) -> tuple[list, list]:
+    """Découpe les laps exploitables en premier / dernier tiers de la distance."""
+    usable = [l for l in (laps_named or [])
+              if (l.get('total_distance') or 0) >= min_lap_m]
+    total = sum(l['total_distance'] for l in usable)
+    if total <= 0 or len(usable) < 4:
+        return [], []
+    cut = total / 3
+    first, last, acc = [], [], 0.0
+    for l in usable:
+        if acc < cut:
+            first.append(l)
+        elif acc >= total - cut:
+            last.append(l)
+        acc += l['total_distance']
+    return first, last
+
+
+def _wavg(laps: list[dict], key: str) -> Optional[float]:
+    """Moyenne pondérée par la distance d'un champ de lap."""
+    num = den = 0.0
+    for l in laps:
+        v, d = l.get(key), l.get('total_distance') or 0
+        if v is not None and d > 0:
+            num += v * d
+            den += d
+    return (num / den) if den else None
+
+
+def _pct_change(a: Optional[float], b: Optional[float]) -> Optional[float]:
+    if a is None or b is None or a == 0:
+        return None
+    return round((b - a) / a * 100, 1)
+
+
+def _build_dynamics(session_named: dict, laps_named: list[dict],
+                    hrv_rr: list[float]) -> Optional[dict]:
+    """
+    Dynamique de course et charge, depuis les champs que Strava ne transmet pas.
+
+    Trois usages visés :
+      · fatigue mécanique — dérive du temps de contact au sol et de la foulée
+        entre le premier et le dernier tiers de la séance ;
+      · asymétrie gauche/droite — répartition du temps d'appui ;
+      · charge — effet d'entraînement, charge Garmin, ressenti saisi à la montre.
+    """
+    s = session_named or {}
+    if not s:
+        return None
+    dyn: dict[str, Any] = {}
+
+    def put(key, name, factor=1.0, nd=1):
+        v = s.get(name)
+        if isinstance(v, (int, float)):
+            dyn[key] = round(v * factor, nd)
+
+    put('stance_ms', 'avg_stance_time', 1, 0)          # ms
+    put('osc_cm', 'avg_vertical_oscillation', 0.1, 1)  # mm → cm
+    put('vratio', 'avg_vertical_ratio', 1, 2)          # %
+    put('balance_l', 'avg_stance_time_balance', 1, 2)  # % d'appui à gauche
+    put('step_m', 'avg_step_length', 0.001, 2)         # mm → m
+    put('temp_c', 'avg_temperature', 1, 0)
+    put('temp_max', 'max_temperature', 1, 0)
+    put('resp', 'enhanced_avg_respiration_rate', 1, 1)
+    put('power', 'avg_power', 1, 0)
+    put('np', 'normalized_power', 1, 0)
+    put('te_aero', 'total_training_effect', 1, 1)
+    put('te_ana', 'total_anaerobic_training_effect', 1, 1)
+    put('load', 'training_load_peak', 1, 1)
+    put('strides', 'total_strides', 1, 0)
+
+    # Ressenti saisi sur la montre en fin de séance
+    if isinstance(s.get('workout_rpe'), (int, float)):
+        dyn['rpe'] = round(s['workout_rpe'] / 10, 1)      # 0-100 → 0-10
+    if isinstance(s.get('workout_feel'), (int, float)):
+        feel = int(s['workout_feel'])
+        dyn['feel'] = feel
+        dyn['feel_label'] = _FEEL_LABELS.get(feel, str(feel))
+
+    # --- Dérive mécanique premier tiers → dernier tiers ---------------------
+    first, last = _thirds(laps_named)
+    if first and last:
+        drift = {}
+        for key, field, nd in (('stance', 'avg_stance_time', 0),
+                               ('step', 'avg_step_length', 0),
+                               ('vratio', 'avg_vertical_ratio', 2),
+                               ('osc', 'avg_vertical_oscillation', 0),
+                               ('hr', 'avg_heart_rate', 0),
+                               ('cad', 'avg_running_cadence', 1)):
+            a, b = _wavg(first, field), _wavg(last, field)
+            if a is None or b is None:
+                continue
+            drift[key] = {'start': round(a, nd), 'end': round(b, nd),
+                          'pct': _pct_change(a, b)}
+        if drift:
+            dyn['drift'] = drift
+
+    # --- Asymétrie d'appui ---------------------------------------------------
+    bals = [l['avg_stance_time_balance'] for l in (laps_named or [])
+            if isinstance(l.get('avg_stance_time_balance'), (int, float))
+            and (l.get('total_distance') or 0) >= 400]
+    if bals:
+        dyn['balance_min'] = round(min(bals), 2)
+        dyn['balance_max'] = round(max(bals), 2)
+        dyn['balance_series'] = [round(b, 2) for b in bals]
+
+    # --- Variabilité R-R pendant l'effort ------------------------------------
+    # NB : ce n'est PAS le "statut HRV" de Garmin, qui se mesure au repos la
+    # nuit et n'existe pas dans le fichier d'activité. On mesure ici la
+    # variabilité pendant la course, à comparer à soi-même sur séances
+    # équivalentes, jamais à une norme.
+    rr = [v for v in (hrv_rr or []) if 0.25 < v < 2.0]
+    if len(rr) > 100:
+        diffs = [(rr[i + 1] - rr[i]) * 1000 for i in range(len(rr) - 1)]
+        rmssd = (sum(d * d for d in diffs) / len(diffs)) ** 0.5
+        dyn['rr_beats'] = len(rr)
+        dyn['rmssd_effort'] = round(rmssd, 1)
+
+    # --- Drapeaux ------------------------------------------------------------
+    flags = []
+    if dyn.get('balance_l') is not None and abs(dyn['balance_l'] - 50) > _ASYM_THRESHOLD:
+        flags.append('asym')
+    d = dyn.get('drift') or {}
+    if (d.get('stance', {}).get('pct') or 0) >= _STANCE_FADE_PCT:
+        flags.append('stance_fade')
+    if (d.get('step', {}).get('pct') or 0) <= _STEP_FADE_PCT:
+        flags.append('step_fade')
+    dyn['flags'] = flags
+    return dyn
+
 
 def _build_blocs_from_laps(laps: list[dict], records: list[dict]) -> list[dict]:
     """Construit la liste de blocs depuis les messages LAP (vraies intervals)."""
@@ -579,6 +739,11 @@ def parse_fit_file(fit_path: str) -> Optional[dict]:
     # Classification
     tp, cv = _classify_session(blocs, td_km)
 
+    # Dynamique de course / charge (champs absents de l'API Strava)
+    dyn = _build_dynamics(parsed.get('session_named') or {},
+                          parsed.get('laps_named') or [],
+                          parsed.get('hrv_rr') or [])
+
     # Nom de fichier nettoyé
     fname = os.path.basename(fit_path)
     title = fname.replace('.fit', '').replace('.gz', '').replace('_', ' ').strip()
@@ -598,6 +763,7 @@ def parse_fit_file(fit_path: str) -> Optional[dict]:
         'cv': cv,
         'track': is_track,
         'b': blocs,
+        'dyn': dyn,
         'source': fname,
     }
 
