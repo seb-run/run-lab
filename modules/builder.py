@@ -219,6 +219,16 @@ def build_html(
     except Exception as e:
         print(f"  ⚠ Lecture coach_analysis.json : {e}")
 
+    # Débrief IA de la dernière séance (scripts/ci/session_debrief.py, optionnel)
+    debrief = None
+    try:
+        from modules.paths import data_dir
+        debrief_path = data_dir() / 'session_debrief.json'
+        if debrief_path.exists():
+            debrief = json.loads(debrief_path.read_text(encoding='utf-8'))
+    except Exception as e:
+        print(f"  ⚠ Lecture session_debrief.json : {e}")
+
     # Payload de données pour le JS (injecté en JSON inline)
     data_payload = {
         'sessions': sessions,
@@ -229,6 +239,7 @@ def build_html(
         'races': build_races_payload(config or {}),
         'plan': plan,
         'coach': coach,
+        'debrief': debrief,
         'generated_at': datetime.now().isoformat(timespec='seconds'),
     }
 

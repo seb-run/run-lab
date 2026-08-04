@@ -555,6 +555,64 @@
   }
 
   // ===== 7. DERNIÈRE SÉANCE =================================================
+  // Débrief IA de la dernière séance : lecture des métriques Garmin comparées
+  // à la référence personnelle de Sébastien (scripts/ci/session_debrief.py).
+  function renderSessionDebrief() {
+    const d = RAW.debrief;
+    const card = document.getElementById('homeDebriefCard');
+    const wrap = document.getElementById('homeDebrief');
+    const dateEl = document.getElementById('homeDebriefDate');
+    if (!card || !wrap || !d || !d.headline) return;
+
+    const s = d.seance || {};
+    if (dateEl) {
+      dateEl.textContent = [s.date, s.km ? s.km + ' km' : null,
+        d.baseline_n ? `réf. ${d.baseline_n} séances` : null]
+        .filter(Boolean).join(' · ');
+    }
+
+    const TONES = {
+      bon: 'var(--c-green)', neutre: 'var(--text-3)', vigilance: 'var(--c-orange)'
+    };
+    let html = `<div class="coach-headline">${escapeHtml(d.headline)}</div>`;
+
+    const bullets = Array.isArray(d.bullets) ? d.bullets
+      : (d.lecture ? [d.lecture] : []);   // compat anciens débriefs
+    if (bullets.length) {
+      html += '<ul class="debrief-bullets">' +
+        bullets.map(b => `<li>${escapeHtml(b)}</li>`).join('') + '</ul>';
+    }
+
+    const pts = (Array.isArray(d.points) ? d.points : []).slice(0, 3);
+    if (pts.length) {
+      html += '<div class="debrief-grid">' + pts.map(p => {
+        const col = TONES[p.ton] || TONES.neutre;
+        return `<div class="debrief-point" style="--dc:${col}">
+          <div class="debrief-point-head">
+            <span class="debrief-point-label">${escapeHtml(p.label || '')}</span>
+            ${p.ecart ? `<span class="debrief-point-ecart">${escapeHtml(p.ecart)}</span>` : ''}
+          </div>
+          <div class="debrief-point-val">${escapeHtml(p.valeur || '')}</div>
+          ${p.lecture ? `<div class="debrief-point-read">${escapeHtml(p.lecture)}</div>` : ''}
+        </div>`;
+      }).join('') + '</div>';
+    }
+
+    if (d.achille) {
+      html += `<div class="debrief-flag debrief-flag-achille">
+        <span class="debrief-flag-title">Achille droit</span>
+        ${escapeHtml(d.achille)}</div>`;
+    }
+    if (d.a_surveiller) {
+      html += `<div class="debrief-flag">
+        <span class="debrief-flag-title">À surveiller</span>
+        ${escapeHtml(d.a_surveiller)}</div>`;
+    }
+
+    wrap.innerHTML = html;
+    card.style.display = '';
+  }
+
   function renderLastSession(lastSession) {
     const last = lastSession !== undefined ? lastSession : OVERVIEW.last_session;
     const box = document.getElementById('lastSession');
@@ -2702,14 +2760,17 @@
     const wrap = document.getElementById('aeroBalanceTable');
     if (!wrap) return;
 
+    // Depuis l'arrivée des .fit Garmin, l'équilibre d'appui est disponible sur
+    // toutes les séances portées avec la ceinture, pas seulement les longues.
+    // On garde un plancher de distance pour éviter que les footings de récup
+    // ne noient la lecture.
     const filtered = getFilteredSessions().filter(s =>
-      s.b && s.b.length >= 5 &&
-      ['marathon', 'sortie_longue', 'semi'].includes(s.tp) &&
+      s.b && s.b.length >= 5 && s.km >= 8 &&
       s.b.some(b => b.bal != null)
     );
 
     if (filtered.length === 0) {
-      wrap.innerHTML = '<p class="race-table-empty">Aucune séance marathon/semi/SL avec balance L/R enregistrée pour cette période.</p>';
+      wrap.innerHTML = '<p class="race-table-empty">Aucune séance avec équilibre d\'appui enregistré pour cette période (ceinture HRM requise).</p>';
       return;
     }
 
@@ -2771,13 +2832,12 @@
     if (!wrap) return;
 
     const filtered = getFilteredSessions().filter(s =>
-      s.b && s.b.length >= 5 &&
-      ['marathon', 'sortie_longue', 'semi'].includes(s.tp) &&
+      s.b && s.b.length >= 5 && s.km >= 8 &&
       s.b.some(b => b.ct != null)
     );
 
     if (filtered.length === 0) {
-      wrap.innerHTML = '<p class="race-table-empty">Aucune séance avec temps de contact enregistré pour cette période.</p>';
+      wrap.innerHTML = '<p class="race-table-empty">Aucune séance avec temps de contact enregistré pour cette période (ceinture HRM requise).</p>';
       return;
     }
 
@@ -5471,6 +5531,7 @@
     chartMonthlyPace();
     chartMonthlyHR();
     renderLastSession();
+    renderSessionDebrief();
     setupTabs();
     setupYearFilter();
     rerenderRaceTab();

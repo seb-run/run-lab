@@ -3619,3 +3619,62 @@ html, body { overflow-x: hidden; width: 100%; }
 }
 .dyn-chip span { display: block; font-size: 10.5px; color: var(--text-3); }
 .dyn-chip strong { font-size: 14px; font-weight: 700; color: var(--text); }
+
+/* ===== Débrief de séance (IA) ============================================ */
+.debrief-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(168px, 1fr));
+  gap: 9px; margin-top: 12px;
+}
+.debrief-point {
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-left: 3px solid var(--dc, var(--text-3));
+  border-radius: 11px; padding: 10px 12px;
+}
+.debrief-point-head {
+  display: flex; justify-content: space-between; align-items: baseline;
+  gap: 6px; margin-bottom: 3px;
+}
+.debrief-point-label {
+  font-size: 11px; font-weight: 700; letter-spacing: .02em;
+  text-transform: uppercase; color: var(--text-3);
+}
+.debrief-point-ecart {
+  font-family: var(--font-mono); font-size: 10.5px; color: var(--dc, var(--text-3));
+  font-weight: 650; white-space: nowrap;
+}
+.debrief-point-val { font-size: 17px; font-weight: 750; color: var(--text); }
+.debrief-point-read {
+  margin-top: 4px; font-size: 12px; line-height: 1.4; color: var(--text-2);
+}
+.debrief-flag {
+  margin-top: 10px; padding: 9px 12px; border-radius: 10px;
+  background: var(--surface-3); font-size: 12.5px; line-height: 1.45;
+  color: var(--text-2);
+}
+.debrief-flag-title {
+  display: block; font-size: 10.5px; font-weight: 700; letter-spacing: .03em;
+  text-transform: uppercase; color: var(--text-3); margin-bottom: 2px;
+}
+.debrief-flag-achille {
+  background: var(--c-orange-soft);
+}
+.debrief-flag-achille .debrief-flag-title { color: var(--c-orange); }
+.debrief-bullets {
+  margin: 10px 0 0; padding: 0; list-style: none;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.debrief-bullets li {
+  position: relative; padding-left: 15px;
+  font-size: 13px; line-height: 1.42; color: var(--text-2);
+}
+.debrief-bullets li::before {
+  content: ''; position: absolute; left: 3px; top: 7px;
+  width: 5px; height: 5px; border-radius: 50%; background: var(--c-blue);
+}
+@media (max-width: 480px) {
+  .debrief-grid { grid-template-columns: 1fr 1fr; gap: 7px; }
+  .debrief-point { padding: 8px 9px; border-radius: 9px; }
+  .debrief-point-val { font-size: 15px; }
+  .debrief-point-read { font-size: 11px; }
+  .debrief-bullets li { font-size: 12.5px; }
+}

@@ -307,6 +307,32 @@ def _build_dynamics(session_named: dict, laps_named: list[dict],
         dyn['balance_max'] = round(max(bals), 2)
         dyn['balance_series'] = [round(b, 2) for b in bals]
 
+    # --- Asymétrie en fonction de l'allure -----------------------------------
+    # Antécédent d'adducteur (hiver 2025) : la compensation ne se voyait pas à
+    # allure facile mais s'ouvrait quand l'allure montait. On compare donc
+    # l'équilibre d'appui sur les kilomètres rapides et sur les kilomètres
+    # lents de la MÊME séance — un déséquilibre qui apparaît avec la vitesse
+    # est un signal différent d'un déséquilibre constant.
+    paced = [l for l in (laps_named or [])
+             if (l.get('total_distance') or 0) >= 400
+             and isinstance(l.get('avg_stance_time_balance'), (int, float))
+             and (l.get('enhanced_avg_speed') or 0) > 0]
+    if len(paced) >= 6:
+        paced.sort(key=lambda l: l['enhanced_avg_speed'])
+        third = max(2, len(paced) // 3)
+        slow, fast = paced[:third], paced[-third:]
+        b_slow = _wavg(slow, 'avg_stance_time_balance')
+        b_fast = _wavg(fast, 'avg_stance_time_balance')
+        v_slow = _wavg(slow, 'enhanced_avg_speed')
+        v_fast = _wavg(fast, 'enhanced_avg_speed')
+        if b_slow and b_fast and v_slow and v_fast and v_fast > v_slow * 1.03:
+            dyn['balance_lent'] = round(b_slow, 2)
+            dyn['balance_rapide'] = round(b_fast, 2)
+            # Positif = l'asymétrie s'aggrave quand l'allure monte
+            dyn['asym_vs_allure'] = round(abs(b_fast - 50) - abs(b_slow - 50), 2)
+            dyn['allure_lent_s'] = round(1000 / v_slow)
+            dyn['allure_rapide_s'] = round(1000 / v_fast)
+
     # --- Variabilité R-R pendant l'effort ------------------------------------
     # NB : ce n'est PAS le "statut HRV" de Garmin, qui se mesure au repos la
     # nuit et n'existe pas dans le fichier d'activité. On mesure ici la
@@ -328,6 +354,8 @@ def _build_dynamics(session_named: dict, laps_named: list[dict],
         flags.append('stance_fade')
     if (d.get('step', {}).get('pct') or 0) <= _STEP_FADE_PCT:
         flags.append('step_fade')
+    if (dyn.get('asym_vs_allure') or 0) >= 1.5:
+        flags.append('asym_vitesse')
     dyn['flags'] = flags
     return dyn
 
@@ -390,6 +418,26 @@ def _build_blocs_from_laps(laps: list[dict], records: list[dict]) -> list[dict]:
         ct79 = _safe_get(lp, 79)
         if ct79 and ct79 > 0:
             bloc['ct'] = round(ct79 / 10)
+
+        # Équilibre d'appui G/D (field 119, ×100 → 50.xx %)
+        bal119 = _safe_get(lp, 119)
+        if bal119 and bal119 > 0:
+            bloc['bal'] = round(bal119 / 100, 2)
+
+        # Ratio vertical (field 118, ×100 → 9.xx %)
+        vr118 = _safe_get(lp, 118)
+        if vr118 and vr118 > 0:
+            bloc['vr'] = round(vr118 / 100, 2)
+
+        # Longueur de foulée (field 120, ×10 → mm → m)
+        sl120 = _safe_get(lp, 120)
+        if sl120 and sl120 > 0:
+            bloc['fl'] = round(sl120 / 10000, 3)
+
+        # Température (field 50, °C)
+        t50 = _safe_get(lp, 50)
+        if t50 is not None and -50 < t50 < 60:
+            bloc['tc'] = t50
 
         # Intensité Garmin (field 23) — workout structuré
         intensity_raw = _safe_get(lp, 23)

@@ -128,6 +128,15 @@ jobs:
           SEB_DATA_DIR: ${{ github.workspace }}/data
         run: python3 scripts/ci/ai_coach.py || echo "⚠ Coach IA indisponible — build publié sans analyse"
 
+      # Débrief de la dernière séance : lecture des métriques Garmin comparées
+      # à la référence personnelle. Ne rappelle pas le modèle si la séance a
+      # déjà été débriefée.
+      - name: Débrief de séance (IA)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SEB_DATA_DIR: ${{ github.workspace }}/data
+        run: python3 scripts/ci/session_debrief.py || echo "⚠ Débrief indisponible — build publié sans"
+
       - name: Rebuild HTML (avec analyse coach)
         env:
           SEB_DATA_DIR: ${{ github.workspace }}/data
