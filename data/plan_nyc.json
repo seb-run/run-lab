@@ -3761,72 +3761,88 @@
             "pace_sec": 334,
             "pace_str": "5'34\"/km",
             "fc": 133,
-            "cadence": 177,
+            "cadence": 175,
             "type": "footing",
             "title": "#125 : run aux BPM",
             "n": 1,
             "note": null,
-            "dyn": null,
+            "dyn": {
+              "stance_ms": 248.0,
+              "osc_cm": 9.8,
+              "vratio": 9.47,
+              "balance_l": 51.01,
+              "step_m": 1.01,
+              "drift": {
+                "hr": {
+                  "start": 128.0,
+                  "end": 137.0,
+                  "pct": 7.0
+                }
+              },
+              "rr_beats": 7156,
+              "rmssd_effort": 80.1,
+              "flags": []
+            },
             "splits": [
               {
                 "km": 1.0,
-                "ps": 339,
-                "fc": 124,
-                "ca": 179
+                "ps": 340,
+                "fc": 123,
+                "ca": 178
               },
               {
                 "km": 1.0,
-                "ps": 336,
+                "ps": 337,
                 "fc": 131,
                 "ca": 178
               },
               {
                 "km": 1.0,
-                "ps": 327,
-                "fc": 128,
-                "ca": 179
-              },
-              {
-                "km": 1.0,
-                "ps": 332,
-                "fc": 132,
+                "ps": 366,
+                "fc": 127,
                 "ca": 178
               },
               {
                 "km": 1.0,
+                "ps": 332,
+                "fc": 131,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
                 "ps": 331,
+                "fc": 132,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 335,
                 "fc": 133,
-                "ca": 177
+                "ca": 174
               },
               {
                 "km": 1.0,
-                "ps": 335,
+                "ps": 336,
                 "fc": 134,
-                "ca": 176
+                "ca": 174
               },
               {
                 "km": 1.0,
-                "ps": 335,
-                "fc": 134,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 331,
-                "fc": 138,
+                "ps": 332,
+                "fc": 137,
                 "ca": 174
               },
               {
                 "km": 1.0,
                 "ps": 341,
-                "fc": 138,
-                "ca": 175
+                "fc": 137,
+                "ca": 174
               },
               {
                 "km": 1.0,
                 "ps": 332,
-                "fc": 138,
-                "ca": 174
+                "fc": 137,
+                "ca": 172
               }
             ]
           },
@@ -3846,7 +3862,7 @@
               "avg": 133,
               "cap": null,
               "over_cap": null,
-              "decoupling_pct": 4.8,
+              "decoupling_pct": 2.6,
               "flags": []
             },
             "reasons": [
@@ -3905,7 +3921,23 @@
             "title": "#126 : run matinal",
             "n": 1,
             "note": null,
-            "dyn": null,
+            "dyn": {
+              "stance_ms": 226.0,
+              "osc_cm": 10.0,
+              "vratio": 8.85,
+              "balance_l": 50.13,
+              "step_m": 1.1,
+              "drift": {
+                "hr": {
+                  "start": 135.0,
+                  "end": 143.0,
+                  "pct": 6.4
+                }
+              },
+              "rr_beats": 7203,
+              "rmssd_effort": 6.4,
+              "flags": []
+            },
             "splits": [
               {
                 "km": 1.0,
