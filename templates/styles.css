@@ -38,8 +38,12 @@
   --grad-card:  linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
 
   /* === Typo === */
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', 'SF Mono', 'Monaco', monospace;
+  /* Police système : sur iPhone c'est SF Pro, et l'app cesse instantanément
+     de se lire comme un site web. Aucun chargement réseau, aucun FOUT. */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI',
+               system-ui, Roboto, 'Helvetica Neue', sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Monaco,
+               'Cascadia Mono', 'Roboto Mono', monospace;
 
   /* === Espacements === */
   --sp-1:  4px;
@@ -77,7 +81,10 @@
 }
 
 html, body {
-  height: 100%;
+  /* `height: 100%` figeait la hauteur du document : le défilement se
+     produisait dans le body, hors de portée de window.scrollY et du
+     positionnement sticky. min-height rend la page au document. */
+  min-height: 100%;
   background: var(--bg);
 }
 
@@ -89,6 +96,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  /* Le rebond du document ne doit pas remonter au navigateur : c'est ce
+     qui distingue une app d'une page qu'on tire vers le bas. */
+  overscroll-behavior-y: contain;
+}
+
+/* Pas de sélection accidentelle sur les éléments de navigation, et pas de
+   halo gris au toucher : deux détails qui trahissent le web sur iOS. */
+button, .tab, .lens, .answer, .year-btn {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
 }
 
 button {
@@ -3229,28 +3247,114 @@ html[data-theme="dark"] .coach-btn-reject { border-color: rgba(255, 255, 255, .1
    ============================================================ */
 .tab .tab-ico { display: none; width: 20px; height: 20px; }
 
-.more-menu {
+/* Bascule de thème : pastille discrète en haut à droite, au niveau de
+   l'en-tête. Ce n'est pas une destination — elle n'a donc sa place ni
+   dans la barre d'onglets ni dans le trait actif. */
+.theme-toggle {
   position: fixed; z-index: 240;
-  right: max(12px, env(safe-area-inset-right));
-  bottom: calc(64px + env(safe-area-inset-bottom));
-  background: var(--surface); border: 1px solid var(--border-2);
-  border-radius: 14px; box-shadow: var(--shadow-lg);
-  padding: 6px; min-width: 210px;
+  top: calc(env(safe-area-inset-top) + 16px);
+  right: max(18px, env(safe-area-inset-right));
+  display: flex; align-items: center; gap: 7px;
+  height: 36px; padding: 0 13px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface-3) 88%, transparent);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  color: var(--text-3);
+  font: 600 12px var(--font-sans);
+  transition: color var(--t-fast), background var(--t-fast), top 200ms var(--ease, ease);
 }
-.more-item {
-  display: block; width: 100%; text-align: left;
-  padding: 10px 14px; border: none; background: none;
-  font: 500 14px var(--font-sans); color: var(--text);
-  border-radius: 9px; cursor: pointer;
-}
-.more-item:hover { background: var(--surface-3); }
-.more-sep { height: 1px; background: var(--border-2); margin: 6px 8px; }
+.theme-toggle svg { width: 16px; height: 16px; }
+/* L'en-tête lui réserve sa place, sinon elle recouvre les compteurs. */
+.hero-row-1 { padding-right: 120px; }
+.theme-toggle:hover { color: var(--text); background: var(--surface-3); }
+.theme-toggle:active { transform: scale(0.94); }
+.theme-toggle:focus-visible { outline: 2px solid var(--c-blue); outline-offset: 2px; }
 
 @media (min-width: 761px) {
-  .more-menu { right: auto; bottom: auto; margin-top: 4px; }
-  .more-menu:not([hidden]) { position: absolute; }
   .tabs { position: relative; }
 }
+
+/* ============================================================
+   Lentilles de l'onglet Séances
+
+   Sept angles de lecture sur un même corpus. Le picto ne change pas
+   de page, il recompose la liste autour d'une métrique. C'est la
+   présentation de la donnée qui porte la singularité — la navigation,
+   elle, reste conventionnelle.
+   ============================================================ */
+.lens-bar {
+  display: flex; gap: 6px;
+  margin: 0 0 var(--sp-5);
+  padding: 4px;
+  background: var(--surface-3);
+  border-radius: 14px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+}
+.lens-bar::-webkit-scrollbar { display: none; }
+
+.lens {
+  display: flex; align-items: center; gap: 7px;
+  flex: 0 0 auto;
+  padding: 8px 13px;
+  border: none; background: none;
+  border-radius: 11px;
+  font: 600 13px var(--font-sans);
+  color: var(--text-3);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color var(--t-fast), background var(--t-fast);
+}
+.lens-ico { width: 17px; height: 17px; flex: 0 0 auto; }
+.lens:hover { color: var(--text-2); }
+.lens.on {
+  color: var(--text);
+  background: var(--surface);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, .07), 0 0 0 1px var(--border);
+}
+html[data-theme="dark"] .lens.on {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .35), 0 0 0 1px var(--border-2);
+}
+.lens:focus-visible { outline: 2px solid var(--c-blue); outline-offset: 2px; }
+
+.lens-panel { display: none; }
+.lens-panel.on { display: block; }
+.lens-panel[hidden] { display: none !important; }
+
+/* Écran étroit : le libellé s'efface, le picto suffit — sauf sur l'actif,
+   qui garde son nom pour qu'on sache toujours ce qu'on regarde. */
+@media (max-width: 560px) {
+  .lens { padding: 9px 11px; }
+  .lens span { display: none; }
+  .lens.on span { display: inline; }
+  .lens-ico { width: 18px; height: 18px; }
+}
+
+/* Comparateur : replié par défaut, il ne sert qu'à la demande. */
+.comp-fold {
+  margin-top: var(--sp-5);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  overflow: hidden;
+}
+.comp-fold > summary {
+  display: flex; align-items: center; gap: 9px;
+  padding: 13px var(--sp-5);
+  cursor: pointer;
+  font-size: 13px; font-weight: 600; color: var(--text-2);
+  list-style: none;
+}
+.comp-fold > summary::-webkit-details-marker { display: none; }
+.comp-fold-ico { font-size: 15px; color: var(--c-blue); }
+.comp-fold-hint {
+  margin-left: auto;
+  font-size: 11px; font-weight: 500; color: var(--text-3);
+}
+.comp-fold[open] > summary { border-bottom: 1px solid var(--border); }
+.comp-fold .card { border: none; box-shadow: none; background: none; }
 
 /* Mobile : barre fixe en bas type app iOS */
 @media (max-width: 760px) {
@@ -3366,8 +3470,17 @@ html[data-theme="dark"] .score-ring circle:first-of-type { stroke: var(--surface
 
 /* ============================================================
    Anti-débordement horizontal (iOS dézoome sinon toute la page)
+
+   `overflow-x: hidden` fait de l'élément un conteneur de défilement :
+   l'en-tête sticky cessait de coller. `clip` coupe le débordement sans
+   créer ce conteneur — la barre d'onglets reste fixée en bas et
+   l'en-tête reste collé en haut. `hidden` sert de repli aux navigateurs
+   antérieurs à Safari 16, au prix du seul en-tête collant.
    ============================================================ */
-html, body { overflow-x: hidden; width: 100%; }
+html, body { overflow-x: hidden; width: 100%; max-width: 100%; }
+@supports (overflow: clip) {
+  html, body { overflow-x: clip; }
+}
 .plan-week-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .plan-week-table { width: 100%; }
 .plan-week-table td { word-break: break-word; }
@@ -3702,4 +3815,293 @@ html, body { overflow-x: hidden; width: 100%; }
   /* La colonne Intent est la moins utile sur petit écran : l'information est
      déjà lisible dans l'allure de chaque bloc. */
   .sess-blocs-table th:nth-child(7), .sess-blocs-table td:nth-child(7) { display: none; }
+}
+
+/* ============================================================
+   Accueil en un écran
+
+   Trois questions, trois réponses, au-dessus du pli. La route vers
+   NYC tient la colonne vertébrale ; tout le reste attend en dessous.
+   Une tuile porte une valeur et une ligne de contexte, jamais plus.
+   ============================================================ */
+.home-answers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-6);
+}
+
+.answer {
+  display: flex; flex-direction: column; gap: 6px;
+  min-height: 104px;
+  padding: 14px 15px;
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg, 14px);
+  box-shadow: var(--shadow-sm, 0 1px 2px rgba(15,23,42,.05));
+  cursor: pointer;
+  transition: transform var(--t-fast), box-shadow var(--t-fast), border-color var(--t-fast);
+  -webkit-tap-highlight-color: transparent;
+}
+.answer:hover { border-color: var(--border-2); box-shadow: var(--shadow-md); }
+.answer:active { transform: scale(0.985); }
+.answer:focus-visible { outline: 2px solid var(--c-blue); outline-offset: 2px; }
+
+.answer-k {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.07em; color: var(--text-3);
+}
+.answer-body { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.answer-v {
+  display: flex; align-items: baseline; gap: 6px;
+  font-family: var(--font-mono); font-size: 21px; font-weight: 700;
+  line-height: 1.1; letter-spacing: -0.02em;
+  color: var(--ac, var(--text));
+}
+.answer-n {
+  font-size: 11.5px; line-height: 1.35; color: var(--text-3);
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.answer-muted { color: var(--text-3); font-weight: 600; }
+.answer-check { font-size: 14px; color: var(--c-green); font-style: normal; }
+.answer-pts {
+  font-size: 12px; font-style: normal; font-weight: 600;
+  color: var(--text-3);
+}
+
+/* Le mot du coach n'est pas un chiffre : il se lit comme une phrase. */
+.answer-quote {
+  font-family: var(--font-sans); font-size: 13.5px; font-weight: 600;
+  line-height: 1.35; color: var(--text);
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.answer-flag { color: var(--c-orange); font-weight: 700; }
+.answer.has-flag { border-color: color-mix(in srgb, var(--c-orange) 45%, var(--border)); }
+
+/* Sous le pli : le détail, pour qui le cherche. */
+.home-below { border-top: 1px solid var(--border); padding-top: var(--sp-6); }
+.home-hl {
+  animation: homeHl 1.4s var(--ease, ease-out);
+  border-radius: var(--r-lg, 14px);
+}
+@keyframes homeHl {
+  0%   { box-shadow: 0 0 0 0 color-mix(in srgb, var(--c-blue) 55%, transparent); }
+  40%  { box-shadow: 0 0 0 5px color-mix(in srgb, var(--c-blue) 22%, transparent); }
+  100% { box-shadow: 0 0 0 0 transparent; }
+}
+
+/* Écran étroit : la route se resserre, « Aujourd'hui » prend la largeur,
+   les deux autres se partagent la ligne. L'ensemble tient sans défiler. */
+@media (max-width: 640px) {
+  .route-card { padding: 14px 14px 8px; margin-bottom: var(--sp-4); }
+  .route-title { font-size: 15px; }
+  .route-title strong { font-size: 18px; }
+  .route-stats { gap: 13px; }
+  .route-stat-v { font-size: 18px; }
+  .route-svg { max-height: 128px; }
+  .route-legend { font-size: 11px; padding: 4px 0 0; }
+
+  .home-answers { grid-template-columns: 1fr 1fr; gap: 9px; margin-bottom: var(--sp-5); }
+  .answer-today { grid-column: 1 / -1; min-height: 84px; }
+  .answer { min-height: 96px; padding: 12px 13px; }
+  .answer-v { font-size: 19px; }
+  .answer-quote { font-size: 12.5px; -webkit-line-clamp: 4; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .answer, .home-hl { transition: none; animation: none; }
+}
+
+/* ============================================================
+   Couche app
+
+   Ce qui sépare une PWA soignée d'une app : le chrome ne bouge pas,
+   seul le contenu défile ; les barres laissent deviner ce qui passe
+   dessous ; et rien ne dépasse dans les encoches.
+   ============================================================ */
+
+/* Zones sûres : sur iPhone en paysage, le contenu ne doit pas passer
+   sous l'encoche ni sous la barre d'accueil. */
+.wrap {
+  padding-left: max(var(--sp-5), env(safe-area-inset-left));
+  padding-right: max(var(--sp-5), env(safe-area-inset-right));
+}
+
+/* Transition entre onglets et entre lentilles. Le navigateur fait le
+   fondu croisé lui-même ; là où l'API manque, la bascule est sèche et
+   ça reste correct. */
+@media (prefers-reduced-motion: no-preference) {
+  ::view-transition-old(root) { animation: vtOut 140ms ease-in both; }
+  ::view-transition-new(root) { animation: vtIn 200ms cubic-bezier(0.16,1,0.3,1) both; }
+}
+@keyframes vtOut { to { opacity: 0; } }
+@keyframes vtIn { from { opacity: 0; transform: translateY(6px); } }
+
+@media (max-width: 760px) {
+  /* En-tête fixe. Au défilement il se condense : l'identité et les
+     compteurs suffisent, les allures de forme se replient. */
+  .hero {
+    position: sticky; top: 0; z-index: 220;
+    padding: calc(var(--sp-4) + env(safe-area-inset-top)) 0 var(--sp-3);
+    background: color-mix(in srgb, var(--surface) 88%, transparent);
+    backdrop-filter: saturate(180%) blur(16px);
+    -webkit-backdrop-filter: saturate(180%) blur(16px);
+    border-bottom: 1px solid transparent;
+    transition: padding 200ms var(--ease, ease), border-color 200ms ease;
+  }
+  body.is-scrolled .hero {
+    padding-top: calc(var(--sp-2) + env(safe-area-inset-top));
+    padding-bottom: var(--sp-2);
+    border-bottom-color: var(--border);
+  }
+  .hero-row-2 {
+    overflow: hidden;
+    max-height: 200px; opacity: 1;
+    transition: max-height 240ms var(--ease, ease), opacity 160ms ease,
+                margin 240ms var(--ease, ease);
+  }
+  body.is-scrolled .hero-row-2 {
+    max-height: 0; opacity: 0; margin: 0;
+  }
+  body.is-scrolled .brand-text p { display: none; }
+  body.is-scrolled .logo { transform: scale(0.86); }
+  .logo { transition: transform 200ms var(--ease, ease); }
+
+  /* Le filtre année ne concerne que les séances : ailleurs il n'est
+     qu'un rang de boutons qui vole une ligne à l'écran. */
+  .year-bar { display: none; }
+  body[data-tab="sess"] .year-bar { display: flex; }
+
+  /* La barre d'onglets est déjà fixe en bas ; on lui ajoute la zone sûre
+     et on réserve la place correspondante dans le contenu. */
+  .main { padding-top: var(--sp-4); padding-bottom: calc(84px + env(safe-area-inset-bottom)); }
+  .tab:active { transform: scale(0.93); }
+  .tab { transition: transform 120ms var(--ease, ease), color var(--t-fast); }
+
+  /* Les listes internes ne doivent pas entraîner la page avec elles. */
+  .sess-table-scroll, .lens-bar, .year-bar, .chart-wrap {
+    overscroll-behavior: contain;
+  }
+}
+
+/* Desktop : en-tête et onglets restent accessibles sans remonter. */
+@media (min-width: 761px) {
+  .tabs {
+    position: sticky; top: 0; z-index: 220;
+    background: color-mix(in srgb, var(--bg) 86%, transparent);
+    backdrop-filter: saturate(180%) blur(14px);
+    -webkit-backdrop-filter: saturate(180%) blur(14px);
+  }
+  .lens-bar { position: sticky; top: 58px; z-index: 210; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero, .hero-row-2, .logo, .tab { transition: none; }
+  ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+}
+
+/* ============================================================
+   Accueil : tenir dans un écran
+
+   L'en-tête coûtait 383 px sur iPhone, dont 200 pour les allures de
+   forme. Elles restent lisibles mais passent en bandeau défilant :
+   la route et les trois réponses reprennent la place.
+   ============================================================ */
+@media (max-width: 640px) {
+  .hero-paces-head { margin-bottom: 4px; }
+  .hero-paces-title { font-size: 10px; }
+  .hero-paces-sub { display: none; }
+
+  .hero-paces {
+    display: flex;
+    gap: 7px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 2px;
+  }
+  .hero-paces::-webkit-scrollbar { display: none; }
+  .hero-paces > .pace-card {
+    flex: 0 0 auto;
+    min-width: 96px;
+    padding: 7px 10px;
+  }
+  /* La règle qui rattrapait l'allure marathon orpheline n'a plus d'objet
+     hors grille : elle produirait une carte à cheval sur la ligne. */
+  .hero-paces > .pace-card:last-child { grid-column: auto; }
+  .pace-card .pv { font-size: 15px; }
+}
+
+/* Marge de sécurité sur les petits écrans : l'accueil doit tenir sur un
+   iPhone SE (667 px) comme sur un 15 Pro. Le titre de la route passe sur
+   la même ligne que ses compteurs, les tuiles se resserrent. */
+@media (max-width: 640px) {
+  .route-card { padding: 11px 13px 6px; }
+  .route-head { flex-wrap: nowrap; align-items: center; gap: 8px; }
+  .route-title { font-size: 13px; line-height: 1.2; }
+  .route-title strong { font-size: 15px; display: block; }
+  .route-stats { gap: 11px; }
+  .route-stat-v { font-size: 16px; }
+  .route-stat-l { font-size: 8.5px; letter-spacing: 0.05em; }
+  .route-svg { max-height: 96px; }
+
+  .home-answers { gap: 8px; margin-bottom: var(--sp-4); }
+  .answer { min-height: 86px; padding: 10px 12px; gap: 4px; }
+  .answer-today { min-height: 74px; }
+  .answer-k { font-size: 9.5px; }
+  .answer-v { font-size: 18px; }
+  .answer-n { font-size: 11px; -webkit-line-clamp: 2; }
+  .answer-quote { font-size: 12px; -webkit-line-clamp: 3; }
+}
+
+/* Écrans courts (iPhone SE et consorts) : l'accueil doit toujours tenir.
+   Les allures de forme quittent l'en-tête — elles ne répondent à aucune
+   des trois questions et sont détaillées dans Séances › Progression,
+   carte « Allures de forme dérivées ». */
+@media (max-height: 700px) and (max-width: 640px) {
+  .hero-row-2 { display: none; }
+  .hero { padding: calc(var(--sp-3) + env(safe-area-inset-top)) 0 var(--sp-2); }
+  .route-svg { max-height: 72px; }
+  .route-card { padding: 9px 12px 4px; }
+  .answer { min-height: 76px; }
+  .answer-today { min-height: 66px; }
+  .answer-n { -webkit-line-clamp: 1; }
+  .answer-quote { -webkit-line-clamp: 2; }
+}
+
+/* ============================================================
+   Corrections de lecture mobile
+   ============================================================ */
+
+/* La bascule de thème n'est pas une destination : dans la barre du bas
+   elle se lisait comme un cinquième onglet. Elle remonte en pastille,
+   au niveau de l'en-tête, là où on range les réglages. */
+@media (max-width: 760px) {
+  /* Sur mobile, la pastille se réduit à son picto : l'écran est étroit
+     et l'icône lune se comprend seule. */
+  .theme-toggle {
+    top: calc(env(safe-area-inset-top) + 12px);
+    width: 36px; padding: 0; justify-content: center;
+  }
+  body.is-scrolled .theme-toggle { top: calc(env(safe-area-inset-top) + 7px); }
+  .theme-toggle span { display: none; }
+  /* L'en-tête doit lui laisser sa place. */
+  .hero-row-1 { padding-right: 46px; }
+}
+
+/* Les quatre indicateurs de période passaient en colonne unique : la
+   liste des séances se retrouvait à 800 px du haut. Deux colonnes
+   compactes, on les lit d'un coup d'œil et la liste reste accessible. */
+@media (max-width: 640px) {
+  #ovKPIs {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 9px;
+  }
+  #ovKPIs .kpi { padding: 10px 12px; }
+  #ovKPIs .kpi .label { font-size: 9.5px; margin-bottom: 2px; }
+  #ovKPIs .kpi .value { font-size: 19px; line-height: 1.15; }
+  #ovKPIs .kpi .sub { font-size: 10px; }
 }

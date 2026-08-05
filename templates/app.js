@@ -367,9 +367,11 @@
   }
 
   function renderOverviewKPIs() {
+    const box = document.getElementById('ovKPIs');
+    if (!box) return;
     const sess = getFilteredSessions();
     if (!sess.length) {
-      document.getElementById('ovKPIs').innerHTML =
+      box.innerHTML =
         '<div class="card placeholder">Aucune séance pour cette période.</div>';
       return;
     }
@@ -390,7 +392,7 @@
       { v: fmtPace(avgPaceSec) + '/km', l: 'Allure moyenne', c: 'purple' },
     ];
 
-    document.getElementById('ovKPIs').innerHTML = kpis.map(k =>
+    box.innerHTML = kpis.map(k =>
       `<div class="kpi" data-c="${k.c}">
         <div class="label">${k.l}</div>
         <div class="value">${k.v}</div>
@@ -616,6 +618,7 @@
   function renderLastSession(lastSession) {
     const last = lastSession !== undefined ? lastSession : OVERVIEW.last_session;
     const box = document.getElementById('lastSession');
+    if (!box) return;   // bloc retiré de l'accueil : le débrief de séance le remplace
     if (!last) {
       box.innerHTML = '<p style="color:var(--text-3)">Aucune séance disponible.</p>';
       return;
@@ -639,17 +642,81 @@
   }
 
   // ===== 8. NAVIGATION ======================================================
+  // Quatre onglets. Les sept anciennes vues d'analyse sont devenues des
+  // lentilles à l'intérieur de Séances : même corpus, angle de lecture
+  // différent. La navigation reste conventionnelle, la donnée fait le reste.
+
+  function swap(fn) {
+    // View Transitions quand le navigateur sait faire, bascule sèche sinon.
+    if (document.startViewTransition && !prefersReducedMotion()) {
+      document.startViewTransition(fn);
+    } else {
+      fn();
+    }
+  }
+
+  function prefersReducedMotion() {
+    return window.matchMedia &&
+           matchMedia('(prefers-reduced-motion: reduce)').matches;
+  }
+
+  // Un retour bref au toucher : c'est ce qui donne la sensation qu'on
+  // manipule une app et non une page. Silencieux là où c'est indisponible.
+  function tap(ms) {
+    if (!navigator.vibrate || prefersReducedMotion()) return;
+    try { navigator.vibrate(ms || 8); } catch (e) {}
+  }
+
   function activateTab(name) {
     const target = document.getElementById('t-' + name);
     if (!target) return;
-    document.querySelectorAll('.tab').forEach(b => b.classList.remove('on'));
-    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('on'));
-    target.classList.add('on');
-    const btn = document.querySelector(`.tab[data-tab="${name}"]`);
-    if (btn) btn.classList.add('on');
-    else document.getElementById('tabMoreBtn')?.classList.add('on');
+    document.body.dataset.tab = name;
+    if (target.classList.contains('on')) { scrollMainTop(); return; }
+    tap(9);
+    swap(() => {
+      document.querySelectorAll('.tab[data-tab]').forEach(b => {
+        b.classList.remove('on');
+        b.setAttribute('aria-selected', 'false');
+      });
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('on'));
+      target.classList.add('on');
+      const btn = document.querySelector(`.tab[data-tab="${name}"]`);
+      if (btn) { btn.classList.add('on'); btn.setAttribute('aria-selected', 'true'); }
+      try { localStorage.setItem('seb-tab', name); } catch (e) {}
+    });
     resizeAllCharts();
+    scrollMainTop();
+  }
+
+  // Lentilles de l'onglet Séances.
+  function activateLens(name) {
+    const target = document.getElementById('l-' + name);
+    if (!target) return;
+    if (target.classList.contains('on')) return;
+    tap(6);
+    swap(() => {
+      document.querySelectorAll('.lens').forEach(b => {
+        const on = b.dataset.lens === name;
+        b.classList.toggle('on', on);
+        b.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+      document.querySelectorAll('.lens-panel').forEach(p => {
+        const on = p.id === 'l-' + name;
+        p.classList.toggle('on', on);
+        p.hidden = !on;
+      });
+      try { localStorage.setItem('seb-lens', name); } catch (e) {}
+    });
+    // Le bouton actif est ramené dans le champ de vision sur écran étroit.
+    const btn = document.querySelector(`.lens[data-lens="${name}"]`);
+    if (btn) btn.scrollIntoView({block: 'nearest', inline: 'center', behavior: 'smooth'});
+    resizeAllCharts();
+    scrollMainTop();
+  }
+
+  function scrollMainTop() {
     window.scrollTo({top: 0});
+    document.querySelector('.main')?.scrollTo?.({top: 0});
   }
 
   function resizeAllCharts() {
@@ -679,49 +746,54 @@
         }, 50);
   }
 
+  // L'en-tête se condense dès qu'on quitte le haut : le chrome garde sa
+  // place, le contenu récupère la hauteur. Passif et sur rAF, pour ne
+  // jamais peser sur le défilement.
+  function setupScrollChrome() {
+    let ticking = false;
+    const apply = () => {
+      document.body.classList.toggle('is-scrolled', window.scrollY > 28);
+      ticking = false;
+    };
+    addEventListener('scroll', () => {
+      if (!ticking) { ticking = true; requestAnimationFrame(apply); }
+    }, {passive: true});
+    apply();
+  }
+
   function setupTabs() {
+    setupScrollChrome();
+    document.body.dataset.tab = 'home';
+
     document.querySelectorAll('.tab[data-tab]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        closeMoreMenu();
-        activateTab(btn.dataset.tab);
-      });
+      btn.addEventListener('click', () => activateTab(btn.dataset.tab));
     });
 
-    // Menu « Plus »
-    const moreBtn = document.getElementById('tabMoreBtn');
-    const moreMenu = document.getElementById('moreMenu');
-    if (moreBtn && moreMenu) {
-      moreBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        moreMenu.hidden = !moreMenu.hidden;
-      });
-      moreMenu.querySelectorAll('.more-item[data-tab]').forEach(item => {
-        item.addEventListener('click', () => {
-          closeMoreMenu();
-          activateTab(item.dataset.tab);
-        });
-      });
-      document.addEventListener('click', (e) => {
-        if (!moreMenu.hidden && !moreMenu.contains(e.target)) closeMoreMenu();
-      });
-    }
+    document.querySelectorAll('.lens[data-lens]').forEach(btn => {
+      btn.addEventListener('click', () => activateLens(btn.dataset.lens));
+    });
+
+    // Restauration du dernier point de vue : rouvrir l'app doit rendre
+    // l'écran quitté, pas l'accueil par défaut.
+    let lastTab = null, lastLens = null;
+    try {
+      lastTab = localStorage.getItem('seb-tab');
+      lastLens = localStorage.getItem('seb-lens');
+    } catch (e) {}
+    if (lastLens && lastLens !== 'list') activateLens(lastLens);
+    if (lastTab && lastTab !== 'home') activateTab(lastTab);
 
     // Bascule thème clair/sombre
     const themeBtn = document.getElementById('themeToggle');
     if (themeBtn) {
+      const label = document.getElementById('themeToggleLabel');
       const isDark = () => document.documentElement.dataset.theme === 'dark';
-      const syncLabel = () => { themeBtn.textContent = isDark() ? '☀️ Mode clair' : '🌙 Mode sombre'; };
-      syncLabel();
+      if (label) label.textContent = isDark() ? 'Clair' : 'Sombre';
       themeBtn.addEventListener('click', () => {
         localStorage.setItem('seb-theme', isDark() ? 'light' : 'dark');
         location.reload();  // recharge pour ré-initialiser les charts avec la bonne palette
       });
     }
-  }
-
-  function closeMoreMenu() {
-    const m = document.getElementById('moreMenu');
-    if (m) m.hidden = true;
   }
 
   // Rafraîchit l'intégralité de l'onglet Vue d'ensemble et le hero
@@ -5500,9 +5572,116 @@
       </div>`;
   }
 
+  // ===== ACCUEIL : les trois réponses ========================================
+  // Quoi aujourd'hui, l'ai-je bien fait, que dit le coach. Trois tuiles au-
+  // dessus du pli, chacune une phrase. Le détail est en dessous, on y descend
+  // en touchant la tuile — l'accueil répond, il ne raconte pas.
+
+  function homeFindLastDone() {
+    let best = null;
+    for (const w of (PLAN?.weeks || [])) {
+      for (const d of (w.days || [])) {
+        if (d.actual && d.date && (!best || d.date > best.date)) best = d;
+      }
+    }
+    return best;
+  }
+
+  function homeRenderAnswers() {
+    const wrap = document.getElementById('homeAnswers');
+    if (!wrap) return;
+
+    // 1. Quoi aujourd'hui
+    const slot1 = document.getElementById('answerToday');
+    if (slot1) {
+      const t = planFindToday();
+      const d = t && t.day;
+      if (!d) {
+        slot1.innerHTML = '<span class="answer-v answer-muted">Pas de séance</span>';
+      } else if ((d.km || 0) <= 0) {
+        slot1.innerHTML = '<span class="answer-v">Repos</span>' +
+          '<span class="answer-n">jour sans course</span>';
+      } else {
+        const done = d.actual && ['done','over','under','bonus'].includes(d.status);
+        const color = PLAN_TYPE_COLORS[d.type] || '#5b8af5';
+        const title = d._rescheduled_title || d.title || '';
+        const pace = d._rescheduled_pace || d.target_pace;
+        slot1.innerHTML =
+          `<span class="answer-v" style="--ac:${color}">${d.km} km` +
+          (done ? '<i class="answer-check">✓</i>' : '') + '</span>' +
+          `<span class="answer-n">${escapeHtml(title)}${pace ? ' · ' + escapeHtml(pace) : ''}</span>`;
+      }
+    }
+
+    // 2. L'ai-je bien fait
+    const slot2 = document.getElementById('answerDone');
+    if (slot2) {
+      const last = homeFindLastDone();
+      if (!last) {
+        slot2.innerHTML = '<span class="answer-v answer-muted">—</span>';
+      } else {
+        const a = last.actual || {};
+        const sc = last.score;
+        const m = sc ? (VERDICT_META[sc.verdict] || VERDICT_META.partial) : null;
+        const when = homeRelDay(last.date);
+        slot2.innerHTML =
+          (sc ? `<span class="answer-v" style="--ac:${m.color}">${m.label}` +
+                `<i class="answer-pts">${sc.points}</i></span>`
+              : `<span class="answer-v">${a.km || '—'} km</span>`) +
+          `<span class="answer-n">${when}${a.km ? ' · ' + a.km + ' km' : ''}` +
+          `${a.pace_str ? ' · ' + escapeHtml(a.pace_str) : ''}</span>`;
+      }
+    }
+
+    // 3. Ce qu'en dit le coach
+    const slot3 = document.getElementById('answerCoach');
+    if (slot3) {
+      const dbg = RAW.debrief, co = RAW.coach;
+      const line = (dbg && dbg.headline) || (co && co.headline) || null;
+      const alert = dbg && dbg.achille;
+      if (!line) {
+        slot3.innerHTML = '<span class="answer-v answer-muted">Rien à signaler</span>';
+      } else {
+        slot3.innerHTML =
+          `<span class="answer-v answer-quote">${escapeHtml(line)}</span>` +
+          (alert ? '<span class="answer-n answer-flag">⚑ Achille droit</span>'
+                 : '<span class="answer-n">toucher pour le détail</span>');
+      }
+      const btn = slot3.closest('.answer');
+      if (btn) btn.classList.toggle('has-flag', !!alert);
+    }
+  }
+
+  function homeRelDay(iso) {
+    const today = localISODate();
+    if (iso === today) return "aujourd'hui";
+    const diff = Math.round((new Date(today) - new Date(iso)) / 86400000);
+    if (diff === 1) return 'hier';
+    if (diff < 7) return `il y a ${diff} jours`;
+    return new Date(iso).toLocaleDateString('fr-FR', {day: 'numeric', month: 'short'});
+  }
+
+  function setupHomeAnswers() {
+    document.querySelectorAll('.answer[data-goto]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = document.getElementById(btn.dataset.goto);
+        if (!target) return;
+        // La carte visée peut être masquée (débrief absent) : on retombe
+        // alors sur le premier bloc visible du détail.
+        const visible = target.offsetParent !== null
+          ? target
+          : document.querySelector('.home-below > *:not([style*="display:none"])');
+        (visible || target).scrollIntoView({behavior: 'smooth', block: 'start'});
+        (visible || target).classList.add('home-hl');
+        setTimeout(() => (visible || target).classList.remove('home-hl'), 1400);
+      });
+    });
+  }
+
   function renderHomeTab() {
     homeRenderPlanHero();
     homeRenderRoute();
+    homeRenderAnswers();
     homeRenderDuel();
     homeRenderLast();
     homeRenderWeek();
@@ -5526,6 +5705,7 @@
   function initPlanTab() {
     renderPlanTab();
     renderHomeTab();
+    setupHomeAnswers();
     setupDaySheet();
   }
 

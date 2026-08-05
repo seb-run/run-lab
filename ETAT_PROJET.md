@@ -3,7 +3,7 @@
 Document de reprise : à donner en début de nouvelle conversation pour repartir
 avec le contexte sans rejouer l'historique.
 
-Dernière mise à jour : 5 août 2026.
+Dernière mise à jour : 5 août 2026 (refonte d'interface livrée).
 
 ## Le contexte en dix lignes
 
@@ -65,30 +65,58 @@ adresses testées dans `intervals_sync.py` est donc significatif.
 - Les commits et push sont faits par Sébastien depuis son Mac.
 - L'écriture de fichiers dans le dossier monté est en revanche autorisée.
 
-## Chantier en cours : refonte de l'interface
+## Refonte de l'interface (livrée)
 
-Constat sur captures iPhone : l'app est soignée mais se lit comme un site web.
+Constat de départ sur captures iPhone : l'app est soignée mais se lit comme un
+site web. Position retenue, inchangée : la navigation reste conventionnelle, la
+singularité passe par la présentation de la donnée.
 
-Corrigé : champ de recherche géant (flex-basis sur un axe colonne), étiquettes
-de graphique en bouillie, nuage FC/Allure tassé faute de `scale: true`, tableau
-des blocs rogné, allure marathon orpheline.
+Corrigé avant la refonte : champ de recherche géant (flex-basis sur un axe
+colonne), étiquettes de graphique en bouillie, nuage FC/Allure tassé faute de
+`scale: true`, tableau des blocs rogné, allure marathon orpheline.
 
-À faire, dans l'ordre convenu :
+**1. Quatre onglets, sept lentilles.** Accueil · Plan · Séances · Courses. Le
+menu « … » a disparu. Dans Séances, une barre de pictos (Liste, Dérive,
+Équilibre, Charge, Efficacité, Volume, Progression) recompose la page autour
+d'une métrique. Prédictions a rejoint Courses. Vue d'ensemble a été démantelée :
+ses quatre indicateurs coiffent la lentille Liste, ses courbes d'allure et de FC
+mensuelles sont passées en Efficacité, son volume hebdomadaire faisait doublon
+avec la lentille Volume, sa « dernière séance » avec le débrief d'accueil. Le
+comparateur est replié sous la liste.
 
-1. **Fusion en onglet Séances** — onze vues pour quatre onglets, sept cachées
-   derrière un menu « … ». Les vues d'analyse deviennent des pictos au-dessus de
-   la liste (dérive cardiaque, équilibre G/D, charge, efficacité, volume,
-   progression), chacun recomposant la liste autour de sa métrique.
-   Cible : quatre onglets, Aujourd'hui · Plan · Séances · Courses.
-2. **Accueil en un écran** — répondre à « quoi aujourd'hui, l'ai-je bien fait,
-   que dit le coach » sans défiler. La sparkline « route vers NYC » comme
-   colonne vertébrale.
-3. **Couche app** — zones sûres, barres translucides, en-tête et barre d'onglets
-   fixes avec défilement du seul contenu, `overscroll-behavior: contain`,
-   View Transitions, retour au toucher, police système.
+**2. Accueil en un écran.** La route vers NYC en colonne vertébrale, puis trois
+tuiles — Aujourd'hui, L'ai-je bien fait, Ce qu'en dit le coach — chacune une
+valeur et une ligne. Toucher une tuile descend vers son détail, sous le pli.
+Mesuré : sur iPhone SE (375×667), le pli tombe 92 px sous la dernière tuile.
 
-Position retenue : la navigation reste conventionnelle, la singularité passe par
-la présentation de la donnée. Une navigation « novatrice » produit de la friction.
+**3. Couche app.** Police système (Inter et JetBrains Mono retirés du CDN),
+en-tête collant qui se condense au défilement, barre d'onglets fixe,
+`overscroll-behavior: contain`, View Transitions, retour haptique au toucher,
+zones sûres. La bascule de thème est sortie de la barre d'onglets : elle s'y
+lisait comme une cinquième destination.
+
+Écart assumé : le comparateur se pilote toujours par deux menus déroulants, et
+non en cochant deux lignes de la liste.
+
+### Trois pièges CSS qui ont coûté du temps
+
+- `html, body { height: 100% }` figeait la hauteur du document : le défilement
+  se produisait dans le body, donc `window.scrollY` restait à zéro et `sticky`
+  n'accrochait rien. Remplacé par `min-height`.
+- `overflow-x: hidden` fait de l'élément un conteneur de défilement et casse le
+  `sticky` de l'en-tête. `overflow-x: clip` coupe le débordement sans créer ce
+  conteneur — c'est la bonne primitive, avec `hidden` en repli.
+- Un parent doté de `backdrop-filter` devient conteneur de référence pour ses
+  enfants en `position: fixed`. La pastille de thème restait collée dans la
+  barre d'onglets tant qu'elle en était l'enfant.
+
+### Vérification
+
+`outputs/verif.py` (Playwright) contrôle en 390×844, 375×667 et 1440×900 :
+absence d'erreur console, accueil au-dessus du pli, en-tête collant et condensé,
+bascule des quatre onglets et des sept lentilles, un seul panneau visible à la
+fois, thème hors de la barre. Le bac à sable n'ayant pas de réseau, ECharts y est
+remplacé par une doublure.
 
 ## Secrets et services
 
