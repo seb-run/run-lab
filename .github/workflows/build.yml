@@ -90,7 +90,7 @@ jobs:
           SEB_DATA_DIR: ${{ github.workspace }}/data
           SYNC_LOOKBACK_DAYS: ${{ inputs.lookback_days || '14' }}
           SYNC_FORCE: ${{ inputs.force_resync && '1' || '' }}
-        run: python3 scripts/ci/strava_api_sync.py
+        run: python3 scripts/ci/strava_api_sync.py || echo "⚠ Sync Strava indisponible — build poursuivi avec le cache"
 
       # Correctif rétroactif : laps Strava comptés en temps écoulé (pause montre)
       # → séances régulières classées à tort en fractionné. Lancement manuel.

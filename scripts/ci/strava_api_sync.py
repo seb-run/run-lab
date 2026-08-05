@@ -148,7 +148,24 @@ def main():
     # comptés en temps écoulé au lieu du temps en mouvement).
     force = os.environ.get('SYNC_FORCE', '').strip() in ('1', 'true', 'yes')
 
-    token = get_access_token()
+    # Un échec de synchronisation ne doit jamais faire tomber le build : le
+    # dashboard doit rester publiable avec les données déjà en cache. Strava
+    # limite à 100 requêtes par tranche de 15 minutes et 1000 par jour — un
+    # backfill un peu large suffit à déclencher un 429 sur le run suivant.
+    try:
+        token = get_access_token()
+    except urllib.error.HTTPError as e:
+        detail = 'quota Strava dépassé' if e.code == 429 else f'HTTP {e.code}'
+        print(f'⚠ Authentification Strava impossible ({detail}) — sync ignorée, '
+              'le build continue avec les données en cache.')
+        if e.code == 401:
+            print('  → le refresh token a peut-être tourné : vérifier le secret '
+                  'STRAVA_REFRESH_TOKEN.')
+        return 0
+    except Exception as e:  # noqa: BLE001
+        print(f'⚠ Authentification Strava impossible ({e}) — sync ignorée.')
+        return 0
+
     known = existing_strava_ids(cache_path)
     blocklist = set()
     blp = data_dir / 'strava_blocklist.json'
@@ -160,8 +177,17 @@ def main():
     known |= blocklist
     print(f'▸ Cache : {len(known)} activités Strava connues')
 
-    acts = _get(f'{API}/athlete/activities', token,
-                {'after': after_epoch, 'per_page': 50})
+    try:
+        acts = _get(f'{API}/athlete/activities', token,
+                    {'after': after_epoch, 'per_page': 50})
+    except urllib.error.HTTPError as e:
+        detail = ('quota Strava dépassé — la limite se réinitialise dans le '
+                  'quart d\'heure' if e.code == 429 else f'HTTP {e.code}')
+        print(f'⚠ Liste des activités indisponible ({detail}) — sync ignorée.')
+        return 0
+    except Exception as e:  # noqa: BLE001
+        print(f'⚠ Liste des activités indisponible ({e}) — sync ignorée.')
+        return 0
     runs = [a for a in acts if a.get('sport_type') in RUN_TYPES]
     if force:
         new_runs = [a for a in runs if str(a['id']) not in blocklist]
