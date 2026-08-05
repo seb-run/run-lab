@@ -1,0 +1,18 @@
+{
+ "garmin": {
+  "ok": true,
+  "at": "2026-08-05T07:22:09",
+  "message": "0 fichier(s), 2 course(s) vues",
+  "last_ok": "2026-08-05T07:22:09"
+ },
+ "coach": {
+  "ok": false,
+  "at": "2026-08-05T07:22:46",
+  "message": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+ },
+ "debrief": {
+  "ok": false,
+  "at": "2026-08-05T07:23:06",
+  "message": "AttributeError: 'ThinkingBlock' object has no attribute 'text'"
+ }
+}
