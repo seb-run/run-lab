@@ -148,6 +148,36 @@ Le build applique la fusion à chaque passage. `scripts/dedupe_cache.py` rattrap
 l'historique — simulation par défaut, `--write` pour appliquer, sauvegarde
 horodatée déposée à côté du cache.
 
+## Outils du dépôt
+
+Quatre scripts, un rôle chacun. Aucun n'est obligatoire au quotidien : le CI
+fait le travail seul.
+
+- `scripts/pousser.sh` — publie le travail : commit, rebase, push, en une
+  commande. Refuse de committer ce qui ressemble à un secret.
+- `scripts/verif_secrets.py` — le garde-fou ci-dessus, utilisable seul :
+  `--tout` balaie l'ensemble des fichiers suivis.
+- `scripts/verif_ui.py` — contrôle visuel dans un vrai navigateur (iPhone 17
+  Pro, iPhone SE, desktop) : erreurs console, accueil au-dessus du pli,
+  en-tête collant, quatre onglets, sept lentilles, débordements horizontaux.
+- `scripts/dedupe_cache.py` — fusionne les doublons .fit/Strava de
+  l'historique. Simulation par défaut, `--write` pour appliquer.
+
+**Pourquoi un garde-fou à secrets.** `SETUP_AUTONOME.md` invite à remplacer les
+placeholders par ses propres identifiants Strava pour lancer les commandes du
+§2. Une fois remplis, ils sont dans un fichier suivi par git, sur un dépôt
+public : le commit suivant les publierait, et l'historique les garderait même
+après correction — seule leur révocation les neutraliserait. Le §2 porte
+désormais l'avertissement, et `pousser.sh` bloque avant le commit.
+
+**Validation des propositions du coach.** `apply_proposal.py` journalisait ses
+échecs par `sys.exit(1)`, et c'est la seule étape du workflow sans `|| echo` de
+secours : un identifiant inconnu faisait rougir tout le build. Les sorties en
+erreur passent maintenant par `ci_status.json` sous la clé `coach_validate`,
+comme les autres étapes. Cas le plus fréquent : la page consultée date d'un
+build antérieur et l'identifiant affiché n'existe plus, le coach ayant
+régénéré ses propositions entre-temps.
+
 ## Secrets et services
 
 GitHub Actions : `STRAVA_CLIENT_ID`, `STRAVA_CLIENT_SECRET`,

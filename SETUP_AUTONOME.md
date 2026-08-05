@@ -36,6 +36,18 @@ avant de continuer.
 
 ## §2 — Refresh token avec le bon scope (5 min)
 
+> **Une seule fois, à l'installation.** Si le dashboard se met déjà à jour tout
+> seul après tes séances, c'est que ce token existe : passe cette section.
+>
+> **Ne colle jamais tes vraies valeurs dans ce fichier.** Il est suivi par git
+> et le dépôt est public : un secret écrit ici partirait au prochain commit et
+> resterait dans l'historique. Travaille dans une note à part, ou directement
+> dans le Terminal.
+>
+> Les commandes ci-dessous se copient **sans** les lignes de ``` : celles-ci
+> font partie de la mise en forme, pas de la commande. Collées telles quelles,
+> elles lancent un autre shell et il ne se passe rien.
+
 Le token affiché sur la page API n'a pas le scope activités. Il faut passer par
 le flow OAuth une fois :
 

@@ -49,6 +49,18 @@ else
   git diff --cached --name-status | sed 's/^/  /'
 fi
 
+# ------------------------------------------------- 2bis. garde-fou à secrets
+# Le dépôt est public et SETUP_AUTONOME.md invite à coller ses propres
+# identifiants Strava pour lancer les commandes. Remplis puis publiés, ils
+# seraient lisibles par tout le monde — et resteraient dans l'historique même
+# après correction. On refuse de committer ce qui ressemble à un secret.
+echo
+if ! python3 scripts/verif_secrets.py; then
+  echo "  Rien n'a été commité. Pour voir le détail :  git diff --cached"
+  git reset -q
+  exit 1
+fi
+
 # ----------------------------------------------------------------- 3. commit
 if ! git diff --cached --quiet; then
   echo

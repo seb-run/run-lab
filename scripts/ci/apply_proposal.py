@@ -120,6 +120,16 @@ def sync_analysis(proposals: list, applied_prop: dict | None = None, detail: str
     save(ANALYSIS_PATH, analysis)
 
 
+def _note(ok: bool, message: str = '') -> None:
+    """Journalise le résultat sans jamais faire échouer l'appelant."""
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+        from modules.ci_status import note
+        note('coach_validate', ok=ok, message=message)
+    except Exception:
+        pass
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--id', required=True)
@@ -130,17 +140,23 @@ def main():
     action = (args.action or '').strip().lower()
     if not ID_RE.match(prop_id):
         print(f'✗ Identifiant invalide : {args.id!r}')
-        sys.exit(1)
+        _note(False, f'identifiant invalide : {args.id!r}')
+        return
     if action not in VALID_ACTIONS:
         print(f'✗ Action invalide : {args.action!r} (attendu accept ou reject)')
-        sys.exit(1)
+        _note(False, f'action invalide : {args.action!r}')
+        return
 
     doc = load(PROPOSALS_PATH, {'proposals': []})
     proposals = doc.get('proposals', [])
     prop = next((p for p in proposals if p.get('id') == prop_id), None)
     if prop is None:
+        # Cas courant : le coach a régénéré ses propositions depuis que la
+        # page consultée a été publiée, l'identifiant affiché n'existe plus.
         print(f'✗ Proposition {prop_id} introuvable')
-        sys.exit(1)
+        _note(False, f'proposition {prop_id} introuvable — '
+                     'la page consultée date probablement d\'un build antérieur')
+        return
     if prop.get('status') != 'pending':
         # Idempotence : un double clic ne doit pas appliquer deux fois.
         print(f"✓ Proposition {prop_id} déjà traitée (statut « {prop.get('status')} ») — rien à faire")
@@ -166,12 +182,14 @@ def main():
         plan = load(PLAN_PATH)
         if plan is None:
             print('✗ Plan introuvable')
-            sys.exit(1)
+            _note(False, 'plan introuvable')
+            return
 
         ok, detail = apply_to_plan(plan, prop)
         if not ok:
             print(f'✗ Application impossible : {detail}')
-            sys.exit(1)
+            _note(False, f'application impossible : {detail}')
+            return
 
         plan.setdefault('adaptations', []).append({
             'source': 'coach_ia_validee',
@@ -191,6 +209,7 @@ def main():
 
     save(PROPOSALS_PATH, doc)
     sync_analysis(proposals, prop if action == 'accept' else None, detail)
+    _note(True, f'{action} {prop_id}')
 
 
 if __name__ == '__main__':
