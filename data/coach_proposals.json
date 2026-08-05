@@ -99,8 +99,9 @@
    "new_value": 19.0,
    "reason": "SL progressive de 24.6km trop lourde après 4 semaines sous le volume planifié ; risque de surcharge et d'échec supplémentaire, mieux vaut consolider avant d'augmenter.",
    "id": "07a1f63f",
-   "status": "pending",
-   "created_at": "2026-08-02T07:53:30"
+   "status": "rejected",
+   "created_at": "2026-08-02T07:53:30",
+   "decided_at": "2026-08-05T11:55:44"
   },
   {
    "severity": "major",
