@@ -6524,7 +6524,7 @@
           "key": false,
           "description": "10 km très lent, 5'25-5'40/km. Sur chemin souple à Bouconne. Si raideur au démarrage : 10 min de marche avant de courir.",
           "target_pace": "5'40\"/km",
-          "status": "pending",
+          "status": "today",
           "shoe": "Pegasus 40 (fin de vie)",
           "shoe_note": "Uniquement les récups courtes et lentes : c'est ton seul 10 mm, mais la semelle est morte.",
           "_shoe_key": "peg40",
@@ -6593,9 +6593,20 @@
         }
       ],
       "focus": "Refaire du volume propre. Zéro intensité dure : on réinstalle l'allure facile et on charge le tendon progressivement.",
-      "volume_actual_to_date": 0.0,
-      "volume_planned_to_date": 0.0,
-      "volume_drift_pct": 0
+      "volume_actual_to_date": 12.5,
+      "volume_planned_to_date": 12.0,
+      "volume_drift_pct": 4.2,
+      "compliance": {
+        "km_pct": 104,
+        "km_done": 12.5,
+        "km_planned": 12.0,
+        "sessions_done": 1,
+        "sessions_planned": 1,
+        "keys_success": 0,
+        "keys_total": 0,
+        "points": 100,
+        "verdict": "success"
+      }
     },
     {
       "week_num": 10,
