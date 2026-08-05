@@ -1,0 +1,45 @@
+{
+ "headline": "Footing conforme au plan, mais FC moyenne au-dessus de la consigne <140",
+ "bullets": [
+  "FC moy 144, +4 vs consigne <140, mais -2 vs ta moyenne 60j (146) à allure comparable",
+  "Allure 5'22\"/km, 12\" plus lent que ta moyenne 60j (5'10\"/km) sur séances similaires",
+  "FC monte de 133 à 150 sur la séance alors que l'allure reste stable (312-320s/km)"
+ ],
+ "points": [
+  {
+   "label": "FC moyenne",
+   "valeur": "144 bpm",
+   "ecart": "+4 vs consigne <140, -2 vs réf 60j",
+   "lecture": "sous ta moyenne mais au-dessus du plafond visé",
+   "ton": "vigilance"
+  },
+  {
+   "label": "Allure",
+   "valeur": "5'22\"/km",
+   "ecart": "+12s/km vs réf 60j (5'10)",
+   "lecture": "dans la fourchette prévue, plus lent que d'habitude",
+   "ton": "neutre"
+  },
+  {
+   "label": "Dérive FC",
+   "valeur": "133 → 150 bpm",
+   "ecart": "decoupling 1.7%",
+   "lecture": "montée progressive à allure quasi constante",
+   "ton": "neutre"
+  }
+ ],
+ "achille": null,
+ "a_surveiller": "FC au-dessus de 140 sur presque toute la séance malgré une allure facile respectée",
+ "seance": {
+  "date": "04/08/2026",
+  "heure": "09:51",
+  "titre": "Course à pied le matin",
+  "type_detecte": "frac_court",
+  "km": 12.5,
+  "duree": "1h 07m 07s",
+  "allure": "5'22\"/km",
+  "fc_moy": 144
+ },
+ "generated_at": "2026-08-05T07:34:23",
+ "baseline_n": 19
+}
