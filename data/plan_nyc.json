@@ -6583,7 +6583,7 @@
           "km": 17.1,
           "duration_min": 103,
           "key": false,
-          "description": "21 km à 4'55-5'10/km, sous les arbres de Bouconne. Départ 6h30-7h. Ravitaillement : 500 ml + 1 gel à mi-parcours pour réhabituer l'estomac.\n[COACH IA : volume ajusté 21→19 km — Sortie longue de reprise après une semaine très irrégulière (5 séances manquées sur 14j) : réduire légèrement le volume (21→19km) pour sécuriser la reprise avant la séance clé de mardi.]\n[COACH IA : volume ajusté 19→17.1 km — Après une semaine à 62% de conformité et une sortie longue précédente très écourtée (58%), mieux vaut reprendre progressivement plutôt que revenir direct à 19km.]",
+          "description": "21 km à 4'55-5'10/km, sous les arbres de Bouconne. Départ 6h30-7h. Ravitaillement : 500 ml + 1 gel à mi-parcours pour réhabituer l'estomac.\n[COACH IA : volume ajusté 21→19 km — Sortie longue de reprise après une semaine très irrégulière (5 séances manquées sur 14j) : réduire légèrement le volume (21→19km) pour sécuriser la reprise avant la séance clé de mardi.]\n[COACH IA : volume ajusté 19→17.1 km — Après une semaine à 62% de conformité et une sortie longue précédente très écourtée (58%), mieux vaut reprendre progressivement plutôt que revenir direct à 19km.]\n[COACH IA : Sortie longue de reprise : reste franchement sous l'allure cible si la chaleur est là, l'objectif est de relancer le volume, pas de performer.]",
           "target_pace": "4'55\"/km",
           "status": "pending",
           "shoe": "Adizero Boston 13",

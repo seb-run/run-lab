@@ -76,7 +76,7 @@
    "new_value": "Décaler la VMA longue 5×1000m de 2-3 jours plus tard ou la remplacer par un fartlek plus doux",
    "reason": "Enchaîner une sortie longue avec bloc MP et une VMA longue exigeante à seulement 2 jours d'intervalle est risqué compte tenu de la faible charge accumulée récemment ; espacer permet une meilleure récupération avant la reprise complète d'intensité.",
    "id": "02ea381f",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-07-25T13:08:48"
   },
   {
@@ -120,7 +120,7 @@
    "new_value": "Réduire la séance VMA longue de 5×1000m à 4×1000m, même allure",
    "reason": "Aucune séance clé réussie sur les 4 dernières semaines et volume hebdo sous 80% : réduire légèrement le stimulus permet de retrouver une réussite complète plutôt qu'un nouvel échec partiel.",
    "id": "629138b2",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-08-02T09:53:50"
   },
   {
@@ -134,6 +134,17 @@
    "guardrail_reject": "jour passé ou en cours",
    "status": "expired",
    "created_at": "2026-08-02T09:53:50"
+  },
+  {
+   "severity": "major",
+   "kind": "restructure_week",
+   "date": "2026-08-11",
+   "field": null,
+   "new_value": "Réduire la séance seuil du 11/08 à 5×3min au lieu de 6×3min, et garder un œil strict sur la FC vs allure",
+   "reason": "Après deux semaines à 70% puis 62% du volume planifié et plusieurs footings clairement dégradés par la chaleur, enchaîner directement une séance seuil complète puis une MP deux jours après est un risque de charge trop rapide sur un aérobie pas encore reconstruit.",
+   "id": "69d6dd5b",
+   "status": "pending",
+   "created_at": "2026-08-05T08:08:48"
   }
  ]
 }
