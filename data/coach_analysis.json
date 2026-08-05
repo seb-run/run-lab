@@ -27,17 +27,6 @@
    "id": "9f662743",
    "status": "pending",
    "created_at": "2026-08-02T09:53:50"
-  },
-  {
-   "severity": "major",
-   "kind": "restructure_week",
-   "date": "2026-08-11",
-   "field": null,
-   "new_value": "Réduire la séance seuil du 11/08 à 5×3min au lieu de 6×3min, et garder un œil strict sur la FC vs allure",
-   "reason": "Après deux semaines à 70% puis 62% du volume planifié et plusieurs footings clairement dégradés par la chaleur, enchaîner directement une séance seuil complète puis une MP deux jours après est un risque de charge trop rapide sur un aérobie pas encore reconstruit.",
-   "id": "69d6dd5b",
-   "status": "pending",
-   "created_at": "2026-08-05T08:08:48"
   }
  ]
 }
