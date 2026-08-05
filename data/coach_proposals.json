@@ -87,8 +87,9 @@
    "new_value": 15.0,
    "reason": "18.2km à allure MP est trop ambitieux vu 0 séance clé réussie récemment et un déficit de volume chronique ; réduire pour sécuriser la réussite de l'allure plutôt que la distance.",
    "id": "7ed29c7b",
-   "status": "pending",
-   "created_at": "2026-08-02T07:53:30"
+   "status": "rejected",
+   "created_at": "2026-08-02T07:53:30",
+   "decided_at": "2026-08-05T11:26:55"
   },
   {
    "severity": "major",

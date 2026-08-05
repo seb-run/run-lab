@@ -20,17 +20,6 @@
   {
    "severity": "major",
    "kind": "volume_adjust",
-   "date": "2026-08-06",
-   "field": "km",
-   "new_value": 15.0,
-   "reason": "18.2km à allure MP est trop ambitieux vu 0 séance clé réussie récemment et un déficit de volume chronique ; réduire pour sécuriser la réussite de l'allure plutôt que la distance.",
-   "id": "7ed29c7b",
-   "status": "pending",
-   "created_at": "2026-08-02T07:53:30"
-  },
-  {
-   "severity": "major",
-   "kind": "volume_adjust",
    "date": "2026-08-09",
    "field": "km",
    "new_value": 19.0,
