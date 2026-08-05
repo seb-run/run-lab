@@ -197,6 +197,12 @@ def main() -> int:
             got += 1
 
     print(f'✓ {got} fichier(s) .fit déposé(s) dans fit_inbox/')
+    try:
+        sys.path.insert(0, str(repo_root))
+        from modules.ci_status import note
+        note('garmin', ok=True, message=f'{got} fichier(s), {len(acts)} course(s) vues')
+    except Exception:  # noqa: BLE001
+        pass
     return 0
 
 

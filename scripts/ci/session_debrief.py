@@ -227,6 +227,11 @@ def main() -> int:
     try:
         result = call_model(payload)
     except Exception as e:  # noqa: BLE001
+        try:
+            from modules.ci_status import note
+            note('debrief', ok=False, message=f'{type(e).__name__}: {e}')
+        except Exception:  # noqa: BLE001
+            pass
         print(f'✗ Débrief impossible : {e}')
         return 0  # jamais bloquant
 
@@ -236,6 +241,11 @@ def main() -> int:
     OUT_PATH.write_text(json.dumps(result, ensure_ascii=False, indent=1),
                         encoding='utf-8')
     print(f"✓ {result.get('headline', '')[:90]}")
+    try:
+        from modules.ci_status import note
+        note('debrief', ok=True)
+    except Exception:  # noqa: BLE001
+        pass
     return 0
 
 

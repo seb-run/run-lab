@@ -283,6 +283,13 @@ def main():
     try:
         result = call_model(context)
     except Exception as e:
+        # Consigné dans les données : cette étape est non bloquante, donc une
+        # panne resterait invisible dans un build vert.
+        try:
+            from modules.ci_status import note
+            note('coach', ok=False, message=f'{type(e).__name__}: {e}')
+        except Exception:  # noqa: BLE001
+            pass
         print(f'✗ Appel modèle échoué : {e}')
         sys.exit(1)
 
@@ -338,6 +345,11 @@ def main():
     ANALYSIS_PATH.write_text(
         json.dumps(analysis, ensure_ascii=False, indent=1), encoding='utf-8')
     print(f"✓ Analyse : {analysis['headline'][:80]}")
+    try:
+        from modules.ci_status import note
+        note('coach', ok=True)
+    except Exception:  # noqa: BLE001
+        pass
 
     if plan_modified:
         PLAN_PATH.write_text(
