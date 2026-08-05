@@ -54,6 +54,53 @@ except ImportError as e:
 # Époque FIT : 31 décembre 1989 00:00 UTC
 _FIT_EPOCH = datetime(1989, 12, 31, tzinfo=timezone.utc)
 
+
+# ============================================================================
+# FUSEAU HORAIRE
+# ============================================================================
+# Le .fit horodate en UTC. `astimezone()` sans argument convertit vers le
+# fuseau de la machine : correct sur le Mac de Sébastien, faux sur le runner
+# GitHub Actions qui tourne en UTC — une séance de 10h y apparaissait à 8h.
+# Le fuseau est donc explicite, lu dans config.json (clé `timezone`), pour que
+# le résultat soit le même partout. Il faudra le passer à America/New_York
+# pour les .fit rapportés du marathon de novembre.
+
+_DEFAULT_TZ = 'Europe/Paris'
+_tz_cache: Any = None
+
+
+def session_timezone():
+    """Fuseau de référence pour horodater les séances.
+
+    Ordre : config.json → variable SEB_TZ → Europe/Paris. En cas de fuseau
+    inconnu (base tzdata absente), on retombe sur le fuseau machine plutôt
+    que d'échouer : mieux vaut une heure approximative qu'un build cassé.
+    """
+    global _tz_cache
+    if _tz_cache is not None:
+        return _tz_cache
+    name = os.environ.get('SEB_TZ')
+    if not name:
+        try:
+            import json as _json
+            from modules.paths import data_dir as _data_dir
+            cfg = _json.loads((_data_dir() / 'config.json').read_text(encoding='utf-8'))
+            name = cfg.get('timezone')
+        except Exception:
+            name = None
+    try:
+        from zoneinfo import ZoneInfo
+        _tz_cache = ZoneInfo(name or _DEFAULT_TZ)
+    except Exception:
+        _tz_cache = None      # None → astimezone() garde le fuseau machine
+    return _tz_cache
+
+
+def to_session_time(dt: datetime) -> datetime:
+    """Ramène un datetime aware dans le fuseau de référence."""
+    tz = session_timezone()
+    return dt.astimezone(tz) if tz else dt.astimezone()
+
 # Seuils de validité (anti-sentinelles 0xFFFF, vitesses absurdes)
 _MIN_SPEED_MPS = 0.5      # < 0.5 m/s (1.8 km/h) = walk/static
 _MAX_SPEED_MPS = 15.0     # > 15 m/s (54 km/h) = aberrant pour course à pied
@@ -765,12 +812,13 @@ def parse_fit_file(fit_path: str) -> Optional[dict]:
         dt = ts_raw
         if dt.tzinfo is None:
             dt = dt.replace(tzinfo=timezone.utc)
-        dt = dt.astimezone()  # convertit en heure locale
+        dt = to_session_time(dt)
     elif isinstance(ts_raw, (int, float)) and ts_raw > 0:
-        dt = (_FIT_EPOCH + timedelta(seconds=ts_raw)).astimezone()
+        dt = to_session_time(_FIT_EPOCH + timedelta(seconds=ts_raw))
     else:
         # Fallback : mtime du fichier
-        dt = datetime.fromtimestamp(os.path.getmtime(fit_path))
+        dt = to_session_time(
+            datetime.fromtimestamp(os.path.getmtime(fit_path), tz=timezone.utc))
 
     # Construction des blocs
     if len(laps) > 1:

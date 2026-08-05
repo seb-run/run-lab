@@ -42,10 +42,23 @@ with sync_playwright() as p:
     pg.goto(URL)
     pg.wait_for_timeout(3500)
 
+    # Le bac à sable n'a pas de réseau : l'échec de chargement du CDN ECharts
+    # n'est pas un défaut de l'app. Tout le reste compte.
+    # `navigator.vibrate` est refusé tant que rien n'a été touché : c'est une
+    # politique du navigateur, pas un défaut. Safari iOS ne l'implémente même
+    # pas — le retour haptique y est simplement absent.
+    IGNORE = ("ERR_EMPTY_RESPONSE", "ERR_INTERNET_DISCONNECTED",
+              "ERR_NAME_NOT_RESOLVED", "net::ERR_FAILED",
+              "navigator.vibrate")
+    reels = [e for e in errors if not any(i in e for i in IGNORE)]
+
     print("=== erreurs console ===")
-    print("\n".join(errors[:12]) if errors else "aucune")
-    if errors:
-        fails.append("%d erreur(s) console" % len(errors))
+    print("\n".join(reels[:12]) if reels else "aucune")
+    if len(errors) != len(reels):
+        print("  (%d message(s) réseau ignoré(s) : pas de sortie internet ici)"
+              % (len(errors) - len(reels)))
+    if reels:
+        fails.append("%d erreur(s) console" % len(reels))
 
     # --- accueil : ce qui tient au-dessus du pli
     vp = 844
@@ -62,7 +75,7 @@ with sync_playwright() as p:
         scrollH:     document.documentElement.scrollHeight,
       };
     }""")
-    print("\n=== accueil (viewport 390x844) ===")
+    print("\n=== accueil (iPhone 17 Pro, 402x874) ===")
     for k, v in info.items():
         print("  %-12s %s" % (k, round(v, 1) if isinstance(v, float) else v))
 

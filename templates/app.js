@@ -672,7 +672,6 @@
     if (!target) return;
     document.body.dataset.tab = name;
     if (target.classList.contains('on')) { scrollMainTop(); return; }
-    tap(9);
     swap(() => {
       document.querySelectorAll('.tab[data-tab]').forEach(b => {
         b.classList.remove('on');
@@ -693,7 +692,6 @@
     const target = document.getElementById('l-' + name);
     if (!target) return;
     if (target.classList.contains('on')) return;
-    tap(6);
     swap(() => {
       document.querySelectorAll('.lens').forEach(b => {
         const on = b.dataset.lens === name;
@@ -765,12 +763,15 @@
     setupScrollChrome();
     document.body.dataset.tab = 'home';
 
+    // Le retour haptique appartient au geste, pas à la bascule : la
+    // restauration du dernier onglet au démarrage ne doit rien déclencher.
+    // Chrome bloque d'ailleurs vibrate() tant que rien n'a été touché.
     document.querySelectorAll('.tab[data-tab]').forEach(btn => {
-      btn.addEventListener('click', () => activateTab(btn.dataset.tab));
+      btn.addEventListener('click', () => { tap(9); activateTab(btn.dataset.tab); });
     });
 
     document.querySelectorAll('.lens[data-lens]').forEach(btn => {
-      btn.addEventListener('click', () => activateLens(btn.dataset.lens));
+      btn.addEventListener('click', () => { tap(6); activateLens(btn.dataset.lens); });
     });
 
     // Restauration du dernier point de vue : rouvrir l'app doit rendre

@@ -68,6 +68,27 @@ class ParseCache:
         """Retourne toutes les sessions cachées (utile pour un rebuild HTML sans reparser)."""
         return list(self._data.values())
 
+    def dedupe(self, verbose: bool = True) -> dict:
+        """Fusionne les séances vues à la fois en .fit et via Strava.
+
+        Les deux voies n'ont pas d'identifiant commun : une séance ingérée
+        d'abord en .fit réapparaît quand Strava la synchronise ensuite. La
+        fusion garde la dynamique de course du .fit et le titre de Strava.
+
+        Retourne le rapport ; ne marque le cache modifié que s'il y a eu
+        quelque chose à fusionner.
+        """
+        from modules.dedup import dedupe as _dedupe, format_report
+
+        merged, report = _dedupe(self._data)
+        if report['fusionnees']:
+            self._data = merged
+            self._dirty = True
+        if verbose and (report['fusionnees'] or report['ambigues']):
+            print("\n▸ Doublons .fit / Strava")
+            print(format_report(report))
+        return report
+
 
 def parse_with_cache(fit_path: str, cache: ParseCache, parser_fn, force: bool = False) -> Optional[dict]:
     """

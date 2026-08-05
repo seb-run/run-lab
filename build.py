@@ -323,6 +323,16 @@ def main():
     if args.update:
         new_count = update_from_drop(cache)
 
+    # ----- 2.5. Fusion des doublons .fit / Strava -----
+    # Les deux voies d'ingestion ne partagent pas d'identifiant : une séance
+    # arrivée d'abord par le .fit réapparaît quand Strava la synchronise.
+    # On rapproche sur date + distance + durée, avant tout calcul.
+    try:
+        if cache.dedupe().get('fusionnees'):
+            cache.save()
+    except Exception as e:
+        print(f"  ⚠ Fusion des doublons échouée : {e}")
+
     # ----- 3. Récupération de toutes les sessions -----
     sessions = cache.all_sessions()
     # Tri date desc (plus récent en premier)

@@ -118,6 +118,36 @@ bascule des quatre onglets et des sept lentilles, un seul panneau visible à la
 fois, thème hors de la barre. Le bac à sable n'ayant pas de réseau, ECharts y est
 remplacé par une doublure.
 
+## Fuseau horaire et doublons (août 2026)
+
+Deux défauts découverts en cherchant pourquoi une séance du matin
+n'apparaissait pas — elle était bien là, mais méconnaissable.
+
+**Fuseau des .fit.** `parser_fit.py` convertissait via `astimezone()` sans
+argument, donc vers le fuseau de la machine : juste sur le Mac, faux sur le
+runner GitHub Actions qui tourne en UTC. Une séance de 10h03 apparaissait à
+08h03. Les 979 séances historiques sont correctes parce qu'importées depuis le
+Mac ; les séances passées par Strava aussi, puisque l'API livre
+`start_date_local` déjà converti. Seule la voie intervals.icu était touchée, et
+c'était sa première séance du jour ingérée par le CI. Le fuseau est désormais
+explicite : clé `timezone` dans `config.json`, variable `SEB_TZ` en secours,
+`Europe/Paris` par défaut. À basculer sur `America/New_York` pour les .fit
+rapportés de novembre.
+
+**Doublons .fit / Strava.** Les deux voies ne partagent aucun identifiant : la
+déduplication Strava se fait sur `_strava_id`, absent des entrées .fit. Une
+séance ingérée d'abord en .fit réapparaissait donc quand Strava la synchronisait.
+`modules/dedup.py` rapproche sur date + distance (300 m) + durée (8 %, plancher
+3 min — le .fit compte le temps écoulé, Strava le temps en mouvement, l'écart
+atteignait 6m37 sur MaxiRace). La fusion garde la dynamique de course du .fit et
+prend de Strava le titre, l'heure et l'identifiant. En cas de candidats
+multiples, rien n'est fusionné et c'est signalé : perdre une séance coûte plus
+cher que garder un doublon visible.
+
+Le build applique la fusion à chaque passage. `scripts/dedupe_cache.py` rattrape
+l'historique — simulation par défaut, `--write` pour appliquer, sauvegarde
+horodatée déposée à côté du cache.
+
 ## Secrets et services
 
 GitHub Actions : `STRAVA_CLIENT_ID`, `STRAVA_CLIENT_SECRET`,
