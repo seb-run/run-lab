@@ -4464,7 +4464,9 @@
       </tr>`;
     }).join('');
 
-    wrap.innerHTML = `<table class="aero-table">
+    // Cinq colonnes dont quatre chiffrées : sur mobile la table dépasse
+    // l'écran. Même conteneur défilant que les autres tables d'analyse.
+    wrap.innerHTML = `<div class="aero-table-scroll"><table class="aero-table">
       <thead>
         <tr>
           <th>Semaine</th>
@@ -4475,7 +4477,7 @@
         </tr>
       </thead>
       <tbody>${rows}</tbody>
-    </table>
+    </table></div>
     <p class="aero-table-legend">
       <span class="plan-ok-tag">aligné</span> : écart &lt; 5 km ou ≤ 5%.
       <span class="plan-under-tag">sous-volume</span> : marge de progression.

@@ -31,3 +31,9 @@ econ.py
 
 # Fichiers .fit bruts : la donnée utile part dans sessions_cache.json
 data/fit_inbox/
+
+# Captures du contrôle visuel (scripts/verif_ui.py) : regénérées à la demande
+output/captures/
+
+# Sauvegardes du dédoublonnage (scripts/dedupe_cache.py --write)
+data/sessions_cache.avant_dedup_*.json

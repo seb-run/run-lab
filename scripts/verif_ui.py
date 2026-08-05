@@ -12,6 +12,26 @@ URL = "file://%s/output/index.html" % ROOT
 os.makedirs(str(ROOT / "output" / "captures"), exist_ok=True)
 OUT = str(ROOT / "output" / "captures")
 
+# Débordement horizontal : un élément qui dépasse la largeur de l'écran sans
+# vivre dans un conteneur défilant. C'est ce qui coupe une valeur à droite.
+SCAN_DEBORDE = """() => {
+  const W = innerWidth, out = [];
+  document.querySelectorAll('.tab-content.on *, .lens-panel.on *').forEach(e => {
+    const r = e.getBoundingClientRect();
+    if (r.width === 0 || r.height === 0 || r.right <= W + 1) return;
+    let p = e.parentElement;
+    while (p && p !== document.body) {
+      const o = getComputedStyle(p).overflowX;
+      if (o === 'auto' || o === 'scroll') return;
+      p = p.parentElement;
+    }
+    out.push(e.tagName + '.' +
+             (typeof e.className === 'string' ? e.className.split(' ')[0] : 'svg') +
+             ' (+' + Math.round(r.right - W) + 'px)');
+  });
+  return [...new Set(out)].slice(0, 5);
+}"""
+
 errors, fails = [], []
 
 with sync_playwright() as p:
@@ -137,6 +157,10 @@ with sync_playwright() as p:
             fails.append("l'onglet %s ne s'active pas" % tab)
         if h < 200:
             fails.append("l'onglet %s est vide (hauteur %.0f)" % (tab, h))
+        deb = pg.evaluate(SCAN_DEBORDE)
+        if deb:
+            print("         déborde : " + ", ".join(deb))
+            fails.append("onglet %s : déborde à droite (%s)" % (tab, deb[0]))
         pg.screenshot(path=f"{OUT}/{shot}.png")
 
     # --- sept lentilles
@@ -159,6 +183,10 @@ with sync_playwright() as p:
             fails.append("%s panneaux visibles sur la lentille %s" % (st["others"], lens))
         if st["h"] < 150:
             fails.append("la lentille %s est vide (hauteur %.0f)" % (lens, st["h"]))
+        deb = pg.evaluate(SCAN_DEBORDE)
+        if deb:
+            print("           déborde : " + ", ".join(deb))
+            fails.append("lentille %s : déborde à droite (%s)" % (lens, deb[0]))
         if lens in ("charge", "vol", "prog", "effic"):
             pg.screenshot(path=f"{OUT}/06-lentille-{lens}.png")
 

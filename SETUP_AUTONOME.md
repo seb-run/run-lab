@@ -103,8 +103,17 @@ github.com → Settings (ton profil) → Developer settings → **Fine-grained t
 3. Settings du worker → Variables and Secrets :
    - `GITHUB_TOKEN` (type Secret) : le PAT du §a
    - `VERIFY_TOKEN` (type Secret) : une chaîne aléatoire de ton choix (garde-la)
+   - `VALIDATE_TOKEN` (type Secret) : une autre chaîne aléatoire, différente de
+     la précédente. C'est elle que le dashboard demande la première fois que tu
+     acceptes ou refuses une proposition du coach. Sans elle, la route
+     `/validate` répond « VALIDATE_TOKEN non configuré ».
    - `GITHUB_REPO` (type Text) : `seb-run/run-lab`
 4. Note l'URL du worker : `https://strava-relay.XXX.workers.dev`
+   C'est cette URL que le dashboard réclame au premier refus ou à la première
+   acceptation d'une proposition du coach. Elle et le jeton sont gardés en
+   `localStorage` sur l'appareil, jamais dans le code — le dépôt est public.
+   Pour les ressaisir : `coachResetValidateConfig()` dans la console du
+   navigateur.
 
 ### c. Abonner Strava au webhook
 Terminal (remplace les 4 valeurs) :
