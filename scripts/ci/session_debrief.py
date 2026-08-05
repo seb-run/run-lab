@@ -184,11 +184,18 @@ def call_model(payload: dict) -> dict:
     from anthropic import Anthropic
     client = Anthropic(api_key=os.environ['ANTHROPIC_API_KEY'])
     msg = client.messages.create(
-        model=MODEL, max_tokens=1600, system=SYSTEM_PROMPT,
+        model=MODEL, max_tokens=6000, system=SYSTEM_PROMPT,
         messages=[{'role': 'user',
                    'content': json.dumps(payload, ensure_ascii=False)}],
     )
-    txt = msg.content[0].text.strip()
+    # Le premier bloc de la réponse peut être un bloc de raisonnement : on
+    # concatène les blocs texte au lieu de prendre content[0] à l'aveugle.
+    txt = ''.join(b.text for b in msg.content
+                  if getattr(b, 'type', '') == 'text').strip()
+    if not txt:
+        kinds = ', '.join(sorted({getattr(b, 'type', '?') for b in msg.content}))
+        raise RuntimeError(f'réponse sans bloc texte (blocs : {kinds}, '
+                           f'stop_reason={msg.stop_reason})')
     if txt.startswith('```'):
         txt = txt.split('```')[1].lstrip('json').strip()
     return json.loads(txt)

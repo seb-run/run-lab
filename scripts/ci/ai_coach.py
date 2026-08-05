@@ -199,13 +199,22 @@ Règles :
 def call_model(context: dict) -> dict:
     import anthropic
     client = anthropic.Anthropic()
+    # max_tokens couvre AUSSI les blocs de raisonnement du modèle. À 2000, le
+    # raisonnement consommait tout le budget et la réponse revenait sans aucun
+    # bloc texte — d'où le JSONDecodeError sur une chaîne vide.
     msg = client.messages.create(
         model=MODEL,
-        max_tokens=2000,
+        max_tokens=8000,
         system=SYSTEM_PROMPT,
         messages=[{'role': 'user', 'content': json.dumps(context, ensure_ascii=False)}],
     )
-    text = ''.join(b.text for b in msg.content if b.type == 'text').strip()
+    text = ''.join(b.text for b in msg.content
+                   if getattr(b, 'type', '') == 'text').strip()
+    if not text:
+        kinds = ', '.join(sorted({getattr(b, 'type', '?') for b in msg.content}))
+        raise RuntimeError(
+            f'réponse sans bloc texte (blocs reçus : {kinds}, '
+            f'stop_reason={msg.stop_reason}) — augmenter max_tokens')
     # Tolère un éventuel bloc de code
     if text.startswith('```'):
         text = text.strip('`')
@@ -278,6 +287,24 @@ def main():
     plan = json.loads(PLAN_PATH.read_text(encoding='utf-8'))
 
     context = build_context(plan)
+
+    # Économie d'appels : le coach tournait à CHAQUE build, y compris les
+    # rebuilds déclenchés par un simple changement de code. Tant qu'aucune
+    # séance nouvelle n'est arrivée et que l'analyse a moins de 12 h, il n'y a
+    # rien de neuf à dire.
+    signature = json.dumps(context['last_14_days'][-3:], ensure_ascii=False)
+    if ANALYSIS_PATH.exists() and '--force' not in sys.argv:
+        try:
+            prev = json.loads(ANALYSIS_PATH.read_text(encoding='utf-8'))
+            age_h = (datetime.now()
+                     - datetime.fromisoformat(prev['generated_at'])).total_seconds() / 3600
+            if prev.get('signature') == signature and age_h < 12:
+                print(f'✓ Analyse encore valable ({age_h:.1f} h, rien de neuf) '
+                      '— appel modèle évité.')
+                return
+        except Exception:  # noqa: BLE001
+            pass
+
     print(f"▸ Coach IA ({MODEL}) : {len(context['last_14_days'])} jours récents, "
           f"{len(context['next_10_days'])} jours à venir")
     try:
@@ -337,6 +364,7 @@ def main():
     analysis = {
         'generated_at': datetime.now().isoformat(timespec='seconds'),
         'model': MODEL,
+        'signature': signature,
         'headline': result.get('headline', ''),
         'analysis': result.get('analysis', ''),
         'applied': applied,
