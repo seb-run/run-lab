@@ -148,6 +148,29 @@
    "status": "rejected",
    "created_at": "2026-08-05T08:08:48",
    "decided_at": "2026-08-05T11:57:12"
+  },
+  {
+   "severity": "major",
+   "kind": "volume_adjust",
+   "date": "2026-08-16",
+   "field": "km",
+   "new_value": 20,
+   "reason": "Passer de 17,1 km (09/08, sortie de reprise) à 24 km est un bond de +40% après deux semaines de volume très réduit. Limiter à ~20 km lisse la progression et sécurise le retour.",
+   "id": "343225d0",
+   "status": "pending",
+   "created_at": "2026-08-06T08:07:08"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-08-06",
+   "field": "description_note",
+   "new_value": "Garde les 2x10' en confort soutenu, pas en seuil dur : tu sors juste d'un trou de deux semaines, allure marathon target largement suffisante si les jambes tirent.",
+   "reason": "Première séance avec portion tempo depuis le retour de charge, à ne pas transformer en test de forme.",
+   "id": "f08ae22a",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-08-06T08:07:08"
   }
  ]
 }
