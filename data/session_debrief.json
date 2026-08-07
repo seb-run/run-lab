@@ -1,45 +1,45 @@
 {
- "headline": "Récup avalée trop vite (5'22 au lieu de 5'40), mais FC et équilibre restent sages.",
+ "headline": "Repos prévu, fractionné fait à la place ; asymétrie qui s'accentue en vitesse à surveiller.",
  "bullets": [
-  "5'22/km, -18\" vs cible 5'40, net accéléré en fin (5'08 au dernier km).",
-  "FC 144 bpm, sous ta réf 146 à allure comparable, malgré 29-31°C. Découplage quasi nul (0.1%).",
-  "Équilibre 50.55%, identique à ta réf 50.48%. Pas de signe pubalgie (asym -0.12 vs vitesse)."
+  "Repos prévu au plan, il a fait 13,7km de fractionné à 4'53\"/km à la place.",
+  "FC dérive +13% (138→156 bpm) sous 30-34°C, contact +5,9% : signature chaleur/fatigue.",
+  "Asymétrie s'ouvre avec la vitesse (+1,92), même motif que l'épisode adducteur hiver 2025."
  ],
  "points": [
   {
-   "label": "Allure",
-   "valeur": "5'22/km",
-   "ecart": "-18s vs cible 5'40",
-   "lecture": "récup courue trop vite",
+   "label": "Équilibre G/D",
+   "valeur": "49.4% gauche",
+   "ecart": "-1.0 pt vs réf 50.4%",
+   "lecture": "légère surcharge côté droit (Achille)",
    "ton": "vigilance"
   },
   {
-   "label": "FC moyenne",
-   "valeur": "144 bpm",
-   "ecart": "-2 vs réf 146",
-   "lecture": "bonne efficacité malgré chaleur",
-   "ton": "bon"
+   "label": "Asymétrie vs allure",
+   "valeur": "+1.92",
+   "ecart": "positif = s'accentue en vitesse",
+   "lecture": "motif proche de l'épisode adducteur",
+   "ton": "vigilance"
   },
   {
-   "label": "Équilibre gauche",
-   "valeur": "50.55%",
-   "ecart": "+0.07pt vs réf 50.48%",
-   "lecture": "stable, rien de nouveau",
-   "ton": "neutre"
+   "label": "Dérive FC",
+   "valeur": "138→156 bpm",
+   "ecart": "+13.1% sur la séance",
+   "lecture": "chaleur 30-34°C, probable fatigue",
+   "ton": "vigilance"
   }
  ],
- "achille": "Équilibre 50.55% vs réf 50.48% : décharge droite habituelle, pas d'aggravation.",
- "a_surveiller": "Négative split net (5'32→5'08) sur une sortie censée rester très lente.",
+ "achille": "Équilibre à 49.4% (réf 50.4%), charge droite accrue, encore plus aux allures rapides (47.9%).",
+ "a_surveiller": "Repos prescrit non respecté ; RPE 4/10 'Fort' malgré dérive FC +13% en forte chaleur.",
  "seance": {
-  "date": "05/08/2026",
-  "heure": "08:03",
-  "titre": "i172645686",
-  "type_detecte": "footing",
-  "km": 10.34,
-  "duree": "55m 32s",
-  "allure": "5'22\"/km",
-  "fc_moy": 144
+  "date": "07/08/2026",
+  "heure": "09:50",
+  "titre": "i173323084",
+  "type_detecte": "frac_court",
+  "km": 13.73,
+  "duree": "1h 07m 02s",
+  "allure": "4'53\"/km",
+  "fc_moy": 150
  },
- "generated_at": "2026-08-05T09:02:01",
- "baseline_n": 20
+ "generated_at": "2026-08-07T09:00:48",
+ "baseline_n": 27
 }
