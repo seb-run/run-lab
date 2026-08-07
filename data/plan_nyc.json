@@ -1138,129 +1138,7 @@
               "rr_beats": 15542,
               "rmssd_effort": 5.3,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 341,
-                "fc": 125,
-                "ca": 174
-              },
-              {
-                "km": 1.0,
-                "ps": 322,
-                "fc": 136,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 322,
-                "fc": 143,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 311,
-                "fc": 144,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 332,
-                "fc": 129,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 337,
-                "fc": 133,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 335,
-                "fc": 138,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 329,
-                "fc": 140,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 320,
-                "fc": 142,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 307,
-                "fc": 146,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 305,
-                "fc": 147,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 307,
-                "fc": 148,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 303,
-                "fc": 154,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 304,
-                "fc": 155,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 291,
-                "fc": 158,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 295,
-                "fc": 158,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 295,
-                "fc": 155,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 285,
-                "fc": 162,
-                "ca": 182
-              },
-              {
-                "km": 1.0,
-                "ps": 281,
-                "fc": 161,
-                "ca": 180
-              },
-              {
-                "km": 0.37,
-                "ps": 297,
-                "fc": 163,
-                "ca": 180
-              }
-            ]
+            }
           },
           "score": null
         },
@@ -6716,7 +6594,7 @@
           "key": false,
           "description": "Échauffement 4 km, puis 2×10 min à 4'30-4'35/km (récup 3 min trot), retour au calme. Ce n'est PAS du seuil : allure « confortablement soutenue », tu dois pouvoir dire une phrase courte.",
           "target_pace": "4'05\"/km",
-          "status": "today",
+          "status": "missed",
           "shoe": "Adizero Boston 13",
           "shoe_note": "La seule paire fraîche : elle prend tout ce qui compte.",
           "_shoe_key": "boston13",
@@ -6731,7 +6609,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending",
+          "status": "today",
           "actual": null
         },
         {
@@ -6756,32 +6634,33 @@
           "dow": "Sun",
           "type": "long",
           "title": "Sortie longue de reprise",
-          "km": 17.1,
+          "km": 22.1,
           "duration_min": 103,
           "key": false,
-          "description": "21 km à 4'55-5'10/km, sous les arbres de Bouconne. Départ 6h30-7h. Ravitaillement : 500 ml + 1 gel à mi-parcours pour réhabituer l'estomac.\n[COACH IA : volume ajusté 21→19 km — Sortie longue de reprise après une semaine très irrégulière (5 séances manquées sur 14j) : réduire légèrement le volume (21→19km) pour sécuriser la reprise avant la séance clé de mardi.]\n[COACH IA : volume ajusté 19→17.1 km — Après une semaine à 62% de conformité et une sortie longue précédente très écourtée (58%), mieux vaut reprendre progressivement plutôt que revenir direct à 19km.]\n[COACH IA : Sortie longue de reprise : reste franchement sous l'allure cible si la chaleur est là, l'objectif est de relancer le volume, pas de performer.]",
+          "description": "21 km à 4'55-5'10/km, sous les arbres de Bouconne. Départ 6h30-7h. Ravitaillement : 500 ml + 1 gel à mi-parcours pour réhabituer l'estomac.\n[COACH IA : volume ajusté 21→19 km — Sortie longue de reprise après une semaine très irrégulière (5 séances manquées sur 14j) : réduire légèrement le volume (21→19km) pour sécuriser la reprise avant la séance clé de mardi.]\n[COACH IA : volume ajusté 19→17.1 km — Après une semaine à 62% de conformité et une sortie longue précédente très écourtée (58%), mieux vaut reprendre progressivement plutôt que revenir direct à 19km.]\n[COACH IA : Sortie longue de reprise : reste franchement sous l'allure cible si la chaleur est là, l'objectif est de relancer le volume, pas de performer.]\n[ADAPTÉ : +5km pour compenser le déficit volume de la semaine.]\n[COACH IA : Sortie longue déjà rallongée automatiquement (+5km) pour compenser le déficit de volume : cours au feeling, allure prudente, hydratation renforcée si chaleur, ne force pas si les jambes ne suivent pas]",
           "target_pace": "4'55\"/km",
           "status": "pending",
           "shoe": "Adizero Boston 13",
           "shoe_note": "La seule paire fraîche : elle prend tout ce qui compte.",
           "_shoe_key": "boston13",
-          "actual": null
+          "actual": null,
+          "_adapt_volume": true
         }
       ],
       "focus": "Refaire du volume propre. Zéro intensité dure : on réinstalle l'allure facile et on charge le tendon progressivement.",
       "volume_actual_to_date": 22.8,
-      "volume_planned_to_date": 22.0,
-      "volume_drift_pct": 3.6,
+      "volume_planned_to_date": 36.0,
+      "volume_drift_pct": -36.7,
       "compliance": {
-        "km_pct": 104,
+        "km_pct": 63,
         "km_done": 22.8,
-        "km_planned": 22.0,
+        "km_planned": 36.0,
         "sessions_done": 2,
-        "sessions_planned": 2,
+        "sessions_planned": 3,
         "keys_success": 0,
         "keys_total": 0,
-        "points": 100,
-        "verdict": "success"
+        "points": 78,
+        "verdict": "partial"
       }
     },
     {
@@ -6887,10 +6766,10 @@
           "dow": "Sun",
           "type": "long",
           "title": "Sortie longue avec finish",
-          "km": 24.0,
+          "km": 21.6,
           "duration_min": 118,
           "key": false,
-          "description": "24 km : 18 km à 4'55-5'05/km puis les 6 derniers à 4'20-4'25/km. Premier vrai test de fin de sortie en fatigue.",
+          "description": "24 km : 18 km à 4'55-5'05/km puis les 6 derniers à 4'20-4'25/km. Premier vrai test de fin de sortie en fatigue.\n[COACH IA : volume ajusté 24→21.6 km — Prudence sur la 2e longue de la semaine tant que la régularité n'est pas revalidée sur les séances clés précédentes ; ajustement de -10% max en attendant de voir comment passe le début de semaine]",
           "target_pace": "4'55\"/km",
           "status": "pending",
           "shoe": "Adizero Boston 13",

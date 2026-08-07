@@ -111,8 +111,9 @@
    "new_value": "Remplacer la SL progressive 27km par une sortie longue simple ~22km à allure facile/marathon souple, sans segment progressif",
    "reason": "Trop de séances clés manquées récemment ; enchaîner une progressive à forte charge juste après VMA et MP run augmente le risque d'échec ou blessure. Mieux vaut sécuriser le volume avant de remettre de l'intensité sur le long.",
    "id": "9f662743",
-   "status": "pending",
-   "created_at": "2026-08-02T09:53:50"
+   "status": "rejected",
+   "created_at": "2026-08-02T09:53:50",
+   "decided_at": "2026-08-07T06:19:33"
   },
   {
    "severity": "major",
@@ -169,8 +170,19 @@
    "reason": "Première séance avec portion tempo depuis le retour de charge, à ne pas transformer en test de forme.",
    "id": "f08ae22a",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-08-06T08:07:08"
+  },
+  {
+   "severity": "major",
+   "kind": "restructure_week",
+   "date": "2026-08-13",
+   "field": null,
+   "new_value": "Réduire la séance MP du 13/08 à 2×8' au lieu de 3×8' (ou la reporter d'une journée) pour ne pas enchaîner deux séances clés exigeantes en 48h après une période de forte irrégularité et un signal de fatigue mécanique le 26/07",
+   "reason": "Seuil (11/08) et MP (13/08) programmées à 48h d'intervalle juste après 2 semaines à ~65% de conformité et un tempo manqué le 06/08 : mieux vaut sécuriser la première séance clé avant d'enchaîner sur la seconde à pleine charge",
+   "id": "09b858ea",
+   "status": "pending",
+   "created_at": "2026-08-07T06:20:31"
   }
  ]
 }
