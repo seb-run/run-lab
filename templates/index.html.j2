@@ -19,8 +19,12 @@
   if (t === 'dark') document.documentElement.dataset.theme = 'dark';
 })();
 </script>
-<!-- Pas de police distante : la pile système donne SF Pro sur iOS et évite
-     à la fois le FOUT et l'aspect « page web » que ça traînait. -->
+<!-- Les deux voix du système typographique. `display=swap` affiche
+     immédiatement la pile système en attendant, puis bascule : pas d'écran
+     vide, et si le réseau manque on garde SF Pro / SF Mono sur iPhone. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 {{ css_content|safe }}
 </style>
@@ -705,10 +709,11 @@
 <!-- ====== MODAL — Détail d'une séance ====== -->
 <div class="modal-backdrop" id="sessModal" hidden>
   <div class="modal modal-large" role="dialog" aria-labelledby="sessModalTitle">
-    <header class="modal-head">
-      <h3 id="sessModalTitle">Détail séance</h3>
-      <button class="modal-close" id="sessModalClose" aria-label="Fermer">×</button>
-    </header>
+    <!-- L'en-tête de la fiche est porté par la carte story elle-même
+         (marque + méta + numéro de séance). Le bouton de fermeture reste
+         seul, en surimpression pour ne pas voler d'espace. -->
+    <button class="modal-close modal-close-float" id="sessModalClose" aria-label="Fermer">×</button>
+    <h3 id="sessModalTitle" class="sr-only">Détail séance</h3>
     <div class="modal-body" id="sessModalBody"></div>
     <footer class="modal-foot">
       <button class="btn-ghost" id="sessModalCloseFoot">Fermer</button>

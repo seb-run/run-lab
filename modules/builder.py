@@ -216,6 +216,19 @@ def build_html(
         coach_path = data_dir() / 'coach_analysis.json'
         if coach_path.exists():
             coach = json.loads(coach_path.read_text(encoding='utf-8'))
+        # Historique des décisions : coach_analysis ne garde que les mineures
+        # appliquées, les refus vivent dans coach_proposals. On les remonte
+        # pour que l'app puisse afficher « refusée le X » — sans quoi
+        # l'utilisateur peut craindre qu'un refus n'ait pas été pris en compte.
+        prop_path = data_dir() / 'coach_proposals.json'
+        if coach and prop_path.exists():
+            props = (json.loads(prop_path.read_text(encoding='utf-8')) or {}).get('proposals', [])
+            coach['rejected'] = sorted(
+                [p for p in props if p.get('status') == 'rejected'],
+                key=lambda p: p.get('decided_at') or '', reverse=True)[:5]
+            coach['expired'] = sorted(
+                [p for p in props if p.get('status') == 'expired'],
+                key=lambda p: p.get('decided_at') or '', reverse=True)[:3]
     except Exception as e:
         print(f"  ⚠ Lecture coach_analysis.json : {e}")
 

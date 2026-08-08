@@ -2428,6 +2428,101 @@
   // ---- Modal détail séance ----
   let sessModalCharts = [];
 
+  // ===== Fiche séance : la séance confrontée à ce qui était annoncé ==========
+  // Le plan connaît la cible de chaque jour. La fiche ne juge donc jamais dans
+  // l'absolu : elle compare le couru à l'annoncé, bloc par bloc. Trois états
+  // seulement, et aucun n'est une félicitation — plus rapide que prévu sur une
+  // séance facile n'est pas une réussite.
+
+  const BLK_TOL = 6;   // secondes au km : en deçà, on est dans la cible
+
+  function planDayFor(dateFr) {
+    // dateFr est au format JJ/MM/AAAA, le plan travaille en ISO.
+    if (!PLAN || !dateFr) return null;
+    const m = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec(dateFr);
+    if (!m) return null;
+    const iso = `${m[3]}-${m[2]}-${m[1]}`;
+    for (const w of PLAN.weeks || []) {
+      for (const d of w.days || []) if (d.date === iso) return d;
+    }
+    return null;
+  }
+
+  function planDayByIso(iso) {
+    if (!PLAN || !iso) return null;
+    for (const w of PLAN.weeks || []) {
+      for (const d of w.days || []) if (d.date === iso) return d;
+    }
+    return null;
+  }
+
+  // Séance rattrapée à J+1 ou J+2 : la séance clé prévue jeudi peut avoir été
+  // couru vendredi. Le plan ne fait pas encore ce lien tant qu'il n'est pas
+  // régénéré. On le fait ici pour que la fiche du jour rattrapé hérite de
+  // la cible d'origine, et pour que le jour prévu soit marqué « décalée »
+  // plutôt que « manquée ».
+  //
+  // Deux critères pour rattacher : proximité (1 ou 2 jours) et forme (même
+  // type — un fractionné rattrape un fractionné, pas une sortie longue).
+  function planFindKeyRattrapee(iso) {
+    const day = planDayByIso(iso);
+    if (!day || day.key || day._rescheduled_from) return null;
+    const cur = new Date(iso);
+    for (let back = 1; back <= 2; back++) {
+      const prev = new Date(cur); prev.setDate(prev.getDate() - back);
+      const prevIso = prev.toISOString().slice(0, 10);
+      const prevDay = planDayByIso(prevIso);
+      if (prevDay && prevDay.status === 'missed' && prevDay.key) {
+        return prevDay;
+      }
+    }
+    return null;
+  }
+
+  function planCibleHeritee(sess) {
+    // Renvoie la cible du jour, en tenant compte d'un éventuel rattrapage.
+    const day = planDayFor(sess.d);
+    if (day && (day._rescheduled_pace || day.target_pace)) {
+      return {
+        pace: day._rescheduled_pace || day.target_pace,
+        source: day._rescheduled_from ? 'rescheduled' : 'planned',
+        heritee: day._rescheduled_from ? planDayByIso(day._rescheduled_from) : null,
+      };
+    }
+    // Pas de cible ce jour : chercher un rattrapage silencieux.
+    if (!day) return null;
+    const m = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec(sess.d);
+    if (!m) return null;
+    const iso = `${m[3]}-${m[2]}-${m[1]}`;
+    const key = planFindKeyRattrapee(iso);
+    if (key && key.target_pace) {
+      return {pace: key.target_pace, source: 'rattrapee_silencieuse', heritee: key};
+    }
+    return null;
+  }
+
+  function blocStatus(paceSec, targetSec) {
+    // Retourne [classe, écart lisible]. Sans cible, aucun jugement.
+    if (!paceSec || !targetSec) return ['', ''];
+    const delta = Math.round(paceSec - targetSec);
+    if (Math.abs(delta) <= BLK_TOL) return ['blk-ok', 'dans la cible'];
+    // Allure plus basse = plus rapide que ce qui était demandé.
+    return delta < 0
+      ? ['blk-up', `${delta}"`]
+      : ['blk-no', `+${delta}"`];
+  }
+
+  function blocLegend(used) {
+    if (!used.size) return '';
+    const items = [
+      ['blk-ok', 'dans la cible'],
+      ['blk-up', 'plus rapide que prévu'],
+      ['blk-no', 'plus lent que prévu'],
+    ].filter(([c]) => used.has(c));
+    return `<div class="blk-legend">${items.map(([c, l]) =>
+      `<span class="${c}"><i class="blk-dot"></i>${l}</span>`).join('')}</div>`;
+  }
+
   function openSessModal(sess) {
     const modal = document.getElementById('sessModal');
     const body = document.getElementById('sessModalBody');
@@ -2440,6 +2535,11 @@
     const trackBadge = sess.track ? '<span class="sess-track-badge">🏟 Piste</span>' : '';
     const dur = sess.dur || fmtDur(sess.dur_s);
     const allure = sess.a || (sess.ps ? fmtPace(sess.ps) + '/km' : '—');
+
+    // Cible du plan, en tenant compte d'un éventuel rattrapage à J+1.
+    const cible = planCibleHeritee(sess);
+    const targetStr = cible && cible.pace;
+    const targetSec = targetStr ? parsePaceLoose(targetStr) : null;
 
     let kpisHtml = `<div class="sess-modal-kpis">
       <div class="smk"><span class="smk-l">Distance</span><span class="smk-v">${(sess.km || 0).toFixed(2)} km</span></div>
@@ -2479,19 +2579,36 @@
         active: '#5b8af5', warmup: '#22d3a7', cooldown: '#94a3b8',
         rest: '#cbd5e1', interval: '#ef5b5b',
       };
+      // La cible du jour est celle calculée plus haut par planCibleHeritee :
+      // elle inclut les séances rattrapées à J+1 ou J+2. On la réutilise
+      // telle quelle plutôt que de la recalculer.
+      const used = new Set();
+
       const rows = blocs.map(b => {
         const intentLbl = intentLabels[b.intent] || b.intent || '—';
         const intentClr = intentColors[b.intent] || '#94a3b8';
-        return `<tr>
-          <td class="mono">${b.n}</td>
+        // Seuls les blocs d'effort se comparent à la cible : un échauffement
+        // lent n'est pas un échec, et une récup rapide n'est pas un exploit.
+        const compare = !b.intent || ['active', 'interval'].includes(b.intent);
+        const [cls, ecart] = compare ? blocStatus(b.ps, targetSec) : ['', ''];
+        if (cls) used.add(cls);
+        return `<tr class="${cls}">
+          <td class="mono">${cls ? '<i class="blk-dot"></i>' : ''}${b.n}</td>
           <td class="mono">${(b.km || 0).toFixed(2)}</td>
           <td class="mono">${b.dur || fmtDur(b.dur_s)}</td>
           <td class="mono">${b.a || (b.ps ? fmtPace(b.ps) + '/km' : '—')}</td>
+          <td class="mono blk-ecart">${ecart || '—'}</td>
           <td class="mono">${b.fc || '—'}</td>
           <td class="mono">${b.ca || '—'}</td>
           <td><span class="bloc-intent" style="background:${intentClr}">${intentLbl}</span></td>
         </tr>`;
       }).join('');
+
+      const refRow = targetStr
+        ? `<tr class="blk-ref"><td colspan="3">Cible annoncée</td>
+             <td class="mono">${escapeHtml(targetStr)}</td>
+             <td colspan="4"></td></tr>`
+        : '';
 
       blocsTableHtml = `<div class="sess-modal-chart-card sess-blocs-card">
         <div class="sess-modal-chart-title">Détail des ${blocs.length} blocs</div>
@@ -2500,28 +2617,81 @@
             <thead>
               <tr>
                 <th>#</th><th>Dist.</th><th>Durée</th><th>Allure</th>
-                <th>FC</th><th>Cadence</th><th>Intent</th>
+                <th>Écart</th><th>FC</th><th>Cadence</th><th>Intent</th>
               </tr>
             </thead>
-            <tbody>${rows}</tbody>
+            <tbody>${rows}${refRow}</tbody>
           </table>
         </div>
+        ${blocLegend(used)}
       </div>`;
     } else {
       chartsHtml = '<p class="sess-modal-empty">Pas de blocs km enregistrés pour cette séance.</p>';
     }
 
+    // En-tête de fiche, façon story : numéro de séance, titre gras très
+    // serré, et annoncé/couru en sous-ligne. Le numéro vient de la position
+    // chronologique dans le cache — 1005ᵉ, 1006ᵉ, etc.
+    const seance = SESSIONS ? SESSIONS.length - SESSIONS.indexOf(sess) : null;
+    // Certains titres sont des noms de fichier bruts (« i173323084 » pour un
+    // .fit intervals.icu, « Activité 12345 » pour Strava sans nom saisi) : on
+    // retombe alors sur le type de séance, plus lisible.
+    let dispoTitle = (sess.t || '').trim();
+    if (!dispoTitle || /^i\d{6,}$/.test(dispoTitle) || /^Activit[ée] \d+$/.test(dispoTitle)) {
+      dispoTitle = typeLabel(sess.tp);
+    }
+    let sousLigne = '';
+    if (targetStr) {
+      // Allure moyenne des blocs comparables, pour la ligne « annoncé/couru »
+      const eff = blocs.filter(b => !b.intent || ['active','interval'].includes(b.intent));
+      const paces = eff.map(b => b.ps).filter(Boolean);
+      if (paces.length) {
+        const avg = Math.round(paces.reduce((a,b) => a+b, 0) / paces.length);
+        sousLigne = `Annoncé <b>${escapeHtml(targetStr)}</b>. Couru à <b>${fmtPace(avg)}</b>.`;
+      }
+    }
+    if (!sousLigne) {
+      sousLigne = `${(sess.km || 0).toFixed(2)} km à <b>${escapeHtml(allure)}</b>` +
+        (sess.fc ? ` · FC <b>${sess.fc}</b>` : '');
+    }
+
+    // Bannière de rattrapage : la séance clé du jeudi couru le vendredi
+    // n'est ni un échec ni une réussite ordinaire, elle a été décalée.
+    let banniere = '';
+    if (cible && cible.source === 'rattrapee_silencieuse' && cible.heritee) {
+      const from = cible.heritee.date;
+      const jour = from ? new Date(from).toLocaleDateString('fr-FR', {weekday: 'long'}) : '';
+      banniere = `<div class="sess-story-flag"><span class="sess-story-flag-ico">↻</span>
+        Séance clé de <b>${escapeHtml(jour)}</b> rattrapée
+        ${cible.heritee.title ? ' · ' + escapeHtml(cible.heritee.title) : ''}</div>`;
+    } else if (cible && cible.source === 'rescheduled' && cible.heritee) {
+      const jour = new Date(cible.heritee.date).toLocaleDateString('fr-FR', {weekday: 'long'});
+      banniere = `<div class="sess-story-flag"><span class="sess-story-flag-ico">↻</span>
+        Séance clé de <b>${escapeHtml(jour)}</b> reprogrammée sur ce créneau</div>`;
+    }
+
     body.innerHTML = `
-      <div class="sess-modal-head">
-        <div class="sess-modal-date">${sess.d}${sess.h ? ' à ' + sess.h : ''}</div>
-        <div class="sess-modal-title">${escapeHtml(sess.t || '')}</div>
+      <div class="sess-story-head">
+        <div class="sess-story-brand">SEB METRICS</div>
+        <div class="sess-story-meta">${escapeHtml(sess.d)}${sess.h ? ' · ' + escapeHtml(sess.h) : ''} · ${typeLabel(sess.tp)}${trackBadge}</div>
+      </div>
+      ${banniere}
+      <div class="sess-story-hero">
+        ${seance ? `<div class="sess-story-num"><div class="n">${seance}</div><div class="sess-story-num-l">Séance</div></div>` : ''}
+        <div class="sess-story-sep"></div>
+        <div class="sess-story-title-wrap">
+          <h2 class="sess-story-title">${escapeHtml(dispoTitle)}</h2>
+          <p class="sess-story-sub">${sousLigne}</p>
+        </div>
       </div>
       ${kpisHtml}
       ${chartsHtml}
       ${blocsTableHtml}
     `;
 
-    document.getElementById('sessModalTitle').textContent =
+    // Titre d'accessibilité (le titre visible est porté par la carte story).
+    const modalTitle = document.getElementById('sessModalTitle');
+    if (modalTitle) modalTitle.textContent =
       `${sess.d} · ${typeLabel(sess.tp)} · ${(sess.km || 0).toFixed(2)} km`;
 
     modal.hidden = false;
@@ -4759,14 +4929,55 @@
     if (c.headline) html += `<div class="coach-headline">${escapeHtml(c.headline)}</div>`;
     if (c.analysis) html += `<p class="coach-analysis">${escapeHtml(c.analysis).replace(/\n/g, '<br/>')}</p>`;
 
+    // Deux origines à distinguer clairement — sans quoi la carte laisse
+    // penser que le coach a validé à ta place ce que tu venais de refuser.
+    //
+    //  - « validated=true » : tu as accepté depuis l'app (proposition majeure).
+    //  - sinon              : le coach a appliqué seul (ajustement mineur, ±10%).
     const applied = c.applied || [];
-    if (applied.length) {
-      html += `<div class="coach-section-title">Ajustements appliqués automatiquement</div>` +
-        applied.map(a => `<div class="coach-item coach-applied">
-          <span class="coach-item-icon">✓</span>
-          <div><strong>${KIND_LABELS[a.kind] || a.kind}</strong> · ${escapeHtml(a.detail || '')}
-          <div class="coach-item-reason">${escapeHtml(a.reason || '')}</div></div>
-        </div>`).join('');
+    const validesParToi = applied.filter(a => a.validated);
+    const autoParCoach  = applied.filter(a => !a.validated);
+
+    const renderItem = (a, cls, ico) =>
+      `<div class="coach-item ${cls}">
+         <span class="coach-item-icon">${ico}</span>
+         <div><strong>${KIND_LABELS[a.kind] || a.kind}</strong>${a.date ? ' · ' + escapeHtml(a.date) : ''}
+           ${a.detail ? '· ' + escapeHtml(a.detail) : ''}
+           ${a.reason ? `<div class="coach-item-reason">${escapeHtml(a.reason)}</div>` : ''}
+         </div>
+       </div>`;
+
+    if (validesParToi.length) {
+      html += `<div class="coach-section-title">Validées par toi</div>` +
+        validesParToi.map(a => renderItem(a, 'coach-validated', '✓')).join('');
+    }
+    if (autoParCoach.length) {
+      html += `<div class="coach-section-title">Ajustements mineurs — appliqués automatiquement</div>` +
+        autoParCoach.map(a => renderItem(a, 'coach-auto', '⚙︎')).join('');
+    }
+
+    // Historique des refus : repliable, pour se rassurer qu'ils sont pris en
+    // compte sans encombrer la carte. Format court : « refusée hier / le 5/8 ».
+    const rejected = c.rejected || [];
+    if (rejected.length) {
+      const items = rejected.map(p => {
+        const when = (p.decided_at || '').slice(0, 10);
+        const jour = when
+          ? new Date(when).toLocaleDateString('fr-FR', {day: 'numeric', month: 'short'})
+          : '';
+        return `<div class="coach-item coach-rejected">
+          <span class="coach-item-icon">✗</span>
+          <div><strong>${KIND_LABELS[p.kind] || p.kind}</strong>${p.date ? ' · ' + escapeHtml(p.date) : ''}
+            <span class="coach-item-when">refusée le ${escapeHtml(jour)}</span>
+            ${p.reason ? `<div class="coach-item-reason">${escapeHtml(p.reason)}</div>` : ''}
+          </div>
+        </div>`;
+      }).join('');
+      html += `<details class="coach-history">
+        <summary><span class="coach-section-title">${rejected.length} proposition${rejected.length > 1 ? 's' : ''} refusée${rejected.length > 1 ? 's' : ''}</span>
+          <span class="coach-history-hint">cliquer pour voir</span></summary>
+        ${items}
+      </details>`;
     }
 
     const pending = c.pending || [];
@@ -5248,16 +5459,48 @@
     if (sub) sub.textContent = `W${w.week_num}/${PLAN.meta.weeks_total} · ${w.phase_label}`;
     const todayIso = localISODate();
 
+    // Pré-repérage des séances clés rattrapées : un jeudi manqué dont la
+    // séance a été couru vendredi ou samedi ne se lit pas comme un échec.
+    // Le point du jour prévu passe en état « décalée », et le point du jour
+    // qui l'a couru en hérite pour être coloré comme réussi.
+    const rattrapees = new Map();   // iso jour-prévu → iso jour-rattrapé
+    for (const d of (w.days || [])) {
+      if (d.status !== 'missed' || !d.key) continue;
+      const cur = new Date(d.date);
+      for (let f = 1; f <= 2; f++) {
+        const nxt = new Date(cur); nxt.setDate(nxt.getDate() + f);
+        const nxtIso = nxt.toISOString().slice(0, 10);
+        const nxtDay = (w.days || []).find(x => x.date === nxtIso);
+        if (nxtDay && nxtDay.actual && (nxtDay.km || 0) > 0) {
+          rattrapees.set(d.date, nxtIso);
+          break;
+        }
+      }
+    }
+
     const dots = (w.days || []).map(d => {
-      const verdict = d.score ? d.score.verdict : (d.status === 'missed' ? 'missed' : null);
-      const m = verdict ? VERDICT_META[verdict] : null;
+      const rattrapePar = rattrapees.get(d.date);
+      let verdict;
+      if (d.score) verdict = d.score.verdict;
+      else if (rattrapePar) verdict = 'shifted';         // « décalée » : ni échec ni réussite
+      else if (d.status === 'missed') verdict = 'missed';
+      else verdict = null;
+
+      const shiftColors = { shifted: 'var(--st-up-br)' };
+      const m = verdict === 'shifted'
+        ? { color: shiftColors.shifted }
+        : (verdict ? VERDICT_META[verdict] : null);
+
       const isToday = d.date === todayIso;
       const isRest = (d.km || 0) <= 0;
       const bg = m ? m.color : (isRest ? 'transparent' : 'var(--surface-3)');
       const border = isToday ? 'var(--c-blue)' : (isRest ? 'var(--border-2)' : 'transparent');
-      return `<div class="home-week-dot" data-day-date="${d.date}"
+      const tooltip = rattrapePar
+        ? `Rattrapée le ${new Date(rattrapePar).toLocaleDateString('fr-FR', {weekday: 'long'})}`
+        : (d.title || '');
+      return `<div class="home-week-dot ${verdict === 'shifted' ? 'is-shifted' : ''}" data-day-date="${d.date}"
         style="background:${bg};border:2px ${isRest && !m ? 'dashed' : 'solid'} ${border}"
-        title="${escapeHtml(d.title || '')}">
+        title="${escapeHtml(tooltip)}">
         <span>${['L','M','M','J','V','S','D'][(new Date(d.date)).getDay() === 0 ? 6 : (new Date(d.date)).getDay() - 1]}</span>
       </div>`;
     }).join('');

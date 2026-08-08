@@ -1,23 +1,46 @@
 /* ============================================================================
    seb-metrics — styles.css
-   Thème Apple Fitness, fond clair, accents vifs, animations modernes
+
+   Système de design « instrument de mesure ».
+
+   Trois principes, tirés de la story Strava qui sert de référence :
+
+   1. Deux voix typographiques. Un sans-serif gras très serré pour les
+      titres, un monospace espacé en capitales pour tout le reste — labels,
+      chiffres, en-têtes de tableau. C'est ce contraste qui fait la
+      différence entre un tableau de bord et une page web.
+   2. Une palette de quatre tons : marine profond, deux gris, un accent.
+      Les couleurs de statut n'apparaissent qu'en fond très dilué avec un
+      filet de 3 px — jamais en texte coloré, jamais en pastille saturée.
+      C'est ce qui les empêche de devenir criardes.
+   3. De la respiration. Peu d'éléments, très espacés, séparés par des
+      filets fins plutôt que par des ombres.
    ============================================================================ */
 
 :root {
   /* === Surfaces === */
-  --bg:        #f5f6fa;
+  --bg:        #f4f6f9;
   --surface:   #ffffff;
   --surface-2: #fafbfd;
-  --surface-3: #f0f2f7;
+  --surface-3: #eef1f6;
 
-  /* === Bordures === */
-  --border:   rgba(15, 23, 42, 0.07);
-  --border-2: rgba(15, 23, 42, 0.12);
+  /* === Bordures ===
+     Opaques et non transparentes : superposées, les bordures translucides
+     se cumulaient et fonçaient aux intersections de cartes. */
+  --border:   #e6eaf0;
+  --border-2: #d7dde7;
 
-  /* === Texte === */
-  --text:    #0f172a;
-  --text-2:  #475569;
-  --text-3:  #94a3b8;
+  /* === Texte ===
+     Marine plutôt que gris ardoise : plus dense, plus « encre ». */
+  --text:    #0f1c30;
+  --text-2:  #46536b;
+  --text-3:  #8b94a6;
+
+  /* === Statuts de bloc ===
+     Fond dilué + filet, jamais de texte coloré sur fond coloré. */
+  --st-ok-bg: #eff7f2;  --st-ok-br: #8ec3a4;  --st-ok-tx: #2f6b4a;
+  --st-up-bg: #eef3fb;  --st-up-br: #8aa6d8;  --st-up-tx: #33518a;
+  --st-no-bg: #fdf1f0;  --st-no-br: #dda29d;  --st-no-tx: #8f423c;
 
   /* === Couleurs sémantiques Apple-Fitness === */
   --c-blue:    #5b8af5;
@@ -37,13 +60,18 @@
   --grad-brand: linear-gradient(135deg, #5b8af5 0%, #22d3a7 100%);
   --grad-card:  linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
 
-  /* === Typo === */
-  /* Police système : sur iPhone c'est SF Pro, et l'app cesse instantanément
-     de se lire comme un site web. Aucun chargement réseau, aucun FOUT. */
-  --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI',
-               system-ui, Roboto, 'Helvetica Neue', sans-serif;
-  --font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Monaco,
-               'Cascadia Mono', 'Roboto Mono', monospace;
+  /* === Typo ===
+     Les deux voix du système. La pile système reste en repli : si le réseau
+     manque, on obtient SF Pro et SF Mono sur iPhone, très proches. */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text',
+               system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', SFMono-Regular,
+               Menlo, Monaco, 'Roboto Mono', monospace;
+
+  /* Le titre est plus serré que le texte courant : c'est ce resserrement
+     qui donne l'aspect « titrage » de la story. */
+  --track-title: -0.035em;
+  --track-label: 0.14em;   /* les labels mono, à l'inverse, respirent */
 
   /* === Espacements === */
   --sp-1:  4px;
@@ -62,10 +90,13 @@
   --r-xl:  20px;
   --r-2xl: 24px;
 
-  /* === Ombres === */
-  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04), 0 1px 1px rgba(15, 23, 42, 0.03);
-  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.06), 0 2px 4px rgba(15, 23, 42, 0.04);
-  --shadow-lg: 0 12px 32px rgba(15, 23, 42, 0.08), 0 4px 8px rgba(15, 23, 42, 0.05);
+  /* === Ombres ===
+     Presque supprimées : dans ce système, ce sont les filets qui séparent
+     les surfaces, pas le relief. Seuls les éléments qui flottent vraiment
+     au-dessus de la page (feuille de séance, menus) gardent une ombre. */
+  --shadow-sm: none;
+  --shadow-md: 0 1px 2px rgba(15, 28, 48, 0.04);
+  --shadow-lg: 0 16px 40px rgba(15, 28, 48, 0.12), 0 4px 10px rgba(15, 28, 48, 0.06);
 
   /* === Transitions === */
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
@@ -450,12 +481,12 @@ h1, h2, h3, h4 {
 
 /* === CARD === */
 .card {
-  background: var(--grad-card);
+  background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--r-lg);
+  border-radius: var(--r-md);
   padding: var(--sp-5);
-  box-shadow: var(--shadow-sm);
-  transition: box-shadow var(--t-base), transform var(--t-base);
+  box-shadow: none;
+  transition: border-color var(--t-base);
 }
 
 .card:hover {
@@ -482,10 +513,14 @@ h1, h2, h3, h4 {
 .card-head h3 {
   font-size: 15px;
   font-weight: 700;
+  letter-spacing: var(--track-title);
 }
 
 .card-sub {
-  font-size: 11.5px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: var(--track-label);
+  text-transform: uppercase;
   color: var(--text-3);
   font-weight: 500;
 }
@@ -3231,10 +3266,39 @@ h1, h2, h3, h4 {
   display: flex; gap: 10px; align-items: flex-start;
   padding: 8px 10px; border-radius: 10px; margin-bottom: 6px; font-size: 13px;
 }
-.coach-item.coach-applied { background: #f0fdf4; }
-.coach-item.coach-applied .coach-item-icon { color: #22c55e; }
-.coach-item.coach-pending { background: #fffbeb; }
+/* Trois origines à distinguer :
+   - « validated » : Sébastien a accepté depuis l'app (majeure).
+   - « auto »      : coach a appliqué seul (mineure, ±10%).
+   - « rejected »  : Sébastien a refusé — historique, discret.
+   Chacune a sa teinte, aucune n'imite le vert de la validation. */
+.coach-item.coach-validated { background: var(--st-ok-bg); border-left: 3px solid var(--st-ok-br); }
+.coach-item.coach-validated .coach-item-icon { color: var(--st-ok-tx); font-weight: 700; }
+
+.coach-item.coach-auto { background: var(--surface-3); border-left: 3px solid var(--text-3); }
+.coach-item.coach-auto .coach-item-icon { color: var(--text-2); }
+
+.coach-item.coach-pending { background: #fffbeb; border-left: 3px solid #f59e0b; }
 .coach-item.coach-pending .coach-item-icon { color: #f59e0b; }
+
+.coach-item.coach-rejected { background: var(--surface-2); border-left: 3px solid var(--border-2); }
+.coach-item.coach-rejected .coach-item-icon { color: var(--text-3); }
+.coach-item-when {
+  font-family: var(--font-mono); font-size: 10px; color: var(--text-3);
+  letter-spacing: 0.06em; margin-left: 6px;
+}
+
+/* Historique replié : la carte ne s'alourdit qu'à la demande */
+.coach-history { margin-top: var(--sp-4); }
+.coach-history > summary {
+  display: flex; justify-content: space-between; align-items: baseline;
+  cursor: pointer; list-style: none; padding: 4px 0;
+}
+.coach-history > summary::-webkit-details-marker { display: none; }
+.coach-history-hint {
+  font-family: var(--font-mono); font-size: 10px;
+  letter-spacing: 0.06em; color: var(--text-3);
+}
+.coach-history[open] > summary { margin-bottom: var(--sp-3); }
 .coach-item-icon { font-weight: 800; font-size: 15px; min-width: 16px; }
 .coach-item-reason { color: var(--text-2); font-size: 12px; margin-top: 2px; }
 
@@ -3482,7 +3546,7 @@ html[data-theme="dark"] {
 }
 html[data-theme="dark"] .sheet-backdrop { background: rgba(0, 0, 0, 0.6); }
 html[data-theme="dark"] .coach-headline { background: rgba(124, 58, 237, 0.14); color: var(--text); }
-html[data-theme="dark"] .coach-item.coach-applied { background: rgba(34, 197, 94, 0.1); }
+html[data-theme="dark"] .coach-item.coach-auto { background: rgba(255, 255, 255, 0.04); }
 html[data-theme="dark"] .coach-item.coach-pending { background: rgba(245, 158, 11, 0.1); }
 html[data-theme="dark"] .plan-week-compliance { background: var(--surface-3); }
 html[data-theme="dark"] .score-ring circle:first-of-type { stroke: var(--surface-3); }
@@ -4154,4 +4218,302 @@ html, body { overflow-x: hidden; width: 100%; max-width: 100%; }
   .debrief-grid { grid-template-columns: minmax(0, 1fr); }
   /* La table de comparaison garde ses colonnes mais défile. */
   .comp-table { display: block; overflow-x: auto; white-space: nowrap; }
+}
+
+/* ============================================================================
+   SYSTÈME « INSTRUMENT DE MESURE »
+
+   Cette section arrive en dernier et harmonise l'existant plutôt que de le
+   réécrire : elle ne change que la voix (typo, filets, teintes), jamais la
+   structure. Les écrans conservent leur mise en page.
+   ============================================================================ */
+
+/* --- 1. Les labels parlent en monospace -------------------------------------
+   Partout où l'ancien thème mettait une petite capitale en sans-serif, on
+   passe au mono espacé. C'est le geste qui porte le plus de l'identité. */
+.kpi .label,
+.smk-l,
+.route-stat-l,
+.hero-paces-title,
+.hero-counter .l,
+.plan-hero-stat .k,
+.answer-k,
+.debrief-point-label,
+.sheet-section-title,
+.kv-label,
+.pace-card .pl,
+.comp-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: var(--track-label);
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+/* --- 2. Les chiffres sont serrés, jamais étirés ---------------------------- */
+.kpi .value,
+.smk-v,
+.route-stat-v,
+.answer-v,
+.hero-counter .v,
+.plan-hero-stat .v,
+.pace-card .pv {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- 3. Les titres se resserrent ------------------------------------------- */
+h1, h2, h3, h4,
+.sess-modal-title,
+.plan-today-title h2,
+.coach-headline,
+.route-title strong {
+  letter-spacing: var(--track-title);
+}
+
+/* --- 4. Les tableaux : filets fins, en-têtes mono, chiffres alignés -------- */
+.sess-table thead th,
+.aero-table thead th,
+.comp-table thead th,
+.sess-blocs-table thead th,
+.glossary-table thead th,
+.race-table thead th {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+.sess-table td,
+.aero-table td,
+.comp-table td,
+.sess-blocs-table td {
+  border-top: 1px solid var(--border);
+  font-variant-numeric: tabular-nums;
+}
+.sess-table tbody tr:hover td,
+.aero-table tbody tr:hover td { background: var(--surface-2); }
+
+/* --- 5. Les cartes intérieures perdent leur relief ------------------------- */
+.kpi, .pace-card, .sess-modal-kpis, .answer, .route-card,
+.sess-modal-chart-card, .debrief-point, .comp-selectors {
+  box-shadow: none;
+  background: var(--surface);
+  border-color: var(--border);
+}
+.sess-modal-kpis, .comp-selectors { background: var(--surface-2); }
+.kpi:hover, .pace-card:hover { transform: none; box-shadow: none; }
+
+/* --- 6. L'en-tête prend la forme d'un bandeau d'instrument -----------------
+   Marque à gauche en mono espacé, contexte à droite. Le dégradé disparaît. */
+.hero {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+.brand-text h1 {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-family: var(--font-mono);
+}
+.brand-text h1 .dot { color: var(--text-3); }
+.brand-text p {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: var(--track-label);
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+.hero-paces-sub { font-family: var(--font-mono); font-size: 10px;
+  letter-spacing: 0.08em; color: var(--text-3); }
+
+/* --- 7. Onglets et lentilles ---------------------------------------------- */
+.tab, .lens {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.year-btn {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+}
+.lens-bar { background: var(--surface-3); }
+
+/* --- 8. Statuts de bloc ----------------------------------------------------
+   Le fond reste presque blanc ; c'est le filet de gauche qui porte le sens.
+   Aucune ligne n'écrit en couleur : la lisibilité prime sur la signalétique. */
+.blk-ok, .blk-up, .blk-no { box-shadow: inset 3px 0 0 var(--br); }
+.blk-ok { --bg: var(--st-ok-bg); --br: var(--st-ok-br); --tx: var(--st-ok-tx); }
+.blk-up { --bg: var(--st-up-bg); --br: var(--st-up-br); --tx: var(--st-up-tx); }
+.blk-no { --bg: var(--st-no-bg); --br: var(--st-no-br); --tx: var(--st-no-tx); }
+.blk-ok td, .blk-up td, .blk-no td { background: var(--bg); }
+.blk-ok td:first-child,
+.blk-up td:first-child,
+.blk-no td:first-child { color: var(--tx); font-weight: 600; }
+
+.blk-dot {
+  display: inline-block; width: 6px; height: 6px;
+  border-radius: 50%; margin-right: 7px; vertical-align: 1px;
+  background: var(--br, var(--text-3));
+}
+.blk-legend {
+  display: flex; gap: 16px; flex-wrap: wrap;
+  padding: 11px 0 0; margin-top: 4px;
+  border-top: 1px solid var(--border);
+}
+.blk-legend span {
+  font-family: var(--font-mono); font-size: 10px;
+  letter-spacing: 0.04em; color: var(--text-3);
+}
+.blk-legend .blk-ok  { --br: var(--st-ok-br); }
+.blk-legend .blk-up  { --br: var(--st-up-br); }
+.blk-legend .blk-no  { --br: var(--st-no-br); }
+.blk-legend .blk-ok, .blk-legend .blk-up, .blk-legend .blk-no { box-shadow: none; }
+
+/* --- 9. Thème sombre : mêmes principes, encre inversée --------------------- */
+html[data-theme="dark"] {
+  --st-ok-bg: rgba(52, 140, 96, 0.14);  --st-ok-br: #4e9d76; --st-ok-tx: #86d3ab;
+  --st-up-bg: rgba(70, 110, 190, 0.16); --st-up-br: #5d84c8; --st-up-tx: #9dbaea;
+  --st-no-bg: rgba(180, 70, 65, 0.14);  --st-no-br: #b86a64; --st-no-tx: #e5a7a1;
+}
+
+/* ============================================================
+   Fiche séance : format story
+
+   Reprise du visuel de référence : numéro de séance à gauche, titre gras
+   très serré au centre, une ligne « annoncé/couru » qui recadre la
+   séance par rapport à ce que le plan demandait. Le tableau de blocs
+   dessous porte le code couleur pâle.
+   ============================================================ */
+.sess-story-head {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding-bottom: 12px; margin-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  gap: 12px; flex-wrap: wrap;
+}
+.sess-story-brand {
+  font-family: var(--font-mono);
+  font-size: 12px; font-weight: 600;
+  letter-spacing: 0.2em; color: var(--text);
+}
+.sess-story-meta {
+  font-family: var(--font-mono);
+  font-size: 10px; letter-spacing: var(--track-label);
+  text-transform: uppercase; color: var(--text-3);
+}
+
+.sess-story-hero {
+  display: flex; align-items: flex-start;
+  gap: 20px; margin-bottom: 20px;
+}
+.sess-story-num {
+  flex: 0 0 auto; text-align: left;
+}
+.sess-story-num .n {
+  font-family: var(--font-mono);
+  font-size: 52px; font-weight: 700;
+  line-height: 0.9; letter-spacing: -0.03em;
+  color: var(--text);
+}
+.sess-story-num-l {
+  font-family: var(--font-mono);
+  font-size: 10px; letter-spacing: var(--track-label);
+  text-transform: uppercase; color: var(--text-3);
+  margin-top: 6px;
+}
+.sess-story-sep {
+  width: 1px; align-self: stretch; background: var(--border);
+}
+.sess-story-title-wrap { min-width: 0; flex: 1; }
+.sess-story-title {
+  font-size: 25px; font-weight: 800;
+  letter-spacing: -0.035em; line-height: 1.08;
+  margin: 0 0 7px;
+  overflow-wrap: anywhere;
+}
+.sess-story-sub {
+  font-size: 13.5px; line-height: 1.5;
+  color: var(--text-2); margin: 0;
+}
+.sess-story-sub b { color: var(--text); font-weight: 650; }
+
+/* Écran étroit : le hero se resserre mais garde ses deux voix. */
+@media (max-width: 480px) {
+  .sess-story-hero { gap: 15px; }
+  .sess-story-num .n { font-size: 40px; }
+  .sess-story-title { font-size: 20px; }
+  .sess-story-sub { font-size: 13px; }
+}
+
+/* La colonne « Écart » du tableau de blocs prend la teinte de la ligne */
+.sess-blocs-table .blk-ecart { font-weight: 600; }
+.blk-ok .blk-ecart { color: var(--st-ok-tx); }
+.blk-up .blk-ecart { color: var(--st-up-tx); }
+.blk-no .blk-ecart { color: var(--st-no-tx); }
+
+/* La ligne de référence (« Cible annoncée ») en gris, sans fond */
+.sess-blocs-table .blk-ref td {
+  color: var(--text-3);
+  border-top: 1px solid var(--border);
+  background: transparent;
+}
+
+/* Bouton de fermeture de la fiche : en surimpression, sans en-tête à part.
+   La marque « SEB METRICS » de la fiche prend toute la largeur. */
+.modal-close-float {
+  position: absolute; top: 12px; right: 12px; z-index: 5;
+  width: 32px; height: 32px; border-radius: 50%;
+  background: var(--surface-3); color: var(--text-2);
+  font-size: 18px; line-height: 1; cursor: pointer;
+  border: none; display: flex; align-items: center; justify-content: center;
+}
+.modal-close-float:hover { background: var(--border-2); color: var(--text); }
+.modal-body { padding-top: 20px; }
+
+/* Accessibilité : titre de dialogue caché mais lisible aux lecteurs d'écran */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+/* ============================================================
+   Séances rattrapées
+
+   La séance clé prévue jeudi et couru vendredi n'est ni un échec ni une
+   réussite ordinaire : c'est un décalage. Elle reçoit une teinte à part,
+   la même sur le jour prévu et sur le jour qui l'a couru.
+   ============================================================ */
+.sess-story-flag {
+  display: flex; align-items: center; gap: 8px;
+  padding: 9px 13px; margin: -8px 0 18px;
+  background: var(--st-up-bg);
+  border: 1px solid transparent;
+  border-left: 3px solid var(--st-up-br);
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--st-up-tx);
+}
+.sess-story-flag b { font-weight: 700; }
+.sess-story-flag-ico {
+  font-size: 14px;
+  font-family: var(--font-sans);
+  color: var(--st-up-br);
+}
+
+/* Point de semaine sur l'accueil : liseré diagonal pour dire « décalée » */
+.home-week-dot.is-shifted {
+  background: repeating-linear-gradient(
+    45deg, var(--st-up-br), var(--st-up-br) 3px,
+    var(--st-up-bg) 3px, var(--st-up-bg) 6px
+  ) !important;
 }
