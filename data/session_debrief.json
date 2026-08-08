@@ -1,45 +1,45 @@
 {
- "headline": "Repos prévu, fractionné fait à la place ; asymétrie qui s'accentue en vitesse à surveiller.",
+ "headline": "FC +7 bpm vs réf, mécanique stable : la chaleur (33°C) explique la dérive, pas la fatigue",
  "bullets": [
-  "Repos prévu au plan, il a fait 13,7km de fractionné à 4'53\"/km à la place.",
-  "FC dérive +13% (138→156 bpm) sous 30-34°C, contact +5,9% : signature chaleur/fatigue.",
-  "Asymétrie s'ouvre avec la vitesse (+1,92), même motif que l'épisode adducteur hiver 2025."
+  "FC moy 155 vs 148 (réf 60j) à allure quasi identique — sortie à 10h46, pas avant 8h comme prévu",
+  "Dérive FC +10% (145→160) en fin de course alors que stance et osc verticale baissent légèrement",
+  "Allure 5'08/km, plus rapide que la cible 5'10-5'20, mais proche de ta moyenne récente (5'04)"
  ],
  "points": [
   {
-   "label": "Équilibre G/D",
-   "valeur": "49.4% gauche",
-   "ecart": "-1.0 pt vs réf 50.4%",
-   "lecture": "légère surcharge côté droit (Achille)",
+   "label": "FC moyenne",
+   "valeur": "155 bpm",
+   "ecart": "+7 bpm vs réf 148",
+   "lecture": "chaleur probable, pas fatigue",
    "ton": "vigilance"
   },
   {
-   "label": "Asymétrie vs allure",
-   "valeur": "+1.92",
-   "ecart": "positif = s'accentue en vitesse",
-   "lecture": "motif proche de l'épisode adducteur",
-   "ton": "vigilance"
+   "label": "Temps de contact",
+   "valeur": "220 ms",
+   "ecart": "-10 ms vs réf 230 ms",
+   "lecture": "mécanique plus efficace qu'à l'habitude",
+   "ton": "bon"
   },
   {
-   "label": "Dérive FC",
-   "valeur": "138→156 bpm",
-   "ecart": "+13.1% sur la séance",
-   "lecture": "chaleur 30-34°C, probable fatigue",
-   "ton": "vigilance"
+   "label": "Équilibre gauche",
+   "valeur": "50,13%",
+   "ecart": "-0,29 pt vs réf 50,42%",
+   "lecture": "dans la fourchette habituelle",
+   "ton": "neutre"
   }
  ],
- "achille": "Équilibre à 49.4% (réf 50.4%), charge droite accrue, encore plus aux allures rapides (47.9%).",
- "a_surveiller": "Repos prescrit non respecté ; RPE 4/10 'Fort' malgré dérive FC +13% en forte chaleur.",
+ "achille": "Équilibre 50,13% gauche, proche du neutre, pas de décharge marquée côté droit.",
+ "a_surveiller": "Asym_vs_allure quasi nul (+0,09) — pas la signature de ton ancien pubalgie.",
  "seance": {
-  "date": "07/08/2026",
-  "heure": "09:50",
-  "titre": "i173323084",
+  "date": "08/08/2026",
+  "heure": "10:46",
+  "titre": "i173662377",
   "type_detecte": "frac_court",
-  "km": 13.73,
-  "duree": "1h 07m 02s",
-  "allure": "4'53\"/km",
-  "fc_moy": 150
+  "km": 11.0,
+  "duree": "56m 28s",
+  "allure": "5'08\"/km",
+  "fc_moy": 155
  },
- "generated_at": "2026-08-07T09:00:48",
- "baseline_n": 27
+ "generated_at": "2026-08-08T09:46:20",
+ "baseline_n": 25
 }

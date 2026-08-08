@@ -6812,12 +6812,278 @@
           "key": false,
           "description": "11 km à 5'10-5'25/km + 8×20\" de lignes sur herbe. Sortie avant 8h : la chaleur d'août à Mondonville plombe la FC.",
           "target_pace": "5'20\"/km",
-          "status": "today",
+          "status": "done",
           "_easy_idx": 1,
           "shoe": "Evo SL (usagée)",
           "shoe_note": "Footings faciles jusqu'à épuisement de la paire.",
           "_shoe_key": "evosl_old",
-          "actual": null
+          "actual": {
+            "km": 11.0,
+            "duration_min": 56,
+            "pace_sec": 308,
+            "pace_str": "5'08\"/km",
+            "fc": 155,
+            "cadence": 176,
+            "type": "frac_court",
+            "title": "i173662377",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 220.0,
+              "osc_cm": 10.4,
+              "vratio": 9.4,
+              "balance_l": 50.13,
+              "step_m": 1.1,
+              "temp_c": 33,
+              "temp_max": 36,
+              "resp": 34.0,
+              "power": 365,
+              "np": 368,
+              "te_aero": 3.9,
+              "te_ana": 1.6,
+              "load": 192.5,
+              "strides": 4934,
+              "rpe": 4.0,
+              "feel": 50,
+              "feel_label": "Normal",
+              "drift": {
+                "stance": {
+                  "start": 223.0,
+                  "end": 219.0,
+                  "pct": -1.9
+                },
+                "step": {
+                  "start": 1099.0,
+                  "end": 1090.0,
+                  "pct": -0.8
+                },
+                "vratio": {
+                  "start": 9.25,
+                  "end": 9.13,
+                  "pct": -1.3
+                },
+                "osc": {
+                  "start": 104.0,
+                  "end": 102.0,
+                  "pct": -1.9
+                },
+                "hr": {
+                  "start": 145.0,
+                  "end": 160.0,
+                  "pct": 10.0
+                },
+                "cad": {
+                  "start": 87.5,
+                  "end": 88.4,
+                  "pct": 1.0
+                }
+              },
+              "balance_min": 49.31,
+              "balance_max": 50.68,
+              "balance_series": [
+                50.01,
+                49.66,
+                50.68,
+                50.42,
+                50.59,
+                49.94,
+                49.95,
+                50.52,
+                50.01,
+                49.31
+              ],
+              "balance_lent": 50.07,
+              "balance_rapide": 50.16,
+              "asym_vs_allure": 0.09,
+              "allure_lent_s": 314,
+              "allure_rapide_s": 297,
+              "rr_beats": 8917,
+              "rmssd_effort": 5.0,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 314,
+                "fc": 136,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 305,
+                "fc": 146,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 307,
+                "fc": 147,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 307,
+                "fc": 152,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 299,
+                "fc": 156,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 297,
+                "fc": 158,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 295,
+                "fc": 159,
+                "ca": 176
+              },
+              {
+                "km": 0.09,
+                "ps": 232,
+                "fc": 161,
+                "ca": 184
+              },
+              {
+                "km": 0.1,
+                "ps": 419,
+                "fc": 162,
+                "ca": 168
+              },
+              {
+                "km": 0.09,
+                "ps": 238,
+                "fc": 158,
+                "ca": 184
+              },
+              {
+                "km": 0.1,
+                "ps": 407,
+                "fc": 161,
+                "ca": 168
+              },
+              {
+                "km": 0.09,
+                "ps": 243,
+                "fc": 158,
+                "ca": 182
+              },
+              {
+                "km": 0.09,
+                "ps": 431,
+                "fc": 160,
+                "ca": 164
+              },
+              {
+                "km": 0.09,
+                "ps": 230,
+                "fc": 158,
+                "ca": 184
+              },
+              {
+                "km": 0.09,
+                "ps": 462,
+                "fc": 164,
+                "ca": 166
+              },
+              {
+                "km": 0.09,
+                "ps": 232,
+                "fc": 159,
+                "ca": 186
+              },
+              {
+                "km": 0.09,
+                "ps": 427,
+                "fc": 163,
+                "ca": 166
+              },
+              {
+                "km": 0.09,
+                "ps": 220,
+                "fc": 160,
+                "ca": 188
+              },
+              {
+                "km": 0.09,
+                "ps": 429,
+                "fc": 168,
+                "ca": 164
+              },
+              {
+                "km": 0.09,
+                "ps": 219,
+                "fc": 162,
+                "ca": 186
+              },
+              {
+                "km": 0.09,
+                "ps": 434,
+                "fc": 168,
+                "ca": 166
+              },
+              {
+                "km": 0.1,
+                "ps": 212,
+                "fc": 164,
+                "ca": 186
+              },
+              {
+                "km": 0.12,
+                "ps": 348,
+                "fc": 169,
+                "ca": 170
+              },
+              {
+                "km": 1.0,
+                "ps": 312,
+                "fc": 158,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 304,
+                "fc": 161,
+                "ca": 178
+              },
+              {
+                "km": 0.5,
+                "ps": 317,
+                "fc": 161,
+                "ca": 176
+              }
+            ]
+          },
+          "score": {
+            "points": 100,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 100,
+            "volume_points": 100,
+            "pace_points": 100,
+            "pace_target_s": 320,
+            "pace_actual_s": 308,
+            "pace_actual_str": "5'08\"/km",
+            "pace_delta_s": -12,
+            "is_quality": false,
+            "hr": {
+              "avg": 155,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 4.9,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 100%",
+              "Allure −12\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-08-09",
