@@ -88,17 +88,19 @@ def apply_to_plan(plan: dict, prop: dict) -> tuple[bool, str]:
             return False, f'valeur km hors bornes ({new_km})'
         cur = float(day.get('km') or 0)
         day['km'] = new_km
-        day['description'] = (day.get('description') or '') + \
-            f"\n[COACH IA — validé : volume {cur:g}→{new_km:g} km. {reason}]"
+        day.setdefault('coach_notes', []).append({
+            'kind': 'volume', 'from': cur, 'to': new_km,
+            'reason': reason, 'validated': True,
+        })
         return True, f'{iso} : {cur:g}→{new_km:g} km'
 
-    # Consigne en langage naturel : inscrite dans la séance, visible dans le
-    # dashboard et le briefing. Le plan garde sa structure ; c'est Seb (ou une
-    # régénération du plan) qui tranche l'exécution concrète.
+    # Consigne en langage naturel : à part de la description pour ne pas la
+    # transformer en journal de bord au fil des validations.
     txt = prop.get('new_value')
     txt = txt.strip() if isinstance(txt, str) else json.dumps(txt, ensure_ascii=False)
-    day['description'] = (day.get('description') or '') + \
-        f"\n[COACH IA — validé : {txt[:400]}]"
+    day.setdefault('coach_notes', []).append({
+        'kind': 'note', 'text': txt[:400], 'validated': True,
+    })
     return True, f'{iso} : consigne inscrite ({kind})'
 
 

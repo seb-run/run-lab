@@ -886,7 +886,10 @@ def adapt_plan(plan: dict) -> dict:
                 # le plan. Sans ce garde-fou, le bonus se cumule à chaque build.
                 if not sl.get('_adapt_volume'):
                     sl['km'] = round(sl['km'] + bonus, 1)
-                    sl['description'] += f"\n[ADAPTÉ : +{bonus:.0f}km pour compenser le déficit volume de la semaine.]"
+                    sl.setdefault('coach_notes', []).append({
+                        'kind': 'volume', 'delta': bonus,
+                        'reason': "compenser le déficit volume de la semaine",
+                    })
                     sl['_adapt_volume'] = True
                     plan['adaptations'].append({
                         'kind': 'volume_boost',
@@ -900,7 +903,10 @@ def adapt_plan(plan: dict) -> dict:
             for d in future_days:
                 if d.get('type') in ('easy', 'recovery') and not d.get('_adapt_volume'):
                     d['km'] = round(d['km'] * 0.9, 1)
-                    d['description'] += "\n[ADAPTÉ : -10% pour gérer la charge de la semaine.]"
+                    d.setdefault('coach_notes', []).append({
+                        'kind': 'volume', 'delta_pct': -10,
+                        'reason': "gérer la charge de la semaine",
+                    })
                     d['_adapt_volume'] = True
                     reduced = True
             if reduced:

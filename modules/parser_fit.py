@@ -486,11 +486,14 @@ def _build_blocs_from_laps(laps: list[dict], records: list[dict]) -> list[dict]:
         if t50 is not None and -50 < t50 < 60:
             bloc['tc'] = t50
 
-        # Intensité Garmin (field 23) — workout structuré
+        # Intensité Garmin (field 23) — workout structuré.
+        # 5 (interval) est apparu avec les workouts récents et provoquait un
+        # affichage « 5 » brut dans le tableau des blocs. 6 (other) idem.
         intensity_raw = _safe_get(lp, 23)
         if intensity_raw is not None:
-            intent_map = {0: 'active', 1: 'rest', 2: 'warmup', 3: 'cooldown', 4: 'recovery'}
-            bloc['intent'] = intent_map.get(intensity_raw, str(intensity_raw))
+            intent_map = {0: 'active', 1: 'rest', 2: 'warmup', 3: 'cooldown',
+                          4: 'recovery', 5: 'interval', 6: 'other'}
+            bloc['intent'] = intent_map.get(intensity_raw, 'active')
 
         blocs.append(bloc)
 

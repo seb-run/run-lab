@@ -2572,12 +2572,13 @@
       // Intent (active/warmup/cooldown/rest) permet de voir d'un coup d'œil
       // les blocs de récup vs travail dans un fractionné.
       const intentLabels = {
-        active: 'Actif', warmup: 'Échauf.', cooldown: 'Récup.',
-        rest: 'Repos', interval: 'Effort',
+        active: 'Actif', warmup: 'Échauf.', cooldown: 'Retour',
+        rest: 'Repos', recovery: 'Récup.', interval: 'Effort', other: '—',
       };
       const intentColors = {
         active: '#5b8af5', warmup: '#22d3a7', cooldown: '#94a3b8',
-        rest: '#cbd5e1', interval: '#ef5b5b',
+        rest: '#cbd5e1', recovery: '#94a3b8', interval: '#ef5b5b',
+        other: '#cbd5e1',
       };
       // La cible du jour est celle calculée plus haut par planCibleHeritee :
       // elle inclut les séances rattrapées à J+1 ou J+2. On la réutilise
@@ -2610,17 +2611,24 @@
              <td colspan="4"></td></tr>`
         : '';
 
+      // Sans cible de plan, la colonne Écart ne dit rien : on la retire
+      // plutôt que d'aligner des tirets vides. Idem pour la ligne de
+      // référence, absente à côté de la légende.
+      const showEcart = !!targetStr;
+      const thEcart = showEcart ? '<th>Écart</th>' : '';
+      const rowsClean = showEcart ? rows : rows.replace(/<td class="mono blk-ecart">[^<]*<\/td>/g, '');
       blocsTableHtml = `<div class="sess-modal-chart-card sess-blocs-card">
-        <div class="sess-modal-chart-title">Détail des ${blocs.length} blocs</div>
+        <div class="sess-modal-chart-title">Détail des ${blocs.length} blocs${
+          showEcart ? '' : ' <span class="sess-blocs-hint">(pas de cible pour ce jour)</span>'}</div>
         <div class="sess-blocs-scroll">
           <table class="sess-blocs-table">
             <thead>
               <tr>
                 <th>#</th><th>Dist.</th><th>Durée</th><th>Allure</th>
-                <th>Écart</th><th>FC</th><th>Cadence</th><th>Intent</th>
+                ${thEcart}<th>FC</th><th>Cadence</th><th>Intent</th>
               </tr>
             </thead>
-            <tbody>${rows}${refRow}</tbody>
+            <tbody>${rowsClean}${refRow}</tbody>
           </table>
         </div>
         ${blocLegend(used)}
@@ -4857,7 +4865,32 @@
       ${d.score ? `<div class="plan-score-line" title="${escapeHtml(scoreTooltip(d.score))}">${scoreRing(d.score.points, d.score.verdict, 38, celebrate)}<span class="plan-score-reasons">${escapeHtml(scoreTooltip(d.score))}</span></div>` : ''}`;
     }
 
-    let descHtml = escapeHtml(d.description || '').replace(/\n/g, '<br/>');
+    // Nettoyage rétroactif : les descriptions du plan actuel contiennent
+    // encore les [COACH IA …] et [ADAPTÉ …] hérités des builds précédents,
+    // avant qu'on sépare les consignes. On les cache à l'affichage — un
+    // rebuild complet du plan (regen) les fera disparaître à la source.
+    let descRaw = (d.description || '')
+      .replace(/\n?\[(?:COACH IA|ADAPTÉ)[^\]]*\]/g, '')
+      .trim();
+    let descHtml = escapeHtml(descRaw).replace(/\n/g, '<br/>');
+
+    // Consignes du coach : bloc à part, jamais dans le corps de la séance.
+    function renderCoachNotes(notes) {
+      if (!notes || !notes.length) return '';
+      const items = notes.map(n => {
+        if (n.kind === 'volume') {
+          const chg = n.from !== undefined && n.to !== undefined
+            ? `${n.from}→${n.to} km`
+            : (n.delta ? `+${n.delta.toFixed(0)} km` : `${n.delta_pct >= 0 ? '+' : ''}${n.delta_pct} %`);
+          return `<li><b>Volume ${chg}</b>${n.reason ? ' — ' + escapeHtml(n.reason) : ''}${n.validated ? ' <i>(validé par toi)</i>' : ''}</li>`;
+        }
+        return `<li>${escapeHtml(n.text || '')}${n.validated ? ' <i>(validé par toi)</i>' : ''}</li>`;
+      }).join('');
+      return `<div class="plan-coach-notes">
+        <div class="plan-coach-notes-h">Ajustements du coach</div>
+        <ul>${items}</ul></div>`;
+    }
+    const coachNotesHtml = renderCoachNotes(d.coach_notes);
 
     // Séance reprogrammée : on affiche la séance clé ramenée sur ce jour
     let rescheduledBlock = '';
@@ -4894,6 +4927,7 @@
         </div>
         ${actualBlock}
         <p class="plan-today-desc${d.actual ? ' is-done' : ''}">${displayDesc}</p>
+        ${coachNotesHtml}
         ${shoeLine(d)}
       </div>`);
 
@@ -5147,16 +5181,27 @@
       </tr>`;
     }).join('');
 
-    // Bandeau conformité hebdo
+    // Bandeau conformité hebdo — trois libellés explicites plutôt qu'un seul
+    // chiffre à double sens. « À date » : ce qui devait être fait jusqu'à
+    // hier. « Semaine » : le total, y compris les jours restants.
     let complianceBar = '';
     if (w.compliance) {
       const c = w.compliance;
       const m = VERDICT_META[c.verdict] || VERDICT_META.partial;
+      // Fallback si le plan n'a pas encore été régénéré avec les nouveaux
+      // champs (déploiement progressif).
+      const donneW    = (c.km_done_week    != null) ? c.km_done_week    : c.km_done;
+      const plannedW  = (c.km_planned_week != null) ? c.km_planned_week : (w.target_km || c.km_planned);
+      const sessW     = (c.sessions_done_week != null) ? c.sessions_done_week : c.sessions_done;
       complianceBar = `<div class="plan-week-compliance">
         <div class="pwc-ring">${scoreRing(c.points, c.verdict, 44)}</div>
         <div class="pwc-body">
           <div class="pwc-bar-wrap"><div class="pwc-bar" style="width:${Math.min(c.km_pct,100)}%;background:${m.color}"></div></div>
-          <div class="pwc-detail">${c.km_done} / ${c.km_planned} km (${c.km_pct}%) · ${c.sessions_done}/${c.sessions_planned} séances${c.keys_total ? ` · clés ${c.keys_success}/${c.keys_total}` : ''}</div>
+          <div class="pwc-detail">
+            <span><b>À date</b> · ${c.km_done} / ${c.km_planned} km (${c.km_pct} %)</span>
+            <span><b>Semaine</b> · ${donneW} / ${plannedW} km · ${sessW} séance${sessW > 1 ? 's' : ''} couru${sessW > 1 ? 'es' : 'e'}</span>
+            ${c.keys_total ? `<span><b>Séances clés</b> · ${c.keys_success} / ${c.keys_total} réussies</span>` : ''}
+          </div>
         </div>
       </div>`;
     }
@@ -5164,7 +5209,7 @@
     wrap.innerHTML = `
       <div class="plan-week-head">
         <span>Semaine ${w.week_num} · ${escapeHtml(w.phase_label)}</span>
-        <span class="plan-week-target">Objectif volume : <strong>${w.target_km} km</strong></span>
+        <span class="plan-week-target">Objectif hebdo · <strong>${w.target_km} km</strong></span>
       </div>
       ${complianceBar}
       <div class="plan-week-scroll"><table class="plan-week-table"><tbody>${rows}</tbody></table></div>`;
@@ -5367,7 +5412,9 @@
     const dateFr = (new Date(d.date)).toLocaleDateString('fr-FR', {weekday: 'long', day: 'numeric', month: 'long'});
 
     const title = d._rescheduled_title || d.title;
-    const desc = (d._rescheduled_desc || d.description || '').replace(/\n/g, '<br/>');
+    const desc = (d._rescheduled_desc || d.description || '')
+      .replace(/\n?\[(?:COACH IA|ADAPTÉ)[^\]]*\]/g, '')
+      .replace(/\n/g, '<br/>').trim();
     const pace = d._rescheduled_pace || d.target_pace;
 
     let actualBlock = '';
@@ -5509,8 +5556,13 @@
     if (w.compliance) {
       const c = w.compliance;
       const m = VERDICT_META[c.verdict] || VERDICT_META.partial;
+      const donneW   = (c.km_done_week    != null) ? c.km_done_week    : c.km_done;
+      const plannedW = (c.km_planned_week != null) ? c.km_planned_week : c.km_planned;
       bar = `<div class="pwc-bar-wrap" style="margin-top:12px"><div class="pwc-bar" style="width:${Math.min(c.km_pct, 100)}%;background:${m.color}"></div></div>
-        <div class="pwc-detail">${c.km_done} / ${c.km_planned} km (${c.km_pct}%)${c.keys_total ? ` · clés ${c.keys_success}/${c.keys_total}` : ''}</div>`;
+        <div class="pwc-detail">
+          <span>Semaine · <b>${donneW}</b> / ${plannedW} km</span>
+          ${c.keys_total ? `<span>Clés · ${c.keys_success}/${c.keys_total}</span>` : ''}
+        </div>`;
     } else {
       const target = w.target_km ? `<div class="pwc-detail">Objectif : ${w.target_km} km</div>` : '';
       bar = target;

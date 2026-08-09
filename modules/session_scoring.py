@@ -364,8 +364,14 @@ def score_weeks(plan: dict) -> dict:
             w.pop('compliance', None)
             continue
 
+        # Trois totaux, pour trois questions différentes :
+        # « où en est le prorata ? »   → km_planned / km_done (jusqu'à hier)
+        # « qu'ai-je couru cette sem ? » → km_done_week (tout, y compris demain)
+        # « quel est l'objectif ? »    → km_planned_week (tout)
         km_planned = km_done = 0.0
+        km_planned_week = km_done_week = 0.0
         sessions_planned = sessions_done = 0
+        sessions_done_week = 0
         keys_total = keys_success = 0
         day_scores = []
 
@@ -374,15 +380,24 @@ def score_weeks(plan: dict) -> dict:
                 dd = date.fromisoformat(day['date'])
             except Exception:
                 continue
+            pk = day.get('km') or 0
+            actual_km = (day.get('actual') or {}).get('km') or 0
+
+            # Totaux hebdo complets (indépendants d'aujourd'hui)
+            if pk > 0 and (day.get('type') or '') != 'rest':
+                km_planned_week += pk
+            if actual_km > 0:
+                km_done_week += actual_km
+                sessions_done_week += 1
+
             if dd >= today:
                 continue
-            pk = day.get('km') or 0
             if pk > 0 and (day.get('type') or '') != 'rest':
                 km_planned += pk
                 sessions_planned += 1
                 sc = day.get('score')
                 if day.get('actual'):
-                    km_done += (day['actual'].get('km') or 0)
+                    km_done += actual_km
                     sessions_done += 1
                 if sc:
                     day_scores.append(sc['points'])
@@ -391,7 +406,7 @@ def score_weeks(plan: dict) -> dict:
                     if sc and sc['verdict'] == 'success':
                         keys_success += 1
             elif day.get('actual'):
-                km_done += (day['actual'].get('km') or 0)  # bonus km comptés
+                km_done += actual_km  # bonus km comptés
 
         if km_planned <= 0:
             w.pop('compliance', None)
@@ -407,8 +422,11 @@ def score_weeks(plan: dict) -> dict:
             'km_pct': round(km_pct),
             'km_done': round(km_done, 1),
             'km_planned': round(km_planned, 1),
+            'km_done_week': round(km_done_week, 1),
+            'km_planned_week': round(km_planned_week, 1),
             'sessions_done': sessions_done,
             'sessions_planned': sessions_planned,
+            'sessions_done_week': sessions_done_week,
             'keys_success': keys_success,
             'keys_total': keys_total,
             'points': round(points),

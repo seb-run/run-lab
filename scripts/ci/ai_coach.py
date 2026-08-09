@@ -262,15 +262,19 @@ def apply_minor(plan: dict, prop: dict) -> tuple[bool, str]:
         lo, hi = cur * (1 - MINOR_KM_MAX_PCT), cur * (1 + MINOR_KM_MAX_PCT)
         clamped = round(max(lo, min(hi, new_km)), 1)
         day['km'] = clamped
-        day['description'] = (day.get('description') or '') + \
-            f"\n[COACH IA : volume ajusté {cur:g}→{clamped:g} km — {prop.get('reason', '')}]"
+        # Les consignes vivent à part de la description : elles s'accumulaient
+        # dans le corps du texte et le rendaient illisible au fil des builds.
+        day.setdefault('coach_notes', []).append({
+            'kind': 'volume', 'from': cur, 'to': clamped,
+            'reason': prop.get('reason', ''),
+        })
         return True, f"{prop['date']} : {cur:g}→{clamped:g} km"
 
     if prop.get('kind') == 'add_note':
         note = str(prop.get('new_value') or '').strip()[:300]
         if not note:
             return False, 'note vide'
-        day['description'] = (day.get('description') or '') + f"\n[COACH IA : {note}]"
+        day.setdefault('coach_notes', []).append({'kind': 'note', 'text': note})
         return True, f"{prop['date']} : note ajoutée"
 
     return False, 'kind non autorisé en minor'
