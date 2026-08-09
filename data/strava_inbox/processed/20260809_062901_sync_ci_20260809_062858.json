@@ -1,0 +1,520 @@
+{
+ "activities": [
+  {
+   "id": "19609212338",
+   "name": "#128 : cool",
+   "description": "",
+   "sport_type": "Run",
+   "start_local": "2026-08-05T10:03:33",
+   "summary": {
+    "distance": 10336.9,
+    "moving_time": 3332,
+    "elapsed_time": 3332,
+    "elevation_gain": 17.0,
+    "avg_speed": 3.102,
+    "max_speed": 3.64,
+    "avg_cadence": 87.5,
+    "relative_effort": 63.0,
+    "total_calories": 753.0,
+    "kudos_count": 23,
+    "achievement_count": 0,
+    "pr_count": 0
+   },
+   "performance": {
+    "average_heartrate": 144.1,
+    "max_heartrate": 158.0,
+    "average_watts": 349.5,
+    "laps": [
+     {
+      "elapsed_time": 331,
+      "moving_time": 331,
+      "distance": 1000.0,
+      "avg_hr": 132.0,
+      "avg_cadence": 177,
+      "avg_watts": 339.4
+     },
+     {
+      "elapsed_time": 329,
+      "moving_time": 329,
+      "distance": 1000.0,
+      "avg_hr": 140.8,
+      "avg_cadence": 177,
+      "avg_watts": 339.2
+     },
+     {
+      "elapsed_time": 327,
+      "moving_time": 327,
+      "distance": 1000.0,
+      "avg_hr": 142.5,
+      "avg_cadence": 175,
+      "avg_watts": 342.3
+     },
+     {
+      "elapsed_time": 329,
+      "moving_time": 329,
+      "distance": 1000.0,
+      "avg_hr": 141.6,
+      "avg_cadence": 174,
+      "avg_watts": 354.5
+     },
+     {
+      "elapsed_time": 328,
+      "moving_time": 328,
+      "distance": 1000.0,
+      "avg_hr": 143.0,
+      "avg_cadence": 174,
+      "avg_watts": 349.2
+     },
+     {
+      "elapsed_time": 326,
+      "moving_time": 326,
+      "distance": 1000.0,
+      "avg_hr": 141.4,
+      "avg_cadence": 174,
+      "avg_watts": 343.4
+     },
+     {
+      "elapsed_time": 319,
+      "moving_time": 319,
+      "distance": 1000.0,
+      "avg_hr": 141.4,
+      "avg_cadence": 174,
+      "avg_watts": 340.0
+     },
+     {
+      "elapsed_time": 308,
+      "moving_time": 308,
+      "distance": 1000.0,
+      "avg_hr": 151.7,
+      "avg_cadence": 174,
+      "avg_watts": 360.2
+     },
+     {
+      "elapsed_time": 311,
+      "moving_time": 311,
+      "distance": 1000.0,
+      "avg_hr": 152.1,
+      "avg_cadence": 174,
+      "avg_watts": 369.4
+     },
+     {
+      "elapsed_time": 309,
+      "moving_time": 309,
+      "distance": 1000.0,
+      "avg_hr": 152.8,
+      "avg_cadence": 175,
+      "avg_watts": 359.1
+     },
+     {
+      "elapsed_time": 109,
+      "moving_time": 109,
+      "distance": 338.49,
+      "avg_hr": 153.0,
+      "avg_cadence": 174,
+      "avg_watts": 350.9
+     }
+    ]
+   }
+  },
+  {
+   "id": "19637694043",
+   "name": "#129 : piano piano",
+   "description": "4km WU - 2 x 10’ @4’25\"/km (r=3’) - 4km CD",
+   "sport_type": "Run",
+   "start_local": "2026-08-07T09:50:54",
+   "summary": {
+    "distance": 13727.4,
+    "moving_time": 4022,
+    "elapsed_time": 4022,
+    "elevation_gain": 28.0,
+    "avg_speed": 3.413,
+    "max_speed": 4.32,
+    "avg_cadence": 87.1,
+    "relative_effort": 98.0,
+    "total_calories": 972.0,
+    "kudos_count": 24,
+    "achievement_count": 0,
+    "pr_count": 0
+   },
+   "performance": {
+    "average_heartrate": 150.4,
+    "max_heartrate": 170.0,
+    "average_watts": 384.5,
+    "laps": [
+     {
+      "elapsed_time": 322,
+      "moving_time": 322,
+      "distance": 1000.0,
+      "avg_hr": 124.9,
+      "avg_cadence": 176,
+      "avg_watts": 361.0
+     },
+     {
+      "elapsed_time": 298,
+      "moving_time": 298,
+      "distance": 1000.0,
+      "avg_hr": 136.6,
+      "avg_cadence": 175,
+      "avg_watts": 387.9
+     },
+     {
+      "elapsed_time": 305,
+      "moving_time": 305,
+      "distance": 1000.0,
+      "avg_hr": 136.3,
+      "avg_cadence": 174,
+      "avg_watts": 376.8
+     },
+     {
+      "elapsed_time": 309,
+      "moving_time": 309,
+      "distance": 1000.0,
+      "avg_hr": 137.8,
+      "avg_cadence": 173,
+      "avg_watts": 386.1
+     },
+     {
+      "elapsed_time": 263,
+      "moving_time": 263,
+      "distance": 1000.0,
+      "avg_hr": 155.4,
+      "avg_cadence": 173,
+      "avg_watts": 423.2
+     },
+     {
+      "elapsed_time": 257,
+      "moving_time": 257,
+      "distance": 1000.0,
+      "avg_hr": 161.3,
+      "avg_cadence": 173,
+      "avg_watts": 424.7
+     },
+     {
+      "elapsed_time": 78,
+      "moving_time": 78,
+      "distance": 305.73,
+      "avg_hr": 162.1,
+      "avg_cadence": 173,
+      "avg_watts": 403.8
+     },
+     {
+      "elapsed_time": 179,
+      "moving_time": 180,
+      "distance": 522.26,
+      "avg_hr": 144.4,
+      "avg_cadence": 170,
+      "avg_watts": 349.3
+     },
+     {
+      "elapsed_time": 253,
+      "moving_time": 253,
+      "distance": 1000.0,
+      "avg_hr": 163.1,
+      "avg_cadence": 175,
+      "avg_watts": 427.2
+     },
+     {
+      "elapsed_time": 259,
+      "moving_time": 259,
+      "distance": 1000.0,
+      "avg_hr": 165.1,
+      "avg_cadence": 174,
+      "avg_watts": 411.9
+     },
+     {
+      "elapsed_time": 86,
+      "moving_time": 86,
+      "distance": 321.99,
+      "avg_hr": 163.7,
+      "avg_cadence": 174,
+      "avg_watts": 400.0
+     },
+     {
+      "elapsed_time": 179,
+      "moving_time": 180,
+      "distance": 567.41,
+      "avg_hr": 156.4,
+      "avg_cadence": 173,
+      "avg_watts": 339.1
+     },
+     {
+      "elapsed_time": 301,
+      "moving_time": 301,
+      "distance": 1000.0,
+      "avg_hr": 157.2,
+      "avg_cadence": 175,
+      "avg_watts": 370.0
+     },
+     {
+      "elapsed_time": 299,
+      "moving_time": 299,
+      "distance": 1000.0,
+      "avg_hr": 157.4,
+      "avg_cadence": 176,
+      "avg_watts": 382.1
+     },
+     {
+      "elapsed_time": 309,
+      "moving_time": 309,
+      "distance": 1000.0,
+      "avg_hr": 155.3,
+      "avg_cadence": 176,
+      "avg_watts": 360.1
+     },
+     {
+      "elapsed_time": 312,
+      "moving_time": 312,
+      "distance": 1000.01,
+      "avg_hr": 156.1,
+      "avg_cadence": 175,
+      "avg_watts": 365.9
+     },
+     {
+      "elapsed_time": 3,
+      "moving_time": 3,
+      "distance": 11.4,
+      "avg_hr": 157.0,
+      "avg_cadence": 174,
+      "avg_watts": 389.0
+     }
+    ]
+   }
+  },
+  {
+   "id": "19651489569",
+   "name": "#130 : fait sous le cagnard ☀️",
+   "description": "Run souple + 8 LD 20\"",
+   "sport_type": "Run",
+   "start_local": "2026-08-08T10:46:06",
+   "summary": {
+    "distance": 11002.2,
+    "moving_time": 3387,
+    "elapsed_time": 3387,
+    "elevation_gain": 19.0,
+    "avg_speed": 3.248,
+    "max_speed": 5.14,
+    "avg_cadence": 88.1,
+    "relative_effort": 103.0,
+    "total_calories": 825.0,
+    "kudos_count": 26,
+    "achievement_count": 1,
+    "pr_count": 0
+   },
+   "performance": {
+    "average_heartrate": 154.5,
+    "max_heartrate": 174.0,
+    "average_watts": 365.4,
+    "laps": [
+     {
+      "elapsed_time": 313,
+      "moving_time": 313,
+      "distance": 1000.0,
+      "avg_hr": 136.4,
+      "avg_cadence": 175,
+      "avg_watts": 362.7
+     },
+     {
+      "elapsed_time": 305,
+      "moving_time": 305,
+      "distance": 1000.0,
+      "avg_hr": 146.2,
+      "avg_cadence": 175,
+      "avg_watts": 366.0
+     },
+     {
+      "elapsed_time": 306,
+      "moving_time": 306,
+      "distance": 1000.0,
+      "avg_hr": 147.4,
+      "avg_cadence": 177,
+      "avg_watts": 363.9
+     },
+     {
+      "elapsed_time": 306,
+      "moving_time": 306,
+      "distance": 1000.0,
+      "avg_hr": 152.4,
+      "avg_cadence": 177,
+      "avg_watts": 367.0
+     },
+     {
+      "elapsed_time": 298,
+      "moving_time": 298,
+      "distance": 1000.0,
+      "avg_hr": 156.4,
+      "avg_cadence": 177,
+      "avg_watts": 372.3
+     },
+     {
+      "elapsed_time": 296,
+      "moving_time": 296,
+      "distance": 1000.0,
+      "avg_hr": 157.7,
+      "avg_cadence": 177,
+      "avg_watts": 369.3
+     },
+     {
+      "elapsed_time": 294,
+      "moving_time": 294,
+      "distance": 1000.0,
+      "avg_hr": 158.6,
+      "avg_cadence": 177,
+      "avg_watts": 380.2
+     },
+     {
+      "elapsed_time": 19,
+      "moving_time": 20,
+      "distance": 88.95,
+      "avg_hr": 161.7,
+      "avg_cadence": 184,
+      "avg_watts": 468.2
+     },
+     {
+      "elapsed_time": 40,
+      "moving_time": 40,
+      "distance": 96.84,
+      "avg_hr": 161.6,
+      "avg_cadence": 167,
+      "avg_watts": 297.9
+     },
+     {
+      "elapsed_time": 20,
+      "moving_time": 20,
+      "distance": 85.86,
+      "avg_hr": 158.8,
+      "avg_cadence": 186,
+      "avg_watts": 465.5
+     },
+     {
+      "elapsed_time": 40,
+      "moving_time": 40,
+      "distance": 99.44,
+      "avg_hr": 160.3,
+      "avg_cadence": 167,
+      "avg_watts": 302.8
+     },
+     {
+      "elapsed_time": 20,
+      "moving_time": 20,
+      "distance": 84.95,
+      "avg_hr": 158.6,
+      "avg_cadence": 184,
+      "avg_watts": 452.1
+     },
+     {
+      "elapsed_time": 40,
+      "moving_time": 40,
+      "distance": 93.82,
+      "avg_hr": 160.2,
+      "avg_cadence": 164,
+      "avg_watts": 288.5
+     },
+     {
+      "elapsed_time": 20,
+      "moving_time": 20,
+      "distance": 89.03,
+      "avg_hr": 159.5,
+      "avg_cadence": 187,
+      "avg_watts": 462.8
+     },
+     {
+      "elapsed_time": 40,
+      "moving_time": 40,
+      "distance": 87.71,
+      "avg_hr": 163.9,
+      "avg_cadence": 165,
+      "avg_watts": 282.3
+     },
+     {
+      "elapsed_time": 20,
+      "moving_time": 20,
+      "distance": 88.26,
+      "avg_hr": 159.8,
+      "avg_cadence": 189,
+      "avg_watts": 489.1
+     },
+     {
+      "elapsed_time": 40,
+      "moving_time": 40,
+      "distance": 94.36,
+      "avg_hr": 162.9,
+      "avg_cadence": 164,
+      "avg_watts": 297.6
+     },
+     {
+      "elapsed_time": 20,
+      "moving_time": 20,
+      "distance": 93.72,
+      "avg_hr": 161.1,
+      "avg_cadence": 191,
+      "avg_watts": 474.2
+     },
+     {
+      "elapsed_time": 40,
+      "moving_time": 40,
+      "distance": 94.13,
+      "avg_hr": 167.5,
+      "avg_cadence": 162,
+      "avg_watts": 293.3
+     },
+     {
+      "elapsed_time": 20,
+      "moving_time": 20,
+      "distance": 94.12,
+      "avg_hr": 163.5,
+      "avg_cadence": 190,
+      "avg_watts": 466.9
+     },
+     {
+      "elapsed_time": 40,
+      "moving_time": 40,
+      "distance": 92.85,
+      "avg_hr": 167.9,
+      "avg_cadence": 165,
+      "avg_watts": 312.2
+     },
+     {
+      "elapsed_time": 21,
+      "moving_time": 21,
+      "distance": 99.73,
+      "avg_hr": 164.3,
+      "avg_cadence": 188,
+      "avg_watts": 463.6
+     },
+     {
+      "elapsed_time": 41,
+      "moving_time": 41,
+      "distance": 119.59,
+      "avg_hr": 168.6,
+      "avg_cadence": 170,
+      "avg_watts": 353.3
+     },
+     {
+      "elapsed_time": 312,
+      "moving_time": 312,
+      "distance": 1000.0,
+      "avg_hr": 158.4,
+      "avg_cadence": 177,
+      "avg_watts": 356.2
+     },
+     {
+      "elapsed_time": 304,
+      "moving_time": 304,
+      "distance": 1000.0,
+      "avg_hr": 161.1,
+      "avg_cadence": 178,
+      "avg_watts": 368.0
+     },
+     {
+      "elapsed_time": 158,
+      "moving_time": 158,
+      "distance": 500.29,
+      "avg_hr": 161.3,
+      "avg_cadence": 176,
+      "avg_watts": 351.0
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1258,135 +1258,7 @@
               "rr_beats": 15080,
               "rmssd_effort": 5.4,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 328,
-                "fc": 128,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 291,
-                "fc": 130,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 303,
-                "fc": 137,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 315,
-                "fc": 149,
-                "ca": 177
-              },
-              {
-                "km": 1.0,
-                "ps": 300,
-                "fc": 148,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 299,
-                "fc": 149,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 300,
-                "fc": 151,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 295,
-                "fc": 151,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 298,
-                "fc": 153,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 297,
-                "fc": 152,
-                "ca": 179
-              },
-              {
-                "km": 1.0,
-                "ps": 300,
-                "fc": 152,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 302,
-                "fc": 151,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 299,
-                "fc": 153,
-                "ca": 177
-              },
-              {
-                "km": 1.0,
-                "ps": 295,
-                "fc": 154,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 290,
-                "fc": 156,
-                "ca": 179
-              },
-              {
-                "km": 1.0,
-                "ps": 292,
-                "fc": 156,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 294,
-                "fc": 157,
-                "ca": 179
-              },
-              {
-                "km": 1.0,
-                "ps": 290,
-                "fc": 159,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 291,
-                "fc": 162,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 291,
-                "fc": 162,
-                "ca": 178
-              },
-              {
-                "km": 0.07,
-                "ps": 283,
-                "fc": 161,
-                "ca": 175
-              }
-            ]
+            }
           },
           "score": {
             "points": 70,
@@ -7095,7 +6967,7 @@
           "key": false,
           "description": "21 km à 4'55-5'10/km, sous les arbres de Bouconne. Départ 6h30-7h. Ravitaillement : 500 ml + 1 gel à mi-parcours pour réhabituer l'estomac.\n[COACH IA : volume ajusté 21→19 km — Sortie longue de reprise après une semaine très irrégulière (5 séances manquées sur 14j) : réduire légèrement le volume (21→19km) pour sécuriser la reprise avant la séance clé de mardi.]\n[COACH IA : volume ajusté 19→17.1 km — Après une semaine à 62% de conformité et une sortie longue précédente très écourtée (58%), mieux vaut reprendre progressivement plutôt que revenir direct à 19km.]\n[COACH IA : Sortie longue de reprise : reste franchement sous l'allure cible si la chaleur est là, l'objectif est de relancer le volume, pas de performer.]\n[ADAPTÉ : +5km pour compenser le déficit volume de la semaine.]\n[COACH IA : Sortie longue déjà rallongée automatiquement (+5km) pour compenser le déficit de volume : cours au feeling, allure prudente, hydratation renforcée si chaleur, ne force pas si les jambes ne suivent pas]\n[COACH IA : volume ajusté 22.1→20 km — Sortie longue de reprise après 2 semaines irrégulières (62-70% de conformité), chaleur récurrente et signal de fatigue mécanique (stance_fade, asym_vitesse) sur la dernière sortie soutenue du 07/08 : on réduit légèrement pour sécuriser avant d'attaquer le bloc seuil de mardi.]",
           "target_pace": "4'55\"/km",
-          "status": "pending",
+          "status": "today",
           "shoe": "Adizero Boston 13",
           "shoe_note": "La seule paire fraîche : elle prend tout ce qui compte.",
           "_shoe_key": "boston13",
@@ -7104,15 +6976,15 @@
         }
       ],
       "focus": "Refaire du volume propre. Zéro intensité dure : on réinstalle l'allure facile et on charge le tendon progressivement.",
-      "volume_actual_to_date": 36.5,
-      "volume_planned_to_date": 36.0,
-      "volume_drift_pct": 1.4,
+      "volume_actual_to_date": 47.5,
+      "volume_planned_to_date": 47.0,
+      "volume_drift_pct": 1.1,
       "compliance": {
         "km_pct": 101,
-        "km_done": 36.5,
-        "km_planned": 36.0,
-        "sessions_done": 2,
-        "sessions_planned": 3,
+        "km_done": 47.5,
+        "km_planned": 47.0,
+        "sessions_done": 3,
+        "sessions_planned": 4,
         "keys_success": 0,
         "keys_total": 0,
         "points": 100,
@@ -7148,7 +7020,7 @@
           "km": 15.0,
           "duration_min": 71,
           "key": true,
-          "description": "Échauffement 4 km + gammes. Puis 6×3 min à 3'50-3'55/km, récup 90\" en trot. Retour au calme 3 km.\nSur chemin roulant de Bouconne, PAS sur bitume : c'est ta première séance rapide depuis 3 mois, le tendon doit encaisser du souple.\n[COACH IA : Séance clé après une période de charge très irrégulière : si fatigue ou jambes lourdes au réveil, réduire à 4×3min plutôt que forcer les 6×3min à l'allure seuil.]\n[COACH IA : Priorise les sensations sur cette séance seuil : si les jambes sont lourdes après la reprise, réduis le nombre de répétitions plutôt que de forcer l'allure.]\n[COACH IA : Première séance clé depuis le trou de fin juillet : cale-toi sur la sensation plutôt que sur le chrono si ça ne vient pas, mieux vaut 5x3' propres que 6x3' arrachés.]\n[COACH IA : Avant de lancer les 6×3min seuil : vérifie les sensations et l'appui (equilibre G/D). Le 07/08 a montré un contact au sol qui s'allonge et une vitesse asymétrique — si ça revient à l'échauffement, coupe la séance en footing ou réduis à 4×3min.]",
+          "description": "Échauffement 4 km + gammes. Puis 6×3 min à 3'50-3'55/km, récup 90\" en trot. Retour au calme 3 km.\nSur chemin roulant de Bouconne, PAS sur bitume : c'est ta première séance rapide depuis 3 mois, le tendon doit encaisser du souple.\n[COACH IA : Séance clé après une période de charge très irrégulière : si fatigue ou jambes lourdes au réveil, réduire à 4×3min plutôt que forcer les 6×3min à l'allure seuil.]\n[COACH IA : Priorise les sensations sur cette séance seuil : si les jambes sont lourdes après la reprise, réduis le nombre de répétitions plutôt que de forcer l'allure.]\n[COACH IA : Première séance clé depuis le trou de fin juillet : cale-toi sur la sensation plutôt que sur le chrono si ça ne vient pas, mieux vaut 5x3' propres que 6x3' arrachés.]\n[COACH IA : Avant de lancer les 6×3min seuil : vérifie les sensations et l'appui (equilibre G/D). Le 07/08 a montré un contact au sol qui s'allonge et une vitesse asymétrique — si ça revient à l'échauffement, coupe la séance en footing ou réduis à 4×3min.]\n[COACH IA : Avant de lancer les 6×3min, vérifier les jambes : un stance_drift de +5.9% a été observé le 07/08 (fatigue mécanique). Si sensations lourdes, réduire à 4-5 répétitions.]",
           "target_pace": "3'50\"/km",
           "status": "pending",
           "shoe": "Adizero Boston 13",
