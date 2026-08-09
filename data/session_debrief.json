@@ -1,45 +1,45 @@
 {
- "headline": "FC +7 bpm vs réf, mécanique stable : la chaleur (33°C) explique la dérive, pas la fatigue",
+ "headline": "26km sous 32-35°C, FC +14bpm vs réf : chaleur et volume ont pesé, fin de course marquée",
  "bullets": [
-  "FC moy 155 vs 148 (réf 60j) à allure quasi identique — sortie à 10h46, pas avant 8h comme prévu",
-  "Dérive FC +10% (145→160) en fin de course alors que stance et osc verticale baissent légèrement",
-  "Allure 5'08/km, plus rapide que la cible 5'10-5'20, mais proche de ta moyenne récente (5'04)"
+  "FC moy 163 vs 149 en réf à allure quasi identique (4'57 vs 5'00) : la chaleur (32-35°) explique l'essentiel",
+  "Volume 26km vs 17,1km prévus (+52%) : grosse rallonge, justement en plein pic de chaleur",
+  "Dernier km à 5'43/km (vs ~5'00 en début) avec FC toujours en hausse : fatigue franche en fin"
  ],
  "points": [
   {
    "label": "FC moyenne",
-   "valeur": "155 bpm",
-   "ecart": "+7 bpm vs réf 148",
-   "lecture": "chaleur probable, pas fatigue",
+   "valeur": "163 bpm",
+   "ecart": "+14 vs réf 149 (allure similaire)",
+   "lecture": "Chaleur et volume, pas l'allure",
    "ton": "vigilance"
   },
   {
-   "label": "Temps de contact",
-   "valeur": "220 ms",
-   "ecart": "-10 ms vs réf 230 ms",
-   "lecture": "mécanique plus efficace qu'à l'habitude",
-   "ton": "bon"
+   "label": "Contact sol",
+   "valeur": "224ms moy, 235ms en fin",
+   "ecart": "+8,9% fin vs début (216ms au 1er km)",
+   "lecture": "Fatigue mécanique en fin de sortie",
+   "ton": "vigilance"
   },
   {
-   "label": "Équilibre gauche",
-   "valeur": "50,13%",
-   "ecart": "-0,29 pt vs réf 50,42%",
-   "lecture": "dans la fourchette habituelle",
-   "ton": "neutre"
+   "label": "Asymétrie vs allure",
+   "valeur": "-0,83 (lent 51,05% / rapide 49,78%)",
+   "ecart": "sens inverse du motif pubalgie",
+   "lecture": "Pas de signal adducteur ce jour",
+   "ton": "bon"
   }
  ],
- "achille": "Équilibre 50,13% gauche, proche du neutre, pas de décharge marquée côté droit.",
- "a_surveiller": "Asym_vs_allure quasi nul (+0,09) — pas la signature de ton ancien pubalgie.",
+ "achille": "Équilibre grimpe à ~52% en fin (vs réf 50,4%) : léger report côté droit lié à la fatigue, pas constant.",
+ "a_surveiller": "RPE 9/10 mais feel 'Normal' (50) : écart notable, séance vécue très dure malgré la sensation.",
  "seance": {
-  "date": "08/08/2026",
-  "heure": "10:46",
-  "titre": "i173662377",
-  "type_detecte": "frac_court",
-  "km": 11.0,
-  "duree": "56m 28s",
-  "allure": "5'08\"/km",
-  "fc_moy": 155
+  "date": "09/08/2026",
+  "heure": "09:51",
+  "titre": "i173986213",
+  "type_detecte": "sortie_longue",
+  "km": 26.01,
+  "duree": "2h 08m 44s",
+  "allure": "4'57\"/km",
+  "fc_moy": 163
  },
- "generated_at": "2026-08-08T09:46:20",
- "baseline_n": 25
+ "generated_at": "2026-08-09T10:09:31",
+ "baseline_n": 30
 }

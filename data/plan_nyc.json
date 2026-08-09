@@ -6967,12 +6967,299 @@
           "key": false,
           "description": "21 km à 4'55-5'10/km, sous les arbres de Bouconne. Départ 6h30-7h. Ravitaillement : 500 ml + 1 gel à mi-parcours pour réhabituer l'estomac.\n[COACH IA : volume ajusté 21→19 km — Sortie longue de reprise après une semaine très irrégulière (5 séances manquées sur 14j) : réduire légèrement le volume (21→19km) pour sécuriser la reprise avant la séance clé de mardi.]\n[COACH IA : volume ajusté 19→17.1 km — Après une semaine à 62% de conformité et une sortie longue précédente très écourtée (58%), mieux vaut reprendre progressivement plutôt que revenir direct à 19km.]\n[COACH IA : Sortie longue de reprise : reste franchement sous l'allure cible si la chaleur est là, l'objectif est de relancer le volume, pas de performer.]\n[ADAPTÉ : +5km pour compenser le déficit volume de la semaine.]\n[COACH IA : Sortie longue déjà rallongée automatiquement (+5km) pour compenser le déficit de volume : cours au feeling, allure prudente, hydratation renforcée si chaleur, ne force pas si les jambes ne suivent pas]\n[COACH IA : volume ajusté 22.1→20 km — Sortie longue de reprise après 2 semaines irrégulières (62-70% de conformité), chaleur récurrente et signal de fatigue mécanique (stance_fade, asym_vitesse) sur la dernière sortie soutenue du 07/08 : on réduit légèrement pour sécuriser avant d'attaquer le bloc seuil de mardi.]\n[COACH IA — validé : Chaleur probable : allure 4'55/km à moduler si FC dérive fort, priorité à l'hydratation et à finir en contrôle plutôt qu'en accélérant.]",
           "target_pace": "4'55\"/km",
-          "status": "today",
+          "status": "over",
           "shoe": "Adizero Boston 13",
           "shoe_note": "La seule paire fraîche : elle prend tout ce qui compte.",
           "_shoe_key": "boston13",
-          "actual": null,
-          "_adapt_volume": true
+          "actual": {
+            "km": 26.0,
+            "duration_min": 129,
+            "pace_sec": 297,
+            "pace_str": "4'57\"/km",
+            "fc": 163,
+            "cadence": 177,
+            "type": "sortie_longue",
+            "title": "i173986213",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 224.0,
+              "osc_cm": 10.5,
+              "vratio": 9.02,
+              "balance_l": 50.15,
+              "step_m": 1.13,
+              "temp_c": 32,
+              "temp_max": 35,
+              "resp": 35.6,
+              "power": 384,
+              "np": 389,
+              "te_aero": 5.0,
+              "te_ana": 1.8,
+              "load": 394.3,
+              "strides": 11398,
+              "rpe": 9.0,
+              "feel": 50,
+              "feel_label": "Normal",
+              "drift": {
+                "stance": {
+                  "start": 216.0,
+                  "end": 235.0,
+                  "pct": 8.9
+                },
+                "step": {
+                  "start": 1134.0,
+                  "end": 1105.0,
+                  "pct": -2.6
+                },
+                "vratio": {
+                  "start": 8.73,
+                  "end": 9.34,
+                  "pct": 7.0
+                },
+                "osc": {
+                  "start": 101.0,
+                  "end": 105.0,
+                  "pct": 3.9
+                },
+                "hr": {
+                  "start": 155.0,
+                  "end": 169.0,
+                  "pct": 9.5
+                },
+                "cad": {
+                  "start": 89.6,
+                  "end": 87.5,
+                  "pct": -2.3
+                }
+              },
+              "balance_min": 48.5,
+              "balance_max": 52.12,
+              "balance_series": [
+                49.48,
+                48.75,
+                48.63,
+                48.5,
+                48.92,
+                49.03,
+                49.94,
+                49.86,
+                49.97,
+                49.37,
+                49.57,
+                49.68,
+                49.53,
+                50.17,
+                49.82,
+                49.97,
+                50.86,
+                50.14,
+                49.71,
+                50.29,
+                51.44,
+                52.09,
+                52.03,
+                52.12,
+                51.63,
+                51.43
+              ],
+              "balance_lent": 51.05,
+              "balance_rapide": 49.78,
+              "asym_vs_allure": -0.83,
+              "allure_lent_s": 315,
+              "allure_rapide_s": 283,
+              "rr_beats": 21653,
+              "rmssd_effort": 4.6,
+              "flags": [
+                "stance_fade"
+              ]
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 309,
+                "fc": 135,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 298,
+                "fc": 145,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 289,
+                "fc": 153,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 293,
+                "fc": 153,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 293,
+                "fc": 157,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 288,
+                "fc": 156,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 291,
+                "fc": 164,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 294,
+                "fc": 165,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 287,
+                "fc": 163,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 278,
+                "fc": 162,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 282,
+                "fc": 163,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 293,
+                "fc": 168,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 297,
+                "fc": 166,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 281,
+                "fc": 160,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 290,
+                "fc": 166,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 295,
+                "fc": 165,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 299,
+                "fc": 165,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 288,
+                "fc": 166,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 281,
+                "fc": 165,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 283,
+                "fc": 170,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 297,
+                "fc": 171,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 310,
+                "fc": 168,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 317,
+                "fc": 169,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 320,
+                "fc": 171,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 327,
+                "fc": 170,
+                "ca": 172
+              },
+              {
+                "km": 1.0,
+                "ps": 343,
+                "fc": 170,
+                "ca": 172
+              }
+            ]
+          },
+          "_adapt_volume": true,
+          "score": {
+            "points": 92,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 130,
+            "volume_points": 85,
+            "pace_points": 100,
+            "pace_target_s": 295,
+            "pace_actual_s": 297,
+            "pace_actual_str": "4'57\"/km",
+            "pace_delta_s": 2,
+            "is_quality": false,
+            "hr": {
+              "avg": 163,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 9.1,
+              "flags": [
+                "drift_high"
+              ]
+            },
+            "reasons": [
+              "Volume 130%",
+              "Allure +2\"/km vs cible",
+              "Dérive cardiaque +9.1%"
+            ]
+          }
         }
       ],
       "focus": "Refaire du volume propre. Zéro intensité dure : on réinstalle l'allure facile et on charge le tendon progressivement.",
