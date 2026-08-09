@@ -5157,29 +5157,73 @@
       today:  {cls: 'today',  icon: '●'},
       pending:{cls: '',       icon: '○'},
     };
-    const rows = (w.days || []).map(d => {
+    // Rendu en cartes empilées : la table à 5 colonnes cassait sur mobile
+    // (« lun. » écrit une lettre par ligne). Une carte par jour, pastille
+    // jour à gauche, corps au centre, distances à droite — même lecture
+    // horizontale sans dépendre de la largeur de la fenêtre.
+    const DAY_INITIALS = ['L', 'M', 'M', 'J', 'V', 'S', 'D'];
+    const initialFor = (isoDate) => {
+      const dt = new Date(isoDate);
+      const idx = dt.getDay() === 0 ? 6 : dt.getDay() - 1;
+      return DAY_INITIALS[idx];
+    };
+
+    const cards = (w.days || []).map(d => {
       const color = PLAN_TYPE_COLORS[d.type] || '#94a3b8';
-      const st = STATUS_MAP[d.status] || STATUS_MAP.pending;
-      const actualKm = d.actual ? `<span class="plan-actual-km">→ ${d.actual.km}km${d.actual.pace_str?' '+escapeHtml(d.actual.pace_str):''}</span>` : '';
-      const isToday = d.date === todayIso ? ' plan-day-today' : '';
-      const titleDisplay = d._rescheduled_title ? `${escapeHtml(d._rescheduled_title)} <small>(↻ reprogrammée)</small>` : escapeHtml(d.title);
-      // Colonne verdict : anneau de score si séance scorée, sinon icône statut
-      let statusCell;
-      if (d.score) {
-        statusCell = `<span title="${escapeHtml(scoreTooltip(d.score))}">${scoreRing(d.score.points, d.score.verdict, 30)}</span>`;
-      } else if (d.status === 'missed') {
-        statusCell = `<span class="verdict-cross" title="Séance manquée">✗</span>`;
-      } else {
-        statusCell = st.icon;
+      const isToday = d.date === todayIso;
+      const isRest = (d.km || 0) <= 0;
+
+      const title = d._rescheduled_title
+        ? `${escapeHtml(d._rescheduled_title)} <span class="pdc-flag">↻ reprogrammée</span>`
+        : escapeHtml(d.title || (isRest ? 'Repos' : ''));
+
+      // Chip de statut : score si validée, croix si manquée, point sinon
+      let chip = '';
+      if (d.score) chip = `<span class="pdc-chip" title="${escapeHtml(scoreTooltip(d.score))}">${scoreRing(d.score.points, d.score.verdict, 26)}</span>`;
+      else if (d.status === 'missed') chip = `<span class="pdc-chip pdc-chip-missed" title="Manquée">✗</span>`;
+      else if (isToday) chip = `<span class="pdc-chip pdc-chip-today">●</span>`;
+
+      // Distances : prévue vs couru, avec flèche discrète si les deux
+      let dist = '';
+      if (isRest && !d.actual) dist = '<span class="pdc-dist-rest">—</span>';
+      else {
+        const planned = d.km > 0 ? `${d.km} km` : '';
+        const actual = d.actual ? `${d.actual.km} km` : '';
+        if (planned && actual) {
+          dist = `<span class="pdc-dist-actual">${actual}</span><span class="pdc-dist-planned">/ ${planned}</span>`;
+        } else if (actual) {
+          dist = `<span class="pdc-dist-actual">${actual}</span>`;
+        } else if (planned) {
+          dist = `<span class="pdc-dist-planned">${planned}</span>`;
+        }
       }
-      return `<tr class="${st.cls}${isToday}" data-day-date="${d.date}">
-        <td class="plan-day-status">${statusCell}</td>
-        <td>${(new Date(d.date)).toLocaleDateString('fr-FR', {weekday:'short', day:'numeric'})}</td>
-        <td><span class="plan-type-dot" style="background:${color}"></span> ${titleDisplay} ${d.score ? verdictPill(d.score) : ''}</td>
-        <td class="mono">${d.km > 0 ? d.km+' km' : '—'}</td>
-        <td class="mono">${actualKm}</td>
-      </tr>`;
+
+      const paceReal = d.actual && d.actual.pace_str ? escapeHtml(d.actual.pace_str) : '';
+      const paceTarget = d.target_pace ? escapeHtml(d.target_pace) : '';
+      const pace = paceReal || paceTarget;
+
+      const rowCls = ['plan-day-card',
+        `plan-day-${d.status || 'pending'}`,
+        isToday ? 'is-today' : '',
+        isRest && !d.actual ? 'is-rest' : ''].filter(Boolean).join(' ');
+
+      return `<div class="${rowCls}" data-day-date="${d.date}">
+        <div class="pdc-pill" style="--dc:${color}">
+          <span class="pdc-day">${initialFor(d.date)}</span>
+          <span class="pdc-num">${(new Date(d.date)).getDate()}</span>
+        </div>
+        <div class="pdc-body">
+          <div class="pdc-title">${title}</div>
+          ${pace ? `<div class="pdc-pace">${pace}</div>` : ''}
+        </div>
+        <div class="pdc-right">
+          ${chip}
+          <div class="pdc-dist">${dist}</div>
+        </div>
+      </div>`;
     }).join('');
+
+    const rows = `<div class="plan-week-list">${cards}</div>`;
 
     // Bandeau conformité hebdo — trois libellés explicites plutôt qu'un seul
     // chiffre à double sens. « À date » : ce qui devait être fait jusqu'à
@@ -5212,7 +5256,7 @@
         <span class="plan-week-target">Objectif hebdo · <strong>${w.target_km} km</strong></span>
       </div>
       ${complianceBar}
-      <div class="plan-week-scroll"><table class="plan-week-table"><tbody>${rows}</tbody></table></div>`;
+      ${rows}`;
   }
 
   function planRenderCalendar() {

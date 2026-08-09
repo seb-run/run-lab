@@ -4553,3 +4553,115 @@ html[data-theme="dark"] {
   color: var(--text-3);
   margin-left: 8px;
 }
+
+/* ============================================================
+   Calendrier de la semaine — cartes empilées
+
+   La table à cinq colonnes cassait sur mobile : « lun. » se retrouvait
+   écrit une lettre par ligne parce que la colonne du jour héritait du
+   word-break de l'anti-débordement horizontal.
+   ============================================================ */
+.plan-week-list {
+  display: flex; flex-direction: column;
+  gap: 6px;
+}
+.plan-day-card {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  min-width: 0;
+}
+.plan-day-card.is-today {
+  border-color: var(--c-blue);
+  box-shadow: inset 3px 0 0 var(--c-blue);
+}
+.plan-day-card.plan-day-missed { background: var(--st-no-bg); border-color: transparent; box-shadow: inset 3px 0 0 var(--st-no-br); }
+.plan-day-card.plan-day-done,
+.plan-day-card.plan-day-bonus  { background: var(--st-ok-bg); border-color: transparent; box-shadow: inset 3px 0 0 var(--st-ok-br); }
+.plan-day-card.plan-day-over   { background: var(--st-up-bg); border-color: transparent; box-shadow: inset 3px 0 0 var(--st-up-br); }
+.plan-day-card.is-rest { background: var(--surface-2); }
+
+/* Pastille jour : initiale mono + quantième, colonne fixe */
+.pdc-pill {
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 1px;
+  width: 44px; height: 44px;
+  border-radius: 10px;
+  background: var(--surface-3);
+  box-shadow: inset 3px 0 0 var(--dc, var(--text-3));
+}
+.pdc-day {
+  font-family: var(--font-mono);
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.08em; color: var(--text-3);
+}
+.pdc-num {
+  font-family: var(--font-mono);
+  font-size: 15px; font-weight: 700;
+  color: var(--text); line-height: 1;
+}
+.plan-day-card.is-today .pdc-pill {
+  background: color-mix(in srgb, var(--c-blue) 12%, var(--surface));
+}
+
+/* Corps : titre serré, allure en dessous, tronqué proprement */
+.pdc-body { min-width: 0; }
+.pdc-title {
+  font-size: 14px; font-weight: 600;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.pdc-pace {
+  font-family: var(--font-mono);
+  font-size: 11px; color: var(--text-3);
+  margin-top: 2px;
+}
+.pdc-flag {
+  font-family: var(--font-mono);
+  font-size: 10px; letter-spacing: 0.05em;
+  color: var(--st-up-tx);
+  margin-left: 5px;
+}
+
+/* Bloc droit : chip statut + distance sur une seule ligne visuelle */
+.pdc-right {
+  display: flex; align-items: center; gap: 10px;
+  flex: 0 0 auto;
+}
+.pdc-chip {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px;
+}
+.pdc-chip-missed {
+  width: 26px; border-radius: 50%;
+  background: var(--st-no-bg); color: var(--st-no-tx);
+  font-weight: 700;
+}
+.pdc-chip-today {
+  color: var(--c-blue); font-size: 10px;
+}
+.pdc-dist {
+  font-family: var(--font-mono);
+  font-size: 13px; text-align: right;
+  white-space: nowrap;
+}
+.pdc-dist-actual { color: var(--text); font-weight: 700; }
+.pdc-dist-planned { color: var(--text-3); font-weight: 500; margin-left: 3px; }
+.pdc-dist-rest { color: var(--text-3); }
+
+/* Sur écran étroit, on ne perd rien : le layout tient à 320 px */
+@media (max-width: 400px) {
+  .plan-day-card { grid-template-columns: 38px minmax(0, 1fr) auto; gap: 10px; padding: 9px 10px; }
+  .pdc-pill { width: 38px; height: 38px; }
+  .pdc-title { font-size: 13px; }
+  .pdc-dist { font-size: 12px; }
+}
