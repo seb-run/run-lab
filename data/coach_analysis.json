@@ -14,9 +14,7 @@
    "reason": "Flag stance_fade récent (>4% seuil) sur une sortie chaude et intense, à ne pas ignorer avant une séance clé de seuil enchaînée après la longue de reprise.",
    "id": "079ad14e",
    "detail": "2026-08-11 : note ajoutée"
-  }
- ],
- "pending": [
+  },
   {
    "severity": "minor",
    "kind": "add_note",
@@ -25,9 +23,9 @@
    "new_value": "Chaleur probable : allure 4'55/km à moduler si FC dérive fort, priorité à l'hydratation et à finir en contrôle plutôt qu'en accélérant.",
    "reason": "Sorties récentes montrent des dérives FC importantes par forte chaleur (jusqu'à 33°C) sans signe de fatigue réelle ; la longue de reprise doit rester gérée pour ne pas hypothéquer le seuil de mardi.",
    "id": "9ee03844",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
-   "created_at": "2026-08-09T06:29:56"
+   "detail": "2026-08-09 : consigne inscrite (add_note)",
+   "validated": true
   }
- ]
+ ],
+ "pending": []
 }

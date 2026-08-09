@@ -195,8 +195,10 @@
    "reason": "Sorties récentes montrent des dérives FC importantes par forte chaleur (jusqu'à 33°C) sans signe de fatigue réelle ; la longue de reprise doit rester gérée pour ne pas hypothéquer le seuil de mardi.",
    "id": "9ee03844",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
-   "created_at": "2026-08-09T06:29:56"
+   "status": "accepted",
+   "created_at": "2026-08-09T06:29:56",
+   "decided_at": "2026-08-09T06:54:01",
+   "applied_detail": "2026-08-09 : consigne inscrite (add_note)"
   }
  ]
 }
