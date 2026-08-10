@@ -7291,17 +7291,17 @@
       "volume_planned_to_date": 47.0,
       "volume_drift_pct": 1.1,
       "compliance": {
-        "km_pct": 101,
-        "km_done": 47.5,
-        "km_planned": 47.0,
+        "km_pct": 110,
+        "km_done": 73.5,
+        "km_planned": 67.0,
         "km_done_week": 73.5,
         "km_planned_week": 67.0,
-        "sessions_done": 3,
-        "sessions_planned": 4,
+        "sessions_done": 4,
+        "sessions_planned": 5,
         "sessions_done_week": 5,
         "keys_success": 0,
         "keys_total": 0,
-        "points": 100,
+        "points": 99,
         "verdict": "success"
       }
     },
@@ -7323,7 +7323,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending",
+          "status": "today",
           "actual": null
         },
         {
@@ -7408,7 +7408,7 @@
           "dow": "Sun",
           "type": "long",
           "title": "Sortie longue avec finish",
-          "km": 21.6,
+          "km": 19.5,
           "duration_min": 118,
           "key": false,
           "description": "24 km : 18 km à 4'55-5'05/km puis les 6 derniers à 4'20-4'25/km. Premier vrai test de fin de sortie en fatigue.\n[COACH IA : volume ajusté 24→21.6 km — Prudence sur la 2e longue de la semaine tant que la régularité n'est pas revalidée sur les séances clés précédentes ; ajustement de -10% max en attendant de voir comment passe le début de semaine]",
@@ -7417,10 +7417,21 @@
           "shoe": "Adizero Boston 13",
           "shoe_note": "La seule paire fraîche : elle prend tout ce qui compte.",
           "_shoe_key": "boston13",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "volume",
+              "from": 21.6,
+              "to": 19.5,
+              "reason": "Tendance à largement dépasser les distances prévues sur les sorties longues (26 vs 20km le 09/08) associée à des signaux de fatigue mécanique ; réduire légèrement la cible prévue laisse une marge avant un nouveau dépassement incontrôlé, surtout si la chaleur persiste."
+            }
+          ]
         }
       ],
-      "focus": "Première vraie séance de seuil depuis le 3 mai, et premier contact avec l'allure marathon. Tout sur sol souple."
+      "focus": "Première vraie séance de seuil depuis le 3 mai, et premier contact avec l'allure marathon. Tout sur sol souple.",
+      "volume_actual_to_date": 0.0,
+      "volume_planned_to_date": 0.0,
+      "volume_drift_pct": 0
     },
     {
       "week_num": 11,

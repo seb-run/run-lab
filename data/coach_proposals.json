@@ -199,6 +199,29 @@
    "created_at": "2026-08-09T06:29:56",
    "decided_at": "2026-08-09T06:54:01",
    "applied_detail": "2026-08-09 : consigne inscrite (add_note)"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-08-11",
+   "field": null,
+   "new_value": "Remplacer le seuil fractionné 6×3min par un footing facile/récup de 12-13km",
+   "reason": "Sortie longue de dimanche en surcharge (130% du volume, RPE9, stance_drift 8.9%, decoupling 9.1%) suivie d'un seul jour de repos : enchaîner un seuil dessus augmente le risque de blessure, notamment côté Achille.",
+   "id": "c8d3f555",
+   "status": "pending",
+   "created_at": "2026-08-10T06:57:13"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-08-10",
+   "field": "description_note",
+   "new_value": "Vrai repos aujourd'hui : pas de footing bonus. Le corps doit encaisser la sortie longue d'hier avant le seuil/MP de la semaine.",
+   "reason": "Historique récent montre des jours de repos systématiquement transformés en sorties (27/07, 07/08), ce qui nuit à la récupération réelle.",
+   "id": "6423cf31",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-08-10T06:57:13"
   }
  ]
 }
