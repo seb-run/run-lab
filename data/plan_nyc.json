@@ -7331,7 +7331,7 @@
           "dow": "Tue",
           "type": "seuil",
           "title": "Seuil fractionné · 6×3 min",
-          "km": 15.0,
+          "km": 13.5,
           "duration_min": 71,
           "key": true,
           "description": "Échauffement 4 km + gammes. Puis 6×3 min à 3'50-3'55/km, récup 90\" en trot. Retour au calme 3 km.\nSur chemin roulant de Bouconne, PAS sur bitume : c'est ta première séance rapide depuis 3 mois, le tendon doit encaisser du souple.\n[COACH IA : Séance clé après une période de charge très irrégulière : si fatigue ou jambes lourdes au réveil, réduire à 4×3min plutôt que forcer les 6×3min à l'allure seuil.]\n[COACH IA : Priorise les sensations sur cette séance seuil : si les jambes sont lourdes après la reprise, réduis le nombre de répétitions plutôt que de forcer l'allure.]\n[COACH IA : Première séance clé depuis le trou de fin juillet : cale-toi sur la sensation plutôt que sur le chrono si ça ne vient pas, mieux vaut 5x3' propres que 6x3' arrachés.]\n[COACH IA : Avant de lancer les 6×3min seuil : vérifie les sensations et l'appui (equilibre G/D). Le 07/08 a montré un contact au sol qui s'allonge et une vitesse asymétrique — si ça revient à l'échauffement, coupe la séance en footing ou réduis à 4×3min.]\n[COACH IA : Avant de lancer les 6×3min, vérifier les jambes : un stance_drift de +5.9% a été observé le 07/08 (fatigue mécanique). Si sensations lourdes, réduire à 4-5 répétitions.]",
@@ -7340,7 +7340,24 @@
           "shoe": "Adizero Boston 13",
           "shoe_note": "La seule paire fraîche : elle prend tout ce qui compte.",
           "_shoe_key": "boston13",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Remplacer le seuil fractionné 6×3min par un footing facile/récup de 12-13km",
+              "validated": true
+            },
+            {
+              "kind": "note",
+              "text": "Sortie longue de samedi lourde (26km, RPE9, drift mécanique +8.9%). Un seul jour de repos derrière : si jambes lourdes ou FC anormalement haute sur les premières répétitions, coupe à 4-5×3min plutôt que forcer les 6."
+            },
+            {
+              "kind": "volume",
+              "from": 15.0,
+              "to": 13.5,
+              "reason": "Réduction légère (-10%) du volume de la séance seuil pour absorber la charge inhabituelle de la sortie longue du 09/08 sans annuler la séance clé."
+            }
+          ]
         },
         {
           "date": "2026-08-12",
@@ -7356,7 +7373,13 @@
           "shoe": "Pegasus 40 (fin de vie)",
           "shoe_note": "Uniquement les récups courtes et lentes : c'est ton seul 10 mm, mais la semelle est morte.",
           "_shoe_key": "peg40",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Vraie allure récup à respecter (5'40/km), pas 5'20 comme ces derniers jours : le but ici est la récupération, pas le kilométrage."
+            }
+          ]
         },
         {
           "date": "2026-08-13",

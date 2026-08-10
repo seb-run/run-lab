@@ -208,8 +208,10 @@
    "new_value": "Remplacer le seuil fractionné 6×3min par un footing facile/récup de 12-13km",
    "reason": "Sortie longue de dimanche en surcharge (130% du volume, RPE9, stance_drift 8.9%, decoupling 9.1%) suivie d'un seul jour de repos : enchaîner un seuil dessus augmente le risque de blessure, notamment côté Achille.",
    "id": "c8d3f555",
-   "status": "pending",
-   "created_at": "2026-08-10T06:57:13"
+   "status": "accepted",
+   "created_at": "2026-08-10T06:57:13",
+   "decided_at": "2026-08-10T19:51:15",
+   "applied_detail": "2026-08-11 : consigne inscrite (change_type)"
   },
   {
    "severity": "minor",
