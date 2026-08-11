@@ -7336,11 +7336,171 @@
           "key": true,
           "description": "Échauffement 4 km + gammes. Puis 6×3 min à 3'50-3'55/km, récup 90\" en trot. Retour au calme 3 km.\nSur chemin roulant de Bouconne, PAS sur bitume : c'est ta première séance rapide depuis 3 mois, le tendon doit encaisser du souple.\n[COACH IA : Séance clé après une période de charge très irrégulière : si fatigue ou jambes lourdes au réveil, réduire à 4×3min plutôt que forcer les 6×3min à l'allure seuil.]\n[COACH IA : Priorise les sensations sur cette séance seuil : si les jambes sont lourdes après la reprise, réduis le nombre de répétitions plutôt que de forcer l'allure.]\n[COACH IA : Première séance clé depuis le trou de fin juillet : cale-toi sur la sensation plutôt que sur le chrono si ça ne vient pas, mieux vaut 5x3' propres que 6x3' arrachés.]\n[COACH IA : Avant de lancer les 6×3min seuil : vérifie les sensations et l'appui (equilibre G/D). Le 07/08 a montré un contact au sol qui s'allonge et une vitesse asymétrique — si ça revient à l'échauffement, coupe la séance en footing ou réduis à 4×3min.]\n[COACH IA : Avant de lancer les 6×3min, vérifier les jambes : un stance_drift de +5.9% a été observé le 07/08 (fatigue mécanique). Si sensations lourdes, réduire à 4-5 répétitions.]",
           "target_pace": "3'50\"/km",
-          "status": "today",
+          "status": "done",
           "shoe": "Adizero Boston 13",
           "shoe_note": "La seule paire fraîche : elle prend tout ce qui compte.",
           "_shoe_key": "boston13",
-          "actual": null,
+          "actual": {
+            "km": 12.0,
+            "duration_min": 64,
+            "pace_sec": 322,
+            "pace_str": "5'22\"/km",
+            "fc": 141,
+            "cadence": 176,
+            "type": "footing",
+            "title": "i174633698",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 238.0,
+              "osc_cm": 10.0,
+              "vratio": 9.38,
+              "balance_l": 50.39,
+              "step_m": 1.05,
+              "temp_c": 29,
+              "temp_max": 32,
+              "resp": 35.0,
+              "power": 353,
+              "np": 357,
+              "te_aero": 3.4,
+              "te_ana": 2.3,
+              "load": 161.8,
+              "strides": 5663,
+              "rpe": 2.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 242.0,
+                  "end": 228.0,
+                  "pct": -6.0
+                },
+                "step": {
+                  "start": 1031.0,
+                  "end": 1097.0,
+                  "pct": 6.5
+                },
+                "vratio": {
+                  "start": 9.46,
+                  "end": 9.27,
+                  "pct": -1.9
+                },
+                "osc": {
+                  "start": 99.0,
+                  "end": 102.0,
+                  "pct": 3.0
+                },
+                "hr": {
+                  "start": 134.0,
+                  "end": 148.0,
+                  "pct": 11.0
+                },
+                "cad": {
+                  "start": 88.0,
+                  "end": 87.8,
+                  "pct": -0.3
+                }
+              },
+              "balance_min": 49.63,
+              "balance_max": 51.11,
+              "balance_series": [
+                51.11,
+                50.5,
+                50.11,
+                50.21,
+                50.52,
+                50.61,
+                50.21,
+                50.23,
+                50.4,
+                50.68,
+                50.34,
+                49.63
+              ],
+              "balance_lent": 50.69,
+              "balance_rapide": 50.14,
+              "asym_vs_allure": -0.54,
+              "allure_lent_s": 330,
+              "allure_rapide_s": 305,
+              "rr_beats": 9775,
+              "rmssd_effort": 17.4,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 336,
+                "fc": 125,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 321,
+                "fc": 136,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 327,
+                "fc": 136,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 325,
+                "fc": 138,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 326,
+                "fc": 144,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 329,
+                "fc": 143,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 325,
+                "fc": 135,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 325,
+                "fc": 143,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 327,
+                "fc": 143,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 330,
+                "fc": 141,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 328,
+                "fc": 145,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 261,
+                "fc": 165,
+                "ca": 178
+              }
+            ]
+          },
           "coach_notes": [
             {
               "kind": "note",
@@ -7362,7 +7522,31 @@
               "text": "Remplacer le seuil 6×3min par un footing facile (10-12km, allure 5'20-5'40/km, sans fractionné)",
               "validated": true
             }
-          ]
+          ],
+          "score": {
+            "points": 54,
+            "verdict": "failed",
+            "verdict_label": "Échouée",
+            "volume_pct": 89,
+            "volume_points": 98,
+            "pace_points": 0,
+            "pace_target_s": 230,
+            "pace_actual_s": 261,
+            "pace_actual_str": "4'21\"/km",
+            "pace_delta_s": 31,
+            "is_quality": true,
+            "hr": {
+              "avg": 141,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 1.9,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 89%",
+              "Allure +31\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-08-12",
