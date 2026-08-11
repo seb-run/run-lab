@@ -212,15 +212,59 @@ def build_html(
     # Rattrapage rétroactif des remplacements validés
     # ------------------------------------------------
     # Les propositions `change_type` validées avant que apply_proposal.py sache
-    # les traiter n'ont créé qu'une `coach_notes` en langage naturel. La cible
-    # d'origine est restée, et le scoring compare toujours contre elle.
-    # On détecte ici ces notes et on pose le drapeau qui manque, pour que le
-    # prochain build score correctement — sans attendre une régénération.
+    # les traiter n'ont créé qu'une `coach_notes` en langage naturel. On les
+    # rejoue ici : titre, type et km basculent sur la nouvelle séance, la
+    # cible d'allure d'origine est effacée, l'ancien titre reste en trace.
+    import re as _re
+
     def _looks_like_replacement(note):
         if not note.get('validated'): return False
-        if note.get('kind') == 'replacement': return False   # déjà traité
+        if note.get('kind') == 'replacement': return False
         txt = (note.get('text') or '').lower()
         return txt.startswith('remplace') or 'remplacer' in txt[:40]
+
+    _TYPE_HINTS = [
+        (r'\brécup\w*|\brecup\w*', 'recovery'),
+        (r'\bfooting\b|\bendurance\b',  'easy'),
+        (r'\bshake\b|\bshakeout\b',     'shake'),
+        (r'\btempo\b',                  'tempo'),
+        (r'\blong\w*\b|\bsl\b',         'long'),
+        (r'\bseuil\b|\btempo\b',        'seuil'),
+        (r'\bvma\b|\bfractionn',        'vma'),
+        (r'\bmp\b|\ballure marathon',   'mp'),
+    ]
+
+    def _extract_replacement(text, orig_km):
+        """Extrait titre, type, km depuis « ... par un footing récup 12 km »."""
+        low = (text or '').lower()
+        # après le premier « par », si présent
+        m = _re.search(r'\bpar\s+(?:un\s+|une\s+|le\s+|la\s+|des\s+|de\s+)?(.+)$',
+                       low, _re.S)
+        cible = (m.group(1) if m else low).strip()
+        # nettoyer les indications parasites (deux-points, points, longues explications)
+        cible = _re.split(r'[.:;]|\s—\s', cible, 1)[0].strip()
+
+        # kilométrage : « 12 km », « 12-13 km », « 12,5 km »
+        km = orig_km
+        km_m = _re.search(r'(\d+(?:[.,]\d+)?)\s*(?:[-àa–]\s*\d+(?:[.,]\d+)?)?\s*km', cible)
+        if km_m:
+            try: km = float(km_m.group(1).replace(',', '.'))
+            except Exception: pass
+
+        # type : premier motif qui matche
+        typ = None
+        for pat, t in _TYPE_HINTS:
+            if _re.search(pat, cible):
+                typ = t
+                break
+
+        # titre : le début de la cible, jusqu'à 60 caractères, capitalisé
+        titre = _re.sub(r'\s*(?:de|à|sur|vers)?\s*\d+(?:[.,]\d+)?\s*(?:[-àa–]\s*\d+(?:[.,]\d+)?)?\s*km.*$', '', cible).strip()
+        # Prépositions traînantes en fin quand le complément de distance a été retiré
+        titre = _re.sub(r'\s+(?:de|à|en|sur|vers|pour|d\'|l\')\s*$', '', titre).strip(' ,;/-')
+        titre = titre[:60].strip(' ,;')
+        titre = titre[:1].upper() + titre[1:] if titre else 'Séance remplacée par le coach'
+        return titre, typ, round(km, 1) if km else None
 
     if plan and plan.get('weeks'):
         try:
@@ -236,21 +280,43 @@ def build_html(
                              if _looks_like_replacement(n)), None)
                 if not repl:
                     continue
+                orig_title = day.get('title')
+                orig_pace = day.get('target_pace')
+                orig_type = day.get('type')
+                orig_km = day.get('km')
+
+                # Extraction du texte libre
+                new_title, new_type, new_km = _extract_replacement(
+                    repl.get('text'), orig_km)
+
+                day['title'] = new_title
+                if new_type:
+                    day['type'] = new_type
+                if new_km:
+                    day['km'] = new_km
+                day.pop('target_pace', None)
+                day['description'] = repl.get('text') or ''
+
                 day['_replaced_by_coach'] = True
                 day['_replaced_from'] = {
-                    'title': day.get('title'),
-                    'target_pace': day.get('target_pace'),
-                    'type': day.get('type'),
+                    'title': orig_title, 'target_pace': orig_pace,
+                    'type': orig_type, 'km': orig_km,
                 }
-                # Cible d'allure effacée : le scoring ne juge plus l'allure
-                day.pop('target_pace', None)
-                propagated += 1
-                # Chaussure recalculée sur le nouveau type quand possible
+                # Chaussure recalculée sur le nouveau type
                 if _assign_shoe:
                     try: _assign_shoe(day)
                     except Exception: pass
+
+                # Score recalculé sur la nouvelle base (sans cible d'allure)
+                try:
+                    from modules.session_scoring import score_day as _score_day
+                    new_sc = _score_day(day, [])
+                    if new_sc: day['score'] = new_sc
+                except Exception: pass
+
+                propagated += 1
         if propagated:
-            print(f"  ▸ {propagated} remplacement(s) validé(s) — flag rétroactif posé")
+            print(f"  ▸ {propagated} remplacement(s) validé(s) — titre et cible refaits")
 
         # Cascade : quand une séance clé a été remplacée par autre chose, le
         # jour suivant peut ne plus avoir de sens dans sa forme actuelle
