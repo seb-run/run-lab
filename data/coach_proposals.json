@@ -222,8 +222,19 @@
    "reason": "Historique récent montre des jours de repos systématiquement transformés en sorties (27/07, 07/08), ce qui nuit à la récupération réelle.",
    "id": "6423cf31",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-08-10T06:57:13"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-08-11",
+   "field": "description_note",
+   "new_value": "Remplacer le seuil 6×3min par un footing facile (10-12km, allure 5'20-5'40/km, sans fractionné)",
+   "reason": "La sortie longue de dimanche (26km, +130% du prévu, 32°C) a produit un RPE 9 et un stance_drift de 8.9% signant une fatigue mécanique réelle. Un seul jour de repos ne suffit pas à absorber ce pic avant un seuil à allure cible.",
+   "id": "91dcd979",
+   "status": "pending",
+   "created_at": "2026-08-11T06:35:55"
   }
  ]
 }

@@ -1,53 +1,31 @@
 {
- "generated_at": "2026-08-10T19:52:10",
+ "generated_at": "2026-08-11T06:35:55",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-08-07\", \"title\": \"Repos\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"bonus\", \"target_pace\": null, \"actual\": {\"km\": 13.7, \"pace_str\": \"4'53\\\"/km\", \"fc\": 150, \"cadence\": 174, \"duration_min\": 67}, \"splits\": \"1:5'22/125/176spm 2:4'58/137/174spm 3:5'06/136/174spm 4:5'10/138/172spm 5:4'23/155/172spm 6:4'18/161/172spm 7:4'18/162/172spm 8:5'45/145/170spm 9:4'14/163/174spm 10:4'20/165/174spm 11:4'29/164/174spm 12:5'17/156/172spm 13:5'01/157/174spm 14:5'00/157/176spm 15:5'09/155/176spm 16:5'13/156/174spm\", \"garmin\": {\"te_aero\": 4.2, \"te_ana\": 0.0, \"load\": 195.9, \"rpe\": 4.0, \"feel_label\": \"Fort\", \"temp_c\": 30, \"balance_l\": 49.43, \"flags\": [\"stance_fade\", \"asym_vitesse\"], \"stance_drift_pct\": 5.9, \"step_drift_pct\": -2.8}}, {\"date\": \"2026-08-08\", \"title\": \"Footing + lignes\", \"type\": \"easy\", \"planned_km\": 11.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'20\\\"/km\", \"actual\": {\"km\": 11.0, \"pace_str\": \"5'08\\\"/km\", \"fc\": 155, \"cadence\": 176, \"duration_min\": 56}, \"splits\": \"1:5'14/136/174spm 2:5'05/146/174spm 3:5'07/147/176spm 4:5'07/152/176spm 5:4'59/156/176spm 6:4'57/158/176spm 7:4'55/159/176spm 8:3'52/161/184spm 9:6'59/162/168spm 10:3'58/158/184spm 11:6'47/161/168spm 12:4'03/158/182spm 13:7'11/160/164spm 14:3'50/158/184spm 15:7'42/164/166spm 16:3'52/159/186spm 17:7'07/163/166spm 18:3'40/160/188spm 19:7'09/168/164spm 20:3'39/162/186spm 21:7'14/168/166spm 22:3'32/164/186spm 23:5'48/169/170spm 24:5'12/158/176spm 25:5'04/161/178spm 26:5'17/161/176spm\", \"garmin\": {\"te_aero\": 3.9, \"te_ana\": 1.6, \"load\": 192.5, \"rpe\": 4.0, \"feel_label\": \"Normal\", \"temp_c\": 33, \"balance_l\": 50.13, \"flags\": [], \"stance_drift_pct\": -1.9, \"step_drift_pct\": -0.8}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 100, \"pace_delta_s\": -12}, \"hr\": {\"avg\": 155, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 4.9, \"flags\": []}}, {\"date\": \"2026-08-09\", \"title\": \"Sortie longue de reprise\", \"type\": \"long\", \"planned_km\": 20.0, \"key\": false, \"status\": \"over\", \"target_pace\": \"4'55\\\"/km\", \"actual\": {\"km\": 26.0, \"pace_str\": \"4'57\\\"/km\", \"fc\": 163, \"cadence\": 177, \"duration_min\": 129}, \"splits\": \"1:5'09/135/178spm 2:4'58/145/178spm 3:4'49/153/178spm 4:4'53/153/178spm 5:4'53/157/180spm 6:4'48/156/180spm 7:4'51/164/180spm 8:4'54/165/180spm 9:4'47/163/180spm 10:4'38/162/178spm 11:4'42/163/176spm 12:4'53/168/178spm 13:4'57/166/176spm 14:4'41/160/178spm 15:4'50/166/178spm 16:4'55/165/176spm 17:4'59/165/176spm 18:4'48/166/178spm 19:4'41/165/176spm 20:4'43/170/178spm 21:4'57/171/178spm 22:5'10/168/176spm 23:5'17/169/174spm 24:5'20/171/174spm 25:5'27/170/172spm 26:5'43/170/172spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 1.8, \"load\": 394.3, \"rpe\": 9.0, \"feel_label\": \"Normal\", \"temp_c\": 32, \"balance_l\": 50.15, \"flags\": [\"stance_fade\"], \"stance_drift_pct\": 8.9, \"step_drift_pct\": -2.6}, \"score\": {\"points\": 92, \"verdict\": \"success\", \"volume_pct\": 130, \"pace_delta_s\": 2}, \"hr\": {\"avg\": 163, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 9.1, \"flags\": [\"drift_high\"]}}]",
- "headline": "Grosse sortie longue chaude et fatigante samedi (26km, RPE9, dérive cardiaque et mécanique) juste avant deux séances clés cette semaine : vigilance de rigueur.",
- "analysis": "Les semaines 7 et 8 sont sous conformité (70% et 62%), avec plusieurs footings récup ratés fin juillet — ça sent le trou d'air, pas la fatigue de charge excessive à ce moment-là. Depuis le 1er août tu as rattrapé en bonus, mais avec un pattern qui interroge : tes allures easy/recovery sont systématiquement plus rapides que prévu (5'08 au lieu de 5'20, 5'22 au lieu de 5'40), et plusieurs séances 'faciles' contiennent des blocs rapides non structurés (04/08, 07/08, 08/08). Ça t'a mené à une sortie longue du 09/08 costaude : 26km à 4'57/km (au lieu de 20km prévus) par 32°C, avec un decoupling de 9.1% ET une dérive de temps de contact de +8.9% — cette dernière est un vrai signal mécanique, pas juste de la chaleur, à surveiller vu ton historique Achille. RPE9 sur cette séance, ce n'est pas anodin. Le risque principal cette semaine : enchaîner une séance seuil clé demain et une allure marathon jeudi sur des jambes qui n'ont eu qu'un seul jour de repos après cet effort. Focus : vraie récupération sur les footings (respecter les allures cap), et rester à l'écoute des sensations sur la séance seuil de demain plutôt que de forcer le chrono.",
+ "signature": "[{\"date\": \"2026-08-08\", \"title\": \"Footing + lignes\", \"type\": \"easy\", \"planned_km\": 11.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'20\\\"/km\", \"actual\": {\"km\": 11.0, \"pace_str\": \"5'08\\\"/km\", \"fc\": 155, \"cadence\": 176, \"duration_min\": 56}, \"splits\": \"1:5'14/136/174spm 2:5'05/146/174spm 3:5'07/147/176spm 4:5'07/152/176spm 5:4'59/156/176spm 6:4'57/158/176spm 7:4'55/159/176spm 8:3'52/161/184spm 9:6'59/162/168spm 10:3'58/158/184spm 11:6'47/161/168spm 12:4'03/158/182spm 13:7'11/160/164spm 14:3'50/158/184spm 15:7'42/164/166spm 16:3'52/159/186spm 17:7'07/163/166spm 18:3'40/160/188spm 19:7'09/168/164spm 20:3'39/162/186spm 21:7'14/168/166spm 22:3'32/164/186spm 23:5'48/169/170spm 24:5'12/158/176spm 25:5'04/161/178spm 26:5'17/161/176spm\", \"garmin\": {\"te_aero\": 3.9, \"te_ana\": 1.6, \"load\": 192.5, \"rpe\": 4.0, \"feel_label\": \"Normal\", \"temp_c\": 33, \"balance_l\": 50.13, \"flags\": [], \"stance_drift_pct\": -1.9, \"step_drift_pct\": -0.8}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 100, \"pace_delta_s\": -12}, \"hr\": {\"avg\": 155, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 4.9, \"flags\": []}}, {\"date\": \"2026-08-09\", \"title\": \"Sortie longue de reprise\", \"type\": \"long\", \"planned_km\": 20.0, \"key\": false, \"status\": \"over\", \"target_pace\": \"4'55\\\"/km\", \"actual\": {\"km\": 26.0, \"pace_str\": \"4'57\\\"/km\", \"fc\": 163, \"cadence\": 177, \"duration_min\": 129}, \"splits\": \"1:5'09/135/178spm 2:4'58/145/178spm 3:4'49/153/178spm 4:4'53/153/178spm 5:4'53/157/180spm 6:4'48/156/180spm 7:4'51/164/180spm 8:4'54/165/180spm 9:4'47/163/180spm 10:4'38/162/178spm 11:4'42/163/176spm 12:4'53/168/178spm 13:4'57/166/176spm 14:4'41/160/178spm 15:4'50/166/178spm 16:4'55/165/176spm 17:4'59/165/176spm 18:4'48/166/178spm 19:4'41/165/176spm 20:4'43/170/178spm 21:4'57/171/178spm 22:5'10/168/176spm 23:5'17/169/174spm 24:5'20/171/174spm 25:5'27/170/172spm 26:5'43/170/172spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 1.8, \"load\": 394.3, \"rpe\": 9.0, \"feel_label\": \"Normal\", \"temp_c\": 32, \"balance_l\": 50.15, \"flags\": [\"stance_fade\"], \"stance_drift_pct\": 8.9, \"step_drift_pct\": -2.6}, \"score\": {\"points\": 92, \"verdict\": \"success\", \"volume_pct\": 130, \"pace_delta_s\": 2}, \"hr\": {\"avg\": 163, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 9.1, \"flags\": [\"drift_high\"]}}, {\"date\": \"2026-08-10\", \"title\": \"Repos\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}]",
+ "headline": "Retour en forme après un trou d'entraînement (semaines 7-8 sous 70%), mais le pic de charge de dimanche (26km à 32°C, RPE 9, dérive mécanique) arrive à un très mauvais moment pour enchaîner un seuil dès aujourd'hui.",
+ "analysis": "Les semaines 7 et 8 ont été largement manquées (70% puis 62% du volume, plusieurs récup et le tempo zappés), donc le corps sort d'une période sous-chargée. La semaine 9 a rebondi fort (110%), portée surtout par une sortie longue explosée : 26km au lieu de 20 prévus, en pleine chaleur (32°C), avec un RPE à 9/10 et un stance_drift de 8.9% qui signe une vraie fatigue mécanique de fin de course, pas juste de la dérive cardiaque liée à la chaleur. Un seul jour de repos a suivi. Enchaîner aujourd'hui un seuil fractionné à 3'50/km sur ces jambes-là est risqué, d'autant que ton historique Achille rend la fatigue mécanique un point de vigilance sérieux. Les footings easy (01/08, 04/08, 08/08) montrent par ailleurs de bonnes sensations et une belle régularité de cadence, donc la forme de fond est là — c'est la gestion de l'enchaînement post-longue sortie qui pose problème cette semaine. Le focus doit être : absorber la charge de dimanche avant de remettre de l'intensité, et rester attentif aux mêmes signaux (stance_drift, RPE, balance_l) sur les séances à venir.",
  "applied": [
   {
    "severity": "minor",
    "kind": "add_note",
-   "date": "2026-08-11",
-   "field": "description_note",
-   "new_value": "Sortie longue de samedi lourde (26km, RPE9, drift mécanique +8.9%). Un seul jour de repos derrière : si jambes lourdes ou FC anormalement haute sur les premières répétitions, coupe à 4-5×3min plutôt que forcer les 6.",
-   "reason": "Fatigue mécanique réelle détectée (stance_drift 8.9% > seuil 4%) sur la longue de samedi, RPE9, et un seul jour de repos avant cette séance clé de seuil.",
-   "id": "8accc313",
-   "detail": "2026-08-11 : note ajoutée"
-  },
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-08-12",
-   "field": "description_note",
-   "new_value": "Vraie allure récup à respecter (5'40/km), pas 5'20 comme ces derniers jours : le but ici est la récupération, pas le kilométrage.",
-   "reason": "Les 3 dernières sorties easy/recovery ont été courues nettement plus vite que la consigne (5'08-5'22 au lieu de 5'20-5'40), ce qui limite la récupération réelle avant deux séances clés.",
-   "id": "10af1428",
-   "detail": "2026-08-12 : note ajoutée"
-  },
-  {
-   "severity": "minor",
-   "kind": "volume_adjust",
-   "date": "2026-08-11",
-   "field": "km",
-   "new_value": 13.5,
-   "reason": "Réduction légère (-10%) du volume de la séance seuil pour absorber la charge inhabituelle de la sortie longue du 09/08 sans annuler la séance clé.",
-   "id": "28a7ce57",
-   "detail": "2026-08-11 : 15→13.5 km"
+   "date": "2026-08-13",
+   "new_value": "Avant la séance MP, vérifie les sensations jambes/Achille et la cadence sur les premiers km ; si lourdeur ou douleur, réduis à 2×8min au lieu de 3×8min.",
+   "reason": "Suivi de la fatigue mécanique détectée dimanche, à surveiller sur la prochaine séance clé avant de remettre du volume d'intensité.",
+   "id": "05728397",
+   "detail": "2026-08-13 : note ajoutée"
   }
  ],
  "pending": [
   {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-08-10",
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-08-11",
    "field": "description_note",
-   "new_value": "Vrai repos aujourd'hui : pas de footing bonus. Le corps doit encaisser la sortie longue d'hier avant le seuil/MP de la semaine.",
-   "reason": "Historique récent montre des jours de repos systématiquement transformés en sorties (27/07, 07/08), ce qui nuit à la récupération réelle.",
-   "id": "6423cf31",
-   "guardrail_reject": "jour passé ou en cours",
+   "new_value": "Remplacer le seuil 6×3min par un footing facile (10-12km, allure 5'20-5'40/km, sans fractionné)",
+   "reason": "La sortie longue de dimanche (26km, +130% du prévu, 32°C) a produit un RPE 9 et un stance_drift de 8.9% signant une fatigue mécanique réelle. Un seul jour de repos ne suffit pas à absorber ce pic avant un seuil à allure cible.",
+   "id": "91dcd979",
    "status": "pending",
-   "created_at": "2026-08-10T06:57:13"
+   "created_at": "2026-08-11T06:35:55"
   }
  ]
 }

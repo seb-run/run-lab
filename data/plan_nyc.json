@@ -7323,7 +7323,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "today",
+          "status": "done",
           "actual": null
         },
         {
@@ -7336,7 +7336,7 @@
           "key": true,
           "description": "Échauffement 4 km + gammes. Puis 6×3 min à 3'50-3'55/km, récup 90\" en trot. Retour au calme 3 km.\nSur chemin roulant de Bouconne, PAS sur bitume : c'est ta première séance rapide depuis 3 mois, le tendon doit encaisser du souple.\n[COACH IA : Séance clé après une période de charge très irrégulière : si fatigue ou jambes lourdes au réveil, réduire à 4×3min plutôt que forcer les 6×3min à l'allure seuil.]\n[COACH IA : Priorise les sensations sur cette séance seuil : si les jambes sont lourdes après la reprise, réduis le nombre de répétitions plutôt que de forcer l'allure.]\n[COACH IA : Première séance clé depuis le trou de fin juillet : cale-toi sur la sensation plutôt que sur le chrono si ça ne vient pas, mieux vaut 5x3' propres que 6x3' arrachés.]\n[COACH IA : Avant de lancer les 6×3min seuil : vérifie les sensations et l'appui (equilibre G/D). Le 07/08 a montré un contact au sol qui s'allonge et une vitesse asymétrique — si ça revient à l'échauffement, coupe la séance en footing ou réduis à 4×3min.]\n[COACH IA : Avant de lancer les 6×3min, vérifier les jambes : un stance_drift de +5.9% a été observé le 07/08 (fatigue mécanique). Si sensations lourdes, réduire à 4-5 répétitions.]",
           "target_pace": "3'50\"/km",
-          "status": "pending",
+          "status": "today",
           "shoe": "Adizero Boston 13",
           "shoe_note": "La seule paire fraîche : elle prend tout ce qui compte.",
           "_shoe_key": "boston13",
@@ -7395,7 +7395,13 @@
           "shoe": "Adizero Boston 13",
           "shoe_note": "La seule paire fraîche : elle prend tout ce qui compte.",
           "_shoe_key": "boston13",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Avant la séance MP, vérifie les sensations jambes/Achille et la cadence sur les premiers km ; si lourdeur ou douleur, réduis à 2×8min au lieu de 3×8min."
+            }
+          ]
         },
         {
           "date": "2026-08-14",
