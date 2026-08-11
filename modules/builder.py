@@ -209,6 +209,80 @@ def build_html(
         print(f"  ⚠ Erreur calcul historique VMA : {e}")
         performance_history = []
 
+    # Rattrapage rétroactif des remplacements validés
+    # ------------------------------------------------
+    # Les propositions `change_type` validées avant que apply_proposal.py sache
+    # les traiter n'ont créé qu'une `coach_notes` en langage naturel. La cible
+    # d'origine est restée, et le scoring compare toujours contre elle.
+    # On détecte ici ces notes et on pose le drapeau qui manque, pour que le
+    # prochain build score correctement — sans attendre une régénération.
+    def _looks_like_replacement(note):
+        if not note.get('validated'): return False
+        if note.get('kind') == 'replacement': return False   # déjà traité
+        txt = (note.get('text') or '').lower()
+        return txt.startswith('remplace') or 'remplacer' in txt[:40]
+
+    if plan and plan.get('weeks'):
+        try:
+            from scripts._shoes_nyc import assign as _assign_shoe
+        except Exception:
+            _assign_shoe = None
+        propagated = 0
+        for w in plan['weeks']:
+            for day in w.get('days', []):
+                if day.get('_replaced_by_coach'):
+                    continue
+                repl = next((n for n in day.get('coach_notes', [])
+                             if _looks_like_replacement(n)), None)
+                if not repl:
+                    continue
+                day['_replaced_by_coach'] = True
+                day['_replaced_from'] = {
+                    'title': day.get('title'),
+                    'target_pace': day.get('target_pace'),
+                    'type': day.get('type'),
+                }
+                # Cible d'allure effacée : le scoring ne juge plus l'allure
+                day.pop('target_pace', None)
+                propagated += 1
+                # Chaussure recalculée sur le nouveau type quand possible
+                if _assign_shoe:
+                    try: _assign_shoe(day)
+                    except Exception: pass
+        if propagated:
+            print(f"  ▸ {propagated} remplacement(s) validé(s) — flag rétroactif posé")
+
+        # Cascade : quand une séance clé a été remplacée par autre chose, le
+        # jour suivant peut ne plus avoir de sens dans sa forme actuelle
+        # (récupération prévue pour une charge qu'on n'a pas produite, séance
+        # dépendante déplacée…). Plutôt que de bricoler mécaniquement, on
+        # inscrit une note explicite sur le lendemain, à charge du coach ou
+        # de Seb de trancher au prochain matin.
+        from datetime import date as _date, timedelta as _td
+        by_iso = {d['date']: d for w in plan['weeks'] for d in w.get('days', [])
+                  if d.get('date')}
+        for iso, day in list(by_iso.items()):
+            if not day.get('_replaced_by_coach'):
+                continue
+            if day.get('_replaced_from', {}).get('type') not in ('seuil','vma','mp','tempo','long'):
+                continue
+            try:
+                nxt_iso = (_date.fromisoformat(iso) + _td(days=1)).isoformat()
+            except Exception:
+                continue
+            nxt = by_iso.get(nxt_iso)
+            if not nxt or nxt.get('_cascade_from'):
+                continue
+            orig = day['_replaced_from'].get('title', 'séance clé')
+            nxt.setdefault('coach_notes', []).insert(0, {
+                'kind': 'cascade',
+                'text': (f"Hier tu as remplacé « {orig} » par un footing : "
+                         "aujourd'hui la récupération prévue peut être "
+                         "conservée, ou rebasculée en séance clé si les "
+                         "sensations le permettent. À trancher au réveil."),
+            })
+            nxt['_cascade_from'] = iso
+
     # Analyse du coach IA (déposée par scripts/ci/ai_coach.py, optionnelle)
     coach = None
     try:

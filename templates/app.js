@@ -4885,6 +4885,14 @@
     function renderCoachNotes(notes) {
       if (!notes || !notes.length) return '';
       const items = notes.map(n => {
+        if (n.kind === 'cascade') {
+          return `<li class="cascade"><b>À trancher au réveil</b> · ${escapeHtml(n.text || '')}</li>`;
+        }
+        if (n.kind === 'replacement') {
+          const chg = n.from_title && n.to_title
+            ? `${escapeHtml(n.from_title)} → <b>${escapeHtml(n.to_title)}</b>` : '';
+          return `<li><b>Séance remplacée</b>${chg ? ' · ' + chg : ''}${n.text ? '<br/>' + escapeHtml(n.text) : ''} <i>(validé par toi)</i></li>`;
+        }
         if (n.kind === 'volume') {
           const chg = n.from !== undefined && n.to !== undefined
             ? `${n.from}→${n.to} km`
@@ -5191,7 +5199,9 @@
 
       const title = d._rescheduled_title
         ? `${escapeHtml(d._rescheduled_title)} <span class="pdc-flag">↻ reprogrammée</span>`
-        : escapeHtml(d.title || (isRest ? 'Repos' : ''));
+        : d._replaced_by_coach
+          ? `${escapeHtml(d.title || 'Séance')} <span class="pdc-flag pdc-flag-replaced">✓ remplacée</span>`
+          : escapeHtml(d.title || (isRest ? 'Repos' : ''));
 
       // Chip de statut : score si validée, croix si manquée, point sinon
       let chip = '';

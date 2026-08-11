@@ -86,6 +86,15 @@ def _apply_replacement(day: dict, prop: dict) -> tuple[bool, str]:
     day['_replaced_by_coach'] = True
     day['_replaced_from'] = {'title': orig_title, 'target_pace': orig_pace}
 
+    # Chaussure recalculée sur le nouveau type, plutôt qu'une paire choisie
+    # pour un seuil qu'on ne fait plus.
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+        from _shoes_nyc import assign as _assign_shoe
+        _assign_shoe(day)
+    except Exception:
+        pass
+
     txt = (r.get('description') or '').strip() or \
           (prop.get('new_value') if isinstance(prop.get('new_value'), str) else '')
     day.setdefault('coach_notes', []).append({

@@ -4685,3 +4685,9 @@ html[data-theme="dark"] {
   font-size: 14px; font-weight: 700;
   color: var(--st-ok-br);
 }
+
+/* Chip « remplacée » dans le calendrier hebdo — même famille que « décalée » */
+.pdc-flag-replaced { color: var(--st-ok-tx); }
+
+/* Notes cascade : marquer comme information système, pas comme consigne coach */
+.plan-coach-notes li.cascade b { color: var(--c-blue); }
