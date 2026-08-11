@@ -7356,6 +7356,11 @@
               "from": 15.0,
               "to": 13.5,
               "reason": "Réduction légère (-10%) du volume de la séance seuil pour absorber la charge inhabituelle de la sortie longue du 09/08 sans annuler la séance clé."
+            },
+            {
+              "kind": "note",
+              "text": "Remplacer le seuil 6×3min par un footing facile (10-12km, allure 5'20-5'40/km, sans fractionné)",
+              "validated": true
             }
           ]
         },

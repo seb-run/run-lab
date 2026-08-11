@@ -13,9 +13,7 @@
    "reason": "Suivi de la fatigue mécanique détectée dimanche, à surveiller sur la prochaine séance clé avant de remettre du volume d'intensité.",
    "id": "05728397",
    "detail": "2026-08-13 : note ajoutée"
-  }
- ],
- "pending": [
+  },
   {
    "severity": "major",
    "kind": "change_type",
@@ -24,8 +22,9 @@
    "new_value": "Remplacer le seuil 6×3min par un footing facile (10-12km, allure 5'20-5'40/km, sans fractionné)",
    "reason": "La sortie longue de dimanche (26km, +130% du prévu, 32°C) a produit un RPE 9 et un stance_drift de 8.9% signant une fatigue mécanique réelle. Un seul jour de repos ne suffit pas à absorber ce pic avant un seuil à allure cible.",
    "id": "91dcd979",
-   "status": "pending",
-   "created_at": "2026-08-11T06:35:55"
+   "detail": "2026-08-11 : consigne inscrite (change_type)",
+   "validated": true
   }
- ]
+ ],
+ "pending": []
 }
