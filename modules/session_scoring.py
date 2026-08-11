@@ -287,6 +287,8 @@ def score_day(day: dict, actual_sessions: list[dict]) -> Optional[dict]:
         return None
 
     reasons = []
+    if day.get('_replaced_by_coach'):
+        reasons.append("Séance remplacée par le coach (validée)")
 
     # --- Volume ---
     vol_pct = actual_km / planned_km * 100
@@ -294,7 +296,11 @@ def score_day(day: dict, actual_sessions: list[dict]) -> Optional[dict]:
     reasons.append(f"Volume {vol_pct:.0f}%")
 
     # --- Allure ---
-    quality = _is_quality_day(day)
+    # Séance remplacée par le coach (change_type validé) : la cible d'origine
+    # a été effacée à l'application. On n'invente pas de nouvelle cible ici,
+    # on juge le remplacement sur son volume seul plutôt que d'afficher un
+    # échec d'allure contre une cible caduque.
+    quality = _is_quality_day(day) and not day.get('_replaced_by_coach')
     target_s = parse_pace_str(day.get('target_pace'))
     pace_pts = None
     pace_actual_s = None

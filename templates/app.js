@@ -2480,8 +2480,15 @@
   }
 
   function planCibleHeritee(sess) {
-    // Renvoie la cible du jour, en tenant compte d'un éventuel rattrapage.
+    // Renvoie la cible du jour, en tenant compte d'un éventuel rattrapage
+    // ou d'un remplacement validé (change_type). Un jour remplacé sans
+    // nouvelle cible d'allure n'a plus de cible : on ne compare rien.
     const day = planDayFor(sess.d);
+    if (day && day._replaced_by_coach) {
+      return day.target_pace
+        ? {pace: day.target_pace, source: 'replaced', heritee: null}
+        : null;
+    }
     if (day && (day._rescheduled_pace || day.target_pace)) {
       return {
         pace: day._rescheduled_pace || day.target_pace,
@@ -4903,6 +4910,15 @@
       displayDesc = escapeHtml(d._rescheduled_desc || '').replace(/\n/g, '<br/>');
       rescheduledBlock = `<div class="plan-reschedule-banner">
         ↻ Séance clé reprogrammée depuis le ${(new Date(d._rescheduled_from)).toLocaleDateString('fr-FR', {weekday:'long', day:'numeric'})} (manquée)
+      </div>`;
+    }
+    // Séance remplacée par le coach : le titre affiché est le nouveau, on
+    // signale l'origine plutôt que de laisser croire à une séance clé ratée.
+    if (d._replaced_by_coach && d._replaced_from) {
+      rescheduledBlock += `<div class="plan-replaced-banner">
+        <span class="plan-replaced-ico">✓</span>
+        <span>Séance remplacée par le coach (validée). Prévue à l'origine :
+        <b>${escapeHtml(d._replaced_from.title || '—')}</b></span>
       </div>`;
     }
 

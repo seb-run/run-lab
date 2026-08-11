@@ -38,10 +38,63 @@ ID_RE = re.compile(r'^[0-9a-f]{6,32}$')
 VALID_ACTIONS = ('accept', 'reject')
 
 # Types dont la valeur est structurée et peut être appliquée telle quelle.
-# Tout le reste (move_session, change_type, restructure_week, other) est une
-# consigne en langage naturel : on l'inscrit dans la description du jour plutôt
-# que de tenter une réécriture automatique du plan, qui serait devinée.
 STRUCTURED_KINDS = {'volume_adjust'}
+
+# Types qui remplacent une séance : ils doivent porter un bloc `replacement`
+# structuré (title, type, km, target_pace, description). Sans lui, la cible
+# d'origine reste et le réalisé sera jugé contre elle — ce qui a produit le
+# célèbre « Échouée 54 » sur un footing récup validé à la place d'un seuil.
+REPLACEMENT_KINDS = {'change_type', 'move_session', 'change_pace'}
+
+
+def _apply_replacement(day: dict, prop: dict) -> tuple[bool, str]:
+    """Remplace la séance du jour par ce que le coach a validé.
+
+    Si le bloc `replacement` est structuré, on écrase les champs concernés
+    et on efface la cible d'origine pour que le scoring ne compare plus. Sinon,
+    on annule silencieusement la cible d'allure et on marque le jour comme
+    remplacé — pour ne pas afficher un échec factice contre une cible caduque.
+    """
+    r = prop.get('replacement') or {}
+    orig_title = day.get('title')
+    orig_pace = day.get('target_pace')
+
+    if isinstance(r, dict) and r:
+        if r.get('title'):
+            day['title'] = str(r['title'])[:80]
+        if r.get('type'):
+            day['type'] = str(r['type'])
+        if r.get('km') is not None:
+            try:
+                day['km'] = round(float(r['km']), 1)
+            except (TypeError, ValueError):
+                pass
+        # target_pace : on l'écrase si donnée, on l'efface sinon (une cible
+        # d'origine laissée là ferait rougir le score).
+        if r.get('target_pace'):
+            day['target_pace'] = str(r['target_pace'])
+        else:
+            day.pop('target_pace', None)
+        if r.get('description'):
+            day['description'] = str(r['description'])
+    else:
+        # Rétrocompatibilité : anciennes propositions sans bloc replacement.
+        # On efface la cible d'allure pour désactiver la comparaison — la
+        # consigne libre reste visible dans coach_notes.
+        day.pop('target_pace', None)
+
+    day['_replaced_by_coach'] = True
+    day['_replaced_from'] = {'title': orig_title, 'target_pace': orig_pace}
+
+    txt = (r.get('description') or '').strip() or \
+          (prop.get('new_value') if isinstance(prop.get('new_value'), str) else '')
+    day.setdefault('coach_notes', []).append({
+        'kind': 'replacement',
+        'from_title': orig_title, 'to_title': day.get('title'),
+        'text': (txt or '').strip()[:400],
+        'validated': True,
+    })
+    return True, f"{prop.get('date')} : {orig_title or '?'} → {day.get('title') or '?'}"
 
 
 def load(path: Path, default=None):
@@ -78,6 +131,9 @@ def apply_to_plan(plan: dict, prop: dict) -> tuple[bool, str]:
 
     kind = prop.get('kind')
     reason = (prop.get('reason') or '').strip()
+
+    if kind in REPLACEMENT_KINDS:
+        return _apply_replacement(day, prop)
 
     if kind in STRUCTURED_KINDS and prop.get('field') == 'km':
         try:

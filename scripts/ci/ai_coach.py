@@ -183,13 +183,21 @@ Réponds UNIQUEMENT avec un JSON valide, sans markdown :
       "date": "YYYY-MM-DD",
       "field": "km" | "description_note" | null,
       "new_value": <nombre pour km, texte pour note, sinon description du changement>,
-      "reason": "justification courte"
+      "reason": "justification courte",
+      "replacement": {
+        "title": "titre court de la nouvelle séance (ex. Footing récup)",
+        "type":  "recovery | easy | endurance | tempo | seuil | vma | long | shake",
+        "km":    12.0,
+        "target_pace": "5'40\"/km",
+        "description": "consigne complète pour Sébastien (4-6 lignes max)"
+      }
     }
   ]
 }
 
 Règles :
 - "minor" = uniquement volume_adjust (±10 % max) ou add_note sur un jour futur. Tout le reste est "major".
+- `replacement` : obligatoire pour change_type, move_session et change_pace, absent pour les autres. C'est ce bloc qui remplace concrètement la séance quand Sébastien valide — sans lui, la cible d'origine reste et son réalisé sera jugé contre elle.
 - Ne propose des changements QUE si les données le justifient. Zéro proposition est une réponse valable.
 - Jamais de modification du jour de course.
 - Si plusieurs séances clés échouées/manquées, privilégie la réduction de charge, pas l'ajout.
