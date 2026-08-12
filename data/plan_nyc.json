@@ -7558,7 +7558,7 @@
           "key": false,
           "description": "11 km à 5'25-5'40/km. Vérifie la raideur matinale : si elle a augmenté après la séance d'hier, remplace par 30 min de vélo.",
           "target_pace": "5'40\"/km",
-          "status": "pending",
+          "status": "today",
           "shoe": "Pegasus 40 (fin de vie)",
           "shoe_note": "Uniquement les récups courtes et lentes : c'est ton seul 10 mm, mais la semelle est morte.",
           "_shoe_key": "peg40",
@@ -7642,14 +7642,32 @@
               "from": 21.6,
               "to": 19.5,
               "reason": "Tendance à largement dépasser les distances prévues sur les sorties longues (26 vs 20km le 09/08) associée à des signaux de fatigue mécanique ; réduire légèrement la cible prévue laisse une marge avant un nouveau dépassement incontrôlé, surtout si la chaleur persiste."
+            },
+            {
+              "kind": "note",
+              "text": "Respecte les 19.5km prévus sans rallonger, même si les jambes semblent fraîches. Hydrate-toi bien si chaleur — ta dernière longue (09/08) a montré une vraie dérive mécanique (stance +8.9%) en dépassant le volume prévu."
             }
           ]
         }
       ],
       "focus": "Première vraie séance de seuil depuis le 3 mai, et premier contact avec l'allure marathon. Tout sur sol souple.",
-      "volume_actual_to_date": 0.0,
-      "volume_planned_to_date": 0.0,
-      "volume_drift_pct": 0
+      "volume_actual_to_date": 12.0,
+      "volume_planned_to_date": 13.5,
+      "volume_drift_pct": -11.1,
+      "compliance": {
+        "km_pct": 89,
+        "km_done": 12.0,
+        "km_planned": 13.5,
+        "km_done_week": 12.0,
+        "km_planned_week": 70.0,
+        "sessions_done": 1,
+        "sessions_planned": 1,
+        "sessions_done_week": 1,
+        "keys_success": 0,
+        "keys_total": 1,
+        "points": 75,
+        "verdict": "partial"
+      }
     },
     {
       "week_num": 11,

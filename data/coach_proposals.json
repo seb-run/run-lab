@@ -237,6 +237,36 @@
    "created_at": "2026-08-11T06:35:55",
    "decided_at": "2026-08-11T06:47:07",
    "applied_detail": "2026-08-11 : consigne inscrite (change_type)"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-08-13",
+   "field": "description_note",
+   "new_value": "Remplacement de la séance MP par un footing d'endurance pour laisser la fatigue mécanique de la longue du 09/08 se résorber avant de retenter du seuil",
+   "reason": "Séance clé de seuil ratée la veille (allure +31s/km) juste après une longue à 130% du volume avec drift mécanique de 8.9% et RPE 9 — un jour de repos n'a pas suffi à absorber cette charge, enchaîner une MP maintenant risque un nouvel échec et casse la confiance avant le bloc spécifique",
+   "replacement": {
+    "title": "Footing endurance",
+    "type": "easy",
+    "km": 12.0,
+    "target_pace": "5'20\"/km",
+    "description": "Allure strictement facile, pas de blocs d'allure marathon aujourd'hui. Objectif : faire circuler les jambes sans les fatiguer davantage. Si sensation de lourdeur ou douleur Achille, coupe à 8-9km. Cadence naturelle, pas de forçage."
+   },
+   "id": "76060dbd",
+   "status": "pending",
+   "created_at": "2026-08-12T06:59:08"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-08-12",
+   "field": "description_note",
+   "new_value": "Récup stricte aujourd'hui : reste sous 5'40/km et ne dépasse pas les 11km prévus, même si tu te sens bien. Ton corps a besoin de cette vraie coupure avant la reprise du bloc qualité.",
+   "reason": "Historique récent montre une tendance systématique à transformer les jours faciles/récup en sorties bonus (ex. 07/08, 08/08, 09/08), ce qui a directement précédé l'échec de la séance seuil du 11/08",
+   "id": "6c24f30d",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-08-12T06:59:08"
   }
  ]
 }
