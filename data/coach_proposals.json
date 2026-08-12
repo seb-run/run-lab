@@ -253,8 +253,9 @@
     "description": "Allure strictement facile, pas de blocs d'allure marathon aujourd'hui. Objectif : faire circuler les jambes sans les fatiguer davantage. Si sensation de lourdeur ou douleur Achille, coupe à 8-9km. Cadence naturelle, pas de forçage."
    },
    "id": "76060dbd",
-   "status": "pending",
-   "created_at": "2026-08-12T06:59:08"
+   "status": "rejected",
+   "created_at": "2026-08-12T06:59:08",
+   "decided_at": "2026-08-12T14:52:52"
   },
   {
    "severity": "minor",
