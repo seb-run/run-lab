@@ -1,45 +1,45 @@
 {
- "headline": "Seuil non réalisé : quasi tout le footing à 5'26/km, un seul km lancé au lieu de 6x3min.",
+ "headline": "Allure des répétitions 7\"/km plus rapide que la cible, à l'encontre de la consigne du jour",
  "bullets": [
-  "Volume 89% (12/13,5km), allure +31s/km vs cible seuil 3'50 : séance classée échouée.",
-  "Structure explosée : 11 km à ~5'26/km + 1 km à 4'21/km, loin des 6x3min prévus à 3'50-3'55.",
-  "Chaleur 28-32°C, FC moy 141 (réf 147 sur allures comparables) : cohérent avec ce rythme très cool."
+  "Fractions à 4'05\"/km vs cible 4'10-4'12 : plus vite que l'allure autorisée par le plan",
+  "FC 147 vs 150 en moyenne sur séances comparables, malgré l'allure plus rapide et 28-31°C",
+  "Asymétrie d'appui : 51,4% en lent contre 48,5% en rapide, elle s'ouvre avec la vitesse"
  ],
  "points": [
   {
-   "label": "Allure moyenne",
-   "valeur": "5'22/km",
-   "ecart": "+31s/km vs cible seuil (3'50)",
-   "lecture": "Séance très en dessous du plan prévu",
+   "label": "Allure fractions",
+   "valeur": "4'05\"/km",
+   "ecart": "-7\" vs cible 4'12\"",
+   "lecture": "plus rapide que la limite fixée par le plan",
    "ton": "vigilance"
   },
   {
-   "label": "Equilibre G/D",
-   "valeur": "50.4%",
-   "ecart": "proche réf 50.46% (60j)",
-   "lecture": "Pas de décharge du côté droit",
+   "label": "Temps de contact",
+   "valeur": "224 ms",
+   "ecart": "-4,6 ms vs réf. 228,6 ms",
+   "lecture": "appui plus court que d'habitude",
    "ton": "bon"
   },
   {
-   "label": "Asym vs allure",
-   "valeur": "-0.54",
-   "ecart": "négatif = asym. ne s'ouvre pas avec la vitesse",
-   "lecture": "Signature différente de l'épisode adducteur",
-   "ton": "bon"
+   "label": "Asymétrie lent/rapide",
+   "valeur": "51,4% / 48,5%",
+   "ecart": "asym_vs_allure +0,13",
+   "lecture": "l'équilibre se dégrade quand ça accélère",
+   "ton": "vigilance"
   }
  ],
- "achille": "Equilibre stable (49.6-51.1%), aucune dérive vers la décharge du droit ce jour.",
- "a_surveiller": "Dérive FC +11% tirée par le seul km rapide final, pas un vrai signal de fatigue.",
+ "achille": "Équilibre global 50,0% quasi identique à ta réf. 50,4%, mais descend à 47-48% pendant les rapides.",
+ "a_surveiller": "Le motif asymétrie-qui-s'ouvre-avec-la-vitesse rappelle ton épisode adducteur, à surveiller sans conclure.",
  "seance": {
-  "date": "11/08/2026",
-  "heure": "08:54",
-  "titre": "i174633698",
-  "type_detecte": "footing",
-  "km": 12.01,
-  "duree": "1h 04m 22s",
-  "allure": "5'22\"/km",
-  "fc_moy": 141
+  "date": "13/08/2026",
+  "heure": "07:31",
+  "titre": "i175361426",
+  "type_detecte": "frac_court",
+  "km": 13.8,
+  "duree": "1h 07m 56s",
+  "allure": "4'55\"/km",
+  "fc_moy": 147
  },
- "generated_at": "2026-08-11T08:08:30",
- "baseline_n": 21
+ "generated_at": "2026-08-13T06:58:38",
+ "baseline_n": 27
 }

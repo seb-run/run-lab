@@ -266,8 +266,26 @@
    "reason": "Historique récent montre une tendance systématique à transformer les jours faciles/récup en sorties bonus (ex. 07/08, 08/08, 09/08), ce qui a directement précédé l'échec de la séance seuil du 11/08",
    "id": "6c24f30d",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-08-12T06:59:08"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-08-13",
+   "field": null,
+   "new_value": "Remplacement de la séance allure marathon par un footing de récupération",
+   "reason": "Fatigue accumulée : sortie longue du 9/08 en surcharge (+30% volume, RPE 9, dérive mécanique +8.9%), seuil du 11/08 raté (couru 90s/km trop lent que la cible), récup du 12/08 manquée. Enchaîner une séance MP intense maintenant risque un nouvel échec et prolonge la fatigue avant le seuil clé du 18/08.",
+   "replacement": {
+    "title": "Footing récupération",
+    "type": "recovery",
+    "km": 11.0,
+    "target_pace": "5'40\"/km",
+    "description": "Vraie récup : allure strictement sous 5'40/km, FC sous 140 si possible. Objectif = digérer la sortie longue du 9/08, pas performer. Coupe la séance si les jambes sont lourdes, aucune ligne d'accélération aujourd'hui."
+   },
+   "id": "0fb897a4",
+   "status": "pending",
+   "created_at": "2026-08-13T06:58:01"
   }
  ]
 }
