@@ -284,8 +284,9 @@
     "description": "Vraie récup : allure strictement sous 5'40/km, FC sous 140 si possible. Objectif = digérer la sortie longue du 9/08, pas performer. Coupe la séance si les jambes sont lourdes, aucune ligne d'accélération aujourd'hui."
    },
    "id": "0fb897a4",
-   "status": "pending",
-   "created_at": "2026-08-13T06:58:01"
+   "status": "rejected",
+   "created_at": "2026-08-13T06:58:01",
+   "decided_at": "2026-08-13T14:28:53"
   }
  ]
 }
