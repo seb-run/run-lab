@@ -1520,87 +1520,7 @@
                 }
               },
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 334,
-                "fc": 126,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 294,
-                "fc": 137,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 299,
-                "fc": 128,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 299,
-                "fc": 139,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 304,
-                "fc": 144,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 311,
-                "fc": 153,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 297,
-                "fc": 145,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 291,
-                "fc": 146,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 299,
-                "fc": 144,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 299,
-                "fc": 145,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 297,
-                "fc": 146,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 303,
-                "fc": 148,
-                "ca": 176
-              },
-              {
-                "km": 0.45,
-                "ps": 314,
-                "fc": 146,
-                "ca": 172
-              }
-            ]
+            }
           },
           "score": null
         },
@@ -7736,7 +7656,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending",
+          "status": "today",
           "actual": null
         },
         {
@@ -7802,22 +7722,22 @@
         }
       ],
       "focus": "Première vraie séance de seuil depuis le 3 mai, et premier contact avec l'allure marathon. Tout sur sol souple.",
-      "volume_actual_to_date": 12.0,
-      "volume_planned_to_date": 24.5,
-      "volume_drift_pct": -51.0,
+      "volume_actual_to_date": 25.8,
+      "volume_planned_to_date": 39.5,
+      "volume_drift_pct": -34.7,
       "compliance": {
-        "km_pct": 49,
-        "km_done": 12.0,
-        "km_planned": 24.5,
+        "km_pct": 65,
+        "km_done": 25.8,
+        "km_planned": 39.5,
         "km_done_week": 25.8,
         "km_planned_week": 75.0,
-        "sessions_done": 1,
-        "sessions_planned": 2,
+        "sessions_done": 2,
+        "sessions_planned": 3,
         "sessions_done_week": 2,
-        "keys_success": 0,
-        "keys_total": 1,
-        "points": 51,
-        "verdict": "failed"
+        "keys_success": 1,
+        "keys_total": 2,
+        "points": 70,
+        "verdict": "partial"
       }
     },
     {
@@ -7855,7 +7775,13 @@
           "shoe": "Adizero Boston 13",
           "shoe_note": "Dynamique et ferme, pour le travail rapide.",
           "_shoe_key": "boston13",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Ta dernière séance seuil (11/08) a été totalement ratée (5'25/km au lieu de 3'50, probablement lié à la sortie longue trop dure 2 jours avant). Échauffe-toi bien, démarre le premier 2000m un cran sous la cible et vérifie tes sensations avant d'enchaîner — si ça ne vient pas dans le 2e répétition, ré"
+            }
+          ]
         },
         {
           "date": "2026-08-19",

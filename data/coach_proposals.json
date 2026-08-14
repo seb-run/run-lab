@@ -287,6 +287,24 @@
    "status": "rejected",
    "created_at": "2026-08-13T06:58:01",
    "decided_at": "2026-08-13T14:28:53"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-08-16",
+   "field": null,
+   "new_value": "Suppression du finish rapide, volume légèrement réduit",
+   "reason": "La dernière sortie longue similaire (26km réalisés, 130% du plan) a produit un RPE9, un decoupling de 9.1% et un stance_drift de 8.9%, suivie 48h après d'un échec total de la séance seuil. Deux séances clés arrivent cette semaine (seuil mardi, MP jeudi) : il faut arriver dessus récupéré, pas cramé par le long.",
+   "replacement": {
+    "title": "Sortie longue régulière",
+    "type": "long",
+    "km": 22.0,
+    "target_pace": "4'55\"/km",
+    "description": "22km à allure régulière 4'55/km, sans accélération finale cette fois. Coupe-la net si tu sens les jambes lourdes après 18-19km plutôt que de forcer un finish. Objectif : accumuler du volume digeste, pas cramer les jambes avant le bloc seuil+MP qui arrive juste après."
+   },
+   "id": "e452e59b",
+   "status": "pending",
+   "created_at": "2026-08-14T06:59:48"
   }
  ]
 }
