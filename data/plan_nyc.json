@@ -7686,11 +7686,11 @@
           "date": "2026-08-16",
           "dow": "Sun",
           "type": "long",
-          "title": "Sortie longue avec finish",
-          "km": 24.5,
+          "title": "Sortie longue régulière",
+          "km": 20.0,
           "duration_min": 118,
           "key": false,
-          "description": "24 km : 18 km à 4'55-5'05/km puis les 6 derniers à 4'20-4'25/km. Premier vrai test de fin de sortie en fatigue.\n[COACH IA : volume ajusté 24→21.6 km — Prudence sur la 2e longue de la semaine tant que la régularité n'est pas revalidée sur les séances clés précédentes ; ajustement de -10% max en attendant de voir comment passe le début de semaine]",
+          "description": "22km à allure régulière 4'55/km, sans accélération finale cette fois. Coupe-la net si tu sens les jambes lourdes après 18-19km plutôt que de forcer un finish. Objectif : accumuler du volume digeste, pas cramer les jambes avant le bloc seuil+MP qui arrive juste après.",
           "target_pace": "4'55\"/km",
           "status": "pending",
           "shoe": "Adizero Boston 13",
@@ -7716,9 +7716,31 @@
             {
               "kind": "note",
               "text": "Respecte le kilométrage prévu (24.5km avec le boost déjà appliqué) sans le dépasser comme le 9/08. Hydratation + électrolytes si chaleur, allure 4'55/km stricte sur la première moitié, le finish seulement si les sensations sont bonnes."
+            },
+            {
+              "kind": "replacement",
+              "from_title": "Sortie longue avec finish",
+              "to_title": "Sortie longue régulière",
+              "text": "22km à allure régulière 4'55/km, sans accélération finale cette fois. Coupe-la net si tu sens les jambes lourdes après 18-19km plutôt que de forcer un finish. Objectif : accumuler du volume digeste, pas cramer les jambes avant le bloc seuil+MP qui arrive juste après.",
+              "validated": true
+            },
+            {
+              "kind": "volume",
+              "from": 22.0,
+              "to": 20.0,
+              "reason": "Dernière sortie longue (09/08) a montré un vrai signal de fatigue mécanique (stance_drift +8.9%, RPE9) par forte chaleur. Réduire légèrement cette longue avant d'enchaîner sur une semaine chargée (seuil + MP + 2e longue)."
+            },
+            {
+              "kind": "note",
+              "text": "Chaleur probable : pars tôt si possible, hydrate-toi bien avant/pendant. Cale-toi sur les sensations et la FC plutôt que sur l'allure cible si ça grimpe — pas d'enjeu à forcer le chrono ici."
             }
           ],
-          "_adapt_volume": true
+          "_adapt_volume": true,
+          "_replaced_by_coach": true,
+          "_replaced_from": {
+            "title": "Sortie longue avec finish",
+            "target_pace": "4'55\"/km"
+          }
         }
       ],
       "focus": "Première vraie séance de seuil depuis le 3 mai, et premier contact avec l'allure marathon. Tout sur sol souple.",
@@ -7730,7 +7752,7 @@
         "km_done": 25.8,
         "km_planned": 39.5,
         "km_done_week": 25.8,
-        "km_planned_week": 75.0,
+        "km_planned_week": 70.5,
         "sessions_done": 2,
         "sessions_planned": 3,
         "sessions_done_week": 2,
@@ -7780,6 +7802,10 @@
             {
               "kind": "note",
               "text": "Ta dernière séance seuil (11/08) a été totalement ratée (5'25/km au lieu de 3'50, probablement lié à la sortie longue trop dure 2 jours avant). Échauffe-toi bien, démarre le premier 2000m un cran sous la cible et vérifie tes sensations avant d'enchaîner — si ça ne vient pas dans le 2e répétition, ré"
+            },
+            {
+              "kind": "note",
+              "text": "Vise l'allure seuil mais priorise la FC/l'effort si la chaleur est là — le seuil du 11/08 a montré des chiffres contradictoires (allure moyenne loin de la cible mais FC basse et ressenti 'Fort'), donc ne cherche pas à rattraper une contre-perf qui n'en était probablement pas une."
             }
           ]
         },

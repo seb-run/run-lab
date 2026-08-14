@@ -303,8 +303,10 @@
     "description": "22km à allure régulière 4'55/km, sans accélération finale cette fois. Coupe-la net si tu sens les jambes lourdes après 18-19km plutôt que de forcer un finish. Objectif : accumuler du volume digeste, pas cramer les jambes avant le bloc seuil+MP qui arrive juste après."
    },
    "id": "e452e59b",
-   "status": "pending",
-   "created_at": "2026-08-14T06:59:48"
+   "status": "accepted",
+   "created_at": "2026-08-14T06:59:48",
+   "decided_at": "2026-08-14T20:34:33",
+   "applied_detail": "2026-08-16 : Sortie longue avec finish → Sortie longue régulière"
   }
  ]
 }
