@@ -7656,7 +7656,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "today",
+          "status": "done",
           "actual": null
         },
         {
@@ -7669,7 +7669,7 @@
           "key": false,
           "description": "11 km + 6×20\" en côte modérée (5-6%), montée en souplesse, descente en marchant.\n⚠️ À faire seulement si l'Achille est silencieux au démarrage. Sinon : 8 lignes sur le plat à la place.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
+          "status": "today",
           "_easy_idx": 2,
           "shoe": "Evo SL (usagée)",
           "shoe_note": "Footings faciles jusqu'à épuisement de la paire.",
