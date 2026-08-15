@@ -7669,18 +7669,202 @@
           "key": false,
           "description": "11 km + 6×20\" en côte modérée (5-6%), montée en souplesse, descente en marchant.\n⚠️ À faire seulement si l'Achille est silencieux au démarrage. Sinon : 8 lignes sur le plat à la place.",
           "target_pace": "5'20\"/km",
-          "status": "today",
+          "status": "done",
           "_easy_idx": 2,
           "shoe": "Evo SL (usagée)",
           "shoe_note": "Footings faciles jusqu'à épuisement de la paire.",
           "_shoe_key": "evosl_old",
-          "actual": null,
+          "actual": {
+            "km": 11.3,
+            "duration_min": 58,
+            "pace_sec": 308,
+            "pace_str": "5'08\"/km",
+            "fc": 147,
+            "cadence": 174,
+            "type": "endurance",
+            "title": "i176018941",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 220.0,
+              "osc_cm": 11.1,
+              "vratio": 9.91,
+              "balance_l": 50.49,
+              "step_m": 1.11,
+              "temp_c": 30,
+              "temp_max": 33,
+              "resp": 31.6,
+              "power": 375,
+              "np": 382,
+              "te_aero": 3.7,
+              "te_ana": 2.8,
+              "load": 228.5,
+              "strides": 5053,
+              "rpe": 3.0,
+              "feel": 50,
+              "feel_label": "Normal",
+              "drift": {
+                "stance": {
+                  "start": 222.0,
+                  "end": 208.0,
+                  "pct": -6.0
+                },
+                "step": {
+                  "start": 1063.0,
+                  "end": 1242.0,
+                  "pct": 16.8
+                },
+                "vratio": {
+                  "start": 10.16,
+                  "end": 9.05,
+                  "pct": -11.0
+                },
+                "osc": {
+                  "start": 110.0,
+                  "end": 111.0,
+                  "pct": 0.3
+                },
+                "hr": {
+                  "start": 140.0,
+                  "end": 163.0,
+                  "pct": 16.8
+                },
+                "cad": {
+                  "start": 87.5,
+                  "end": 86.7,
+                  "pct": -0.9
+                }
+              },
+              "balance_min": 47.86,
+              "balance_max": 51.76,
+              "balance_series": [
+                51.76,
+                51.16,
+                50.55,
+                50.5,
+                50.74,
+                50.45,
+                50.45,
+                50.02,
+                50.59,
+                50.73,
+                47.86,
+                49.89
+              ],
+              "balance_lent": 50.48,
+              "balance_rapide": 49.73,
+              "asym_vs_allure": -0.21,
+              "allure_lent_s": 333,
+              "allure_rapide_s": 269,
+              "rr_beats": 8588,
+              "rmssd_effort": 16.4,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 318,
+                "fc": 133,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 316,
+                "fc": 141,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 320,
+                "fc": 142,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 326,
+                "fc": 142,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 332,
+                "fc": 142,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 316,
+                "fc": 141,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 303,
+                "fc": 147,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 302,
+                "fc": 151,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 312,
+                "fc": 151,
+                "ca": 174
+              },
+              {
+                "km": 0.57,
+                "ps": 329,
+                "fc": 152,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 197,
+                "fc": 182,
+                "ca": 184
+              },
+              {
+                "km": 0.73,
+                "ps": 348,
+                "fc": 162,
+                "ca": 158
+              }
+            ]
+          },
           "coach_notes": [
             {
               "kind": "note",
               "text": "Allure footing = 5'20/km, pas plus vite. Sur les 3 dernières semaines, les footings/récup sont couru systématiquement 15-30s/km trop rapide (FC au-dessus du cap le 4/08). Ralentis, la récup ne compte que si elle est vraiment facile."
             }
-          ]
+          ],
+          "score": {
+            "points": 100,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 103,
+            "volume_points": 100,
+            "pace_points": 100,
+            "pace_target_s": 320,
+            "pace_actual_s": 308,
+            "pace_actual_str": "5'08\"/km",
+            "pace_delta_s": -12,
+            "is_quality": false,
+            "hr": {
+              "avg": 147,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 2.3,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 103%",
+              "Allure −12\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-08-16",
@@ -7733,6 +7917,10 @@
             {
               "kind": "note",
               "text": "Chaleur probable : pars tôt si possible, hydrate-toi bien avant/pendant. Cale-toi sur les sensations et la FC plutôt que sur l'allure cible si ça grimpe — pas d'enjeu à forcer le chrono ici."
+            },
+            {
+              "kind": "note",
+              "text": "Reste strictement sur 20km à 4'55/km, pas de rallonge comme le 9/08 (tu étais monté à 26km avec un stance_drift de +8.9%, signal de fatigue mécanique réelle). Hydrate-toi bien avant si chaleur, coupe si les jambes commencent à taper."
             }
           ],
           "_adapt_volume": true,
@@ -7751,11 +7939,11 @@
         "km_pct": 65,
         "km_done": 25.8,
         "km_planned": 39.5,
-        "km_done_week": 25.8,
+        "km_done_week": 37.1,
         "km_planned_week": 70.5,
         "sessions_done": 2,
         "sessions_planned": 3,
-        "sessions_done_week": 2,
+        "sessions_done_week": 3,
         "keys_success": 1,
         "keys_total": 2,
         "points": 70,
@@ -7806,6 +7994,10 @@
             {
               "kind": "note",
               "text": "Vise l'allure seuil mais priorise la FC/l'effort si la chaleur est là — le seuil du 11/08 a montré des chiffres contradictoires (allure moyenne loin de la cible mais FC basse et ressenti 'Fort'), donc ne cherche pas à rattraper une contre-perf qui n'en était probablement pas une."
+            },
+            {
+              "kind": "note",
+              "text": "Le seuil du 11/08 s'est totalement effondré (5'20-5'30 au lieu de 3'50, RPE bas). Avant de forcer l'allure, teste les 2-3 premières fractions : si ça ne vient pas, bascule en endurance active plutôt que de t'acharner sur un chrono qui ne passe pas."
             }
           ]
         },
@@ -7880,7 +8072,7 @@
           "dow": "Sun",
           "type": "long",
           "title": "Sortie longue",
-          "km": 22.0,
+          "km": 20.0,
           "duration_min": 108,
           "key": false,
           "description": "22 km à 4'50-5'00/km. Régulier, sans accélération finale.",
@@ -7889,7 +8081,15 @@
           "shoe": "Evo SL (neuve)",
           "shoe_note": "Légère et amortie, confortable sur la durée.",
           "_shoe_key": "evosl_new",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "volume",
+              "from": 22.0,
+              "to": 20.0,
+              "reason": "Semaine avec 3 séances clés (seuil 18/08, MP 20/08, seuil long 25/08) et compliance en dents de scie sur les 4 dernières semaines (70/62/110/65%). Réduire légèrement cette longue (-9%) sécurise l'enchaînement avant le seuil long du 25/08, sans casser la progression."
+            }
+          ]
         }
       ],
       "focus": "Début du plan définitif. Structure fixe : seuil le mardi, allure marathon le jeudi, sortie longue le dimanche."
