@@ -1,13 +1,14 @@
 {
  "garmin": {
   "ok": true,
-  "at": "2026-08-15T09:09:54",
-  "message": "0 fichier(s), 5 course(s) vues",
-  "last_ok": "2026-08-15T09:09:54"
+  "at": "2026-08-16T06:01:30",
+  "message": "0 fichier(s), 4 course(s) vues",
+  "last_ok": "2026-08-16T06:01:30"
  },
  "coach": {
-  "ok": true,
-  "at": "2026-08-15T09:07:43",
+  "ok": false,
+  "at": "2026-08-16T06:02:21",
+  "message": "JSONDecodeError: Expecting ',' delimiter: line 1 column 978 (char 977)",
   "last_ok": "2026-08-15T09:07:43"
  },
  "debrief": {

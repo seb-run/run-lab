@@ -1644,237 +1644,7 @@
                 "stance_fade",
                 "step_fade"
               ]
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 303,
-                "fc": 131,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 309,
-                "fc": 151,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 293,
-                "fc": 156,
-                "ca": 175
-              },
-              {
-                "km": 1.0,
-                "ps": 291,
-                "fc": 156,
-                "ca": 175
-              },
-              {
-                "km": 1.0,
-                "ps": 311,
-                "fc": 145,
-                "ca": 175
-              },
-              {
-                "km": 1.0,
-                "ps": 314,
-                "fc": 146,
-                "ca": 174
-              },
-              {
-                "km": 1.0,
-                "ps": 310,
-                "fc": 152,
-                "ca": 174
-              },
-              {
-                "km": 0.24,
-                "ps": 326,
-                "fc": 141,
-                "ca": 178
-              },
-              {
-                "km": 0.62,
-                "ps": 212,
-                "fc": 166,
-                "ca": 187
-              },
-              {
-                "km": 0.14,
-                "ps": 416,
-                "fc": 158,
-                "ca": 159
-              },
-              {
-                "km": 0.39,
-                "ps": 205,
-                "fc": 170,
-                "ca": 181
-              },
-              {
-                "km": 0.13,
-                "ps": 469,
-                "fc": 155,
-                "ca": 128
-              },
-              {
-                "km": 0.2,
-                "ps": 183,
-                "fc": 166,
-                "ca": 184
-              },
-              {
-                "km": 0.43,
-                "ps": 419,
-                "fc": 142,
-                "ca": 153
-              },
-              {
-                "km": 0.6,
-                "ps": 205,
-                "fc": 173,
-                "ca": 184
-              },
-              {
-                "km": 0.14,
-                "ps": 423,
-                "fc": 160,
-                "ca": 138
-              },
-              {
-                "km": 0.4,
-                "ps": 190,
-                "fc": 176,
-                "ca": 187
-              },
-              {
-                "km": 0.13,
-                "ps": 453,
-                "fc": 164,
-                "ca": 134
-              },
-              {
-                "km": 0.2,
-                "ps": 189,
-                "fc": 170,
-                "ca": 187
-              },
-              {
-                "km": 0.38,
-                "ps": 468,
-                "fc": 140,
-                "ca": 133
-              },
-              {
-                "km": 0.6,
-                "ps": 204,
-                "fc": 175,
-                "ca": 183
-              },
-              {
-                "km": 0.12,
-                "ps": 473,
-                "fc": 162,
-                "ca": 136
-              },
-              {
-                "km": 0.4,
-                "ps": 193,
-                "fc": 175,
-                "ca": 189
-              },
-              {
-                "km": 0.12,
-                "ps": 464,
-                "fc": 166,
-                "ca": 137
-              },
-              {
-                "km": 0.2,
-                "ps": 171,
-                "fc": 175,
-                "ca": 194
-              },
-              {
-                "km": 0.4,
-                "ps": 452,
-                "fc": 144,
-                "ca": 137
-              },
-              {
-                "km": 0.6,
-                "ps": 197,
-                "fc": 180,
-                "ca": 188
-              },
-              {
-                "km": 0.14,
-                "ps": 442,
-                "fc": 167,
-                "ca": 142
-              },
-              {
-                "km": 0.4,
-                "ps": 176,
-                "fc": 182,
-                "ca": 190
-              },
-              {
-                "km": 0.13,
-                "ps": 471,
-                "fc": 171,
-                "ca": 138
-              },
-              {
-                "km": 0.21,
-                "ps": 155,
-                "fc": 180,
-                "ca": 195
-              },
-              {
-                "km": 1.0,
-                "ps": 362,
-                "fc": 152,
-                "ca": 169
-              },
-              {
-                "km": 1.0,
-                "ps": 323,
-                "fc": 146,
-                "ca": 179
-              },
-              {
-                "km": 1.0,
-                "ps": 317,
-                "fc": 150,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 327,
-                "fc": 153,
-                "ca": 181
-              },
-              {
-                "km": 1.0,
-                "ps": 318,
-                "fc": 158,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 321,
-                "fc": 156,
-                "ca": 175
-              },
-              {
-                "km": 0.17,
-                "ps": 342,
-                "fc": 157,
-                "ca": 174
-              }
-            ]
+            }
           },
           "score": {
             "points": 70,
@@ -7876,7 +7646,7 @@
           "key": false,
           "description": "22km à allure régulière 4'55/km, sans accélération finale cette fois. Coupe-la net si tu sens les jambes lourdes après 18-19km plutôt que de forcer un finish. Objectif : accumuler du volume digeste, pas cramer les jambes avant le bloc seuil+MP qui arrive juste après.",
           "target_pace": "4'55\"/km",
-          "status": "pending",
+          "status": "today",
           "shoe": "Adizero Boston 13",
           "shoe_note": "La seule paire fraîche : elle prend tout ce qui compte.",
           "_shoe_key": "boston13",
@@ -7932,21 +7702,21 @@
         }
       ],
       "focus": "Première vraie séance de seuil depuis le 3 mai, et premier contact avec l'allure marathon. Tout sur sol souple.",
-      "volume_actual_to_date": 25.8,
-      "volume_planned_to_date": 39.5,
-      "volume_drift_pct": -34.7,
+      "volume_actual_to_date": 37.1,
+      "volume_planned_to_date": 50.5,
+      "volume_drift_pct": -26.5,
       "compliance": {
-        "km_pct": 65,
-        "km_done": 25.8,
-        "km_planned": 39.5,
+        "km_pct": 73,
+        "km_done": 37.1,
+        "km_planned": 50.5,
         "km_done_week": 37.1,
         "km_planned_week": 70.5,
-        "sessions_done": 2,
-        "sessions_planned": 3,
+        "sessions_done": 3,
+        "sessions_planned": 4,
         "sessions_done_week": 3,
         "keys_success": 1,
         "keys_total": 2,
-        "points": 70,
+        "points": 78,
         "verdict": "partial"
       }
     },
