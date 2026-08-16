@@ -7646,11 +7646,157 @@
           "key": false,
           "description": "22km à allure régulière 4'55/km, sans accélération finale cette fois. Coupe-la net si tu sens les jambes lourdes après 18-19km plutôt que de forcer un finish. Objectif : accumuler du volume digeste, pas cramer les jambes avant le bloc seuil+MP qui arrive juste après.",
           "target_pace": "4'55\"/km",
-          "status": "today",
+          "status": "done",
           "shoe": "Adizero Boston 13",
           "shoe_note": "La seule paire fraîche : elle prend tout ce qui compte.",
           "_shoe_key": "boston13",
-          "actual": null,
+          "actual": {
+            "km": 20.0,
+            "duration_min": 105,
+            "pace_sec": 314,
+            "pace_str": "5'14\"/km",
+            "fc": 157,
+            "cadence": 170,
+            "type": "frac_court",
+            "title": "Morning Run",
+            "n": 1,
+            "note": null,
+            "dyn": null,
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 328,
+                "fc": 134,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 319,
+                "fc": 146,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 319,
+                "fc": 147,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 317,
+                "fc": 148,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 319,
+                "fc": 150,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 318,
+                "fc": 148,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 332,
+                "fc": 154,
+                "ca": 176
+              },
+              {
+                "km": 0.78,
+                "ps": 328,
+                "fc": 149,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 199,
+                "fc": 179,
+                "ca": 185
+              },
+              {
+                "km": 1.0,
+                "ps": 287,
+                "fc": 178,
+                "ca": 153
+              },
+              {
+                "km": 1.0,
+                "ps": 352,
+                "fc": 155,
+                "ca": 171
+              },
+              {
+                "km": 1.0,
+                "ps": 337,
+                "fc": 159,
+                "ca": 172
+              },
+              {
+                "km": 0.79,
+                "ps": 343,
+                "fc": 158,
+                "ca": 172
+              },
+              {
+                "km": 1.0,
+                "ps": 224,
+                "fc": 177,
+                "ca": 179
+              },
+              {
+                "km": 0.72,
+                "ps": 287,
+                "fc": 176,
+                "ca": 159
+              },
+              {
+                "km": 1.0,
+                "ps": 224,
+                "fc": 181,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 371,
+                "fc": 165,
+                "ca": 141
+              },
+              {
+                "km": 0.7,
+                "ps": 372,
+                "fc": 154,
+                "ca": 171
+              },
+              {
+                "km": 1.0,
+                "ps": 380,
+                "fc": 154,
+                "ca": 146
+              },
+              {
+                "km": 0.51,
+                "ps": 371,
+                "fc": 156,
+                "ca": 170
+              },
+              {
+                "km": 1.0,
+                "ps": 285,
+                "fc": 171,
+                "ca": 155
+              },
+              {
+                "km": 0.49,
+                "ps": 355,
+                "fc": 152,
+                "ca": 175
+              }
+            ]
+          },
           "coach_notes": [
             {
               "kind": "volume",
@@ -7698,6 +7844,31 @@
           "_replaced_from": {
             "title": "Sortie longue avec finish",
             "target_pace": "4'55\"/km"
+          },
+          "score": {
+            "points": 100,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 100,
+            "volume_points": 100,
+            "pace_points": 100,
+            "pace_target_s": 295,
+            "pace_actual_s": 314,
+            "pace_actual_str": "5'14\"/km",
+            "pace_delta_s": 19,
+            "is_quality": false,
+            "hr": {
+              "avg": 157,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 6.7,
+              "flags": []
+            },
+            "reasons": [
+              "Séance remplacée par le coach (validée)",
+              "Volume 100%",
+              "Allure +19\"/km vs cible"
+            ]
           }
         }
       ],
@@ -7709,11 +7880,11 @@
         "km_pct": 73,
         "km_done": 37.1,
         "km_planned": 50.5,
-        "km_done_week": 37.1,
+        "km_done_week": 57.1,
         "km_planned_week": 70.5,
         "sessions_done": 3,
         "sessions_planned": 4,
-        "sessions_done_week": 3,
+        "sessions_done_week": 4,
         "keys_success": 1,
         "keys_total": 2,
         "points": 78,

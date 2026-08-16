@@ -1,40 +1,41 @@
 {
- "generated_at": "2026-08-15T09:07:43",
+ "generated_at": "2026-08-16T10:42:52",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-08-12\", \"title\": \"Récupération\", \"type\": \"recovery\", \"planned_km\": 11.0, \"key\": false, \"status\": \"missed\", \"target_pace\": \"5'40\\\"/km\"}, {\"date\": \"2026-08-13\", \"title\": \"Allure marathon · 3×8 min\", \"type\": \"mp\", \"planned_km\": 15.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"4'12\\\"/km\", \"actual\": {\"km\": 13.8, \"pace_str\": \"4'55\\\"/km\", \"fc\": 147, \"cadence\": 174, \"duration_min\": 68}, \"splits\": \"1:5'48/122/174spm 2:5'35/128/172spm 3:5'36/129/174spm 4:5'32/129/172spm 5:4'04/155/178spm 6:4'06/162/176spm 7:6'37/142/166spm 8:4'00/162/178spm 9:4'07/166/176spm 10:6'51/147/166spm 11:4'02/162/178spm 12:4'10/170/176spm 13:6'15/152/170spm 14:5'11/152/174spm 15:5'09/154/174spm 16:5'04/156/174spm\", \"garmin\": {\"te_aero\": 4.1, \"te_ana\": 0.7, \"load\": 201.9, \"rpe\": 4.0, \"feel_label\": \"Fort\", \"temp_c\": 28, \"balance_l\": 50.01, \"flags\": [], \"stance_drift_pct\": -2.9, \"step_drift_pct\": 7.7}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 92, \"pace_delta_s\": -7}, \"hr\": {\"avg\": 147, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 8.3, \"flags\": []}}, {\"date\": \"2026-08-14\", \"title\": \"Repos\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}]",
- "headline": "Ta charge oscille en dents de scie (70%→62%→110%→65%) et la dernière sortie longue a laissé une vraie trace mécanique — la semaine qui arrive concentre 3 séances clés, il faut sécuriser.",
- "analysis": "Sur les 14 derniers jours tu alternes des trous (récup et tempo manqués, semaine 8 à 62% avec seulement 2/6 séances) et des débordements (sortie longue du 9/08 à 26km au lieu de 20, RPE 9, temp 32°C, decoupling 9.1% et surtout un stance_drift de +8.9% qui est un vrai signal de fatigue mécanique, pas juste de la chaleur). Deux jours après cette longue, ton seuil du 11/08 s'est effondré : aucune fraction proche de 3'50, tout roulé à 5'20-5'30, score 54 en échec malgré un RPE ressenti bas — ça sent la fatigue accumulée plus que le manque de forme. La séance MP du 13/08 a mieux tourné sur les blocs rapides (4'00-4'10, proches de la cible) donc les jambes répondent quand la récup est là. Le risque principal cette semaine : tu enchaînes long (20km), seuil clé (18/08), MP clé (20/08), long (22km) et seuil long (25/08) sans marge, alors que le corps vient d'envoyer un signal mécanique clair. Focus de la semaine : consolider plutôt qu'accumuler — respecter les volumes annoncés sans déborder, et n'accepter l'allure seuil que si les jambes répondent, sinon rouler en endurance plutôt que forcer.",
- "applied": [
+ "signature": "[{\"date\": \"2026-08-13\", \"title\": \"Allure marathon · 3×8 min\", \"type\": \"mp\", \"planned_km\": 15.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"4'12\\\"/km\", \"actual\": {\"km\": 13.8, \"pace_str\": \"4'55\\\"/km\", \"fc\": 147, \"cadence\": 174, \"duration_min\": 68}, \"splits\": \"1:5'48/122/174spm 2:5'35/128/172spm 3:5'36/129/174spm 4:5'32/129/172spm 5:4'04/155/178spm 6:4'06/162/176spm 7:6'37/142/166spm 8:4'00/162/178spm 9:4'07/166/176spm 10:6'51/147/166spm 11:4'02/162/178spm 12:4'10/170/176spm 13:6'15/152/170spm 14:5'11/152/174spm 15:5'09/154/174spm 16:5'04/156/174spm\", \"garmin\": {\"te_aero\": 4.1, \"te_ana\": 0.7, \"load\": 201.9, \"rpe\": 4.0, \"feel_label\": \"Fort\", \"temp_c\": 28, \"balance_l\": 50.01, \"flags\": [], \"stance_drift_pct\": -2.9, \"step_drift_pct\": 7.7}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 92, \"pace_delta_s\": -7}, \"hr\": {\"avg\": 147, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 8.3, \"flags\": []}}, {\"date\": \"2026-08-14\", \"title\": \"Repos\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-08-15\", \"title\": \"Footing + côtes courtes\", \"type\": \"easy\", \"planned_km\": 11.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'20\\\"/km\", \"actual\": {\"km\": 11.3, \"pace_str\": \"5'08\\\"/km\", \"fc\": 147, \"cadence\": 174, \"duration_min\": 58}, \"splits\": \"1:5'18/133/176spm 2:5'16/141/174spm 3:5'20/142/176spm 4:5'26/142/174spm 5:5'32/142/174spm 6:5'16/141/174spm 7:5'03/147/176spm 8:5'02/151/174spm 9:5'12/151/174spm 10:5'29/152/174spm 11:3'17/182/184spm 12:5'48/162/158spm\", \"garmin\": {\"te_aero\": 3.7, \"te_ana\": 2.8, \"load\": 228.5, \"rpe\": 3.0, \"feel_label\": \"Normal\", \"temp_c\": 30, \"balance_l\": 50.49, \"flags\": [], \"stance_drift_pct\": -6.0, \"step_drift_pct\": 16.8}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 103, \"pace_delta_s\": -12}, \"hr\": {\"avg\": 147, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 2.3, \"flags\": []}}]",
+ "headline": "Semaine chaotique (chaleur + charge en dents de scie) : le seuil du 11/08 a explosé, la longue du 9/08 a montré une vraie fatigue mécanique — la reprise doit être prudente cette semaine.",
+ "analysis": "Les deux dernières semaines pleines (S7, S8) sont sous 70% de conformité avec plusieurs séances clés manquées (tempo du 6/08, récup du 12/08), puis tu as compensé en S9 avec une sortie longue explosée à 26km au lieu de 20 (+30%), sous 32°C, avec un decoupling à 9.1% et un stance_drift à +8.9% : c'est un vrai signal de fatigue mécanique, pas juste de la dérive cardiaque liée à la chaleur. Le seuil du 11/08 s'est ensuite soldé par un échec total (5'22/km au lieu de 3'50, allure de footing lent) alors que la FC restait basse — probablement les séquelles de cette longue trop dure, amplifiées par une chaleur qui ne lâche pas (28-33°C sur toute la période). En revanche les footings et la séance MP du 13/08 sont bien passés (allures tenues, sensations correctes), donc la base aérobie tient : le problème est ciblé sur l'intensité (seuil) et le volume mal calibré par forte chaleur. Le risque principal cette semaine : enchaîner à nouveau une longue de 20km et un seuil à 5x2000m sans marge alors que le corps sort d'un stance_fade net. Focus de la semaine : sécuriser le volume de la longue de ce dimanche (pas de dérive comme le 9/08), et redonner confiance sur le seuil du 18/08 avec une allure et un format moins exigeants pour rebâtir sans se re-planter.",
+ "applied": [],
+ "pending": [
   {
    "severity": "minor",
    "kind": "add_note",
    "date": "2026-08-16",
    "field": "description_note",
-   "new_value": "Reste strictement sur 20km à 4'55/km, pas de rallonge comme le 9/08 (tu étais monté à 26km avec un stance_drift de +8.9%, signal de fatigue mécanique réelle). Hydrate-toi bien avant si chaleur, coupe si les jambes commencent à taper.",
-   "reason": "La dernière sortie longue a montré une vraie dérive mécanique (stance_drift +8.9%, RPE 9) après un dépassement de volume de 30%. Éviter de répéter le schéma avant une semaine chargée en séances clés.",
-   "id": "02b081cd",
-   "detail": "2026-08-16 : note ajoutée"
+   "new_value": "Chaleur annoncée : reste strictement sur 20km à 4'55/km, ne répète pas le dépassement du 9/08 (26km, stance_drift +8.9%). Hydratation toutes les 20-25min, coupe si FC s'envole sans raison.",
+   "reason": "La dernière sortie longue (9/08) a été dépassée de 30% par forte chaleur avec un stance_drift de +8.9% (signe de fatigue mécanique réelle) et un decoupling à 9.1% — il faut éviter la récidive.",
+   "replacement": null,
+   "id": "de660461",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-08-16T10:42:52"
   },
   {
-   "severity": "minor",
-   "kind": "add_note",
+   "severity": "major",
+   "kind": "change_pace",
    "date": "2026-08-18",
-   "field": "description_note",
-   "new_value": "Le seuil du 11/08 s'est totalement effondré (5'20-5'30 au lieu de 3'50, RPE bas). Avant de forcer l'allure, teste les 2-3 premières fractions : si ça ne vient pas, bascule en endurance active plutôt que de t'acharner sur un chrono qui ne passe pas.",
-   "reason": "Échec net de la dernière séance seuil clé, probablement lié à la fatigue accumulée de la longue précédente. Éviter de reproduire un échec similaire sur la prochaine séance clé.",
-   "id": "e449ea2d",
-   "detail": "2026-08-18 : note ajoutée"
-  },
-  {
-   "severity": "minor",
-   "kind": "volume_adjust",
-   "date": "2026-08-23",
-   "field": "km",
-   "new_value": 20.0,
-   "reason": "Semaine avec 3 séances clés (seuil 18/08, MP 20/08, seuil long 25/08) et compliance en dents de scie sur les 4 dernières semaines (70/62/110/65%). Réduire légèrement cette longue (-9%) sécurise l'enchaînement avant le seuil long du 25/08, sans casser la progression.",
-   "id": "a12ebed9",
-   "detail": "2026-08-23 : 22→20 km"
+   "field": null,
+   "new_value": "Allure seuil ajustée à 3'55-4'00/km sur un format plus court, avec accent sur les sensations plutôt que le chrono strict",
+   "reason": "Le dernier seuil (11/08) s'est totalement effondré (5'22/km au lieu de 3'50, FC pourtant basse), probablement séquelle de la longue trop dure du 9/08 et chaleur persistante (28-33°C partout). Repartir directement sur 5×2000m à 3'50/km strict risque de reproduire l'échec ; mieux vaut un format plus court pour reconstruire la confiance avant de revenir à l'allure cible.",
+   "replacement": {
+    "title": "Seuil progressif · 5×1600m",
+    "type": "seuil",
+    "km": 13.0,
+    "target_pace": "3'55\"-4'00\"/km",
+    "description": "5×1600m à 3'55-4'00/km (au lieu de 3'50 strict), récup 2min trot entre chaque. Priorité aux sensations : si ça tire trop après 2-3 répétitions, arrête-toi là plutôt que de forcer. Échauffement 15min + 4 lignes avant. Vise la régularité plutôt que la vitesse pure vu la chaleur."
+   },
+   "id": "b266e80a",
+   "status": "pending",
+   "created_at": "2026-08-16T10:42:52"
   }
- ],
- "pending": []
+ ]
 }

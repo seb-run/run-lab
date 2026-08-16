@@ -307,6 +307,37 @@
    "created_at": "2026-08-14T06:59:48",
    "decided_at": "2026-08-14T20:34:33",
    "applied_detail": "2026-08-16 : Sortie longue avec finish → Sortie longue régulière"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-08-16",
+   "field": "description_note",
+   "new_value": "Chaleur annoncée : reste strictement sur 20km à 4'55/km, ne répète pas le dépassement du 9/08 (26km, stance_drift +8.9%). Hydratation toutes les 20-25min, coupe si FC s'envole sans raison.",
+   "reason": "La dernière sortie longue (9/08) a été dépassée de 30% par forte chaleur avec un stance_drift de +8.9% (signe de fatigue mécanique réelle) et un decoupling à 9.1% — il faut éviter la récidive.",
+   "replacement": null,
+   "id": "de660461",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-08-16T10:42:52"
+  },
+  {
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-08-18",
+   "field": null,
+   "new_value": "Allure seuil ajustée à 3'55-4'00/km sur un format plus court, avec accent sur les sensations plutôt que le chrono strict",
+   "reason": "Le dernier seuil (11/08) s'est totalement effondré (5'22/km au lieu de 3'50, FC pourtant basse), probablement séquelle de la longue trop dure du 9/08 et chaleur persistante (28-33°C partout). Repartir directement sur 5×2000m à 3'50/km strict risque de reproduire l'échec ; mieux vaut un format plus court pour reconstruire la confiance avant de revenir à l'allure cible.",
+   "replacement": {
+    "title": "Seuil progressif · 5×1600m",
+    "type": "seuil",
+    "km": 13.0,
+    "target_pace": "3'55\"-4'00\"/km",
+    "description": "5×1600m à 3'55-4'00/km (au lieu de 3'50 strict), récup 2min trot entre chaque. Priorité aux sensations : si ça tire trop après 2-3 répétitions, arrête-toi là plutôt que de forcer. Échauffement 15min + 4 lignes avant. Vise la régularité plutôt que la vitesse pure vu la chaleur."
+   },
+   "id": "b266e80a",
+   "status": "pending",
+   "created_at": "2026-08-16T10:42:52"
   }
  ]
 }

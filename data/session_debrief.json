@@ -1,45 +1,45 @@
 {
- "headline": "Footing rapide (-12\"/km vs cible), Achille stable, pas d'asymétrie liée à la vitesse.",
+ "headline": "FC nettement au-dessus de ta référence, allure en dents de scie toute la séance",
  "bullets": [
-  "Équilibre 50,5% vs 50,4% habituel, contact 220ms vs 230ms réf — Achille sans décharge notable.",
-  "Asymétrie vs allure à -0,21 (se referme avec la vitesse) : signal rassurant vs antécédent adducteur.",
-  "FC finale à 182 sur l'accélération du 11e km (3'17/km), cohérente avec l'effort, pas une dérive isolée."
+  "FC moy 157 bpm vs 147.8 hab. à allure comparable (+9 bpm), decoupling 6.7%.",
+  "Allures de 3'19 à 6'20/km alors que le plan demandait du régulier à 4'55/km.",
+  "Cadence chute à 141-155 spm sur plusieurs km vs 175 hab., hors phases rapides."
  ],
  "points": [
   {
-   "label": "Équilibre G/D",
-   "valeur": "50.49%",
-   "ecart": "+0.1pt vs réf 50.39%",
-   "lecture": "stable, Achille non déchargé",
-   "ton": "bon"
+   "label": "FC moyenne",
+   "valeur": "157 bpm",
+   "ecart": "+9 bpm vs réf. 60j (147.8)",
+   "lecture": "effort cardiaque plus élevé qu'à l'accoutumée",
+   "ton": "vigilance"
   },
   {
-   "label": "Asymétrie vs allure",
-   "valeur": "-0.21",
-   "ecart": "ne s'ouvre pas avec la vitesse",
-   "lecture": "rassurant vs antécédent adducteur",
-   "ton": "bon"
+   "label": "Régularité allure",
+   "valeur": "199 à 380 s/km",
+   "ecart": "écart-type très supérieur à une sortie régulière",
+   "lecture": "séance fractionnée, pas régulière comme prévu",
+   "ton": "vigilance"
   },
   {
-   "label": "Temps de contact",
-   "valeur": "220 ms",
-   "ecart": "-10 ms vs réf 229.64ms",
-   "lecture": "foulée plus tonique, allure comparable",
+   "label": "Cadence",
+   "valeur": "141-185 spm",
+   "ecart": "vs 175 hab., forte variabilité",
+   "lecture": "cadence instable selon les segments",
    "ton": "neutre"
   }
  ],
- "achille": "Équilibre 50.49% quasi identique à ta référence (50.39%) — pas de décharge du côté droit.",
- "a_surveiller": "Chaleur 30-33°C et FC à 182 sur l'accélération du 11e km — surveille l'hydratation.",
+ "achille": null,
+ "a_surveiller": "FC élevée + allure irrégulière avant le bloc seuil+MP : vérifie la récup avant d'enchaîner.",
  "seance": {
-  "date": "15/08/2026",
-  "heure": "09:59",
-  "titre": "i176018941",
-  "type_detecte": "endurance",
-  "km": 11.31,
-  "duree": "58m 06s",
-  "allure": "5'08\"/km",
-  "fc_moy": 147
+  "date": "16/08/2026",
+  "heure": "10:48",
+  "titre": "Morning Run",
+  "type_detecte": "frac_court",
+  "km": 20.0,
+  "duree": "1h 44m 42s",
+  "allure": "5'14\"/km",
+  "fc_moy": 157
  },
- "generated_at": "2026-08-15T09:08:21",
+ "generated_at": "2026-08-16T10:43:20",
  "baseline_n": 27
 }
