@@ -1765,57 +1765,7 @@
               "rr_beats": 6163,
               "rmssd_effort": 8.6,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 324,
-                "fc": 127,
-                "ca": 179
-              },
-              {
-                "km": 1.0,
-                "ps": 309,
-                "fc": 140,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 313,
-                "fc": 144,
-                "ca": 177
-              },
-              {
-                "km": 1.0,
-                "ps": 309,
-                "fc": 143,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 300,
-                "fc": 154,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 291,
-                "fc": 155,
-                "ca": 177
-              },
-              {
-                "km": 1.0,
-                "ps": 306,
-                "fc": 154,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 329,
-                "fc": 149,
-                "ca": 173
-              }
-            ]
+            }
           },
           "score": {
             "points": 8,
@@ -7656,42 +7606,126 @@
             "pace_sec": 314,
             "pace_str": "5'14\"/km",
             "fc": 157,
-            "cadence": 170,
+            "cadence": 169,
             "type": "frac_court",
             "title": "Morning Run",
             "n": 1,
             "note": null,
-            "dyn": null,
+            "dyn": {
+              "stance_ms": 216.0,
+              "osc_cm": 10.2,
+              "vratio": 9.26,
+              "balance_l": 49.44,
+              "step_m": 1.11,
+              "temp_c": 29,
+              "temp_max": 32,
+              "resp": 34.2,
+              "power": 349,
+              "np": 376,
+              "te_aero": 5.0,
+              "te_ana": 4.0,
+              "load": 457.1,
+              "strides": 8819,
+              "rpe": 6.0,
+              "feel": 50,
+              "feel_label": "Normal",
+              "drift": {
+                "stance": {
+                  "start": 221.0,
+                  "end": 199.0,
+                  "pct": -10.2
+                },
+                "step": {
+                  "start": 1045.0,
+                  "end": 1146.0,
+                  "pct": 9.7
+                },
+                "vratio": {
+                  "start": 9.66,
+                  "end": 8.63,
+                  "pct": -10.7
+                },
+                "osc": {
+                  "start": 103.0,
+                  "end": 97.0,
+                  "pct": -5.6
+                },
+                "hr": {
+                  "start": 147.0,
+                  "end": 165.0,
+                  "pct": 12.4
+                },
+                "cad": {
+                  "start": 88.4,
+                  "end": 79.4,
+                  "pct": -10.2
+                }
+              },
+              "balance_min": 47.33,
+              "balance_max": 51.01,
+              "balance_series": [
+                49.78,
+                49.1,
+                49.5,
+                49.74,
+                50.28,
+                50.81,
+                51.01,
+                50.26,
+                47.58,
+                47.48,
+                50.33,
+                50.24,
+                50.5,
+                48.87,
+                48.52,
+                48.32,
+                49.2,
+                48.41,
+                47.39,
+                49.82,
+                47.33,
+                48.59
+              ],
+              "balance_lent": 49.17,
+              "balance_rapide": 48.25,
+              "asym_vs_allure": 0.91,
+              "allure_lent_s": 364,
+              "allure_rapide_s": 253,
+              "rr_beats": 17248,
+              "rmssd_effort": 6.6,
+              "flags": []
+            },
             "splits": [
               {
                 "km": 1.0,
                 "ps": 328,
                 "fc": 134,
-                "ca": 178
+                "ca": 176
               },
               {
                 "km": 1.0,
                 "ps": 319,
                 "fc": 146,
-                "ca": 177
+                "ca": 176
               },
               {
                 "km": 1.0,
                 "ps": 319,
                 "fc": 147,
-                "ca": 178
+                "ca": 176
               },
               {
                 "km": 1.0,
-                "ps": 317,
+                "ps": 318,
                 "fc": 148,
                 "ca": 178
               },
               {
                 "km": 1.0,
-                "ps": 319,
+                "ps": 320,
                 "fc": 150,
-                "ca": 179
+                "ca": 178
               },
               {
                 "km": 1.0,
@@ -7713,87 +7747,87 @@
               },
               {
                 "km": 1.0,
-                "ps": 199,
+                "ps": 200,
                 "fc": 179,
-                "ca": 185
+                "ca": 184
               },
               {
                 "km": 1.0,
                 "ps": 287,
                 "fc": 178,
-                "ca": 153
+                "ca": 152
               },
               {
                 "km": 1.0,
-                "ps": 352,
+                "ps": 353,
                 "fc": 155,
-                "ca": 171
+                "ca": 170
               },
               {
                 "km": 1.0,
-                "ps": 337,
+                "ps": 338,
                 "fc": 159,
                 "ca": 172
               },
               {
                 "km": 0.79,
-                "ps": 343,
+                "ps": 344,
                 "fc": 158,
-                "ca": 172
+                "ca": 170
               },
               {
                 "km": 1.0,
-                "ps": 224,
+                "ps": 225,
                 "fc": 177,
-                "ca": 179
+                "ca": 178
               },
               {
                 "km": 0.72,
                 "ps": 287,
                 "fc": 176,
-                "ca": 159
+                "ca": 158
               },
               {
                 "km": 1.0,
                 "ps": 224,
                 "fc": 181,
-                "ca": 179
+                "ca": 178
               },
               {
                 "km": 1.0,
                 "ps": 371,
                 "fc": 165,
-                "ca": 141
+                "ca": 140
               },
               {
                 "km": 0.7,
-                "ps": 372,
-                "fc": 154,
-                "ca": 171
+                "ps": 373,
+                "fc": 153,
+                "ca": 170
               },
               {
                 "km": 1.0,
-                "ps": 380,
+                "ps": 381,
                 "fc": 154,
-                "ca": 146
+                "ca": 144
               },
               {
                 "km": 0.51,
-                "ps": 371,
+                "ps": 372,
                 "fc": 156,
-                "ca": 170
+                "ca": 168
               },
               {
                 "km": 1.0,
                 "ps": 285,
                 "fc": 171,
-                "ca": 155
+                "ca": 154
               },
               {
                 "km": 0.49,
-                "ps": 355,
+                "ps": 356,
                 "fc": 152,
-                "ca": 175
+                "ca": 174
               }
             ]
           },
@@ -7877,18 +7911,18 @@
       "volume_planned_to_date": 50.5,
       "volume_drift_pct": -26.5,
       "compliance": {
-        "km_pct": 73,
-        "km_done": 37.1,
-        "km_planned": 50.5,
+        "km_pct": 81,
+        "km_done": 57.1,
+        "km_planned": 70.5,
         "km_done_week": 57.1,
         "km_planned_week": 70.5,
-        "sessions_done": 3,
-        "sessions_planned": 4,
+        "sessions_done": 4,
+        "sessions_planned": 5,
         "sessions_done_week": 4,
         "keys_success": 1,
         "keys_total": 2,
-        "points": 78,
-        "verdict": "partial"
+        "points": 84,
+        "verdict": "success"
       }
     },
     {
@@ -7909,7 +7943,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "pending",
+          "status": "today",
           "actual": null
         },
         {
@@ -7939,6 +7973,10 @@
             {
               "kind": "note",
               "text": "Le seuil du 11/08 s'est totalement effondré (5'20-5'30 au lieu de 3'50, RPE bas). Avant de forcer l'allure, teste les 2-3 premières fractions : si ça ne vient pas, bascule en endurance active plutôt que de t'acharner sur un chrono qui ne passe pas."
+            },
+            {
+              "kind": "note",
+              "text": "Ta dernière séance seuil (11/08) a craqué juste après une longue trop généreuse en pleine chaleur. Aujourd'hui : bon échauffement, hydratation avant/pendant, et si la FC s'envole anormalement par rapport à l'allure, préfère caler sur sensation plutôt que forcer le chrono. L'objectif est de reposer u"
             }
           ]
         },
@@ -8029,11 +8067,18 @@
               "from": 22.0,
               "to": 20.0,
               "reason": "Semaine avec 3 séances clés (seuil 18/08, MP 20/08, seuil long 25/08) et compliance en dents de scie sur les 4 dernières semaines (70/62/110/65%). Réduire légèrement cette longue (-9%) sécurise l'enchaînement avant le seuil long du 25/08, sans casser la progression."
+            },
+            {
+              "kind": "note",
+              "text": "Reste strictement sur les 20km prévus, ne prolonge pas comme le 09/08 (26km, RPE 9 en pleine chaleur) qui a plombé la séance seuil du lendemain. L'idée cette semaine est d'arriver frais sur le seuil long du 25/08, pas de creuser la fatigue."
             }
           ]
         }
       ],
-      "focus": "Début du plan définitif. Structure fixe : seuil le mardi, allure marathon le jeudi, sortie longue le dimanche."
+      "focus": "Début du plan définitif. Structure fixe : seuil le mardi, allure marathon le jeudi, sortie longue le dimanche.",
+      "volume_actual_to_date": 0.0,
+      "volume_planned_to_date": 0.0,
+      "volume_drift_pct": 0
     },
     {
       "week_num": 12,
