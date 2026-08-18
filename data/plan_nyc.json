@@ -7943,7 +7943,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Protocole mollets/Achille : 3×15 excentriques jambe tendue + 3×15 genou fléchi (soléaire). Mobilité cheville 5 min.",
-          "status": "today",
+          "status": "done",
           "actual": null
         },
         {
@@ -7956,7 +7956,7 @@
           "key": true,
           "description": "Échauffement 4 km. 5×2000 m à 3'50/km, récup 2'30 trot. Retour 2 km.\nSéance de référence du bloc : tu la reverras en S16. Note tes sensations et ta FC moyenne sur les répétitions.",
           "target_pace": "3'50\"/km",
-          "status": "pending",
+          "status": "today",
           "shoe": "Adizero Boston 13",
           "shoe_note": "Dynamique et ferme, pour le travail rapide.",
           "_shoe_key": "boston13",
@@ -8071,6 +8071,10 @@
             {
               "kind": "note",
               "text": "Reste strictement sur les 20km prévus, ne prolonge pas comme le 09/08 (26km, RPE 9 en pleine chaleur) qui a plombé la séance seuil du lendemain. L'idée cette semaine est d'arriver frais sur le seuil long du 25/08, pas de creuser la fatigue."
+            },
+            {
+              "kind": "note",
+              "text": "Sortie longue : reste sur les 20 km prévus même si tu te sens bien, ta dernière sortie longue en chaleur (09/08) est passée de 20 à 26 km avec un RPE à 9. Hydrate-toi tous les 20-25 min et coupe si la FC dérive trop fort en 2e partie."
             }
           ]
         }

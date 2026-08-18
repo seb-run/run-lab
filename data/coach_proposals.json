@@ -338,6 +338,42 @@
    "id": "b266e80a",
    "status": "pending",
    "created_at": "2026-08-16T10:42:52"
+  },
+  {
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-08-18",
+   "field": null,
+   "new_value": "Allure seuil ajustée effort/FC au lieu de 3'50/km strict",
+   "reason": "Le 11/08, la même séance de seuil a totalement échoué (5'22/km au lieu de 3'50, FC 141 seulement) par forte chaleur (29°C). Reproduire le même objectif chrono aujourd'hui dans des conditions similaires risque un nouvel échec démoralisant.",
+   "replacement": {
+    "title": "Seuil piloté à l'effort (chaleur)",
+    "type": "seuil",
+    "km": 15.0,
+    "target_pace": "3'55\"-4'05\"/km selon FC",
+    "description": "5×2000m à effort seuil perçu (FC autour de 165-170, pas le chrono). Si tu sens que la 4ème/5ème rép dérape trop, coupe à 4 répétitions. Hydrate-toi avant et pendant, vise l'ombre si possible. L'objectif c'est le temps passé en zone seuil, pas le chrono affiché."
+   },
+   "id": "76695d0b",
+   "status": "pending",
+   "created_at": "2026-08-18T06:02:18"
+  },
+  {
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-08-25",
+   "field": null,
+   "new_value": "Allure seuil ajustée effort/FC au lieu de 3'50/km strict",
+   "reason": "Même logique que le 18/08 : séance de seuil long (3×12min) calée sur un chrono qui a déjà échoué en conditions chaudes similaires. Mieux vaut piloter à l'effort tant que la météo ne se rafraîchit pas.",
+   "replacement": {
+    "title": "Seuil long piloté à l'effort (chaleur)",
+    "type": "seuil",
+    "km": 16.0,
+    "target_pace": "3'55\"-4'05\"/km selon FC",
+    "description": "3×12min à effort seuil perçu, FC cible ~165-170. Récupération 3min trot entre les blocs. Si la chaleur est toujours forte, réduis à 3×10min plutôt que de forcer le chrono. Priorité : qualité de l'effort, pas le temps affiché au km."
+   },
+   "id": "8054e3bc",
+   "status": "pending",
+   "created_at": "2026-08-18T06:02:18"
   }
  ]
 }
