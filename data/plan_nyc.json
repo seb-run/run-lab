@@ -7956,11 +7956,171 @@
           "key": true,
           "description": "Échauffement 4 km. 5×2000 m à 3'50/km, récup 2'30 trot. Retour 2 km.\nSéance de référence du bloc : tu la reverras en S16. Note tes sensations et ta FC moyenne sur les répétitions.",
           "target_pace": "3'50\"/km",
-          "status": "today",
+          "status": "done",
           "shoe": "Adizero Boston 13",
           "shoe_note": "Dynamique et ferme, pour le travail rapide.",
           "_shoe_key": "boston13",
-          "actual": null,
+          "actual": {
+            "km": 11.7,
+            "duration_min": 57,
+            "pace_sec": 292,
+            "pace_str": "4'52\"/km",
+            "fc": 151,
+            "cadence": 177,
+            "type": "endurance",
+            "title": "i177102910",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 214.0,
+              "osc_cm": 10.5,
+              "vratio": 8.98,
+              "balance_l": 49.41,
+              "step_m": 1.15,
+              "temp_c": 29,
+              "temp_max": 31,
+              "resp": 31.8,
+              "power": 386,
+              "np": 389,
+              "te_aero": 3.6,
+              "te_ana": 1.3,
+              "load": 167.8,
+              "strides": 5041,
+              "rpe": 3.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 212.0,
+                  "end": 220.0,
+                  "pct": 3.6
+                },
+                "step": {
+                  "start": 1141.0,
+                  "end": 1136.0,
+                  "pct": -0.4
+                },
+                "vratio": {
+                  "start": 8.82,
+                  "end": 9.11,
+                  "pct": 3.3
+                },
+                "osc": {
+                  "start": 103.0,
+                  "end": 106.0,
+                  "pct": 3.1
+                },
+                "hr": {
+                  "start": 145.0,
+                  "end": 155.0,
+                  "pct": 6.9
+                },
+                "cad": {
+                  "start": 89.0,
+                  "end": 88.0,
+                  "pct": -1.1
+                }
+              },
+              "balance_min": 48.74,
+              "balance_max": 51.03,
+              "balance_series": [
+                50.03,
+                49.78,
+                49.29,
+                48.88,
+                48.84,
+                48.74,
+                49.49,
+                48.84,
+                49.33,
+                48.8,
+                50.12,
+                51.03
+              ],
+              "balance_lent": 49.92,
+              "balance_rapide": 48.98,
+              "asym_vs_allure": 0.95,
+              "allure_lent_s": 303,
+              "allure_rapide_s": 281,
+              "rr_beats": 9005,
+              "rmssd_effort": 7.2,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 297,
+                "fc": 134,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 293,
+                "fc": 149,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 294,
+                "fc": 148,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 289,
+                "fc": 148,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 294,
+                "fc": 148,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 274,
+                "fc": 156,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 277,
+                "fc": 162,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 299,
+                "fc": 151,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 293,
+                "fc": 154,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 286,
+                "fc": 155,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 304,
+                "fc": 155,
+                "ca": 176
+              },
+              {
+                "km": 0.71,
+                "ps": 317,
+                "fc": 155,
+                "ca": 176
+              }
+            ]
+          },
           "coach_notes": [
             {
               "kind": "note",
@@ -7978,7 +8138,31 @@
               "kind": "note",
               "text": "Ta dernière séance seuil (11/08) a craqué juste après une longue trop généreuse en pleine chaleur. Aujourd'hui : bon échauffement, hydratation avant/pendant, et si la FC s'envole anormalement par rapport à l'allure, préfère caler sur sensation plutôt que forcer le chrono. L'objectif est de reposer u"
             }
-          ]
+          ],
+          "score": {
+            "points": 42,
+            "verdict": "failed",
+            "verdict_label": "Échouée",
+            "volume_pct": 78,
+            "volume_points": 76,
+            "pace_points": 0,
+            "pace_target_s": 230,
+            "pace_actual_s": 274,
+            "pace_actual_str": "4'34\"/km",
+            "pace_delta_s": 44,
+            "is_quality": true,
+            "hr": {
+              "avg": 151,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 5.4,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 78%",
+              "Allure +44\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-08-19",

@@ -1,45 +1,45 @@
 {
- "headline": "FC nettement au-dessus de ta référence, allure en dents de scie toute la séance",
+ "headline": "Séance clé ratée : +44\"/km vs cible, volume 78%. Chaleur 29-31°C, RPE bas (3/10).",
  "bullets": [
-  "FC moy 157 bpm vs 147.8 hab. à allure comparable (+9 bpm), decoupling 6.7%.",
-  "Allures de 3'19 à 6'20/km alors que le plan demandait du régulier à 4'55/km.",
-  "Cadence chute à 141-155 spm sur plusieurs km vs 175 hab., hors phases rapides."
+  "Allure 4'52\"/km vs 3'50\"/km visé (+44\"/km), volume 78% (11,7/15 km) — plan non tenu.",
+  "FC 151 bpm ≈ ta réf. 150,7 à allure comparable, pas de dérive anormale malgré 29-31°C.",
+  "RPE 3/10, ressenti 'fort' malgré l'échec au plan — séance vécue comme facile, pas dure."
  ],
  "points": [
   {
-   "label": "FC moyenne",
-   "valeur": "157 bpm",
-   "ecart": "+9 bpm vs réf. 60j (147.8)",
-   "lecture": "effort cardiaque plus élevé qu'à l'accoutumée",
+   "label": "Appui au sol",
+   "valeur": "214 ms",
+   "ecart": "-13 ms vs réf. 227 ms",
+   "lecture": "Cohérent avec l'allure plus rapide que réf.",
+   "ton": "bon"
+  },
+  {
+   "label": "Équilibre G/D",
+   "valeur": "49,4% gauche",
+   "ecart": "-0,9 pt vs réf. 50,3%",
+   "lecture": "Plus chargé côté droit qu'habituellement",
    "ton": "vigilance"
   },
   {
-   "label": "Régularité allure",
-   "valeur": "199 à 380 s/km",
-   "ecart": "écart-type très supérieur à une sortie régulière",
-   "lecture": "séance fractionnée, pas régulière comme prévu",
+   "label": "Asymétrie vs allure",
+   "valeur": "49,9% lent → 49,0% rapide",
+   "ecart": "+0,95 pt, s'accentue avec la vitesse",
+   "lecture": "Profil proche de l'épisode adducteur passé",
    "ton": "vigilance"
-  },
-  {
-   "label": "Cadence",
-   "valeur": "141-185 spm",
-   "ecart": "vs 175 hab., forte variabilité",
-   "lecture": "cadence instable selon les segments",
-   "ton": "neutre"
   }
  ],
- "achille": null,
- "a_surveiller": "FC élevée + allure irrégulière avant le bloc seuil+MP : vérifie la récup avant d'enchaîner.",
+ "achille": "Équilibre 49,4% vs réf. 50,3% : aujourd'hui chargé côté droit, pas en décharge.",
+ "a_surveiller": "Asymétrie qui s'ouvre avec la vitesse (+0,95) : signature proche de l'épisode adducteur 2025.",
  "seance": {
-  "date": "16/08/2026",
-  "heure": "10:48",
-  "titre": "Morning Run",
-  "type_detecte": "frac_court",
-  "km": 20.0,
-  "duree": "1h 44m 42s",
-  "allure": "5'14\"/km",
-  "fc_moy": 157
+  "date": "18/08/2026",
+  "heure": "11:34",
+  "titre": "i177102910",
+  "type_detecte": "endurance",
+  "km": 11.71,
+  "duree": "57m 04s",
+  "allure": "4'52\"/km",
+  "fc_moy": 151
  },
- "generated_at": "2026-08-16T10:43:20",
- "baseline_n": 27
+ "generated_at": "2026-08-18T10:37:11",
+ "baseline_n": 28
 }
