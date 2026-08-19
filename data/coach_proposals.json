@@ -336,7 +336,7 @@
     "description": "5×1600m à 3'55-4'00/km (au lieu de 3'50 strict), récup 2min trot entre chaque. Priorité aux sensations : si ça tire trop après 2-3 répétitions, arrête-toi là plutôt que de forcer. Échauffement 15min + 4 lignes avant. Vise la régularité plutôt que la vitesse pure vu la chaleur."
    },
    "id": "b266e80a",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-08-16T10:42:52"
   },
   {
@@ -354,7 +354,7 @@
     "description": "5×2000m à effort seuil perçu (FC autour de 165-170, pas le chrono). Si tu sens que la 4ème/5ème rép dérape trop, coupe à 4 répétitions. Hydrate-toi avant et pendant, vise l'ombre si possible. L'objectif c'est le temps passé en zone seuil, pas le chrono affiché."
    },
    "id": "76695d0b",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-08-18T06:02:18"
   },
   {
@@ -374,6 +374,36 @@
    "id": "8054e3bc",
    "status": "pending",
    "created_at": "2026-08-18T06:02:18"
+  },
+  {
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-08-25",
+   "field": "target_pace",
+   "new_value": "4'00\"-4'05\"/km (cap FC ~168-172bpm)",
+   "reason": "Deux séances seuil consécutives (11/08, 18/08) ont raté la cible de 44 à 80s/km sous 28-33°C avec FC basse à mi-parcours, signature typique d'un impact chaleur et non d'une perte de forme (la MP du 13/08 a montré que l'allure spécifique est là). Desserrer la cible protège la qualité du stimulus et évite un 3e échec démoralisant.",
+   "replacement": {
+    "title": "Seuil long · 3×12' piloté FC",
+    "type": "seuil",
+    "km": 16.0,
+    "target_pace": "4'00\"-4'05\"/km",
+    "description": "Lance-toi tôt le matin (avant 8h si possible) pour limiter la chaleur. Cible 4'00-4'05/km sur les 3×12', mais pilote surtout sur FC (cap ~168-172bpm) plutôt que sur le chrono strict. Si tu sens que ça part en vrille dès le 1er bloc, coupe à 10' et garde la récup complète entre les blocs. L'objectif : qualité de l'effort, pas performance absolue par cette chaleur."
+   },
+   "id": "fc549ea2",
+   "status": "pending",
+   "created_at": "2026-08-19T06:03:05"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-08-19",
+   "field": "description_note",
+   "new_value": "Chaleur persistante (28-33°C) depuis 2 semaines : hydrate-toi bien avant/pendant, et ne t'inquiète pas si les allures sont 10-20s/km plus lentes que d'habitude sur les footings — c'est la météo, pas la forme.",
+   "reason": "Contextualiser la dérive d'allure récurrente pour éviter que Sébastien ne s'alarme sur des footings à venir alors que le pattern est clairement météo (temp élevée sur toutes les séances récentes, feel_label cohérents avec l'effort réel).",
+   "id": "7554f88f",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-08-19T06:03:05"
   }
  ]
 }

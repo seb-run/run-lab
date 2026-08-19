@@ -1,59 +1,11 @@
 {
- "generated_at": "2026-08-18T06:02:18",
+ "generated_at": "2026-08-19T06:03:05",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-08-15\", \"title\": \"Footing + côtes courtes\", \"type\": \"easy\", \"planned_km\": 11.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'20\\\"/km\", \"actual\": {\"km\": 11.3, \"pace_str\": \"5'08\\\"/km\", \"fc\": 147, \"cadence\": 174, \"duration_min\": 58}, \"splits\": \"1:5'18/133/176spm 2:5'16/141/174spm 3:5'20/142/176spm 4:5'26/142/174spm 5:5'32/142/174spm 6:5'16/141/174spm 7:5'03/147/176spm 8:5'02/151/174spm 9:5'12/151/174spm 10:5'29/152/174spm 11:3'17/182/184spm 12:5'48/162/158spm\", \"garmin\": {\"te_aero\": 3.7, \"te_ana\": 2.8, \"load\": 228.5, \"rpe\": 3.0, \"feel_label\": \"Normal\", \"temp_c\": 30, \"balance_l\": 50.49, \"flags\": [], \"stance_drift_pct\": -6.0, \"step_drift_pct\": 16.8}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 103, \"pace_delta_s\": -12}, \"hr\": {\"avg\": 147, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 2.3, \"flags\": []}}, {\"date\": \"2026-08-16\", \"title\": \"Sortie longue régulière\", \"type\": \"long\", \"planned_km\": 20.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"4'55\\\"/km\", \"actual\": {\"km\": 20.0, \"pace_str\": \"5'14\\\"/km\", \"fc\": 157, \"cadence\": 169, \"duration_min\": 105}, \"splits\": \"1:5'28/134/176spm 2:5'19/146/176spm 3:5'19/147/176spm 4:5'18/148/178spm 5:5'20/150/178spm 6:5'18/148/178spm 7:5'32/154/176spm 8:5'28/149/174spm 9:3'20/179/184spm 10:4'47/178/152spm 11:5'53/155/170spm 12:5'38/159/172spm 13:5'44/158/170spm 14:3'45/177/178spm 15:4'47/176/158spm 16:3'44/181/178spm 17:6'11/165/140spm 18:6'13/153/170spm 19:6'21/154/144spm 20:6'12/156/168spm 21:4'45/171/154spm 22:5'56/152/174spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 4.0, \"load\": 457.1, \"rpe\": 6.0, \"feel_label\": \"Normal\", \"temp_c\": 29, \"balance_l\": 49.44, \"flags\": [], \"stance_drift_pct\": -10.2, \"step_drift_pct\": 9.7}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 100, \"pace_delta_s\": 19}, \"hr\": {\"avg\": 157, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 6.7, \"flags\": []}}, {\"date\": \"2026-08-17\", \"title\": \"Repos\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}]",
- "headline": "Chaleur persistante qui plombe tes séances de seuil : la structure craque, pas la forme.",
- "analysis": "Sur les 14 derniers jours tu tournes autour de 28-33°C quasi systématiquement, et ça se voit : tes footings et ta sortie longue du 16/08 sont solides mécaniquement (foulée qui s'allonge, appui qui se raccourcit, RPE maîtrisés), mais dès qu'on te demande du seuil strict (11/08, 5'22/km au lieu de 3'50, FC toute basse à 141) la séance s'effondre complètement — ce n'est pas de la fatigue, c'est une allure intenable par cette chaleur. La semaine 8 a aussi vu deux séances zappées (tempo et récup) sans qu'on ait d'explication écrite, donc je ne tranche pas, mais ça reste un point de vigilance sur la régularité. Le vrai risque cette semaine : tu as deux séances clés de seuil calées à 3'50/km (18/08 et 25/08) dans les mêmes conditions météo qui ont déjà fait échouer celle du 11 — si on ne bouge rien, ça va recommencer et te démoraliser pour rien. Ta sortie longue du 09/08 (26 km au lieu de 20, RPE 9) montre aussi une tendance à sur-allonger en conditions chaudes, à surveiller sur celle du 23/08. Focus de la semaine : caler les allures de seuil sur l'effort/FC plutôt que sur le chrono tant qu'il fait cette chaleur, et respecter le kilométrage prévu sur la longue sans se laisser emporter.",
- "applied": [
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-08-23",
-   "field": "description_note",
-   "new_value": "Sortie longue : reste sur les 20 km prévus même si tu te sens bien, ta dernière sortie longue en chaleur (09/08) est passée de 20 à 26 km avec un RPE à 9. Hydrate-toi tous les 20-25 min et coupe si la FC dérive trop fort en 2e partie.",
-   "reason": "Historique de sur-volume en conditions chaudes sur les sorties longues (09/08 : +30% de volume, RPE 9), à encadrer avant que ça ne devienne un pattern.",
-   "replacement": null,
-   "id": "995bf7a7",
-   "detail": "2026-08-23 : note ajoutée"
-  }
- ],
+ "signature": "[{\"date\": \"2026-08-16\", \"title\": \"Sortie longue régulière\", \"type\": \"long\", \"planned_km\": 20.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"4'55\\\"/km\", \"actual\": {\"km\": 20.0, \"pace_str\": \"5'14\\\"/km\", \"fc\": 157, \"cadence\": 169, \"duration_min\": 105}, \"splits\": \"1:5'28/134/176spm 2:5'19/146/176spm 3:5'19/147/176spm 4:5'18/148/178spm 5:5'20/150/178spm 6:5'18/148/178spm 7:5'32/154/176spm 8:5'28/149/174spm 9:3'20/179/184spm 10:4'47/178/152spm 11:5'53/155/170spm 12:5'38/159/172spm 13:5'44/158/170spm 14:3'45/177/178spm 15:4'47/176/158spm 16:3'44/181/178spm 17:6'11/165/140spm 18:6'13/153/170spm 19:6'21/154/144spm 20:6'12/156/168spm 21:4'45/171/154spm 22:5'56/152/174spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 4.0, \"load\": 457.1, \"rpe\": 6.0, \"feel_label\": \"Normal\", \"temp_c\": 29, \"balance_l\": 49.44, \"flags\": [], \"stance_drift_pct\": -10.2, \"step_drift_pct\": 9.7}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 100, \"pace_delta_s\": 19}, \"hr\": {\"avg\": 157, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 6.7, \"flags\": []}}, {\"date\": \"2026-08-17\", \"title\": \"Repos\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-08-18\", \"title\": \"Seuil · 5×2000 m\", \"type\": \"seuil\", \"planned_km\": 15.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'50\\\"/km\", \"actual\": {\"km\": 11.7, \"pace_str\": \"4'52\\\"/km\", \"fc\": 151, \"cadence\": 177, \"duration_min\": 57}, \"splits\": \"1:4'57/134/178spm 2:4'53/149/178spm 3:4'54/148/178spm 4:4'49/148/178spm 5:4'54/148/178spm 6:4'34/156/176spm 7:4'37/162/176spm 8:4'59/151/176spm 9:4'53/154/176spm 10:4'46/155/176spm 11:5'04/155/176spm 12:5'17/155/176spm\", \"garmin\": {\"te_aero\": 3.6, \"te_ana\": 1.3, \"load\": 167.8, \"rpe\": 3.0, \"feel_label\": \"Fort\", \"temp_c\": 29, \"balance_l\": 49.41, \"flags\": [], \"stance_drift_pct\": 3.6, \"step_drift_pct\": -0.4}, \"score\": {\"points\": 42, \"verdict\": \"failed\", \"volume_pct\": 78, \"pace_delta_s\": 44}, \"hr\": {\"avg\": 151, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 5.4, \"flags\": []}}]",
+ "headline": "Tes deux séances clés au seuil ont complètement dérapé sous une chaleur de plomb (28-33°C) — ce n'est pas un signal de perte de forme, mais il faut absolument adapter les allures avant la prochaine sortie seuil pour éviter un troisième échec qui te grillerait mentalement.",
+ "analysis": "Le tableau des 14 derniers jours est contrasté : tes sorties longues et footings passent très bien (26km à 4'57, 20km à 5'14, decoupling raisonnable, RPE cohérents), mais les deux séances de seuil (11/08 et 18/08) ont explosé — 80 et 44 secondes/km plus lent que la cible, avec des FC basses à mi-course (125-145bpm) qui ne collent pas à un effort seuil réel. Le point commun : température entre 28 et 33°C sur toutes les séances depuis deux semaines, exactement le terrain où la chaleur fait mécaniquement chuter les allures sans que ce soit de la fatigue de fond — le feel_label 'Fort' avec allure lente en est la signature classique. Le risque principal n'est pas physiologique mais psychologique : enchaîner un 3e échec sur la séance seuil du 25/08 (3×12') en gardant une cible 3'50\"/km risque de saper ta confiance à 10 semaines de l'objectif. La séance allure marathon du 13/08, elle, a bien tourné (les intervalles à 4'00-4'10 étaient là, noyés dans une moyenne tirée vers le bas par les récup lentes) — donc ta capacité à tenir l'allure spécifique n'est pas en cause. Focus de la semaine : protéger la qualité du seuil du 25/08 en desserrant la cible et en cadrant l'effort sur la FC plutôt que sur le chrono brut, et caler cette séance tôt le matin pour limiter l'impact de la chaleur. Le volume global reste bon (long runs solides, easy runs bien exécutés) — pas besoin de couper la charge, juste de recalibrer une séance.",
+ "applied": [],
  "pending": [
-  {
-   "severity": "major",
-   "kind": "change_pace",
-   "date": "2026-08-18",
-   "field": null,
-   "new_value": "Allure seuil ajustée à 3'55-4'00/km sur un format plus court, avec accent sur les sensations plutôt que le chrono strict",
-   "reason": "Le dernier seuil (11/08) s'est totalement effondré (5'22/km au lieu de 3'50, FC pourtant basse), probablement séquelle de la longue trop dure du 9/08 et chaleur persistante (28-33°C partout). Repartir directement sur 5×2000m à 3'50/km strict risque de reproduire l'échec ; mieux vaut un format plus court pour reconstruire la confiance avant de revenir à l'allure cible.",
-   "replacement": {
-    "title": "Seuil progressif · 5×1600m",
-    "type": "seuil",
-    "km": 13.0,
-    "target_pace": "3'55\"-4'00\"/km",
-    "description": "5×1600m à 3'55-4'00/km (au lieu de 3'50 strict), récup 2min trot entre chaque. Priorité aux sensations : si ça tire trop après 2-3 répétitions, arrête-toi là plutôt que de forcer. Échauffement 15min + 4 lignes avant. Vise la régularité plutôt que la vitesse pure vu la chaleur."
-   },
-   "id": "b266e80a",
-   "status": "pending",
-   "created_at": "2026-08-16T10:42:52"
-  },
-  {
-   "severity": "major",
-   "kind": "change_pace",
-   "date": "2026-08-18",
-   "field": null,
-   "new_value": "Allure seuil ajustée effort/FC au lieu de 3'50/km strict",
-   "reason": "Le 11/08, la même séance de seuil a totalement échoué (5'22/km au lieu de 3'50, FC 141 seulement) par forte chaleur (29°C). Reproduire le même objectif chrono aujourd'hui dans des conditions similaires risque un nouvel échec démoralisant.",
-   "replacement": {
-    "title": "Seuil piloté à l'effort (chaleur)",
-    "type": "seuil",
-    "km": 15.0,
-    "target_pace": "3'55\"-4'05\"/km selon FC",
-    "description": "5×2000m à effort seuil perçu (FC autour de 165-170, pas le chrono). Si tu sens que la 4ème/5ème rép dérape trop, coupe à 4 répétitions. Hydrate-toi avant et pendant, vise l'ombre si possible. L'objectif c'est le temps passé en zone seuil, pas le chrono affiché."
-   },
-   "id": "76695d0b",
-   "status": "pending",
-   "created_at": "2026-08-18T06:02:18"
-  },
   {
    "severity": "major",
    "kind": "change_pace",
@@ -71,6 +23,36 @@
    "id": "8054e3bc",
    "status": "pending",
    "created_at": "2026-08-18T06:02:18"
+  },
+  {
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-08-25",
+   "field": "target_pace",
+   "new_value": "4'00\"-4'05\"/km (cap FC ~168-172bpm)",
+   "reason": "Deux séances seuil consécutives (11/08, 18/08) ont raté la cible de 44 à 80s/km sous 28-33°C avec FC basse à mi-parcours, signature typique d'un impact chaleur et non d'une perte de forme (la MP du 13/08 a montré que l'allure spécifique est là). Desserrer la cible protège la qualité du stimulus et évite un 3e échec démoralisant.",
+   "replacement": {
+    "title": "Seuil long · 3×12' piloté FC",
+    "type": "seuil",
+    "km": 16.0,
+    "target_pace": "4'00\"-4'05\"/km",
+    "description": "Lance-toi tôt le matin (avant 8h si possible) pour limiter la chaleur. Cible 4'00-4'05/km sur les 3×12', mais pilote surtout sur FC (cap ~168-172bpm) plutôt que sur le chrono strict. Si tu sens que ça part en vrille dès le 1er bloc, coupe à 10' et garde la récup complète entre les blocs. L'objectif : qualité de l'effort, pas performance absolue par cette chaleur."
+   },
+   "id": "fc549ea2",
+   "status": "pending",
+   "created_at": "2026-08-19T06:03:05"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-08-19",
+   "field": "description_note",
+   "new_value": "Chaleur persistante (28-33°C) depuis 2 semaines : hydrate-toi bien avant/pendant, et ne t'inquiète pas si les allures sont 10-20s/km plus lentes que d'habitude sur les footings — c'est la météo, pas la forme.",
+   "reason": "Contextualiser la dérive d'allure récurrente pour éviter que Sébastien ne s'alarme sur des footings à venir alors que le pattern est clairement météo (temp élevée sur toutes les séances récentes, feel_label cohérents avec l'effort réel).",
+   "id": "7554f88f",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-08-19T06:03:05"
   }
  ]
 }

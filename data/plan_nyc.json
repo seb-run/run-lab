@@ -1900,87 +1900,7 @@
               "rr_beats": 11648,
               "rmssd_effort": 5.8,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 341,
-                "fc": 144,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 325,
-                "fc": 155,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 310,
-                "fc": 161,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 301,
-                "fc": 166,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 303,
-                "fc": 158,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 303,
-                "fc": 162,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 299,
-                "fc": 163,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 301,
-                "fc": 166,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 308,
-                "fc": 164,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 285,
-                "fc": 161,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 300,
-                "fc": 167,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 294,
-                "fc": 163,
-                "ca": 178
-              },
-              {
-                "km": 0.81,
-                "ps": 330,
-                "fc": 164,
-                "ca": 176
-              }
-            ]
+            }
           },
           "score": {
             "points": 100,
@@ -8174,7 +8094,7 @@
           "key": false,
           "description": "13 km à 5'10-5'25/km, FC < 140. Sortie tôt.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
+          "status": "today",
           "_easy_idx": 3,
           "shoe": "On Cloudsurfer",
           "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
@@ -8235,7 +8155,7 @@
           "dow": "Sun",
           "type": "long",
           "title": "Sortie longue",
-          "km": 20.0,
+          "km": 22.0,
           "duration_min": 108,
           "key": false,
           "description": "22 km à 4'50-5'00/km. Régulier, sans accélération finale.",
@@ -8259,14 +8179,34 @@
             {
               "kind": "note",
               "text": "Sortie longue : reste sur les 20 km prévus même si tu te sens bien, ta dernière sortie longue en chaleur (09/08) est passée de 20 à 26 km avec un RPE à 9. Hydrate-toi tous les 20-25 min et coupe si la FC dérive trop fort en 2e partie."
+            },
+            {
+              "kind": "volume",
+              "delta": 2,
+              "reason": "compenser le déficit volume de la semaine"
             }
-          ]
+          ],
+          "_adapt_volume": true
         }
       ],
       "focus": "Début du plan définitif. Structure fixe : seuil le mardi, allure marathon le jeudi, sortie longue le dimanche.",
-      "volume_actual_to_date": 0.0,
-      "volume_planned_to_date": 0.0,
-      "volume_drift_pct": 0
+      "volume_actual_to_date": 11.7,
+      "volume_planned_to_date": 15.0,
+      "volume_drift_pct": -22.0,
+      "compliance": {
+        "km_pct": 78,
+        "km_done": 11.7,
+        "km_planned": 15.0,
+        "km_done_week": 11.7,
+        "km_planned_week": 84.0,
+        "sessions_done": 1,
+        "sessions_planned": 1,
+        "sessions_done_week": 1,
+        "keys_success": 0,
+        "keys_total": 1,
+        "points": 64,
+        "verdict": "partial"
+      }
     },
     {
       "week_num": 12,
