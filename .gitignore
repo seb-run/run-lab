@@ -37,3 +37,11 @@ output/captures/
 
 # Sauvegardes du dédoublonnage (scripts/dedupe_cache.py --write)
 data/sessions_cache.avant_dedup_*.json
+
+# Sauvegardes de l'import de plan (scripts/import_plan_v2.py --write)
+data/plan_nyc.avant_v2_*.json
+
+# Sources brutes de plan avant conversion : posées à la racine par commodité,
+# elles ne servent qu'une fois. Le plan importé vit dans data/plan_nyc.json.
+uploads_plan_v2.json
+plan_nyc_v2*.json
