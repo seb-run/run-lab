@@ -402,7 +402,7 @@
    "reason": "Contextualiser la dérive d'allure récurrente pour éviter que Sébastien ne s'alarme sur des footings à venir alors que le pattern est clairement météo (temp élevée sur toutes les séances récentes, feel_label cohérents avec l'effort réel).",
    "id": "7554f88f",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-08-19T06:03:05"
   }
  ]

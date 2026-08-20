@@ -8094,7 +8094,7 @@
           "key": false,
           "description": "13 km à 5'10-5'25/km, FC < 140. Sortie tôt.",
           "target_pace": "5'20\"/km",
-          "status": "today",
+          "status": "missed",
           "_easy_idx": 3,
           "shoe": "On Cloudsurfer",
           "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
@@ -8111,7 +8111,7 @@
           "key": true,
           "description": "Échauffement 4 km + 4×8 min à 4'10-4'12/km, récup 2 min. Retour 3 km.\n⏱️ Règle absolue : ne JAMAIS aller plus vite que la cible. Plus rapide = séance ratée, au même titre que trop lent. C'est ici que se joue ta course.",
           "target_pace": "4'12\"/km",
-          "status": "pending",
+          "status": "today",
           "shoe": "Adizero Boston 13",
           "shoe_note": "Allure marathon : la paire la plus proche de tes sensations de course.",
           "_shoe_key": "boston13",
@@ -8155,7 +8155,7 @@
           "dow": "Sun",
           "type": "long",
           "title": "Sortie longue",
-          "km": 22.0,
+          "km": 20.0,
           "duration_min": 108,
           "key": false,
           "description": "22 km à 4'50-5'00/km. Régulier, sans accélération finale.",
@@ -8184,6 +8184,12 @@
               "kind": "volume",
               "delta": 2,
               "reason": "compenser le déficit volume de la semaine"
+            },
+            {
+              "kind": "volume",
+              "from": 22.0,
+              "to": 20.0,
+              "reason": "La dernière sortie longue (9/08) a été exécutée à 130% du prévu avec RPE 9 et une dérive mécanique réelle (stance +8.9%) — éviter de répéter l'excès avant le seuil clé du 25/08."
             }
           ],
           "_adapt_volume": true
@@ -8191,21 +8197,21 @@
       ],
       "focus": "Début du plan définitif. Structure fixe : seuil le mardi, allure marathon le jeudi, sortie longue le dimanche.",
       "volume_actual_to_date": 11.7,
-      "volume_planned_to_date": 15.0,
-      "volume_drift_pct": -22.0,
+      "volume_planned_to_date": 28.0,
+      "volume_drift_pct": -58.2,
       "compliance": {
-        "km_pct": 78,
+        "km_pct": 42,
         "km_done": 11.7,
-        "km_planned": 15.0,
+        "km_planned": 28.0,
         "km_done_week": 11.7,
-        "km_planned_week": 84.0,
+        "km_planned_week": 82.0,
         "sessions_done": 1,
-        "sessions_planned": 1,
+        "sessions_planned": 2,
         "sessions_done_week": 1,
         "keys_success": 0,
         "keys_total": 1,
-        "points": 64,
-        "verdict": "partial"
+        "points": 42,
+        "verdict": "failed"
       }
     },
     {
@@ -8243,7 +8249,13 @@
           "shoe": "Adizero Boston 13",
           "shoe_note": "Dynamique et ferme, pour le travail rapide.",
           "_shoe_key": "boston13",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Deux séances seuil consécutives ratées sur l'allure avec FC basse (141 puis 151 bpm) : aujourd'hui, priorise l'effort et la sensation sur les répétitions plutôt que le chrono strict à 3'50/km, surtout si la chaleur est présente. Mieux vaut finir les 3×12' à une allure un peu plus lente mais avec une"
+            }
+          ]
         },
         {
           "date": "2026-08-26",
