@@ -2034,57 +2034,7 @@
                 }
               },
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 332,
-                "fc": 142,
-                "ca": 174
-              },
-              {
-                "km": 1.0,
-                "ps": 308,
-                "fc": 162,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 303,
-                "fc": 157,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 302,
-                "fc": 141,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 305,
-                "fc": 148,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 292,
-                "fc": 153,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 293,
-                "fc": 155,
-                "ca": 174
-              },
-              {
-                "km": 1.0,
-                "ps": 301,
-                "fc": 155,
-                "ca": 174
-              }
-            ]
+            }
           },
           "score": null
         },
@@ -8297,7 +8247,7 @@
           "key": false,
           "description": "8 km très lent. Renforcement mollets après.",
           "target_pace": "5'40\"/km",
-          "status": "pending",
+          "status": "today",
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
           "_shoe_key": "peg41",
@@ -8360,27 +8310,31 @@
               "from": 22.0,
               "to": 20.0,
               "reason": "La dernière sortie longue (9/08) a été exécutée à 130% du prévu avec RPE 9 et une dérive mécanique réelle (stance +8.9%) — éviter de répéter l'excès avant le seuil clé du 25/08."
+            },
+            {
+              "kind": "note",
+              "text": "Chaleur probable (28-30°C récurrents) : pars tôt, hydrate-toi bien avant/pendant, et ne te fie pas à la FC seule pour juger l'effort si les sensations restent faciles."
             }
           ],
           "_adapt_volume": true
         }
       ],
       "focus": "Début du plan définitif. Structure fixe : seuil le mardi, allure marathon le jeudi, sortie longue le dimanche.",
-      "volume_actual_to_date": 11.7,
-      "volume_planned_to_date": 28.0,
-      "volume_drift_pct": -58.2,
+      "volume_actual_to_date": 21.4,
+      "volume_planned_to_date": 43.0,
+      "volume_drift_pct": -50.2,
       "compliance": {
-        "km_pct": 42,
-        "km_done": 11.7,
-        "km_planned": 28.0,
+        "km_pct": 50,
+        "km_done": 21.4,
+        "km_planned": 43.0,
         "km_done_week": 21.4,
         "km_planned_week": 82.0,
-        "sessions_done": 1,
-        "sessions_planned": 2,
+        "sessions_done": 2,
+        "sessions_planned": 3,
         "sessions_done_week": 2,
         "keys_success": 0,
-        "keys_total": 1,
-        "points": 42,
+        "keys_total": 2,
+        "points": 44,
         "verdict": "failed"
       }
     },

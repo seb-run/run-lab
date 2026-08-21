@@ -2,28 +2,6 @@
  "proposals": [
   {
    "severity": "major",
-   "kind": "change_type",
-   "date": "2026-07-21",
-   "field": null,
-   "new_value": "Remplacer la séance VMA 10×400m par un footing progressif de 12km (finir sur 2km allure seuil max)",
-   "reason": "3 séances d'intensité consécutives ratées ou très sous-volume (07/07, 09/07, 14/07, 16/07) : le corps n'est pas prêt à encaisser du travail rapide, risque de blessure ou nouvel échec démoralisant.",
-   "id": "8ba79e92",
-   "status": "expired",
-   "created_at": "2026-07-19T13:45:55"
-  },
-  {
-   "severity": "major",
-   "kind": "change_type",
-   "date": "2026-07-23",
-   "field": null,
-   "new_value": "Remplacer le tempo 20min seuil par un footing normal de 14km, sans allure imposée",
-   "reason": "Le tempo a été manqué 2 fois d'affilée sur les 2 dernières semaines ; mieux vaut sécuriser le volume facile avant de réintroduire du seuil.",
-   "id": "6c2533a8",
-   "status": "expired",
-   "created_at": "2026-07-19T13:45:55"
-  },
-  {
-   "severity": "major",
    "kind": "volume_adjust",
    "date": "2026-07-26",
    "field": "km",
@@ -404,6 +382,42 @@
    "guardrail_reject": "jour passé ou en cours",
    "status": "expired",
    "created_at": "2026-08-19T06:03:05"
+  },
+  {
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-08-25",
+   "field": null,
+   "new_value": "seuil recalibré ~4'25-4'35/km au lieu de 3'50",
+   "reason": "3 séances clés d'affilée ratées sur l'allure seuil/MP avec FC basse et RPE faible : le seuil visé n'est pas atteignable en ce moment. Mieux vaut revalider une allure réaliste sur une séance courte plutôt que d'accumuler un 3e échec de suite qui plombe la confiance.",
+   "replacement": {
+    "title": "Seuil recalibrage · 4×6 min",
+    "type": "seuil",
+    "km": 13.0,
+    "target_pace": "4'30\"/km",
+    "description": "4x6min à 4'30/km avec 2min récup trot. Objectif : retrouver une allure seuil que tu tiens confortablement (FC 160-168, RPE 6-7), pas viser 3'50 pour l'instant. Si ça passe bien et facile, on resserre l'allure la semaine suivante."
+   },
+   "id": "faed5c5f",
+   "status": "pending",
+   "created_at": "2026-08-21T06:05:03"
+  },
+  {
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-08-30",
+   "field": null,
+   "new_value": "portion MP à ~4'40/km au lieu de 4'12, volume total réduit à 22km",
+   "reason": "Après l'échec du MP du 08-20 (5'11 au lieu de 4'12, volume 65%), enchaîner sur une longue avec 10km à 4'12 est trop risqué. On sécurise la sortie longue et on teste une allure MP intermédiaire plus réaliste avant de revenir sur 4'12.",
+   "replacement": {
+    "title": "SL 22 km · 8 km allure progressive",
+    "type": "long_mp",
+    "km": 22.0,
+    "target_pace": "4'40\"/km",
+    "description": "14km footing tranquille à 4'55-5'00/km puis 8km progressifs de 4'50 à 4'40/km. Ne cherche pas 4'12 aujourd'hui : l'objectif est de finir fort et fluide sur la portion rapide, pas de viser un chrono. On recalibrera le MP la semaine prochaine selon ce que ça donne."
+   },
+   "id": "fc290b34",
+   "status": "pending",
+   "created_at": "2026-08-21T06:05:03"
   }
  ]
 }
