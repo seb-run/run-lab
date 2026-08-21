@@ -1,45 +1,45 @@
 {
- "headline": "Easy loin du plan (5'11 vs 4'11 visé), mais coût cardiaque très bas et équilibre stable.",
+ "headline": "Fractionné déguisé en récup : -75\"/km vs plan, séance hors cadre",
  "bullets": [
-  "FC 143 bpm vs 148,9 habituel à cette allure : nettement moins coûteux que la normale.",
-  "Allure 5'11/km vs cible 4'11 (+59\"/km), 9,65/15 km (65%) : le travail au seuil n'a pas eu lieu.",
-  "Asymétrie recule avec la vitesse (50,9%→50,5%), inverse du schéma de ta pubalgie 2025."
+  "Prévu 8km à 5'40 en récup, réalisé 14,78km à 4'25 moy avec relances à 3'50 : autre séance.",
+  "Asymétrie qui s'ouvre avec la vitesse : 50,99% lent → 47,69% rapide (+1,32), pattern proche de ton épisode adducteur.",
+  "FC moy 161 vs 154,5 sur tes séances comparables (+6,5), cohérent avec les relances, pas d'alerte isolée."
  ],
  "points": [
   {
-   "label": "FC moyenne",
-   "valeur": "143 bpm",
-   "ecart": "-5,9 vs réf 148,9",
-   "lecture": "économie cardiaque meilleure qu'à l'habitude",
-   "ton": "bon"
+   "label": "Asym. vitesse",
+   "valeur": "+1,32",
+   "ecart": "lent 50,99% → rapide 47,69%",
+   "lecture": "asymétrie qui s'ouvre avec l'allure",
+   "ton": "vigilance"
   },
   {
-   "label": "Temps de contact",
-   "valeur": "234 ms",
-   "ecart": "+5 ms vs réf 228,8",
-   "lecture": "cohérent avec l'allure plus lente",
+   "label": "FC moyenne",
+   "valeur": "161 bpm",
+   "ecart": "+6,5 vs réf 154,5",
+   "lecture": "cohérent avec structure en relances",
    "ton": "neutre"
   },
   {
    "label": "Équilibre gauche",
-   "valeur": "50,64 %",
-   "ecart": "+0,3 pt vs réf 50,33",
-   "lecture": "stable, rien d'alarmant",
+   "valeur": "49,34%",
+   "ecart": "≈ réf 49,93%",
+   "lecture": "rien de nouveau sur la répartition",
    "ton": "neutre"
   }
  ],
- "achille": "Équilibre 50,64% côté gauche, proche de ta réf 50,33% : rien à signaler côté Achille.",
- "a_surveiller": "Séance qualité non réalisée (5'11 vs 4'11, 65% du volume) : à reprogrammer.",
+ "achille": "Équilibre gauche 49,3%, quasi identique à ta réf (49,9%) — pas de signal côté Achille.",
+ "a_surveiller": "Le schéma asym_vs_allure (+1,32) rappelle la signature de ton ancien épisode adducteur, à garder en tête.",
  "seance": {
-  "date": "20/08/2026",
-  "heure": "07:29",
-  "titre": "i177821320",
-  "type_detecte": "endurance",
-  "km": 9.65,
-  "duree": "50m 01s",
-  "allure": "5'11\"/km",
-  "fc_moy": 143
+  "date": "21/08/2026",
+  "heure": "18:13",
+  "titre": "i178351689",
+  "type_detecte": "frac_court",
+  "km": 14.78,
+  "duree": "1h 05m 23s",
+  "allure": "4'25\"/km",
+  "fc_moy": 161
  },
- "generated_at": "2026-08-20T07:14:43",
- "baseline_n": 29
+ "generated_at": "2026-08-21T17:24:54",
+ "baseline_n": 6
 }
