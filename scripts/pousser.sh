@@ -36,9 +36,15 @@ echo "▸ Ce qui va être publié"
 
 # `git add` refuse la totalité de la liste si un seul chemin n'existe pas :
 # on ne lui passe donc que ce qui est réellement présent.
+#
+# `data/plan_nyc.json` est explicitement autorisé : c'est la sortie du script
+# d'import de plan (scripts/import_plan_v2.py), lancé manuellement quand tu
+# renouvelles le plan. Sans ce chemin ici, ta modification bloquait le rebase.
+# Les autres fichiers de `data/` restent au bot du CI.
 CHEMINS=()
 for c in modules scripts templates build.py sw.js manifest.webmanifest \
-         .gitignore ETAT_PROJET.md SETUP_AUTONOME.md README.md; do
+         .gitignore ETAT_PROJET.md SETUP_AUTONOME.md README.md \
+         data/plan_nyc.json; do
   [ -e "$c" ] && CHEMINS+=("$c")
 done
 [ ${#CHEMINS[@]} -gt 0 ] && git add -- "${CHEMINS[@]}"
