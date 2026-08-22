@@ -1,20 +1,31 @@
 {
- "generated_at": "2026-08-21T06:05:03",
+ "generated_at": "2026-08-22T06:02:05",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-08-18\", \"title\": \"Seuil · 5×2000 m\", \"type\": \"seuil\", \"planned_km\": 15.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'50\\\"/km\", \"actual\": {\"km\": 11.7, \"pace_str\": \"4'52\\\"/km\", \"fc\": 151, \"cadence\": 177, \"duration_min\": 57}, \"splits\": \"1:4'57/134/178spm 2:4'53/149/178spm 3:4'54/148/178spm 4:4'49/148/178spm 5:4'54/148/178spm 6:4'34/156/176spm 7:4'37/162/176spm 8:4'59/151/176spm 9:4'53/154/176spm 10:4'46/155/176spm 11:5'04/155/176spm 12:5'17/155/176spm\", \"garmin\": {\"te_aero\": 3.6, \"te_ana\": 1.3, \"load\": 167.8, \"rpe\": 3.0, \"feel_label\": \"Fort\", \"temp_c\": 29, \"balance_l\": 49.41, \"flags\": [], \"stance_drift_pct\": 3.6, \"step_drift_pct\": -0.4}, \"score\": {\"points\": 42, \"verdict\": \"failed\", \"volume_pct\": 78, \"pace_delta_s\": 44}, \"hr\": {\"avg\": 151, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 5.4, \"flags\": []}}, {\"date\": \"2026-08-19\", \"title\": \"Endurance\", \"type\": \"easy\", \"planned_km\": 13.0, \"key\": false, \"status\": \"missed\", \"target_pace\": \"5'20\\\"/km\"}, {\"date\": \"2026-08-20\", \"title\": \"Allure marathon · 4×8 min\", \"type\": \"mp\", \"planned_km\": 15.0, \"key\": true, \"status\": \"under\", \"target_pace\": \"4'12\\\"/km\", \"actual\": {\"km\": 9.7, \"pace_str\": \"5'11\\\"/km\", \"fc\": 143, \"cadence\": 176, \"duration_min\": 50}, \"splits\": \"1:5'24/130/176spm 2:5'11/140/176spm 3:5'13/142/176spm 4:5'08/145/178spm 5:5'06/148/174spm 6:5'07/144/176spm 7:5'01/143/176spm 8:5'14/146/176spm 9:5'11/146/174spm 10:5'18/142/174spm\", \"garmin\": {\"te_aero\": 3.2, \"te_ana\": 0.0, \"load\": 101.9, \"rpe\": 2.0, \"feel_label\": \"Fort\", \"temp_c\": 23, \"balance_l\": 50.64, \"flags\": [], \"stance_drift_pct\": 0.8, \"step_drift_pct\": 0.3}, \"score\": {\"points\": 27, \"verdict\": \"failed\", \"volume_pct\": 65, \"pace_delta_s\": 59}, \"hr\": {\"avg\": 143, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 0.4, \"flags\": []}}]",
- "headline": "Trois séances clés d'affilée ratées sur les allures rapides, mais avec un cœur bas et des sensations \"fort\" : ce sont les allures cibles qui sont hors de portée, pas la fatigue.",
- "analysis": "Sur les 3 dernières séances clés (seuil 08-11, seuil 08-18, MP 08-20), tu es systématiquement 30 à 60 sec/km plus lent que la cible, mais avec une FC basse (141-151), un RPE de 2 à 4 et un feel \"Fort\" à chaque fois. Ce n'est pas un effondrement physique : ton corps ne pousse jamais vers l'allure demandée. Les indicateurs mécaniques (stance/step drift) ne montrent pas de fatigue réelle non plus. En clair, les allures seuil (3'50) et marathon (4'12) semblent aujourd'hui décalées par rapport à ta forme actuelle, probablement encore marquée par la semaine 8 très en dessous du plan (35km/57 prévus). La chaleur (28-33°C sur presque toutes les séances) ajoute une couche de complexité mais n'explique pas tout : le 08-20 était à 23°C et l'écart était pareil. Le risque principal maintenant, c'est de t'acharner sur des allures irréalistes semaine après semaine, ce qui abîme la confiance et fausse le calibrage de toute la préparation. Cette semaine, priorité à revalider un seuil réaliste sur une séance courte et fraîche, et à sécuriser la longue avec MP en réduisant l'ambition d'allure plutôt que le volume.",
+ "signature": "[{\"date\": \"2026-08-19\", \"title\": \"Endurance\", \"type\": \"easy\", \"planned_km\": 13.0, \"key\": false, \"status\": \"missed\", \"target_pace\": \"5'20\\\"/km\"}, {\"date\": \"2026-08-20\", \"title\": \"Allure marathon · 4×8 min\", \"type\": \"mp\", \"planned_km\": 15.0, \"key\": true, \"status\": \"under\", \"target_pace\": \"4'12\\\"/km\", \"actual\": {\"km\": 9.7, \"pace_str\": \"5'11\\\"/km\", \"fc\": 143, \"cadence\": 176, \"duration_min\": 50}, \"splits\": \"1:5'24/130/176spm 2:5'11/140/176spm 3:5'13/142/176spm 4:5'08/145/178spm 5:5'06/148/174spm 6:5'07/144/176spm 7:5'01/143/176spm 8:5'14/146/176spm 9:5'11/146/174spm 10:5'18/142/174spm\", \"garmin\": {\"te_aero\": 3.2, \"te_ana\": 0.0, \"load\": 101.9, \"rpe\": 2.0, \"feel_label\": \"Fort\", \"temp_c\": 23, \"balance_l\": 50.64, \"flags\": [], \"stance_drift_pct\": 0.8, \"step_drift_pct\": 0.3}, \"score\": {\"points\": 27, \"verdict\": \"failed\", \"volume_pct\": 65, \"pace_delta_s\": 59}, \"hr\": {\"avg\": 143, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 0.4, \"flags\": []}}, {\"date\": \"2026-08-21\", \"title\": \"Récupération\", \"type\": \"recovery\", \"planned_km\": 8.0, \"key\": false, \"status\": \"over\", \"target_pace\": \"5'40\\\"/km\", \"actual\": {\"km\": 14.8, \"pace_str\": \"4'25\\\"/km\", \"fc\": 161, \"cadence\": 177, \"duration_min\": 65}, \"splits\": \"1:5'11/128/176spm 2:4'55/143/176spm 3:4'56/149/176spm 4:3'54/166/178spm 5:3'55/171/176spm 6:5'37/156/172spm 7:3'49/166/178spm 8:3'56/172/178spm 9:4'04/174/182spm 10:5'58/155/170spm 11:3'46/172/180spm 12:3'55/174/178spm 13:3'56/176/180spm 14:5'46/162/176spm 15:3'54/174/182spm 16:3'49/175/180spm 17:4'14/172/176spm 18:5'15/163/174spm 19:5'00/161/178spm 20:4'49/161/176spm\", \"garmin\": {\"te_aero\": 4.7, \"te_ana\": 1.8, \"load\": 287.6, \"rpe\": 4.0, \"feel_label\": \"Fort\", \"temp_c\": 23, \"balance_l\": 49.34, \"flags\": [], \"stance_drift_pct\": -0.4, \"step_drift_pct\": 2.8}, \"score\": {\"points\": 38, \"verdict\": \"failed\", \"volume_pct\": 185, \"pace_delta_s\": -75}, \"hr\": {\"avg\": 161, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 7.5, \"flags\": []}}]",
+ "headline": "Trois séances clés ratées sur les quatre dernières, avec des allures loin des cibles malgré une FC basse : la semaine qui arrive doit rassurer, pas enfoncer.",
+ "analysis": "Ta forme est en dents de scie : semaine 9 à 110% de charge, semaine 11 à 71%, et sur les 14 derniers jours tu as raté ou manqué 5 séances sur 8 clés/importantes. Le plus inquiétant, c'est le pattern des séances qualité (seuil du 11/08, seuil du 18/08, MP du 20/08) : allures 40 à 70 secondes plus lentes que la cible, mais avec une FC anormalement basse et un RPE que tu déclares faible — ce n'est pas de la casse mécanique (drifts stance/step calmes), c'est plutôt que tu n'arrives pas à mobiliser l'intensité demandée, peut-être fatigue accumulée depuis la sortie longue du 09/08 (26km au lieu de 20, RPE 9, stance_fade détecté) couplée à une chaleur constante à 28-33°C. Le jour de récup du 21/08 confirme un manque de discipline sur les allures faciles (4'25/km au lieu de 5'40, +85% de volume) : tu compenses les séances ratées en poussant sur les jours censés être faciles, ce qui entretient le cercle. La semaine qui vient enchaîne un seuil long (25/08) et une sortie longue à 25km avec 10km MP (30/08) : lancer ces deux séances sur les mêmes allures cibles qu'avant risque de produire un 4e et 5e échec. Focus de la semaine : retrouver de la confiance sur la qualité en assouplissant légèrement les allures et les volumes de ces deux séances clés, et verrouiller les jours de récup pour casser le cycle fatigue-non-récupération-échec.",
  "applied": [
   {
    "severity": "minor",
    "kind": "add_note",
-   "date": "2026-08-23",
+   "date": "2026-08-28",
    "field": "description_note",
-   "new_value": "Chaleur probable (28-30°C récurrents) : pars tôt, hydrate-toi bien avant/pendant, et ne te fie pas à la FC seule pour juger l'effort si les sensations restent faciles.",
-   "reason": "Quasi toutes les séances récentes sont à 28-33°C, ce qui peut gonfler la FC et la dérive cardiaque sans que ce soit de la fatigue réelle. Autant le garder à l'esprit pour ne pas sur-interpréter les prochains chiffres.",
+   "new_value": "Récup stricte : 5'40\"/km max, pas plus de 9-10km. Le 21/08 tu es parti à 4'25\"/km sur 14.8km au lieu de la consigne — ça annule l'effet récupération et alimente la fatigue qui plombe tes séances qualité.",
+   "reason": "Dérapage répété sur les jours de récup (allure et volume) qui compromet la récupération avant les séances clés suivantes.",
    "replacement": null,
-   "id": "0ac5adfa",
-   "detail": "2026-08-23 : note ajoutée"
+   "id": "2ce68519",
+   "detail": "2026-08-28 : note ajoutée"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-08-31",
+   "field": "description_note",
+   "new_value": "Même consigne que le 28/08 : récup = récup, 5'40\"/km, pas de km bonus. Ce jour arrive juste après le bloc MP du 30/08, c'est là que la discipline compte le plus.",
+   "reason": "Sécuriser la récupération après le bloc long+MP du 30/08 pour ne pas reproduire le pattern de sur-effort observé le 21/08.",
+   "replacement": null,
+   "id": "2374e8e1",
+   "detail": "2026-08-31 : note ajoutée"
   }
  ],
  "pending": [
@@ -89,6 +100,42 @@
    "id": "fc290b34",
    "status": "pending",
    "created_at": "2026-08-21T06:05:03"
+  },
+  {
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-08-25",
+   "field": null,
+   "new_value": "seuil recalé sur FC plutôt que sur l'allure stricte, fractions raccourcies",
+   "reason": "3 dernières séances de qualité ratées avec allures 40-70s/km plus lentes que la cible malgré FC basse : le seuil à 3'50/km n'est plus réaliste tant que la confiance n'est pas revenue. On recadre sur une allure atteignable pour retrouver une séance réussie.",
+   "replacement": {
+    "title": "Seuil court · 3×10 min",
+    "type": "seuil",
+    "km": 14.0,
+    "target_pace": "3'58\"/km",
+    "description": "3×10 min à allure seuil (3'58\"/km cible, cap FC ~168-172 max), récup 3 min trot entre chaque. Si à 3 min ta FC dépasse le cap ou que ça tire trop, ralentis de 5-10s/km : l'objectif est de finir les 3 blocs propres, pas de tenir un chrono. Échauffement 15 min + retour au calme 10 min inclus dans le volume total."
+   },
+   "id": "05905cbb",
+   "status": "pending",
+   "created_at": "2026-08-22T06:02:05"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-08-30",
+   "field": null,
+   "new_value": "portion MP réduite de 10km à 6km, allure MP stratégie plutôt que cible",
+   "reason": "Le dernier bloc MP (20/08) a été un échec net (5'11/km au lieu de 4'12, jamais dans le rythme). Enchaîner directement sur 10km MP au sein d'une sortie longue de 25km est risqué : on réduit le bloc et on vise l'allure stratégie (4'18) pour reconstruire la confiance avant de revenir à 4'12.",
+   "replacement": {
+    "title": "SL 25km · 6km AM",
+    "type": "long_mp",
+    "km": 25.0,
+    "target_pace": "4'18\"/km",
+    "description": "19km en endurance à 4'55-5'00/km, puis 6km à allure marathon stratégie (4'18\"/km) en fin de sortie sur jambes fatiguées, puis retour au calme si besoin. Coupe le bloc MP si la FC s'envole ou si les sensations sont mauvaises : mieux vaut 4km propres que 6km dans le mur."
+   },
+   "id": "ed224e51",
+   "status": "pending",
+   "created_at": "2026-08-22T06:02:05"
   }
  ]
 }

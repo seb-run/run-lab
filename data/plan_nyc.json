@@ -2109,69 +2109,7 @@
                 }
               },
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 312,
-                "fc": 130,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 293,
-                "fc": 146,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 291,
-                "fc": 150,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 298,
-                "fc": 153,
-                "ca": 174
-              },
-              {
-                "km": 1.0,
-                "ps": 294,
-                "fc": 156,
-                "ca": 174
-              },
-              {
-                "km": 1.0,
-                "ps": 291,
-                "fc": 159,
-                "ca": 174
-              },
-              {
-                "km": 1.0,
-                "ps": 290,
-                "fc": 162,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 290,
-                "fc": 165,
-                "ca": 174
-              },
-              {
-                "km": 1.0,
-                "ps": 289,
-                "fc": 167,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 293,
-                "fc": 167,
-                "ca": 174
-              }
-            ]
+            }
           },
           "score": {
             "points": 27,
@@ -8496,7 +8434,7 @@
           "key": false,
           "description": "11 km + 8×20\" de lignes en souplesse.",
           "target_pace": "5'20\"/km",
-          "status": "pending",
+          "status": "today",
           "_easy_idx": 4,
           "shoe": "Hyperboost Edge (neuve)",
           "shoe_note": "Stack maximal : amorti maximal sur les kilomètres faciles.",
@@ -8553,22 +8491,22 @@
         }
       ],
       "focus": "Début du plan définitif. Structure fixe : seuil le mardi, allure marathon le jeudi, sortie longue le dimanche.",
-      "volume_actual_to_date": 21.4,
-      "volume_planned_to_date": 43.0,
-      "volume_drift_pct": -50.2,
+      "volume_actual_to_date": 36.2,
+      "volume_planned_to_date": 51.0,
+      "volume_drift_pct": -29.0,
       "compliance": {
-        "km_pct": 50,
-        "km_done": 21.4,
-        "km_planned": 43.0,
+        "km_pct": 71,
+        "km_done": 36.2,
+        "km_planned": 51.0,
         "km_done_week": 36.2,
         "km_planned_week": 82.0,
-        "sessions_done": 2,
-        "sessions_planned": 3,
+        "sessions_done": 3,
+        "sessions_planned": 4,
         "sessions_done_week": 3,
         "keys_success": 0,
         "keys_total": 2,
-        "points": 44,
-        "verdict": "failed"
+        "points": 57,
+        "verdict": "partial"
       }
     },
     {
@@ -8661,7 +8599,13 @@
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
           "_shoe_key": "peg41",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Récup stricte : 5'40\"/km max, pas plus de 9-10km. Le 21/08 tu es parti à 4'25\"/km sur 14.8km au lieu de la consigne — ça annule l'effet récupération et alimente la fatigue qui plombe tes séances qualité."
+            }
+          ]
         },
         {
           "date": "2026-08-29",
@@ -8722,7 +8666,13 @@
           "shoe": "Pegasus 41",
           "shoe_note": "10 mm de drop sur les lendemains de séance : le tendon respire.",
           "_shoe_key": "peg41",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Même consigne que le 28/08 : récup = récup, 5'40\"/km, pas de km bonus. Ce jour arrive juste après le bloc MP du 30/08, c'est là que la discipline compte le plus."
+            }
+          ]
         },
         {
           "date": "2026-09-01",

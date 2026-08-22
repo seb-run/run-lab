@@ -1,29 +1,6 @@
 {
  "proposals": [
   {
-   "severity": "major",
-   "kind": "volume_adjust",
-   "date": "2026-07-26",
-   "field": "km",
-   "new_value": 18,
-   "reason": "Les 2 dernières sorties longues ont été manquée puis stoppée à 44% du volume prévu (10.6/24.2km) ; repartir sur 18km réalistes pour recréer une réussite plutôt que viser 25.6km et risquer un 3e échec.",
-   "id": "48df52a3",
-   "status": "expired",
-   "created_at": "2026-07-19T13:45:55"
-  },
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-07-19",
-   "field": "description_note",
-   "new_value": "Avant de reprendre : identifie ce qui a bloqué ces 2 dernières semaines (fatigue, emploi du temps, douleur ?) et dis-le-moi. On ajustera le plan en conséquence.",
-   "reason": "Taux d'échec très élevé et généralisé sur 2 semaines, besoin de comprendre la cause avant d'ajuster davantage la charge.",
-   "id": "70b351d3",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "expired",
-   "created_at": "2026-07-19T13:45:55"
-  },
-  {
    "severity": "minor",
    "kind": "add_note",
    "date": "2026-07-21",
@@ -418,6 +395,42 @@
    "id": "fc290b34",
    "status": "pending",
    "created_at": "2026-08-21T06:05:03"
+  },
+  {
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-08-25",
+   "field": null,
+   "new_value": "seuil recalé sur FC plutôt que sur l'allure stricte, fractions raccourcies",
+   "reason": "3 dernières séances de qualité ratées avec allures 40-70s/km plus lentes que la cible malgré FC basse : le seuil à 3'50/km n'est plus réaliste tant que la confiance n'est pas revenue. On recadre sur une allure atteignable pour retrouver une séance réussie.",
+   "replacement": {
+    "title": "Seuil court · 3×10 min",
+    "type": "seuil",
+    "km": 14.0,
+    "target_pace": "3'58\"/km",
+    "description": "3×10 min à allure seuil (3'58\"/km cible, cap FC ~168-172 max), récup 3 min trot entre chaque. Si à 3 min ta FC dépasse le cap ou que ça tire trop, ralentis de 5-10s/km : l'objectif est de finir les 3 blocs propres, pas de tenir un chrono. Échauffement 15 min + retour au calme 10 min inclus dans le volume total."
+   },
+   "id": "05905cbb",
+   "status": "pending",
+   "created_at": "2026-08-22T06:02:05"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-08-30",
+   "field": null,
+   "new_value": "portion MP réduite de 10km à 6km, allure MP stratégie plutôt que cible",
+   "reason": "Le dernier bloc MP (20/08) a été un échec net (5'11/km au lieu de 4'12, jamais dans le rythme). Enchaîner directement sur 10km MP au sein d'une sortie longue de 25km est risqué : on réduit le bloc et on vise l'allure stratégie (4'18) pour reconstruire la confiance avant de revenir à 4'12.",
+   "replacement": {
+    "title": "SL 25km · 6km AM",
+    "type": "long_mp",
+    "km": 25.0,
+    "target_pace": "4'18\"/km",
+    "description": "19km en endurance à 4'55-5'00/km, puis 6km à allure marathon stratégie (4'18\"/km) en fin de sortie sur jambes fatiguées, puis retour au calme si besoin. Coupe le bloc MP si la FC s'envole ou si les sensations sont mauvaises : mieux vaut 4km propres que 6km dans le mur."
+   },
+   "id": "ed224e51",
+   "status": "pending",
+   "created_at": "2026-08-22T06:02:05"
   }
  ]
 }
