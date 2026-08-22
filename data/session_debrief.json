@@ -1,45 +1,45 @@
 {
- "headline": "Fractionné déguisé en récup : -75\"/km vs plan, séance hors cadre",
+ "headline": "FC nettement sous ta norme, contact sol plus court : séance efficace et propre.",
  "bullets": [
-  "Prévu 8km à 5'40 en récup, réalisé 14,78km à 4'25 moy avec relances à 3'50 : autre séance.",
-  "Asymétrie qui s'ouvre avec la vitesse : 50,99% lent → 47,69% rapide (+1,32), pattern proche de ton épisode adducteur.",
-  "FC moy 161 vs 154,5 sur tes séances comparables (+6,5), cohérent avec les relances, pas d'alerte isolée."
+  "FC moy. 146 vs 149 hab. (-3 bpm) à allure quasi égale (5'08 vs 5'04 réf) : jour efficace.",
+  "Contact sol 224 ms vs 228 ms hab. (-4 ms) : meilleure économie que d'habitude.",
+  "Asymétrie stable avec l'allure (+0,14 seulement, lent 50,39% / rapide 50,53%) : rien à signaler."
  ],
  "points": [
   {
-   "label": "Asym. vitesse",
-   "valeur": "+1,32",
-   "ecart": "lent 50,99% → rapide 47,69%",
-   "lecture": "asymétrie qui s'ouvre avec l'allure",
-   "ton": "vigilance"
+   "label": "FC moyenne",
+   "valeur": "146 bpm",
+   "ecart": "-3,3 bpm vs réf 149",
+   "lecture": "Effort cardiaque plus bas qu'habituel",
+   "ton": "bon"
   },
   {
-   "label": "FC moyenne",
-   "valeur": "161 bpm",
-   "ecart": "+6,5 vs réf 154,5",
-   "lecture": "cohérent avec structure en relances",
-   "ton": "neutre"
+   "label": "Contact sol",
+   "valeur": "224 ms",
+   "ecart": "-4,6 ms vs réf 228",
+   "lecture": "Meilleur temps d'appui que la moyenne",
+   "ton": "bon"
   },
   {
    "label": "Équilibre gauche",
-   "valeur": "49,34%",
-   "ecart": "≈ réf 49,93%",
-   "lecture": "rien de nouveau sur la répartition",
+   "valeur": "50,49 %",
+   "ecart": "+0,17 pt vs réf 50,32 %",
+   "lecture": "Léger surplus gauche, dans la norme",
    "ton": "neutre"
   }
  ],
- "achille": "Équilibre gauche 49,3%, quasi identique à ta réf (49,9%) — pas de signal côté Achille.",
- "a_surveiller": "Le schéma asym_vs_allure (+1,32) rappelle la signature de ton ancien épisode adducteur, à garder en tête.",
+ "achille": "Équilibre 50,5% G, proche de ta moyenne (50,3%) : léger déchargement du droit, rien d'alarmant.",
+ "a_surveiller": "Ratio vertical 9,63 vs 8,81 hab. (+0,82), plus haut que d'habitude : à surveiller.",
  "seance": {
-  "date": "21/08/2026",
-  "heure": "18:13",
-  "titre": "i178351689",
-  "type_detecte": "frac_court",
-  "km": 14.78,
-  "duree": "1h 05m 23s",
-  "allure": "4'25\"/km",
-  "fc_moy": 161
+  "date": "22/08/2026",
+  "heure": "17:53",
+  "titre": "i178654678",
+  "type_detecte": "endurance",
+  "km": 9.86,
+  "duree": "50m 39s",
+  "allure": "5'08\"/km",
+  "fc_moy": 146
  },
- "generated_at": "2026-08-21T17:24:54",
- "baseline_n": 6
+ "generated_at": "2026-08-22T16:46:48",
+ "baseline_n": 29
 }

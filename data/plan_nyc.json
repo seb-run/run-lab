@@ -8434,12 +8434,182 @@
           "key": false,
           "description": "11 km + 8×20\" de lignes en souplesse.",
           "target_pace": "5'20\"/km",
-          "status": "today",
+          "status": "done",
           "_easy_idx": 4,
           "shoe": "Hyperboost Edge (neuve)",
           "shoe_note": "Stack maximal : amorti maximal sur les kilomètres faciles.",
           "_shoe_key": "hyper",
-          "actual": null
+          "actual": {
+            "km": 9.9,
+            "duration_min": 51,
+            "pace_sec": 308,
+            "pace_str": "5'08\"/km",
+            "fc": 146,
+            "cadence": 176,
+            "type": "endurance",
+            "title": "i178654678",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 224.0,
+              "osc_cm": 10.7,
+              "vratio": 9.63,
+              "balance_l": 50.49,
+              "step_m": 1.09,
+              "temp_c": 27,
+              "temp_max": 30,
+              "resp": 30.4,
+              "power": 380,
+              "np": 382,
+              "te_aero": 3.2,
+              "te_ana": 0.0,
+              "load": 108.4,
+              "strides": 4465,
+              "rpe": 2.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 223.0,
+                  "end": 225.0,
+                  "pct": 0.5
+                },
+                "step": {
+                  "start": 1078.0,
+                  "end": 1103.0,
+                  "pct": 2.3
+                },
+                "vratio": {
+                  "start": 9.56,
+                  "end": 9.82,
+                  "pct": 2.7
+                },
+                "osc": {
+                  "start": 105.0,
+                  "end": 110.0,
+                  "pct": 4.5
+                },
+                "hr": {
+                  "start": 141.0,
+                  "end": 150.0,
+                  "pct": 6.4
+                },
+                "cad": {
+                  "start": 88.5,
+                  "end": 87.7,
+                  "pct": -0.9
+                }
+              },
+              "balance_min": 49.96,
+              "balance_max": 51.0,
+              "balance_series": [
+                49.96,
+                50.02,
+                50.48,
+                50.73,
+                51.0,
+                50.23,
+                50.64,
+                50.94,
+                50.78,
+                50.06
+              ],
+              "balance_lent": 50.39,
+              "balance_rapide": 50.53,
+              "asym_vs_allure": 0.14,
+              "allure_lent_s": 315,
+              "allure_rapide_s": 303,
+              "rr_beats": 7519,
+              "rmssd_effort": 6.6,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 317,
+                "fc": 128,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 304,
+                "fc": 142,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 315,
+                "fc": 148,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 312,
+                "fc": 147,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 308,
+                "fc": 146,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 304,
+                "fc": 148,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 304,
+                "fc": 149,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 302,
+                "fc": 146,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 311,
+                "fc": 154,
+                "ca": 176
+              },
+              {
+                "km": 0.86,
+                "ps": 305,
+                "fc": 151,
+                "ca": 174
+              }
+            ]
+          },
+          "score": {
+            "points": 100,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 90,
+            "volume_points": 100,
+            "pace_points": 100,
+            "pace_target_s": 320,
+            "pace_actual_s": 308,
+            "pace_actual_str": "5'08\"/km",
+            "pace_delta_s": -12,
+            "is_quality": false,
+            "hr": {
+              "avg": 146,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 0.5,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 90%",
+              "Allure −12\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-08-23",
@@ -8498,11 +8668,11 @@
         "km_pct": 71,
         "km_done": 36.2,
         "km_planned": 51.0,
-        "km_done_week": 36.2,
+        "km_done_week": 46.1,
         "km_planned_week": 82.0,
         "sessions_done": 3,
         "sessions_planned": 4,
-        "sessions_done_week": 3,
+        "sessions_done_week": 4,
         "keys_success": 0,
         "keys_total": 2,
         "points": 57,
