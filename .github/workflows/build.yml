@@ -12,7 +12,8 @@ on:
   schedule:
     - cron: '45 5 * * *'
   # Rebuild auto quand le code du dashboard change (pas de boucle : les commits
-  # du CI ne touchent que index.html/output/data, hors de ces paths)
+  # du CI ne touchent que data/, hors de ces paths — sauf plan_nyc.json qui
+  # est autorisé et protégé par le if: sur l'auteur, plus bas).
   push:
     branches: [main]
     paths:
@@ -23,6 +24,9 @@ on:
       - 'build.py'
       - 'manifest.webmanifest'
       - 'sw.js'
+      # Un import de plan (scripts/import_plan_v2.py) doit rebuilder le HTML,
+      # sinon Pages continue de servir l'ancien.
+      - 'data/plan_nyc.json'
   workflow_dispatch:
     inputs:
       regen_plan:
@@ -152,7 +156,9 @@ jobs:
           if git diff --cached --quiet; then
             echo "Données inchangées."
           else
-            git commit -m "data: sync $(date -u +%Y-%m-%dT%H:%M)"
+            # [skip ci] : empêche le push du bot de re-déclencher un workflow
+            # via le trigger `push:` (qui inclut désormais data/plan_nyc.json).
+            git commit -m "data: sync $(date -u +%Y-%m-%dT%H:%M) [skip ci]"
             git pull --rebase origin ${{ github.ref_name }} || true
             git push origin HEAD:${{ github.ref_name }}
           fi

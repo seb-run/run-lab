@@ -42,7 +42,7 @@ echo "▸ Ce qui va être publié"
 # renouvelles le plan. Sans ce chemin ici, ta modification bloquait le rebase.
 # Les autres fichiers de `data/` restent au bot du CI.
 CHEMINS=()
-for c in modules scripts templates build.py sw.js manifest.webmanifest \
+for c in .github modules scripts templates build.py sw.js manifest.webmanifest \
          .gitignore ETAT_PROJET.md SETUP_AUTONOME.md README.md \
          data/plan_nyc.json; do
   [ -e "$c" ] && CHEMINS+=("$c")
