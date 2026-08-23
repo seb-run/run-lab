@@ -22,24 +22,6 @@
    "severity": "major",
    "kind": "change_pace",
    "date": "2026-08-25",
-   "field": "target_pace",
-   "new_value": "4'00\"-4'05\"/km (cap FC ~168-172bpm)",
-   "reason": "Deux séances seuil consécutives (11/08, 18/08) ont raté la cible de 44 à 80s/km sous 28-33°C avec FC basse à mi-parcours, signature typique d'un impact chaleur et non d'une perte de forme (la MP du 13/08 a montré que l'allure spécifique est là). Desserrer la cible protège la qualité du stimulus et évite un 3e échec démoralisant.",
-   "replacement": {
-    "title": "Seuil long · 3×12' piloté FC",
-    "type": "seuil",
-    "km": 16.0,
-    "target_pace": "4'00\"-4'05\"/km",
-    "description": "Lance-toi tôt le matin (avant 8h si possible) pour limiter la chaleur. Cible 4'00-4'05/km sur les 3×12', mais pilote surtout sur FC (cap ~168-172bpm) plutôt que sur le chrono strict. Si tu sens que ça part en vrille dès le 1er bloc, coupe à 10' et garde la récup complète entre les blocs. L'objectif : qualité de l'effort, pas performance absolue par cette chaleur."
-   },
-   "id": "fc549ea2",
-   "status": "pending",
-   "created_at": "2026-08-19T06:03:05"
-  },
-  {
-   "severity": "major",
-   "kind": "change_pace",
-   "date": "2026-08-25",
    "field": null,
    "new_value": "seuil recalibré ~4'25-4'35/km au lieu de 3'50",
    "reason": "3 séances clés d'affilée ratées sur l'allure seuil/MP avec FC basse et RPE faible : le seuil visé n'est pas atteignable en ce moment. Mieux vaut revalider une allure réaliste sur une séance courte plutôt que d'accumuler un 3e échec de suite qui plombe la confiance.",

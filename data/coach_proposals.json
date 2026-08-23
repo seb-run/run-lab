@@ -324,8 +324,9 @@
     "description": "Lance-toi tôt le matin (avant 8h si possible) pour limiter la chaleur. Cible 4'00-4'05/km sur les 3×12', mais pilote surtout sur FC (cap ~168-172bpm) plutôt que sur le chrono strict. Si tu sens que ça part en vrille dès le 1er bloc, coupe à 10' et garde la récup complète entre les blocs. L'objectif : qualité de l'effort, pas performance absolue par cette chaleur."
    },
    "id": "fc549ea2",
-   "status": "pending",
-   "created_at": "2026-08-19T06:03:05"
+   "status": "rejected",
+   "created_at": "2026-08-19T06:03:05",
+   "decided_at": "2026-08-23T19:50:29"
   },
   {
    "severity": "minor",
