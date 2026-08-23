@@ -8438,18 +8438,34 @@
         {
           "date": "2026-08-25",
           "dow": "mar",
-          "type": "easy",
-          "title": "Footing 65' + 6 lignes droites",
-          "km": 13.0,
+          "type": "seuil",
+          "title": "Seuil long piloté à l'effort (chaleur)",
+          "km": 16.0,
           "duration_min": 65,
           "key": false,
-          "description": "65' facile à jeun + 6 LD de 20\".\n[Footing facile · 5'05–5'25/km]\nChaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
+          "description": "3×12min à effort seuil perçu, FC cible ~165-170. Récupération 3min trot entre les blocs. Si la chaleur est toujours forte, réduis à 3×10min plutôt que de forcer le chrono. Priorité : qualité de l'effort, pas le temps affiché au km.",
           "status": "pending",
-          "target_pace": "5'15\"/km",
+          "target_pace": "3'55\"-4'05\"/km selon FC",
           "target_pace_sec": 315,
-          "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
+          "shoe": "Adizero Boston 13",
           "scheduled_time": "06:30",
-          "actual": null
+          "actual": null,
+          "_replaced_by_coach": true,
+          "_replaced_from": {
+            "title": "Footing 65' + 6 lignes droites",
+            "target_pace": "5'15\"/km"
+          },
+          "shoe_note": "Dynamique et ferme, pour le travail rapide.",
+          "_shoe_key": "boston13",
+          "coach_notes": [
+            {
+              "kind": "replacement",
+              "from_title": "Footing 65' + 6 lignes droites",
+              "to_title": "Seuil long piloté à l'effort (chaleur)",
+              "text": "3×12min à effort seuil perçu, FC cible ~165-170. Récupération 3min trot entre les blocs. Si la chaleur est toujours forte, réduis à 3×10min plutôt que de forcer le chrono. Priorité : qualité de l'effort, pas le temps affiché au km.",
+              "validated": true
+            }
+          ]
         },
         {
           "date": "2026-08-26",

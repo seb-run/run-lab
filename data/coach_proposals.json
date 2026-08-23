@@ -315,8 +315,10 @@
     "description": "3×12min à effort seuil perçu, FC cible ~165-170. Récupération 3min trot entre les blocs. Si la chaleur est toujours forte, réduis à 3×10min plutôt que de forcer le chrono. Priorité : qualité de l'effort, pas le temps affiché au km."
    },
    "id": "8054e3bc",
-   "status": "pending",
-   "created_at": "2026-08-18T06:02:18"
+   "status": "accepted",
+   "created_at": "2026-08-18T06:02:18",
+   "decided_at": "2026-08-23T07:16:30",
+   "applied_detail": "2026-08-25 : Footing 65' + 6 lignes droites → Seuil long piloté à l'effort (chaleur)"
   },
   {
    "severity": "major",
