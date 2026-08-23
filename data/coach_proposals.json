@@ -2,17 +2,6 @@
  "proposals": [
   {
    "severity": "major",
-   "kind": "move_session",
-   "date": "2026-08-04",
-   "field": null,
-   "new_value": "Décaler la VMA longue 5×1000m de 2-3 jours plus tard ou la remplacer par un fartlek plus doux",
-   "reason": "Enchaîner une sortie longue avec bloc MP et une VMA longue exigeante à seulement 2 jours d'intervalle est risqué compte tenu de la faible charge accumulée récemment ; espacer permet une meilleure récupération avant la reprise complète d'intensité.",
-   "id": "02ea381f",
-   "status": "expired",
-   "created_at": "2026-07-25T13:08:48"
-  },
-  {
-   "severity": "major",
    "kind": "volume_adjust",
    "date": "2026-08-06",
    "field": "km",
@@ -438,6 +427,19 @@
    "guardrail_reject": "jour passé ou en cours",
    "status": "pending",
    "created_at": "2026-08-23T19:00:25"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-08-23",
+   "field": "description_note",
+   "new_value": "Chaleur + historique du 9/08 (surchauffe à 32°C, stance_drift +8.9%, RPE9) : pars volontairement lent sur les 10-12 premiers km (5'00-5'10/km), ne resserre l'allure vers 4'47 que si les sensations et la FC restent stables. Hydrate-toi tôt et régulièrement, coupe la progression si RPE ou FC s'envolent avant le dernier tiers.",
+   "reason": "La sortie longue du 9/08 (même format 'longue') a viré à la surchauffe avec allongement du temps de contact et décrochage cardiaque en fin de course ; la séance du jour porte le même risque avec un profil progressif qui invite à accélérer trop tôt.",
+   "replacement": null,
+   "id": "d78ac019",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-08-23T20:36:42"
   }
  ]
 }
