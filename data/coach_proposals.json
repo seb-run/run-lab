@@ -1,18 +1,6 @@
 {
  "proposals": [
   {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-07-21",
-   "field": "description_note",
-   "new_value": "Objectif de la semaine : juste finir chaque footing/récup prévu, même court, avant de repenser vitesse. La régularité compte plus que la performance en ce moment.",
-   "reason": "Taux d'assiduité très faible sur 4 semaines (0-61% du volume) : besoin de reconstruire l'habitude avant de viser les allures.",
-   "id": "cf5eff27",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "expired",
-   "created_at": "2026-07-21T07:58:45"
-  },
-  {
    "severity": "major",
    "kind": "restructure_week",
    "date": "2026-08-02",
@@ -431,6 +419,18 @@
    "id": "ed224e51",
    "status": "pending",
    "created_at": "2026-08-22T06:02:05"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-08-23",
+   "field": "description_note",
+   "new_value": "Vigilance chaleur : le 9/08 une longue sous 32°C avait fait dériver FC et foulée (fatigue mécanique réelle). Si temp élevée aujourd'hui, ralentis de 10-15s/km sans hésiter et hydrate-toi toutes les 20min — l'objectif est la durée (1h50), pas le kilométrage à tout prix.",
+   "reason": "Antécédent direct : sortie longue du 09/08 sous forte chaleur avec dérive cardiaque à 9,1% et stance_drift à 8,9% (fatigue mécanique), suivie de deux séances clés ratées. Même contexte estival possible aujourd'hui.",
+   "id": "5cb2dff4",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-08-23T06:02:29"
   }
  ]
 }
