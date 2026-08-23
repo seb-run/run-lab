@@ -1,7 +1,11 @@
 /* seb-metrics — service worker
    Stratégie : network-first pour la page (données fraîches), fallback cache
-   hors-ligne ; stale-while-revalidate pour les assets (fonts, icônes). */
-const CACHE = 'seb-metrics-v1';
+   hors-ligne ; stale-while-revalidate pour les assets (fonts, icônes).
+
+   La version du cache est bumpée à chaque changement du plan pour forcer
+   Safari iOS à jeter la version précédente : le network-first ne suffit pas
+   quand l'iPhone est en tunnel/lockscreen et sert son cache indéfiniment. */
+const CACHE = 'seb-metrics-v3-2026-08-23';
 
 self.addEventListener('install', (e) => {
   self.skipWaiting();
