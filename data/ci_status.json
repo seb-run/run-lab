@@ -1,9 +1,9 @@
 {
  "garmin": {
   "ok": true,
-  "at": "2026-08-23T19:50:38",
+  "at": "2026-08-23T19:51:25",
   "message": "0 fichier(s), 6 course(s) vues",
-  "last_ok": "2026-08-23T19:50:38"
+  "last_ok": "2026-08-23T19:51:25"
  },
  "coach": {
   "ok": true,
@@ -17,8 +17,8 @@
  },
  "coach_validate": {
   "ok": true,
-  "at": "2026-08-23T19:50:29",
-  "message": "reject fc549ea2",
-  "last_ok": "2026-08-23T19:50:29"
+  "at": "2026-08-23T19:51:16",
+  "message": "reject 05905cbb",
+  "last_ok": "2026-08-23T19:51:16"
  }
 }

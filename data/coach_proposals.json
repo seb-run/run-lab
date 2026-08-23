@@ -391,8 +391,9 @@
     "description": "3×10 min à allure seuil (3'58\"/km cible, cap FC ~168-172 max), récup 3 min trot entre chaque. Si à 3 min ta FC dépasse le cap ou que ça tire trop, ralentis de 5-10s/km : l'objectif est de finir les 3 blocs propres, pas de tenir un chrono. Échauffement 15 min + retour au calme 10 min inclus dans le volume total."
    },
    "id": "05905cbb",
-   "status": "pending",
-   "created_at": "2026-08-22T06:02:05"
+   "status": "rejected",
+   "created_at": "2026-08-22T06:02:05",
+   "decided_at": "2026-08-23T19:51:16"
   },
   {
    "severity": "major",
