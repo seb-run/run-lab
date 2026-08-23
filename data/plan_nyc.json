@@ -8809,7 +8809,13 @@
           "target_pace_sec": 249,
           "shoe": "Adidas Evo SL neuve — réservée aux séances",
           "scheduled_time": "08:00",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Cette longue de 28km avec 3×4km à MP arrive 48h après ton seuil du 28/08 — bloc dense. Si le seuil de vendredi te laisse encore des jambes lourdes samedi, allège les portions MP (garde l'allure facile, réduis à 2×4km) plutôt que de forcer."
+            }
+          ]
         }
       ]
     },

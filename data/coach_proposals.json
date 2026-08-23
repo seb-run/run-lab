@@ -2,17 +2,6 @@
  "proposals": [
   {
    "severity": "major",
-   "kind": "restructure_week",
-   "date": "2026-08-02",
-   "field": "description_note",
-   "new_value": "Réduire la sortie longue à 20-22km, garder seulement 6-8km à allure marathon au lieu de 12km",
-   "reason": "Après 4 semaines à volume très réduit et 0 clé réussie, un bloc MP de 12km sur 27km est trop ambitieux et risque un nouvel échec ou une blessure.",
-   "id": "7e4375e9",
-   "status": "expired",
-   "created_at": "2026-07-25T13:08:48"
-  },
-  {
-   "severity": "major",
    "kind": "move_session",
    "date": "2026-08-04",
    "field": null,
@@ -434,6 +423,19 @@
    "guardrail_reject": "jour passé ou en cours",
    "status": "pending",
    "created_at": "2026-08-23T06:02:29"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-08-23",
+   "field": "description_note",
+   "new_value": "Vise 22km pile, pas plus. Le 09/08 tu es parti pour 26km par forte chaleur (RPE9, dérive FC 9%, foulée qui s'allonge en fin de course) et ça a plombé ton seuil deux jours après. Coupe le finish progressif si la FC ou les jambes tirent trop, mieux vaut finir frais que cramé.",
+   "reason": "Répétition du pattern du 09/08 (sortie longue surdosée + chaleur) qui a directement causé l'échec du seuil du 11/08.",
+   "replacement": null,
+   "id": "f023e861",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-08-23T19:00:25"
   }
  ]
 }
