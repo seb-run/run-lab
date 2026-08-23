@@ -219,7 +219,12 @@ def render(plan: dict) -> str:
         ("10k", "Séances 8×1000 m et 6×1200 m."),
         ("vma", "Lignes et rappels de vitesse pure."),
     ]:
-        a(f"<tr><td><strong>{key}</strong></td><td class='pace'>{ps[key]}</td>"
+        # Défensif : sans cette clé, un import de plan qui n'aurait pas
+        # tous les alias faisait planter le rendu — donc l'assemblage du
+        # site Pages, donc le déploiement. Une ligne « — » vaut mieux
+        # qu'un site figé sur l'ancienne version.
+        pace = ps.get(key) or ps.get({'recup':'recovery','footing':'le_easy'}.get(key,''),'—')
+        a(f"<tr><td><strong>{key}</strong></td><td class='pace'>{pace}</td>"
           f"<td>{usage}</td></tr>")
     a("</table>")
 
@@ -475,7 +480,11 @@ def render(plan: dict) -> str:
             if d.get("shoe"):
                 shoe = (f"<div class='shoe'>👟 {html.escape(d['shoe'])}"
                         f"<span class='shoe-n'> — {html.escape(d.get('shoe_note',''))}</span></div>")
-            a(f"<tr><td class='d-day'>{JOURS[d['dow']]} {date.fromisoformat(d['date']).day}</td>"
+            # dow peut arriver sous plusieurs formats selon la source du plan.
+            # On dérive un libellé jour à partir de la date, indépendamment.
+            _dt = date.fromisoformat(d['date'])
+            _dow_fr = ["Lun","Mar","Mer","Jeu","Ven","Sam","Dim"][_dt.weekday()]
+            a(f"<tr><td class='d-day'>{_dow_fr} {_dt.day}</td>"
               f"<td><span class='badge {cls}'>{lbl}</span></td>"
               f"<td><div class='d-t'>{html.escape(d['title'])}{star}</div>"
               f"<div class='d-desc'>{md_inline(d['description'])}</div>{shoe}</td>"

@@ -132,7 +132,8 @@ def convert_day(v2_seance, week_num, phase_label, allures_ref):
     target_sec = parse_pace_range(v2_seance.get('allure_plage'))
     day = {
         'date': iso,
-        'dow': ['lun','mar','mer','jeu','ven','sam','dim'][dt.weekday()],
+        # Format attendu par render_plan_doc.py : anglais court capitalisé
+        'dow': ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'][dt.weekday()],
         'type': typ,
         'title': v2_seance.get('titre') or '',
         'km': float(v2_seance.get('km') or 0),
@@ -203,6 +204,10 @@ def meta_from_v2(v2, weeks):
         'plan_peak_km': max((w['target_km'] for w in weeks), default=0),
         'user_peak_km': None,
         'vma_used': v2.get('meta', {}).get('vdot'),
+        # Toutes les clés attendues par render_plan_doc.py (« recup »,
+        # « footing », « le_long »…) doivent être fournies, sinon la génération
+        # du plan.html plante et l'étape « Assemble site » du CI échoue —
+        # empêchant tout déploiement Pages jusqu'au correctif.
         'paces_str': {
             'vma':          milieu('VM') or milieu('VO'),
             '10k':          milieu('AS'),
@@ -213,6 +218,10 @@ def meta_from_v2(v2, weeks):
             'mp_strategy':  "4'18\"/km",
             'le_easy':      milieu('AF'),
             'recovery':     milieu('AR'),
+            # Alias attendus par render_plan_doc.py
+            'recup':        milieu('AR'),
+            'footing':      milieu('AF'),
+            'le_long':      milieu('AE') or milieu('AF'),
         },
         'paces_sec': {
             'mp_strategy': 258,
