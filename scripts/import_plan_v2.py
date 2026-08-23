@@ -41,18 +41,22 @@ sys.path.insert(0, str(ROOT))
 # TABLES DE CONVERSION
 # ---------------------------------------------------------------------------
 
-# Code d'allure → type de séance que l'app connaît. Pour les codes qualité,
-# on privilégie la précision : SE=seuil, AM=mp, VO/VM=vma, AS=tempo/semi.
-# Les codes lents (AR/AF/AE) sont ramenés au type d'origine du bloc.
+# Code d'allure → type de séance que l'app connaît.
+#
+# Évolution v2.3 : le code AM change de sémantique (devient l'allure spécifique
+# à 3'57–4'02, plus rapide que la course), un nouveau code ANY apparaît pour
+# l'allure de course NYC à 4'10–4'15. Les deux restent de type 'mp' côté app,
+# c'est la cible chiffrée qui distingue l'exécution.
 _TYPE_FROM_PACE = {
-    'AR': 'recovery',
-    'AF': 'easy',
-    'AE': 'endurance',
-    'AM': 'mp',
-    'AS': 'tempo',
-    'SE': 'seuil',
-    'VO': 'intervals',
-    'VM': 'intervals',
+    'AR':  'recovery',
+    'AF':  'easy',
+    'AE':  'endurance',
+    'AM':  'mp',
+    'ANY': 'mp',
+    'AS':  'tempo',
+    'SE':  'seuil',
+    'VO':  'intervals',
+    'VM':  'intervals',
 }
 
 # Type v2 → type app quand aucune allure ne suffit à décider
@@ -100,7 +104,7 @@ def choose_type(v2_seance):
         if allure in _TYPE_FROM_PACE:
             return _TYPE_FROM_PACE[allure]
     # Un footing avec plage AM/SE/VO est en fait une séance qualité.
-    if t == 'footing' and allure in ('AM', 'SE', 'VO', 'VM', 'AS'):
+    if t == 'footing' and allure in ('AM', 'ANY', 'SE', 'VO', 'VM', 'AS'):
         return _TYPE_FROM_PACE[allure]
     return _TYPE_FROM_V2.get(t, 'easy')
 
@@ -208,14 +212,16 @@ def meta_from_v2(v2, weeks):
         # « footing », « le_long »…) doivent être fournies, sinon la génération
         # du plan.html plante et l'étape « Assemble site » du CI échoue —
         # empêchant tout déploiement Pages jusqu'au correctif.
+        # v2.3 : AM est devenu l'allure « spécifique » plus rapide, ANY est
+        # l'allure de course. On aligne les libellés app sur cette évolution.
         'paces_str': {
             'vma':          milieu('VM') or milieu('VO'),
-            '10k':          milieu('AS'),
+            '10k':          milieu('AS') or milieu('SE'),
             'seuil':        milieu('SE'),
-            'semi':         milieu('AS'),
-            'marathon':     milieu('AM'),
-            'mp_target':    milieu('AM'),
-            'mp_strategy':  "4'18\"/km",
+            'semi':         milieu('AS') or milieu('AM'),
+            'marathon':     milieu('ANY') or milieu('AM'),   # course NYC
+            'mp_target':    milieu('AM'),                    # spécifique entraînement
+            'mp_strategy':  milieu('ANY') or "4'18\"/km",
             'le_easy':      milieu('AF'),
             'recovery':     milieu('AR'),
             # Alias attendus par render_plan_doc.py
