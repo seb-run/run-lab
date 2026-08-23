@@ -1,45 +1,45 @@
 {
- "headline": "FC nettement sous ta norme, contact sol plus court : séance efficace et propre.",
+ "headline": "Finish à ≈4'00/km au lieu des 4'20 ciblés, gros passage à vide sur le tout dernier km.",
  "bullets": [
-  "FC moy. 146 vs 149 hab. (-3 bpm) à allure quasi égale (5'08 vs 5'04 réf) : jour efficace.",
-  "Contact sol 224 ms vs 228 ms hab. (-4 ms) : meilleure économie que d'habitude.",
-  "Asymétrie stable avec l'allure (+0,14 seulement, lent 50,39% / rapide 50,53%) : rien à signaler."
+  "Segment rapide (18-22km) couru à ≈4'00/km, bien sous les 4'20/km prévus au plan.",
+  "Équilibre global 50.3%, identique à ta réf. 60j (50.3%) : rien d'inhabituel côté Achille.",
+  "Asym_vs_allure -0.29 : l'asymétrie ne s'ouvre pas avec la vitesse, à l'inverse du profil pubalgie 2025."
  ],
  "points": [
   {
-   "label": "FC moyenne",
-   "valeur": "146 bpm",
-   "ecart": "-3,3 bpm vs réf 149",
-   "lecture": "Effort cardiaque plus bas qu'habituel",
+   "label": "Allure finish",
+   "valeur": "≈4'00/km",
+   "ecart": "vs 4'20/km ciblé au plan",
+   "lecture": "Finish bien plus rapide que prévu",
+   "ton": "vigilance"
+  },
+  {
+   "label": "Équilibre G/D",
+   "valeur": "50.3%",
+   "ecart": "= ta réf. 60j (50.3%)",
+   "lecture": "Rien d'inhabituel côté Achille",
    "ton": "bon"
   },
   {
-   "label": "Contact sol",
-   "valeur": "224 ms",
-   "ecart": "-4,6 ms vs réf 228",
-   "lecture": "Meilleur temps d'appui que la moyenne",
-   "ton": "bon"
-  },
-  {
-   "label": "Équilibre gauche",
-   "valeur": "50,49 %",
-   "ecart": "+0,17 pt vs réf 50,32 %",
-   "lecture": "Léger surplus gauche, dans la norme",
-   "ton": "neutre"
+   "label": "Dernier km",
+   "valeur": "5'33/km",
+   "ecart": "vs ≈4'00/km juste avant",
+   "lecture": "Gros ralentissement en toute fin",
+   "ton": "vigilance"
   }
  ],
- "achille": "Équilibre 50,5% G, proche de ta moyenne (50,3%) : léger déchargement du droit, rien d'alarmant.",
- "a_surveiller": "Ratio vertical 9,63 vs 8,81 hab. (+0,82), plus haut que d'habitude : à surveiller.",
+ "achille": "Équilibre global 50.3% = ta réf. exacte ; sur le segment rapide il descend à 48.9%, charge un peu plus le droit.",
+ "a_surveiller": "RPE 5/10 et sensation 'Fort' malgré FC +18% et la chute nette du dernier km — écart perception/données.",
  "seance": {
-  "date": "22/08/2026",
-  "heure": "17:53",
-  "titre": "i178654678",
+  "date": "23/08/2026",
+  "heure": "11:25",
+  "titre": "i178869711",
   "type_detecte": "endurance",
-  "km": 9.86,
-  "duree": "50m 39s",
-  "allure": "5'08\"/km",
-  "fc_moy": 146
+  "km": 23.51,
+  "duree": "1h 51m 34s",
+  "allure": "4'45\"/km",
+  "fc_moy": 154
  },
- "generated_at": "2026-08-22T16:46:48",
- "baseline_n": 29
+ "generated_at": "2026-08-23T11:37:52",
+ "baseline_n": 26
 }
