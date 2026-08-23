@@ -91,24 +91,6 @@
    "created_at": "2026-08-22T06:02:05"
   },
   {
-   "severity": "major",
-   "kind": "change_type",
-   "date": "2026-08-30",
-   "field": null,
-   "new_value": "portion MP réduite de 10km à 6km, allure MP stratégie plutôt que cible",
-   "reason": "Le dernier bloc MP (20/08) a été un échec net (5'11/km au lieu de 4'12, jamais dans le rythme). Enchaîner directement sur 10km MP au sein d'une sortie longue de 25km est risqué : on réduit le bloc et on vise l'allure stratégie (4'18) pour reconstruire la confiance avant de revenir à 4'12.",
-   "replacement": {
-    "title": "SL 25km · 6km AM",
-    "type": "long_mp",
-    "km": 25.0,
-    "target_pace": "4'18\"/km",
-    "description": "19km en endurance à 4'55-5'00/km, puis 6km à allure marathon stratégie (4'18\"/km) en fin de sortie sur jambes fatiguées, puis retour au calme si besoin. Coupe le bloc MP si la FC s'envole ou si les sensations sont mauvaises : mieux vaut 4km propres que 6km dans le mur."
-   },
-   "id": "ed224e51",
-   "status": "pending",
-   "created_at": "2026-08-22T06:02:05"
-  },
-  {
    "severity": "minor",
    "kind": "add_note",
    "date": "2026-08-23",
