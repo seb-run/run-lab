@@ -412,7 +412,7 @@
    "reason": "Antécédent direct : sortie longue du 09/08 sous forte chaleur avec dérive cardiaque à 9,1% et stance_drift à 8,9% (fatigue mécanique), suivie de deux séances clés ratées. Même contexte estival possible aujourd'hui.",
    "id": "5cb2dff4",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-08-23T06:02:29"
   },
   {
@@ -425,7 +425,7 @@
    "replacement": null,
    "id": "f023e861",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-08-23T19:00:25"
   },
   {
@@ -438,7 +438,7 @@
    "replacement": null,
    "id": "d78ac019",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-08-23T20:36:42"
   }
  ]

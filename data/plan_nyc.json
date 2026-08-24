@@ -8668,16 +8668,16 @@
         }
       ],
       "compliance": {
-        "km_pct": 100,
-        "km_done": 46.1,
-        "km_planned": 46.0,
+        "km_pct": 102,
+        "km_done": 69.6,
+        "km_planned": 68.0,
         "km_done_week": 69.6,
         "km_planned_week": 68.0,
-        "sessions_done": 3,
-        "sessions_planned": 4,
+        "sessions_done": 4,
+        "sessions_planned": 5,
         "sessions_done_week": 5,
-        "keys_success": 1,
-        "keys_total": 1,
+        "keys_success": 2,
+        "keys_total": 2,
         "points": 100,
         "verdict": "success"
       },
@@ -8703,7 +8703,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos course à pied.",
-          "status": "pending",
+          "status": "today",
           "actual": null
         },
         {
@@ -8768,7 +8768,13 @@
           "target_pace_sec": 230,
           "shoe": "Adidas Evo SL neuve — réservée aux séances",
           "scheduled_time": "06:15",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Si chaleur/humidité élevées comme le 11/08, privilégie l'effort et la FC sur les 2×15' plutôt que le chrono strict — ton seuil du 21/08 à 23°C était parfait, celui du 11/08 à 29°C a dérapé. Bois avant et pendant."
+            }
+          ]
         },
         {
           "date": "2026-08-29",
@@ -8796,9 +8802,18 @@
           "target_pace_sec": 239,
           "shoe": "Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
           "scheduled_time": "08:00",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Séance longue avec 5×3km à allure spécifique (3'59) après une semaine à 3 séances clés denses (seuil vendredi, cette longue, 6×800 mercredi suivant). Hydrate-toi bien avant, ajuste l'allure des blocs à la sensation si chaleur, et surveille les signaux de fatigue (Achille) en fin de séance."
+            }
+          ]
         }
-      ]
+      ],
+      "volume_actual_to_date": 0.0,
+      "volume_planned_to_date": 0.0,
+      "volume_drift_pct": 0
     },
     {
       "week_num": 13,
