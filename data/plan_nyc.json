@@ -2220,81 +2220,7 @@
               "rr_beats": 9647,
               "rmssd_effort": 6.8,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 294,
-                "fc": 128,
-                "ca": 177
-              },
-              {
-                "km": 1.0,
-                "ps": 281,
-                "fc": 145,
-                "ca": 177
-              },
-              {
-                "km": 1.0,
-                "ps": 282,
-                "fc": 151,
-                "ca": 177
-              },
-              {
-                "km": 1.0,
-                "ps": 290,
-                "fc": 156,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 274,
-                "fc": 158,
-                "ca": 179
-              },
-              {
-                "km": 1.0,
-                "ps": 275,
-                "fc": 160,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 301,
-                "fc": 158,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 318,
-                "fc": 157,
-                "ca": 175
-              },
-              {
-                "km": 1.0,
-                "ps": 281,
-                "fc": 163,
-                "ca": 179
-              },
-              {
-                "km": 1.0,
-                "ps": 279,
-                "fc": 161,
-                "ca": 179
-              },
-              {
-                "km": 1.0,
-                "ps": 292,
-                "fc": 165,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 288,
-                "fc": 164,
-                "ca": 178
-              }
-            ]
+            }
           },
           "score": {
             "points": 85,
@@ -8703,7 +8629,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos course à pied.",
-          "status": "today",
+          "status": "done",
           "actual": null
         },
         {
@@ -8715,7 +8641,7 @@
           "duration_min": 65,
           "key": false,
           "description": "65' facile à jeun. Pas de lignes droites aujourd'hui.\n\n👟 Premier contact avec les Zoom Fly 6 : plat, aucune accélération. L'objectif est de sentir la plaque, pas de la solliciter. Surveille le mollet droit en fin de sortie et au réveil le lendemain.\n[Footing facile · 5'05–5'25/km]\nChaussures : Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
-          "status": "pending",
+          "status": "today",
           "target_pace": "5'15\"/km",
           "target_pace_sec": 315,
           "shoe": "Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
@@ -8773,6 +8699,10 @@
             {
               "kind": "note",
               "text": "Si chaleur/humidité élevées comme le 11/08, privilégie l'effort et la FC sur les 2×15' plutôt que le chrono strict — ton seuil du 21/08 à 23°C était parfait, celui du 11/08 à 29°C a dérapé. Bois avant et pendant."
+            },
+            {
+              "kind": "note",
+              "text": "Si chaleur/humidité comme mi-août : ne cherche pas le chrono à tout prix sur les 2×15'. Vise l'effort seuil (FC, sensations) plutôt que le 3'50\"/km strict, quitte à lâcher 5-8s/km. Hydrate-toi avant."
             }
           ]
         },
@@ -8807,6 +8737,10 @@
             {
               "kind": "note",
               "text": "Séance longue avec 5×3km à allure spécifique (3'59) après une semaine à 3 séances clés denses (seuil vendredi, cette longue, 6×800 mercredi suivant). Hydrate-toi bien avant, ajuste l'allure des blocs à la sensation si chaleur, et surveille les signaux de fatigue (Achille) en fin de séance."
+            },
+            {
+              "kind": "note",
+              "text": "26km avec 5×3km à allure spécifique juste après une grosse semaine (102%) : hydrate-toi bien avant/pendant, et si tu sens que ça tire dès les premiers 3km rapides, allonge légèrement l'allure plutôt que de forcer."
             }
           ]
         }
