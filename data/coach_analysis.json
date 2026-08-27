@@ -1,29 +1,19 @@
 {
- "generated_at": "2026-08-26T06:06:15",
+ "generated_at": "2026-08-27T09:00:28",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-08-23\", \"title\": \"SORTIE LONGUE — finish progressif\", \"type\": \"long\", \"planned_km\": 22.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"4'47\\\"/km\", \"actual\": {\"km\": 23.5, \"pace_str\": \"4'45\\\"/km\", \"fc\": 154, \"cadence\": 180, \"duration_min\": 112}, \"splits\": \"1:4'57/136/180spm 2:4'51/144/182spm 3:4'52/145/180spm 4:4'53/144/180spm 5:4'56/145/180spm 6:4'49/145/180spm 7:4'51/146/180spm 8:4'53/148/180spm 9:4'53/152/180spm 10:4'55/150/180spm 11:4'52/152/180spm 12:4'53/152/180spm 13:4'54/151/180spm 14:5'00/151/180spm 15:4'57/152/180spm 16:5'06/153/178spm 17:4'57/152/180spm 18:4'01/165/182spm 19:3'58/174/180spm 20:4'00/180/182spm 21:3'54/179/182spm 22:3'57/182/182spm 23:5'33/165/176spm 24:5'20/157/178spm\", \"garmin\": {\"te_aero\": 4.9, \"te_ana\": 0.0, \"load\": 281.9, \"rpe\": 5.0, \"feel_label\": \"Fort\", \"temp_c\": 26, \"balance_l\": 50.28, \"flags\": [], \"stance_drift_pct\": -9.1, \"step_drift_pct\": 13.0}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 107, \"pace_delta_s\": -2}, \"hr\": {\"avg\": 154, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 4.2, \"flags\": []}}, {\"date\": \"2026-08-24\", \"title\": \"Repos + Muscu A\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-08-25\", \"title\": \"Footing 65' — rodage Zoom Fly 6 (1/3)\", \"type\": \"easy\", \"planned_km\": 13.0, \"key\": false, \"status\": \"missed\", \"target_pace\": \"5'15\\\"/km\"}]",
- "headline": "Forme clairement au-dessus du plan sur les séances clés, mais tu cours trop vite sur tes footings faciles — ça grignote la récup avant le gros week-end.",
- "analysis": "Les semaines 9 à 11 sont solides : volume à 100-110%, séances clés (seuil, sortie longue) toutes réussies et même dépassées en allure, avec des RPE bas et des sensations 'Fort'. Le vrai problème n'est pas dans la qualité mais dans la discipline des jours faciles : sur presque tous tes footings et récup, tu roules 15 à 30s/km plus vite que la cible avec une FC qui grimpe en conséquence (147-151bpm sur des sorties censées être à 5'15-5'25). Deux footings faciles ont sauté en une semaine (19/08 et 25/08) alors qu'aucune séance clé n'a échoué — signe que la fatigue cumulée touche d'abord les jours de récup, pas encore les séances importantes. Tu arrives sur un bloc chargé : seuil vendredi puis sortie longue alternée dimanche, déjà boostée de 5km par le moteur pour compenser le déficit de volume (31km avec 5×3km à allure spécifique). Le risque principal cette semaine, c'est d'aborder ce bloc sans avoir vraiment récupéré parce que les footings d'avant auront été trop rapides. Focus : verrouiller les allures faciles sur FC plutôt que sur sensation pour arriver frais vendredi et dimanche, et ne pas transformer les segments à allure marathon de dimanche en test de vitesse comme tu le fais souvent sur tes sorties longues.",
+ "signature": "[{\"date\": \"2026-08-24\", \"title\": \"Repos + Muscu A\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-08-25\", \"title\": \"Footing 65' — rodage Zoom Fly 6 (1/3)\", \"type\": \"easy\", \"planned_km\": 13.0, \"key\": false, \"status\": \"missed\", \"target_pace\": \"5'15\\\"/km\"}, {\"date\": \"2026-08-26\", \"title\": \"Footing 50' + gammes\", \"type\": \"easy\", \"planned_km\": 10.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'15\\\"/km\", \"actual\": {\"km\": 10.3, \"pace_str\": \"5'21\\\"/km\", \"fc\": 140, \"cadence\": 179, \"duration_min\": 55}, \"splits\": \"1:5'39/125/182spm 2:5'25/132/182spm 3:5'17/136/180spm 4:5'19/139/178spm 5:5'18/141/180spm 6:5'23/140/180spm 7:5'16/145/178spm 8:5'17/146/178spm 9:5'11/149/178spm 10:5'25/148/176spm 11:5'21/143/176spm\", \"garmin\": {\"te_aero\": 3.1, \"te_ana\": 0.0, \"load\": 98.7, \"rpe\": 2.0, \"feel_label\": \"Fort\", \"temp_c\": 22, \"balance_l\": 51.61, \"flags\": [], \"stance_drift_pct\": -1.7, \"step_drift_pct\": 5.0}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 103, \"pace_delta_s\": 6}, \"hr\": {\"avg\": 140, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 4.8, \"flags\": []}}]",
+ "headline": "Les séances clés sont toutes réussies et bien vécues, mais deux footings faciles sautés en 14 jours trahissent une récup un peu juste avant une semaine très dense.",
+ "analysis": "Ta forme est bonne : MP, seuil et les deux longues sorties récentes sont toutes en succès, avec RPE bas (3-6), ressenti 'Fort' et des allures spécifiques tenues correctement (le finish progressif du 23/08 est un modèle du genre). Le souci n'est pas la performance mais la gestion de la charge autour : tu loupes systématiquement le footing facile qui suit de ~48h une grosse sortie longue (19/08 après le 20 km du 16/08, 25/08 après le 23,5 km du 23/08), et sur tes easy réalisés tu es quasi toujours 15-25s/km plus vite que la consigne recovery/footing — ce qui grignote la récup au lieu de la préserver. La semaine qui arrive enchaîne un bond de volume sur la longue de dimanche (31 km avec 5×3 km à allure semi, contre 20 puis 23,5 km les deux dimanches précédents) suivie d'une semaine à 3 séances clés en 5 jours (piste, MP continu, longue progressive). Le risque principal, c'est de reproduire le pattern des deux dernières semaines : craquer sur l'easy de mardi 01/09 juste avant la séance de piste, faute d'avoir vraiment récupéré après la longue de dimanche. Focus de la semaine : ralentis vraiment sur les footings faciles (utilise le haut de la fourchette, 5'25 et plus) et reste vigilant sur le ressenti mardi matin avant d'attaquer les 800 m.",
  "applied": [
   {
    "severity": "minor",
    "kind": "add_note",
-   "date": "2026-08-27",
+   "date": "2026-09-01",
    "field": "description_note",
-   "new_value": "Dernier footing avant le bloc clé (seuil vendredi, longue dimanche). Reste vraiment sous 5'25/km, FC basse. L'objectif ici c'est d'arriver frais, pas de gratter du volume.",
-   "reason": "Consolider la récup avant deux séances clés consécutives, sachant que deux footings faciles ont déjà sauté cette semaine.",
-   "id": "0810cf79",
-   "detail": "2026-08-27 : note ajoutée"
-  },
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-08-30",
-   "field": "description_note",
-   "new_value": "Ce long a été boosté de 5km par le plan (31km au lieu de 26) pour compenser le déficit de volume. Sur les 5×3km à allure spécifique, respecte 3'59/km sans forcer — tu as tendance à accélérer nettement au-delà de la cible sur ce type de segment, ce qui a fait grimper la FC et le decoupling sur tes deux dernières longues.",
-   "reason": "Volume déjà augmenté automatiquement + historique d'accélération excessive sur les segments rapides des sorties longues récentes ; risque de surcharge sur une séance clé déjà conséquente.",
-   "id": "21e8bb5a",
-   "detail": "2026-08-30 : note ajoutée"
+   "new_value": "Ce créneau a sauté les deux dernières fois qu'il suivait une grosse sortie longue (19/08 et 25/08). Si les jambes sont lourdes après le 31 km de dimanche, raccourcis à 30-35' plutôt que de le sauter complètement — l'objectif est juste de garder la routine avant la séance de piste du lendemain.",
+   "reason": "Pattern répété : easy J+2 après une longue sortie manqué deux fois de suite ; anticiper avec une option de repli plutôt qu'un all-or-nothing évite un 3e forfait avant une séance clé importante.",
+   "id": "c44fb907",
+   "detail": "2026-09-01 : note ajoutée"
   }
  ],
  "pending": [
@@ -48,14 +38,14 @@
   {
    "severity": "minor",
    "kind": "add_note",
-   "date": "2026-08-26",
+   "date": "2026-08-27",
    "field": "description_note",
-   "new_value": "Tu roules systématiquement 15-30s/km trop vite sur tes footings depuis 2 semaines (FC qui monte à 147-151 au lieu de rester basse). Aujourd'hui : vraie allure récup, cale-toi sur la FC pas sur la sensation, même si ça paraît trop lent.",
-   "reason": "Pattern répété d'overpacing sur les jours faciles malgré RPE bas — risque d'accumulation de fatigue avant le bloc seuil+longue du week-end.",
-   "id": "0420e3a7",
+   "new_value": "Vraiment en mode récup : vise 5'25-5'35/km, pas plus vite. Sur tes 3 derniers footings tu es systématiquement 15-25s trop rapide, ça grignote la récup avant le seuil de demain.",
+   "reason": "Tendance récurrente à courir les footings faciles trop vite (4'52 à 5'21 pour des consignes à 5'15-5'25), ce qui réduit l'effet récupération recherché.",
+   "id": "88c73e4b",
    "guardrail_reject": "jour passé ou en cours",
    "status": "pending",
-   "created_at": "2026-08-26T06:06:15"
+   "created_at": "2026-08-27T09:00:28"
   }
  ]
 }

@@ -2353,75 +2353,7 @@
               "rr_beats": 7935,
               "rmssd_effort": 4.6,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 308,
-                "fc": 133,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 295,
-                "fc": 144,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 279,
-                "fc": 155,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 281,
-                "fc": 155,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 283,
-                "fc": 159,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 279,
-                "fc": 157,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 274,
-                "fc": 164,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 274,
-                "fc": 164,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 274,
-                "fc": 167,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 279,
-                "fc": 168,
-                "ca": 178
-              },
-              {
-                "km": 0.62,
-                "ps": 278,
-                "fc": 169,
-                "ca": 176
-              }
-            ]
+            }
           },
           "score": {
             "points": 49,
@@ -8657,12 +8589,188 @@
           "duration_min": 50,
           "key": false,
           "description": "50' souple + 10' de gammes.\n[Footing facile · 5'05–5'25/km]\nChaussures : Nike Pegasus 41 « Jakob » (476 km)",
-          "status": "today",
+          "status": "done",
           "target_pace": "5'15\"/km",
           "target_pace_sec": 315,
           "shoe": "Nike Pegasus 41 « Jakob » (476 km)",
           "scheduled_time": "06:30",
-          "actual": null
+          "actual": {
+            "km": 10.3,
+            "duration_min": 55,
+            "pace_sec": 321,
+            "pace_str": "5'21\"/km",
+            "fc": 140,
+            "cadence": 179,
+            "type": "footing",
+            "title": "i180285412",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 226.0,
+              "osc_cm": 9.9,
+              "vratio": 9.32,
+              "balance_l": 51.61,
+              "step_m": 1.04,
+              "temp_c": 22,
+              "temp_max": 28,
+              "resp": 34.7,
+              "power": 349,
+              "np": 350,
+              "te_aero": 3.1,
+              "te_ana": 0.0,
+              "load": 98.7,
+              "strides": 4931,
+              "rpe": 2.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 227.0,
+                  "end": 223.0,
+                  "pct": -1.7
+                },
+                "step": {
+                  "start": 1012.0,
+                  "end": 1062.0,
+                  "pct": 5.0
+                },
+                "vratio": {
+                  "start": 9.2,
+                  "end": 9.54,
+                  "pct": 3.7
+                },
+                "osc": {
+                  "start": 95.0,
+                  "end": 103.0,
+                  "pct": 8.8
+                },
+                "hr": {
+                  "start": 133.0,
+                  "end": 148.0,
+                  "pct": 11.0
+                },
+                "cad": {
+                  "start": 90.2,
+                  "end": 88.7,
+                  "pct": -1.8
+                }
+              },
+              "balance_min": 51.21,
+              "balance_max": 52.86,
+              "balance_series": [
+                52.86,
+                52.17,
+                51.71,
+                51.55,
+                51.4,
+                51.39,
+                51.22,
+                51.43,
+                51.29,
+                51.21
+              ],
+              "balance_lent": 52.08,
+              "balance_rapide": 51.41,
+              "asym_vs_allure": -0.67,
+              "allure_lent_s": 329,
+              "allure_rapide_s": 314,
+              "rr_beats": 8278,
+              "rmssd_effort": 28.9,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 339,
+                "fc": 125,
+                "ca": 182
+              },
+              {
+                "km": 1.0,
+                "ps": 325,
+                "fc": 132,
+                "ca": 182
+              },
+              {
+                "km": 1.0,
+                "ps": 317,
+                "fc": 136,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 319,
+                "fc": 139,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 318,
+                "fc": 141,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 323,
+                "fc": 140,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 316,
+                "fc": 145,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 317,
+                "fc": 146,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 311,
+                "fc": 149,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 325,
+                "fc": 148,
+                "ca": 176
+              },
+              {
+                "km": 0.31,
+                "ps": 321,
+                "fc": 143,
+                "ca": 176
+              }
+            ]
+          },
+          "score": {
+            "points": 100,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 103,
+            "volume_points": 100,
+            "pace_points": 100,
+            "pace_target_s": 315,
+            "pace_actual_s": 321,
+            "pace_actual_str": "5'21\"/km",
+            "pace_delta_s": 6,
+            "is_quality": false,
+            "hr": {
+              "avg": 140,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 4.8,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 103%",
+              "Allure +6\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-08-27",
@@ -8673,18 +8781,222 @@
           "duration_min": 45,
           "key": false,
           "description": "45' très facile + 6 lignes droites de 20\". Muscu B le midi.\n\n👟 Deuxième sortie en Zoom Fly 6 : premier contact avec de la vitesse, mais courte et sur jambes fraîches.\n[Récupération · 5'15–5'35/km]\nChaussures : Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
-          "status": "pending",
+          "status": "over",
           "target_pace": "5'25\"/km",
           "target_pace_sec": 325,
           "shoe": "Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
           "scheduled_time": "06:30",
-          "actual": null,
+          "actual": {
+            "km": 14.2,
+            "duration_min": 73,
+            "pace_sec": 306,
+            "pace_str": "5'06\"/km",
+            "fc": 148,
+            "cadence": 179,
+            "type": "endurance",
+            "title": "i180285436",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 224.0,
+              "osc_cm": 9.8,
+              "vratio": 8.81,
+              "balance_l": 50.93,
+              "step_m": 1.08,
+              "temp_c": 24,
+              "temp_max": 30,
+              "resp": 36.5,
+              "power": 365,
+              "np": 368,
+              "te_aero": 3.8,
+              "te_ana": 0.0,
+              "load": 167.8,
+              "strides": 6514,
+              "rpe": 3.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 224.0,
+                  "end": 225.0,
+                  "pct": 0.5
+                },
+                "step": {
+                  "start": 1056.0,
+                  "end": 1100.0,
+                  "pct": 4.2
+                },
+                "vratio": {
+                  "start": 8.57,
+                  "end": 9.19,
+                  "pct": 7.2
+                },
+                "osc": {
+                  "start": 93.0,
+                  "end": 103.0,
+                  "pct": 11.5
+                },
+                "hr": {
+                  "start": 135.0,
+                  "end": 155.0,
+                  "pct": 14.3
+                },
+                "cad": {
+                  "start": 91.0,
+                  "end": 88.5,
+                  "pct": -2.7
+                }
+              },
+              "balance_min": 49.4,
+              "balance_max": 52.71,
+              "balance_series": [
+                52.71,
+                51.77,
+                51.02,
+                50.6,
+                49.81,
+                50.84,
+                50.63,
+                52.18,
+                50.75,
+                51.13,
+                50.91,
+                50.97,
+                50.3,
+                49.4
+              ],
+              "balance_lent": 51.54,
+              "balance_rapide": 50.88,
+              "asym_vs_allure": -0.66,
+              "allure_lent_s": 316,
+              "allure_rapide_s": 299,
+              "rr_beats": 11309,
+              "rmssd_effort": 6.7,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 330,
+                "fc": 128,
+                "ca": 184
+              },
+              {
+                "km": 1.0,
+                "ps": 308,
+                "fc": 136,
+                "ca": 184
+              },
+              {
+                "km": 1.0,
+                "ps": 307,
+                "fc": 139,
+                "ca": 182
+              },
+              {
+                "km": 1.0,
+                "ps": 303,
+                "fc": 138,
+                "ca": 182
+              },
+              {
+                "km": 1.0,
+                "ps": 301,
+                "fc": 136,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 299,
+                "fc": 153,
+                "ca": 182
+              },
+              {
+                "km": 1.0,
+                "ps": 298,
+                "fc": 149,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 314,
+                "fc": 156,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 301,
+                "fc": 165,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 298,
+                "fc": 160,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 299,
+                "fc": 158,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 310,
+                "fc": 158,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 310,
+                "fc": 150,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 307,
+                "fc": 153,
+                "ca": 176
+              },
+              {
+                "km": 0.21,
+                "ps": 317,
+                "fc": 148,
+                "ca": 174
+              }
+            ]
+          },
           "coach_notes": [
             {
               "kind": "note",
               "text": "Dernier footing avant le bloc clé (seuil vendredi, longue dimanche). Reste vraiment sous 5'25/km, FC basse. L'objectif ici c'est d'arriver frais, pas de gratter du volume."
             }
-          ]
+          ],
+          "score": {
+            "points": 84,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 158,
+            "volume_points": 70,
+            "pace_points": 100,
+            "pace_target_s": 325,
+            "pace_actual_s": 306,
+            "pace_actual_str": "5'06\"/km",
+            "pace_delta_s": -19,
+            "is_quality": false,
+            "hr": {
+              "avg": 148,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 7.9,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 158%",
+              "Allure −19\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-08-28",
@@ -8761,22 +9073,22 @@
           "_adapt_volume": true
         }
       ],
-      "volume_actual_to_date": 0.0,
-      "volume_planned_to_date": 13.0,
-      "volume_drift_pct": -100.0,
+      "volume_actual_to_date": 10.3,
+      "volume_planned_to_date": 23.0,
+      "volume_drift_pct": -55.2,
       "compliance": {
-        "km_pct": 0,
-        "km_done": 0.0,
-        "km_planned": 13.0,
-        "km_done_week": 0.0,
+        "km_pct": 45,
+        "km_done": 10.3,
+        "km_planned": 23.0,
+        "km_done_week": 24.5,
         "km_planned_week": 79.0,
-        "sessions_done": 0,
-        "sessions_planned": 1,
-        "sessions_done_week": 0,
+        "sessions_done": 1,
+        "sessions_planned": 2,
+        "sessions_done_week": 2,
         "keys_success": 0,
         "keys_total": 0,
-        "points": 0,
-        "verdict": "failed"
+        "points": 67,
+        "verdict": "partial"
       }
     },
     {
@@ -8814,7 +9126,13 @@
           "target_pace_sec": 315,
           "shoe": "Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
           "scheduled_time": "06:30",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Ce créneau a sauté les deux dernières fois qu'il suivait une grosse sortie longue (19/08 et 25/08). Si les jambes sont lourdes après le 31 km de dimanche, raccourcis à 30-35' plutôt que de le sauter complètement — l'objectif est juste de garder la routine avant la séance de piste du lendemain."
+            }
+          ]
         },
         {
           "date": "2026-09-02",

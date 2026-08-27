@@ -2,18 +2,6 @@
  "proposals": [
   {
    "severity": "major",
-   "kind": "volume_adjust",
-   "date": "2026-08-09",
-   "field": "km",
-   "new_value": 19.0,
-   "reason": "SL progressive de 24.6km trop lourde après 4 semaines sous le volume planifié ; risque de surcharge et d'échec supplémentaire, mieux vaut consolider avant d'augmenter.",
-   "id": "07a1f63f",
-   "status": "rejected",
-   "created_at": "2026-08-02T07:53:30",
-   "decided_at": "2026-08-05T11:55:44"
-  },
-  {
-   "severity": "major",
    "kind": "change_type",
    "date": "2026-08-09",
    "field": null,
@@ -438,8 +426,20 @@
    "reason": "Pattern répété d'overpacing sur les jours faciles malgré RPE bas — risque d'accumulation de fatigue avant le bloc seuil+longue du week-end.",
    "id": "0420e3a7",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-08-26T06:06:15"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-08-27",
+   "field": "description_note",
+   "new_value": "Vraiment en mode récup : vise 5'25-5'35/km, pas plus vite. Sur tes 3 derniers footings tu es systématiquement 15-25s trop rapide, ça grignote la récup avant le seuil de demain.",
+   "reason": "Tendance récurrente à courir les footings faciles trop vite (4'52 à 5'21 pour des consignes à 5'15-5'25), ce qui réduit l'effet récupération recherché.",
+   "id": "88c73e4b",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-08-27T09:00:28"
   }
  ]
 }

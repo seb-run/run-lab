@@ -1,45 +1,45 @@
 {
- "headline": "Finish à ≈4'00/km au lieu des 4'20 ciblés, gros passage à vide sur le tout dernier km.",
+ "headline": "Récup transformée en sortie longue rapide : 158% du volume prévu, 19\"/km plus vite que la cible.",
  "bullets": [
-  "Segment rapide (18-22km) couru à ≈4'00/km, bien sous les 4'20/km prévus au plan.",
-  "Équilibre global 50.3%, identique à ta réf. 60j (50.3%) : rien d'inhabituel côté Achille.",
-  "Asym_vs_allure -0.29 : l'asymétrie ne s'ouvre pas avec la vitesse, à l'inverse du profil pubalgie 2025."
+  "14,21 km à 5'06/km contre 9 km à 5'25/km prévus — volume et allure largement au-dessus du plan.",
+  "FC dérive de +14,3% (135→155 bpm) en séance, découplage 7,9%, temp. 24-26°C — chaleur possible.",
+  "Asymétrie se resserre avec l'allure (-0,66) : pas le motif de l'épisode adducteur de l'hiver."
  ],
  "points": [
   {
-   "label": "Allure finish",
-   "valeur": "≈4'00/km",
-   "ecart": "vs 4'20/km ciblé au plan",
-   "lecture": "Finish bien plus rapide que prévu",
+   "label": "Allure",
+   "valeur": "5'06\"/km",
+   "ecart": "-19\" vs cible plan (5'25\")",
+   "lecture": "bien plus rapide que prévu pour une récup",
    "ton": "vigilance"
   },
   {
-   "label": "Équilibre G/D",
-   "valeur": "50.3%",
-   "ecart": "= ta réf. 60j (50.3%)",
-   "lecture": "Rien d'inhabituel côté Achille",
+   "label": "Contact au sol",
+   "valeur": "224 ms",
+   "ecart": "-3 ms vs réf. 60j (227 ms)",
+   "lecture": "appui légèrement plus court que d'habitude",
    "ton": "bon"
   },
   {
-   "label": "Dernier km",
-   "valeur": "5'33/km",
-   "ecart": "vs ≈4'00/km juste avant",
-   "lecture": "Gros ralentissement en toute fin",
+   "label": "Dérive FC",
+   "valeur": "+14,3% (135→155 bpm)",
+   "ecart": "découplage 7,9%, non typique sur une récup",
+   "lecture": "à surveiller, chaleur en cause possible",
    "ton": "vigilance"
   }
  ],
- "achille": "Équilibre global 50.3% = ta réf. exacte ; sur le segment rapide il descend à 48.9%, charge un peu plus le droit.",
- "a_surveiller": "RPE 5/10 et sensation 'Fort' malgré FC +18% et la chute nette du dernier km — écart perception/données.",
+ "achille": "Équilibre gauche 50,93% (réf. 50,37%) — pas de décharge marquée du côté droit.",
+ "a_surveiller": "Séance de récup devenue longue et rapide (158% vol., -19\"/km) : vérifier la récup avant la prochaine séance clé.",
  "seance": {
-  "date": "23/08/2026",
-  "heure": "11:25",
-  "titre": "i178869711",
+  "date": "27/08/2026",
+  "heure": "07:36",
+  "titre": "i180285436",
   "type_detecte": "endurance",
-  "km": 23.51,
-  "duree": "1h 51m 34s",
-  "allure": "4'45\"/km",
-  "fc_moy": 154
+  "km": 14.21,
+  "duree": "1h 12m 32s",
+  "allure": "5'06\"/km",
+  "fc_moy": 148
  },
- "generated_at": "2026-08-23T11:37:52",
- "baseline_n": 26
+ "generated_at": "2026-08-27T09:01:06",
+ "baseline_n": 34
 }
