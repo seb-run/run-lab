@@ -2521,207 +2521,7 @@
               "rr_beats": 30537,
               "rmssd_effort": 11.3,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 341,
-                "fc": 123,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 320,
-                "fc": 137,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 315,
-                "fc": 141,
-                "ca": 182
-              },
-              {
-                "km": 1.0,
-                "ps": 318,
-                "fc": 144,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 329,
-                "fc": 142,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 321,
-                "fc": 136,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 311,
-                "fc": 141,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 361,
-                "fc": 141,
-                "ca": 172
-              },
-              {
-                "km": 1.0,
-                "ps": 335,
-                "fc": 161,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 339,
-                "fc": 144,
-                "ca": 174
-              },
-              {
-                "km": 1.0,
-                "ps": 331,
-                "fc": 150,
-                "ca": 174
-              },
-              {
-                "km": 1.0,
-                "ps": 312,
-                "fc": 160,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 281,
-                "fc": 162,
-                "ca": 184
-              },
-              {
-                "km": 1.0,
-                "ps": 298,
-                "fc": 161,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 317,
-                "fc": 154,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 329,
-                "fc": 155,
-                "ca": 174
-              },
-              {
-                "km": 1.0,
-                "ps": 337,
-                "fc": 167,
-                "ca": 172
-              },
-              {
-                "km": 1.0,
-                "ps": 340,
-                "fc": 165,
-                "ca": 172
-              },
-              {
-                "km": 1.0,
-                "ps": 315,
-                "fc": 161,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 277,
-                "fc": 164,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 274,
-                "fc": 157,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 305,
-                "fc": 164,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 298,
-                "fc": 167,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 312,
-                "fc": 165,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 303,
-                "fc": 164,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 290,
-                "fc": 167,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 310,
-                "fc": 158,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 317,
-                "fc": 162,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 321,
-                "fc": 164,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 338,
-                "fc": 164,
-                "ca": 174
-              },
-              {
-                "km": 1.0,
-                "ps": 338,
-                "fc": 167,
-                "ca": 172
-              },
-              {
-                "km": 1.0,
-                "ps": 340,
-                "fc": 167,
-                "ca": 172
-              },
-              {
-                "km": 1.0,
-                "ps": 323,
-                "fc": 172,
-                "ca": 172
-              }
-            ]
+            }
           },
           "score": null
         },
@@ -9007,12 +8807,193 @@
           "duration_min": 85,
           "key": true,
           "description": "3 km d'échauffement\n2 × 15' @ 3'50/km, récupération 3' en trot\n2 km de retour au calme\n\nTes 4 × 8' de vendredi dernier sont sortis à 3'52 de moyenne : on allonge les blocs sans toucher à l'allure.\n[Seuil · 3'47–3'53/km]\nChaussures : Adidas Evo SL neuve — réservée aux séances",
-          "status": "pending",
+          "status": "done",
           "target_pace": "3'50\"/km",
           "target_pace_sec": 230,
           "shoe": "Adidas Evo SL neuve — réservée aux séances",
           "scheduled_time": "06:15",
-          "actual": null,
+          "actual": {
+            "km": 13.8,
+            "duration_min": 61,
+            "pace_sec": 264,
+            "pace_str": "4'24\"/km",
+            "fc": 165,
+            "cadence": 176,
+            "type": "frac_court",
+            "title": "i180673686",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 203.0,
+              "osc_cm": 10.7,
+              "vratio": 8.4,
+              "balance_l": 49.6,
+              "step_m": 1.27,
+              "temp_c": 28,
+              "temp_max": 32,
+              "resp": 38.1,
+              "power": 427,
+              "np": 446,
+              "te_aero": 5.0,
+              "te_ana": 2.2,
+              "load": 329.2,
+              "strides": 5373,
+              "rpe": 7.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 202.0,
+                  "end": 208.0,
+                  "pct": 3.0
+                },
+                "step": {
+                  "start": 1254.0,
+                  "end": 1248.0,
+                  "pct": -0.5
+                },
+                "vratio": {
+                  "start": 8.35,
+                  "end": 8.65,
+                  "pct": 3.6
+                },
+                "osc": {
+                  "start": 106.0,
+                  "end": 108.0,
+                  "pct": 2.6
+                },
+                "hr": {
+                  "start": 155.0,
+                  "end": 170.0,
+                  "pct": 9.2
+                },
+                "cad": {
+                  "start": 89.6,
+                  "end": 88.3,
+                  "pct": -1.4
+                }
+              },
+              "balance_min": 47.53,
+              "balance_max": 51.5,
+              "balance_series": [
+                51.5,
+                50.84,
+                50.85,
+                48.87,
+                48.01,
+                47.83,
+                47.53,
+                51.25,
+                48.18,
+                47.83,
+                48.17,
+                47.7,
+                51.24,
+                51.31,
+                51.3
+              ],
+              "balance_lent": 51.34,
+              "balance_rapide": 48.12,
+              "asym_vs_allure": 0.54,
+              "allure_lent_s": 317,
+              "allure_rapide_s": 226,
+              "rr_beats": 11554,
+              "rmssd_effort": 6.2,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 304,
+                "fc": 131,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 292,
+                "fc": 145,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 292,
+                "fc": 149,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 225,
+                "fc": 174,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 226,
+                "fc": 178,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 230,
+                "fc": 179,
+                "ca": 180
+              },
+              {
+                "km": 0.95,
+                "ps": 231,
+                "fc": 181,
+                "ca": 178
+              },
+              {
+                "km": 0.4,
+                "ps": 446,
+                "fc": 154,
+                "ca": 150
+              },
+              {
+                "km": 1.0,
+                "ps": 225,
+                "fc": 175,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 234,
+                "fc": 181,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 231,
+                "fc": 183,
+                "ca": 178
+              },
+              {
+                "km": 0.93,
+                "ps": 225,
+                "fc": 182,
+                "ca": 178
+              },
+              {
+                "km": 0.55,
+                "ps": 330,
+                "fc": 165,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 305,
+                "fc": 165,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 298,
+                "fc": 152,
+                "ca": 176
+              }
+            ]
+          },
           "coach_notes": [
             {
               "kind": "note",
@@ -9022,7 +9003,31 @@
               "kind": "note",
               "text": "Si chaleur/humidité comme mi-août : ne cherche pas le chrono à tout prix sur les 2×15'. Vise l'effort seuil (FC, sensations) plutôt que le 3'50\"/km strict, quitte à lâcher 5-8s/km. Hydrate-toi avant."
             }
-          ]
+          ],
+          "score": {
+            "points": 96,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 86,
+            "volume_points": 92,
+            "pace_points": 100,
+            "pace_target_s": 230,
+            "pace_actual_s": 228,
+            "pace_actual_str": "3'48\"/km",
+            "pace_delta_s": -2,
+            "is_quality": true,
+            "hr": {
+              "avg": 165,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 8.0,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 86%",
+              "Allure −2\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-08-29",
@@ -9034,7 +9039,13 @@
           "key": false,
           "description": "Repos complet avant la sortie longue. Protocole tendon quand même.",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Repos strict avant la longue alternée de 31km : hydratation, sommeil, alimentation. Pas de footing bonus ni de muscu intense — tu enchaînes seuil + grosse longue à 48h d'écart."
+            }
+          ]
         },
         {
           "date": "2026-08-30",
@@ -9073,22 +9084,22 @@
           "_adapt_volume": true
         }
       ],
-      "volume_actual_to_date": 10.3,
-      "volume_planned_to_date": 23.0,
-      "volume_drift_pct": -55.2,
+      "volume_actual_to_date": 24.5,
+      "volume_planned_to_date": 32.0,
+      "volume_drift_pct": -23.4,
       "compliance": {
-        "km_pct": 45,
-        "km_done": 10.3,
-        "km_planned": 23.0,
-        "km_done_week": 24.5,
+        "km_pct": 77,
+        "km_done": 24.5,
+        "km_planned": 32.0,
+        "km_done_week": 38.3,
         "km_planned_week": 79.0,
-        "sessions_done": 1,
-        "sessions_planned": 2,
-        "sessions_done_week": 2,
+        "sessions_done": 2,
+        "sessions_planned": 3,
+        "sessions_done_week": 3,
         "keys_success": 0,
         "keys_total": 0,
-        "points": 67,
-        "verdict": "partial"
+        "points": 83,
+        "verdict": "success"
       }
     },
     {
@@ -9131,6 +9142,10 @@
             {
               "kind": "note",
               "text": "Ce créneau a sauté les deux dernières fois qu'il suivait une grosse sortie longue (19/08 et 25/08). Si les jambes sont lourdes après le 31 km de dimanche, raccourcis à 30-35' plutôt que de le sauter complètement — l'objectif est juste de garder la routine avant la séance de piste du lendemain."
+            },
+            {
+              "kind": "note",
+              "text": "Footing vraiment facile : vise 5'15-5'20/km, pas plus vite. Tu as tendance à accélérer sur ces sorties (5'06-5'21 récemment) — garde la marge de récup pour la piste du lendemain."
             }
           ]
         },

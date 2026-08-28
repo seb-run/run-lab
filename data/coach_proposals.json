@@ -438,7 +438,7 @@
    "reason": "Tendance récurrente à courir les footings faciles trop vite (4'52 à 5'21 pour des consignes à 5'15-5'25), ce qui réduit l'effet récupération recherché.",
    "id": "88c73e4b",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-08-27T09:00:28"
   }
  ]

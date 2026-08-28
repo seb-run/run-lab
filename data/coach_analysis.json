@@ -1,18 +1,30 @@
 {
- "generated_at": "2026-08-27T09:00:28",
+ "generated_at": "2026-08-28T12:09:38",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-08-24\", \"title\": \"Repos + Muscu A\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-08-25\", \"title\": \"Footing 65' — rodage Zoom Fly 6 (1/3)\", \"type\": \"easy\", \"planned_km\": 13.0, \"key\": false, \"status\": \"missed\", \"target_pace\": \"5'15\\\"/km\"}, {\"date\": \"2026-08-26\", \"title\": \"Footing 50' + gammes\", \"type\": \"easy\", \"planned_km\": 10.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'15\\\"/km\", \"actual\": {\"km\": 10.3, \"pace_str\": \"5'21\\\"/km\", \"fc\": 140, \"cadence\": 179, \"duration_min\": 55}, \"splits\": \"1:5'39/125/182spm 2:5'25/132/182spm 3:5'17/136/180spm 4:5'19/139/178spm 5:5'18/141/180spm 6:5'23/140/180spm 7:5'16/145/178spm 8:5'17/146/178spm 9:5'11/149/178spm 10:5'25/148/176spm 11:5'21/143/176spm\", \"garmin\": {\"te_aero\": 3.1, \"te_ana\": 0.0, \"load\": 98.7, \"rpe\": 2.0, \"feel_label\": \"Fort\", \"temp_c\": 22, \"balance_l\": 51.61, \"flags\": [], \"stance_drift_pct\": -1.7, \"step_drift_pct\": 5.0}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 103, \"pace_delta_s\": 6}, \"hr\": {\"avg\": 140, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 4.8, \"flags\": []}}]",
- "headline": "Les séances clés sont toutes réussies et bien vécues, mais deux footings faciles sautés en 14 jours trahissent une récup un peu juste avant une semaine très dense.",
- "analysis": "Ta forme est bonne : MP, seuil et les deux longues sorties récentes sont toutes en succès, avec RPE bas (3-6), ressenti 'Fort' et des allures spécifiques tenues correctement (le finish progressif du 23/08 est un modèle du genre). Le souci n'est pas la performance mais la gestion de la charge autour : tu loupes systématiquement le footing facile qui suit de ~48h une grosse sortie longue (19/08 après le 20 km du 16/08, 25/08 après le 23,5 km du 23/08), et sur tes easy réalisés tu es quasi toujours 15-25s/km plus vite que la consigne recovery/footing — ce qui grignote la récup au lieu de la préserver. La semaine qui arrive enchaîne un bond de volume sur la longue de dimanche (31 km avec 5×3 km à allure semi, contre 20 puis 23,5 km les deux dimanches précédents) suivie d'une semaine à 3 séances clés en 5 jours (piste, MP continu, longue progressive). Le risque principal, c'est de reproduire le pattern des deux dernières semaines : craquer sur l'easy de mardi 01/09 juste avant la séance de piste, faute d'avoir vraiment récupéré après la longue de dimanche. Focus de la semaine : ralentis vraiment sur les footings faciles (utilise le haut de la fourchette, 5'25 et plus) et reste vigilant sur le ressenti mardi matin avant d'attaquer les 800 m.",
+ "signature": "[{\"date\": \"2026-08-25\", \"title\": \"Footing 65' — rodage Zoom Fly 6 (1/3)\", \"type\": \"easy\", \"planned_km\": 13.0, \"key\": false, \"status\": \"missed\", \"target_pace\": \"5'15\\\"/km\"}, {\"date\": \"2026-08-26\", \"title\": \"Footing 50' + gammes\", \"type\": \"easy\", \"planned_km\": 10.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'15\\\"/km\", \"actual\": {\"km\": 10.3, \"pace_str\": \"5'21\\\"/km\", \"fc\": 140, \"cadence\": 179, \"duration_min\": 55}, \"splits\": \"1:5'39/125/182spm 2:5'25/132/182spm 3:5'17/136/180spm 4:5'19/139/178spm 5:5'18/141/180spm 6:5'23/140/180spm 7:5'16/145/178spm 8:5'17/146/178spm 9:5'11/149/178spm 10:5'25/148/176spm 11:5'21/143/176spm\", \"garmin\": {\"te_aero\": 3.1, \"te_ana\": 0.0, \"load\": 98.7, \"rpe\": 2.0, \"feel_label\": \"Fort\", \"temp_c\": 22, \"balance_l\": 51.61, \"flags\": [], \"stance_drift_pct\": -1.7, \"step_drift_pct\": 5.0}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 103, \"pace_delta_s\": 6}, \"hr\": {\"avg\": 140, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 4.8, \"flags\": []}}, {\"date\": \"2026-08-27\", \"title\": \"Footing récupération 45' + 6 LD — rodage Zoom Fly 6 (2/3)\", \"type\": \"easy\", \"planned_km\": 9.0, \"key\": false, \"status\": \"over\", \"target_pace\": \"5'25\\\"/km\", \"actual\": {\"km\": 14.2, \"pace_str\": \"5'06\\\"/km\", \"fc\": 148, \"cadence\": 179, \"duration_min\": 73}, \"splits\": \"1:5'30/128/184spm 2:5'08/136/184spm 3:5'07/139/182spm 4:5'03/138/182spm 5:5'01/136/178spm 6:4'59/153/182spm 7:4'58/149/180spm 8:5'14/156/180spm 9:5'01/165/180spm 10:4'58/160/178spm 11:4'59/158/180spm 12:5'10/158/176spm 13:5'10/150/176spm 14:5'07/153/176spm 15:5'17/148/174spm\", \"garmin\": {\"te_aero\": 3.8, \"te_ana\": 0.0, \"load\": 167.8, \"rpe\": 3.0, \"feel_label\": \"Fort\", \"temp_c\": 24, \"balance_l\": 50.93, \"flags\": [], \"stance_drift_pct\": 0.5, \"step_drift_pct\": 4.2}, \"score\": {\"points\": 84, \"verdict\": \"success\", \"volume_pct\": 158, \"pace_delta_s\": -19}, \"hr\": {\"avg\": 148, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 7.9, \"flags\": []}}]",
+ "headline": "Forme solide et séances clés réussies, mais tendance à rouler trop vite sur les footings faciles avant un enchaînement chargé à venir.",
+ "analysis": "Ta forme est bonne : le seuil du 21/08 et la longue du 23/08 (finish progressif à allure spécifique) sont passés avec un bon contrôle FC et des sensations 'Fort', RPE modérés malgré la chaleur (23-29°C). Le decoupling reste dans des marges acceptables compte tenu des conditions, donc pas de signal de fatigue de fond. Le vrai pattern qui ressort, c'est que tu roules quasi systématiquement plus vite que la consigne sur les footings faciles et de récup (5'06-5'21 au lieu de 5'15-5'25), et le 27/08 tu as transformé une récup de 9km en sortie de 14,2km à allure quasi-easy soutenue — ce n'est pas grave isolément, mais ça grignote la récupération. Deux footings faciles ont aussi été manqués (19/08 et 25/08), signe de gestion serrée du temps plus que de fatigue. La semaine 12 tourne à 77% de volume mais les séances clés passent, donc pas d'inquiétude sur la charge globale. Le vrai risque à venir : tu enchaînes seuil (28/08, 16km) puis une très grosse longue alternée (30/08, 31km à allure spécifique) à seulement 48h d'intervalle, avant une semaine encore dense (piste, spécifique, longue progressive). Focus de la semaine : discipline sur les allures easy/récup pour arriver frais sur les clés, et bien gérer la récup du 29/08 avant le gros bloc du 30/08.",
  "applied": [
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-08-29",
+   "field": "description_note",
+   "new_value": "Repos strict avant la longue alternée de 31km : hydratation, sommeil, alimentation. Pas de footing bonus ni de muscu intense — tu enchaînes seuil + grosse longue à 48h d'écart.",
+   "reason": "Enchaînement chargé (seuil 16km le 28/08 puis longue alternée 31km le 30/08) : sécuriser la récup pour éviter d'arriver entamé sur la sortie clé.",
+   "replacement": null,
+   "id": "0564e95f",
+   "detail": "2026-08-29 : note ajoutée"
+  },
   {
    "severity": "minor",
    "kind": "add_note",
    "date": "2026-09-01",
    "field": "description_note",
-   "new_value": "Ce créneau a sauté les deux dernières fois qu'il suivait une grosse sortie longue (19/08 et 25/08). Si les jambes sont lourdes après le 31 km de dimanche, raccourcis à 30-35' plutôt que de le sauter complètement — l'objectif est juste de garder la routine avant la séance de piste du lendemain.",
-   "reason": "Pattern répété : easy J+2 après une longue sortie manqué deux fois de suite ; anticiper avec une option de repli plutôt qu'un all-or-nothing évite un 3e forfait avant une séance clé importante.",
-   "id": "c44fb907",
+   "new_value": "Footing vraiment facile : vise 5'15-5'20/km, pas plus vite. Tu as tendance à accélérer sur ces sorties (5'06-5'21 récemment) — garde la marge de récup pour la piste du lendemain.",
+   "reason": "Pattern répété sur les 14 derniers jours : allure systématiquement plus rapide que la consigne easy/récup (jusqu'à +20-30s/km), avec un footing du 27/08 fait à 158% du volume prévu. Ce n'est pas alarmant mais ça mérite un rappel avant une nouvelle séance clé (piste 6x800 le 02/09).",
+   "replacement": null,
+   "id": "5611f505",
    "detail": "2026-09-01 : note ajoutée"
   }
  ],
@@ -34,18 +46,6 @@
    "id": "fc290b34",
    "status": "pending",
    "created_at": "2026-08-21T06:05:03"
-  },
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-08-27",
-   "field": "description_note",
-   "new_value": "Vraiment en mode récup : vise 5'25-5'35/km, pas plus vite. Sur tes 3 derniers footings tu es systématiquement 15-25s trop rapide, ça grignote la récup avant le seuil de demain.",
-   "reason": "Tendance récurrente à courir les footings faciles trop vite (4'52 à 5'21 pour des consignes à 5'15-5'25), ce qui réduit l'effet récupération recherché.",
-   "id": "88c73e4b",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
-   "created_at": "2026-08-27T09:00:28"
   }
  ]
 }

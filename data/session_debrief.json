@@ -1,45 +1,45 @@
 {
- "headline": "Récup transformée en sortie longue rapide : 158% du volume prévu, 19\"/km plus vite que la cible.",
+ "headline": "Seuil réussi sous forte chaleur, FC nettement au-dessus de tes moyennes.",
  "bullets": [
-  "14,21 km à 5'06/km contre 9 km à 5'25/km prévus — volume et allure largement au-dessus du plan.",
-  "FC dérive de +14,3% (135→155 bpm) en séance, découplage 7,9%, temp. 24-26°C — chaleur possible.",
-  "Asymétrie se resserre avec l'allure (-0,66) : pas le motif de l'épisode adducteur de l'hiver."
+  "FC moyenne 165 bpm, +8,5 vs réf 156,5 — chaleur 28-32°C, dérive HR +9,2% sur la séance.",
+  "Temps de contact 203 ms, -12 ms vs réf 215 : bon signe malgré l'intensité.",
+  "Allure des blocs 3'48/km, -2\" vs cible 3'50 : objectif seuil tenu malgré la chaleur."
  ],
  "points": [
   {
-   "label": "Allure",
-   "valeur": "5'06\"/km",
-   "ecart": "-19\" vs cible plan (5'25\")",
-   "lecture": "bien plus rapide que prévu pour une récup",
+   "label": "FC moyenne",
+   "valeur": "165 bpm",
+   "ecart": "+8,5 bpm vs réf 156,5",
+   "lecture": "chaleur probable, dérive +9,2%",
    "ton": "vigilance"
   },
   {
-   "label": "Contact au sol",
-   "valeur": "224 ms",
-   "ecart": "-3 ms vs réf. 60j (227 ms)",
-   "lecture": "appui légèrement plus court que d'habitude",
+   "label": "Temps de contact",
+   "valeur": "203 ms",
+   "ecart": "-12 ms vs réf 215",
+   "lecture": "appui plus court, bon signe",
    "ton": "bon"
   },
   {
-   "label": "Dérive FC",
-   "valeur": "+14,3% (135→155 bpm)",
-   "ecart": "découplage 7,9%, non typique sur une récup",
-   "lecture": "à surveiller, chaleur en cause possible",
-   "ton": "vigilance"
+   "label": "Cadence",
+   "valeur": "178 spm",
+   "ecart": "= réf 178,75",
+   "lecture": "stable malgré allure plus rapide",
+   "ton": "neutre"
   }
  ],
- "achille": "Équilibre gauche 50,93% (réf. 50,37%) — pas de décharge marquée du côté droit.",
- "a_surveiller": "Séance de récup devenue longue et rapide (158% vol., -19\"/km) : vérifier la récup avant la prochaine séance clé.",
+ "achille": "Équilibre gauche 49,6% vs réf 49,88% : rien à signaler côté Achille aujourd'hui.",
+ "a_surveiller": "Balance 51,3%→48,1% lent→rapide : motif proche de ton ancien adducteur, à surveiller.",
  "seance": {
-  "date": "27/08/2026",
-  "heure": "07:36",
-  "titre": "i180285436",
-  "type_detecte": "endurance",
-  "km": 14.21,
-  "duree": "1h 12m 32s",
-  "allure": "5'06\"/km",
-  "fc_moy": 148
+  "date": "28/08/2026",
+  "heure": "12:52",
+  "titre": "i180673686",
+  "type_detecte": "frac_court",
+  "km": 13.84,
+  "duree": "1h 00m 55s",
+  "allure": "4'24\"/km",
+  "fc_moy": 165
  },
- "generated_at": "2026-08-27T09:01:06",
- "baseline_n": 34
+ "generated_at": "2026-08-28T12:10:28",
+ "baseline_n": 8
 }
