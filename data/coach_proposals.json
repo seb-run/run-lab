@@ -3,18 +3,6 @@
   {
    "severity": "major",
    "kind": "change_type",
-   "date": "2026-08-09",
-   "field": null,
-   "new_value": "Remplacer la SL progressive 27km par une sortie longue simple ~22km à allure facile/marathon souple, sans segment progressif",
-   "reason": "Trop de séances clés manquées récemment ; enchaîner une progressive à forte charge juste après VMA et MP run augmente le risque d'échec ou blessure. Mieux vaut sécuriser le volume avant de remettre de l'intensité sur le long.",
-   "id": "9f662743",
-   "status": "rejected",
-   "created_at": "2026-08-02T09:53:50",
-   "decided_at": "2026-08-07T06:19:33"
-  },
-  {
-   "severity": "major",
-   "kind": "change_type",
    "date": "2026-08-04",
    "field": null,
    "new_value": "Réduire la séance VMA longue de 5×1000m à 4×1000m, même allure",
@@ -440,6 +428,24 @@
    "guardrail_reject": "jour passé ou en cours",
    "status": "expired",
    "created_at": "2026-08-27T09:00:28"
+  },
+  {
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-08-30",
+   "field": null,
+   "new_value": "Réduction du volume et des blocs spécifiques",
+   "reason": "RPE 7 et découplage 8% sur la dernière séance seuil (distance écourtée), plus un footing récup étendu à 158% la veille : la fatigue accumulée est réelle avant un bloc spécifique de 31km. On garde le stimulus mais on réduit la charge pour ne pas creuser le trou avant VMA et MP continu qui suivent dans la semaine.",
+   "replacement": {
+    "title": "Sortie longue alternée allégée",
+    "type": "long",
+    "km": 26.0,
+    "target_pace": "3'59\"/km sur les blocs, 4'47\"/km entre",
+    "description": "26 km avec 5 x 2 km à 3'59/km (au lieu de 3 km), le reste en footing à 4'47/km. Objectif : conserver le stimulus spécifique marathon sans prolonger l'accumulation de fatigue. Coupe un bloc si les jambes sont lourdes ou si la FC dérive fort — priorise les sensations sur le chrono aujourd'hui."
+   },
+   "id": "ef7e1ba4",
+   "status": "pending",
+   "created_at": "2026-08-29T11:48:14"
   }
  ]
 }

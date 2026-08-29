@@ -1,30 +1,18 @@
 {
- "generated_at": "2026-08-28T12:09:38",
+ "generated_at": "2026-08-29T11:48:14",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-08-25\", \"title\": \"Footing 65' — rodage Zoom Fly 6 (1/3)\", \"type\": \"easy\", \"planned_km\": 13.0, \"key\": false, \"status\": \"missed\", \"target_pace\": \"5'15\\\"/km\"}, {\"date\": \"2026-08-26\", \"title\": \"Footing 50' + gammes\", \"type\": \"easy\", \"planned_km\": 10.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'15\\\"/km\", \"actual\": {\"km\": 10.3, \"pace_str\": \"5'21\\\"/km\", \"fc\": 140, \"cadence\": 179, \"duration_min\": 55}, \"splits\": \"1:5'39/125/182spm 2:5'25/132/182spm 3:5'17/136/180spm 4:5'19/139/178spm 5:5'18/141/180spm 6:5'23/140/180spm 7:5'16/145/178spm 8:5'17/146/178spm 9:5'11/149/178spm 10:5'25/148/176spm 11:5'21/143/176spm\", \"garmin\": {\"te_aero\": 3.1, \"te_ana\": 0.0, \"load\": 98.7, \"rpe\": 2.0, \"feel_label\": \"Fort\", \"temp_c\": 22, \"balance_l\": 51.61, \"flags\": [], \"stance_drift_pct\": -1.7, \"step_drift_pct\": 5.0}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 103, \"pace_delta_s\": 6}, \"hr\": {\"avg\": 140, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 4.8, \"flags\": []}}, {\"date\": \"2026-08-27\", \"title\": \"Footing récupération 45' + 6 LD — rodage Zoom Fly 6 (2/3)\", \"type\": \"easy\", \"planned_km\": 9.0, \"key\": false, \"status\": \"over\", \"target_pace\": \"5'25\\\"/km\", \"actual\": {\"km\": 14.2, \"pace_str\": \"5'06\\\"/km\", \"fc\": 148, \"cadence\": 179, \"duration_min\": 73}, \"splits\": \"1:5'30/128/184spm 2:5'08/136/184spm 3:5'07/139/182spm 4:5'03/138/182spm 5:5'01/136/178spm 6:4'59/153/182spm 7:4'58/149/180spm 8:5'14/156/180spm 9:5'01/165/180spm 10:4'58/160/178spm 11:4'59/158/180spm 12:5'10/158/176spm 13:5'10/150/176spm 14:5'07/153/176spm 15:5'17/148/174spm\", \"garmin\": {\"te_aero\": 3.8, \"te_ana\": 0.0, \"load\": 167.8, \"rpe\": 3.0, \"feel_label\": \"Fort\", \"temp_c\": 24, \"balance_l\": 50.93, \"flags\": [], \"stance_drift_pct\": 0.5, \"step_drift_pct\": 4.2}, \"score\": {\"points\": 84, \"verdict\": \"success\", \"volume_pct\": 158, \"pace_delta_s\": -19}, \"hr\": {\"avg\": 148, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 7.9, \"flags\": []}}]",
- "headline": "Forme solide et séances clés réussies, mais tendance à rouler trop vite sur les footings faciles avant un enchaînement chargé à venir.",
- "analysis": "Ta forme est bonne : le seuil du 21/08 et la longue du 23/08 (finish progressif à allure spécifique) sont passés avec un bon contrôle FC et des sensations 'Fort', RPE modérés malgré la chaleur (23-29°C). Le decoupling reste dans des marges acceptables compte tenu des conditions, donc pas de signal de fatigue de fond. Le vrai pattern qui ressort, c'est que tu roules quasi systématiquement plus vite que la consigne sur les footings faciles et de récup (5'06-5'21 au lieu de 5'15-5'25), et le 27/08 tu as transformé une récup de 9km en sortie de 14,2km à allure quasi-easy soutenue — ce n'est pas grave isolément, mais ça grignote la récupération. Deux footings faciles ont aussi été manqués (19/08 et 25/08), signe de gestion serrée du temps plus que de fatigue. La semaine 12 tourne à 77% de volume mais les séances clés passent, donc pas d'inquiétude sur la charge globale. Le vrai risque à venir : tu enchaînes seuil (28/08, 16km) puis une très grosse longue alternée (30/08, 31km à allure spécifique) à seulement 48h d'intervalle, avant une semaine encore dense (piste, spécifique, longue progressive). Focus de la semaine : discipline sur les allures easy/récup pour arriver frais sur les clés, et bien gérer la récup du 29/08 avant le gros bloc du 30/08.",
+ "signature": "[{\"date\": \"2026-08-26\", \"title\": \"Footing 50' + gammes\", \"type\": \"easy\", \"planned_km\": 10.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'15\\\"/km\", \"actual\": {\"km\": 10.3, \"pace_str\": \"5'21\\\"/km\", \"fc\": 140, \"cadence\": 179, \"duration_min\": 55}, \"splits\": \"1:5'39/125/182spm 2:5'25/132/182spm 3:5'17/136/180spm 4:5'19/139/178spm 5:5'18/141/180spm 6:5'23/140/180spm 7:5'16/145/178spm 8:5'17/146/178spm 9:5'11/149/178spm 10:5'25/148/176spm 11:5'21/143/176spm\", \"garmin\": {\"te_aero\": 3.1, \"te_ana\": 0.0, \"load\": 98.7, \"rpe\": 2.0, \"feel_label\": \"Fort\", \"temp_c\": 22, \"balance_l\": 51.61, \"flags\": [], \"stance_drift_pct\": -1.7, \"step_drift_pct\": 5.0}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 103, \"pace_delta_s\": 6}, \"hr\": {\"avg\": 140, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 4.8, \"flags\": []}}, {\"date\": \"2026-08-27\", \"title\": \"Footing récupération 45' + 6 LD — rodage Zoom Fly 6 (2/3)\", \"type\": \"easy\", \"planned_km\": 9.0, \"key\": false, \"status\": \"over\", \"target_pace\": \"5'25\\\"/km\", \"actual\": {\"km\": 14.2, \"pace_str\": \"5'06\\\"/km\", \"fc\": 148, \"cadence\": 179, \"duration_min\": 73}, \"splits\": \"1:5'30/128/184spm 2:5'08/136/184spm 3:5'07/139/182spm 4:5'03/138/182spm 5:5'01/136/178spm 6:4'59/153/182spm 7:4'58/149/180spm 8:5'14/156/180spm 9:5'01/165/180spm 10:4'58/160/178spm 11:4'59/158/180spm 12:5'10/158/176spm 13:5'10/150/176spm 14:5'07/153/176spm 15:5'17/148/174spm\", \"garmin\": {\"te_aero\": 3.8, \"te_ana\": 0.0, \"load\": 167.8, \"rpe\": 3.0, \"feel_label\": \"Fort\", \"temp_c\": 24, \"balance_l\": 50.93, \"flags\": [], \"stance_drift_pct\": 0.5, \"step_drift_pct\": 4.2}, \"score\": {\"points\": 84, \"verdict\": \"success\", \"volume_pct\": 158, \"pace_delta_s\": -19}, \"hr\": {\"avg\": 148, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 7.9, \"flags\": []}}, {\"date\": \"2026-08-28\", \"title\": \"SEUIL — 2 × 15'\", \"type\": \"seuil\", \"planned_km\": 16.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'50\\\"/km\", \"actual\": {\"km\": 13.8, \"pace_str\": \"4'24\\\"/km\", \"fc\": 165, \"cadence\": 176, \"duration_min\": 61}, \"splits\": \"1:5'04/131/178spm 2:4'52/145/178spm 3:4'52/149/180spm 4:3'45/174/180spm 5:3'46/178/180spm 6:3'50/179/180spm 7:3'51/181/178spm 8:7'26/154/150spm 9:3'45/175/180spm 10:3'54/181/178spm 11:3'51/183/178spm 12:3'45/182/178spm 13:5'30/165/174spm 14:5'05/165/176spm 15:4'58/152/176spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 2.2, \"load\": 329.2, \"rpe\": 7.0, \"feel_label\": \"Fort\", \"temp_c\": 28, \"balance_l\": 49.6, \"flags\": [], \"stance_drift_pct\": 3.0, \"step_drift_pct\": -0.5}, \"score\": {\"points\": 96, \"verdict\": \"success\", \"volume_pct\": 86, \"pace_delta_s\": -2}, \"hr\": {\"avg\": 165, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 8.0, \"flags\": []}}]",
+ "headline": "Les watts sont là mais la dernière séance clé montre les premiers signes de fatigue accumulée juste avant un enchaînement très exigeant.",
+ "analysis": "Le fond est solide : trois semaines de base au-dessus de 100% du volume et les trois séances clés récentes (seuil 4x8', long finish progressif, seuil 2x15') sont toutes validées. Mais le détail de la dernière séance seuil du 28/08 inquiète : RPE 7 (le plus haut de la période), découplage cardiaque à 8%, distance coupée à 86% du prévu, et une portion à 7'26/km qui sent la panne — le tout après un footing récup transformé en sortie de 14km la veille (158% du prévu) et deux footings faciles carrément manqués (19/08, 25/08). Le pattern est clair : tu compenses le volume manqué par des extensions non prévues sur d'autres jours, ce qui casse la logique de récupération entre les séances qualité. Les dérives de stance (-9 à -10%) sur les deux longues sorties restent dans une fourchette à surveiller mais pas alarmante isolément. Le risque principal cette semaine : tu enchaînes une sortie longue alternée de 31km à allure spécifique dès demain, puis VMA piste, puis 10km continus à allure marathon, puis 20km progressive — quatre séances clés en une semaine, alors que le signal de fatigue le plus net date d'hier. Focus de la semaine : alléger légèrement le bloc alternée de demain pour ne pas creuser la dette, et redevenir strict sur les footings faciles (distance et allure) pour que les jours de récup en soient vraiment.",
  "applied": [
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-08-29",
-   "field": "description_note",
-   "new_value": "Repos strict avant la longue alternée de 31km : hydratation, sommeil, alimentation. Pas de footing bonus ni de muscu intense — tu enchaînes seuil + grosse longue à 48h d'écart.",
-   "reason": "Enchaînement chargé (seuil 16km le 28/08 puis longue alternée 31km le 30/08) : sécuriser la récup pour éviter d'arriver entamé sur la sortie clé.",
-   "replacement": null,
-   "id": "0564e95f",
-   "detail": "2026-08-29 : note ajoutée"
-  },
   {
    "severity": "minor",
    "kind": "add_note",
    "date": "2026-09-01",
    "field": "description_note",
-   "new_value": "Footing vraiment facile : vise 5'15-5'20/km, pas plus vite. Tu as tendance à accélérer sur ces sorties (5'06-5'21 récemment) — garde la marge de récup pour la piste du lendemain.",
-   "reason": "Pattern répété sur les 14 derniers jours : allure systématiquement plus rapide que la consigne easy/récup (jusqu'à +20-30s/km), avec un footing du 27/08 fait à 158% du volume prévu. Ce n'est pas alarmant mais ça mérite un rappel avant une nouvelle séance clé (piste 6x800 le 02/09).",
-   "replacement": null,
-   "id": "5611f505",
+   "new_value": "Reste strictement sur 12km à 5'15/km, pas d'extension. Les deux dernières séances faciles ont dérapé en volume (14km au lieu de 9, +9km bonus) — ce jour doit rester un vrai footing de récup avant la VMA de demain.",
+   "reason": "Pattern récent d'allongement non prévu des footings faciles qui grignote la récupération avant les séances clés ; rappel nécessaire avant la séance VMA du 02/09.",
+   "id": "a4d1ff57",
    "detail": "2026-09-01 : note ajoutée"
   }
  ],
@@ -46,6 +34,24 @@
    "id": "fc290b34",
    "status": "pending",
    "created_at": "2026-08-21T06:05:03"
+  },
+  {
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-08-30",
+   "field": null,
+   "new_value": "Réduction du volume et des blocs spécifiques",
+   "reason": "RPE 7 et découplage 8% sur la dernière séance seuil (distance écourtée), plus un footing récup étendu à 158% la veille : la fatigue accumulée est réelle avant un bloc spécifique de 31km. On garde le stimulus mais on réduit la charge pour ne pas creuser le trou avant VMA et MP continu qui suivent dans la semaine.",
+   "replacement": {
+    "title": "Sortie longue alternée allégée",
+    "type": "long",
+    "km": 26.0,
+    "target_pace": "3'59\"/km sur les blocs, 4'47\"/km entre",
+    "description": "26 km avec 5 x 2 km à 3'59/km (au lieu de 3 km), le reste en footing à 4'47/km. Objectif : conserver le stimulus spécifique marathon sans prolonger l'accumulation de fatigue. Coupe un bloc si les jambes sont lourdes ou si la FC dérive fort — priorise les sensations sur le chrono aujourd'hui."
+   },
+   "id": "ef7e1ba4",
+   "status": "pending",
+   "created_at": "2026-08-29T11:48:14"
   }
  ]
 }

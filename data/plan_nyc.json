@@ -9038,7 +9038,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet avant la sortie longue. Protocole tendon quand même.",
-          "status": "pending",
+          "status": "today",
           "actual": null,
           "coach_notes": [
             {
@@ -9084,21 +9084,21 @@
           "_adapt_volume": true
         }
       ],
-      "volume_actual_to_date": 24.5,
-      "volume_planned_to_date": 32.0,
-      "volume_drift_pct": -23.4,
+      "volume_actual_to_date": 38.3,
+      "volume_planned_to_date": 48.0,
+      "volume_drift_pct": -20.2,
       "compliance": {
-        "km_pct": 77,
-        "km_done": 24.5,
-        "km_planned": 32.0,
+        "km_pct": 80,
+        "km_done": 38.3,
+        "km_planned": 48.0,
         "km_done_week": 38.3,
         "km_planned_week": 79.0,
-        "sessions_done": 2,
-        "sessions_planned": 3,
+        "sessions_done": 3,
+        "sessions_planned": 4,
         "sessions_done_week": 3,
-        "keys_success": 0,
-        "keys_total": 0,
-        "points": 83,
+        "keys_success": 1,
+        "keys_total": 1,
+        "points": 85,
         "verdict": "success"
       }
     },
@@ -9146,6 +9146,10 @@
             {
               "kind": "note",
               "text": "Footing vraiment facile : vise 5'15-5'20/km, pas plus vite. Tu as tendance à accélérer sur ces sorties (5'06-5'21 récemment) — garde la marge de récup pour la piste du lendemain."
+            },
+            {
+              "kind": "note",
+              "text": "Reste strictement sur 12km à 5'15/km, pas d'extension. Les deux dernières séances faciles ont dérapé en volume (14km au lieu de 9, +9km bonus) — ce jour doit rester un vrai footing de récup avant la VMA de demain."
             }
           ]
         },
