@@ -1,45 +1,45 @@
 {
- "headline": "Seuil réussi sous forte chaleur, FC nettement au-dessus de tes moyennes.",
+ "headline": "Blocs à allure spécifique dans le clou, mais séance écourtée et FC qui dérive fort.",
  "bullets": [
-  "FC moyenne 165 bpm, +8,5 vs réf 156,5 — chaleur 28-32°C, dérive HR +9,2% sur la séance.",
-  "Temps de contact 203 ms, -12 ms vs réf 215 : bon signe malgré l'intensité.",
-  "Allure des blocs 3'48/km, -2\" vs cible 3'50 : objectif seuil tenu malgré la chaleur."
+  "5 blocs à 3'55-4'00/km, pile dans la cible malgré une moyenne à 4'26 tirée par les récup à 5'00/km.",
+  "FC 157→171 bpm en fin de sortie (+9,2%), découplage 5,8%, avec 26-28°C : RPE 9, ressenti \"Fort\".",
+  "27,08 km parcourus sur 31 km prévus, volume 87% du plan."
  ],
  "points": [
   {
-   "label": "FC moyenne",
-   "valeur": "165 bpm",
-   "ecart": "+8,5 bpm vs réf 156,5",
-   "lecture": "chaleur probable, dérive +9,2%",
+   "label": "FC fin de séance",
+   "valeur": "171 bpm",
+   "ecart": "+9,2% vs début (découplage 5,8%)",
+   "lecture": "dérive nette, chaleur 26-28°C possible",
    "ton": "vigilance"
   },
   {
-   "label": "Temps de contact",
-   "valeur": "203 ms",
-   "ecart": "-12 ms vs réf 215",
-   "lecture": "appui plus court, bon signe",
+   "label": "Allure blocs spécifiques",
+   "valeur": "3'52-4'00/km",
+   "ecart": "dans la fourchette 3'57-4'02 visée",
+   "lecture": "objectif allure spécifique atteint",
    "ton": "bon"
   },
   {
-   "label": "Cadence",
-   "valeur": "178 spm",
-   "ecart": "= réf 178,75",
-   "lecture": "stable malgré allure plus rapide",
-   "ton": "neutre"
+   "label": "Équilibre appui en accélération",
+   "valeur": "48,2% gauche",
+   "ecart": "vs 50,6% en récup, réf. 49,84%",
+   "lecture": "asymétrie qui s'ouvre avec la vitesse",
+   "ton": "vigilance"
   }
  ],
- "achille": "Équilibre gauche 49,6% vs réf 49,88% : rien à signaler côté Achille aujourd'hui.",
- "a_surveiller": "Balance 51,3%→48,1% lent→rapide : motif proche de ton ancien adducteur, à surveiller.",
+ "achille": "Équilibre global 49,2% proche de ta réf (49,84%), mais tombe à 48,2% sur les blocs rapides : droit plus chargé.",
+ "a_surveiller": "Asymétrie qui s'ouvre avec l'allure (+1,23) : signature proche de ton ancien épisode adducteur.",
  "seance": {
-  "date": "28/08/2026",
-  "heure": "12:52",
-  "titre": "i180673686",
-  "type_detecte": "frac_court",
-  "km": 13.84,
-  "duree": "1h 00m 55s",
-  "allure": "4'24\"/km",
+  "date": "30/08/2026",
+  "heure": "11:01",
+  "titre": "i181296860",
+  "type_detecte": "sortie_longue",
+  "km": 27.08,
+  "duree": "2h 00m 00s",
+  "allure": "4'26\"/km",
   "fc_moy": 165
  },
- "generated_at": "2026-08-28T12:10:28",
+ "generated_at": "2026-08-30T11:10:45",
  "baseline_n": 8
 }
