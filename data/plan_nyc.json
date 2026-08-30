@@ -9038,7 +9038,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet avant la sortie longue. Protocole tendon quand même.",
-          "status": "today",
+          "status": "done",
           "actual": null,
           "coach_notes": [
             {
@@ -9056,7 +9056,7 @@
           "duration_min": 125,
           "key": true,
           "description": "5 km @ 5'00/km\n5 × (3 km @ 3'57–4'02/km / 1 km @ 4'50/km)\n1 km de retour au calme\n\n15 km à allure spécifique fractionnés en cinq blocs : même charge qu'un bloc continu, mais la tête ne décroche jamais. Maurten 320 en flasque + 1 gel à mi-parcours.\n[Allure spécifique marathon · 3'57–4'02/km]\nChaussures : Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
-          "status": "pending",
+          "status": "today",
           "target_pace": "3'59\"/km",
           "target_pace_sec": 239,
           "shoe": "Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
@@ -9183,7 +9183,13 @@
           "target_pace_sec": 325,
           "shoe": "On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
           "scheduled_time": "06:30",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Footing récup 45' : respecte la distance prévue (9 km), ne rallonge pas comme le 27/08. C'est la clé pour arriver frais sur le 10 km continus MP du lendemain."
+            }
+          ]
         },
         {
           "date": "2026-09-04",

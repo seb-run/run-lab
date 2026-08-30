@@ -1,17 +1,6 @@
 {
  "proposals": [
   {
-   "severity": "major",
-   "kind": "change_type",
-   "date": "2026-08-04",
-   "field": null,
-   "new_value": "Réduire la séance VMA longue de 5×1000m à 4×1000m, même allure",
-   "reason": "Aucune séance clé réussie sur les 4 dernières semaines et volume hebdo sous 80% : réduire légèrement le stimulus permet de retrouver une réussite complète plutôt qu'un nouvel échec partiel.",
-   "id": "629138b2",
-   "status": "expired",
-   "created_at": "2026-08-02T09:53:50"
-  },
-  {
    "severity": "minor",
    "kind": "add_note",
    "date": "2026-08-02",
@@ -446,6 +435,18 @@
    "id": "ef7e1ba4",
    "status": "pending",
    "created_at": "2026-08-29T11:48:14"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-08-30",
+   "field": "description_note",
+   "new_value": "31 km avec 5×3 km à allure spécifique : c'est la plus longue sortie du plan à ce jour. Chaleur probable — priorise l'hydratation dès le début, ne force pas l'allure MP si la FC dérive au-delà de la normale sur les premiers 3 km rapides. Mieux vaut finir un peu sous la cible que t'effondrer sur les derniers segments.",
+   "reason": "Volume inédit (31 km) après une semaine déjà chargée (2 seuils + long 23,5 km) et un footing récup non maîtrisé le 27/08 ; risque de gestion d'allure/hydratation par forte chaleur récurrente (26-29°C sur les 2 dernières semaines).",
+   "id": "1f382324",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-08-30T10:42:46"
   }
  ]
 }
