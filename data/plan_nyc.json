@@ -9377,17 +9377,17 @@
       "volume_planned_to_date": 48.0,
       "volume_drift_pct": -20.2,
       "compliance": {
-        "km_pct": 80,
-        "km_done": 38.3,
-        "km_planned": 48.0,
+        "km_pct": 83,
+        "km_done": 65.4,
+        "km_planned": 79.0,
         "km_done_week": 65.4,
         "km_planned_week": 79.0,
-        "sessions_done": 3,
-        "sessions_planned": 4,
+        "sessions_done": 4,
+        "sessions_planned": 5,
         "sessions_done_week": 4,
-        "keys_success": 1,
-        "keys_total": 1,
-        "points": 85,
+        "keys_success": 2,
+        "keys_total": 2,
+        "points": 87,
         "verdict": "success"
       }
     },
@@ -9409,7 +9409,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos course à pied.",
-          "status": "pending",
+          "status": "today",
           "actual": null
         },
         {
@@ -9528,7 +9528,10 @@
           "scheduled_time": "08:00",
           "actual": null
         }
-      ]
+      ],
+      "volume_actual_to_date": 0.0,
+      "volume_planned_to_date": 0.0,
+      "volume_drift_pct": 0
     },
     {
       "week_num": 14,
