@@ -1,19 +1,20 @@
 {
  "garmin": {
   "ok": true,
-  "at": "2026-08-31T11:50:24",
-  "message": "0 fichier(s), 4 course(s) vues",
-  "last_ok": "2026-08-31T11:50:24"
+  "at": "2026-09-01T06:03:02",
+  "message": "1 fichier(s), 5 course(s) vues",
+  "last_ok": "2026-09-01T06:03:02"
  },
  "coach": {
   "ok": false,
-  "at": "2026-08-31T11:51:46",
-  "message": "JSONDecodeError: Expecting ',' delimiter: line 3 column 489 (char 685)",
+  "at": "2026-09-01T06:03:09",
+  "message": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CecDJroZjXNt6buCA79Sm'}",
   "last_ok": "2026-08-30T10:42:46"
  },
  "debrief": {
-  "ok": true,
-  "at": "2026-08-30T11:10:45",
+  "ok": false,
+  "at": "2026-09-01T06:03:10",
+  "message": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CecDJwEiWxHE8j5B2y2GW'}",
   "last_ok": "2026-08-30T11:10:45"
  },
  "coach_validate": {
