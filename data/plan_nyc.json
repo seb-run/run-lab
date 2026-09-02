@@ -9579,7 +9579,7 @@
           "duration_min": 105,
           "key": true,
           "description": "4,5 km en trot pour aller (échauffement, vraiment lent)\nGammes en équipe\nCœur de séance : 6 × 800 m @ 3'28–3'34/km, récupération 2'\n4,5 km en trot pour rentrer\n\nPremière séance piste de la saison : ne cherche pas à suivre les plus rapides sur la 1re, tu montes en régime sur les trois dernières.\n[VO2max (800–2000 m) · 3'28–3'36/km]\nChaussures : Nike Zoom Fly 5 vert/blanc (647 km) — piste",
-          "status": "pending",
+          "status": "today",
           "target_pace": "3'32\"/km",
           "target_pace_sec": 212,
           "shoe": "Nike Zoom Fly 5 vert/blanc (647 km) — piste",
@@ -9622,7 +9622,13 @@
           "target_pace_sec": 239,
           "shoe": "Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
           "scheduled_time": "06:15",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Vigilance chaleur/hydratation : ta dernière sortie à allure spécifique (30/08) a montré un RPE très élevé (9/10) par forte chaleur. Hydrate-toi bien avant/pendant, et si la température est élevée aujourd'hui, vise le bas de la fourchette d'allure plutôt que le chrono strict."
+            }
+          ]
         },
         {
           "date": "2026-09-05",
@@ -9654,12 +9660,32 @@
           "target_pace_sec": 287,
           "shoe": "Adizero Boston 13 (231 km)",
           "scheduled_time": "08:00",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Sortie longue progressive : pars tranquille sur les premiers km, ne cherche pas à rattraper le rythme de la longue alternée du 30/08 (RPE 9 ce jour-là). Si les sensations ne sont pas là après 10-12km, reste sur l'allure endurance sans forcer la progression finale."
+            }
+          ]
         }
       ],
-      "volume_actual_to_date": 0.0,
-      "volume_planned_to_date": 0.0,
-      "volume_drift_pct": 0
+      "volume_actual_to_date": 12.0,
+      "volume_planned_to_date": 12.0,
+      "volume_drift_pct": 0.0,
+      "compliance": {
+        "km_pct": 100,
+        "km_done": 12.0,
+        "km_planned": 12.0,
+        "km_done_week": 12.0,
+        "km_planned_week": 80.0,
+        "sessions_done": 1,
+        "sessions_planned": 1,
+        "sessions_done_week": 1,
+        "keys_success": 0,
+        "keys_total": 0,
+        "points": 99,
+        "verdict": "success"
+      }
     },
     {
       "week_num": 14,

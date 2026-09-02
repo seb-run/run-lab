@@ -1,69 +1,32 @@
 {
- "generated_at": "2026-08-30T10:42:46",
+ "generated_at": "2026-09-02T09:56:04",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-08-27\", \"title\": \"Footing récupération 45' + 6 LD — rodage Zoom Fly 6 (2/3)\", \"type\": \"easy\", \"planned_km\": 9.0, \"key\": false, \"status\": \"over\", \"target_pace\": \"5'25\\\"/km\", \"actual\": {\"km\": 14.2, \"pace_str\": \"5'06\\\"/km\", \"fc\": 148, \"cadence\": 179, \"duration_min\": 73}, \"splits\": \"1:5'30/128/184spm 2:5'08/136/184spm 3:5'07/139/182spm 4:5'03/138/182spm 5:5'01/136/178spm 6:4'59/153/182spm 7:4'58/149/180spm 8:5'14/156/180spm 9:5'01/165/180spm 10:4'58/160/178spm 11:4'59/158/180spm 12:5'10/158/176spm 13:5'10/150/176spm 14:5'07/153/176spm 15:5'17/148/174spm\", \"garmin\": {\"te_aero\": 3.8, \"te_ana\": 0.0, \"load\": 167.8, \"rpe\": 3.0, \"feel_label\": \"Fort\", \"temp_c\": 24, \"balance_l\": 50.93, \"flags\": [], \"stance_drift_pct\": 0.5, \"step_drift_pct\": 4.2}, \"score\": {\"points\": 84, \"verdict\": \"success\", \"volume_pct\": 158, \"pace_delta_s\": -19}, \"hr\": {\"avg\": 148, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 7.9, \"flags\": []}}, {\"date\": \"2026-08-28\", \"title\": \"SEUIL — 2 × 15'\", \"type\": \"seuil\", \"planned_km\": 16.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'50\\\"/km\", \"actual\": {\"km\": 13.8, \"pace_str\": \"4'24\\\"/km\", \"fc\": 165, \"cadence\": 176, \"duration_min\": 61}, \"splits\": \"1:5'04/131/178spm 2:4'52/145/178spm 3:4'52/149/180spm 4:3'45/174/180spm 5:3'46/178/180spm 6:3'50/179/180spm 7:3'51/181/178spm 8:7'26/154/150spm 9:3'45/175/180spm 10:3'54/181/178spm 11:3'51/183/178spm 12:3'45/182/178spm 13:5'30/165/174spm 14:5'05/165/176spm 15:4'58/152/176spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 2.2, \"load\": 329.2, \"rpe\": 7.0, \"feel_label\": \"Fort\", \"temp_c\": 28, \"balance_l\": 49.6, \"flags\": [], \"stance_drift_pct\": 3.0, \"step_drift_pct\": -0.5}, \"score\": {\"points\": 96, \"verdict\": \"success\", \"volume_pct\": 86, \"pace_delta_s\": -2}, \"hr\": {\"avg\": 165, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 8.0, \"flags\": []}}, {\"date\": \"2026-08-29\", \"title\": \"Repos\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}]",
- "headline": "Bloc clé solide (seuils et longue tenus), mais semaine à venir très dense — la gestion de la récup va faire la différence.",
- "analysis": "Tes deux séances seuil et la sortie longue de 23,5 km sont réussies avec des allures actives conformes voire meilleures que la cible, c'est un bon indicateur de forme en build. Le decoupling à 8% sur le seuil du 28/08 est notable mais colle avec les 28°C annoncés et un RPE de 7 assumé sans plainte particulière — pas un signal d'alerte isolé. Le vrai point faible est ailleurs : deux footings faciles manqués cette semaine (19/08, 25/08) et surtout le footing récup du 27/08 rallongé à 158% du plan (14,2 km au lieu de 9), la veille du 2e seuil — ça correspond au split erratique (7'26/154/150spm) observé le lendemain, signe d'une récup insuffisante avant l'effort. Le volume hebdo est ressorti à 80% du plan malgré ça, donc la charge réelle absorbée est déjà limite. Le risque principal maintenant : tu attaques une séquence très dense — 31 km ce dimanche, VMA mercredi, 10 km MP vendredi, 20 km progressif dimanche prochain, VMA à nouveau le mercredi suivant — sans marge si la chaleur persiste. Focus de la semaine : respecter scrupuleusement les distances des footings de récup (ne pas les rallonger) et bien gérer hydratation/allure sur la sortie longue de 31 km aujourd'hui, la plus longue à ce jour du plan.",
+ "signature": "[{\"date\": \"2026-08-30\", \"title\": \"SORTIE LONGUE ALTERNÉE — 5 × 3 km à allure spécifique\", \"type\": \"long\", \"planned_km\": 31.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'59\\\"/km\", \"actual\": {\"km\": 27.1, \"pace_str\": \"4'26\\\"/km\", \"fc\": 165, \"cadence\": 179, \"duration_min\": 120}, \"splits\": \"1:5'13/138/176spm 2:4'55/149/178spm 3:5'01/145/178spm 4:4'57/152/178spm 5:4'53/153/178spm 6:3'55/167/182spm 7:3'56/173/182spm 8:4'00/173/180spm 9:5'04/163/176spm 10:3'52/172/180spm 11:3'56/176/180spm 12:3'58/174/180spm 13:4'57/153/176spm 14:3'54/170/182spm 15:3'58/175/182spm 16:3'57/178/182spm 17:5'11/161/176spm 18:3'55/175/182spm 19:3'57/176/180spm 20:4'00/179/180spm 21:5'18/164/176spm 22:3'54/175/180spm 23:3'57/177/182spm 24:3'56/178/182spm 25:4'56/166/176spm 26:5'01/166/178spm 27:5'08/162/174spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 1.6, \"load\": 427.9, \"rpe\": 9.0, \"feel_label\": \"Fort\", \"temp_c\": 27, \"balance_l\": 49.22, \"flags\": [], \"stance_drift_pct\": 2.5, \"step_drift_pct\": 4.8}, \"score\": {\"points\": 89, \"verdict\": \"success\", \"volume_pct\": 87, \"pace_delta_s\": 27}, \"hr\": {\"avg\": 165, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 5.8, \"flags\": []}}, {\"date\": \"2026-08-31\", \"title\": \"Repos + Muscu A\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-09-01\", \"title\": \"Footing 60' + 6 LD — rodage Zoom Fly 6 (3/3)\", \"type\": \"easy\", \"planned_km\": 12.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'15\\\"/km\", \"actual\": {\"km\": 12.0, \"pace_str\": \"4'53\\\"/km\", \"fc\": 147, \"cadence\": 178, \"duration_min\": 59}, \"splits\": \"1:5'02/132/180spm 2:4'57/144/178spm 3:4'58/148/178spm 4:4'58/149/176spm 5:4'50/147/178spm 6:4'52/146/180spm 7:4'44/149/180spm 8:4'54/151/178spm 9:4'42/151/180spm 10:4'44/147/180spm 11:4'52/153/178spm 12:4'58/150/176spm\", \"garmin\": {\"te_aero\": 3.4, \"te_ana\": 0.0, \"load\": 136.4, \"rpe\": 3.0, \"feel_label\": \"Très fort\", \"temp_c\": 21, \"balance_l\": 50.13, \"flags\": [], \"stance_drift_pct\": -0.7, \"step_drift_pct\": 4.5}, \"score\": {\"points\": 98, \"verdict\": \"success\", \"volume_pct\": 100, \"pace_delta_s\": -22}, \"hr\": {\"avg\": 147, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 0.9, \"flags\": []}}]",
+ "headline": "Forme solide malgré la chaleur : les séances clés passent, mais la sortie longue alternée du 30/08 (RPE 9, découplage 5.8%) montre les limites de la récup avant d'attaquer une semaine à 3 séances clés.",
+ "analysis": "Tu es sur une dynamique positive : toutes les séances clés des 14 derniers jours sont scorées 'success', y compris le seuil et la longue alternée malgré des allures moyennes ralenties par la chaleur (22-28°C) qui explique la majorité des découplages cardiaques observés (7.5-8%), rien d'alarmant en soi. Le point de vigilance réel, c'est le RPE 9/10 sur la sortie longue alternée du 30/08 — la séance la plus dure de la période, enchaînée après un seuil difficile la veille (28/08) et un dépassement de volume non prévu le 27/08 (158%). Deux footings faciles ont été manqués (19/08, 25/08) mais compensés largement ailleurs, donc pas de souci de conformité. Mécaniquement tout va bien : pas de dérive de foulée ou de contact au sol préoccupante, l'appui gauche/droite reste stable (~50%), ton Achille ne montre aucun signal. Le focus de la semaine : bien gérer l'hydratation et le rythme sur les 3 séances clés à venir (VMA aujourd'hui, MP vendredi, longue dimanche) qui arrivent après une semaine déjà exigeante — priorise les sensations sur le chrono si la chaleur persiste.",
  "applied": [
   {
    "severity": "minor",
    "kind": "add_note",
-   "date": "2026-09-03",
+   "date": "2026-09-04",
    "field": "description_note",
-   "new_value": "Footing récup 45' : respecte la distance prévue (9 km), ne rallonge pas comme le 27/08. C'est la clé pour arriver frais sur le 10 km continus MP du lendemain.",
-   "reason": "Le footing récup du 27/08 a été fait à 158% du volume planifié la veille d'un seuil clé, ce qui coïncide avec un split anormal le lendemain — éviter de reproduire ce schéma avant la séance MP du 04/09.",
-   "id": "6b9476dd",
-   "detail": "2026-09-03 : note ajoutée"
-  }
- ],
- "pending": [
-  {
-   "severity": "major",
-   "kind": "change_pace",
-   "date": "2026-08-30",
-   "field": null,
-   "new_value": "portion MP à ~4'40/km au lieu de 4'12, volume total réduit à 22km",
-   "reason": "Après l'échec du MP du 08-20 (5'11 au lieu de 4'12, volume 65%), enchaîner sur une longue avec 10km à 4'12 est trop risqué. On sécurise la sortie longue et on teste une allure MP intermédiaire plus réaliste avant de revenir sur 4'12.",
-   "replacement": {
-    "title": "SL 22 km · 8 km allure progressive",
-    "type": "long_mp",
-    "km": 22.0,
-    "target_pace": "4'40\"/km",
-    "description": "14km footing tranquille à 4'55-5'00/km puis 8km progressifs de 4'50 à 4'40/km. Ne cherche pas 4'12 aujourd'hui : l'objectif est de finir fort et fluide sur la portion rapide, pas de viser un chrono. On recalibrera le MP la semaine prochaine selon ce que ça donne."
-   },
-   "id": "fc290b34",
-   "status": "pending",
-   "created_at": "2026-08-21T06:05:03"
-  },
-  {
-   "severity": "major",
-   "kind": "change_pace",
-   "date": "2026-08-30",
-   "field": null,
-   "new_value": "Réduction du volume et des blocs spécifiques",
-   "reason": "RPE 7 et découplage 8% sur la dernière séance seuil (distance écourtée), plus un footing récup étendu à 158% la veille : la fatigue accumulée est réelle avant un bloc spécifique de 31km. On garde le stimulus mais on réduit la charge pour ne pas creuser le trou avant VMA et MP continu qui suivent dans la semaine.",
-   "replacement": {
-    "title": "Sortie longue alternée allégée",
-    "type": "long",
-    "km": 26.0,
-    "target_pace": "3'59\"/km sur les blocs, 4'47\"/km entre",
-    "description": "26 km avec 5 x 2 km à 3'59/km (au lieu de 3 km), le reste en footing à 4'47/km. Objectif : conserver le stimulus spécifique marathon sans prolonger l'accumulation de fatigue. Coupe un bloc si les jambes sont lourdes ou si la FC dérive fort — priorise les sensations sur le chrono aujourd'hui."
-   },
-   "id": "ef7e1ba4",
-   "status": "pending",
-   "created_at": "2026-08-29T11:48:14"
+   "new_value": "Vigilance chaleur/hydratation : ta dernière sortie à allure spécifique (30/08) a montré un RPE très élevé (9/10) par forte chaleur. Hydrate-toi bien avant/pendant, et si la température est élevée aujourd'hui, vise le bas de la fourchette d'allure plutôt que le chrono strict.",
+   "reason": "RPE 9/10 et découplage 5.8% sur la dernière séance à allure spécifique (30/08) en forte chaleur (27°C) ; cette séance MP continue de vendredi mérite la même vigilance.",
+   "replacement": null,
+   "id": "d1068cb3",
+   "detail": "2026-09-04 : note ajoutée"
   },
   {
    "severity": "minor",
    "kind": "add_note",
-   "date": "2026-08-30",
+   "date": "2026-09-06",
    "field": "description_note",
-   "new_value": "31 km avec 5×3 km à allure spécifique : c'est la plus longue sortie du plan à ce jour. Chaleur probable — priorise l'hydratation dès le début, ne force pas l'allure MP si la FC dérive au-delà de la normale sur les premiers 3 km rapides. Mieux vaut finir un peu sous la cible que t'effondrer sur les derniers segments.",
-   "reason": "Volume inédit (31 km) après une semaine déjà chargée (2 seuils + long 23,5 km) et un footing récup non maîtrisé le 27/08 ; risque de gestion d'allure/hydratation par forte chaleur récurrente (26-29°C sur les 2 dernières semaines).",
-   "id": "1f382324",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
-   "created_at": "2026-08-30T10:42:46"
+   "new_value": "Sortie longue progressive : pars tranquille sur les premiers km, ne cherche pas à rattraper le rythme de la longue alternée du 30/08 (RPE 9 ce jour-là). Si les sensations ne sont pas là après 10-12km, reste sur l'allure endurance sans forcer la progression finale.",
+   "reason": "Récupération à surveiller après la séance la plus dure de la période (RPE 9, découplage 5.8%, volume réduit à 87% le 30/08) ; enchaînement de 3 séances clés cette semaine (VMA, MP, longue).",
+   "replacement": null,
+   "id": "442c9a8c",
+   "detail": "2026-09-06 : note ajoutée"
   }
- ]
+ ],
+ "pending": []
 }

@@ -315,7 +315,7 @@
     "description": "14km footing tranquille à 4'55-5'00/km puis 8km progressifs de 4'50 à 4'40/km. Ne cherche pas 4'12 aujourd'hui : l'objectif est de finir fort et fluide sur la portion rapide, pas de viser un chrono. On recalibrera le MP la semaine prochaine selon ce que ça donne."
    },
    "id": "fc290b34",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-08-21T06:05:03"
   },
   {
@@ -433,7 +433,7 @@
     "description": "26 km avec 5 x 2 km à 3'59/km (au lieu de 3 km), le reste en footing à 4'47/km. Objectif : conserver le stimulus spécifique marathon sans prolonger l'accumulation de fatigue. Coupe un bloc si les jambes sont lourdes ou si la FC dérive fort — priorise les sensations sur le chrono aujourd'hui."
    },
    "id": "ef7e1ba4",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-08-29T11:48:14"
   },
   {
@@ -445,7 +445,7 @@
    "reason": "Volume inédit (31 km) après une semaine déjà chargée (2 seuils + long 23,5 km) et un footing récup non maîtrisé le 27/08 ; risque de gestion d'allure/hydratation par forte chaleur récurrente (26-29°C sur les 2 dernières semaines).",
    "id": "1f382324",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-08-30T10:42:46"
   }
  ]

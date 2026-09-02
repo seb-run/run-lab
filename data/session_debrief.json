@@ -1,45 +1,45 @@
 {
- "headline": "Blocs à allure spécifique dans le clou, mais séance écourtée et FC qui dérive fort.",
+ "headline": "Footing couru 22\"/km plus vite que prévu, mais les indicateurs restent excellents",
  "bullets": [
-  "5 blocs à 3'55-4'00/km, pile dans la cible malgré une moyenne à 4'26 tirée par les récup à 5'00/km.",
-  "FC 157→171 bpm en fin de sortie (+9,2%), découplage 5,8%, avec 26-28°C : RPE 9, ressenti \"Fort\".",
-  "27,08 km parcourus sur 31 km prévus, volume 87% du plan."
+  "Allure 4'53\"/km vs 5'15\"/km prévu (-22\"/km) pour un footing avant la piste demain soir",
+  "FC 147 vs 151 (réf. 60j à allure comparable) alors que tu es allé plus vite — bon signe",
+  "Temps de contact 218 ms, 7 ms sous ta réf. (225 ms), décrochage cardiaque faible (0.9%)"
  ],
  "points": [
   {
-   "label": "FC fin de séance",
-   "valeur": "171 bpm",
-   "ecart": "+9,2% vs début (découplage 5,8%)",
-   "lecture": "dérive nette, chaleur 26-28°C possible",
+   "label": "Allure",
+   "valeur": "4'53\"/km",
+   "ecart": "-22\" vs cible 5'15\"/km",
+   "lecture": "footing couru bien au-dessus de la consigne",
    "ton": "vigilance"
   },
   {
-   "label": "Allure blocs spécifiques",
-   "valeur": "3'52-4'00/km",
-   "ecart": "dans la fourchette 3'57-4'02 visée",
-   "lecture": "objectif allure spécifique atteint",
+   "label": "FC moyenne",
+   "valeur": "147 bpm",
+   "ecart": "-4 bpm vs réf. 151",
+   "lecture": "plus vite mais moins cardiaque, bon signal",
    "ton": "bon"
   },
   {
-   "label": "Équilibre appui en accélération",
-   "valeur": "48,2% gauche",
-   "ecart": "vs 50,6% en récup, réf. 49,84%",
-   "lecture": "asymétrie qui s'ouvre avec la vitesse",
-   "ton": "vigilance"
+   "label": "Temps de contact",
+   "valeur": "218 ms",
+   "ecart": "-7 ms vs réf. 225 ms",
+   "lecture": "appui plus court que d'habitude",
+   "ton": "bon"
   }
  ],
- "achille": "Équilibre global 49,2% proche de ta réf (49,84%), mais tombe à 48,2% sur les blocs rapides : droit plus chargé.",
- "a_surveiller": "Asymétrie qui s'ouvre avec l'allure (+1,23) : signature proche de ton ancien épisode adducteur.",
+ "achille": "Équilibre 50.1% côté gauche, quasi identique à ta réf. (50.3%) — rien de nouveau.",
+ "a_surveiller": "22\"/km plus vite que prévu sur un footing la veille de piste — jambes pas vraiment ménagées.",
  "seance": {
-  "date": "30/08/2026",
-  "heure": "11:01",
-  "titre": "i181296860",
-  "type_detecte": "sortie_longue",
-  "km": 27.08,
-  "duree": "2h 00m 00s",
-  "allure": "4'26\"/km",
-  "fc_moy": 165
+  "date": "01/09/2026",
+  "heure": "06:06",
+  "titre": "i181937708",
+  "type_detecte": "endurance",
+  "km": 12.01,
+  "duree": "58m 35s",
+  "allure": "4'53\"/km",
+  "fc_moy": 147
  },
- "generated_at": "2026-08-30T11:10:45",
- "baseline_n": 8
+ "generated_at": "2026-09-02T09:56:35",
+ "baseline_n": 28
 }
