@@ -1,45 +1,45 @@
 {
- "headline": "Footing couru 22\"/km plus vite que prévu, mais les indicateurs restent excellents",
+ "headline": "Qualité réussie malgré la chaleur ; asymétrie qui s'ouvre à la vitesse, à surveiller.",
  "bullets": [
-  "Allure 4'53\"/km vs 5'15\"/km prévu (-22\"/km) pour un footing avant la piste demain soir",
-  "FC 147 vs 151 (réf. 60j à allure comparable) alors que tu es allé plus vite — bon signe",
-  "Temps de contact 218 ms, 7 ms sous ta réf. (225 ms), décrochage cardiaque faible (0.9%)"
+  "Allure des efforts 3'37\"/km, +5s vs cible 3'32-36 — correct pour 1ère piste, 27-32°C.",
+  "Découplage FC 7.9%, contact +8.2% en fin de séance (226→244ms) : fatigue ou chaleur.",
+  "Équilibre 51,1% lent → 48,5% rapide : écart proche de ta signature adducteur 2025."
  ],
  "points": [
   {
-   "label": "Allure",
-   "valeur": "4'53\"/km",
-   "ecart": "-22\" vs cible 5'15\"/km",
-   "lecture": "footing couru bien au-dessus de la consigne",
-   "ton": "vigilance"
+   "label": "Allure séance qualité",
+   "valeur": "3'37\"/km",
+   "ecart": "+5s vs cible 3'32-36",
+   "lecture": "proche de la cible malgré la chaleur",
+   "ton": "bon"
   },
   {
-   "label": "FC moyenne",
-   "valeur": "147 bpm",
-   "ecart": "-4 bpm vs réf. 151",
-   "lecture": "plus vite mais moins cardiaque, bon signal",
-   "ton": "bon"
+   "label": "Découplage FC",
+   "valeur": "7.9%",
+   "ecart": "pas de réf isolée sur ce critère",
+   "lecture": "possible lié aux 27-32°C",
+   "ton": "vigilance"
   },
   {
    "label": "Temps de contact",
    "valeur": "218 ms",
-   "ecart": "-7 ms vs réf. 225 ms",
-   "lecture": "appui plus court que d'habitude",
-   "ton": "bon"
+   "ecart": "-6 ms vs réf 224ms, mais +8,2% en fin de séance",
+   "lecture": "fatigue en fin de séance",
+   "ton": "vigilance"
   }
  ],
- "achille": "Équilibre 50.1% côté gauche, quasi identique à ta réf. (50.3%) — rien de nouveau.",
- "a_surveiller": "22\"/km plus vite que prévu sur un footing la veille de piste — jambes pas vraiment ménagées.",
+ "achille": "Équilibre chute à 48,5% en phase rapide (vs 50,25% réf 60j) : charge accrue côté Achille.",
+ "a_surveiller": "Asymétrie s'ouvre avec la vitesse (+0,37, lent 51,1%→rapide 48,5%) : motif proche pubalgie 2025.",
  "seance": {
-  "date": "01/09/2026",
-  "heure": "06:06",
-  "titre": "i181937708",
-  "type_detecte": "endurance",
-  "km": 12.01,
-  "duree": "58m 35s",
-  "allure": "4'53\"/km",
-  "fc_moy": 147
+  "date": "02/09/2026",
+  "heure": "19:06",
+  "titre": "i182607606",
+  "type_detecte": "frac_court",
+  "km": 21.1,
+  "duree": "1h 42m 28s",
+  "allure": "4'51\"/km",
+  "fc_moy": 160
  },
- "generated_at": "2026-09-02T09:56:35",
- "baseline_n": 28
+ "generated_at": "2026-09-02T19:29:24",
+ "baseline_n": 29
 }
