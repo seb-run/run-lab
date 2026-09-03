@@ -9632,18 +9632,167 @@
           "duration_min": 45,
           "key": false,
           "description": "45' très facile — lendemain de piste. Muscu B le midi (allégée).\n[Récupération · 5'15–5'35/km]\nChaussures : On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-          "status": "today",
+          "status": "done",
           "target_pace": "5'25\"/km",
           "target_pace_sec": 325,
           "shoe": "On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
           "scheduled_time": "06:30",
-          "actual": null,
+          "actual": {
+            "km": 7.0,
+            "duration_min": 36,
+            "pace_sec": 308,
+            "pace_str": "5'08\"/km",
+            "fc": 148,
+            "cadence": 176,
+            "type": "endurance",
+            "title": "i182965029",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 223.0,
+              "osc_cm": 10.7,
+              "vratio": 9.67,
+              "balance_l": 50.66,
+              "step_m": 1.09,
+              "temp_c": 29,
+              "temp_max": 30,
+              "resp": 32.6,
+              "power": 376,
+              "np": 380,
+              "te_aero": 3.1,
+              "te_ana": 0.0,
+              "load": 96.6,
+              "strides": 3150,
+              "rpe": 3.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 222.0,
+                  "end": 225.0,
+                  "pct": 1.2
+                },
+                "step": {
+                  "start": 1072.0,
+                  "end": 1092.0,
+                  "pct": 1.8
+                },
+                "vratio": {
+                  "start": 9.49,
+                  "end": 10.02,
+                  "pct": 5.6
+                },
+                "osc": {
+                  "start": 103.0,
+                  "end": 112.0,
+                  "pct": 8.2
+                },
+                "hr": {
+                  "start": 142.0,
+                  "end": 155.0,
+                  "pct": 8.9
+                },
+                "cad": {
+                  "start": 88.3,
+                  "end": 87.5,
+                  "pct": -0.9
+                }
+              },
+              "balance_min": 50.22,
+              "balance_max": 51.24,
+              "balance_series": [
+                50.71,
+                50.64,
+                51.24,
+                50.74,
+                50.34,
+                50.22,
+                50.69
+              ],
+              "balance_lent": 50.7,
+              "balance_rapide": 50.48,
+              "asym_vs_allure": -0.22,
+              "allure_lent_s": 315,
+              "allure_rapide_s": 302,
+              "rr_beats": 5660,
+              "rmssd_effort": 6.3,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 314,
+                "fc": 134,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 303,
+                "fc": 147,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 313,
+                "fc": 146,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 302,
+                "fc": 150,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 305,
+                "fc": 148,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 302,
+                "fc": 156,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 316,
+                "fc": 154,
+                "ca": 174
+              }
+            ]
+          },
           "coach_notes": [
             {
               "kind": "note",
               "text": "Footing récup 45' : respecte la distance prévue (9 km), ne rallonge pas comme le 27/08. C'est la clé pour arriver frais sur le 10 km continus MP du lendemain."
             }
-          ]
+          ],
+          "score": {
+            "points": 87,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 78,
+            "volume_points": 76,
+            "pace_points": 100,
+            "pace_target_s": 325,
+            "pace_actual_s": 308,
+            "pace_actual_str": "5'08\"/km",
+            "pace_delta_s": -17,
+            "is_quality": false,
+            "hr": {
+              "avg": 148,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 5.2,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 78%",
+              "Allure −17\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-09-04",
@@ -9721,11 +9870,11 @@
         "km_pct": 118,
         "km_done": 33.1,
         "km_planned": 28.0,
-        "km_done_week": 33.1,
+        "km_done_week": 40.1,
         "km_planned_week": 79.2,
         "sessions_done": 2,
         "sessions_planned": 2,
-        "sessions_done_week": 2,
+        "sessions_done_week": 3,
         "keys_success": 1,
         "keys_total": 1,
         "points": 98,

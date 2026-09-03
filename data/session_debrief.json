@@ -1,45 +1,45 @@
 {
- "headline": "Qualité réussie malgré la chaleur ; asymétrie qui s'ouvre à la vitesse, à surveiller.",
+ "headline": "Récup plus rapide et plus courte que prévu, mais bien tolérée (RPE 3).",
  "bullets": [
-  "Allure des efforts 3'37\"/km, +5s vs cible 3'32-36 — correct pour 1ère piste, 27-32°C.",
-  "Découplage FC 7.9%, contact +8.2% en fin de séance (226→244ms) : fatigue ou chaleur.",
-  "Équilibre 51,1% lent → 48,5% rapide : écart proche de ta signature adducteur 2025."
+  "Allure 5'08/km, 17\" plus vite que la cible 5'25 — consigne 'très facile' non respectée.",
+  "Séance écourtée : 35'56 pour 45' prévues (volume 78%).",
+  "FC 148 bpm, conforme à ta réf 149 à cette allure malgré 29-30°C."
  ],
  "points": [
   {
-   "label": "Allure séance qualité",
-   "valeur": "3'37\"/km",
-   "ecart": "+5s vs cible 3'32-36",
-   "lecture": "proche de la cible malgré la chaleur",
+   "label": "Allure vs plan",
+   "valeur": "5'08/km",
+   "ecart": "-17s vs cible 5'25",
+   "lecture": "trop rapide pour une récup",
+   "ton": "vigilance"
+  },
+  {
+   "label": "FC moyenne",
+   "valeur": "148 bpm",
+   "ecart": "proche réf 149.1 à allure comparable",
+   "lecture": "effort cardio cohérent malgré chaleur",
    "ton": "bon"
   },
   {
-   "label": "Découplage FC",
-   "valeur": "7.9%",
-   "ecart": "pas de réf isolée sur ce critère",
-   "lecture": "possible lié aux 27-32°C",
-   "ton": "vigilance"
-  },
-  {
-   "label": "Temps de contact",
-   "valeur": "218 ms",
-   "ecart": "-6 ms vs réf 224ms, mais +8,2% en fin de séance",
-   "lecture": "fatigue en fin de séance",
-   "ton": "vigilance"
+   "label": "Équilibre gauche",
+   "valeur": "50.66%",
+   "ecart": "+0.29 vs réf 50.37%",
+   "lecture": "décharge légère et stable du droit",
+   "ton": "neutre"
   }
  ],
- "achille": "Équilibre chute à 48,5% en phase rapide (vs 50,25% réf 60j) : charge accrue côté Achille.",
- "a_surveiller": "Asymétrie s'ouvre avec la vitesse (+0,37, lent 51,1%→rapide 48,5%) : motif proche pubalgie 2025.",
+ "achille": "Équilibre 50.7% côté gauche, dans ta norme habituelle — pas de décharge accrue du droit.",
+ "a_surveiller": "Dérive FC +8.9% et oscillation +8.2% sur la séance, cohérent avec les 29-30°C, pas d'alerte pubalgie (asym se resserre à l'allure rapide).",
  "seance": {
-  "date": "02/09/2026",
-  "heure": "19:06",
-  "titre": "i182607606",
-  "type_detecte": "frac_court",
-  "km": 21.1,
-  "duree": "1h 42m 28s",
-  "allure": "4'51\"/km",
-  "fc_moy": 160
+  "date": "03/09/2026",
+  "heure": "19:21",
+  "titre": "i182965029",
+  "type_detecte": "endurance",
+  "km": 7.01,
+  "duree": "35m 56s",
+  "allure": "5'08\"/km",
+  "fc_moy": 148
  },
- "generated_at": "2026-09-02T19:29:24",
- "baseline_n": 29
+ "generated_at": "2026-09-03T18:02:54",
+ "baseline_n": 30
 }
