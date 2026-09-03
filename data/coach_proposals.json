@@ -1,18 +1,6 @@
 {
  "proposals": [
   {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-08-02",
-   "field": "description_note",
-   "new_value": "Reste strictement sur l'allure footing/récup aujourd'hui, ignore la cible 3'53 affichée par erreur — objectif : relâcher les jambes avant la semaine chargée.",
-   "reason": "Cible affichée incohérente avec le type recovery ; risque de partir trop vite comme les jours précédents.",
-   "id": "ed1f9e49",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "expired",
-   "created_at": "2026-08-02T09:53:50"
-  },
-  {
    "severity": "major",
    "kind": "restructure_week",
    "date": "2026-08-11",
@@ -447,6 +435,20 @@
    "guardrail_reject": "jour passé ou en cours",
    "status": "expired",
    "created_at": "2026-08-30T10:42:46"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-09-03",
+   "field": "description_note",
+   "new_value": "Vraie récup aujourd'hui : reste à 5'25/km max, ne dépasse pas les 9 km prévus. Hier la piste a montré une fatigue mécanique en fin de séance (foulée qui se raccourcit, appui qui traîne) — le corps a besoin de ce footing pour se relâcher avant le spécifique de demain.",
+   "new_value_note": null,
+   "reason": "Pattern répété de footings trop rapides/trop longs + signes de fatigue mécanique (stance_fade/step_fade) sur la séance de piste de la veille, avec une séance clé MP dès demain.",
+   "replacement": null,
+   "id": "a6a1be52",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-09-03T10:06:29"
   }
  ]
 }

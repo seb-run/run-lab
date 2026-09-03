@@ -2803,333 +2803,7 @@
               "rr_beats": 24408,
               "rmssd_effort": 6.6,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 0.94,
-                "ps": 317,
-                "fc": 158,
-                "ca": 178
-              },
-              {
-                "km": 0.86,
-                "ps": 307,
-                "fc": 160,
-                "ca": 179
-              },
-              {
-                "km": 1.0,
-                "ps": 237,
-                "fc": 162,
-                "ca": 181
-              },
-              {
-                "km": 1.0,
-                "ps": 239,
-                "fc": 168,
-                "ca": 177
-              },
-              {
-                "km": 1.0,
-                "ps": 317,
-                "fc": 126,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 302,
-                "fc": 142,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 314,
-                "fc": 147,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 331,
-                "fc": 119,
-                "ca": null
-              },
-              {
-                "km": 0.06,
-                "ps": 363,
-                "fc": 132,
-                "ca": 184
-              },
-              {
-                "km": 1.0,
-                "ps": 238,
-                "fc": 161,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 239,
-                "fc": 168,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 336,
-                "fc": 120,
-                "ca": null
-              },
-              {
-                "km": 1.0,
-                "ps": 235,
-                "fc": 160,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 234,
-                "fc": 169,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 329,
-                "fc": 129,
-                "ca": null
-              },
-              {
-                "km": 1.0,
-                "ps": 232,
-                "fc": 164,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 239,
-                "fc": 167,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 326,
-                "fc": 124,
-                "ca": null
-              },
-              {
-                "km": 1.0,
-                "ps": 231,
-                "fc": 161,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 241,
-                "fc": 168,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 330,
-                "fc": 124,
-                "ca": null
-              },
-              {
-                "km": 1.0,
-                "ps": 232,
-                "fc": 160,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 235,
-                "fc": 168,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 371,
-                "fc": 139,
-                "ca": null
-              },
-              {
-                "km": 0.12,
-                "ps": 213,
-                "fc": 142,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 232,
-                "fc": 167,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 237,
-                "fc": 173,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 316,
-                "fc": 125,
-                "ca": null
-              },
-              {
-                "km": 1.0,
-                "ps": 227,
-                "fc": 162,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 236,
-                "fc": 172,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 322,
-                "fc": 127,
-                "ca": null
-              },
-              {
-                "km": 1.0,
-                "ps": 236,
-                "fc": 165,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 236,
-                "fc": 172,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 317,
-                "fc": 123,
-                "ca": null
-              },
-              {
-                "km": 1.0,
-                "ps": 232,
-                "fc": 165,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 242,
-                "fc": 172,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 305,
-                "fc": 140,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 229,
-                "fc": 169,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 232,
-                "fc": 170,
-                "ca": 178
-              },
-              {
-                "km": 0.06,
-                "ps": 364,
-                "fc": 171,
-                "ca": 166
-              },
-              {
-                "km": 0.94,
-                "ps": 317,
-                "fc": 158,
-                "ca": 178
-              },
-              {
-                "km": 0.87,
-                "ps": 306,
-                "fc": 160,
-                "ca": 178
-              },
-              {
-                "km": 3.0,
-                "ps": 311,
-                "fc": 138,
-                "ca": null
-              },
-              {
-                "km": 2.0,
-                "ps": 238,
-                "fc": 164,
-                "ca": null
-              },
-              {
-                "km": 2.0,
-                "ps": 234,
-                "fc": 165,
-                "ca": null
-              },
-              {
-                "km": 2.0,
-                "ps": 236,
-                "fc": 166,
-                "ca": null
-              },
-              {
-                "km": 2.0,
-                "ps": 236,
-                "fc": 165,
-                "ca": null
-              },
-              {
-                "km": 2.0,
-                "ps": 233,
-                "fc": 164,
-                "ca": null
-              },
-              {
-                "km": 2.0,
-                "ps": 234,
-                "fc": 170,
-                "ca": null
-              },
-              {
-                "km": 2.0,
-                "ps": 231,
-                "fc": 167,
-                "ca": null
-              },
-              {
-                "km": 2.0,
-                "ps": 236,
-                "fc": 168,
-                "ca": null
-              },
-              {
-                "km": 2.0,
-                "ps": 237,
-                "fc": 169,
-                "ca": null
-              },
-              {
-                "km": 2.0,
-                "ps": 219,
-                "fc": 169,
-                "ca": null
-              },
-              {
-                "km": 1.82,
-                "ps": 312,
-                "fc": 159,
-                "ca": null
-              }
-            ]
+            }
           },
           "_downgraded_from": {
             "title": "Sortie longue 25km",
@@ -9958,7 +9632,7 @@
           "duration_min": 45,
           "key": false,
           "description": "45' très facile — lendemain de piste. Muscu B le midi (allégée).\n[Récupération · 5'15–5'35/km]\nChaussures : On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-          "status": "pending",
+          "status": "today",
           "target_pace": "5'25\"/km",
           "target_pace_sec": 325,
           "shoe": "On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
@@ -9998,7 +9672,7 @@
           "dow": "Sat",
           "type": "easy",
           "title": "Footing 40'",
-          "km": 8.0,
+          "km": 7.2,
           "duration_min": 40,
           "key": false,
           "description": "40' très facile.\n[Récupération · 5'15–5'35/km]\nChaussures : Nike Pegasus 41 « Jakob » (476 km)",
@@ -10007,7 +9681,15 @@
           "target_pace_sec": 325,
           "shoe": "Nike Pegasus 41 « Jakob » (476 km)",
           "scheduled_time": "08:30",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "volume",
+              "delta_pct": -10,
+              "reason": "gérer la charge de la semaine"
+            }
+          ],
+          "_adapt_volume": true
         },
         {
           "date": "2026-09-06",
@@ -10032,21 +9714,21 @@
           ]
         }
       ],
-      "volume_actual_to_date": 12.0,
-      "volume_planned_to_date": 12.0,
-      "volume_drift_pct": 0.0,
+      "volume_actual_to_date": 33.1,
+      "volume_planned_to_date": 28.0,
+      "volume_drift_pct": 18.2,
       "compliance": {
-        "km_pct": 100,
-        "km_done": 12.0,
-        "km_planned": 12.0,
+        "km_pct": 118,
+        "km_done": 33.1,
+        "km_planned": 28.0,
         "km_done_week": 33.1,
-        "km_planned_week": 80.0,
-        "sessions_done": 1,
-        "sessions_planned": 1,
+        "km_planned_week": 79.2,
+        "sessions_done": 2,
+        "sessions_planned": 2,
         "sessions_done_week": 2,
-        "keys_success": 0,
-        "keys_total": 0,
-        "points": 99,
+        "keys_success": 1,
+        "keys_total": 1,
+        "points": 98,
         "verdict": "success"
       }
     },
@@ -10085,7 +9767,13 @@
           "target_pace_sec": 315,
           "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
           "scheduled_time": "06:30",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Footing tranquille avant la piste de demain : vise 5'15/km, pas plus vite, et n'ajoute pas de kilomètres. Objectif = arriver frais sur le 5×1000m, pas d'accumuler du volume gratuit."
+            }
+          ]
         },
         {
           "date": "2026-09-09",

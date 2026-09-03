@@ -1,32 +1,36 @@
 {
- "generated_at": "2026-09-02T09:56:04",
+ "generated_at": "2026-09-03T10:06:29",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-08-30\", \"title\": \"SORTIE LONGUE ALTERNÉE — 5 × 3 km à allure spécifique\", \"type\": \"long\", \"planned_km\": 31.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'59\\\"/km\", \"actual\": {\"km\": 27.1, \"pace_str\": \"4'26\\\"/km\", \"fc\": 165, \"cadence\": 179, \"duration_min\": 120}, \"splits\": \"1:5'13/138/176spm 2:4'55/149/178spm 3:5'01/145/178spm 4:4'57/152/178spm 5:4'53/153/178spm 6:3'55/167/182spm 7:3'56/173/182spm 8:4'00/173/180spm 9:5'04/163/176spm 10:3'52/172/180spm 11:3'56/176/180spm 12:3'58/174/180spm 13:4'57/153/176spm 14:3'54/170/182spm 15:3'58/175/182spm 16:3'57/178/182spm 17:5'11/161/176spm 18:3'55/175/182spm 19:3'57/176/180spm 20:4'00/179/180spm 21:5'18/164/176spm 22:3'54/175/180spm 23:3'57/177/182spm 24:3'56/178/182spm 25:4'56/166/176spm 26:5'01/166/178spm 27:5'08/162/174spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 1.6, \"load\": 427.9, \"rpe\": 9.0, \"feel_label\": \"Fort\", \"temp_c\": 27, \"balance_l\": 49.22, \"flags\": [], \"stance_drift_pct\": 2.5, \"step_drift_pct\": 4.8}, \"score\": {\"points\": 89, \"verdict\": \"success\", \"volume_pct\": 87, \"pace_delta_s\": 27}, \"hr\": {\"avg\": 165, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 5.8, \"flags\": []}}, {\"date\": \"2026-08-31\", \"title\": \"Repos + Muscu A\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-09-01\", \"title\": \"Footing 60' + 6 LD — rodage Zoom Fly 6 (3/3)\", \"type\": \"easy\", \"planned_km\": 12.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'15\\\"/km\", \"actual\": {\"km\": 12.0, \"pace_str\": \"4'53\\\"/km\", \"fc\": 147, \"cadence\": 178, \"duration_min\": 59}, \"splits\": \"1:5'02/132/180spm 2:4'57/144/178spm 3:4'58/148/178spm 4:4'58/149/176spm 5:4'50/147/178spm 6:4'52/146/180spm 7:4'44/149/180spm 8:4'54/151/178spm 9:4'42/151/180spm 10:4'44/147/180spm 11:4'52/153/178spm 12:4'58/150/176spm\", \"garmin\": {\"te_aero\": 3.4, \"te_ana\": 0.0, \"load\": 136.4, \"rpe\": 3.0, \"feel_label\": \"Très fort\", \"temp_c\": 21, \"balance_l\": 50.13, \"flags\": [], \"stance_drift_pct\": -0.7, \"step_drift_pct\": 4.5}, \"score\": {\"points\": 98, \"verdict\": \"success\", \"volume_pct\": 100, \"pace_delta_s\": -22}, \"hr\": {\"avg\": 147, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 0.9, \"flags\": []}}]",
- "headline": "Forme solide malgré la chaleur : les séances clés passent, mais la sortie longue alternée du 30/08 (RPE 9, découplage 5.8%) montre les limites de la récup avant d'attaquer une semaine à 3 séances clés.",
- "analysis": "Tu es sur une dynamique positive : toutes les séances clés des 14 derniers jours sont scorées 'success', y compris le seuil et la longue alternée malgré des allures moyennes ralenties par la chaleur (22-28°C) qui explique la majorité des découplages cardiaques observés (7.5-8%), rien d'alarmant en soi. Le point de vigilance réel, c'est le RPE 9/10 sur la sortie longue alternée du 30/08 — la séance la plus dure de la période, enchaînée après un seuil difficile la veille (28/08) et un dépassement de volume non prévu le 27/08 (158%). Deux footings faciles ont été manqués (19/08, 25/08) mais compensés largement ailleurs, donc pas de souci de conformité. Mécaniquement tout va bien : pas de dérive de foulée ou de contact au sol préoccupante, l'appui gauche/droite reste stable (~50%), ton Achille ne montre aucun signal. Le focus de la semaine : bien gérer l'hydratation et le rythme sur les 3 séances clés à venir (VMA aujourd'hui, MP vendredi, longue dimanche) qui arrivent après une semaine déjà exigeante — priorise les sensations sur le chrono si la chaleur persiste.",
+ "signature": "[{\"date\": \"2026-08-31\", \"title\": \"Repos + Muscu A\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-09-01\", \"title\": \"Footing 60' + 6 LD — rodage Zoom Fly 6 (3/3)\", \"type\": \"easy\", \"planned_km\": 12.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'15\\\"/km\", \"actual\": {\"km\": 12.0, \"pace_str\": \"4'53\\\"/km\", \"fc\": 147, \"cadence\": 178, \"duration_min\": 59}, \"splits\": \"1:5'02/132/180spm 2:4'57/144/178spm 3:4'58/148/178spm 4:4'58/149/176spm 5:4'50/147/178spm 6:4'52/146/180spm 7:4'44/149/180spm 8:4'54/151/178spm 9:4'42/151/180spm 10:4'44/147/180spm 11:4'52/153/178spm 12:4'58/150/176spm\", \"garmin\": {\"te_aero\": 3.4, \"te_ana\": 0.0, \"load\": 136.4, \"rpe\": 3.0, \"feel_label\": \"Très fort\", \"temp_c\": 21, \"balance_l\": 50.13, \"flags\": [], \"stance_drift_pct\": -0.7, \"step_drift_pct\": 4.5}, \"score\": {\"points\": 98, \"verdict\": \"success\", \"volume_pct\": 100, \"pace_delta_s\": -22}, \"hr\": {\"avg\": 147, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 0.9, \"flags\": []}}, {\"date\": \"2026-09-02\", \"title\": \"PISTE — 6 × 800 m\", \"type\": \"intervals\", \"planned_km\": 16.0, \"key\": true, \"status\": \"over\", \"target_pace\": \"3'32\\\"/km\", \"actual\": {\"km\": 21.1, \"pace_str\": \"4'51\\\"/km\", \"fc\": 160, \"cadence\": 175, \"duration_min\": 102}, \"splits\": \"1:5'05/131/176spm 2:5'15/150/176spm 3:5'04/154/176spm 4:5'01/156/176spm 5:5'26/145/178spm 6:5'14/144/176spm 7:5'09/149/174spm 8:5'25/139/174spm 9:3'35/166/182spm 10:4'17/171/176spm 11:3'38/174/180spm 12:4'32/173/176spm 13:3'38/176/182spm 14:4'22/176/174spm 15:3'37/178/180spm 16:4'22/178/174spm 17:3'32/180/178spm 18:4'24/179/172spm 19:3'38/181/178spm 20:4'31/178/174spm 21:3'32/181/180spm 22:4'29/181/172spm 23:3'33/182/178spm 24:4'35/181/172spm 25:3'33/183/178spm 26:4'48/181/170spm 27:3'34/183/178spm 28:4'33/182/170spm 29:3'33/186/178spm 30:4'24/184/168spm (+9 laps)\", \"garmin\": {\"te_aero\": 4.8, \"te_ana\": 2.9, \"load\": 369.3, \"rpe\": 7.0, \"feel_label\": \"Fort\", \"temp_c\": 27, \"balance_l\": 50.04, \"flags\": [\"stance_fade\", \"step_fade\"], \"stance_drift_pct\": 8.2, \"step_drift_pct\": -5.2}, \"score\": {\"points\": 92, \"verdict\": \"success\", \"volume_pct\": 132, \"pace_delta_s\": 5}, \"hr\": {\"avg\": 160, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 7.9, \"flags\": []}}]",
+ "headline": "Les séances clés passent mais tu grignotes ta récup : footings trop rapides et trop longs, et la piste du 02/09 montre une vraie fatigue mécanique en fin de séance.",
+ "analysis": "Ta forme reste bonne sur le fond : seuils et sorties longues tenus à l'allure cible avec des scores 'success' sur 4 semaines d'affilée. Mais un pattern se répète depuis 10 jours : tu cours quasi systématiquement tes footings faciles plus vite que prévu (4'53 au lieu de 5'15 le 01/09, 5'06 au lieu de 5'25 le 27/08) et souvent plus longs (158% de volume le 27/08, 132% sur la piste du 02/09). Sur cette dernière séance, les flags stance_fade/step_fade avec +8.2% de temps de contact et -5.2% de foulée en fin de course sont un vrai signal de fatigue mécanique, pas juste une dérive cardiaque liée à la chaleur — à surveiller de près vu ton historique Achille. Le RPE 9 sur la sortie longue alternée du 30/08, alors que tu avais coupé le volume à 87%, confirme que la charge globale commence à peser. Le risque principal cette semaine : enchaîner une séquence très chargée (MP 15km, long 20km, intervalles 17km, seuil 14km, long alternée 28km) sans être vraiment reparti frais des jours de récup. Focus : redonner de la vraie valeur récup à tes footings faciles — allure et volume respectés — pour préserver la qualité des séances clés à venir et l'intégrité de l'Achille.",
  "applied": [
   {
    "severity": "minor",
    "kind": "add_note",
-   "date": "2026-09-04",
+   "date": "2026-09-08",
    "field": "description_note",
-   "new_value": "Vigilance chaleur/hydratation : ta dernière sortie à allure spécifique (30/08) a montré un RPE très élevé (9/10) par forte chaleur. Hydrate-toi bien avant/pendant, et si la température est élevée aujourd'hui, vise le bas de la fourchette d'allure plutôt que le chrono strict.",
-   "reason": "RPE 9/10 et découplage 5.8% sur la dernière séance à allure spécifique (30/08) en forte chaleur (27°C) ; cette séance MP continue de vendredi mérite la même vigilance.",
+   "new_value": "Footing tranquille avant la piste de demain : vise 5'15/km, pas plus vite, et n'ajoute pas de kilomètres. Objectif = arriver frais sur le 5×1000m, pas d'accumuler du volume gratuit.",
+   "reason": "Même pattern observé sur plusieurs sorties faciles (allure trop rapide, volume rallongé) juste avant des séances clés, ce qui use la fraîcheur sans bénéfice d'entraînement.",
    "replacement": null,
-   "id": "d1068cb3",
-   "detail": "2026-09-04 : note ajoutée"
-  },
+   "id": "d72abda6",
+   "detail": "2026-09-08 : note ajoutée"
+  }
+ ],
+ "pending": [
   {
    "severity": "minor",
    "kind": "add_note",
-   "date": "2026-09-06",
+   "date": "2026-09-03",
    "field": "description_note",
-   "new_value": "Sortie longue progressive : pars tranquille sur les premiers km, ne cherche pas à rattraper le rythme de la longue alternée du 30/08 (RPE 9 ce jour-là). Si les sensations ne sont pas là après 10-12km, reste sur l'allure endurance sans forcer la progression finale.",
-   "reason": "Récupération à surveiller après la séance la plus dure de la période (RPE 9, découplage 5.8%, volume réduit à 87% le 30/08) ; enchaînement de 3 séances clés cette semaine (VMA, MP, longue).",
+   "new_value": "Vraie récup aujourd'hui : reste à 5'25/km max, ne dépasse pas les 9 km prévus. Hier la piste a montré une fatigue mécanique en fin de séance (foulée qui se raccourcit, appui qui traîne) — le corps a besoin de ce footing pour se relâcher avant le spécifique de demain.",
+   "new_value_note": null,
+   "reason": "Pattern répété de footings trop rapides/trop longs + signes de fatigue mécanique (stance_fade/step_fade) sur la séance de piste de la veille, avec une séance clé MP dès demain.",
    "replacement": null,
-   "id": "442c9a8c",
-   "detail": "2026-09-06 : note ajoutée"
+   "id": "a6a1be52",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-09-03T10:06:29"
   }
- ],
- "pending": []
+ ]
 }
