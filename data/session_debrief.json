@@ -1,45 +1,45 @@
 {
- "headline": "Récup plus rapide et plus courte que prévu, mais bien tolérée (RPE 3).",
+ "headline": "Objectif tenu (3'58/km) malgré 30-34°C : Zoom Fly 6 validées, mais fatigue et FC en fin de course.",
  "bullets": [
-  "Allure 5'08/km, 17\" plus vite que la cible 5'25 — consigne 'très facile' non respectée.",
-  "Séance écourtée : 35'56 pour 45' prévues (volume 78%).",
-  "FC 148 bpm, conforme à ta réf 149 à cette allure malgré 29-30°C."
+  "FC moy 165 bpm, +6,8 vs réf 158,2 — decoupling 12,4%, chaleur 30-34°C probable cause.",
+  "Contact au sol +6,2% en fin de séance (197→210 ms) : fatigue qui s'installe.",
+  "Asymétrie s'ouvre avec la vitesse (50,75%→47,57%) — même signature que ton ancien adducteur."
  ],
  "points": [
   {
-   "label": "Allure vs plan",
-   "valeur": "5'08/km",
-   "ecart": "-17s vs cible 5'25",
-   "lecture": "trop rapide pour une récup",
+   "label": "FC moyenne",
+   "valeur": "165 bpm",
+   "ecart": "+6,8 vs réf 158,2",
+   "lecture": "élevée, chaleur en cause probable",
    "ton": "vigilance"
   },
   {
-   "label": "FC moyenne",
-   "valeur": "148 bpm",
-   "ecart": "proche réf 149.1 à allure comparable",
-   "lecture": "effort cardio cohérent malgré chaleur",
-   "ton": "bon"
+   "label": "Temps de contact",
+   "valeur": "210 ms fin",
+   "ecart": "+6,2% vs début (197 ms)",
+   "lecture": "fatigue en fin de séance",
+   "ton": "vigilance"
   },
   {
-   "label": "Équilibre gauche",
-   "valeur": "50.66%",
-   "ecart": "+0.29 vs réf 50.37%",
-   "lecture": "décharge légère et stable du droit",
-   "ton": "neutre"
+   "label": "Asymétrie vs allure",
+   "valeur": "+1,68 pts",
+   "ecart": "50,75% lent → 47,57% rapide",
+   "lecture": "s'accentue avec la vitesse",
+   "ton": "vigilance"
   }
  ],
- "achille": "Équilibre 50.7% côté gauche, dans ta norme habituelle — pas de décharge accrue du droit.",
- "a_surveiller": "Dérive FC +8.9% et oscillation +8.2% sur la séance, cohérent avec les 29-30°C, pas d'alerte pubalgie (asym se resserre à l'allure rapide).",
+ "achille": "Équilibre global 48,9% vs réf 49,75%, sous les 50% : pas de décharge côté droit.",
+ "a_surveiller": "L'asymétrie qui s'ouvre avec l'allure rappelle le motif de ton adducteur, à observer sur les prochaines sorties.",
  "seance": {
-  "date": "03/09/2026",
-  "heure": "19:21",
-  "titre": "i182965029",
-  "type_detecte": "endurance",
-  "km": 7.01,
-  "duree": "35m 56s",
-  "allure": "5'08\"/km",
-  "fc_moy": 148
+  "date": "04/09/2026",
+  "heure": "12:15",
+  "titre": "i183195653",
+  "type_detecte": "frac_long",
+  "km": 15.07,
+  "duree": "1h 05m 56s",
+  "allure": "4'23\"/km",
+  "fc_moy": 165
  },
- "generated_at": "2026-09-03T18:02:54",
- "baseline_n": 30
+ "generated_at": "2026-09-04T11:24:43",
+ "baseline_n": 10
 }

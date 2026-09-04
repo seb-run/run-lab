@@ -9803,18 +9803,226 @@
           "duration_min": 80,
           "key": true,
           "description": "3 km d'échauffement\n10 km @ 3'57–4'02/km en continu\n2 km de retour au calme\n\nLa séance de référence du bloc. Elle doit être exigeante mais jamais violente : si tu finis en ayant serré, on redescend l'allure spécifique à 4'02–4'06.\n\n👟 Premier test des Zoom Fly 6 à l'allure. Si ça passe, elles sont validées pour tout le bloc spécifique.\n[Allure spécifique marathon · 3'57–4'02/km]\nChaussures : Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
-          "status": "today",
+          "status": "done",
           "target_pace": "3'59\"/km",
           "target_pace_sec": 239,
           "shoe": "Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
           "scheduled_time": "06:15",
-          "actual": null,
+          "actual": {
+            "km": 15.1,
+            "duration_min": 66,
+            "pace_sec": 263,
+            "pace_str": "4'23\"/km",
+            "fc": 165,
+            "cadence": 177,
+            "type": "frac_long",
+            "title": "i183195653",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 197.0,
+              "osc_cm": 11.2,
+              "vratio": 8.66,
+              "balance_l": 48.88,
+              "step_m": 1.28,
+              "temp_c": 30,
+              "temp_max": 34,
+              "resp": 41.0,
+              "power": 427,
+              "np": 438,
+              "te_aero": 5.0,
+              "te_ana": 0.0,
+              "load": 336.6,
+              "strides": 5811,
+              "rpe": 9.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 197.0,
+                  "end": 210.0,
+                  "pct": 6.2
+                },
+                "step": {
+                  "start": 1253.0,
+                  "end": 1241.0,
+                  "pct": -0.9
+                },
+                "vratio": {
+                  "start": 8.76,
+                  "end": 8.92,
+                  "pct": 1.9
+                },
+                "osc": {
+                  "start": 111.0,
+                  "end": 112.0,
+                  "pct": 1.0
+                },
+                "hr": {
+                  "start": 152.0,
+                  "end": 174.0,
+                  "pct": 14.9
+                },
+                "cad": {
+                  "start": 89.0,
+                  "end": 87.0,
+                  "pct": -2.2
+                }
+              },
+              "balance_min": 47.26,
+              "balance_max": 51.13,
+              "balance_series": [
+                51.13,
+                50.45,
+                50.7,
+                48.5,
+                47.36,
+                47.37,
+                47.49,
+                47.26,
+                47.32,
+                47.34,
+                47.59,
+                47.91,
+                48.16,
+                50.59,
+                50.9
+              ],
+              "balance_lent": 50.75,
+              "balance_rapide": 47.57,
+              "asym_vs_allure": 1.68,
+              "allure_lent_s": 311,
+              "allure_rapide_s": 235,
+              "rr_beats": 10983,
+              "rmssd_effort": 3.8,
+              "flags": [
+                "stance_fade",
+                "asym_vitesse"
+              ]
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 320,
+                "fc": 126,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 299,
+                "fc": 140,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 306,
+                "fc": 141,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 232,
+                "fc": 161,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 235,
+                "fc": 170,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 235,
+                "fc": 172,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 237,
+                "fc": 176,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 236,
+                "fc": 176,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 236,
+                "fc": 178,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 235,
+                "fc": 178,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 244,
+                "fc": 182,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 244,
+                "fc": 181,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 244,
+                "fc": 183,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 323,
+                "fc": 166,
+                "ca": 170
+              },
+              {
+                "km": 1.07,
+                "ps": 308,
+                "fc": 167,
+                "ca": 174
+              }
+            ]
+          },
           "coach_notes": [
             {
               "kind": "note",
               "text": "Vigilance chaleur/hydratation : ta dernière sortie à allure spécifique (30/08) a montré un RPE très élevé (9/10) par forte chaleur. Hydrate-toi bien avant/pendant, et si la température est élevée aujourd'hui, vise le bas de la fourchette d'allure plutôt que le chrono strict."
             }
-          ]
+          ],
+          "score": {
+            "points": 100,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 101,
+            "volume_points": 100,
+            "pace_points": 100,
+            "pace_target_s": 239,
+            "pace_actual_s": 238,
+            "pace_actual_str": "3'58\"/km",
+            "pace_delta_s": -1,
+            "is_quality": true,
+            "hr": {
+              "avg": 165,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 12.4,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 101%",
+              "Allure −1\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-09-05",
@@ -9870,11 +10078,11 @@
         "km_pct": 108,
         "km_done": 40.1,
         "km_planned": 37.0,
-        "km_done_week": 40.1,
+        "km_done_week": 55.2,
         "km_planned_week": 79.2,
         "sessions_done": 3,
         "sessions_planned": 3,
-        "sessions_done_week": 3,
+        "sessions_done_week": 4,
         "keys_success": 1,
         "keys_total": 1,
         "points": 97,
