@@ -9803,7 +9803,7 @@
           "duration_min": 80,
           "key": true,
           "description": "3 km d'échauffement\n10 km @ 3'57–4'02/km en continu\n2 km de retour au calme\n\nLa séance de référence du bloc. Elle doit être exigeante mais jamais violente : si tu finis en ayant serré, on redescend l'allure spécifique à 4'02–4'06.\n\n👟 Premier test des Zoom Fly 6 à l'allure. Si ça passe, elles sont validées pour tout le bloc spécifique.\n[Allure spécifique marathon · 3'57–4'02/km]\nChaussures : Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
-          "status": "pending",
+          "status": "today",
           "target_pace": "3'59\"/km",
           "target_pace_sec": 239,
           "shoe": "Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
@@ -9863,21 +9863,21 @@
           ]
         }
       ],
-      "volume_actual_to_date": 33.1,
-      "volume_planned_to_date": 28.0,
-      "volume_drift_pct": 18.2,
+      "volume_actual_to_date": 40.1,
+      "volume_planned_to_date": 37.0,
+      "volume_drift_pct": 8.4,
       "compliance": {
-        "km_pct": 118,
-        "km_done": 33.1,
-        "km_planned": 28.0,
+        "km_pct": 108,
+        "km_done": 40.1,
+        "km_planned": 37.0,
         "km_done_week": 40.1,
         "km_planned_week": 79.2,
-        "sessions_done": 2,
-        "sessions_planned": 2,
+        "sessions_done": 3,
+        "sessions_planned": 3,
         "sessions_done_week": 3,
         "keys_success": 1,
         "keys_total": 1,
-        "points": 98,
+        "points": 97,
         "verdict": "success"
       }
     },
@@ -9938,7 +9938,13 @@
           "target_pace_sec": 212,
           "shoe": "Nike Zoom Fly 5 vert/blanc (647 km) — piste",
           "scheduled_time": "18:45",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Sur cette piste, reste strict sur les 17 km prévus et surveille ta foulée en fin de séance (raccourcissement/contact au sol allongé la dernière fois) — coupe la séance si tu sens la mécanique se dégrader plutôt que de finir en dette technique."
+            }
+          ]
         },
         {
           "date": "2026-09-10",

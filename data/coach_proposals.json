@@ -2,18 +2,6 @@
  "proposals": [
   {
    "severity": "major",
-   "kind": "restructure_week",
-   "date": "2026-08-11",
-   "field": null,
-   "new_value": "Réduire la séance seuil du 11/08 à 5×3min au lieu de 6×3min, et garder un œil strict sur la FC vs allure",
-   "reason": "Après deux semaines à 70% puis 62% du volume planifié et plusieurs footings clairement dégradés par la chaleur, enchaîner directement une séance seuil complète puis une MP deux jours après est un risque de charge trop rapide sur un aérobie pas encore reconstruit.",
-   "id": "69d6dd5b",
-   "status": "rejected",
-   "created_at": "2026-08-05T08:08:48",
-   "decided_at": "2026-08-05T11:57:12"
-  },
-  {
-   "severity": "major",
    "kind": "volume_adjust",
    "date": "2026-08-16",
    "field": "km",
@@ -447,8 +435,20 @@
    "replacement": null,
    "id": "a6a1be52",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-03T10:06:29"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-09-04",
+   "field": "description_note",
+   "new_value": "Respecte les 15 km prévus sans rallonger — tu as tendance à dépasser le volume sur les séances clés en ce moment. Hydrate-toi bien vu la chaleur récurrente.",
+   "reason": "Pattern récurrent de dépassement de volume sur les séances clés (106%, 132%, 158% sur les 2 dernières semaines) alors que la charge s'accumule déjà fortement.",
+   "id": "e3a2de49",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-09-04T09:57:01"
   }
  ]
 }
