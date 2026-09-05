@@ -1,45 +1,45 @@
 {
- "headline": "Objectif tenu (3'58/km) malgré 30-34°C : Zoom Fly 6 validées, mais fatigue et FC en fin de course.",
+ "headline": "Séance très facile : FC nettement sous ta référence à allure quasi identique.",
  "bullets": [
-  "FC moy 165 bpm, +6,8 vs réf 158,2 — decoupling 12,4%, chaleur 30-34°C probable cause.",
-  "Contact au sol +6,2% en fin de séance (197→210 ms) : fatigue qui s'installe.",
-  "Asymétrie s'ouvre avec la vitesse (50,75%→47,57%) — même signature que ton ancien adducteur."
+  "FC moy 136 bpm vs 148 en référence à allure comparable (-12 bpm) : aisance cardiaque nette.",
+  "Contact au sol 246 ms vs 227 ms habituel (+19 ms), foulée 1.07 m vs 1.10 m (plus courte).",
+  "Dérive cardiaque 6.9% sur la séance, sous 26-28°C proche du max du jour (31°C)."
  ],
  "points": [
   {
    "label": "FC moyenne",
-   "valeur": "165 bpm",
-   "ecart": "+6,8 vs réf 158,2",
-   "lecture": "élevée, chaleur en cause probable",
-   "ton": "vigilance"
+   "valeur": "136 bpm",
+   "ecart": "-12 bpm vs réf. 60j (148)",
+   "lecture": "beaucoup plus facile que d'habitude",
+   "ton": "bon"
   },
   {
    "label": "Temps de contact",
-   "valeur": "210 ms fin",
-   "ecart": "+6,2% vs début (197 ms)",
-   "lecture": "fatigue en fin de séance",
+   "valeur": "246 ms",
+   "ecart": "+19 ms vs réf. 60j (227)",
+   "lecture": "appui plus long, à surveiller",
    "ton": "vigilance"
   },
   {
-   "label": "Asymétrie vs allure",
-   "valeur": "+1,68 pts",
-   "ecart": "50,75% lent → 47,57% rapide",
-   "lecture": "s'accentue avec la vitesse",
-   "ton": "vigilance"
+   "label": "Foulée",
+   "valeur": "1.07 m",
+   "ecart": "-0.03 m vs réf. 60j (1.10)",
+   "lecture": "cohérent avec cadence plus élevée",
+   "ton": "neutre"
   }
  ],
- "achille": "Équilibre global 48,9% vs réf 49,75%, sous les 50% : pas de décharge côté droit.",
- "a_surveiller": "L'asymétrie qui s'ouvre avec l'allure rappelle le motif de ton adducteur, à observer sur les prochaines sorties.",
+ "achille": null,
+ "a_surveiller": "Contact +19ms vs réf, cadence -2.4% en fin de séance : possible fatigue liée à la chaleur.",
  "seance": {
-  "date": "04/09/2026",
-  "heure": "12:15",
-  "titre": "i183195653",
-  "type_detecte": "frac_long",
-  "km": 15.07,
-  "duree": "1h 05m 56s",
-  "allure": "4'23\"/km",
-  "fc_moy": 165
+  "date": "05/09/2026",
+  "heure": "11:32",
+  "titre": "i183528156",
+  "type_detecte": "endurance",
+  "km": 8.66,
+  "duree": "45m 00s",
+  "allure": "5'12\"/km",
+  "fc_moy": 136
  },
- "generated_at": "2026-09-04T11:24:43",
- "baseline_n": 10
+ "generated_at": "2026-09-05T10:22:43",
+ "baseline_n": 29
 }

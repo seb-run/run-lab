@@ -9965,12 +9965,129 @@
           "duration_min": 40,
           "key": false,
           "description": "40' très facile.\n[Récupération · 5'15–5'35/km]\nChaussures : Nike Pegasus 41 « Jakob » (476 km)",
-          "status": "today",
+          "status": "done",
           "target_pace": "5'25\"/km",
           "target_pace_sec": 325,
           "shoe": "Nike Pegasus 41 « Jakob » (476 km)",
           "scheduled_time": "08:30",
-          "actual": null,
+          "actual": {
+            "km": 8.7,
+            "duration_min": 45,
+            "pace_sec": 312,
+            "pace_str": "5'12\"/km",
+            "fc": 136,
+            "cadence": 177,
+            "type": "endurance",
+            "title": "i183528156",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 246.0,
+              "osc_cm": 8.4,
+              "vratio": 7.82,
+              "step_m": 1.07,
+              "temp_c": 26,
+              "temp_max": 31,
+              "power": 341,
+              "np": 344,
+              "te_aero": 2.9,
+              "te_ana": 0.0,
+              "load": 80.7,
+              "strides": 4009,
+              "rpe": 2.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 244.0,
+                  "end": 249.0,
+                  "pct": 1.9
+                },
+                "step": {
+                  "start": 1059.0,
+                  "end": 1065.0,
+                  "pct": 0.6
+                },
+                "vratio": {
+                  "start": 7.78,
+                  "end": 7.97,
+                  "pct": 2.5
+                },
+                "osc": {
+                  "start": 82.0,
+                  "end": 85.0,
+                  "pct": 2.9
+                },
+                "hr": {
+                  "start": 133.0,
+                  "end": 141.0,
+                  "pct": 5.6
+                },
+                "cad": {
+                  "start": 89.7,
+                  "end": 87.5,
+                  "pct": -2.4
+                }
+              },
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 318,
+                "fc": 126,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 310,
+                "fc": 136,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 308,
+                "fc": 138,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 307,
+                "fc": 137,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 307,
+                "fc": 137,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 303,
+                "fc": 133,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 307,
+                "fc": 142,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 317,
+                "fc": 140,
+                "ca": 176
+              },
+              {
+                "km": 0.66,
+                "ps": 338,
+                "fc": 140,
+                "ca": 172
+              }
+            ]
+          },
           "coach_notes": [
             {
               "kind": "volume",
@@ -9978,7 +10095,31 @@
               "reason": "gérer la charge de la semaine"
             }
           ],
-          "_adapt_volume": true
+          "_adapt_volume": true,
+          "score": {
+            "points": 97,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 121,
+            "volume_points": 94,
+            "pace_points": 100,
+            "pace_target_s": 325,
+            "pace_actual_s": 312,
+            "pace_actual_str": "5'12\"/km",
+            "pace_delta_s": -13,
+            "is_quality": false,
+            "hr": {
+              "avg": 136,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 6.9,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 121%",
+              "Allure −13\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-09-06",
@@ -10014,11 +10155,11 @@
         "km_pct": 106,
         "km_done": 55.2,
         "km_planned": 52.0,
-        "km_done_week": 55.2,
+        "km_done_week": 63.9,
         "km_planned_week": 79.2,
         "sessions_done": 4,
         "sessions_planned": 4,
-        "sessions_done_week": 4,
+        "sessions_done_week": 5,
         "keys_success": 2,
         "keys_total": 2,
         "points": 98,
