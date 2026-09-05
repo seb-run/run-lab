@@ -2974,75 +2974,7 @@
               "rr_beats": 9040,
               "rmssd_effort": 21.2,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 332,
-                "fc": 127,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 306,
-                "fc": 143,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 308,
-                "fc": 146,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 304,
-                "fc": 148,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 298,
-                "fc": 153,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 299,
-                "fc": 154,
-                "ca": 177
-              },
-              {
-                "km": 1.0,
-                "ps": 300,
-                "fc": 150,
-                "ca": 179
-              },
-              {
-                "km": 1.0,
-                "ps": 301,
-                "fc": 151,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 303,
-                "fc": 152,
-                "ca": 177
-              },
-              {
-                "km": 1.0,
-                "ps": 306,
-                "fc": 156,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 307,
-                "fc": 155,
-                "ca": 177
-              }
-            ]
+            }
           },
           "_downgraded_from": {
             "title": "VMA courte · 10×400m",
@@ -10033,7 +9965,7 @@
           "duration_min": 40,
           "key": false,
           "description": "40' très facile.\n[Récupération · 5'15–5'35/km]\nChaussures : Nike Pegasus 41 « Jakob » (476 km)",
-          "status": "pending",
+          "status": "today",
           "target_pace": "5'25\"/km",
           "target_pace_sec": 325,
           "shoe": "Nike Pegasus 41 « Jakob » (476 km)",
@@ -10067,25 +9999,29 @@
             {
               "kind": "note",
               "text": "Sortie longue progressive : pars tranquille sur les premiers km, ne cherche pas à rattraper le rythme de la longue alternée du 30/08 (RPE 9 ce jour-là). Si les sensations ne sont pas là après 10-12km, reste sur l'allure endurance sans forcer la progression finale."
+            },
+            {
+              "kind": "note",
+              "text": "Respecte les 20 km planifiés, ne rallonge pas comme le 23/08 ou le 27/08. Chaleur probable : hydrate-toi bien avant et pendant, garde l'allure progressive mais sans forcer sur la fin si la FC dérive fort."
             }
           ]
         }
       ],
-      "volume_actual_to_date": 40.1,
-      "volume_planned_to_date": 37.0,
-      "volume_drift_pct": 8.4,
+      "volume_actual_to_date": 55.2,
+      "volume_planned_to_date": 52.0,
+      "volume_drift_pct": 6.2,
       "compliance": {
-        "km_pct": 108,
-        "km_done": 40.1,
-        "km_planned": 37.0,
+        "km_pct": 106,
+        "km_done": 55.2,
+        "km_planned": 52.0,
         "km_done_week": 55.2,
         "km_planned_week": 79.2,
-        "sessions_done": 3,
-        "sessions_planned": 3,
+        "sessions_done": 4,
+        "sessions_planned": 4,
         "sessions_done_week": 4,
-        "keys_success": 1,
-        "keys_total": 1,
-        "points": 97,
+        "keys_success": 2,
+        "keys_total": 2,
+        "points": 98,
         "verdict": "success"
       }
     },
@@ -10207,7 +10143,7 @@
           "dow": "Sun",
           "type": "long",
           "title": "SORTIE LONGUE ALTERNÉE — 2 × 8 km à allure spécifique",
-          "km": 28.0,
+          "km": 25.5,
           "duration_min": 135,
           "key": true,
           "description": "5 km @ 5'00/km\n2 × (8 km @ 3'57–4'02/km / 2 km @ 4'50/km)\n3 km de retour au calme\n\nOn passe de blocs de 3 km à des blocs de 8 : c'est là que la séance devient vraiment marathon. Protocole nutrition complet, gel toutes les 35'.\n[Allure spécifique marathon · 3'57–4'02/km]\nChaussures : Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
@@ -10216,7 +10152,15 @@
           "target_pace_sec": 239,
           "shoe": "Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
           "scheduled_time": "07:45",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "volume",
+              "from": 28.0,
+              "to": 25.5,
+              "reason": "Sortie longue alternée très exigeante (28 km, 2×8km à allure spécifique) en fin d'un enchaînement de 3 séances clés en 5 jours après deux signaux de fatigue mécanique cette semaine. Réduction de ~9% pour sécuriser sans casser l'objectif de la séance."
+            }
+          ]
         }
       ]
     },

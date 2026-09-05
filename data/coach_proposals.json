@@ -1,18 +1,6 @@
 {
  "proposals": [
   {
-   "severity": "major",
-   "kind": "volume_adjust",
-   "date": "2026-08-16",
-   "field": "km",
-   "new_value": 20,
-   "reason": "Passer de 17,1 km (09/08, sortie de reprise) à 24 km est un bond de +40% après deux semaines de volume très réduit. Limiter à ~20 km lisse la progression et sécurise le retour.",
-   "id": "343225d0",
-   "status": "rejected",
-   "created_at": "2026-08-06T08:07:08",
-   "decided_at": "2026-08-07T12:19:46"
-  },
-  {
    "severity": "minor",
    "kind": "add_note",
    "date": "2026-08-06",
@@ -447,8 +435,26 @@
    "reason": "Pattern récurrent de dépassement de volume sur les séances clés (106%, 132%, 158% sur les 2 dernières semaines) alors que la charge s'accumule déjà fortement.",
    "id": "e3a2de49",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-04T09:57:01"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-09-09",
+   "field": null,
+   "new_value": "Réduire la séance de 5×1000m à 4×1000m pour limiter la charge mécanique avant le bloc côtes/seuil + sortie longue alternée.",
+   "reason": "Fade mécanique réel détecté le 02/09 (contact +8.2%, foulée -5.2%, flags stance_fade/step_fade) suivi d'un nouveau signal le 04/09 (contact +6.2%, flag asym_vitesse). Deux marqueurs mécaniques consécutifs sur des séances clés justifient d'alléger avant d'enchaîner 3 séances dures en 5 jours (09, 11, 13/09).",
+   "replacement": {
+    "title": "PISTE — 4×1000m",
+    "type": "vma",
+    "km": 14.0,
+    "target_pace": "3'32\"/km",
+    "description": "4×1000m à 3'32/km, récup trot 2' entre chaque. Focus sur la foulée : si tu sens le contact au sol s'allonger ou la foulée se raccourcir sur les 2 derniers répétitions, coupe la série là. Échauffement 15' + 6 lignes droites avant, retour au calme 10'."
+   },
+   "id": "37c48d0d",
+   "status": "pending",
+   "created_at": "2026-09-05T09:23:40"
   }
  ]
 }
