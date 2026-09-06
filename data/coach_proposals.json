@@ -1,18 +1,6 @@
 {
  "proposals": [
   {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-08-06",
-   "field": "description_note",
-   "new_value": "Garde les 2x10' en confort soutenu, pas en seuil dur : tu sors juste d'un trou de deux semaines, allure marathon target largement suffisante si les jambes tirent.",
-   "reason": "Première séance avec portion tempo depuis le retour de charge, à ne pas transformer en test de forme.",
-   "id": "f08ae22a",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "expired",
-   "created_at": "2026-08-06T08:07:08"
-  },
-  {
    "severity": "major",
    "kind": "restructure_week",
    "date": "2026-08-13",
@@ -455,6 +443,18 @@
    "id": "37c48d0d",
    "status": "pending",
    "created_at": "2026-09-05T09:23:40"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-09-06",
+   "field": "description_note",
+   "new_value": "Chaleur + fatigue mécanique observée sur les 2 dernières séances clés (stance_fade au 02/09 et 04/09) : garde la progression finale mesurée, ne force pas les derniers km si les jambes tirent. Hydrate-toi bien avant/pendant.",
+   "reason": "Deux séances clés consécutives montrent un stance_drift >4% et un decoupling élevé (7.9% et 12.4%), signe de fatigue mécanique réelle en fin d'effort ; prudence sur la progressivité de cette longue.",
+   "id": "6b203bef",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-09-06T09:35:23"
   }
  ]
 }

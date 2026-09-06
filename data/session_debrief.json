@@ -1,45 +1,45 @@
 {
- "headline": "Séance très facile : FC nettement sous ta référence à allure quasi identique.",
+ "headline": "Sortie longue réussie, plus rapide que prévu et FC contenue.",
  "bullets": [
-  "FC moy 136 bpm vs 148 en référence à allure comparable (-12 bpm) : aisance cardiaque nette.",
-  "Contact au sol 246 ms vs 227 ms habituel (+19 ms), foulée 1.07 m vs 1.10 m (plus courte).",
-  "Dérive cardiaque 6.9% sur la séance, sous 26-28°C proche du max du jour (31°C)."
+  "Allure 4'39\"/km, 8s plus vite que la cible et sous ta réf 60j (4'44\"/km).",
+  "FC moy 149 bpm, 6 de moins que ta réf (155) à allure pourtant plus rapide.",
+  "Contact au sol 213 ms, 3,5 ms sous ta réf (216,5 ms) : appui plus dynamique."
  ],
  "points": [
   {
-   "label": "FC moyenne",
-   "valeur": "136 bpm",
-   "ecart": "-12 bpm vs réf. 60j (148)",
-   "lecture": "beaucoup plus facile que d'habitude",
+   "label": "Allure",
+   "valeur": "4'39\"/km",
+   "ecart": "-8s vs cible, -5s vs réf 60j",
+   "lecture": "objectif dépassé sans coût cardiaque",
    "ton": "bon"
   },
   {
-   "label": "Temps de contact",
-   "valeur": "246 ms",
-   "ecart": "+19 ms vs réf. 60j (227)",
-   "lecture": "appui plus long, à surveiller",
-   "ton": "vigilance"
+   "label": "FC moyenne",
+   "valeur": "149 bpm",
+   "ecart": "-6 bpm vs réf 60j (155)",
+   "lecture": "économie cardiaque à allure plus soutenue",
+   "ton": "bon"
   },
   {
-   "label": "Foulée",
-   "valeur": "1.07 m",
-   "ecart": "-0.03 m vs réf. 60j (1.10)",
-   "lecture": "cohérent avec cadence plus élevée",
-   "ton": "neutre"
+   "label": "Asymétrie vs allure",
+   "valeur": "+0,51",
+   "ecart": "50,6% lent → 48,9% rapide",
+   "lecture": "s'ouvre avec la vitesse, à surveiller",
+   "ton": "vigilance"
   }
  ],
- "achille": null,
- "a_surveiller": "Contact +19ms vs réf, cadence -2.4% en fin de séance : possible fatigue liée à la chaleur.",
+ "achille": "Équilibre global 49,8% gauche, quasi identique à ta réf (49,95%) : pas de décharge marquée.",
+ "a_surveiller": "Asymétrie qui s'accentue avec la vitesse (+0,51), signature proche de ton épisode adducteur 2025.",
  "seance": {
-  "date": "05/09/2026",
-  "heure": "11:32",
-  "titre": "i183528156",
+  "date": "06/09/2026",
+  "heure": "09:51",
+  "titre": "i183840095",
   "type_detecte": "endurance",
-  "km": 8.66,
-  "duree": "45m 00s",
-  "allure": "5'12\"/km",
-  "fc_moy": 136
+  "km": 20.31,
+  "duree": "1h 34m 20s",
+  "allure": "4'39\"/km",
+  "fc_moy": 149
  },
- "generated_at": "2026-09-05T10:22:43",
- "baseline_n": 29
+ "generated_at": "2026-09-06T09:35:48",
+ "baseline_n": 19
 }

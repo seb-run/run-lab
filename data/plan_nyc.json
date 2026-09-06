@@ -3103,75 +3103,7 @@
               "rr_beats": 8038,
               "rmssd_effort": 10.1,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 298,
-                "fc": 130,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 285,
-                "fc": 143,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 288,
-                "fc": 144,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 296,
-                "fc": 151,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 294,
-                "fc": 147,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 284,
-                "fc": 150,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 289,
-                "fc": 154,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 299,
-                "fc": 155,
-                "ca": 174
-              },
-              {
-                "km": 1.0,
-                "ps": 284,
-                "fc": 155,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 295,
-                "fc": 156,
-                "ca": 174
-              },
-              {
-                "km": 0.28,
-                "ps": 310,
-                "fc": 158,
-                "ca": 174
-              }
-            ]
+            }
           },
           "_rescheduled_from": "2026-07-16",
           "_rescheduled_title": "Tempo 20min seuil",
@@ -10130,12 +10062,234 @@
           "duration_min": 100,
           "key": true,
           "description": "5 tranches de 4 km, une accélération de 10 s/km à chaque tranche :\n4 km @ 5'05 · 4 km @ 4'55 · 4 km @ 4'45 · 4 km @ 4'35 · 4 km @ 4'25\n\nAucune tranche n'est dure prise isolément. C'est l'enchaînement qui travaille, et tu ne regardes la montre que tous les 4 km.\n[Endurance active · 4'40–4'55/km]\nChaussures : Adizero Boston 13 (231 km)",
-          "status": "pending",
+          "status": "done",
           "target_pace": "4'47\"/km",
           "target_pace_sec": 287,
           "shoe": "Adizero Boston 13 (231 km)",
           "scheduled_time": "08:00",
-          "actual": null,
+          "actual": {
+            "km": 20.3,
+            "duration_min": 94,
+            "pace_sec": 279,
+            "pace_str": "4'39\"/km",
+            "fc": 149,
+            "cadence": 177,
+            "type": "endurance",
+            "title": "i183840095",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 213.0,
+              "osc_cm": 10.9,
+              "vratio": 8.82,
+              "balance_l": 49.81,
+              "step_m": 1.21,
+              "temp_c": 25,
+              "temp_max": 30,
+              "resp": 33.5,
+              "power": 406,
+              "np": 408,
+              "te_aero": 4.0,
+              "te_ana": 0.0,
+              "load": 201.0,
+              "strides": 8340,
+              "rpe": 3.0,
+              "feel": 100,
+              "feel_label": "Très fort",
+              "drift": {
+                "stance": {
+                  "start": 217.0,
+                  "end": 208.0,
+                  "pct": -4.0
+                },
+                "step": {
+                  "start": 1134.0,
+                  "end": 1293.0,
+                  "pct": 14.0
+                },
+                "vratio": {
+                  "start": 8.97,
+                  "end": 8.5,
+                  "pct": -5.3
+                },
+                "osc": {
+                  "start": 104.0,
+                  "end": 113.0,
+                  "pct": 8.3
+                },
+                "hr": {
+                  "start": 142.0,
+                  "end": 156.0,
+                  "pct": 10.0
+                },
+                "cad": {
+                  "start": 88.9,
+                  "end": 88.3,
+                  "pct": -0.6
+                }
+              },
+              "balance_min": 48.05,
+              "balance_max": 51.24,
+              "balance_series": [
+                51.24,
+                51.0,
+                51.12,
+                50.29,
+                49.81,
+                50.07,
+                50.06,
+                50.26,
+                49.51,
+                50.1,
+                50.45,
+                49.2,
+                48.13,
+                48.05,
+                49.22,
+                49.67,
+                48.65,
+                49.05,
+                50.07,
+                49.28
+              ],
+              "balance_lent": 50.62,
+              "balance_rapide": 48.87,
+              "asym_vs_allure": 0.51,
+              "allure_lent_s": 296,
+              "allure_rapide_s": 259,
+              "rr_beats": 14193,
+              "rmssd_effort": 4.8,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 293,
+                "fc": 135,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 302,
+                "fc": 140,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 303,
+                "fc": 142,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 294,
+                "fc": 146,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 290,
+                "fc": 144,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 289,
+                "fc": 146,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 290,
+                "fc": 142,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 292,
+                "fc": 144,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 281,
+                "fc": 147,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 285,
+                "fc": 149,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 283,
+                "fc": 148,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 277,
+                "fc": 151,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 266,
+                "fc": 153,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 268,
+                "fc": 151,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 268,
+                "fc": 152,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 270,
+                "fc": 155,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 255,
+                "fc": 157,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 257,
+                "fc": 155,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 258,
+                "fc": 158,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 254,
+                "fc": 161,
+                "ca": 176
+              },
+              {
+                "km": 0.31,
+                "ps": 274,
+                "fc": 162,
+                "ca": 176
+              }
+            ]
+          },
           "coach_notes": [
             {
               "kind": "note",
@@ -10145,21 +10299,45 @@
               "kind": "note",
               "text": "Respecte les 20 km planifiés, ne rallonge pas comme le 23/08 ou le 27/08. Chaleur probable : hydrate-toi bien avant et pendant, garde l'allure progressive mais sans forcer sur la fin si la FC dérive fort."
             }
-          ]
+          ],
+          "score": {
+            "points": 100,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 102,
+            "volume_points": 100,
+            "pace_points": 100,
+            "pace_target_s": 287,
+            "pace_actual_s": 279,
+            "pace_actual_str": "4'39\"/km",
+            "pace_delta_s": -8,
+            "is_quality": false,
+            "hr": {
+              "avg": 149,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": -3.2,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 102%",
+              "Allure −8\"/km vs cible"
+            ]
+          }
         }
       ],
-      "volume_actual_to_date": 55.2,
-      "volume_planned_to_date": 52.0,
-      "volume_drift_pct": 6.2,
+      "volume_actual_to_date": 63.9,
+      "volume_planned_to_date": 59.2,
+      "volume_drift_pct": 7.9,
       "compliance": {
-        "km_pct": 106,
-        "km_done": 55.2,
-        "km_planned": 52.0,
-        "km_done_week": 63.9,
+        "km_pct": 108,
+        "km_done": 63.9,
+        "km_planned": 59.2,
+        "km_done_week": 84.2,
         "km_planned_week": 79.2,
-        "sessions_done": 4,
-        "sessions_planned": 4,
-        "sessions_done_week": 5,
+        "sessions_done": 5,
+        "sessions_planned": 5,
+        "sessions_done_week": 6,
         "keys_success": 2,
         "keys_total": 2,
         "points": 98,
@@ -10214,7 +10392,7 @@
           "dow": "Wed",
           "type": "intervals",
           "title": "PISTE — 5 × 1000 m",
-          "km": 17.0,
+          "km": 15.5,
           "duration_min": 110,
           "key": true,
           "description": "4,5 km en trot pour aller\nGammes en équipe\nCœur de séance : 5 × 1000 m @ 3'28–3'34/km, récupération 2'30\n4,5 km en trot pour rentrer\n[VO2max (800–2000 m) · 3'28–3'36/km]\nChaussures : Nike Zoom Fly 5 vert/blanc (647 km) — piste",
@@ -10228,6 +10406,12 @@
             {
               "kind": "note",
               "text": "Sur cette piste, reste strict sur les 17 km prévus et surveille ta foulée en fin de séance (raccourcissement/contact au sol allongé la dernière fois) — coupe la séance si tu sens la mécanique se dégrader plutôt que de finir en dette technique."
+            },
+            {
+              "kind": "volume",
+              "from": 17.0,
+              "to": 15.5,
+              "reason": "Séance piste VMA juste après une semaine à forte charge (volumes réalisés à 132-158% sur les clés) et avec fatigue mécanique déjà visible sur la précédente séance de piste (stance +8.2%, step -5.2%) : on réduit légèrement le volume pour préserver la qualité des intervalles sans en rajouter."
             }
           ]
         },
@@ -10261,7 +10445,13 @@
           "target_pace_sec": 230,
           "shoe": "Adidas Evo SL neuve — réservée aux séances",
           "scheduled_time": "06:15",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Séance côtes + seuil exigeante pour les tendons (impact + allure) : coupe court si tu sens une gêne au niveau du mollet/Achille, la qualité de l'appui prime sur le volume total."
+            }
+          ]
         },
         {
           "date": "2026-09-12",
@@ -10284,7 +10474,7 @@
           "dow": "Sun",
           "type": "long",
           "title": "SORTIE LONGUE ALTERNÉE — 2 × 8 km à allure spécifique",
-          "km": 25.5,
+          "km": 23.0,
           "duration_min": 135,
           "key": true,
           "description": "5 km @ 5'00/km\n2 × (8 km @ 3'57–4'02/km / 2 km @ 4'50/km)\n3 km de retour au calme\n\nOn passe de blocs de 3 km à des blocs de 8 : c'est là que la séance devient vraiment marathon. Protocole nutrition complet, gel toutes les 35'.\n[Allure spécifique marathon · 3'57–4'02/km]\nChaussures : Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
@@ -10300,6 +10490,12 @@
               "from": 28.0,
               "to": 25.5,
               "reason": "Sortie longue alternée très exigeante (28 km, 2×8km à allure spécifique) en fin d'un enchaînement de 3 séances clés en 5 jours après deux signaux de fatigue mécanique cette semaine. Réduction de ~9% pour sécuriser sans casser l'objectif de la séance."
+            },
+            {
+              "kind": "volume",
+              "from": 25.5,
+              "to": 23.0,
+              "reason": "Troisième séance clé exigeante de la semaine (après piste et côtes/seuil) ; réduire légèrement le volume de la longue alternée limite l'accumulation de fatigue mécanique avant la semaine suivante, sans toucher aux allures spécifiques prévues."
             }
           ]
         }
