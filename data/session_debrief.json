@@ -1,45 +1,45 @@
 {
- "headline": "Sortie longue réussie, plus rapide que prévu et FC contenue.",
+ "headline": "Sortie facile propre, FC plus basse que d'habitude à allure quasi identique.",
  "bullets": [
-  "Allure 4'39\"/km, 8s plus vite que la cible et sous ta réf 60j (4'44\"/km).",
-  "FC moy 149 bpm, 6 de moins que ta réf (155) à allure pourtant plus rapide.",
-  "Contact au sol 213 ms, 3,5 ms sous ta réf (216,5 ms) : appui plus dynamique."
+  "FC moy 145 vs 148.6 sur tes séances comparables, pour une allure quasi identique (5'07 vs 5'04).",
+  "Contact au sol 220ms, 5ms sous ta référence (224.75ms) — appui plus court que d'habitude.",
+  "Ratio vertical 9.54 vs 9.0 habituel, un peu plus élevé, à surveiller si ça se confirme."
  ],
  "points": [
   {
-   "label": "Allure",
-   "valeur": "4'39\"/km",
-   "ecart": "-8s vs cible, -5s vs réf 60j",
-   "lecture": "objectif dépassé sans coût cardiaque",
-   "ton": "bon"
-  },
-  {
    "label": "FC moyenne",
-   "valeur": "149 bpm",
-   "ecart": "-6 bpm vs réf 60j (155)",
-   "lecture": "économie cardiaque à allure plus soutenue",
+   "valeur": "145 bpm",
+   "ecart": "-3.6 vs réf. 60j (148.6)",
+   "lecture": "plus économique qu'à l'habitude",
    "ton": "bon"
   },
   {
-   "label": "Asymétrie vs allure",
-   "valeur": "+0,51",
-   "ecart": "50,6% lent → 48,9% rapide",
-   "lecture": "s'ouvre avec la vitesse, à surveiller",
-   "ton": "vigilance"
+   "label": "Temps de contact",
+   "valeur": "220 ms",
+   "ecart": "-4.75 ms vs réf. 60j",
+   "lecture": "appui plus dynamique que la moyenne",
+   "ton": "bon"
+  },
+  {
+   "label": "Ratio vertical",
+   "valeur": "9.54",
+   "ecart": "+0.54 vs réf. 60j (9.0)",
+   "lecture": "légèrement plus haut que d'habitude",
+   "ton": "neutre"
   }
  ],
- "achille": "Équilibre global 49,8% gauche, quasi identique à ta réf (49,95%) : pas de décharge marquée.",
- "a_surveiller": "Asymétrie qui s'accentue avec la vitesse (+0,51), signature proche de ton épisode adducteur 2025.",
+ "achille": "Équilibre gauche 50.98%, proche de ta référence (50.38%) — pas de décharge marquée du côté droit.",
+ "a_surveiller": "Asymétrie ne s'ouvre pas avec la vitesse (asym_vs_allure -0.22) : signature différente de l'épisode adducteur.",
  "seance": {
-  "date": "06/09/2026",
-  "heure": "09:51",
-  "titre": "i183840095",
+  "date": "08/09/2026",
+  "heure": "06:14",
+  "titre": "i184423374",
   "type_detecte": "endurance",
-  "km": 20.31,
-  "duree": "1h 34m 20s",
-  "allure": "4'39\"/km",
-  "fc_moy": 149
+  "km": 11.73,
+  "duree": "1h 00m 00s",
+  "allure": "5'07\"/km",
+  "fc_moy": 145
  },
- "generated_at": "2026-09-06T09:35:48",
- "baseline_n": 19
+ "generated_at": "2026-09-08T05:19:09",
+ "baseline_n": 30
 }

@@ -453,7 +453,7 @@
    "reason": "Deux séances clés consécutives montrent un stance_drift >4% et un decoupling élevé (7.9% et 12.4%), signe de fatigue mécanique réelle en fin d'effort ; prudence sur la progressivité de cette longue.",
    "id": "6b203bef",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-06T09:35:23"
   }
  ]

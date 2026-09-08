@@ -3225,75 +3225,7 @@
                 }
               },
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 314,
-                "fc": 133,
-                "ca": 175
-              },
-              {
-                "km": 1.0,
-                "ps": 298,
-                "fc": 150,
-                "ca": 177
-              },
-              {
-                "km": 1.0,
-                "ps": 298,
-                "fc": 153,
-                "ca": 177
-              },
-              {
-                "km": 1.0,
-                "ps": 295,
-                "fc": 158,
-                "ca": 177
-              },
-              {
-                "km": 1.0,
-                "ps": 291,
-                "fc": 159,
-                "ca": 177
-              },
-              {
-                "km": 1.0,
-                "ps": 293,
-                "fc": 160,
-                "ca": 177
-              },
-              {
-                "km": 1.0,
-                "ps": 288,
-                "fc": 161,
-                "ca": 177
-              },
-              {
-                "km": 1.0,
-                "ps": 290,
-                "fc": 158,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 296,
-                "fc": 164,
-                "ca": 177
-              },
-              {
-                "km": 1.0,
-                "ps": 298,
-                "fc": 152,
-                "ca": 176
-              },
-              {
-                "km": 0.07,
-                "ps": 306,
-                "fc": 156,
-                "ca": 174
-              }
-            ]
+            }
           },
           "_rescheduled_from": "2026-07-16",
           "_rescheduled_title": "Tempo 20min seuil",
@@ -10362,7 +10294,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos course à pied.",
-          "status": "today",
+          "status": "done",
           "actual": null
         },
         {
@@ -10374,18 +10306,202 @@
           "duration_min": 60,
           "key": false,
           "description": "60' facile + 6 LD.\n[Footing facile · 5'05–5'25/km]\nChaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-          "status": "pending",
+          "status": "done",
           "target_pace": "5'15\"/km",
           "target_pace_sec": 315,
           "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
           "scheduled_time": "06:30",
-          "actual": null,
+          "actual": {
+            "km": 11.7,
+            "duration_min": 60,
+            "pace_sec": 307,
+            "pace_str": "5'07\"/km",
+            "fc": 145,
+            "cadence": 177,
+            "type": "endurance",
+            "title": "i184423374",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 220.0,
+              "osc_cm": 10.6,
+              "vratio": 9.54,
+              "balance_l": 50.98,
+              "step_m": 1.09,
+              "temp_c": 25,
+              "temp_max": 31,
+              "resp": 32.4,
+              "power": 377,
+              "np": 380,
+              "te_aero": 3.3,
+              "te_ana": 0.0,
+              "load": 121.7,
+              "strides": 5315,
+              "rpe": 3.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 220.0,
+                  "end": 221.0,
+                  "pct": 0.8
+                },
+                "step": {
+                  "start": 1073.0,
+                  "end": 1090.0,
+                  "pct": 1.6
+                },
+                "vratio": {
+                  "start": 9.46,
+                  "end": 9.67,
+                  "pct": 2.2
+                },
+                "osc": {
+                  "start": 103.0,
+                  "end": 107.0,
+                  "pct": 3.9
+                },
+                "hr": {
+                  "start": 140.0,
+                  "end": 146.0,
+                  "pct": 4.7
+                },
+                "cad": {
+                  "start": 88.2,
+                  "end": 88.7,
+                  "pct": 0.5
+                }
+              },
+              "balance_min": 50.61,
+              "balance_max": 51.64,
+              "balance_series": [
+                51.64,
+                50.67,
+                50.61,
+                51.1,
+                50.93,
+                50.85,
+                50.82,
+                51.15,
+                50.96,
+                50.96,
+                51.13,
+                50.92
+              ],
+              "balance_lent": 51.12,
+              "balance_rapide": 50.9,
+              "asym_vs_allure": -0.22,
+              "allure_lent_s": 316,
+              "allure_rapide_s": 300,
+              "rr_beats": 8912,
+              "rmssd_effort": 5.8,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 323,
+                "fc": 129,
+                "ca": 172
+              },
+              {
+                "km": 1.0,
+                "ps": 299,
+                "fc": 140,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 314,
+                "fc": 145,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 314,
+                "fc": 145,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 307,
+                "fc": 145,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 305,
+                "fc": 145,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 299,
+                "fc": 149,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 302,
+                "fc": 152,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 298,
+                "fc": 148,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 303,
+                "fc": 144,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 315,
+                "fc": 148,
+                "ca": 176
+              },
+              {
+                "km": 0.73,
+                "ps": 303,
+                "fc": 145,
+                "ca": 178
+              }
+            ]
+          },
           "coach_notes": [
             {
               "kind": "note",
               "text": "Footing tranquille avant la piste de demain : vise 5'15/km, pas plus vite, et n'ajoute pas de kilomètres. Objectif = arriver frais sur le 5×1000m, pas d'accumuler du volume gratuit."
             }
-          ]
+          ],
+          "score": {
+            "points": 100,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 98,
+            "volume_points": 100,
+            "pace_points": 100,
+            "pace_target_s": 315,
+            "pace_actual_s": 307,
+            "pace_actual_str": "5'07\"/km",
+            "pace_delta_s": -8,
+            "is_quality": false,
+            "hr": {
+              "avg": 145,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 0.0,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 98%",
+              "Allure −8\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-09-09",
@@ -10412,6 +10528,10 @@
               "from": 17.0,
               "to": 15.5,
               "reason": "Séance piste VMA juste après une semaine à forte charge (volumes réalisés à 132-158% sur les clés) et avec fatigue mécanique déjà visible sur la précédente séance de piste (stance +8.2%, step -5.2%) : on réduit légèrement le volume pour préserver la qualité des intervalles sans en rajouter."
+            },
+            {
+              "kind": "note",
+              "text": "Chaleur persistante ces derniers jours (27-30°C sur tes dernières séances qualité) : bois avant et pendant les intervalles, et ne t'inquiète pas si la FC dépasse un peu la consigne avec des sensations faciles — c'est la chaleur, pas la fatigue."
             }
           ]
         },
@@ -10450,6 +10570,10 @@
             {
               "kind": "note",
               "text": "Séance côtes + seuil exigeante pour les tendons (impact + allure) : coupe court si tu sens une gêne au niveau du mollet/Achille, la qualité de l'appui prime sur le volume total."
+            },
+            {
+              "kind": "note",
+              "text": "Vigilance mollets/Achille sur cette séance de côtes : deux séances récentes (piste 02/09, spécifique 04/09) montrent un allongement du temps de contact au sol en fin d'effort, signe de fatigue mécanique qui s'accumule. Échauffe bien les mollets, et si une tension apparaît sur les côtes, réduis le no"
             }
           ]
         },

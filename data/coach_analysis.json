@@ -1,39 +1,31 @@
 {
- "generated_at": "2026-09-06T09:35:23",
+ "generated_at": "2026-09-08T05:18:49",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-09-03\", \"title\": \"Footing récupération 45'\", \"type\": \"easy\", \"planned_km\": 9.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'25\\\"/km\", \"actual\": {\"km\": 7.0, \"pace_str\": \"5'08\\\"/km\", \"fc\": 148, \"cadence\": 176, \"duration_min\": 36}, \"splits\": \"1:5'14/134/178spm 2:5'03/147/176spm 3:5'13/146/176spm 4:5'02/150/176spm 5:5'05/148/176spm 6:5'02/156/176spm 7:5'16/154/174spm\", \"garmin\": {\"te_aero\": 3.1, \"te_ana\": 0.0, \"load\": 96.6, \"rpe\": 3.0, \"feel_label\": \"Fort\", \"temp_c\": 29, \"balance_l\": 50.66, \"flags\": [], \"stance_drift_pct\": 1.2, \"step_drift_pct\": 1.8}, \"score\": {\"points\": 87, \"verdict\": \"success\", \"volume_pct\": 78, \"pace_delta_s\": -17}, \"hr\": {\"avg\": 148, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 5.2, \"flags\": []}}, {\"date\": \"2026-09-04\", \"title\": \"SPÉCIFIQUE — 10 km continus\", \"type\": \"mp\", \"planned_km\": 15.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'59\\\"/km\", \"actual\": {\"km\": 15.1, \"pace_str\": \"4'23\\\"/km\", \"fc\": 165, \"cadence\": 177, \"duration_min\": 66}, \"splits\": \"1:5'20/126/178spm 2:4'59/140/178spm 3:5'06/141/176spm 4:3'52/161/180spm 5:3'55/170/178spm 6:3'55/172/178spm 7:3'57/176/178spm 8:3'56/176/178spm 9:3'56/178/178spm 10:3'55/178/176spm 11:4'04/182/176spm 12:4'04/181/176spm 13:4'04/183/176spm 14:5'23/166/170spm 15:5'08/167/174spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 0.0, \"load\": 336.6, \"rpe\": 9.0, \"feel_label\": \"Fort\", \"temp_c\": 30, \"balance_l\": 48.88, \"flags\": [\"stance_fade\", \"asym_vitesse\"], \"stance_drift_pct\": 6.2, \"step_drift_pct\": -0.9}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 101, \"pace_delta_s\": -1}, \"hr\": {\"avg\": 165, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 12.4, \"flags\": []}}, {\"date\": \"2026-09-05\", \"title\": \"Footing 40'\", \"type\": \"easy\", \"planned_km\": 7.2, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'25\\\"/km\", \"actual\": {\"km\": 8.7, \"pace_str\": \"5'12\\\"/km\", \"fc\": 136, \"cadence\": 177, \"duration_min\": 45}, \"splits\": \"1:5'18/126/178spm 2:5'10/136/180spm 3:5'08/138/180spm 4:5'07/137/178spm 5:5'07/137/180spm 6:5'03/133/174spm 7:5'07/142/176spm 8:5'17/140/176spm 9:5'38/140/172spm\", \"garmin\": {\"te_aero\": 2.9, \"te_ana\": 0.0, \"load\": 80.7, \"rpe\": 2.0, \"feel_label\": \"Fort\", \"temp_c\": 26, \"flags\": [], \"stance_drift_pct\": 1.9, \"step_drift_pct\": 0.6}, \"score\": {\"points\": 97, \"verdict\": \"success\", \"volume_pct\": 121, \"pace_delta_s\": -13}, \"hr\": {\"avg\": 136, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 6.9, \"flags\": []}}]",
- "headline": "Grosse charge bien digérée dans l'ensemble, mais deux séances clés d'affilée montrent une vraie fatigue mécanique (contact au sol qui s'allonge, foulée qui se raccourcit) — la semaine qui vient est chargée (4 clés en 10 jours), il faut lever le pied par endroits.",
- "analysis": "Sur les 4 dernières semaines le plan tourne bien (tous les verdicts hebdo sont 'success', volume souvent >100%), et le seuil du 28/08 comme le spécifique du 04/09 sont réussis en allure. Mais depuis le 6×800 du 02/09, deux séances clés d'affilée affichent un stance_drift qui grimpe (+8.2%, +6.2%) avec en plus un step_drift qui chute franchement sur la piste (-5.2%) : c'est un vrai signal de fatigue mécanique, pas juste la chaleur (même si 27-30°C n'aident pas). Le decoupling de 12.4% sur le spécifique du 04/09 va dans le même sens, et le RPE est monté à 9 sur les deux dernières séances longues/intenses. Rien d'alarmant en soi — les scores restent bons et tu tiens les allures — mais tu enchaînes ces signaux juste avant une semaine à 4 séances clés (piste, côtes/seuil, longue alternée, piste allégée) sur 10 jours, ce qui est beaucoup si le corps commence déjà à tirer la langue en fin de séance. Le risque principal est mécanique (Achille en ligne de mire vu ton historique) plus que cardio. Focus de la semaine : garder les allures cibles mais réduire légèrement le volume sur les séances les plus exigeantes pour laisser la récupération mécanique rattraper la charge, et rester attentif aux sensations des prochains footings faciles (contact au sol, gêne éventuelle).",
+ "signature": "[{\"date\": \"2026-09-05\", \"title\": \"Footing 40'\", \"type\": \"easy\", \"planned_km\": 7.2, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'25\\\"/km\", \"actual\": {\"km\": 8.7, \"pace_str\": \"5'12\\\"/km\", \"fc\": 136, \"cadence\": 177, \"duration_min\": 45}, \"splits\": \"1:5'18/126/178spm 2:5'10/136/180spm 3:5'08/138/180spm 4:5'07/137/178spm 5:5'07/137/180spm 6:5'03/133/174spm 7:5'07/142/176spm 8:5'17/140/176spm 9:5'38/140/172spm\", \"garmin\": {\"te_aero\": 2.9, \"te_ana\": 0.0, \"load\": 80.7, \"rpe\": 2.0, \"feel_label\": \"Fort\", \"temp_c\": 26, \"flags\": [], \"stance_drift_pct\": 1.9, \"step_drift_pct\": 0.6}, \"score\": {\"points\": 97, \"verdict\": \"success\", \"volume_pct\": 121, \"pace_delta_s\": -13}, \"hr\": {\"avg\": 136, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 6.9, \"flags\": []}}, {\"date\": \"2026-09-06\", \"title\": \"SORTIE LONGUE PROGRESSIVE — 20 km\", \"type\": \"long\", \"planned_km\": 20.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"4'47\\\"/km\", \"actual\": {\"km\": 20.3, \"pace_str\": \"4'39\\\"/km\", \"fc\": 149, \"cadence\": 177, \"duration_min\": 94}, \"splits\": \"1:4'53/135/178spm 2:5'02/140/178spm 3:5'03/142/176spm 4:4'54/146/178spm 5:4'50/144/178spm 6:4'49/146/178spm 7:4'50/142/178spm 8:4'52/144/178spm 9:4'41/147/178spm 10:4'45/149/176spm 11:4'43/148/176spm 12:4'37/151/176spm 13:4'26/153/174spm 14:4'28/151/176spm 15:4'28/152/176spm 16:4'30/155/176spm 17:4'15/157/178spm 18:4'17/155/176spm 19:4'18/158/178spm 20:4'14/161/176spm 21:4'34/162/176spm\", \"garmin\": {\"te_aero\": 4.0, \"te_ana\": 0.0, \"load\": 201.0, \"rpe\": 3.0, \"feel_label\": \"Très fort\", \"temp_c\": 25, \"balance_l\": 49.81, \"flags\": [], \"stance_drift_pct\": -4.0, \"step_drift_pct\": 14.0}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 102, \"pace_delta_s\": -8}, \"hr\": {\"avg\": 149, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": -3.2, \"flags\": []}}, {\"date\": \"2026-09-07\", \"title\": \"Repos + Muscu A\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}]",
+ "headline": "Bloc qualité très solide (4/4 clés réussies, semaine à 106%) mais des signaux mécaniques discrets s'accumulent — vigilance Achille avant d'enchaîner une nouvelle semaine dense.",
+ "analysis": "Ta forme est excellente : toutes les séances clés de la semaine 13 sont passées, le volume est même légèrement au-dessus du prévu, et les allures spécifiques (seuil, MP) sont tenues avec précision malgré une chaleur marquée (27-30°C) qui explique la majorité des décrochages cardiaques observés (decoupling 8-12%). Le point à surveiller n'est pas la performance mais la mécanique : deux séances clés récentes (piste 6×800 le 02/09, spécifique 10km le 04/09) montrent un contact au sol qui s'allonge nettement (+8.2% et +6.2%) avec une foulée qui se raccourcit, et un flag d'asymétrie de vitesse — ce sont des signes de fatigue mécanique réelle, pas juste cardiaque, à prendre au sérieux vu ton historique Achille. Tu as enchaîné 4 séances de qualité en 10 jours (seuil, longue alternée, piste, spécifique) plus une longue progressive très aisée le 06/09 — bloc dense mais bien digéré côté sensations (RPE et feel restent bons). La semaine qui arrive remet 3 séances clés coup sur coup (piste 5×1000, côtes+seuil, longue alternée 2×8km) : le risque principal est d'empiler la charge sur des jambes déjà en dérive mécanique légère, surtout avec la séance de côtes qui sollicite fort le triceps sural. Focus de la semaine : hydratation/gestion de la chaleur sur les intervalles, et attention particulière aux sensations mollets/Achille pendant les côtes de vendredi — ne pas hésiter à couper une répétition si ça tire.",
  "applied": [
-  {
-   "severity": "minor",
-   "kind": "volume_adjust",
-   "date": "2026-09-09",
-   "field": "km",
-   "new_value": 15.5,
-   "reason": "Séance piste VMA juste après une semaine à forte charge (volumes réalisés à 132-158% sur les clés) et avec fatigue mécanique déjà visible sur la précédente séance de piste (stance +8.2%, step -5.2%) : on réduit légèrement le volume pour préserver la qualité des intervalles sans en rajouter.",
-   "id": "edba2df2",
-   "detail": "2026-09-09 : 17→15.5 km"
-  },
   {
    "severity": "minor",
    "kind": "add_note",
    "date": "2026-09-11",
    "field": "description_note",
-   "new_value": "Séance côtes + seuil exigeante pour les tendons (impact + allure) : coupe court si tu sens une gêne au niveau du mollet/Achille, la qualité de l'appui prime sur le volume total.",
-   "reason": "Historique Achille + stance_fade récurrent sur les 2 dernières séances clés ; cette séance combine côtes et seuil, donc surveillance mécanique accrue justifiée.",
-   "id": "9abf23e2",
+   "new_value": "Vigilance mollets/Achille sur cette séance de côtes : deux séances récentes (piste 02/09, spécifique 04/09) montrent un allongement du temps de contact au sol en fin d'effort, signe de fatigue mécanique qui s'accumule. Échauffe bien les mollets, et si une tension apparaît sur les côtes, réduis le nombre de répétitions plutôt que de forcer.",
+   "reason": "Flags Garmin stance_fade/step_fade + asym_vitesse sur 2 séances clés récentes, contexte historique Achille — séance de côtes à fort impact tendineux à venir.",
+   "replacement": null,
+   "id": "9eb58633",
    "detail": "2026-09-11 : note ajoutée"
   },
   {
    "severity": "minor",
-   "kind": "volume_adjust",
-   "date": "2026-09-13",
-   "field": "km",
-   "new_value": 23.0,
-   "reason": "Troisième séance clé exigeante de la semaine (après piste et côtes/seuil) ; réduire légèrement le volume de la longue alternée limite l'accumulation de fatigue mécanique avant la semaine suivante, sans toucher aux allures spécifiques prévues.",
-   "id": "b4b50ac9",
-   "detail": "2026-09-13 : 25.5→23 km"
+   "kind": "add_note",
+   "date": "2026-09-09",
+   "field": "description_note",
+   "new_value": "Chaleur persistante ces derniers jours (27-30°C sur tes dernières séances qualité) : bois avant et pendant les intervalles, et ne t'inquiète pas si la FC dépasse un peu la consigne avec des sensations faciles — c'est la chaleur, pas la fatigue.",
+   "reason": "Decoupling élevé (7.9-12.4%) sur les dernières séances de qualité, cohérent avec des températures élevées répétées — cadrer l'interprétation avant la prochaine séance au seuil VMA.",
+   "replacement": null,
+   "id": "f0a4c201",
+   "detail": "2026-09-09 : note ajoutée"
   }
  ],
  "pending": [
@@ -54,18 +46,6 @@
    "id": "37c48d0d",
    "status": "pending",
    "created_at": "2026-09-05T09:23:40"
-  },
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-09-06",
-   "field": "description_note",
-   "new_value": "Chaleur + fatigue mécanique observée sur les 2 dernières séances clés (stance_fade au 02/09 et 04/09) : garde la progression finale mesurée, ne force pas les derniers km si les jambes tirent. Hydrate-toi bien avant/pendant.",
-   "reason": "Deux séances clés consécutives montrent un stance_drift >4% et un decoupling élevé (7.9% et 12.4%), signe de fatigue mécanique réelle en fin d'effort ; prudence sur la progressivité de cette longue.",
-   "id": "6b203bef",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
-   "created_at": "2026-09-06T09:35:23"
   }
  ]
 }
