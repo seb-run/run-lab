@@ -1,18 +1,6 @@
 {
  "proposals": [
   {
-   "severity": "major",
-   "kind": "restructure_week",
-   "date": "2026-08-13",
-   "field": null,
-   "new_value": "Réduire la séance MP du 13/08 à 2×8' au lieu de 3×8' (ou la reporter d'une journée) pour ne pas enchaîner deux séances clés exigeantes en 48h après une période de forte irrégularité et un signal de fatigue mécanique le 26/07",
-   "reason": "Seuil (11/08) et MP (13/08) programmées à 48h d'intervalle juste après 2 semaines à ~65% de conformité et un tempo manqué le 06/08 : mieux vaut sécuriser la première séance clé avant d'enchaîner sur la seconde à pleine charge",
-   "id": "09b858ea",
-   "status": "rejected",
-   "created_at": "2026-08-07T06:20:31",
-   "decided_at": "2026-08-07T12:19:46"
-  },
-  {
    "severity": "minor",
    "kind": "add_note",
    "date": "2026-08-09",
@@ -455,6 +443,18 @@
    "guardrail_reject": "jour passé ou en cours",
    "status": "expired",
    "created_at": "2026-09-06T09:35:23"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-09-09",
+   "field": "description_note",
+   "new_value": "Vigilance : 2 dernières séances de piste/spécifique ont montré fatigue mécanique (stance_fade, step_fade, asym_vitesse) + forte chaleur récurrente. Aujourd'hui, privilégie la régularité des 1000m au ressenti plutôt que l'allure chrono à tout prix ; stoppe si sensation d'asymétrie ou tension Achille.",
+   "reason": "Accumulation de signaux de fatigue mécanique (stance_fade/step_fade/asym_vitesse) sur les 3 dernières séances de qualité, par forte chaleur répétée.",
+   "id": "15b93e9f",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-09-09T10:08:52"
   }
  ]
 }

@@ -3350,81 +3350,7 @@
               "rr_beats": 8917,
               "rmssd_effort": 6.5,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 301,
-                "fc": 129,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 289,
-                "fc": 147,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 283,
-                "fc": 154,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 280,
-                "fc": 157,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 275,
-                "fc": 160,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 274,
-                "fc": 159,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 273,
-                "fc": 161,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 277,
-                "fc": 161,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 273,
-                "fc": 162,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 281,
-                "fc": 167,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 285,
-                "fc": 163,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 288,
-                "fc": 165,
-                "ca": 178
-              }
-            ]
+            }
           },
           "_rescheduled_from": "2026-07-16",
           "_rescheduled_title": "Tempo 20min seuil",
@@ -10512,7 +10438,7 @@
           "duration_min": 110,
           "key": true,
           "description": "4,5 km en trot pour aller\nGammes en équipe\nCœur de séance : 5 × 1000 m @ 3'28–3'34/km, récupération 2'30\n4,5 km en trot pour rentrer\n[VO2max (800–2000 m) · 3'28–3'36/km]\nChaussures : Nike Zoom Fly 5 vert/blanc (647 km) — piste",
-          "status": "pending",
+          "status": "today",
           "target_pace": "3'32\"/km",
           "target_pace_sec": 212,
           "shoe": "Nike Zoom Fly 5 vert/blanc (647 km) — piste",
@@ -10574,6 +10500,10 @@
             {
               "kind": "note",
               "text": "Vigilance mollets/Achille sur cette séance de côtes : deux séances récentes (piste 02/09, spécifique 04/09) montrent un allongement du temps de contact au sol en fin d'effort, signe de fatigue mécanique qui s'accumule. Échauffe bien les mollets, et si une tension apparaît sur les côtes, réduis le no"
+            },
+            {
+              "kind": "note",
+              "text": "Après piste + longue de la semaine, reste sur une allure seuil confortable plutôt que forcée si chaleur ; l'objectif est la qualité de forme, pas le chrono absolu vu la fatigue mécanique observée récemment."
             }
           ]
         },
@@ -10620,13 +10550,31 @@
               "from": 25.5,
               "to": 23.0,
               "reason": "Troisième séance clé exigeante de la semaine (après piste et côtes/seuil) ; réduire légèrement le volume de la longue alternée limite l'accumulation de fatigue mécanique avant la semaine suivante, sans toucher aux allures spécifiques prévues."
+            },
+            {
+              "kind": "note",
+              "text": "Sur les 2x8km à allure spécifique, calibre l'effort à la FC/sensations plutôt qu'au chrono strict si conditions chaudes ; en cas de fatigue en fin de portion (comme le 04/09), lève le pied plutôt que d'insister."
             }
           ]
         }
       ],
-      "volume_actual_to_date": 0.0,
-      "volume_planned_to_date": 0.0,
-      "volume_drift_pct": 0
+      "volume_actual_to_date": 11.7,
+      "volume_planned_to_date": 12.0,
+      "volume_drift_pct": -2.5,
+      "compliance": {
+        "km_pct": 98,
+        "km_done": 11.7,
+        "km_planned": 12.0,
+        "km_done_week": 11.7,
+        "km_planned_week": 79.5,
+        "sessions_done": 1,
+        "sessions_planned": 1,
+        "sessions_done_week": 1,
+        "keys_success": 0,
+        "keys_total": 0,
+        "points": 98,
+        "verdict": "success"
+      }
     },
     {
       "week_num": 15,
