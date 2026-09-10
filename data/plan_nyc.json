@@ -3474,75 +3474,7 @@
               "rr_beats": 9225,
               "rmssd_effort": 11.1,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 387,
-                "fc": 127,
-                "ca": 184
-              },
-              {
-                "km": 1.0,
-                "ps": 383,
-                "fc": 134,
-                "ca": 182
-              },
-              {
-                "km": 1.0,
-                "ps": 381,
-                "fc": 133,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 397,
-                "fc": 133,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 385,
-                "fc": 131,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 377,
-                "fc": 128,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 370,
-                "fc": 129,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 355,
-                "fc": 128,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 371,
-                "fc": 131,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 325,
-                "fc": 134,
-                "ca": 180
-              },
-              {
-                "km": 0.4,
-                "ps": 294,
-                "fc": 152,
-                "ca": 178
-              }
-            ]
+            }
           },
           "_downgraded_from": {
             "title": "Sortie longue 26km",
@@ -10761,7 +10693,7 @@
           "duration_min": 45,
           "key": false,
           "description": "45' très facile. Muscu B le midi.\n[Récupération · 5'15–5'35/km]\nChaussures : On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-          "status": "pending",
+          "status": "today",
           "target_pace": "5'25\"/km",
           "target_pace_sec": 325,
           "shoe": "On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
@@ -10819,7 +10751,7 @@
           "dow": "Sun",
           "type": "long",
           "title": "SORTIE LONGUE ALTERNÉE — 2 × 8 km à allure spécifique",
-          "km": 23.0,
+          "km": 21.0,
           "duration_min": 135,
           "key": true,
           "description": "5 km @ 5'00/km\n2 × (8 km @ 3'57–4'02/km / 2 km @ 4'50/km)\n3 km de retour au calme\n\nOn passe de blocs de 3 km à des blocs de 8 : c'est là que la séance devient vraiment marathon. Protocole nutrition complet, gel toutes les 35'.\n[Allure spécifique marathon · 3'57–4'02/km]\nChaussures : Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
@@ -10845,25 +10777,31 @@
             {
               "kind": "note",
               "text": "Sur les 2x8km à allure spécifique, calibre l'effort à la FC/sensations plutôt qu'au chrono strict si conditions chaudes ; en cas de fatigue en fin de portion (comme le 04/09), lève le pied plutôt que d'insister."
+            },
+            {
+              "kind": "volume",
+              "from": 23.0,
+              "to": 21.0,
+              "reason": "Réduction de ~9% de la sortie longue alternée pour laisser retomber la fatigue mécanique cumulée avant la semaine chargée qui suit (piste + longue 24km le 20/09), tout en gardant la structure de la séance intacte."
             }
           ]
         }
       ],
-      "volume_actual_to_date": 11.7,
-      "volume_planned_to_date": 12.0,
-      "volume_drift_pct": -2.5,
+      "volume_actual_to_date": 30.4,
+      "volume_planned_to_date": 27.5,
+      "volume_drift_pct": 10.5,
       "compliance": {
-        "km_pct": 98,
-        "km_done": 11.7,
-        "km_planned": 12.0,
+        "km_pct": 111,
+        "km_done": 30.4,
+        "km_planned": 27.5,
         "km_done_week": 30.4,
-        "km_planned_week": 79.5,
-        "sessions_done": 1,
-        "sessions_planned": 1,
+        "km_planned_week": 77.5,
+        "sessions_done": 2,
+        "sessions_planned": 2,
         "sessions_done_week": 2,
-        "keys_success": 0,
-        "keys_total": 0,
-        "points": 98,
+        "keys_success": 1,
+        "keys_total": 1,
+        "points": 99,
         "verdict": "success"
       }
     },
@@ -10918,7 +10856,13 @@
           "target_pace_sec": 198,
           "shoe": "Nike Zoom Fly 5 vert/blanc (647 km) — piste",
           "scheduled_time": "18:45",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Piste allégée = allégée : tiens-toi aux 14 km prévus sans rallonger l'échauffement/retour au calme comme sur les dernières séances pistées. Objectif qualité, pas quantité, pour préserver les jambes avant la longue du 20/09."
+            }
+          ]
         },
         {
           "date": "2026-09-17",

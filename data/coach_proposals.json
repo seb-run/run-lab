@@ -1,20 +1,6 @@
 {
  "proposals": [
   {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-08-09",
-   "field": "description_note",
-   "new_value": "Chaleur probable : allure 4'55/km à moduler si FC dérive fort, priorité à l'hydratation et à finir en contrôle plutôt qu'en accélérant.",
-   "reason": "Sorties récentes montrent des dérives FC importantes par forte chaleur (jusqu'à 33°C) sans signe de fatigue réelle ; la longue de reprise doit rester gérée pour ne pas hypothéquer le seuil de mardi.",
-   "id": "9ee03844",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "accepted",
-   "created_at": "2026-08-09T06:29:56",
-   "decided_at": "2026-08-09T06:54:01",
-   "applied_detail": "2026-08-09 : consigne inscrite (add_note)"
-  },
-  {
    "severity": "major",
    "kind": "change_type",
    "date": "2026-08-11",
@@ -429,7 +415,7 @@
     "description": "4×1000m à 3'32/km, récup trot 2' entre chaque. Focus sur la foulée : si tu sens le contact au sol s'allonger ou la foulée se raccourcir sur les 2 derniers répétitions, coupe la série là. Échauffement 15' + 6 lignes droites avant, retour au calme 10'."
    },
    "id": "37c48d0d",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-05T09:23:40"
   },
   {
@@ -453,8 +439,20 @@
    "reason": "Accumulation de signaux de fatigue mécanique (stance_fade/step_fade/asym_vitesse) sur les 3 dernières séances de qualité, par forte chaleur répétée.",
    "id": "15b93e9f",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-09T10:08:52"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-09-10",
+   "field": "description_note",
+   "new_value": "Respecte strictement l'allure recovery (5'25\"/km) et les 9 km prévus — ne rallonge pas. Tu as tendance à systématiquement sur-accélérer et sur-voluminer ces sorties faciles, ce qui a coïncidé avec des signaux de fatigue mécanique (stance/step fade) sur tes 3 dernières séances clés.",
+   "reason": "Pattern répété de sur-volume/sur-allure sur les footings faciles associé à des flags stance_fade/step_fade sur 3 séances clés récentes (02/09, 04/09, 09/09).",
+   "id": "cabb76ea",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-09-10T10:03:39"
   }
  ]
 }
