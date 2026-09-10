@@ -1,45 +1,45 @@
 {
- "headline": "Séance réussie, allure cible tenue — mais asymétrie qui s'ouvre nettement avec la vitesse",
+ "headline": "Footing « récup » couru à allure normale, pas à allure facile.",
  "bullets": [
-  "Allure 3'31\"/km sur le cœur de séance, -1\" vs cible, volume 121% du plan",
-  "FC moy 152 vs 150,9 réf 60j, écart faible malgré 24°C (max 31°C sur la sortie)",
-  "Équilibre 49,96% global proche réf (50,21%), mais 48,7% sur les rapides vs 50,68% en récup lente"
+  "Allure 5'03/km, -22\" vs cible recovery (5'25) mais quasi identique à ta moyenne 60j (5'02.6/km).",
+  "Équilibre gauche 50,97% vs 50,39% de réf : léger surcroît de décharge côté droit (achille).",
+  "RPE 2 / sensation « Fort » alors que l'allure est celle d'une séance normale, pas d'un footing."
  ],
  "points": [
   {
-   "label": "Allure cœur de séance",
-   "valeur": "3'31\"/km",
-   "ecart": "-1\" vs cible 3'32\"",
-   "lecture": "objectif tenu au chiffre près",
+   "label": "Allure",
+   "valeur": "5'03/km",
+   "ecart": "-22\" vs cible, quasi = réf 60j (5'02.6)",
+   "lecture": "récup courue comme un footing normal",
+   "ton": "vigilance"
+  },
+  {
+   "label": "Équilibre gauche",
+   "valeur": "50,97%",
+   "ecart": "+0,58pt vs réf 50,39%",
+   "lecture": "décharge droite un peu plus marquée",
    "ton": "bon"
   },
   {
-   "label": "FC moyenne",
-   "valeur": "152 bpm",
-   "ecart": "+1,1 vs réf 60j (150,9)",
-   "lecture": "chaleur possible, écart minime",
+   "label": "Dérive FC",
+   "valeur": "143→153 bpm",
+   "ecart": "+6,9% sur la séance",
+   "lecture": "cohérent avec l'accélération des splits",
    "ton": "neutre"
-  },
-  {
-   "label": "Asymétrie vs allure",
-   "valeur": "asym +0,62",
-   "ecart": "48,7% rapide vs 50,68% lent",
-   "lecture": "s'ouvre avec la vitesse",
-   "ton": "vigilance"
   }
  ],
- "achille": "Équilibre global 49,96% proche réf (50,21%), mais 48,7% sur les fractions rapides : léger surplus droit.",
- "a_surveiller": "Asymétrie qui grandit avec la vitesse — signature proche de ton épisode adducteur de l'hiver 2025.",
+ "achille": "Balance toujours au-dessus de 50% (décharge droite), léger mieux que ta moyenne 60j.",
+ "a_surveiller": "Footing censé être très facile couru à ton allure habituelle : vrai repos incertain avant la prochaine clé.",
  "seance": {
-  "date": "09/09/2026",
-  "heure": "19:20",
-  "titre": "i185037791",
-  "type_detecte": "frac_court",
-  "km": 18.7,
-  "duree": "1h 29m 29s",
-  "allure": "4'47\"/km",
-  "fc_moy": 152
+  "date": "10/09/2026",
+  "heure": "12:17",
+  "titre": "i185221561",
+  "type_detecte": "endurance",
+  "km": 7.79,
+  "duree": "39m 20s",
+  "allure": "5'03\"/km",
+  "fc_moy": 147
  },
- "generated_at": "2026-09-09T19:46:47",
- "baseline_n": 31
+ "generated_at": "2026-09-10T11:01:03",
+ "baseline_n": 33
 }
