@@ -3637,105 +3637,7 @@
               "rr_beats": 11921,
               "rmssd_effort": 12.5,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 324,
-                "fc": 124,
-                "ca": 184
-              },
-              {
-                "km": 1.0,
-                "ps": 299,
-                "fc": 122,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 309,
-                "fc": 139,
-                "ca": 182
-              },
-              {
-                "km": 1.0,
-                "ps": 303,
-                "fc": 143,
-                "ca": 182
-              },
-              {
-                "km": 1.0,
-                "ps": 288,
-                "fc": 142,
-                "ca": 182
-              },
-              {
-                "km": 1.0,
-                "ps": 289,
-                "fc": 142,
-                "ca": 182
-              },
-              {
-                "km": 1.0,
-                "ps": 278,
-                "fc": 143,
-                "ca": 182
-              },
-              {
-                "km": 1.0,
-                "ps": 292,
-                "fc": 154,
-                "ca": 182
-              },
-              {
-                "km": 1.0,
-                "ps": 291,
-                "fc": 149,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 290,
-                "fc": 149,
-                "ca": 182
-              },
-              {
-                "km": 1.0,
-                "ps": 292,
-                "fc": 145,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 288,
-                "fc": 146,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 297,
-                "fc": 146,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 290,
-                "fc": 143,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 303,
-                "fc": 156,
-                "ca": 176
-              },
-              {
-                "km": 0.43,
-                "ps": 298,
-                "fc": 144,
-                "ca": 176
-              }
-            ]
+            }
           },
           "score": null
         },
@@ -10860,7 +10762,7 @@
           "duration_min": 80,
           "key": true,
           "description": "3 km d'échauffement\n6 × 3' en côte à 3–4 % à effort seuil, retour en trot dans la descente (descente SOUPLE, aucune relance)\n8' @ 3'50/km sur le plat\n2 km de retour au calme\n\n⚠️ Première séance de côtes du bloc : c'est le test tendon de la semaine. Pente modérée, pas de raidard.\n[Seuil · 3'47–3'53/km]\nChaussures : Adidas Evo SL neuve — réservée aux séances",
-          "status": "pending",
+          "status": "today",
           "target_pace": "3'50\"/km",
           "target_pace_sec": 230,
           "shoe": "Adidas Evo SL neuve — réservée aux séances",
@@ -10934,21 +10836,25 @@
               "from": 23.0,
               "to": 21.0,
               "reason": "Réduction de ~9% de la sortie longue alternée pour laisser retomber la fatigue mécanique cumulée avant la semaine chargée qui suit (piste + longue 24km le 20/09), tout en gardant la structure de la séance intacte."
+            },
+            {
+              "kind": "note",
+              "text": "Séance clé : hydrate-toi bien avant/pendant si chaleur, et cale-toi sur les sensations plutôt que sur le chrono si le decoupling grimpe — priorité à la régularité des 8km rapides plutôt qu'à l'allure brute."
             }
           ]
         }
       ],
-      "volume_actual_to_date": 30.4,
-      "volume_planned_to_date": 27.5,
-      "volume_drift_pct": 10.5,
+      "volume_actual_to_date": 38.2,
+      "volume_planned_to_date": 36.5,
+      "volume_drift_pct": 4.7,
       "compliance": {
-        "km_pct": 111,
-        "km_done": 30.4,
-        "km_planned": 27.5,
+        "km_pct": 105,
+        "km_done": 38.2,
+        "km_planned": 36.5,
         "km_done_week": 38.2,
         "km_planned_week": 77.5,
-        "sessions_done": 2,
-        "sessions_planned": 2,
+        "sessions_done": 3,
+        "sessions_planned": 3,
         "sessions_done_week": 3,
         "keys_success": 1,
         "keys_total": 1,
@@ -11012,6 +10918,10 @@
             {
               "kind": "note",
               "text": "Piste allégée = allégée : tiens-toi aux 14 km prévus sans rallonger l'échauffement/retour au calme comme sur les dernières séances pistées. Objectif qualité, pas quantité, pour préserver les jambes avant la longue du 20/09."
+            },
+            {
+              "kind": "note",
+              "text": "Respecte le volume prescrit (14 km, 8x400m) sans rallonger la séance — les deux dernières pistes ont dépassé le plan de 20-30%, ce qui a coïncidé avec des flags de fatigue mécanique (stance/step fade)."
             }
           ]
         },
