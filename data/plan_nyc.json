@@ -10762,12 +10762,227 @@
           "duration_min": 80,
           "key": true,
           "description": "3 km d'échauffement\n6 × 3' en côte à 3–4 % à effort seuil, retour en trot dans la descente (descente SOUPLE, aucune relance)\n8' @ 3'50/km sur le plat\n2 km de retour au calme\n\n⚠️ Première séance de côtes du bloc : c'est le test tendon de la semaine. Pente modérée, pas de raidard.\n[Seuil · 3'47–3'53/km]\nChaussures : Adidas Evo SL neuve — réservée aux séances",
-          "status": "today",
+          "status": "done",
           "target_pace": "3'50\"/km",
           "target_pace_sec": 230,
           "shoe": "Adidas Evo SL neuve — réservée aux séances",
           "scheduled_time": "06:15",
-          "actual": null,
+          "actual": {
+            "km": 16.6,
+            "duration_min": 77,
+            "pace_sec": 279,
+            "pace_str": "4'39\"/km",
+            "fc": 154,
+            "cadence": 176,
+            "type": "frac_court",
+            "title": "i185657622",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 211.0,
+              "osc_cm": 11.0,
+              "vratio": 9.08,
+              "balance_l": 50.33,
+              "step_m": 1.21,
+              "temp_c": 28,
+              "temp_max": 30,
+              "resp": 37.1,
+              "power": 408,
+              "np": 422,
+              "te_aero": 4.1,
+              "te_ana": 2.4,
+              "load": 265.1,
+              "strides": 6751,
+              "rpe": 5.0,
+              "feel": 50,
+              "feel_label": "Normal",
+              "drift": {
+                "stance": {
+                  "start": 216.0,
+                  "end": 206.0,
+                  "pct": -4.6
+                },
+                "step": {
+                  "start": 1163.0,
+                  "end": 1245.0,
+                  "pct": 7.1
+                },
+                "vratio": {
+                  "start": 9.11,
+                  "end": 8.95,
+                  "pct": -1.8
+                },
+                "osc": {
+                  "start": 107.0,
+                  "end": 112.0,
+                  "pct": 4.5
+                },
+                "hr": {
+                  "start": 146.0,
+                  "end": 161.0,
+                  "pct": 10.6
+                },
+                "cad": {
+                  "start": 88.2,
+                  "end": 87.6,
+                  "pct": -0.7
+                }
+              },
+              "balance_min": 47.4,
+              "balance_max": 52.14,
+              "balance_series": [
+                52.05,
+                52.08,
+                52.14,
+                47.98,
+                51.08,
+                48.15,
+                51.08,
+                48.24,
+                51.08,
+                47.4,
+                50.98,
+                48.79,
+                51.1,
+                49.01,
+                51.26,
+                48.03,
+                47.49,
+                51.02,
+                51.79
+              ],
+              "balance_lent": 51.46,
+              "balance_rapide": 48.13,
+              "asym_vs_allure": 0.41,
+              "allure_lent_s": 314,
+              "allure_rapide_s": 229,
+              "rr_beats": 12564,
+              "rmssd_effort": 9.6,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 316,
+                "fc": 132,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 304,
+                "fc": 141,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 317,
+                "fc": 140,
+                "ca": 176
+              },
+              {
+                "km": 0.75,
+                "ps": 241,
+                "fc": 163,
+                "ca": 178
+              },
+              {
+                "km": 0.59,
+                "ps": 305,
+                "fc": 144,
+                "ca": 174
+              },
+              {
+                "km": 0.76,
+                "ps": 238,
+                "fc": 165,
+                "ca": 176
+              },
+              {
+                "km": 0.81,
+                "ps": 310,
+                "fc": 145,
+                "ca": 174
+              },
+              {
+                "km": 0.78,
+                "ps": 231,
+                "fc": 168,
+                "ca": 178
+              },
+              {
+                "km": 0.9,
+                "ps": 308,
+                "fc": 147,
+                "ca": 174
+              },
+              {
+                "km": 0.77,
+                "ps": 235,
+                "fc": 168,
+                "ca": 176
+              },
+              {
+                "km": 0.79,
+                "ps": 314,
+                "fc": 149,
+                "ca": 174
+              },
+              {
+                "km": 0.78,
+                "ps": 231,
+                "fc": 171,
+                "ca": 176
+              },
+              {
+                "km": 0.8,
+                "ps": 313,
+                "fc": 151,
+                "ca": 172
+              },
+              {
+                "km": 0.79,
+                "ps": 227,
+                "fc": 173,
+                "ca": 178
+              },
+              {
+                "km": 0.91,
+                "ps": 315,
+                "fc": 149,
+                "ca": 172
+              },
+              {
+                "km": 1.0,
+                "ps": 223,
+                "fc": 168,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 229,
+                "fc": 174,
+                "ca": 178
+              },
+              {
+                "km": 0.12,
+                "ps": 232,
+                "fc": 177,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 311,
+                "fc": 162,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 305,
+                "fc": 153,
+                "ca": 174
+              }
+            ]
+          },
           "coach_notes": [
             {
               "kind": "note",
@@ -10781,7 +10996,31 @@
               "kind": "note",
               "text": "Après piste + longue de la semaine, reste sur une allure seuil confortable plutôt que forcée si chaleur ; l'objectif est la qualité de forme, pas le chrono absolu vu la fatigue mécanique observée récemment."
             }
-          ]
+          ],
+          "score": {
+            "points": 98,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 119,
+            "volume_points": 96,
+            "pace_points": 100,
+            "pace_target_s": 230,
+            "pace_actual_s": 231,
+            "pace_actual_str": "3'51\"/km",
+            "pace_delta_s": 1,
+            "is_quality": true,
+            "hr": {
+              "avg": 154,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 3.7,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 119%",
+              "Allure +1\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-09-12",
@@ -10851,11 +11090,11 @@
         "km_pct": 105,
         "km_done": 38.2,
         "km_planned": 36.5,
-        "km_done_week": 38.2,
+        "km_done_week": 54.8,
         "km_planned_week": 77.5,
         "sessions_done": 3,
         "sessions_planned": 3,
-        "sessions_done_week": 3,
+        "sessions_done_week": 4,
         "keys_success": 1,
         "keys_total": 1,
         "points": 99,

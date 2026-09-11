@@ -1,45 +1,45 @@
 {
- "headline": "Footing « récup » couru à allure normale, pas à allure facile.",
+ "headline": "Côtes + seuil réussies, allure cible tenue à 1\" près sous forte chaleur",
  "bullets": [
-  "Allure 5'03/km, -22\" vs cible recovery (5'25) mais quasi identique à ta moyenne 60j (5'02.6/km).",
-  "Équilibre gauche 50,97% vs 50,39% de réf : léger surcroît de décharge côté droit (achille).",
-  "RPE 2 / sensation « Fort » alors que l'allure est celle d'une séance normale, pas d'un footing."
+  "Allure 3'51\"/km quasi pile la cible (3'50\"), score 98/100, séance validée",
+  "FC dérive +10.6% (146→161bpm) en fin de séance, chaleur 28-30°C plausible",
+  "RPE 5/10, feel normal malgré 30°C et volume 119% du plan prévu"
  ],
  "points": [
   {
-   "label": "Allure",
-   "valeur": "5'03/km",
-   "ecart": "-22\" vs cible, quasi = réf 60j (5'02.6)",
-   "lecture": "récup courue comme un footing normal",
-   "ton": "vigilance"
+   "label": "Temps de contact",
+   "valeur": "211 ms",
+   "ecart": "-4 ms vs réf. 215 ms (60j)",
+   "lecture": "appui plus court, cohérent avec effort soutenu",
+   "ton": "neutre"
   },
   {
-   "label": "Équilibre gauche",
-   "valeur": "50,97%",
-   "ecart": "+0,58pt vs réf 50,39%",
-   "lecture": "décharge droite un peu plus marquée",
-   "ton": "bon"
+   "label": "Ratio vertical",
+   "valeur": "9.08",
+   "ecart": "+0.34 vs réf. 8.74",
+   "lecture": "légère perte de raideur sur l'effort",
+   "ton": "neutre"
   },
   {
    "label": "Dérive FC",
-   "valeur": "143→153 bpm",
-   "ecart": "+6,9% sur la séance",
-   "lecture": "cohérent avec l'accélération des splits",
+   "valeur": "146→161 bpm",
+   "ecart": "+10.6% sur la séance",
+   "lecture": "chaleur (28-30°C) probable, découplage 3.7%",
    "ton": "neutre"
   }
  ],
- "achille": "Balance toujours au-dessus de 50% (décharge droite), léger mieux que ta moyenne 60j.",
- "a_surveiller": "Footing censé être très facile couru à ton allure habituelle : vrai repos incertain avant la prochaine clé.",
+ "achille": "Équilibre global 50.3% (réf. 50.0%), stable ; descend à 47-48% pendant les côtes, charge côté droit.",
+ "a_surveiller": "Asymétrie qui s'accentue avec la vitesse (+0.41), motif proche de l'épisode adducteur 2025.",
  "seance": {
-  "date": "10/09/2026",
-  "heure": "12:17",
-  "titre": "i185221561",
-  "type_detecte": "endurance",
-  "km": 7.79,
-  "duree": "39m 20s",
-  "allure": "5'03\"/km",
-  "fc_moy": 147
+  "date": "11/09/2026",
+  "heure": "16:42",
+  "titre": "i185657622",
+  "type_detecte": "frac_court",
+  "km": 16.57,
+  "duree": "1h 16m 58s",
+  "allure": "4'39\"/km",
+  "fc_moy": 154
  },
- "generated_at": "2026-09-10T11:01:03",
- "baseline_n": 33
+ "generated_at": "2026-09-11T16:11:57",
+ "baseline_n": 19
 }
