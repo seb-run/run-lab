@@ -11031,12 +11031,149 @@
           "duration_min": 35,
           "key": false,
           "description": "35' récupération.\n[Récupération · 5'15–5'35/km]\nChaussures : Nike Pegasus 41 « Jakob » (476 km)",
-          "status": "pending",
+          "status": "done",
           "target_pace": "5'25\"/km",
           "target_pace_sec": 325,
           "shoe": "Nike Pegasus 41 « Jakob » (476 km)",
           "scheduled_time": "08:30",
-          "actual": null
+          "actual": {
+            "km": 6.0,
+            "duration_min": 32,
+            "pace_sec": 322,
+            "pace_str": "5'22\"/km",
+            "fc": 137,
+            "cadence": 178,
+            "type": "footing",
+            "title": "i185812405",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 224.0,
+              "osc_cm": 9.8,
+              "vratio": 9.32,
+              "balance_l": 51.4,
+              "step_m": 1.03,
+              "temp_c": 25,
+              "temp_max": 28,
+              "resp": 37.5,
+              "power": 350,
+              "np": 354,
+              "te_aero": 2.6,
+              "te_ana": 0.0,
+              "load": 64.8,
+              "strides": 2862,
+              "rpe": 2.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 222.0,
+                  "end": 225.0,
+                  "pct": 1.6
+                },
+                "step": {
+                  "start": 1035.0,
+                  "end": 1028.0,
+                  "pct": -0.7
+                },
+                "vratio": {
+                  "start": 9.11,
+                  "end": 9.69,
+                  "pct": 6.4
+                },
+                "osc": {
+                  "start": 96.0,
+                  "end": 101.0,
+                  "pct": 5.0
+                },
+                "hr": {
+                  "start": 134.0,
+                  "end": 138.0,
+                  "pct": 2.2
+                },
+                "cad": {
+                  "start": 89.5,
+                  "end": 88.5,
+                  "pct": -1.1
+                }
+              },
+              "balance_min": 50.87,
+              "balance_max": 52.02,
+              "balance_series": [
+                52.02,
+                51.44,
+                51.08,
+                50.87,
+                51.29,
+                51.72
+              ],
+              "rr_beats": 4851,
+              "rmssd_effort": 8.8,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 319,
+                "fc": 129,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 319,
+                "fc": 140,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 321,
+                "fc": 140,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 320,
+                "fc": 138,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 324,
+                "fc": 139,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 326,
+                "fc": 136,
+                "ca": 176
+              }
+            ]
+          },
+          "score": {
+            "points": 100,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 100,
+            "volume_points": 100,
+            "pace_points": 100,
+            "pace_target_s": 325,
+            "pace_actual_s": 322,
+            "pace_actual_str": "5'22\"/km",
+            "pace_delta_s": -3,
+            "is_quality": false,
+            "hr": {
+              "avg": 137,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 0.3,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 100%",
+              "Allure −3\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-09-13",
@@ -11079,24 +11216,28 @@
             {
               "kind": "note",
               "text": "Séance clé : hydrate-toi bien avant/pendant si chaleur, et cale-toi sur les sensations plutôt que sur le chrono si le decoupling grimpe — priorité à la régularité des 8km rapides plutôt qu'à l'allure brute."
+            },
+            {
+              "kind": "note",
+              "text": "Respecte les 21 km prévus, ne rallonge pas même si les sensations sont bonnes. Hydratation ++ si chaleur, surveille le relâchement de foulée en fin de séance (2e bloc de 8 km)."
             }
           ]
         }
       ],
-      "volume_actual_to_date": 38.2,
-      "volume_planned_to_date": 36.5,
-      "volume_drift_pct": 4.7,
+      "volume_actual_to_date": 54.8,
+      "volume_planned_to_date": 50.5,
+      "volume_drift_pct": 8.5,
       "compliance": {
-        "km_pct": 105,
-        "km_done": 38.2,
-        "km_planned": 36.5,
-        "km_done_week": 54.8,
+        "km_pct": 109,
+        "km_done": 54.8,
+        "km_planned": 50.5,
+        "km_done_week": 60.8,
         "km_planned_week": 77.5,
-        "sessions_done": 3,
-        "sessions_planned": 3,
-        "sessions_done_week": 4,
-        "keys_success": 1,
-        "keys_total": 1,
+        "sessions_done": 4,
+        "sessions_planned": 4,
+        "sessions_done_week": 5,
+        "keys_success": 2,
+        "keys_total": 2,
         "points": 99,
         "verdict": "success"
       }
@@ -11222,7 +11363,13 @@
           "target_pace_sec": 287,
           "shoe": "Adizero Boston 13 (231 km)",
           "scheduled_time": "08:00",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Sortie longue à 'finish tenu' : garde l'allure de base stricte sur les 16 premiers km, n'accélère que si FC et foulée restent stables. Hydrate-toi toutes les 20-25 min si chaleur."
+            }
+          ]
         }
       ]
     },
