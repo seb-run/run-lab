@@ -1,0 +1,719 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Seb-Metrics//Plan NYC 2026//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Plan Marathon NYC 2026
+X-WR-TIMEZONE:Europe/Paris
+BEGIN:VEVENT
+UID:nyc2026-2026-08-17-repos@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;VALUE=DATE:20260817
+DTEND;VALUE=DATE:20260818
+SUMMARY:🛌 Repos + Muscu A
+DESCRIPTION:SEMAINE 1/11 — Reprise cadrée — réalisée (68 km)\n\nJournée de repos course à pied. Démarrage du protocole tendon et du plan alimentaire avec Sabrina.\n\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Repos
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-08-18-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260818T063000
+DTEND;TZID=Europe/Paris:20260818T075000
+SUMMARY:🏃 Footing facile 60' + 6 lignes droites · 12 km
+DESCRIPTION:SEMAINE 1/11 — Reprise cadrée — réalisée (68 km)\n\nRéalisé : 11\,7 km à 4'52/km.\n\n⏱️ Allure : Footing facile — 5'05–5'25/km · Z2 — 140–150 bpm\n👟 Chaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack\, volume facile\n📏 Volume : 12 km · ~60'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-08-19-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260819T063000
+DTEND;TZID=Europe/Paris:20260819T074000
+SUMMARY:🏃 Footing 50' + gammes · 10 km
+DESCRIPTION:SEMAINE 1/11 — Reprise cadrée — réalisée (68 km)\n\nReporté au jeudi.\n\n⏱️ Allure : Footing facile — 5'05–5'25/km · Z2 — 140–150 bpm\n👟 Chaussures : Nike Pegasus 41 « Jakob » (476 km)\n📏 Volume : 10 km · ~50'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-08-20-repos@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;VALUE=DATE:20260820
+DTEND;VALUE=DATE:20260821
+SUMMARY:🛌 Repos + Muscu B
+DESCRIPTION:SEMAINE 1/11 — Reprise cadrée — réalisée (68 km)\n\nRéalisé à la place : 9\,6 km à 5'11/km en On CloudSurfer.\n\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Repos
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-08-21-seance@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260821T061500
+DTEND;TZID=Europe/Paris:20260821T075000
+SUMMARY:⚡ SEUIL — 4 × 8' · 14 km
+DESCRIPTION:SEMAINE 1/11 — Reprise cadrée — réalisée (68 km)\n\nRéalisé : 3'55 / 3'53 / 3'51 / 3'52\, progressif\, 14\,8 km au total.\n\n⏱️ Allure : Seuil — 3'47–3'53/km · Z4 — 173–178 bpm\n👟 Chaussures : Adidas Evo SL neuve — réservée aux séances\n📏 Volume : 14 km · ~75'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Séance clé
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-08-22-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260822T083000
+DTEND;TZID=Europe/Paris:20260822T094000
+SUMMARY:🏃 Footing récupération 50' · 10 km
+DESCRIPTION:SEMAINE 1/11 — Reprise cadrée — réalisée (68 km)\n\nRéalisé : 9\,9 km à 5'08/km.\n\n⏱️ Allure : Récupération — 5'15–5'35/km · Z1 — < 140 bpm\n👟 Chaussures : On CloudSurfer (163 km) — 10 mm de drop\, 37 mm au talon : la meilleure du placard pour le tendon\n📏 Volume : 10 km · ~50'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-08-23-sl@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260823T080000
+DTEND;TZID=Europe/Paris:20260823T101000
+SUMMARY:🛣️ SORTIE LONGUE — finish progressif · 22 km
+DESCRIPTION:SEMAINE 1/11 — Reprise cadrée — réalisée (68 km)\n\nRéalisé : 23\,5 km\, 17 km à 5'00 puis 5 km à 4'00/km.\n\n⏱️ Allure : Endurance active — 4'40–4'55/km · Z2/Z3 — 150–158 bpm\n👟 Chaussures : Adizero Boston 13 (231 km)\n📏 Volume : 22 km · ~110'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Sortie longue
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-08-24-repos@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;VALUE=DATE:20260824
+DTEND;VALUE=DATE:20260825
+SUMMARY:🛌 Repos + Muscu A
+DESCRIPTION:SEMAINE 2/11 — Entrée dans l'allure spécifique (74 km)\n\nRepos course à pied.\n\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Repos
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-08-25-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260825T063000
+DTEND;TZID=Europe/Paris:20260825T075500
+SUMMARY:🏃 Footing 65' — rodage Zoom Fly 6 (1/3) · 13 km
+DESCRIPTION:SEMAINE 2/11 — Entrée dans l'allure spécifique (74 km)\n\n65' facile à jeun. Pas de lignes droites aujourd'hui.\n\n👟 Premier contact avec les Zoom Fly 6 : plat\, aucune accélération. L'objectif est de sentir la plaque\, pas de la solliciter. Surveille le mollet droit en fin de sortie et au réveil le lendemain.\n\n⏱️ Allure : Footing facile — 5'05–5'25/km · Z2 — 140–150 bpm\n👟 Chaussures : Nike Zoom Fly 6 (neuves\, reçues le 19/08) — 9\,6 mm de drop\, 40 mm au talon : séances longues à allure marathon\n📏 Volume : 13 km · ~65'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-08-26-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260826T063000
+DTEND;TZID=Europe/Paris:20260826T074000
+SUMMARY:🏃 Footing 50' + gammes · 10 km
+DESCRIPTION:SEMAINE 2/11 — Entrée dans l'allure spécifique (74 km)\n\n50' souple + 10' de gammes.\n\n⏱️ Allure : Footing facile — 5'05–5'25/km · Z2 — 140–150 bpm\n👟 Chaussures : Nike Pegasus 41 « Jakob » (476 km)\n📏 Volume : 10 km · ~50'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-08-27-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260827T063000
+DTEND;TZID=Europe/Paris:20260827T073500
+SUMMARY:🏃 Footing récupération 45' + 6 LD — rodage Zoom Fly 6 (2/3) · 9 km
+DESCRIPTION:SEMAINE 2/11 — Entrée dans l'allure spécifique (74 km)\n\n45' très facile + 6 lignes droites de 20". Muscu B le midi.\n\n👟 Deuxième sortie en Zoom Fly 6 : premier contact avec de la vitesse\, mais courte et sur jambes fraîches.\n\n⏱️ Allure : Récupération — 5'15–5'35/km · Z1 — < 140 bpm\n👟 Chaussures : Nike Zoom Fly 6 (neuves\, reçues le 19/08) — 9\,6 mm de drop\, 40 mm au talon : séances longues à allure marathon\n📏 Volume : 9 km · ~45'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-08-28-seance@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260828T061500
+DTEND;TZID=Europe/Paris:20260828T080000
+SUMMARY:⚡ SEUIL — 2 × 15' · 16 km
+DESCRIPTION:SEMAINE 2/11 — Entrée dans l'allure spécifique (74 km)\n\n3 km d'échauffement\n2 × 15' @ 3'50/km\, récupération 3' en trot\n2 km de retour au calme\n\nTes 4 × 8' de vendredi dernier sont sortis à 3'52 de moyenne : on allonge les blocs sans toucher à l'allure.\n\n⏱️ Allure : Seuil — 3'47–3'53/km · Z4 — 173–178 bpm\n👟 Chaussures : Adidas Evo SL neuve — réservée aux séances\n📏 Volume : 16 km · ~85'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Séance clé
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-08-29-repos@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;VALUE=DATE:20260829
+DTEND;VALUE=DATE:20260830
+SUMMARY:🛌 Repos
+DESCRIPTION:SEMAINE 2/11 — Entrée dans l'allure spécifique (74 km)\n\nRepos complet avant la sortie longue. Protocole tendon quand même.\n\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Repos
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-08-30-sl@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260830T080000
+DTEND;TZID=Europe/Paris:20260830T102500
+SUMMARY:🛣️ SORTIE LONGUE ALTERNÉE — 5 × 3 km à allure spécifique · 26 km
+DESCRIPTION:SEMAINE 2/11 — Entrée dans l'allure spécifique (74 km)\n\n5 km @ 5'00/km\n5 × (3 km @ 3'57–4'02/km / 1 km @ 4'50/km)\n1 km de retour au calme\n\n15 km à allure spécifique fractionnés en cinq blocs : même charge qu'un bloc continu\, mais la tête ne décroche jamais. Maurten 320 en flasque + 1 gel à mi-parcours.\n\n⏱️ Allure : Allure spécifique marathon — 3'57–4'02/km · Z3/Z4 — 164–171 bpm\n👟 Chaussures : Nike Zoom Fly 6 (neuves\, reçues le 19/08) — 9\,6 mm de drop\, 40 mm au talon : séances longues à allure marathon\n📏 Volume : 26 km · ~125'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Sortie longue
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-08-31-repos@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260901
+SUMMARY:🛌 Repos + Muscu A
+DESCRIPTION:SEMAINE 3/11 — Reprise de la piste (80 km)\n\nRepos course à pied.\n\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Repos
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-01-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260901T063000
+DTEND;TZID=Europe/Paris:20260901T075000
+SUMMARY:🏃 Footing 60' + 6 LD — rodage Zoom Fly 6 (3/3) · 12 km
+DESCRIPTION:SEMAINE 3/11 — Reprise de la piste (80 km)\n\n60' facile + 6 LD. Jambes fraîches pour la piste demain soir.\n\n👟 Dernière sortie facile en Zoom Fly 6 avant de les engager à l'allure vendredi. À ce stade elles doivent être transparentes : si le mollet tire encore\, vendredi se fait en Evo SL.\n\n⏱️ Allure : Footing facile — 5'05–5'25/km · Z2 — 140–150 bpm\n👟 Chaussures : Nike Zoom Fly 6 (neuves\, reçues le 19/08) — 9\,6 mm de drop\, 40 mm au talon : séances longues à allure marathon\n📏 Volume : 12 km · ~60'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-02-piste@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260902T184500
+DTEND;TZID=Europe/Paris:20260902T205000
+SUMMARY:🎽 PISTE — 6 × 800 m · 16 km
+DESCRIPTION:SEMAINE 3/11 — Reprise de la piste (80 km)\n\n4\,5 km en trot pour aller (échauffement\, vraiment lent)\nGammes en équipe\nCœur de séance : 6 × 800 m @ 3'28–3'34/km\, récupération 2'\n4\,5 km en trot pour rentrer\n\nPremière séance piste de la saison : ne cherche pas à suivre les plus rapides sur la 1re\, tu montes en régime sur les trois dernières.\n\n⏱️ Allure : VO2max (800–2000 m) — 3'28–3'36/km · Z5 — 178–185 bpm\n👟 Chaussures : Nike Zoom Fly 5 vert/blanc (647 km) — piste\n📏 Volume : 16 km · ~105'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Piste
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-03-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260903T063000
+DTEND;TZID=Europe/Paris:20260903T073500
+SUMMARY:🏃 Footing récupération 45' · 9 km
+DESCRIPTION:SEMAINE 3/11 — Reprise de la piste (80 km)\n\n45' très facile — lendemain de piste. Muscu B le midi (allégée).\n\n⏱️ Allure : Récupération — 5'15–5'35/km · Z1 — < 140 bpm\n👟 Chaussures : On CloudSurfer (163 km) — 10 mm de drop\, 37 mm au talon : la meilleure du placard pour le tendon\n📏 Volume : 9 km · ~45'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-04-seance@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260904T061500
+DTEND;TZID=Europe/Paris:20260904T075500
+SUMMARY:⚡ SPÉCIFIQUE — 10 km continus · 15 km
+DESCRIPTION:SEMAINE 3/11 — Reprise de la piste (80 km)\n\n3 km d'échauffement\n10 km @ 3'57–4'02/km en continu\n2 km de retour au calme\n\nLa séance de référence du bloc. Elle doit être exigeante mais jamais violente : si tu finis en ayant serré\, on redescend l'allure spécifique à 4'02–4'06.\n\n👟 Premier test des Zoom Fly 6 à l'allure. Si ça passe\, elles sont validées pour tout le bloc spécifique.\n\n⏱️ Allure : Allure spécifique marathon — 3'57–4'02/km · Z3/Z4 — 164–171 bpm\n👟 Chaussures : Nike Zoom Fly 6 (neuves\, reçues le 19/08) — 9\,6 mm de drop\, 40 mm au talon : séances longues à allure marathon\n📏 Volume : 15 km · ~80'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Séance clé
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-05-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260905T083000
+DTEND;TZID=Europe/Paris:20260905T093000
+SUMMARY:🏃 Footing 40' · 8 km
+DESCRIPTION:SEMAINE 3/11 — Reprise de la piste (80 km)\n\n40' très facile.\n\n⏱️ Allure : Récupération — 5'15–5'35/km · Z1 — < 140 bpm\n👟 Chaussures : Nike Pegasus 41 « Jakob » (476 km)\n📏 Volume : 8 km · ~40'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-06-sl@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260906T080000
+DTEND;TZID=Europe/Paris:20260906T100000
+SUMMARY:🛣️ SORTIE LONGUE PROGRESSIVE — 20 km · 20 km
+DESCRIPTION:SEMAINE 3/11 — Reprise de la piste (80 km)\n\n5 tranches de 4 km\, une accélération de 10 s/km à chaque tranche :\n4 km @ 5'05 · 4 km @ 4'55 · 4 km @ 4'45 · 4 km @ 4'35 · 4 km @ 4'25\n\nAucune tranche n'est dure prise isolément. C'est l'enchaînement qui travaille\, et tu ne regardes la montre que tous les 4 km.\n\n⏱️ Allure : Endurance active — 4'40–4'55/km · Z2/Z3 — 150–158 bpm\n👟 Chaussures : Adizero Boston 13 (231 km)\n📏 Volume : 20 km · ~100'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Sortie longue
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-07-repos@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
+SUMMARY:🛌 Repos + Muscu A
+DESCRIPTION:SEMAINE 4/11 — Développement — premières côtes (86 km)\n\nRepos course à pied.\n\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Repos
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-08-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260908T063000
+DTEND;TZID=Europe/Paris:20260908T075000
+SUMMARY:🏃 Footing 60' + 6 lignes droites · 12 km
+DESCRIPTION:SEMAINE 4/11 — Développement — premières côtes (86 km)\n\n60' facile + 6 LD.\n\n⏱️ Allure : Footing facile — 5'05–5'25/km · Z2 — 140–150 bpm\n👟 Chaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack\, volume facile\n📏 Volume : 12 km · ~60'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-09-piste@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260909T184500
+DTEND;TZID=Europe/Paris:20260909T205500
+SUMMARY:🎽 PISTE — 5 × 1000 m · 17 km
+DESCRIPTION:SEMAINE 4/11 — Développement — premières côtes (86 km)\n\n4\,5 km en trot pour aller\nGammes en équipe\nCœur de séance : 5 × 1000 m @ 3'28–3'34/km\, récupération 2'30\n4\,5 km en trot pour rentrer\n\n⏱️ Allure : VO2max (800–2000 m) — 3'28–3'36/km · Z5 — 178–185 bpm\n👟 Chaussures : Nike Zoom Fly 5 vert/blanc (647 km) — piste\n📏 Volume : 17 km · ~110'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Piste
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-10-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260910T063000
+DTEND;TZID=Europe/Paris:20260910T073500
+SUMMARY:🏃 Footing récupération 45' · 9 km
+DESCRIPTION:SEMAINE 4/11 — Développement — premières côtes (86 km)\n\n45' très facile. Muscu B le midi.\n\n⏱️ Allure : Récupération — 5'15–5'35/km · Z1 — < 140 bpm\n👟 Chaussures : On CloudSurfer (163 km) — 10 mm de drop\, 37 mm au talon : la meilleure du placard pour le tendon\n📏 Volume : 9 km · ~45'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-11-seance@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260911T061500
+DTEND;TZID=Europe/Paris:20260911T075500
+SUMMARY:⚡ CÔTES + SEUIL — spécifique ponts NYC · 14 km
+DESCRIPTION:SEMAINE 4/11 — Développement — premières côtes (86 km)\n\n3 km d'échauffement\n6 × 3' en côte à 3–4 % à effort seuil\, retour en trot dans la descente (descente SOUPLE\, aucune relance)\n8' @ 3'50/km sur le plat\n2 km de retour au calme\n\n⚠️ Première séance de côtes du bloc : c'est le test tendon de la semaine. Pente modérée\, pas de raidard.\n\n⏱️ Allure : Seuil — 3'47–3'53/km · Z4 — 173–178 bpm\n👟 Chaussures : Adidas Evo SL neuve — réservée aux séances\n📏 Volume : 14 km · ~80'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Séance clé
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-12-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260912T083000
+DTEND;TZID=Europe/Paris:20260912T092500
+SUMMARY:🏃 Footing 35' · 6 km
+DESCRIPTION:SEMAINE 4/11 — Développement — premières côtes (86 km)\n\n35' récupération.\n\n⏱️ Allure : Récupération — 5'15–5'35/km · Z1 — < 140 bpm\n👟 Chaussures : Nike Pegasus 41 « Jakob » (476 km)\n📏 Volume : 6 km · ~35'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-13-sl@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260913T074500
+DTEND;TZID=Europe/Paris:20260913T102000
+SUMMARY:🛣️ SORTIE LONGUE ALTERNÉE — 2 × 8 km à allure spécifique · 28 km
+DESCRIPTION:SEMAINE 4/11 — Développement — premières côtes (86 km)\n\n5 km @ 5'00/km\n2 × (8 km @ 3'57–4'02/km / 2 km @ 4'50/km)\n3 km de retour au calme\n\nOn passe de blocs de 3 km à des blocs de 8 : c'est là que la séance devient vraiment marathon. Protocole nutrition complet\, gel toutes les 35'.\n\n⏱️ Allure : Allure spécifique marathon — 3'57–4'02/km · Z3/Z4 — 164–171 bpm\n👟 Chaussures : Nike Zoom Fly 6 (neuves\, reçues le 19/08) — 9\,6 mm de drop\, 40 mm au talon : séances longues à allure marathon\n📏 Volume : 28 km · ~135'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Sortie longue
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-14-repos@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260915
+SUMMARY:🛌 Repos + Muscu A
+DESCRIPTION:SEMAINE 5/11 — Assimilation (70 km)\n\nRepos course à pied.\n\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Repos
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-15-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260915T063000
+DTEND;TZID=Europe/Paris:20260915T075000
+SUMMARY:🏃 Footing 60' · 12 km
+DESCRIPTION:SEMAINE 5/11 — Assimilation (70 km)\n\n60' facile\, sans lignes droites.\n\n⏱️ Allure : Footing facile — 5'05–5'25/km · Z2 — 140–150 bpm\n👟 Chaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack\, volume facile\n📏 Volume : 12 km · ~60'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-16-piste@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260916T184500
+DTEND;TZID=Europe/Paris:20260916T204000
+SUMMARY:🎽 PISTE allégée — 8 × 400 m · 14 km
+DESCRIPTION:SEMAINE 5/11 — Assimilation (70 km)\n\n4\,5 km en trot pour aller\nGammes en équipe\nCœur de séance : 8 × 400 m @ 3'15–3'22/km\, récupération 1'30\n4\,5 km en trot pour rentrer\n\nCourt et vif\, faible coût : c'est une semaine de récupération.\n\n⏱️ Allure : VMA courte (200–600 m) — 3'15–3'22/km · Z5 — max\n👟 Chaussures : Nike Zoom Fly 5 vert/blanc (647 km) — piste\n📏 Volume : 14 km · ~95'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Piste
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-17-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260917T063000
+DTEND;TZID=Europe/Paris:20260917T073500
+SUMMARY:🏃 Footing récupération 45' · 9 km
+DESCRIPTION:SEMAINE 5/11 — Assimilation (70 km)\n\n45' très facile. Muscu B le midi.\n\n⏱️ Allure : Récupération — 5'15–5'35/km · Z1 — < 140 bpm\n👟 Chaussures : On CloudSurfer (163 km) — 10 mm de drop\, 37 mm au talon : la meilleure du placard pour le tendon\n📏 Volume : 9 km · ~45'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-18-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260918T063000
+DTEND;TZID=Europe/Paris:20260918T074500
+SUMMARY:🏃 Endurance active 55' + 8 LD · 11 km
+DESCRIPTION:SEMAINE 5/11 — Assimilation (70 km)\n\n55' @ 4'40–4'55/km\, allure « confortablement engagée » — ce n'est pas une séance.\n8 lignes droites de 20".\n\n⏱️ Allure : Endurance active — 4'40–4'55/km · Z2/Z3 — 150–158 bpm\n👟 Chaussures : Adizero Boston 13 (231 km)\n📏 Volume : 11 km · ~55'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-19-repos@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:🛌 Repos
+DESCRIPTION:SEMAINE 5/11 — Assimilation (70 km)\n\nRepos complet.\n\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Repos
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-20-sl@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260920T080000
+DTEND;TZID=Europe/Paris:20260920T102000
+SUMMARY:🛣️ SORTIE LONGUE 24 km — finish tenu · 24 km
+DESCRIPTION:SEMAINE 5/11 — Assimilation (70 km)\n\n16 km @ 4'55/km\n8 km @ 4'20/km\n\n📊 POINT D'ÉTAPE N°1 : pesée\, sensations\, état du tendon\, et vérification que l'allure spécifique à 3'57–4'02 tient la route. C'est ici qu'on ajuste si besoin.\n\n⏱️ Allure : Endurance active — 4'40–4'55/km · Z2/Z3 — 150–158 bpm\n👟 Chaussures : Adizero Boston 13 (231 km)\n📏 Volume : 24 km · ~120'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Sortie longue
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-21-repos@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260922
+SUMMARY:🛌 Repos + Muscu A
+DESCRIPTION:SEMAINE 6/11 — Spécifique — 2 × 7 km (86 km)\n\nRepos course à pied.\n\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Repos
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-22-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260922T063000
+DTEND;TZID=Europe/Paris:20260922T075000
+SUMMARY:🏃 Footing 60' + 6 lignes droites · 12 km
+DESCRIPTION:SEMAINE 6/11 — Spécifique — 2 × 7 km (86 km)\n\n60' facile + 6 LD.\n\n⏱️ Allure : Footing facile — 5'05–5'25/km · Z2 — 140–150 bpm\n👟 Chaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack\, volume facile\n📏 Volume : 12 km · ~60'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-23-piste@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260923T184500
+DTEND;TZID=Europe/Paris:20260923T205500
+SUMMARY:🎽 PISTE — 3 × 2000 m · 17 km
+DESCRIPTION:SEMAINE 6/11 — Spécifique — 2 × 7 km (86 km)\n\n4\,5 km en trot pour aller\nGammes en équipe\nCœur de séance : 3 × 2000 m @ 3'47–3'52/km\, récupération 3'\n4\,5 km en trot pour rentrer\n\nPlus long\, plus proche du seuil : la piste devient marathon-compatible.\n\n⏱️ Allure : Seuil — 3'47–3'53/km · Z4 — 173–178 bpm\n👟 Chaussures : Nike Zoom Fly 5 vert/blanc (647 km) — piste\n📏 Volume : 17 km · ~110'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Piste
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-24-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260924T063000
+DTEND;TZID=Europe/Paris:20260924T073500
+SUMMARY:🏃 Footing récupération 45' · 9 km
+DESCRIPTION:SEMAINE 6/11 — Spécifique — 2 × 7 km (86 km)\n\n45' très facile. Muscu B le midi.\n\n⏱️ Allure : Récupération — 5'15–5'35/km · Z1 — < 140 bpm\n👟 Chaussures : On CloudSurfer (163 km) — 10 mm de drop\, 37 mm au talon : la meilleure du placard pour le tendon\n📏 Volume : 9 km · ~45'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-25-seance@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260925T061500
+DTEND;TZID=Europe/Paris:20260925T081000
+SUMMARY:⚡ SPÉCIFIQUE — 2 × 7 km · 18 km
+DESCRIPTION:SEMAINE 6/11 — Spécifique — 2 × 7 km (86 km)\n\n3 km d'échauffement\n2 × 7 km @ 3'57–4'02/km\, récupération 1 km @ 4'50/km\n2 km de retour au calme\n\nSéance signature du bloc. Flasque Maurten 320 + 1 gel entre les deux blocs : on répète aussi la nutrition.\n\n⏱️ Allure : Allure spécifique marathon — 3'57–4'02/km · Z3/Z4 — 164–171 bpm\n👟 Chaussures : Nike Zoom Fly 6 (neuves\, reçues le 19/08) — 9\,6 mm de drop\, 40 mm au talon : séances longues à allure marathon\n📏 Volume : 18 km · ~95'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Séance clé
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-26-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260926T083000
+DTEND;TZID=Europe/Paris:20260926T092000
+SUMMARY:🏃 Footing 30' · 6 km
+DESCRIPTION:SEMAINE 6/11 — Spécifique — 2 × 7 km (86 km)\n\n30' récupération.\n\n⏱️ Allure : Récupération — 5'15–5'35/km · Z1 — < 140 bpm\n👟 Chaussures : Nike Pegasus 41 « Jakob » (476 km)\n📏 Volume : 6 km · ~30'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-27-sl@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260927T074500
+DTEND;TZID=Europe/Paris:20260927T100500
+SUMMARY:🛣️ SORTIE LONGUE PROGRESSIVE — 24 km · 24 km
+DESCRIPTION:SEMAINE 6/11 — Spécifique — 2 × 7 km (86 km)\n\n12 km @ 4'55/km\npuis 12 km en descendant régulièrement de 4'40 à 4'10/km\n\nProgressive continue\, sans récupération : la contrainte est différente de l'alterné\, et c'est exactement l'état dans lequel tu finiras un marathon.\n\n⏱️ Allure : Endurance active — 4'40–4'55/km · Z2/Z3 — 150–158 bpm\n👟 Chaussures : Adizero Boston 13 (231 km)\n📏 Volume : 24 km · ~120'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Sortie longue
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-28-repos@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+SUMMARY:🛌 Repos + Muscu A
+DESCRIPTION:SEMAINE 7/11 — PIC DE VOLUME (92 km)\n\nRepos course à pied.\n\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Repos
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-29-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260929T063000
+DTEND;TZID=Europe/Paris:20260929T080000
+SUMMARY:🏃 Footing 70' + 6 lignes droites · 14 km
+DESCRIPTION:SEMAINE 7/11 — PIC DE VOLUME (92 km)\n\n70' facile + 6 LD.\n\n⏱️ Allure : Footing facile — 5'05–5'25/km · Z2 — 140–150 bpm\n👟 Chaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack\, volume facile\n📏 Volume : 14 km · ~70'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-09-30-piste@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260930T184500
+DTEND;TZID=Europe/Paris:20260930T205500
+SUMMARY:🎽 PISTE — 6 × 1000 m · 17 km
+DESCRIPTION:SEMAINE 7/11 — PIC DE VOLUME (92 km)\n\n4\,5 km en trot pour aller\nGammes en équipe\nCœur de séance : 6 × 1000 m @ 3'28–3'34/km\, récupération 2'\n4\,5 km en trot pour rentrer\n\n⏱️ Allure : VO2max (800–2000 m) — 3'28–3'36/km · Z5 — 178–185 bpm\n👟 Chaussures : Nike Zoom Fly 5 vert/blanc (647 km) — piste\n📏 Volume : 17 km · ~110'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Piste
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-01-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261001T063000
+DTEND;TZID=Europe/Paris:20261001T074000
+SUMMARY:🏃 Footing récupération 50' · 10 km
+DESCRIPTION:SEMAINE 7/11 — PIC DE VOLUME (92 km)\n\n50' très facile. Muscu B le midi.\n\n⏱️ Allure : Récupération — 5'15–5'35/km · Z1 — < 140 bpm\n👟 Chaussures : On CloudSurfer (163 km) — 10 mm de drop\, 37 mm au talon : la meilleure du placard pour le tendon\n📏 Volume : 10 km · ~50'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-02-seance@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261002T061500
+DTEND;TZID=Europe/Paris:20261002T075500
+SUMMARY:⚡ SEUIL LONG — 3 × 10' · 15 km
+DESCRIPTION:SEMAINE 7/11 — PIC DE VOLUME (92 km)\n\n3 km d'échauffement\n3 × 10' @ 3'48–3'52/km\, récupération 2'30\n2 km de retour au calme\n\n⏱️ Allure : Seuil — 3'47–3'53/km · Z4 — 173–178 bpm\n👟 Chaussures : Adidas Evo SL neuve — réservée aux séances\n📏 Volume : 15 km · ~80'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Séance clé
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-03-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261003T083000
+DTEND;TZID=Europe/Paris:20261003T093000
+SUMMARY:🏃 Footing 40' · 8 km
+DESCRIPTION:SEMAINE 7/11 — PIC DE VOLUME (92 km)\n\n40' récupération.\n\n⏱️ Allure : Récupération — 5'15–5'35/km · Z1 — < 140 bpm\n👟 Chaussures : Nike Pegasus 41 « Jakob » (476 km)\n📏 Volume : 8 km · ~40'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-04-sl@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261004T074500
+DTEND;TZID=Europe/Paris:20261004T102000
+SUMMARY:🛣️ SORTIE LONGUE — 2 × 9 km à allure spécifique · 28 km
+DESCRIPTION:SEMAINE 7/11 — PIC DE VOLUME (92 km)\n\n4 km @ 5'00/km\n2 × (9 km @ 3'57–4'02/km / 2 km @ 4'50/km)\n2 km de retour au calme\n\n📊 POINT D'ÉTAPE N°2 : 18 km à allure spécifique dans une sortie de 28. C'est LA séance qui dit où tu en es — pour New York et\, surtout\, pour Milan.\n\n⏱️ Allure : Allure spécifique marathon — 3'57–4'02/km · Z3/Z4 — 164–171 bpm\n👟 Chaussures : Nike Zoom Fly 6 (neuves\, reçues le 19/08) — 9\,6 mm de drop\, 40 mm au talon : séances longues à allure marathon\n📏 Volume : 28 km · ~135'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Sortie longue
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-05-repos@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:🛌 Repos + Muscu A
+DESCRIPTION:SEMAINE 8/11 — RÉPÉTITION GÉNÉRALE (80 km)\n\nRepos course à pied.\n\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Repos
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-06-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261006T063000
+DTEND;TZID=Europe/Paris:20261006T075500
+SUMMARY:🏃 Footing 65' · 13 km
+DESCRIPTION:SEMAINE 8/11 — RÉPÉTITION GÉNÉRALE (80 km)\n\n65' facile.\n\n⏱️ Allure : Footing facile — 5'05–5'25/km · Z2 — 140–150 bpm\n👟 Chaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack\, volume facile\n📏 Volume : 13 km · ~65'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-07-piste@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261007T184500
+DTEND;TZID=Europe/Paris:20261007T204000
+SUMMARY:🎽 PISTE allégée — 8 × 500 m · 14 km
+DESCRIPTION:SEMAINE 8/11 — RÉPÉTITION GÉNÉRALE (80 km)\n\n4\,5 km en trot pour aller\nGammes en équipe\nCœur de séance : 8 × 500 m @ 3'18–3'22/km\, récupération 1'30\n4\,5 km en trot pour rentrer\n\nCourt et nerveux : on protège dimanche.\n\n⏱️ Allure : VMA courte (200–600 m) — 3'15–3'22/km · Z5 — max\n👟 Chaussures : Nike Zoom Fly 5 vert/blanc (647 km) — piste\n📏 Volume : 14 km · ~95'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Piste
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-08-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261008T063000
+DTEND;TZID=Europe/Paris:20261008T074000
+SUMMARY:🏃 Footing récupération 50' · 10 km
+DESCRIPTION:SEMAINE 8/11 — RÉPÉTITION GÉNÉRALE (80 km)\n\n50' très facile. Muscu B le midi — dernière séance de charge.\n\n⏱️ Allure : Récupération — 5'15–5'35/km · Z1 — < 140 bpm\n👟 Chaussures : On CloudSurfer (163 km) — 10 mm de drop\, 37 mm au talon : la meilleure du placard pour le tendon\n📏 Volume : 10 km · ~50'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-09-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261009T063000
+DTEND;TZID=Europe/Paris:20261009T073500
+SUMMARY:🏃 Endurance active 45' + 6 LD · 9 km
+DESCRIPTION:SEMAINE 8/11 — RÉPÉTITION GÉNÉRALE (80 km)\n\n45' @ 4'50/km + 6 lignes droites. Rien de plus : dimanche est la vraie séance.\n\n⏱️ Allure : Endurance active — 4'40–4'55/km · Z2/Z3 — 150–158 bpm\n👟 Chaussures : Adizero Boston 13 (231 km)\n📏 Volume : 9 km · ~45'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-10-repos@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:🛌 Repos
+DESCRIPTION:SEMAINE 8/11 — RÉPÉTITION GÉNÉRALE (80 km)\n\nRepos complet. Préparation du matériel exactement comme un jour de course.\n\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Repos
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-11-sl@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261011T094000
+DTEND;TZID=Europe/Paris:20261011T124000
+SUMMARY:🛣️ 🎯 RÉPÉTITION GÉNÉRALE — 34 km dont 25 à l'allure NYC · 34 km
+DESCRIPTION:SEMAINE 8/11 — RÉPÉTITION GÉNÉRALE (80 km)\n\n5 km @ 5'00/km\n25 km @ 4'10–4'15/km\n4 km de retour au calme\n\n🎯 SIMULATION COMPLÈTE — et la SEULE séance du plan calée sur l'allure de course NYC\, pas sur l'allure spécifique. Ici on ne cherche pas un stimulus\, on répète une course :\n• Tenue de course exacte\n• Alphafly 3 « Chicago 25 »\n• Petit-déjeuner identique à celui du 1er novembre\n• Gel Maurten 100 aux km 8 / 15 / 22 / 29\n• Départ à 9h40 pour coller à l'heure de New York\n\n📊 POINT D'ÉTAPE N°3 : après cette séance\, l'objectif chrono\, la chaussure et le plan nutrition sont figés.\n\n⏱️ Allure : Allure de course NYC — 4'10–4'15/km · Z3 — 158–166 bpm\n👟 Chaussures : Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire\n📏 Volume : 34 km · ~160'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Sortie longue
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-12-repos@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:🛌 Repos + Muscu A allégée
+DESCRIPTION:SEMAINE 9/11 — Dernière semaine de charge (84 km)\n\nRepos course à pied. Muscu très allégée (charges − 40 %).\n\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Repos
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-13-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261013T063000
+DTEND;TZID=Europe/Paris:20261013T075000
+SUMMARY:🏃 Footing 60' · 12 km
+DESCRIPTION:SEMAINE 9/11 — Dernière semaine de charge (84 km)\n\n60' facile — lendemain de 34 km\, on reste vraiment souple.\n\n⏱️ Allure : Récupération — 5'15–5'35/km · Z1 — < 140 bpm\n👟 Chaussures : On CloudSurfer (163 km) — 10 mm de drop\, 37 mm au talon : la meilleure du placard pour le tendon\n📏 Volume : 12 km · ~60'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-14-piste@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261014T184500
+DTEND;TZID=Europe/Paris:20261014T205000
+SUMMARY:🎽 PISTE — 5 × 1200 m · 16 km
+DESCRIPTION:SEMAINE 9/11 — Dernière semaine de charge (84 km)\n\n4\,5 km en trot pour aller\nGammes en équipe\nCœur de séance : 5 × 1200 m @ 3'32–3'36/km\, récupération 2'30\n4\,5 km en trot pour rentrer\n\n⏱️ Allure : VO2max (800–2000 m) — 3'28–3'36/km · Z5 — 178–185 bpm\n👟 Chaussures : Nike Zoom Fly 5 vert/blanc (647 km) — piste\n📏 Volume : 16 km · ~105'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Piste
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-15-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261015T063000
+DTEND;TZID=Europe/Paris:20261015T074000
+SUMMARY:🏃 Footing récupération 50' · 10 km
+DESCRIPTION:SEMAINE 9/11 — Dernière semaine de charge (84 km)\n\n50' très facile. Muscu B le midi — dernière\, très légère.\n\n⏱️ Allure : Récupération — 5'15–5'35/km · Z1 — < 140 bpm\n👟 Chaussures : On CloudSurfer (163 km) — 10 mm de drop\, 37 mm au talon : la meilleure du placard pour le tendon\n📏 Volume : 10 km · ~50'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-16-seance@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261016T061500
+DTEND;TZID=Europe/Paris:20261016T080500
+SUMMARY:⚡ SPÉCIFIQUE — 12 km continus + test Vaporfly · 17 km
+DESCRIPTION:SEMAINE 9/11 — Dernière semaine de charge (84 km)\n\n3 km d'échauffement\n12 km @ 3'57–4'02/km en continu\n2 km de retour au calme\n\nLa plus longue séance à allure spécifique du plan.\n\n👟 À faire en Vaporfly Next% 3 neuves : c'est le duel final avec les Alphafly 3. Tu choisis ta chaussure de course à la fin de cette séance.\n\n⏱️ Allure : Allure spécifique marathon — 3'57–4'02/km · Z3/Z4 — 164–171 bpm\n👟 Chaussures : Nike Vaporfly Next% 3 (neuves) — plan B course\n📏 Volume : 17 km · ~90'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Séance clé
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-17-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261017T083000
+DTEND;TZID=Europe/Paris:20261017T092500
+SUMMARY:🏃 Footing 35' · 7 km
+DESCRIPTION:SEMAINE 9/11 — Dernière semaine de charge (84 km)\n\n35' récupération.\n\n⏱️ Allure : Récupération — 5'15–5'35/km · Z1 — < 140 bpm\n👟 Chaussures : Nike Pegasus 41 « Jakob » (476 km)\n📏 Volume : 7 km · ~35'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-18-sl@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261018T080000
+DTEND;TZID=Europe/Paris:20261018T101000
+SUMMARY:🛣️ SORTIE LONGUE 22 km — finish à l'allure NYC · 22 km
+DESCRIPTION:SEMAINE 9/11 — Dernière semaine de charge (84 km)\n\n14 km @ 4'55/km\n8 km @ 4'15/km\n\nDernière sortie longue. À partir de demain\, on ne construit plus rien : on récupère.\n\n⏱️ Allure : Endurance active — 4'40–4'55/km · Z2/Z3 — 150–158 bpm\n👟 Chaussures : Adidas Evo SL neuve — réservée aux séances\n📏 Volume : 22 km · ~110'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Sortie longue
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-19-repos@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:🛌 Repos — fin du déficit calorique
+DESCRIPTION:SEMAINE 10/11 — AFFÛTAGE 1 — on enlève le volume (60 km)\n\nRepos course à pied. ⚖️ À partir d'aujourd'hui : retour à l'équilibre calorique. Plus de muscu jusqu'à la course.\n\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Repos
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-20-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261020T063000
+DTEND;TZID=Europe/Paris:20261020T074000
+SUMMARY:🏃 Footing 50' + 6 lignes droites · 10 km
+DESCRIPTION:SEMAINE 10/11 — AFFÛTAGE 1 — on enlève le volume (60 km)\n\n50' facile + 6 LD.\n\n⏱️ Allure : Footing facile — 5'05–5'25/km · Z2 — 140–150 bpm\n👟 Chaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack\, volume facile\n📏 Volume : 10 km · ~50'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-21-piste@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261021T184500
+DTEND;TZID=Europe/Paris:20261021T203500
+SUMMARY:🎽 PISTE allégée — 5 × 800 m · 14 km
+DESCRIPTION:SEMAINE 10/11 — AFFÛTAGE 1 — on enlève le volume (60 km)\n\n4\,5 km en trot pour aller\nGammes en équipe\nCœur de séance : 5 × 800 m @ 3'30–3'34/km\, récupération 2'\n4\,5 km en trot pour rentrer\n\nOn garde le rendez-vous mais on divise le volume du cœur de séance.\n\n⏱️ Allure : VO2max (800–2000 m) — 3'28–3'36/km · Z5 — 178–185 bpm\n👟 Chaussures : Nike Zoom Fly 5 vert/blanc (647 km) — piste\n📏 Volume : 14 km · ~90'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Piste
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-22-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261022T063000
+DTEND;TZID=Europe/Paris:20261022T073500
+SUMMARY:🏃 Footing récupération 45' · 9 km
+DESCRIPTION:SEMAINE 10/11 — AFFÛTAGE 1 — on enlève le volume (60 km)\n\n45' très facile.\n\n⏱️ Allure : Récupération — 5'15–5'35/km · Z1 — < 140 bpm\n👟 Chaussures : On CloudSurfer (163 km) — 10 mm de drop\, 37 mm au talon : la meilleure du placard pour le tendon\n📏 Volume : 9 km · ~45'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-23-seance@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261023T061500
+DTEND;TZID=Europe/Paris:20261023T073500
+SUMMARY:⚡ ALLURE NYC — 6 km · 11 km
+DESCRIPTION:SEMAINE 10/11 — AFFÛTAGE 1 — on enlève le volume (60 km)\n\n3 km d'échauffement\n6 km @ 4'10–4'15/km\n2 km de retour au calme\n\nEn chaussures de course\, à l'allure de course. Après un bloc entier à 4'00\, ça doit te paraître ridiculement facile — c'est exactement le signal qu'on cherche.\n\n⏱️ Allure : Allure de course NYC — 4'10–4'15/km · Z3 — 158–166 bpm\n👟 Chaussures : Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire\n📏 Volume : 11 km · ~60'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Séance clé
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-24-repos@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:🛌 Repos
+DESCRIPTION:SEMAINE 10/11 — AFFÛTAGE 1 — on enlève le volume (60 km)\n\nRepos complet.\n\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Repos
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-25-sl@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261025T083000
+DTEND;TZID=Europe/Paris:20261025T101000
+SUMMARY:🛣️ SORTIE LONGUE COURTE — 16 km · 16 km
+DESCRIPTION:SEMAINE 10/11 — AFFÛTAGE 1 — on enlève le volume (60 km)\n\n12 km @ 5'00/km\n4 km @ 4'15/km\n\nDernière sortie « longue » — elle n'en a plus que le nom.\n\n⏱️ Allure : Endurance active — 4'40–4'55/km · Z2/Z3 — 150–158 bpm\n👟 Chaussures : Adizero Boston 13 (231 km)\n📏 Volume : 16 km · ~80'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Sortie longue
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-26-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261026T063000
+DTEND;TZID=Europe/Paris:20261026T073500
+SUMMARY:🏃 Footing 45' + 6 lignes droites · 9 km
+DESCRIPTION:SEMAINE 11/11 — AFFÛTAGE 2 — voyage & course (77.2 km)\n\n45' facile + 6 LD de 20". Rien de plus.\n\n⏱️ Allure : Footing facile — 5'05–5'25/km · Z2 — 140–150 bpm\n👟 Chaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack\, volume facile\n📏 Volume : 9 km · ~45'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-27-seance@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261027T063000
+DTEND;TZID=Europe/Paris:20261027T074500
+SUMMARY:⚡ ACTIVATION — 8 × 1' · 10 km
+DESCRIPTION:SEMAINE 11/11 — AFFÛTAGE 2 — voyage & course (77.2 km)\n\n2 km d'échauffement\n8 × 1' @ 3'50/km\, récupération 1'30 en trot\n2 km de retour au calme\n\nDernière touche de vitesse. Objectif : sensations\, pas performance.\n\n⏱️ Allure : Seuil — 3'47–3'53/km · Z4 — 173–178 bpm\n👟 Chaussures : Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire\n📏 Volume : 10 km · ~55'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Séance clé
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-28-repos@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:🛌 Repos (ou trot 30' avec les copains)
+DESCRIPTION:SEMAINE 11/11 — AFFÛTAGE 2 — voyage & course (77.2 km)\n\nPas de cœur de séance à la piste. Si tu y vas\, uniquement le trot et les gammes\, et tu rentres.\n\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Repos
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-29-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261029T063000
+DTEND;TZID=Europe/Paris:20261029T072500
+SUMMARY:🏃 Footing 35' + 4 LD — dernier run à Paris · 7 km
+DESCRIPTION:SEMAINE 11/11 — AFFÛTAGE 2 — voyage & course (77.2 km)\n\n35' très facile + 4 lignes droites.\n\n🧳 Ce soir : sac bouclé. Chaussures de course\, dossard\, tenue\, gels ET montre EN CABINE.\n\n⏱️ Allure : Footing facile — 5'05–5'25/km · Z2 — 140–150 bpm\n👟 Chaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack\, volume facile\n📏 Volume : 7 km · ~35'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-30-voyage@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20261030T060000
+DTEND;TZID=Europe/Paris:20261030T064000
+SUMMARY:✈️ ✈️ VOYAGE PARIS → NEW YORK · 4 km
+DESCRIPTION:SEMAINE 11/11 — AFFÛTAGE 2 — voyage & course (77.2 km)\n\n🌅 06h00 : 20' de déblocage très facile (~4 km) avant de partir.\n✈️ 12h30 : décollage.\n\nDans l'avion :\n• Montre à l'heure de New York dès l'embarquement\n• Bas de contention\n• 500 ml d'eau toutes les 2 h\, zéro alcool\n• Se lever et marcher toutes les 90'\n• Repas aux heures de NY\, pas aux heures de Paris\n• Ne PAS dormir plus de 90' d'affilée\n\nÀ l'arrivée (≈ 15h00 locale) : lumière du jour\, marcher 30–40'\, dîner à 19h locale\, coucher 22h30 locale.\n\n⏱️ Allure : Récupération — 5'15–5'35/km · Z1 — < 140 bpm\n👟 Chaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack\, volume facile\n📏 Volume : 4 km · ~20'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Voyage
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-10-31-footing@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=America/New_York:20261031T070000
+DTEND;TZID=America/New_York:20261031T074500
+SUMMARY:🏃 Déverrouillage 25' à Central Park · 5 km
+DESCRIPTION:SEMAINE 11/11 — AFFÛTAGE 2 — voyage & course (77.2 km)\n\n25' très facile + 4 lignes droites + 10' de gammes.\nLe décalage joue pour toi : tu seras naturellement réveillé tôt\, profites-en pour courir à 7h locale.\n\n📋 Reste de la journée :\n• Expo tôt et rapide — 1 h debout maximum\, puis on s'assoit\n• Repas principal glucidique à midi\n• Dîner léger et tôt (18h30)\n• Préparer la tenue et les gels avant de dormir\n• Coucher 21h30 locale\n\n⏱️ Allure : Récupération — 5'15–5'35/km · Z1 — < 140 bpm\n👟 Chaussures : Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire\n📏 Volume : 5 km · ~25'\n\n🦶 Avant : 3' marche + 5 × 45" isométrie mollet (2 jambes puis 1) + 12' de trot très progressif. Après : 3 × 15 excentriques lents genou tendu + 3 × 15 genou fléchi.
+CATEGORIES:Footing
+END:VEVENT
+BEGIN:VEVENT
+UID:nyc2026-2026-11-01-course@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=America/New_York:20261101T094000
+DTEND;TZID=America/New_York:20261101T125500
+SUMMARY:🗽 🗽 TCS NEW YORK CITY MARATHON · 42.2 km
+DESCRIPTION:SEMAINE 11/11 — AFFÛTAGE 2 — voyage & course (77.2 km)\n\n🎯 OBJECTIF : 2h55–2h58 · allure cible 4'10–4'15/km · sub-3h = 4'15/km\n\n⚠️ Tu as préparé ce marathon à 4'00/km. L'allure de course est volontairement 12 s/km plus lente : c'est ta marge sur un parcours cassant\, et c'est ce qui te permettra de le vivre au lieu de le subir. Ne la brûle pas dans les 10 premiers kilomètres.\n\n⏱️ PLAN DE COURSE\n• Km 0–3 — Pont de Verrazzano : 1\,6 km de montée. 4'25–4'35\, sans discuter. Puis descente : 4'05–4'10 MAXIMUM.\n• Km 3–25 — Brooklyn : la partie qui piège tout le monde. Verrouille 4'10–4'15. Foule énorme\, tout paraît facile. Ne descends jamais sous 4'08.\n• Km 25–26 — Queensboro Bridge : montée longue\, aucun spectateur\, silence total. Accepte 4'25–4'30 à effort constant.\n• Km 26–32 — 1st Avenue : le virage euphorique. LE piège de NYC. Tu restes à 4'12.\n• Km 32–35 — Bronx : creux classique. Gel + relance mentale.\n• Km 35–39 — 5th Avenue : 4 km de faux plat montant\, la vraie difficulté. 4'18–4'28\, c'est normal.\n• Km 39–42 — Central Park : vallonné. Si tu as de la marge\, c'est ici qu'elle sert.\n\n📍 Repère : semi entre 1h28'00 et 1h29'00 = sub-3h très confortable.\n\n🍯 NUTRITION : Maurten 320 en flasque sur les 10 premiers km. Gel Maurten 100 aux km 8 / 15 / 22 / 29 / 35. Eau à chaque table.\n\n⏳ DÉPART : 2 à 3 h d'attente à Fort Wadsworth. Vêtements jetables\, couverture de survie\, 1 gel + boisson à H − 45'\, échauffement court (10' de trot + 4 LD) à H − 30'.\n\n⏱️ Allure : Allure de course NYC — 4'10–4'15/km · Z3 — 158–166 bpm\n👟 Chaussures : Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire\n📏 Volume : 42.2 km · ~175'
+CATEGORIES:COURSE
+END:VEVENT
+BEGIN:VEVENT
+UID:muscu-MO@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260817T123000
+DTEND;TZID=Europe/Paris:20260817T131500
+RRULE:FREQ=WEEKLY;BYDAY=MO;UNTIL=20261016T000000Z
+SUMMARY:🏋️ Muscu A — poussée haut du corps + gainage
+DESCRIPTION:MUSCU A — Poussée haut du corps + gainage (45'\, pause déj)\n\n• Développé couché haltères — 4 × 8\n• Dips ou pompes lestées — 4 × 10\n• Élévations latérales — 3 × 12\n• Planche — 3 × 45"\n• Planche latérale — 3 × 30" par côté\n• Dead bug — 3 × 12\n• Mollets : heel raises lourds 3 × 15 (protocole tendon)\n\n⚠️ Zéro travail explosif des jambes tant que le tendon est douloureux.
+END:VEVENT
+BEGIN:VEVENT
+UID:muscu-TH@seb-metrics
+DTSTAMP:20260817T060000Z
+DTSTART;TZID=Europe/Paris:20260820T123000
+DTEND;TZID=Europe/Paris:20260820T131500
+RRULE:FREQ=WEEKLY;BYDAY=TH;UNTIL=20261016T000000Z
+SUMMARY:🏋️ Muscu B — tirage haut du corps + abdos
+DESCRIPTION:MUSCU B — Tirage haut du corps + abdos (45'\, pause déj)\n\n• Tractions (assistées si besoin) — 4 × 6–8\n• Rowing haltère — 4 × 10\n• Face pull — 3 × 15\n• Relevés de jambes suspendu — 3 × 12\n• Pallof press — 3 × 12 par côté\n• Hollow hold — 3 × 30"\n• Mollets : excentriques lents genou fléchi 3 × 15\n\n⚠️ Zéro travail explosif des jambes tant que le tendon est douloureux.
+END:VEVENT
+END:VCALENDAR
