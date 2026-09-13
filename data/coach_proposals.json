@@ -1,31 +1,6 @@
 {
  "proposals": [
   {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-08-10",
-   "field": "description_note",
-   "new_value": "Vrai repos aujourd'hui : pas de footing bonus. Le corps doit encaisser la sortie longue d'hier avant le seuil/MP de la semaine.",
-   "reason": "Historique récent montre des jours de repos systématiquement transformés en sorties (27/07, 07/08), ce qui nuit à la récupération réelle.",
-   "id": "6423cf31",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "expired",
-   "created_at": "2026-08-10T06:57:13"
-  },
-  {
-   "severity": "major",
-   "kind": "change_type",
-   "date": "2026-08-11",
-   "field": "description_note",
-   "new_value": "Remplacer le seuil 6×3min par un footing facile (10-12km, allure 5'20-5'40/km, sans fractionné)",
-   "reason": "La sortie longue de dimanche (26km, +130% du prévu, 32°C) a produit un RPE 9 et un stance_drift de 8.9% signant une fatigue mécanique réelle. Un seul jour de repos ne suffit pas à absorber ce pic avant un seuil à allure cible.",
-   "id": "91dcd979",
-   "status": "accepted",
-   "created_at": "2026-08-11T06:35:55",
-   "decided_at": "2026-08-11T06:47:07",
-   "applied_detail": "2026-08-11 : consigne inscrite (change_type)"
-  },
-  {
    "severity": "major",
    "kind": "change_type",
    "date": "2026-08-13",
@@ -452,6 +427,42 @@
    "guardrail_reject": "jour passé ou en cours",
    "status": "pending",
    "created_at": "2026-09-13T10:25:36"
+  },
+  {
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-09-13",
+   "field": null,
+   "new_value": "Réduction du volume et de l'allure MP du long run du jour",
+   "reason": "Le seuil à 3'56/km a été raté à 36% du volume il y a 3 jours (5'03 réalisé). Viser 3'53/km sur 12km aujourd'hui est hors de portée et risqué vu la fatigue mécanique documentée (step_drift -11.8%, flag step_fade).",
+   "replacement": {
+    "title": "SL 26km · 10km MP stratégie",
+    "type": "long_mp",
+    "km": 26.0,
+    "target_pace": "4'16\"/km",
+    "description": "Sortie longue en endurance à 4'51/km, avec un bloc de 10km à allure stratégie 4'16/km inséré au milieu (pas 3'53). Si les jambes sont lourdes après 5km à ce rythme, reviens en endurance sans forcer. Bois régulièrement, surveille la FC plus que l'allure vu la chaleur possible."
+   },
+   "id": "c5709bd8",
+   "status": "pending",
+   "created_at": "2026-09-13T17:59:19"
+  },
+  {
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-09-15",
+   "field": null,
+   "new_value": "VMA allégée en intensité et volume",
+   "reason": "Le 6×800m à 3'39/km a été raté à 60% du volume avec 80-90s/km de retard. Enchaîner du 5×1000m à 3'28/km (plus rapide encore) sur une semaine déjà en échec sur les séances clés va juste confirmer l'échec et taper sur le moral et les jambes.",
+   "replacement": {
+    "title": "VMA courte 5×800m",
+    "type": "intervals",
+    "km": 12.0,
+    "target_pace": "3'45\"/km",
+    "description": "5×800m à 3'45/km (allure 10k, pas VMA pure) avec 2min30 de récup trot. Objectif : retrouver des allures tenues et propres, pas la vitesse max. Si dès le 3e répétition tu es au-dessus de 3'50/km, arrête là et termine en footing."
+   },
+   "id": "89d37e28",
+   "status": "pending",
+   "created_at": "2026-09-13T17:59:19"
   }
  ]
 }
