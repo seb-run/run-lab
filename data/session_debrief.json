@@ -1,45 +1,45 @@
 {
- "headline": "Footing facile réussi, décontracté ; équilibre légèrement à gauche à surveiller.",
+ "headline": "Allure spécifique tenue pile dans la cible malgré une séance rallongée de +34%.",
  "bullets": [
-  "FC 137, -9 vs ta réf (146), pour une allure plus lente (+11\"/km) : confort cohérent, RPE 2/10.",
-  "Équilibre 51.4% à gauche (réf 50.6%), stable sur les 6 km (50.9-52.0%) : légère décharge du droit.",
-  "Ratio vertical 9.32 (+0.24 vs réf), dérive +6.4% en séance sous 25-28°C : rien d'alarmant."
+  "Blocs à 3'57-4'02/km : allure réelle 3'54-4'02/km, dans la fourchette cible du plan.",
+  "28,21 km parcourus vs 21 km prévus (+34%), l'allure moyenne globale en pâtit, pas les blocs.",
+  "FC moyenne 158, identique à ta référence 60j (158) sur allure comparable, pas de dérive."
  ],
  "points": [
   {
-   "label": "FC moyenne",
-   "valeur": "137 bpm",
-   "ecart": "-9 vs réf 146",
-   "lecture": "allure plus lente, effort contenu",
+   "label": "Allure spécifique",
+   "valeur": "3'54-4'02/km",
+   "ecart": "dans la cible plan (3'57-4'02)",
+   "lecture": "objectif marathon tenu",
    "ton": "bon"
   },
   {
-   "label": "Équilibre G/D",
-   "valeur": "51.4% gauche",
-   "ecart": "+0.8pt vs réf 50.6%",
-   "lecture": "légère décharge du côté Achille",
-   "ton": "vigilance"
+   "label": "Volume",
+   "valeur": "28,21 km",
+   "ecart": "+34% vs 21 km prévus",
+   "lecture": "séance nettement rallongée",
+   "ton": "neutre"
   },
   {
-   "label": "Ratio vertical",
-   "valeur": "9.32",
-   "ecart": "+0.24 vs réf 9.08",
-   "lecture": "dérive en séance, chaleur probable",
-   "ton": "neutre"
+   "label": "FC moyenne",
+   "valeur": "158 bpm",
+   "ecart": "= réf. 60j (158)",
+   "lecture": "aucune dérive cardiaque",
+   "ton": "bon"
   }
  ],
- "achille": "Équilibre gauche 51.4% toute la séance (52.0→50.9→51.7), légère décharge du droit vs réf 50.6%.",
- "a_surveiller": null,
+ "achille": null,
+ "a_surveiller": "Pas de données de dynamique (contact, équilibre) cette séance : suivi Achille impossible.",
  "seance": {
-  "date": "12/09/2026",
-  "heure": "09:35",
-  "titre": "i185812405",
-  "type_detecte": "footing",
-  "km": 6.01,
-  "duree": "32m 12s",
-  "allure": "5'22\"/km",
-  "fc_moy": 137
+  "date": "13/09/2026",
+  "heure": "10:12",
+  "titre": "Morning Run",
+  "type_detecte": "sortie_longue",
+  "km": 28.21,
+  "duree": "2h 04m 00s",
+  "allure": "4'24\"/km",
+  "fc_moy": 158
  },
- "generated_at": "2026-09-12T08:14:55",
- "baseline_n": 22
+ "generated_at": "2026-09-13T10:26:08",
+ "baseline_n": 11
 }
