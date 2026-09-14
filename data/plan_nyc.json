@@ -1437,17 +1437,17 @@
         }
       ],
       "compliance": {
-        "km_pct": 76,
-        "km_done": 60.8,
-        "km_planned": 79.5,
+        "km_pct": 82,
+        "km_done": 89.0,
+        "km_planned": 108.9,
         "km_done_week": 89.0,
         "km_planned_week": 108.9,
-        "sessions_done": 5,
-        "sessions_planned": 5,
+        "sessions_done": 6,
+        "sessions_planned": 6,
         "sessions_done_week": 6,
-        "keys_success": 0,
-        "keys_total": 2,
-        "points": 61,
+        "keys_success": 1,
+        "keys_total": 3,
+        "points": 68,
         "verdict": "partial"
       },
       "volume_actual_to_date": 60.8,
@@ -1472,7 +1472,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet ou mobilité/yoga 20-30min. Récupération.",
-          "status": "pending",
+          "status": "today",
           "actual": null
         },
         {
@@ -1516,6 +1516,10 @@
             {
               "kind": "note",
               "text": "Vise l'allure stratégie 4'16/km, pas l'allure objectif 3'53/km : les séances clés de la semaine dernière ont montré que le rythme cible actuel n'est pas encore tenable. On resserre progressivement une fois la régularité retrouvée."
+            },
+            {
+              "kind": "note",
+              "text": "Hydrate-toi bien avant et pendant, vise l'allure au feeling si la chaleur est forte — pas d'objectif chrono strict aujourd'hui, priorité à retrouver des jambes qui répondent à l'allure marathon."
             }
           ]
         },
@@ -1546,7 +1550,7 @@
         {
           "type": "long_prog",
           "title": "SL progressive 24km",
-          "km": 24,
+          "km": 22.0,
           "duration_min": 120,
           "key": true,
           "description": "24km progressif : démarre 4'51\"/km, finis allure marathon 4'16\"/km. Travail mental de fin.",
@@ -1554,9 +1558,20 @@
           "date": "2026-09-20",
           "dow": "Sun",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "volume",
+              "from": 24.0,
+              "to": 22.0,
+              "reason": "Le long avec MP de la semaine dernière a montré un début de fatigue mécanique en fin de course (stance_drift +5.6%). Réduire légèrement le volume du prochain long progressif (24→22km) pour consolider la récupération avant les deux séances clés à venir la semaine suivante."
+            }
+          ]
         }
-      ]
+      ],
+      "volume_actual_to_date": 0.0,
+      "volume_planned_to_date": 0.0,
+      "volume_drift_pct": 0
     },
     {
       "week_num": 3,

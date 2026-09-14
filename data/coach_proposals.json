@@ -1,25 +1,6 @@
 {
  "proposals": [
   {
-   "severity": "major",
-   "kind": "change_type",
-   "date": "2026-08-13",
-   "field": "description_note",
-   "new_value": "Remplacement de la séance MP par un footing d'endurance pour laisser la fatigue mécanique de la longue du 09/08 se résorber avant de retenter du seuil",
-   "reason": "Séance clé de seuil ratée la veille (allure +31s/km) juste après une longue à 130% du volume avec drift mécanique de 8.9% et RPE 9 — un jour de repos n'a pas suffi à absorber cette charge, enchaîner une MP maintenant risque un nouvel échec et casse la confiance avant le bloc spécifique",
-   "replacement": {
-    "title": "Footing endurance",
-    "type": "easy",
-    "km": 12.0,
-    "target_pace": "5'20\"/km",
-    "description": "Allure strictement facile, pas de blocs d'allure marathon aujourd'hui. Objectif : faire circuler les jambes sans les fatiguer davantage. Si sensation de lourdeur ou douleur Achille, coupe à 8-9km. Cadence naturelle, pas de forçage."
-   },
-   "id": "76060dbd",
-   "status": "rejected",
-   "created_at": "2026-08-12T06:59:08",
-   "decided_at": "2026-08-12T14:52:52"
-  },
-  {
    "severity": "minor",
    "kind": "add_note",
    "date": "2026-08-12",
@@ -425,7 +406,7 @@
    "reason": "Tendance récurrente à dépasser le volume prescrit (100-132% sur les 4 dernières séances clés) combinée à des signaux de fatigue mécanique (stance_fade/step_fade) sur 3 séances récentes — besoin de canaliser la charge avant la 24km du 20/09.",
    "id": "57ec16cb",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-13T10:25:36"
   },
   {
@@ -443,7 +424,7 @@
     "description": "Sortie longue en endurance à 4'51/km, avec un bloc de 10km à allure stratégie 4'16/km inséré au milieu (pas 3'53). Si les jambes sont lourdes après 5km à ce rythme, reviens en endurance sans forcer. Bois régulièrement, surveille la FC plus que l'allure vu la chaleur possible."
    },
    "id": "c5709bd8",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-13T17:59:19"
   },
   {
@@ -463,6 +444,24 @@
    "id": "89d37e28",
    "status": "pending",
    "created_at": "2026-09-13T17:59:19"
+  },
+  {
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-09-15",
+   "field": null,
+   "new_value": "Allure 10k/seuil au lieu de VMA pure, volume réduit",
+   "reason": "Deux séances rapides consécutives ratées à 60-90s/km trop lent malgré FC et RPE bas : le problème n'est pas la fatigue mécanique mais l'incapacité à attaquer l'allure VMA en ce moment (chaleur + charge cumulée). Mieux vaut sécuriser une réussite à une intensité plus abordable que risquer un 3e échec.",
+   "replacement": {
+    "title": "5×800m allure 10k/seuil",
+    "type": "intervals",
+    "km": 12.0,
+    "target_pace": "3'50\"/km",
+    "description": "Échauffement 3km facile. 5×800m à 3'50\"/km (r=2min trot). Objectif : retrouver des sensations de réussite sur du rapide sans viser la VMA pure. Si la 1re répétition est difficile, arrête-toi à 4 et rentre en footing. Cours tôt le matin ou le soir pour éviter le pic de chaleur."
+   },
+   "id": "1ee603c3",
+   "status": "pending",
+   "created_at": "2026-09-14T11:00:16"
   }
  ]
 }
