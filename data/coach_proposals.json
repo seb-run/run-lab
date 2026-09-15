@@ -1,18 +1,6 @@
 {
  "proposals": [
   {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-08-12",
-   "field": "description_note",
-   "new_value": "Récup stricte aujourd'hui : reste sous 5'40/km et ne dépasse pas les 11km prévus, même si tu te sens bien. Ton corps a besoin de cette vraie coupure avant la reprise du bloc qualité.",
-   "reason": "Historique récent montre une tendance systématique à transformer les jours faciles/récup en sorties bonus (ex. 07/08, 08/08, 09/08), ce qui a directement précédé l'échec de la séance seuil du 11/08",
-   "id": "6c24f30d",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "expired",
-   "created_at": "2026-08-12T06:59:08"
-  },
-  {
    "severity": "major",
    "kind": "change_type",
    "date": "2026-08-13",
@@ -462,6 +450,24 @@
    "id": "1ee603c3",
    "status": "pending",
    "created_at": "2026-09-14T11:00:16"
+  },
+  {
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-09-15",
+   "field": null,
+   "new_value": "allure VMA (3'28) remplacée par allure seuil/10k (3'45-3'50) avec récup allongée",
+   "reason": "2 séances clés vitesse consécutives ratées en distance ET en allure malgré RPE bas et FC basse — pattern chaleur, pas fatigue. Éviter un 3e échec qui n'apporterait rien et risque d'entamer la confiance.",
+   "replacement": {
+    "title": "5×1000m allure seuil/10k (chaleur)",
+    "type": "intervals",
+    "km": 12.0,
+    "target_pace": "3'50\"/km",
+    "description": "5×1000m à 3'48-3'52/km, récup 2min trot entre chaque. Objectif : retrouver des sensations positives sur du rapide sans viser le chrono VMA par cette chaleur. Hydrate-toi avant/pendant, arrête la série si FC s'envole anormalement pour l'allure. Si ça passe bien et frais, tu pourras revenir sur du 3'28 la semaine prochaine."
+   },
+   "id": "a1a76bdb",
+   "status": "pending",
+   "created_at": "2026-09-15T05:12:06"
   }
  ]
 }

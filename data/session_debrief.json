@@ -1,45 +1,45 @@
 {
- "headline": "Allure spécifique tenue pile dans la cible malgré une séance rallongée de +34%.",
+ "headline": "Séance VMA prévue non réalisée : continu à 5'14\"/km au lieu du 3'28\" ciblé.",
  "bullets": [
-  "Blocs à 3'57-4'02/km : allure réelle 3'54-4'02/km, dans la fourchette cible du plan.",
-  "28,21 km parcourus vs 21 km prévus (+34%), l'allure moyenne globale en pâtit, pas les blocs.",
-  "FC moyenne 158, identique à ta référence 60j (158) sur allure comparable, pas de dérive."
+  "Allure 5'14\"/km, +106\"/km vs cible 3'28\" : aucun fractionné exécuté.",
+  "FC moy 142 vs réf 147 (allure comparable) : cohérent avec le rythme plus lent.",
+  "Équilibre gauche 51.7% vs réf 50.5%, +1.2pt : légère décharge du côté droit."
  ],
  "points": [
   {
-   "label": "Allure spécifique",
-   "valeur": "3'54-4'02/km",
-   "ecart": "dans la cible plan (3'57-4'02)",
-   "lecture": "objectif marathon tenu",
-   "ton": "bon"
+   "label": "Allure vs cible",
+   "valeur": "5'14\"/km",
+   "ecart": "+106\"/km vs 3'28\" prévu",
+   "lecture": "séance qualité non réalisée",
+   "ton": "vigilance"
   },
   {
-   "label": "Volume",
-   "valeur": "28,21 km",
-   "ecart": "+34% vs 21 km prévus",
-   "lecture": "séance nettement rallongée",
+   "label": "Foulée",
+   "valeur": "1.07 m",
+   "ecart": "-0.03 m vs réf 1.10 m",
+   "lecture": "cohérent avec allure plus lente",
    "ton": "neutre"
   },
   {
-   "label": "FC moyenne",
-   "valeur": "158 bpm",
-   "ecart": "= réf. 60j (158)",
-   "lecture": "aucune dérive cardiaque",
-   "ton": "bon"
+   "label": "Équilibre gauche",
+   "valeur": "51.72 %",
+   "ecart": "+1.2pt vs réf 50.5 %",
+   "lecture": "décharge légère du côté droit",
+   "ton": "vigilance"
   }
  ],
- "achille": null,
- "a_surveiller": "Pas de données de dynamique (contact, équilibre) cette séance : suivi Achille impossible.",
+ "achille": "Équilibre gauche 51.3-52% sur toute la séance, au-dessus de ta réf 50.5% : côté droit un peu déchargé.",
+ "a_surveiller": "Pas de signature adducteur : asymétrie stable, ne s'ouvre pas avec la vitesse (-0.31).",
  "seance": {
-  "date": "13/09/2026",
-  "heure": "10:12",
-  "titre": "Morning Run",
-  "type_detecte": "sortie_longue",
-  "km": 28.21,
-  "duree": "2h 04m 00s",
-  "allure": "4'24\"/km",
-  "fc_moy": 158
+  "date": "15/09/2026",
+  "heure": "06:04",
+  "titre": "i186812584",
+  "type_detecte": "endurance",
+  "km": 12.21,
+  "duree": "1h 03m 49s",
+  "allure": "5'14\"/km",
+  "fc_moy": 142
  },
- "generated_at": "2026-09-13T10:26:08",
- "baseline_n": 11
+ "generated_at": "2026-09-15T05:12:32",
+ "baseline_n": 30
 }

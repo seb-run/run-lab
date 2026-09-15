@@ -1472,7 +1472,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet ou mobilité/yoga 20-30min. Récupération.",
-          "status": "today",
+          "status": "done",
           "actual": null
         },
         {
@@ -1485,8 +1485,198 @@
           "target_pace": "3'28\"/km",
           "date": "2026-09-15",
           "dow": "Tue",
-          "status": "pending",
-          "actual": null
+          "status": "done",
+          "actual": {
+            "km": 12.2,
+            "duration_min": 64,
+            "pace_sec": 314,
+            "pace_str": "5'14\"/km",
+            "fc": 142,
+            "cadence": 178,
+            "type": "endurance",
+            "title": "i186812584",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 229.0,
+              "osc_cm": 10.1,
+              "vratio": 9.22,
+              "balance_l": 51.72,
+              "step_m": 1.07,
+              "temp_c": 25,
+              "temp_max": 33,
+              "resp": 34.4,
+              "power": 361,
+              "np": 362,
+              "te_aero": 3.2,
+              "te_ana": 0.0,
+              "load": 111.7,
+              "strides": 5662,
+              "rpe": 2.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 229.0,
+                  "end": 228.0,
+                  "pct": -0.4
+                },
+                "step": {
+                  "start": 1038.0,
+                  "end": 1093.0,
+                  "pct": 5.4
+                },
+                "vratio": {
+                  "start": 9.46,
+                  "end": 9.01,
+                  "pct": -4.9
+                },
+                "osc": {
+                  "start": 100.0,
+                  "end": 101.0,
+                  "pct": 0.8
+                },
+                "hr": {
+                  "start": 138.0,
+                  "end": 145.0,
+                  "pct": 5.4
+                },
+                "cad": {
+                  "start": 88.8,
+                  "end": 88.8,
+                  "pct": 0.0
+                }
+              },
+              "balance_min": 51.34,
+              "balance_max": 52.0,
+              "balance_series": [
+                52.0,
+                51.75,
+                51.91,
+                51.93,
+                51.74,
+                51.9,
+                51.53,
+                51.76,
+                51.88,
+                51.34,
+                51.35,
+                51.58
+              ],
+              "balance_lent": 51.9,
+              "balance_rapide": 51.58,
+              "asym_vs_allure": -0.31,
+              "allure_lent_s": 322,
+              "allure_rapide_s": 305,
+              "rr_beats": 9290,
+              "rmssd_effort": 5.8,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 326,
+                "fc": 130,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 316,
+                "fc": 138,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 321,
+                "fc": 141,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 321,
+                "fc": 142,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 320,
+                "fc": 142,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 314,
+                "fc": 142,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 309,
+                "fc": 144,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 312,
+                "fc": 146,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 305,
+                "fc": 146,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 298,
+                "fc": 143,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 313,
+                "fc": 148,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 307,
+                "fc": 144,
+                "ca": 176
+              },
+              {
+                "km": 0.21,
+                "ps": 318,
+                "fc": 148,
+                "ca": 176
+              }
+            ]
+          },
+          "score": {
+            "points": 52,
+            "verdict": "failed",
+            "verdict_label": "Échouée",
+            "volume_pct": 87,
+            "volume_points": 94,
+            "pace_points": 0,
+            "pace_target_s": 208,
+            "pace_actual_s": 314,
+            "pace_actual_str": "5'14\"/km",
+            "pace_delta_s": 106,
+            "is_quality": true,
+            "hr": {
+              "avg": 142,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": -1.0,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 87%",
+              "Allure +106\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-09-16",
@@ -1520,6 +1710,10 @@
             {
               "kind": "note",
               "text": "Hydrate-toi bien avant et pendant, vise l'allure au feeling si la chaleur est forte — pas d'objectif chrono strict aujourd'hui, priorité à retrouver des jambes qui répondent à l'allure marathon."
+            },
+            {
+              "kind": "note",
+              "text": "Vérifie la météo avant de partir : si chaleur similaire aux jours précédents, autorise-toi 5-8s/km plus lent que 4'16 sur le bloc MP plutôt que de forcer l'allure et t'épuiser."
             }
           ]
         },
@@ -1605,7 +1799,13 @@
           "date": "2026-09-22",
           "dow": "Tue",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Même consigne que la séance VMA du 15/09 : privilégie les sensations et la régularité des splits sur le chrono strict si la chaleur est encore présente. Récup complète entre les 1000m."
+            }
+          ]
         },
         {
           "date": "2026-09-23",
