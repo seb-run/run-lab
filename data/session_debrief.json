@@ -1,45 +1,45 @@
 {
- "headline": "Séance VMA prévue non réalisée : continu à 5'14\"/km au lieu du 3'28\" ciblé.",
+ "headline": "Footing prévu devenu progressif écourté : 5.64km/10.1km, allure divisée par plus d'un tiers.",
  "bullets": [
-  "Allure 5'14\"/km, +106\"/km vs cible 3'28\" : aucun fractionné exécuté.",
-  "FC moy 142 vs réf 147 (allure comparable) : cohérent avec le rythme plus lent.",
-  "Équilibre gauche 51.7% vs réf 50.5%, +1.2pt : légère décharge du côté droit."
+  "5.64 km parcourus sur 10.1 km prévus, séance à 55% du volume (échouée).",
+  "Allure passée de 5'49\"/km à 4'45\"/km, loin des 5'26\" conversationnels demandés.",
+  "FC dérive de 126 à 158 bpm (+26%) sous 27-30°C, alors que RPE reste à 3/10."
  ],
  "points": [
   {
-   "label": "Allure vs cible",
-   "valeur": "5'14\"/km",
-   "ecart": "+106\"/km vs 3'28\" prévu",
-   "lecture": "séance qualité non réalisée",
+   "label": "Volume",
+   "valeur": "5.64 km",
+   "ecart": "-45% vs 10.1km prévus",
+   "lecture": "Séance nettement écourtée",
    "ton": "vigilance"
   },
   {
-   "label": "Foulée",
-   "valeur": "1.07 m",
-   "ecart": "-0.03 m vs réf 1.10 m",
-   "lecture": "cohérent avec allure plus lente",
-   "ton": "neutre"
+   "label": "FC moyenne / dérive",
+   "valeur": "142 bpm",
+   "ecart": "-6 vs réf 147.9, mais +26% en interne (126→158)",
+   "lecture": "Forte dérive, chaleur possible en cause",
+   "ton": "vigilance"
   },
   {
-   "label": "Équilibre gauche",
-   "valeur": "51.72 %",
-   "ecart": "+1.2pt vs réf 50.5 %",
-   "lecture": "décharge légère du côté droit",
-   "ton": "vigilance"
+   "label": "Asymétrie vs allure",
+   "valeur": "-1.53",
+   "ecart": "asym. se réduit à l'accélération (51.8%→49.75%)",
+   "lecture": "Pattern inverse de la signature adducteur",
+   "ton": "bon"
   }
  ],
- "achille": "Équilibre gauche 51.3-52% sur toute la séance, au-dessus de ta réf 50.5% : côté droit un peu déchargé.",
- "a_surveiller": "Pas de signature adducteur : asymétrie stable, ne s'ouvre pas avec la vitesse (-0.31).",
+ "achille": "Équilibre gauche 50.74%, quasi identique à ta réf. 60j (50.48%) — rien à signaler.",
+ "a_surveiller": "Dérive FC marquée (126→158) sur séance raccourcie et accélérée, sous forte chaleur (27-30°C).",
  "seance": {
-  "date": "15/09/2026",
-  "heure": "06:04",
-  "titre": "i186812584",
+  "date": "16/09/2026",
+  "heure": "12:22",
+  "titre": "i187270350",
   "type_detecte": "endurance",
-  "km": 12.21,
-  "duree": "1h 03m 49s",
-  "allure": "5'14\"/km",
+  "km": 5.64,
+  "duree": "28m 39s",
+  "allure": "5'05\"/km",
   "fc_moy": 142
  },
- "generated_at": "2026-09-15T05:12:32",
- "baseline_n": 30
+ "generated_at": "2026-09-16T11:12:39",
+ "baseline_n": 32
 }

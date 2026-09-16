@@ -1687,8 +1687,149 @@
           "duration_min": 55,
           "key": false,
           "description": "10km à 5'26\"/km. Allure conversationnelle, FC en zone 2.",
-          "status": "today",
-          "actual": null
+          "status": "under",
+          "actual": {
+            "km": 5.6,
+            "duration_min": 29,
+            "pace_sec": 305,
+            "pace_str": "5'05\"/km",
+            "fc": 142,
+            "cadence": 177,
+            "type": "endurance",
+            "title": "i187270350",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 224.0,
+              "osc_cm": 10.0,
+              "vratio": 9.07,
+              "balance_l": 50.74,
+              "step_m": 1.09,
+              "temp_c": 27,
+              "temp_max": 30,
+              "resp": 31.4,
+              "power": 375,
+              "np": 383,
+              "te_aero": 2.8,
+              "te_ana": 1.2,
+              "load": 94.4,
+              "strides": 2540,
+              "rpe": 3.0,
+              "feel": 50,
+              "feel_label": "Normal",
+              "drift": {
+                "stance": {
+                  "start": 233.0,
+                  "end": 222.0,
+                  "pct": -4.9
+                },
+                "step": {
+                  "start": 926.0,
+                  "end": 1179.0,
+                  "pct": 27.3
+                },
+                "vratio": {
+                  "start": 9.09,
+                  "end": 9.37,
+                  "pct": 3.1
+                },
+                "osc": {
+                  "start": 86.0,
+                  "end": 111.0,
+                  "pct": 29.2
+                },
+                "hr": {
+                  "start": 126.0,
+                  "end": 158.0,
+                  "pct": 25.9
+                },
+                "cad": {
+                  "start": 91.5,
+                  "end": 87.0,
+                  "pct": -4.9
+                }
+              },
+              "balance_min": 49.44,
+              "balance_max": 52.24,
+              "balance_series": [
+                52.24,
+                51.32,
+                50.06,
+                49.44,
+                50.01,
+                50.86
+              ],
+              "balance_lent": 51.78,
+              "balance_rapide": 49.75,
+              "asym_vs_allure": -1.53,
+              "allure_lent_s": 348,
+              "allure_rapide_s": 276,
+              "rr_beats": 5272,
+              "rmssd_effort": 17.1,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 349,
+                "fc": 122,
+                "ca": 186
+              },
+              {
+                "km": 1.0,
+                "ps": 348,
+                "fc": 129,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 282,
+                "fc": 141,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 270,
+                "fc": 158,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 285,
+                "fc": 160,
+                "ca": 174
+              },
+              {
+                "km": 0.64,
+                "ps": 288,
+                "fc": 155,
+                "ca": 174
+              }
+            ]
+          },
+          "score": {
+            "points": 31,
+            "verdict": "failed",
+            "verdict_label": "Échouée",
+            "volume_pct": 55,
+            "volume_points": 31,
+            "pace_points": null,
+            "pace_target_s": null,
+            "pace_actual_s": null,
+            "pace_actual_str": null,
+            "pace_delta_s": null,
+            "is_quality": false,
+            "hr": {
+              "avg": 142,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": null,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 55%"
+            ]
+          }
         },
         {
           "type": "mp_run",
@@ -1778,11 +1919,11 @@
         "km_pct": 87,
         "km_done": 12.2,
         "km_planned": 14.0,
-        "km_done_week": 12.2,
+        "km_done_week": 17.8,
         "km_planned_week": 78.7,
         "sessions_done": 1,
         "sessions_planned": 1,
-        "sessions_done_week": 1,
+        "sessions_done_week": 2,
         "keys_success": 0,
         "keys_total": 1,
         "points": 73,
