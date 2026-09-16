@@ -1687,7 +1687,7 @@
           "duration_min": 55,
           "key": false,
           "description": "10km à 5'26\"/km. Allure conversationnelle, FC en zone 2.",
-          "status": "pending",
+          "status": "today",
           "actual": null
         },
         {
@@ -1714,6 +1714,10 @@
             {
               "kind": "note",
               "text": "Vérifie la météo avant de partir : si chaleur similaire aux jours précédents, autorise-toi 5-8s/km plus lent que 4'16 sur le bloc MP plutôt que de forcer l'allure et t'épuiser."
+            },
+            {
+              "kind": "note",
+              "text": "Chaleur régulière (23-28°C) sur tes dernières séances rapides : hydrate-toi bien avant/pendant, et cale l'allure MP sur tes sensations réelles plutôt que sur le chrono si ça tire plus que prévu."
             }
           ]
         },
@@ -1759,13 +1763,31 @@
               "from": 24.0,
               "to": 22.0,
               "reason": "Le long avec MP de la semaine dernière a montré un début de fatigue mécanique en fin de course (stance_drift +5.6%). Réduire légèrement le volume du prochain long progressif (24→22km) pour consolider la récupération avant les deux séances clés à venir la semaine suivante."
+            },
+            {
+              "kind": "note",
+              "text": "Ton dernier long run a montré une légère dérive du temps de contact au sol en fin de course (+5.6%) : pense à resserrer la foulée et relâcher les épaules sur la dernière portion, surtout pendant la partie progressive."
             }
           ]
         }
       ],
-      "volume_actual_to_date": 0.0,
-      "volume_planned_to_date": 0.0,
-      "volume_drift_pct": 0
+      "volume_actual_to_date": 12.2,
+      "volume_planned_to_date": 14.0,
+      "volume_drift_pct": -12.9,
+      "compliance": {
+        "km_pct": 87,
+        "km_done": 12.2,
+        "km_planned": 14.0,
+        "km_done_week": 12.2,
+        "km_planned_week": 78.7,
+        "sessions_done": 1,
+        "sessions_planned": 1,
+        "sessions_done_week": 1,
+        "keys_success": 0,
+        "keys_total": 1,
+        "points": 73,
+        "verdict": "partial"
+      }
     },
     {
       "week_num": 3,

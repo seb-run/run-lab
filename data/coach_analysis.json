@@ -1,87 +1,51 @@
 {
- "generated_at": "2026-09-15T05:12:06",
+ "generated_at": "2026-09-16T10:19:56",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-09-12\", \"title\": \"Footing 13km + lignes\", \"type\": \"easy\", \"planned_km\": 13.1, \"key\": false, \"status\": \"under\", \"target_pace\": null, \"actual\": {\"km\": 6.0, \"pace_str\": \"5'22\\\"/km\", \"fc\": 137, \"cadence\": 178, \"duration_min\": 32}, \"splits\": \"1:5'19/129/178spm 2:5'19/140/180spm 3:5'21/140/178spm 4:5'20/138/178spm 5:5'24/139/178spm 6:5'26/136/176spm\", \"garmin\": {\"te_aero\": 2.6, \"te_ana\": 0.0, \"load\": 64.8, \"rpe\": 2.0, \"feel_label\": \"Fort\", \"temp_c\": 25, \"balance_l\": 51.4, \"flags\": [], \"stance_drift_pct\": 1.6, \"step_drift_pct\": -0.7}, \"score\": {\"points\": 12, \"verdict\": \"failed\", \"volume_pct\": 46, \"pace_delta_s\": null}, \"hr\": {\"avg\": 137, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 0.3, \"flags\": []}}, {\"date\": \"2026-09-13\", \"title\": \"SL 29km · 12km MP au milieu\", \"type\": \"long_mp\", \"planned_km\": 29.4, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'53\\\"/km\", \"actual\": {\"km\": 28.2, \"pace_str\": \"4'24\\\"/km\", \"fc\": 158, \"cadence\": 177, \"duration_min\": 124}, \"splits\": \"1:5'02/132/178spm 2:5'01/142/178spm 3:5'04/144/178spm 4:5'02/144/176spm 5:4'56/145/176spm 6:3'54/160/178spm 7:3'56/163/178spm 8:3'57/165/178spm 9:3'59/167/178spm 10:3'56/170/176spm 11:3'55/169/176spm 12:3'58/168/176spm 13:3'56/167/176spm 14:4'50/152/182spm 15:5'08/147/182spm 16:3'57/165/178spm 17:3'59/167/178spm 18:4'01/168/178spm 19:3'59/168/178spm 20:3'57/167/178spm 21:3'56/170/178spm 22:4'02/168/178spm 23:4'02/171/178spm 24:4'51/159/174spm 25:4'52/154/176spm 26:4'48/150/176spm 27:5'00/152/176spm 28:4'54/152/176spm 29:5'19/151/172spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 1.0, \"load\": 398.5, \"rpe\": 6.0, \"feel_label\": \"Très fort\", \"temp_c\": 25, \"balance_l\": 49.65, \"flags\": [\"stance_fade\"], \"stance_drift_pct\": 5.6, \"step_drift_pct\": 0.2}, \"score\": {\"points\": 88, \"verdict\": \"success\", \"volume_pct\": 96, \"pace_delta_s\": 31}, \"hr\": {\"avg\": 158, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 2.0, \"flags\": []}}, {\"date\": \"2026-09-14\", \"title\": \"Repos\", \"type\": \"rest\", \"planned_km\": 0, \"key\": false, \"status\": \"done\", \"target_pace\": null}]",
- "headline": "Les fractionnés rapides s'effondrent depuis une semaine (VMA et seuil à moitié courus, 40s/km trop lents) alors que les footings et le long run passent très bien — signature typique d'une chaleur qui plombe la vitesse pure, pas d'une fatigue de fond.",
- "analysis": "Ta semaine est contrastée : le long run avec 12km MP est une franche réussite (88 pts, MP tenue à 3'55-4'02, RPE 6, decoupling nickel à 2%), preuve que le fond est bon. En revanche les deux séances clés à haute intensité (6×800m VMA et 2×15min seuil) ont été coupées en cours de route — 60% et 36% du volume prévu, allures 60-90s/km plus lentes que la cible — alors que le RPE reste bas (2-3/10) et le ressenti \"Fort\". Ce n'est pas un signe de fatigue mécanique (stance/step drift restent stables sur ces séances) mais plutôt une difficulté à tenir les allures rapides par 23-25°C, ce que confirme aussi le fort décrochage cardiaque (+12% decoupling) sur ton footing du 9/09 avec des variations d'allure erratiques. Le risque principal cette semaine : enchaîner une 3e séance de vitesse ratée aujourd'hui (VMA longue 5×1000m à 3'28) et entamer ta confiance alors que le problème n'est pas physiologique mais climatique. Le focus doit être : protéger les séances clés en les rendant réalisables par la chaleur actuelle (allures un peu moins ambitieuses, récup plus longues), et laisser les footings/long runs comme ils sont puisqu'ils tournent bien. Sur la SL progressive du 20/09, rien à changer, ta dernière sortie longue était solide.",
+ "signature": "[{\"date\": \"2026-09-13\", \"title\": \"SL 29km · 12km MP au milieu\", \"type\": \"long_mp\", \"planned_km\": 29.4, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'53\\\"/km\", \"actual\": {\"km\": 28.2, \"pace_str\": \"4'24\\\"/km\", \"fc\": 158, \"cadence\": 177, \"duration_min\": 124}, \"splits\": \"1:5'02/132/178spm 2:5'01/142/178spm 3:5'04/144/178spm 4:5'02/144/176spm 5:4'56/145/176spm 6:3'54/160/178spm 7:3'56/163/178spm 8:3'57/165/178spm 9:3'59/167/178spm 10:3'56/170/176spm 11:3'55/169/176spm 12:3'58/168/176spm 13:3'56/167/176spm 14:4'50/152/182spm 15:5'08/147/182spm 16:3'57/165/178spm 17:3'59/167/178spm 18:4'01/168/178spm 19:3'59/168/178spm 20:3'57/167/178spm 21:3'56/170/178spm 22:4'02/168/178spm 23:4'02/171/178spm 24:4'51/159/174spm 25:4'52/154/176spm 26:4'48/150/176spm 27:5'00/152/176spm 28:4'54/152/176spm 29:5'19/151/172spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 1.0, \"load\": 398.5, \"rpe\": 6.0, \"feel_label\": \"Très fort\", \"temp_c\": 25, \"balance_l\": 49.65, \"flags\": [\"stance_fade\"], \"stance_drift_pct\": 5.6, \"step_drift_pct\": 0.2}, \"score\": {\"points\": 88, \"verdict\": \"success\", \"volume_pct\": 96, \"pace_delta_s\": 31}, \"hr\": {\"avg\": 158, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 2.0, \"flags\": []}}, {\"date\": \"2026-09-14\", \"title\": \"Repos\", \"type\": \"rest\", \"planned_km\": 0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-09-15\", \"title\": \"VMA longue · 5×1000m\", \"type\": \"intervals\", \"planned_km\": 14.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'28\\\"/km\", \"actual\": {\"km\": 12.2, \"pace_str\": \"5'14\\\"/km\", \"fc\": 142, \"cadence\": 178, \"duration_min\": 64}, \"splits\": \"1:5'26/130/178spm 2:5'16/138/178spm 3:5'21/141/178spm 4:5'21/142/176spm 5:5'20/142/178spm 6:5'14/142/178spm 7:5'09/144/178spm 8:5'12/146/178spm 9:5'05/146/178spm 10:4'58/143/178spm 11:5'13/148/178spm 12:5'07/144/176spm 13:5'18/148/176spm\", \"garmin\": {\"te_aero\": 3.2, \"te_ana\": 0.0, \"load\": 111.7, \"rpe\": 2.0, \"feel_label\": \"Fort\", \"temp_c\": 25, \"balance_l\": 51.72, \"flags\": [], \"stance_drift_pct\": -0.4, \"step_drift_pct\": 5.4}, \"score\": {\"points\": 52, \"verdict\": \"failed\", \"volume_pct\": 87, \"pace_delta_s\": 106}, \"hr\": {\"avg\": 142, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": -1.0, \"flags\": []}}]",
+ "headline": "Ton endurance et ton allure marathon tiennent bon, mais 3 séances de vitesse pure sur 3 se sont effondrées ces deux dernières semaines.",
+ "analysis": "Le contraste est net : le SL du 13/09 avec bloc MP a été réussi (allure quasi cible, dérive cardiaque quasi nulle), et les footings/récup sont même souvent rallongés au-delà du prévu. En revanche, les trois séances d'intensité (6×800m, 2×15min seuil, 5×1000m VMA) ont toutes été courues 80 à 100s/km plus lentes que la cible, avec des volumes à 36-87% du prévu — les splits ne montrent quasiment jamais l'allure demandée, ce qui indique que le stimulus vitesse n'est pas passé du tout, pas juste une fin de séance qui craque. FC basse et RPE bas sur ces séances confirment que ce n'est pas de la casse en cours d'effort mais un refus/incapacité à enclencher l'allure, possiblement lié à la chaleur persistante (23-28°C) qui pèse plus sur les efforts courts-intenses que sur l'endurance. Le risque principal maintenant est double : accumuler les échecs sur le travail de vitesse (perte de confiance, pas de bénéfice adaptatif) ou forcer l'allure cible et provoquer une vraie blessure/surcharge. Cette semaine, focus sur reconstruire une séance d'intensité réussie, quitte à baisser temporairement l'exigence, avant de revenir progressivement vers du VMA/seuil complet. Continue de laisser les footings et le travail MP tels quels, ils fonctionnent bien.",
  "applied": [
   {
    "severity": "minor",
    "kind": "add_note",
    "date": "2026-09-17",
    "field": "description_note",
-   "new_value": "Vérifie la météo avant de partir : si chaleur similaire aux jours précédents, autorise-toi 5-8s/km plus lent que 4'16 sur le bloc MP plutôt que de forcer l'allure et t'épuiser.",
-   "reason": "Chaleur persistante (23-28°C) sur toute la période récente, impact déjà visible sur les allures et le decoupling des séances précédentes.",
+   "new_value": "Chaleur régulière (23-28°C) sur tes dernières séances rapides : hydrate-toi bien avant/pendant, et cale l'allure MP sur tes sensations réelles plutôt que sur le chrono si ça tire plus que prévu.",
+   "reason": "Toutes les séances d'intensité récentes se sont déroulées à 23-28°C avec des allures nettement dégradées ; anticiper la chaleur peut éviter un nouvel échec sur cette séance clé.",
    "replacement": null,
-   "id": "e2824df0",
+   "id": "6cc0a211",
    "detail": "2026-09-17 : note ajoutée"
   },
   {
    "severity": "minor",
    "kind": "add_note",
-   "date": "2026-09-22",
+   "date": "2026-09-20",
    "field": "description_note",
-   "new_value": "Même consigne que la séance VMA du 15/09 : privilégie les sensations et la régularité des splits sur le chrono strict si la chaleur est encore présente. Récup complète entre les 1000m.",
-   "reason": "Anticiper un nouveau risque d'échec sur séance clé de vitesse si la vague de chaleur se poursuit.",
+   "new_value": "Ton dernier long run a montré une légère dérive du temps de contact au sol en fin de course (+5.6%) : pense à resserrer la foulée et relâcher les épaules sur la dernière portion, surtout pendant la partie progressive.",
+   "reason": "Le SL du 13/09 a montré un flag stance_fade avec +5.6% de dérive du temps de contact en fin de séance, signe de fatigue mécanique à surveiller sur un futur long run progressif.",
    "replacement": null,
-   "id": "1707eef4",
-   "detail": "2026-09-22 : note ajoutée"
+   "id": "d3fd9ed9",
+   "detail": "2026-09-20 : note ajoutée"
   }
  ],
  "pending": [
   {
    "severity": "major",
-   "kind": "change_pace",
-   "date": "2026-09-15",
+   "kind": "change_type",
+   "date": "2026-09-22",
    "field": null,
-   "new_value": "VMA allégée en intensité et volume",
-   "reason": "Le 6×800m à 3'39/km a été raté à 60% du volume avec 80-90s/km de retard. Enchaîner du 5×1000m à 3'28/km (plus rapide encore) sur une semaine déjà en échec sur les séances clés va juste confirmer l'échec et taper sur le moral et les jambes.",
+   "new_value": "Remplacer la séance VMA 5×1km par une séance seuil courte et plus accessible pour retrouver un succès avant de remonter en intensité",
+   "reason": "3 séances d'intensité consécutives (VMA, seuil, VMA) ont été courues 80-100s/km plus lentes que la cible avec 36-87% du volume prévu, malgré FC et RPE bas — le stimulus vitesse ne passe pas actuellement, chaleur probable. Insister sur du 3'28/km maintenant risque un nouvel échec, on baisse l'exigence pour reconstruire.",
    "replacement": {
-    "title": "VMA courte 5×800m",
-    "type": "intervals",
+    "title": "Seuil court 4×6min",
+    "type": "seuil",
     "km": 12.0,
-    "target_pace": "3'45\"/km",
-    "description": "5×800m à 3'45/km (allure 10k, pas VMA pure) avec 2min30 de récup trot. Objectif : retrouver des allures tenues et propres, pas la vitesse max. Si dès le 3e répétition tu es au-dessus de 3'50/km, arrête là et termine en footing."
+    "target_pace": "3'56\"/km",
+    "description": "Échauffement 15min facile. Puis 4×6min à allure seuil (3'56/km), récup 2min trot entre chaque. Si les jambes ne suivent pas dès les 2 premières minutes, ralentis à ton ressenti plutôt que d'abandonner l'allure — l'objectif est de finir la séance complète, pas de viser le chrono à tout prix. Retour au calme 10min. Cours si possible tôt le matin pour éviter la chaleur."
    },
-   "id": "89d37e28",
+   "id": "e8ebcb94",
    "status": "pending",
-   "created_at": "2026-09-13T17:59:19"
-  },
-  {
-   "severity": "major",
-   "kind": "change_pace",
-   "date": "2026-09-15",
-   "field": null,
-   "new_value": "Allure 10k/seuil au lieu de VMA pure, volume réduit",
-   "reason": "Deux séances rapides consécutives ratées à 60-90s/km trop lent malgré FC et RPE bas : le problème n'est pas la fatigue mécanique mais l'incapacité à attaquer l'allure VMA en ce moment (chaleur + charge cumulée). Mieux vaut sécuriser une réussite à une intensité plus abordable que risquer un 3e échec.",
-   "replacement": {
-    "title": "5×800m allure 10k/seuil",
-    "type": "intervals",
-    "km": 12.0,
-    "target_pace": "3'50\"/km",
-    "description": "Échauffement 3km facile. 5×800m à 3'50\"/km (r=2min trot). Objectif : retrouver des sensations de réussite sur du rapide sans viser la VMA pure. Si la 1re répétition est difficile, arrête-toi à 4 et rentre en footing. Cours tôt le matin ou le soir pour éviter le pic de chaleur."
-   },
-   "id": "1ee603c3",
-   "status": "pending",
-   "created_at": "2026-09-14T11:00:16"
-  },
-  {
-   "severity": "major",
-   "kind": "change_pace",
-   "date": "2026-09-15",
-   "field": null,
-   "new_value": "allure VMA (3'28) remplacée par allure seuil/10k (3'45-3'50) avec récup allongée",
-   "reason": "2 séances clés vitesse consécutives ratées en distance ET en allure malgré RPE bas et FC basse — pattern chaleur, pas fatigue. Éviter un 3e échec qui n'apporterait rien et risque d'entamer la confiance.",
-   "replacement": {
-    "title": "5×1000m allure seuil/10k (chaleur)",
-    "type": "intervals",
-    "km": 12.0,
-    "target_pace": "3'50\"/km",
-    "description": "5×1000m à 3'48-3'52/km, récup 2min trot entre chaque. Objectif : retrouver des sensations positives sur du rapide sans viser le chrono VMA par cette chaleur. Hydrate-toi avant/pendant, arrête la série si FC s'envole anormalement pour l'allure. Si ça passe bien et frais, tu pourras revenir sur du 3'28 la semaine prochaine."
-   },
-   "id": "a1a76bdb",
-   "status": "pending",
-   "created_at": "2026-09-15T05:12:06"
+   "created_at": "2026-09-16T10:19:56"
   }
  ]
 }

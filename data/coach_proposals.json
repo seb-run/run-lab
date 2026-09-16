@@ -3,25 +3,6 @@
   {
    "severity": "major",
    "kind": "change_type",
-   "date": "2026-08-13",
-   "field": null,
-   "new_value": "Remplacement de la séance allure marathon par un footing de récupération",
-   "reason": "Fatigue accumulée : sortie longue du 9/08 en surcharge (+30% volume, RPE 9, dérive mécanique +8.9%), seuil du 11/08 raté (couru 90s/km trop lent que la cible), récup du 12/08 manquée. Enchaîner une séance MP intense maintenant risque un nouvel échec et prolonge la fatigue avant le seuil clé du 18/08.",
-   "replacement": {
-    "title": "Footing récupération",
-    "type": "recovery",
-    "km": 11.0,
-    "target_pace": "5'40\"/km",
-    "description": "Vraie récup : allure strictement sous 5'40/km, FC sous 140 si possible. Objectif = digérer la sortie longue du 9/08, pas performer. Coupe la séance si les jambes sont lourdes, aucune ligne d'accélération aujourd'hui."
-   },
-   "id": "0fb897a4",
-   "status": "rejected",
-   "created_at": "2026-08-13T06:58:01",
-   "decided_at": "2026-08-13T14:28:53"
-  },
-  {
-   "severity": "major",
-   "kind": "change_type",
    "date": "2026-08-16",
    "field": null,
    "new_value": "Suppression du finish rapide, volume légèrement réduit",
@@ -430,7 +411,7 @@
     "description": "5×800m à 3'45/km (allure 10k, pas VMA pure) avec 2min30 de récup trot. Objectif : retrouver des allures tenues et propres, pas la vitesse max. Si dès le 3e répétition tu es au-dessus de 3'50/km, arrête là et termine en footing."
    },
    "id": "89d37e28",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-13T17:59:19"
   },
   {
@@ -448,7 +429,7 @@
     "description": "Échauffement 3km facile. 5×800m à 3'50\"/km (r=2min trot). Objectif : retrouver des sensations de réussite sur du rapide sans viser la VMA pure. Si la 1re répétition est difficile, arrête-toi à 4 et rentre en footing. Cours tôt le matin ou le soir pour éviter le pic de chaleur."
    },
    "id": "1ee603c3",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-14T11:00:16"
   },
   {
@@ -466,8 +447,26 @@
     "description": "5×1000m à 3'48-3'52/km, récup 2min trot entre chaque. Objectif : retrouver des sensations positives sur du rapide sans viser le chrono VMA par cette chaleur. Hydrate-toi avant/pendant, arrête la série si FC s'envole anormalement pour l'allure. Si ça passe bien et frais, tu pourras revenir sur du 3'28 la semaine prochaine."
    },
    "id": "a1a76bdb",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-15T05:12:06"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-09-22",
+   "field": null,
+   "new_value": "Remplacer la séance VMA 5×1km par une séance seuil courte et plus accessible pour retrouver un succès avant de remonter en intensité",
+   "reason": "3 séances d'intensité consécutives (VMA, seuil, VMA) ont été courues 80-100s/km plus lentes que la cible avec 36-87% du volume prévu, malgré FC et RPE bas — le stimulus vitesse ne passe pas actuellement, chaleur probable. Insister sur du 3'28/km maintenant risque un nouvel échec, on baisse l'exigence pour reconstruire.",
+   "replacement": {
+    "title": "Seuil court 4×6min",
+    "type": "seuil",
+    "km": 12.0,
+    "target_pace": "3'56\"/km",
+    "description": "Échauffement 15min facile. Puis 4×6min à allure seuil (3'56/km), récup 2min trot entre chaque. Si les jambes ne suivent pas dès les 2 premières minutes, ralentis à ton ressenti plutôt que d'abandonner l'allure — l'objectif est de finir la séance complète, pas de viser le chrono à tout prix. Retour au calme 10min. Cours si possible tôt le matin pour éviter la chaleur."
+   },
+   "id": "e8ebcb94",
+   "status": "pending",
+   "created_at": "2026-09-16T10:19:56"
   }
  ]
 }
