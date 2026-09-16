@@ -1687,17 +1687,17 @@
           "duration_min": 55,
           "key": false,
           "description": "10km à 5'26\"/km. Allure conversationnelle, FC en zone 2.",
-          "status": "under",
+          "status": "over",
           "actual": {
-            "km": 5.6,
-            "duration_min": 29,
-            "pace_sec": 305,
-            "pace_str": "5'05\"/km",
-            "fc": 142,
-            "cadence": 177,
-            "type": "endurance",
-            "title": "i187270350",
-            "n": 1,
+            "km": 25.7,
+            "duration_min": 128,
+            "pace_sec": 299,
+            "pace_str": "4'59\"/km",
+            "fc": 146,
+            "cadence": 171,
+            "type": "frac_court",
+            "title": "Course à pied en soirée",
+            "n": 2,
             "note": null,
             "dyn": {
               "stance_ms": 224.0,
@@ -1771,6 +1771,240 @@
             "splits": [
               {
                 "km": 1.0,
+                "ps": 322,
+                "fc": 127,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 330,
+                "fc": 138,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 314,
+                "fc": 140,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 311,
+                "fc": 139,
+                "ca": 176
+              },
+              {
+                "km": 0.85,
+                "ps": 362,
+                "fc": 132,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 223,
+                "fc": 160,
+                "ca": 180
+              },
+              {
+                "km": 0.2,
+                "ps": 190,
+                "fc": 170,
+                "ca": 183
+              },
+              {
+                "km": 0.23,
+                "ps": 392,
+                "fc": 151,
+                "ca": 157
+              },
+              {
+                "km": 1.0,
+                "ps": 222,
+                "fc": 164,
+                "ca": 181
+              },
+              {
+                "km": 0.2,
+                "ps": 185,
+                "fc": 174,
+                "ca": 187
+              },
+              {
+                "km": 0.21,
+                "ps": 417,
+                "fc": 151,
+                "ca": 149
+              },
+              {
+                "km": 1.0,
+                "ps": 219,
+                "fc": 167,
+                "ca": 180
+              },
+              {
+                "km": 0.2,
+                "ps": 190,
+                "fc": 177,
+                "ca": 184
+              },
+              {
+                "km": 0.21,
+                "ps": 431,
+                "fc": 153,
+                "ca": 154
+              },
+              {
+                "km": 1.0,
+                "ps": 218,
+                "fc": 168,
+                "ca": 179
+              },
+              {
+                "km": 0.2,
+                "ps": 190,
+                "fc": 176,
+                "ca": 182
+              },
+              {
+                "km": 0.19,
+                "ps": 466,
+                "fc": 152,
+                "ca": 136
+              },
+              {
+                "km": 0.3,
+                "ps": 190,
+                "fc": 167,
+                "ca": 184
+              },
+              {
+                "km": 0.08,
+                "ps": 372,
+                "fc": 171,
+                "ca": 154
+              },
+              {
+                "km": 0.3,
+                "ps": 193,
+                "fc": 173,
+                "ca": 184
+              },
+              {
+                "km": 0.07,
+                "ps": 395,
+                "fc": 172,
+                "ca": 154
+              },
+              {
+                "km": 0.3,
+                "ps": 193,
+                "fc": 174,
+                "ca": 183
+              },
+              {
+                "km": 0.08,
+                "ps": 371,
+                "fc": 175,
+                "ca": 158
+              },
+              {
+                "km": 0.3,
+                "ps": 187,
+                "fc": 175,
+                "ca": 183
+              },
+              {
+                "km": 0.08,
+                "ps": 379,
+                "fc": 178,
+                "ca": 156
+              },
+              {
+                "km": 0.3,
+                "ps": 193,
+                "fc": 176,
+                "ca": 183
+              },
+              {
+                "km": 0.06,
+                "ps": 508,
+                "fc": 175,
+                "ca": 134
+              },
+              {
+                "km": 0.3,
+                "ps": 190,
+                "fc": 175,
+                "ca": 182
+              },
+              {
+                "km": 0.06,
+                "ps": 489,
+                "fc": 176,
+                "ca": 132
+              },
+              {
+                "km": 0.3,
+                "ps": 183,
+                "fc": 176,
+                "ca": 184
+              },
+              {
+                "km": 0.06,
+                "ps": 470,
+                "fc": 178,
+                "ca": 139
+              },
+              {
+                "km": 0.3,
+                "ps": 177,
+                "fc": 179,
+                "ca": 184
+              },
+              {
+                "km": 1.0,
+                "ps": 328,
+                "fc": 148,
+                "ca": 175
+              },
+              {
+                "km": 1.0,
+                "ps": 297,
+                "fc": 151,
+                "ca": 183
+              },
+              {
+                "km": 1.0,
+                "ps": 356,
+                "fc": 136,
+                "ca": 184
+              },
+              {
+                "km": 1.0,
+                "ps": 350,
+                "fc": 142,
+                "ca": 183
+              },
+              {
+                "km": 1.0,
+                "ps": 362,
+                "fc": 142,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 362,
+                "fc": 139,
+                "ca": 180
+              },
+              {
+                "km": 0.59,
+                "ps": 363,
+                "fc": 137,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
                 "ps": 349,
                 "fc": 122,
                 "ca": 186
@@ -1808,11 +2042,11 @@
             ]
           },
           "score": {
-            "points": 31,
-            "verdict": "failed",
-            "verdict_label": "Échouée",
-            "volume_pct": 55,
-            "volume_points": 31,
+            "points": 70,
+            "verdict": "partial",
+            "verdict_label": "Partielle",
+            "volume_pct": 254,
+            "volume_points": 70,
             "pace_points": null,
             "pace_target_s": null,
             "pace_actual_s": null,
@@ -1820,14 +2054,14 @@
             "pace_delta_s": null,
             "is_quality": false,
             "hr": {
-              "avg": 142,
+              "avg": 146,
               "cap": null,
               "over_cap": null,
-              "decoupling_pct": null,
+              "decoupling_pct": 7.6,
               "flags": []
             },
             "reasons": [
-              "Volume 55%"
+              "Volume 254%"
             ]
           }
         },
@@ -1919,7 +2153,7 @@
         "km_pct": 87,
         "km_done": 12.2,
         "km_planned": 14.0,
-        "km_done_week": 17.8,
+        "km_done_week": 37.9,
         "km_planned_week": 78.7,
         "sessions_done": 1,
         "sessions_planned": 1,
