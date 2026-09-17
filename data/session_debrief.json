@@ -1,45 +1,45 @@
 {
- "headline": "20km avec bloc à 3'40\"/km au lieu du footing 10km prévu, volume x2,5",
+ "headline": "Footing 5'25 réalisé à la place du 9km allure marathon prévu — plan non suivi.",
  "bullets": [
-  "Allure moy. 4'57\"/km, proche de ta réf. 5'02\"/km sur séances similaires.",
-  "FC moy. 149 bpm quasi identique à ta réf. 148 bpm : pas de dérive.",
-  "20,01km réalisés vs 10km prévus (254%) : sortie transformée en séance costaude."
+  "8.42km à 5'25\"/km au lieu des 15.5km prévus (9km à 4'16\"/km) — séance très différente du plan.",
+  "FC 145 bpm, quasi identique à ta réf 60j (144.6) mais dérive +14% en séance, temp 25-27°C.",
+  "RPE 3/10, ressenti \"fort\" malgré la dérive de FC — bon signal, pas de fatigue perçue."
  ],
  "points": [
   {
-   "label": "Allure moyenne",
-   "valeur": "4'57\"/km",
-   "ecart": "-5s/km vs réf. 5'02\"/km",
-   "lecture": "cohérent avec allure comparable",
+   "label": "Contact sol",
+   "valeur": "231 ms",
+   "ecart": "+4 ms vs réf 227 ms",
+   "lecture": "cohérent avec allure plus lente",
    "ton": "neutre"
   },
   {
-   "label": "FC moyenne",
-   "valeur": "149 bpm",
-   "ecart": "+1 vs réf. 148 bpm",
-   "lecture": "stable, aucune dérive notable",
-   "ton": "bon"
+   "label": "Équilibre gauche",
+   "valeur": "51.05%",
+   "ecart": "+0.37 pt vs réf 50.68%",
+   "lecture": "léger surplus côté gauche",
+   "ton": "neutre"
   },
   {
-   "label": "Volume",
-   "valeur": "20,01 km",
-   "ecart": "+9,9km vs 10km prévus (254%)",
-   "lecture": "footing devenu séance à bloc",
-   "ton": "vigilance"
+   "label": "Asymétrie vs allure",
+   "valeur": "-0.03",
+   "ecart": "stable lent/rapide",
+   "lecture": "pas d'ouverture avec la vitesse",
+   "ton": "bon"
   }
  ],
- "achille": "Aucune donnée contact/équilibre : capteur (ceinture/footpod) probablement absent ce soir.",
- "a_surveiller": "Bloc non prévu à 3'40\"/km (FC 168) : vérifie la récupération avant la prochaine séance clé.",
+ "achille": "Équilibre à 51.05% (réf 50.68%), léger mieux côté droit déchargé, écart faible.",
+ "a_surveiller": "Séance non conforme au plan clé (footing vs allure marathon) — motif à vérifier avec lui.",
  "seance": {
-  "date": "16/09/2026",
-  "heure": "19:28",
-  "titre": "Course à pied en soirée",
-  "type_detecte": "frac_court",
-  "km": 20.01,
-  "duree": "1h 39m 00s",
-  "allure": "4'57\"/km",
-  "fc_moy": 149
+  "date": "17/09/2026",
+  "heure": "12:21",
+  "titre": "i187589989",
+  "type_detecte": "footing",
+  "km": 8.42,
+  "duree": "45m 37s",
+  "allure": "5'25\"/km",
+  "fc_moy": 145
  },
- "generated_at": "2026-09-16T19:37:12",
- "baseline_n": 35
+ "generated_at": "2026-09-17T11:10:51",
+ "baseline_n": 22
 }

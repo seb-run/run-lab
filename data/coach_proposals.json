@@ -1,26 +1,6 @@
 {
  "proposals": [
   {
-   "severity": "major",
-   "kind": "change_type",
-   "date": "2026-08-16",
-   "field": null,
-   "new_value": "Suppression du finish rapide, volume légèrement réduit",
-   "reason": "La dernière sortie longue similaire (26km réalisés, 130% du plan) a produit un RPE9, un decoupling de 9.1% et un stance_drift de 8.9%, suivie 48h après d'un échec total de la séance seuil. Deux séances clés arrivent cette semaine (seuil mardi, MP jeudi) : il faut arriver dessus récupéré, pas cramé par le long.",
-   "replacement": {
-    "title": "Sortie longue régulière",
-    "type": "long",
-    "km": 22.0,
-    "target_pace": "4'55\"/km",
-    "description": "22km à allure régulière 4'55/km, sans accélération finale cette fois. Coupe-la net si tu sens les jambes lourdes après 18-19km plutôt que de forcer un finish. Objectif : accumuler du volume digeste, pas cramer les jambes avant le bloc seuil+MP qui arrive juste après."
-   },
-   "id": "e452e59b",
-   "status": "accepted",
-   "created_at": "2026-08-14T06:59:48",
-   "decided_at": "2026-08-14T20:34:33",
-   "applied_detail": "2026-08-16 : Sortie longue avec finish → Sortie longue régulière"
-  },
-  {
    "severity": "minor",
    "kind": "add_note",
    "date": "2026-08-16",
@@ -467,6 +447,24 @@
    "id": "e8ebcb94",
    "status": "pending",
    "created_at": "2026-09-16T10:19:56"
+  },
+  {
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-09-22",
+   "field": null,
+   "new_value": "Réduction du nombre de répétitions et allure cible ajustée à l'allure seuil plutôt que VMA",
+   "reason": "3 séances d'intensité consécutives échouées en distance et en allure (6×800m, 2×15min seuil, 5×1000m VMA) malgré RPE bas — besoin de retrouver une réussite sur l'intensité avant d'enchaîner avec le bloc MP 14km du 24/09 et le SL 30km du 27/09.",
+   "replacement": {
+    "title": "4×1km seuil (progressif)",
+    "type": "seuil",
+    "km": 14.0,
+    "target_pace": "3'56\"/km",
+    "description": "Échauffement 3km footing. 4×1km à allure seuil (3'56/km) récup 2min trot. Objectif : retrouver le contrôle de l'allure et la confiance, pas la performance. Si chaleur ou FC qui s'envole, ralentis de 5-10s/km plutôt que de raccourcir la distance. Retour au calme 2km."
+   },
+   "id": "5efaee10",
+   "status": "pending",
+   "created_at": "2026-09-17T11:10:25"
   }
  ]
 }

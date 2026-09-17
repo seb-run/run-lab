@@ -1,20 +1,19 @@
 {
  "garmin": {
   "ok": true,
-  "at": "2026-09-17T10:25:59",
-  "message": "0 fichier(s), 7 course(s) vues",
-  "last_ok": "2026-09-17T10:25:59"
+  "at": "2026-09-17T11:09:07",
+  "message": "1 fichier(s), 8 course(s) vues",
+  "last_ok": "2026-09-17T11:09:07"
  },
  "coach": {
-  "ok": false,
-  "at": "2026-09-17T10:27:47",
-  "message": "RuntimeError: réponse sans bloc texte (blocs reçus : thinking, stop_reason=max_tokens) — augmenter max_tokens",
-  "last_ok": "2026-09-16T10:19:56"
+  "ok": true,
+  "at": "2026-09-17T11:10:25",
+  "last_ok": "2026-09-17T11:10:25"
  },
  "debrief": {
   "ok": true,
-  "at": "2026-09-16T19:37:12",
-  "last_ok": "2026-09-16T19:37:12"
+  "at": "2026-09-17T11:10:51",
+  "last_ok": "2026-09-17T11:10:51"
  },
  "coach_validate": {
   "ok": true,
