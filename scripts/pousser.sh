@@ -44,7 +44,7 @@ echo "▸ Ce qui va être publié"
 CHEMINS=()
 for c in .github modules scripts templates build.py sw.js manifest.webmanifest \
          .gitignore ETAT_PROJET.md SETUP_AUTONOME.md README.md \
-         data/plan_nyc.json; do
+         data/plan_nyc.json data/config.json; do
   [ -e "$c" ] && CHEMINS+=("$c")
 done
 [ ${#CHEMINS[@]} -gt 0 ] && git add -- "${CHEMINS[@]}"

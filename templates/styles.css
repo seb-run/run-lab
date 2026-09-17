@@ -18,36 +18,52 @@
    ============================================================================ */
 
 :root {
-  /* === Surfaces === */
-  --bg:        #f4f6f9;
+  /* === Surfaces — palette ivoire/sable ===
+     Bascule 09/2026 : le fond gris-bleu Apple Fitness cédait à un jaune
+     paille chaud. Trois surfaces qui se distinguent sans jamais s'opposer :
+     ivoire pour l'arrière-plan, blanc pour les cartes, sable pour les
+     panneaux (calendrier, indicateurs neutres). */
+  --bg:        #faf7f0;
   --surface:   #ffffff;
-  --surface-2: #fafbfd;
-  --surface-3: #eef1f6;
+  --surface-2: #fbf8f1;
+  --surface-3: #f0e9d9;
 
-  /* === Bordures ===
-     Opaques et non transparentes : superposées, les bordures translucides
-     se cumulaient et fonçaient aux intersections de cartes. */
-  --border:   #e6eaf0;
-  --border-2: #d7dde7;
+  /* === Bordures === */
+  --border:   #e5ddc9;
+  --border-2: #d4ccb7;
 
   /* === Texte ===
-     Marine plutôt que gris ardoise : plus dense, plus « encre ». */
-  --text:    #0f1c30;
-  --text-2:  #46536b;
-  --text-3:  #8b94a6;
+     Encre marine profonde plutôt que noir : contraste 15:1, plus doux
+     que du noir plein sur ivoire. Trois niveaux distincts pour hiérarchie. */
+  --text:    #1a1a2e;
+  --text-2:  #5a5a70;
+  --text-3:  #9695a8;
+
+  /* === Couleurs de sens (quatre teintes, une par rôle) ===
+     Rouge terre = urgence, jour actuel, séance clé, action coach.
+     Vert forêt = validé, dans la cible, sain.
+     Or ambré = sortie longue, vigilance, indicateur à surveiller.
+     Bleu marine = tranquille, footing, secondaire. */
+  --pin:       #c4472e;  --pin-l:   #fbf1ec;  --pin-tx:  #8f2f1c;
+  --leaf:      #4a7c59;  --leaf-l:  #e8f0ea;  --leaf-tx: #2f5539;
+  --sun:       #c9a46a;  --sun-l:   #f7f0dc;  --sun-tx:  #7a5f28;
+  --sky:       #3a5b8c;  --sky-l:   #eaf0f7;  --sky-tx:  #2a4266;
 
   /* === Statuts de bloc ===
-     Fond dilué + filet, jamais de texte coloré sur fond coloré. */
-  --st-ok-bg: #eff7f2;  --st-ok-br: #8ec3a4;  --st-ok-tx: #2f6b4a;
-  --st-up-bg: #eef3fb;  --st-up-br: #8aa6d8;  --st-up-tx: #33518a;
-  --st-no-bg: #fdf1f0;  --st-no-br: #dda29d;  --st-no-tx: #8f423c;
+     Alignés sur les mêmes couleurs de sens. Reste d'API pour les
+     composants qui les utilisaient déjà (blocs colorés, bannières). */
+  --st-ok-bg: var(--leaf-l);  --st-ok-br: var(--leaf);  --st-ok-tx: var(--leaf-tx);
+  --st-up-bg: var(--sky-l);   --st-up-br: var(--sky);   --st-up-tx: var(--sky-tx);
+  --st-no-bg: var(--pin-l);   --st-no-br: var(--pin);   --st-no-tx: var(--pin-tx);
 
-  /* === Couleurs sémantiques Apple-Fitness === */
-  --c-blue:    #5b8af5;
-  --c-cyan:    #22d3a7;
-  --c-orange:  #f0923e;
-  --c-red:     #ef4444;
-  --c-yellow:  #f5c542;
+  /* === Couleurs sémantiques (compatibilité ascendante) ===
+     Les onglets d'analyse et graphes ECharts référencent encore ces noms.
+     Elles pointent vers la nouvelle palette pour ne rien casser. */
+  --c-blue:    var(--sky);
+  --c-cyan:    var(--leaf);
+  --c-orange:  var(--sun);
+  --c-red:     var(--pin);
+  --c-yellow:  var(--sun);
   --c-purple:  #9b6dff;
   --c-green:   #10b981;
 
@@ -56,9 +72,11 @@
   --c-orange-soft: rgba(240, 146, 62, 0.12);
   --c-red-soft:    rgba(239, 68, 68, 0.12);
 
-  /* === Gradients === */
-  --grad-brand: linear-gradient(135deg, #5b8af5 0%, #22d3a7 100%);
-  --grad-card:  linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
+  /* === Gradients ===
+     Palette ivoire : les dégradés cessent. Tous les composants qui les
+     référencent retombent sur un aplat de la couleur adjacente. */
+  --grad-brand: var(--pin);
+  --grad-card:  var(--surface);
 
   /* === Typo ===
      Les deux voix du système. La pile système reste en repli : si le réseau

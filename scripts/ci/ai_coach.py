@@ -134,6 +134,24 @@ def build_context(plan: dict) -> dict:
                 })
 
     meta = plan.get('meta', {})
+
+    # Corpus corporel : historique poids + masse grasse pour tendance mesurée.
+    # Le coach l'utilise pour composer l'état de forme, jamais pour édicter
+    # un objectif de poids sans contexte.
+    body = None
+    try:
+        from modules.config import load_config
+        cfg = load_config() or {}
+        prof = (cfg.get('profile') or {})
+        hist = ((prof.get('body') or {}).get('history') or [])
+        if hist:
+            body = {
+                'height_cm': prof.get('height_cm'),
+                'history': hist[-6:],  # 6 dernières mesures suffisent
+            }
+    except Exception:
+        pass
+
     return {
         'today': today.isoformat(),
         'goal': {k: meta.get(k) for k in
@@ -144,6 +162,7 @@ def build_context(plan: dict) -> dict:
         'weeks_summary': weeks_summary[-4:],
         'last_14_days': recent,
         'next_10_days': upcoming,
+        'body': body,
     }
 
 
@@ -171,11 +190,51 @@ Pour les séances récentes tu peux aussi recevoir :
     douleurs, contexte). C'est la source la plus fiable du lot : elle prime sur
     l'interprétation des chiffres en cas de contradiction. Si elle est absente, ne
     l'invente pas et ne suppose pas que tout allait bien.
+  · "body" (optionnel) : historique poids/masse grasse. Si présent, tu peux
+    l'utiliser pour composer l'état de forme, en TENDANCE mesurée (pente sur
+    les 3-4 derniers relevés). N'édicte JAMAIS un objectif chiffré de poids
+    sans que Sébastien te l'ait demandé. Un ratio watts/kg descendant est
+    positif tant qu'il s'accompagne d'une masse grasse qui diminue et
+    d'une performance stable ; s'il monte alors que la MG descend, tu peux
+    évoquer la piste d'une masse musculaire fonctionnelle qui se réorganise
+    — sans conclure.
 
 Réponds UNIQUEMENT avec un JSON valide, sans markdown :
 {
   "headline": "1 phrase, l'essentiel du moment",
   "analysis": "Analyse en français, 4-8 phrases : forme actuelle, ce que disent les scores (volume, allures, régularité), risque principal, focus de la semaine. Tutoiement, ton direct de coach.",
+  "forme": {
+    "score": 0-100,
+    "verdict": "bon" | "surveiller" | "alerte",
+    "headline": "Une phrase courte (max 65 caractères) qui synthétise l'état — ex. « Progression solide, tendon à surveiller »",
+    "detail": "2-3 phrases : ce qui va, ce qui mérite attention, quel focus pour les prochains jours. Ton coach direct, tutoiement. Cite au moins un chiffre concret pour ancrer.",
+    "indicateurs": {
+      "fraicheur": {
+        "valeur": "Chaîne courte — ex. « +8 », « −12 », « équilibre »",
+        "trend": "up" | "down" | "flat",
+        "etat": "ok" | "watch" | "alert",
+        "note": "≤ 25 caractères : « bien récupéré », « dette 2 jours »…"
+      },
+      "compliance": {
+        "valeur": "Chaîne courte — ex. « 74/74 km · 3/3 clés »",
+        "trend": "up" | "down" | "flat",
+        "etat": "ok" | "watch" | "alert",
+        "note": "≤ 25 caractères — ex. « semaine tenue »"
+      },
+      "aerobie": {
+        "valeur": "Chaîne courte — ex. « 2,4 % », « 6,1 % »",
+        "trend": "up" | "down" | "flat",
+        "etat": "ok" | "watch" | "alert",
+        "note": "≤ 25 caractères — ex. « dérive dernière SL »"
+      },
+      "achille": {
+        "valeur": "Chaîne courte — ex. « stable », « 6,1 % », « 3/10 »",
+        "trend": "up" | "down" | "flat",
+        "etat": "ok" | "watch" | "alert",
+        "note": "≤ 25 caractères — ex. « asym. samedi »"
+      }
+    }
+  },
   "proposals": [
     {
       "severity": "minor" | "major",
@@ -379,6 +438,9 @@ def main():
         'signature': signature,
         'headline': result.get('headline', ''),
         'analysis': result.get('analysis', ''),
+        # État de forme composé par le coach : centre de gravité de l'onglet
+        # Coach dans l'app. Peut être absent si le modèle échoue à le produire.
+        'forme': result.get('forme'),
         'applied': applied,
         'pending': [p for p in proposals_doc['proposals'] if p.get('status') == 'pending'],
     }

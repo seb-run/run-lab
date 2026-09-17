@@ -9,6 +9,13 @@
     "name": "Sébastien",
     "birthdate": "22/05/1992",
     "role": "Chef de Projets FFF",
+    "height_cm": 176,
+    "body": {
+      "history": [
+        { "date": "2026-08-23", "weight_kg": 78.2, "body_fat_pct": 14.5 },
+        { "date": "2026-09-17", "weight_kg": 75.8, "body_fat_pct": 12.5 }
+      ]
+    },
     "fitness_target_time": "2h44'00",
     "fitness_target_range": ["2h43'00", "2h45'00"],
     "pb_marathon": "2h49'41",
