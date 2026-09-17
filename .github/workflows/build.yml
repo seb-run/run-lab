@@ -72,7 +72,10 @@ jobs:
           python-version: '3.12'
 
       - name: Install deps
-        run: pip install jinja2 anthropic
+        # anthropic épinglé : les majors du SDK cassent régulièrement les
+        # anciens appels client. On borne la version pour ne plus casser
+        # silencieusement à chaque release.
+        run: pip install "jinja2>=3,<4" "anthropic>=0.30,<1.0"
 
       # Validation d'une proposition du coach depuis le dashboard.
       # Le payload vient d'Internet : il transite par des variables
@@ -84,7 +87,10 @@ jobs:
           PROP_ID: ${{ github.event.client_payload.id }}
           PROP_ACTION: ${{ github.event.client_payload.action }}
           SEB_DATA_DIR: ${{ github.workspace }}/data
-        run: python3 scripts/ci/apply_proposal.py --id "$PROP_ID" --action "$PROP_ACTION"
+        # Repli silencieux : une proposition disparue ou un bug de format ne
+        # doit pas tuer tout le pipeline. L'erreur est déjà journalisée dans
+        # ci_status.json par apply_proposal lui-même.
+        run: python3 scripts/ci/apply_proposal.py --id "$PROP_ID" --action "$PROP_ACTION" || echo "⚠ Validation coach échouée — build poursuivi"
 
       - name: Sync Strava (API directe)
         env:
@@ -111,12 +117,14 @@ jobs:
           INTERVALS_LOOKBACK: ${{ inputs.lookback_days || '7' }}
           INTERVALS_FORCE: ${{ inputs.force_garmin && '1' || '' }}
           SEB_DATA_DIR: ${{ github.workspace }}/data
-        run: python3 scripts/ci/intervals_sync.py
+        run: python3 scripts/ci/intervals_sync.py || echo "⚠ intervals.icu indisponible — build poursuivi"
 
       - name: Intégrer les .fit au cache
         env:
           SEB_DATA_DIR: ${{ github.workspace }}/data
-        run: pip install fitdecode -q && python3 scripts/ci/fit_ingest.py --data "${{ github.workspace }}/data"
+        run: |
+          pip install fitdecode -q || true
+          python3 scripts/ci/fit_ingest.py --data "${{ github.workspace }}/data" || echo "⚠ Ingestion .fit échouée — build poursuivi"
 
       - name: Build dashboard
         env:
@@ -149,30 +157,67 @@ jobs:
       # Seules les DONNÉES sont commitées (cache, plan, analyses coach).
       # Le HTML part sur Pages via artefact → plus de commits qui polluent main.
       - name: Persist data
+        # Persist data ne DOIT jamais tuer le job — un push concurrent, un
+        # rebase en erreur ou un conflit ne doit pas empêcher le déploiement
+        # du HTML. Si le push rate, on tente un rebase --abort puis on
+        # passe à la suite en journalisant clairement.
         run: |
+          set +e
           git config user.name "seb-metrics-bot"
           git config user.email "actions@github.com"
           git add data/
           if git diff --cached --quiet; then
             echo "Données inchangées."
-          else
-            # [skip ci] : empêche le push du bot de re-déclencher un workflow
-            # via le trigger `push:` (qui inclut désormais data/plan_nyc.json).
-            git commit -m "data: sync $(date -u +%Y-%m-%dT%H:%M) [skip ci]"
-            git pull --rebase origin ${{ github.ref_name }} || true
-            git push origin HEAD:${{ github.ref_name }}
+            exit 0
           fi
+          # [skip ci] : empêche le push du bot de re-déclencher un workflow.
+          git commit -m "data: sync $(date -u +%Y-%m-%dT%H:%M) [skip ci]"
+          for i in 1 2 3; do
+            git pull --rebase origin ${{ github.ref_name }}
+            if [ $? -ne 0 ]; then
+              echo "⚠ Rebase échoué (tentative $i) — abort et retry"
+              git rebase --abort 2>/dev/null || true
+              git pull origin ${{ github.ref_name }} --strategy-option=ours 2>/dev/null || true
+              continue
+            fi
+            git push origin HEAD:${{ github.ref_name }}
+            if [ $? -eq 0 ]; then
+              echo "✓ Données commitées et poussées"
+              exit 0
+            fi
+            echo "⚠ Push refusé (tentative $i) — attente 3s puis retry"
+            sleep 3
+          done
+          echo "⚠ Persist data a renoncé après 3 tentatives — build poursuivi sans commit"
+          exit 0
 
       - name: Assemble site
+        # Tolérant à un fichier manquant : un cp qui rate un asset (icône,
+        # manifest) ne doit plus tuer tout le déploiement. On liste ce qui
+        # manque, on copie ce qui est là, et on continue.
         run: |
+          set +e
           mkdir -p site
+          if [ ! -f output/index.html ]; then
+            echo "✗ output/index.html absent — impossible d'assembler le site"
+            exit 1
+          fi
           cp output/index.html site/index.html
-          cp manifest.webmanifest sw.js icon-192.png icon-512.png icon-512-maskable.png apple-touch-icon.png site/
+          echo "✓ index.html copié"
+          for f in manifest.webmanifest sw.js icon-192.png icon-512.png icon-512-maskable.png apple-touch-icon.png; do
+            if [ -f "$f" ]; then
+              cp "$f" site/
+            else
+              echo "⚠ $f absent — ignoré"
+            fi
+          done
           # Calendrier iCal : publié à la racine du site pour que l'abonnement
           # iPhone se resynchronise tout seul à chaque build.
-          python3 scripts/build_ics.py site/plan_nyc.ics
+          python3 scripts/build_ics.py site/plan_nyc.ics || echo "⚠ build_ics échoué — ics manquant"
           # Document de référence du plan
-          python3 scripts/render_plan_doc.py site/plan.html
+          python3 scripts/render_plan_doc.py site/plan.html || echo "⚠ render_plan_doc échoué — plan.html manquant"
+          echo "✓ Site assemblé dans site/"
+          ls -la site/
 
       - uses: actions/upload-pages-artifact@v5
         with:

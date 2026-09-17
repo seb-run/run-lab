@@ -32,7 +32,26 @@
     },
     "generated_at": "2026-09-13T17:58:12"
   },
+<<<<<<< HEAD
   "weeks": [
+=======
+  "paces_sec": {
+   "mp_strategy": 258
+  },
+  "generated_at": "2026-09-17T19:42:38",
+  "source": "plan_v2_import"
+ },
+ "weeks": [
+  {
+   "week_num": 1,
+   "weeks_left": 20,
+   "phase": "base",
+   "phase_label": "Base · construction",
+   "start_date": "2026-06-08",
+   "end_date": "2026-06-14",
+   "target_km": 76.7,
+   "days": [
+>>>>>>> 27a20cd (fix: interface quatre onglets, fuseau des .fit, debordements mobiles)
     {
       "week_num": 1,
       "weeks_left": 7,
