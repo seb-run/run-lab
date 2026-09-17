@@ -363,13 +363,18 @@ def main():
     # rebuilds déclenchés par un simple changement de code. Tant qu'aucune
     # séance nouvelle n'est arrivée et que l'analyse a moins de 12 h, il n'y a
     # rien de neuf à dire.
+    #
+    # Version 2 du schéma (introduction du champ `forme`) : le skip est levé
+    # tant que l'ancienne analyse en cache n'a pas ce champ, sinon le nouveau
+    # format ne serait jamais produit.
     signature = json.dumps(context['last_14_days'][-3:], ensure_ascii=False)
     if ANALYSIS_PATH.exists() and '--force' not in sys.argv:
         try:
             prev = json.loads(ANALYSIS_PATH.read_text(encoding='utf-8'))
             age_h = (datetime.now()
                      - datetime.fromisoformat(prev['generated_at'])).total_seconds() / 3600
-            if prev.get('signature') == signature and age_h < 12:
+            schema_ok = prev.get('forme') is not None
+            if prev.get('signature') == signature and age_h < 12 and schema_ok:
                 print(f'✓ Analyse encore valable ({age_h:.1f} h, rien de neuf) '
                       '— appel modèle évité.')
                 return
