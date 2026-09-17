@@ -2075,7 +2075,7 @@
           "target_pace": "4'16\"/km",
           "date": "2026-09-17",
           "dow": "Thu",
-          "status": "pending",
+          "status": "today",
           "actual": null,
           "coach_notes": [
             {
@@ -2101,24 +2101,40 @@
           "dow": "Fri",
           "type": "recovery",
           "title": "Footing récup 8km",
-          "km": 7.8,
+          "km": 7.0,
           "duration_min": 47,
           "key": false,
           "description": "8km très facile, allure récupération. FC zone 1-2 bas.",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "volume",
+              "delta_pct": -10,
+              "reason": "gérer la charge de la semaine"
+            }
+          ],
+          "_adapt_volume": true
         },
         {
           "date": "2026-09-19",
           "dow": "Sat",
           "type": "easy",
           "title": "Footing 9km + lignes",
-          "km": 9.3,
+          "km": 8.4,
           "duration_min": 49,
           "key": false,
           "description": "9km à 5'26\"/km + 4×100m lignes droites en fin. Activation pour la SL de dimanche.",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "volume",
+              "delta_pct": -10,
+              "reason": "gérer la charge de la semaine"
+            }
+          ],
+          "_adapt_volume": true
         },
         {
           "type": "long_prog",
@@ -2146,22 +2162,22 @@
           ]
         }
       ],
-      "volume_actual_to_date": 12.2,
-      "volume_planned_to_date": 14.0,
-      "volume_drift_pct": -12.9,
+      "volume_actual_to_date": 37.9,
+      "volume_planned_to_date": 24.1,
+      "volume_drift_pct": 57.3,
       "compliance": {
-        "km_pct": 87,
-        "km_done": 12.2,
-        "km_planned": 14.0,
+        "km_pct": 157,
+        "km_done": 37.9,
+        "km_planned": 24.1,
         "km_done_week": 37.9,
-        "km_planned_week": 78.7,
-        "sessions_done": 1,
-        "sessions_planned": 1,
+        "km_planned_week": 77.0,
+        "sessions_done": 2,
+        "sessions_planned": 2,
         "sessions_done_week": 2,
         "keys_success": 0,
         "keys_total": 1,
-        "points": 73,
-        "verdict": "partial"
+        "points": 84,
+        "verdict": "success"
       }
     },
     {
