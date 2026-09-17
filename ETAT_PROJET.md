@@ -198,3 +198,4 @@ Worker Cloudflare `strava-relay` : `GITHUB_TOKEN`, `GITHUB_REPO`,
 - Le type de séance détecté automatiquement est peu fiable (un footing avec
   lignes droites est classé « fractionné »). Comparer les séances par allure,
   pas par type.
+
