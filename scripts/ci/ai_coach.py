@@ -266,12 +266,13 @@ Règles :
 def call_model(context: dict) -> dict:
     import anthropic
     client = anthropic.Anthropic()
-    # max_tokens couvre AUSSI les blocs de raisonnement du modèle. À 2000, le
-    # raisonnement consommait tout le budget et la réponse revenait sans aucun
-    # bloc texte — d'où le JSONDecodeError sur une chaîne vide.
+    # max_tokens couvre AUSSI les blocs de raisonnement du modèle. À 8000, le
+    # nouveau format (forme + 4 indicateurs + analysis + propositions) sortait
+    # tronqué et le json.loads plantait sans que rien ne soit écrit. À 20000
+    # on a de la marge pour le raisonnement ET la réponse structurée.
     msg = client.messages.create(
         model=MODEL,
-        max_tokens=8000,
+        max_tokens=20000,
         system=SYSTEM_PROMPT,
         messages=[{'role': 'user', 'content': json.dumps(context, ensure_ascii=False)}],
     )
@@ -282,6 +283,11 @@ def call_model(context: dict) -> dict:
         raise RuntimeError(
             f'réponse sans bloc texte (blocs reçus : {kinds}, '
             f'stop_reason={msg.stop_reason}) — augmenter max_tokens')
+    # Détection explicite d'un JSON tronqué (utile quand max_tokens saute).
+    if msg.stop_reason == 'max_tokens':
+        raise RuntimeError(
+            f'réponse coupée par max_tokens ({len(text)} caractères produits). '
+            'Le JSON est incomplet — augmenter max_tokens ou alléger le prompt.')
     # Tolère un éventuel bloc de code
     if text.startswith('```'):
         text = text.strip('`')
