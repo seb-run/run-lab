@@ -4709,3 +4709,121 @@ html[data-theme="dark"] {
 
 /* Notes cascade : marquer comme information système, pas comme consigne coach */
 .plan-coach-notes li.cascade b { color: var(--c-blue); }
+
+/* ============================================================
+   État de forme — carte principale de l'accueil
+
+   Zone centrale qui répond à « qui je suis physiquement ce
+   matin » avant de descendre dans le détail des séances.
+   Cadran chiffré à gauche, verdict + phrase du coach au centre,
+   quatre indicateurs typés en dessous. Aucun dégradé, aucune
+   ombre lourde, filets fins.
+   ============================================================ */
+.etat-forme {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 15px 14px;
+  margin-bottom: var(--sp-5);
+  cursor: pointer;
+  transition: border-color var(--t-fast);
+}
+.etat-forme:hover { border-color: var(--border-2); }
+.etat-forme.is-loading { display: none; }
+
+.etat-forme-l {
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: var(--font-mono);
+  font-size: 10.5px; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--text-3);
+  font-weight: 600; margin-bottom: 11px;
+}
+.etat-forme-l .verdict-bon        { color: var(--leaf); }
+.etat-forme-l .verdict-surveiller { color: var(--sun); }
+.etat-forme-l .verdict-alerte     { color: var(--pin); }
+
+/* Jauge : cadran circulaire à gauche, verdict + phrase à droite. */
+.etat-forme-jauge {
+  display: flex; align-items: center;
+  gap: 14px; margin-bottom: 11px;
+}
+.etat-forme-cadran {
+  width: 66px; height: 66px; flex: 0 0 auto; position: relative;
+}
+.etat-forme-cadran svg {
+  width: 100%; height: 100%; transform: rotate(-90deg);
+}
+.etat-forme-cadran-v {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  font-family: var(--font-mono);
+}
+.etat-forme-cadran-n {
+  font-size: 19px; font-weight: 700;
+  color: var(--text); line-height: 1;
+  letter-spacing: -0.02em;
+}
+.etat-forme-cadran-t {
+  font-size: 8px; color: var(--text-3);
+  letter-spacing: 0.04em; margin-top: 2px;
+}
+.etat-forme-verdict {
+  flex: 1; min-width: 0;
+}
+.etat-forme-verdict-t {
+  font-size: 15px; font-weight: 600;
+  color: var(--text); line-height: 1.22;
+  letter-spacing: -0.01em;
+}
+.etat-forme-verdict-s {
+  font-size: 12px; color: var(--text-2);
+  line-height: 1.4; margin-top: 4px;
+  max-height: 3.5em; overflow: hidden;
+  transition: max-height 240ms var(--ease, ease);
+}
+.etat-forme.is-open .etat-forme-verdict-s {
+  max-height: 20em;
+}
+
+/* Grille d'indicateurs typés. Fond dilué + filet à gauche, code par état. */
+.etat-forme-ind {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 7px;
+}
+.etat-forme-i {
+  background: var(--surface-3);
+  border-radius: 9px;
+  padding: 9px 10px 8px;
+  border-left: 3px solid var(--text-3);
+}
+.etat-forme-i.etat-ok    { background: var(--leaf-l); border-left-color: var(--leaf); }
+.etat-forme-i.etat-watch { background: var(--sun-l);  border-left-color: var(--sun); }
+.etat-forme-i.etat-alert { background: var(--pin-l);  border-left-color: var(--pin); }
+.etat-forme-i-h {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 9.5px; letter-spacing: 0.05em;
+  text-transform: uppercase; color: var(--text-2);
+  margin-bottom: 3px; font-weight: 600;
+}
+.etat-forme-i-h .trend { font-size: 12px; }
+.etat-forme-i.etat-ok    .trend { color: var(--leaf); }
+.etat-forme-i.etat-watch .trend { color: var(--sun-tx); }
+.etat-forme-i.etat-alert .trend { color: var(--pin); }
+.etat-forme-i-v {
+  font-family: var(--font-mono);
+  font-size: 14px; font-weight: 600;
+  color: var(--text); letter-spacing: -0.01em;
+}
+.etat-forme-i-s {
+  font-size: 10.5px; color: var(--text-2);
+  margin-top: 1px; line-height: 1.25;
+}
+
+@media (max-width: 400px) {
+  .etat-forme { padding: 14px 13px 12px; }
+  .etat-forme-cadran { width: 58px; height: 58px; }
+  .etat-forme-cadran-n { font-size: 17px; }
+  .etat-forme-verdict-t { font-size: 14px; }
+  .etat-forme-verdict-s { font-size: 11.5px; }
+  .etat-forme-i-v { font-size: 13px; }
+}

@@ -6046,7 +6046,82 @@
     });
   }
 
+  // État de forme : lit RAW.coach.forme et rend la carte principale en tête
+  // d'accueil. Silencieux si le champ manque ou si le coach n'a rien produit.
+  function homeRenderEtatForme() {
+    const wrap = document.getElementById('etatForme');
+    if (!wrap) return;
+    const forme = RAW.coach && RAW.coach.forme;
+    if (!forme || !forme.indicateurs) { wrap.innerHTML = ''; return; }
+
+    const score = Math.max(0, Math.min(100, Number(forme.score) || 0));
+    const verdict = forme.verdict || 'surveiller';
+    const verdictLabel = {bon: 'Bon', surveiller: 'À surveiller', alerte: 'Alerte'}[verdict] || verdict;
+
+    // Cadran : le arc rempli s'étale sur une circonférence de 119,4
+    // (2·π·19 arrondi). L'offset décroît quand le score monte.
+    const CIRC = 119.4;
+    const dashOffset = CIRC * (1 - score / 100);
+    const arcColor = verdict === 'bon' ? 'var(--leaf)'
+                    : verdict === 'alerte' ? 'var(--pin)' : 'var(--sun)';
+
+    const trendIcon = (t) => t === 'up' ? '↗' : t === 'down' ? '↘' : '·';
+    const IND_LABEL = {
+      fraicheur: 'Fraîcheur', compliance: 'Compliance',
+      aerobie:   'Aérobie',   achille:    'Achille',
+    };
+
+    const items = ['fraicheur', 'compliance', 'aerobie', 'achille'].map(k => {
+      const ind = forme.indicateurs[k];
+      if (!ind) return '';
+      const etat = ind.etat || 'ok';
+      return `<div class="etat-forme-i etat-${escapeHtml(etat)}">
+        <div class="etat-forme-i-h">
+          <span>${IND_LABEL[k] || k}</span>
+          <span class="trend">${trendIcon(ind.trend)}</span>
+        </div>
+        <div class="etat-forme-i-v">${escapeHtml(ind.valeur || '—')}</div>
+        <div class="etat-forme-i-s">${escapeHtml(ind.note || '')}</div>
+      </div>`;
+    }).join('');
+
+    wrap.innerHTML = `<div class="etat-forme" id="etatFormeCard">
+      <div class="etat-forme-l">
+        <span>État de forme · ${escapeHtml(RAW.coach.generated_at ? RAW.coach.generated_at.slice(0,10) : '')}</span>
+        <span class="verdict-${escapeHtml(verdict)}">${escapeHtml(verdictLabel)}</span>
+      </div>
+      <div class="etat-forme-jauge">
+        <div class="etat-forme-cadran">
+          <svg viewBox="0 0 44 44">
+            <circle cx="22" cy="22" r="19" fill="none" stroke="var(--border)" stroke-width="4"/>
+            <circle cx="22" cy="22" r="19" fill="none"
+              stroke="${arcColor}" stroke-width="4"
+              stroke-dasharray="${CIRC}"
+              stroke-dashoffset="${dashOffset.toFixed(1)}"
+              stroke-linecap="round"/>
+          </svg>
+          <div class="etat-forme-cadran-v">
+            <div class="etat-forme-cadran-n">${score}</div>
+            <div class="etat-forme-cadran-t">/100</div>
+          </div>
+        </div>
+        <div class="etat-forme-verdict">
+          <div class="etat-forme-verdict-t">${escapeHtml(forme.headline || '')}</div>
+          <div class="etat-forme-verdict-s">${escapeHtml(forme.detail || '')}</div>
+        </div>
+      </div>
+      <div class="etat-forme-ind">${items}</div>
+    </div>`;
+
+    // Tap pour déplier/replier la phrase de détail
+    const card = document.getElementById('etatFormeCard');
+    if (card) {
+      card.addEventListener('click', () => card.classList.toggle('is-open'));
+    }
+  }
+
   function renderHomeTab() {
+    homeRenderEtatForme();
     homeRenderPlanHero();
     homeRenderRoute();
     homeRenderAnswers();
