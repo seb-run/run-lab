@@ -139,8 +139,13 @@ def render(plan: dict) -> str:
     # ---- Cadre
     a("<h2>Le cadre</h2>")
     a("<div class='grid'>")
-    d10 = [w["target_km"] for w in weeks if w["week_num"] >= 12]
-    d10[-1] -= 42.2
+    # Défensif : sur les plans v2 réimportés, la renumérotation peut faire
+    # tomber le seuil "week_num >= 12" hors des semaines existantes, ce qui
+    # produisait une liste vide et un IndexError qui cassait le déploiement.
+    d10 = [w["target_km"] for w in weeks if w["week_num"] >= 12] or \
+          [w["target_km"] for w in weeks[-10:]]
+    if d10:
+        d10[-1] = max(0, d10[-1] - 42.2)
     for k, v, n in [
         ("Objectif NYC", "2h57", "4'12/km, en négatif"),
         ("Objectif réel", "2h44", "Marathon de Milan, 4 avril 2027"),

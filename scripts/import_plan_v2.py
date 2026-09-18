@@ -287,7 +287,17 @@ def main():
     if not cible.exists():
         cible = ROOT / 'data' / 'plan_nyc.json'
     print(f"▸ Cible  : {cible}")
-    ancien = json.loads(cible.read_text(encoding='utf-8')) if cible.exists() else None
+    # Défensif : un ancien plan corrompu (marqueurs de conflit git non
+    # résolus, JSON tronqué) ne doit pas bloquer l'import. On repart de zéro
+    # dans ce cas — la perte des semaines historiques est acceptable, le
+    # cache des séances (sessions_cache.json) porte l'historique réel.
+    ancien = None
+    if cible.exists():
+        try:
+            ancien = json.loads(cible.read_text(encoding='utf-8'))
+        except json.JSONDecodeError as e:
+            print(f"⚠ Plan actuel corrompu ({e}). Import à partir de zéro.")
+            ancien = None
 
     # 3. Conversion
     allures_ref = v2.get('allures', {})
