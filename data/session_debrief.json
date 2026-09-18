@@ -1,45 +1,45 @@
 {
- "headline": "Footing 5'25 réalisé à la place du 9km allure marathon prévu — plan non suivi.",
+ "headline": "12km à 5'05\"/km au lieu du footing récup 8km prévu : volume et allure au-dessus du plan.",
  "bullets": [
-  "8.42km à 5'25\"/km au lieu des 15.5km prévus (9km à 4'16\"/km) — séance très différente du plan.",
-  "FC 145 bpm, quasi identique à ta réf 60j (144.6) mais dérive +14% en séance, temp 25-27°C.",
-  "RPE 3/10, ressenti \"fort\" malgré la dérive de FC — bon signal, pas de fatigue perçue."
+  "Volume 154% du prévu (12,01km vs 7,8km) — ce n'était plus une sortie récup.",
+  "FC moyenne 139 bpm, 8,7 de moins que ta réf (147,7) à allure comparable — bon signe.",
+  "Contact au sol 244ms, +20ms vs ta réf (224ms) à cette allure — appui plus long qu'habituel."
  ],
  "points": [
   {
-   "label": "Contact sol",
-   "valeur": "231 ms",
-   "ecart": "+4 ms vs réf 227 ms",
-   "lecture": "cohérent avec allure plus lente",
-   "ton": "neutre"
-  },
-  {
-   "label": "Équilibre gauche",
-   "valeur": "51.05%",
-   "ecart": "+0.37 pt vs réf 50.68%",
-   "lecture": "léger surplus côté gauche",
-   "ton": "neutre"
-  },
-  {
-   "label": "Asymétrie vs allure",
-   "valeur": "-0.03",
-   "ecart": "stable lent/rapide",
-   "lecture": "pas d'ouverture avec la vitesse",
+   "label": "FC moyenne",
+   "valeur": "139 bpm",
+   "ecart": "-8,7 vs réf 147,7",
+   "lecture": "FC basse pour cette allure, bon signe",
    "ton": "bon"
+  },
+  {
+   "label": "Contact au sol",
+   "valeur": "244 ms",
+   "ecart": "+20 ms vs réf 224 ms",
+   "lecture": "appui plus long que d'habitude",
+   "ton": "vigilance"
+  },
+  {
+   "label": "Volume",
+   "valeur": "12,01 km",
+   "ecart": "+54% vs 7,8 km prévus",
+   "lecture": "récup transformée en sortie longue",
+   "ton": "vigilance"
   }
  ],
- "achille": "Équilibre à 51.05% (réf 50.68%), léger mieux côté droit déchargé, écart faible.",
- "a_surveiller": "Séance non conforme au plan clé (footing vs allure marathon) — motif à vérifier avec lui.",
+ "achille": "Aucune donnée d'équilibre G/D sur cette séance (champ vide) — vraisemblablement course sans ceinture.",
+ "a_surveiller": "Dérive FC +6,4% en fin de séance alors que la température baisse (24→20°C) — plutôt fatigue que chaleur.",
  "seance": {
-  "date": "17/09/2026",
-  "heure": "12:21",
-  "titre": "i187589989",
-  "type_detecte": "footing",
-  "km": 8.42,
-  "duree": "45m 37s",
-  "allure": "5'25\"/km",
-  "fc_moy": 145
+  "date": "18/09/2026",
+  "heure": "08:33",
+  "titre": "i187853591",
+  "type_detecte": "endurance",
+  "km": 12.01,
+  "duree": "1h 01m 05s",
+  "allure": "5'05\"/km",
+  "fc_moy": 139
  },
- "generated_at": "2026-09-17T11:10:51",
- "baseline_n": 22
+ "generated_at": "2026-09-18T21:14:42",
+ "baseline_n": 33
 }

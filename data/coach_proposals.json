@@ -1,37 +1,6 @@
 {
  "proposals": [
   {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-08-16",
-   "field": "description_note",
-   "new_value": "Chaleur annoncée : reste strictement sur 20km à 4'55/km, ne répète pas le dépassement du 9/08 (26km, stance_drift +8.9%). Hydratation toutes les 20-25min, coupe si FC s'envole sans raison.",
-   "reason": "La dernière sortie longue (9/08) a été dépassée de 30% par forte chaleur avec un stance_drift de +8.9% (signe de fatigue mécanique réelle) et un decoupling à 9.1% — il faut éviter la récidive.",
-   "replacement": null,
-   "id": "de660461",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "expired",
-   "created_at": "2026-08-16T10:42:52"
-  },
-  {
-   "severity": "major",
-   "kind": "change_pace",
-   "date": "2026-08-18",
-   "field": null,
-   "new_value": "Allure seuil ajustée à 3'55-4'00/km sur un format plus court, avec accent sur les sensations plutôt que le chrono strict",
-   "reason": "Le dernier seuil (11/08) s'est totalement effondré (5'22/km au lieu de 3'50, FC pourtant basse), probablement séquelle de la longue trop dure du 9/08 et chaleur persistante (28-33°C partout). Repartir directement sur 5×2000m à 3'50/km strict risque de reproduire l'échec ; mieux vaut un format plus court pour reconstruire la confiance avant de revenir à l'allure cible.",
-   "replacement": {
-    "title": "Seuil progressif · 5×1600m",
-    "type": "seuil",
-    "km": 13.0,
-    "target_pace": "3'55\"-4'00\"/km",
-    "description": "5×1600m à 3'55-4'00/km (au lieu de 3'50 strict), récup 2min trot entre chaque. Priorité aux sensations : si ça tire trop après 2-3 répétitions, arrête-toi là plutôt que de forcer. Échauffement 15min + 4 lignes avant. Vise la régularité plutôt que la vitesse pure vu la chaleur."
-   },
-   "id": "b266e80a",
-   "status": "expired",
-   "created_at": "2026-08-16T10:42:52"
-  },
-  {
    "severity": "major",
    "kind": "change_pace",
    "date": "2026-08-18",
@@ -465,6 +434,42 @@
    "id": "5efaee10",
    "status": "pending",
    "created_at": "2026-09-17T11:10:25"
+  },
+  {
+   "severity": "major",
+   "kind": "restructure_week",
+   "date": "2026-09-20",
+   "field": null,
+   "new_value": "SL progressive convertie en SL fondamentale sans segments MP, volume ramené à 22km",
+   "reason": "3 séances clés ratées d'affilée (VMA trop lente, MP sous-distance et hors allure) en semaine déjà à 117% de volume : mieux vaut sécuriser la récupération avant d'attaquer VMA et bloc MP.",
+   "replacement": {
+    "title": "SL fondamentale 22km",
+    "type": "long",
+    "km": 22.0,
+    "target_pace": "4'51\"/km",
+    "description": "Sortie longue au train fondamental, aucune progression ni segment MP. Objectif : avaler le volume sans creuser la fatigue. Coupe court si jambes lourdes ou chaleur excessive — 18-20km suffisent si besoin."
+   },
+   "id": "66bd87f9",
+   "status": "pending",
+   "created_at": "2026-09-18T21:14:09"
+  },
+  {
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-09-24",
+   "field": null,
+   "new_value": "Allure ramenée de 3'53\"/km à 4'16\"/km (sub-3h) pour le bloc MP",
+   "reason": "Viser l'allure 2h44 alors que l'allure sub-3h (4'16) a été manquée 3 jours plus tôt (5'25/km, sous-distance) n'a pas de sens actuellement. On recalibre sur l'objectif prioritaire sub-3h.",
+   "replacement": {
+    "title": "14km allure marathon (sub-3h) · bloc",
+    "type": "mp_run",
+    "km": 18.0,
+    "target_pace": "4'16\"/km",
+    "description": "Bloc à l'allure sub-3h (4'16/km), pas plus vite. Échauffement 4km facile, puis 14km au train cible en continu ou en 2×7km avec 2min de trot si besoin. Objectif : retrouver de la régularité, pas de la vitesse."
+   },
+   "id": "66117c03",
+   "status": "pending",
+   "created_at": "2026-09-18T21:14:09"
   }
  ]
 }

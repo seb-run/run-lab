@@ -1,1242 +1,1643 @@
 {
- "meta": {
-  "goal_name": "NYC Marathon",
-  "goal_date": "2026-10-11",
-  "target_time": "2h57'00",
-  "strategy_time": "2h57'00",
-  "weeks_total": 11,
-  "plan_peak_km": 92.0,
-  "user_peak_km": null,
-  "vma_used": 62.5,
-  "paces_str": {
-   "vma": "3'18\"/km",
-   "10k": "3'50\"/km",
-   "seuil": "3'50\"/km",
-   "semi": "3'59\"/km",
-   "marathon": "4'12\"/km",
-   "mp_target": "3'59\"/km",
-   "mp_strategy": "4'12\"/km",
-   "le_easy": "5'15\"/km",
-   "recovery": "5'25\"/km",
-   "recup": "5'25\"/km",
-   "footing": "5'15\"/km",
-   "le_long": "4'47\"/km"
+  "meta": {
+    "goal_name": "NYC Marathon",
+    "goal_date": "2026-11-01",
+    "target_time": "2h44'00",
+    "strategy_time": "3h00'00",
+    "weeks_total": 7,
+    "plan_peak_km": 97.2,
+    "user_peak_km": 88.3,
+    "vma_used": 17.41,
+    "paces_str": {
+      "vma": "3'27\"/km",
+      "10k": "3'38\"/km",
+      "seuil": "3'55\"/km",
+      "semi": "4'03\"/km",
+      "marathon": "4'15\"/km",
+      "mp_target": "3'53\"/km",
+      "mp_strategy": "4'16\"/km",
+      "le_long": "4'51\"/km",
+      "footing": "5'26\"/km"
+    },
+    "paces_sec": {
+      "vma": 207,
+      "10k": 218,
+      "seuil": 235,
+      "semi": 243,
+      "marathon": 255,
+      "mp_target": 233,
+      "mp_strategy": 256,
+      "le_long": 291,
+      "footing": 326
+    },
+    "generated_at": "2026-09-18T21:12:22"
   },
-  "paces_sec": {
-   "mp_strategy": 258
-  },
-  "generated_at": "2026-09-18T07:54:26",
-  "source": "plan_v2_import"
- },
- "weeks": [
-  {
-   "week_num": 1,
-   "weeks_left": null,
-   "phase": "base",
-   "phase_label": "Reprise cadrée — réalisée",
-   "start_date": "2026-08-17",
-   "end_date": "2026-08-23",
-   "target_km": 68.0,
-   "days": [
+  "weeks": [
     {
-     "date": "2026-08-17",
-     "dow": "Mon",
-     "type": "rest",
-     "title": "Repos + Muscu A",
-     "km": 0.0,
-     "duration_min": 0,
-     "key": false,
-     "description": "Journée de repos course à pied. Démarrage du protocole tendon et du plan alimentaire avec Sabrina.",
-     "status": "pending"
+      "week_num": 1,
+      "weeks_left": 6,
+      "phase": "specific",
+      "phase_label": "Spécifique · allure course",
+      "start_date": "2026-09-14",
+      "end_date": "2026-09-20",
+      "target_km": 77.7,
+      "days": [
+        {
+          "date": "2026-09-14",
+          "dow": "Mon",
+          "type": "rest",
+          "title": "Repos",
+          "km": 0,
+          "duration_min": 0,
+          "key": false,
+          "description": "Repos complet ou mobilité/yoga 20-30min. Récupération.",
+          "status": "done",
+          "actual": null
+        },
+        {
+          "type": "intervals",
+          "title": "VMA longue · 5×1000m",
+          "km": 14.0,
+          "duration_min": 77,
+          "key": true,
+          "description": "20min échauffement 5'26\"/km\n5×1000m à 95-100% VMA 3'27\"/km · récup 2min trot\n10min retour calme",
+          "target_pace": "3'27\"/km",
+          "date": "2026-09-15",
+          "dow": "Tue",
+          "actual": {
+            "km": 12.2,
+            "duration_min": 64,
+            "pace_sec": 314,
+            "pace_str": "5'14\"/km",
+            "fc": 142,
+            "cadence": 178,
+            "type": "endurance",
+            "title": "i186812584",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 229.0,
+              "osc_cm": 10.1,
+              "vratio": 9.22,
+              "balance_l": 51.72,
+              "step_m": 1.07,
+              "temp_c": 25,
+              "temp_max": 33,
+              "resp": 34.4,
+              "power": 361,
+              "np": 362,
+              "te_aero": 3.2,
+              "te_ana": 0.0,
+              "load": 111.7,
+              "strides": 5662,
+              "rpe": 2.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 229.0,
+                  "end": 228.0,
+                  "pct": -0.4
+                },
+                "step": {
+                  "start": 1038.0,
+                  "end": 1093.0,
+                  "pct": 5.4
+                },
+                "vratio": {
+                  "start": 9.46,
+                  "end": 9.01,
+                  "pct": -4.9
+                },
+                "osc": {
+                  "start": 100.0,
+                  "end": 101.0,
+                  "pct": 0.8
+                },
+                "hr": {
+                  "start": 138.0,
+                  "end": 145.0,
+                  "pct": 5.4
+                },
+                "cad": {
+                  "start": 88.8,
+                  "end": 88.8,
+                  "pct": 0.0
+                }
+              },
+              "balance_min": 51.34,
+              "balance_max": 52.0,
+              "balance_series": [
+                52.0,
+                51.75,
+                51.91,
+                51.93,
+                51.74,
+                51.9,
+                51.53,
+                51.76,
+                51.88,
+                51.34,
+                51.35,
+                51.58
+              ],
+              "balance_lent": 51.9,
+              "balance_rapide": 51.58,
+              "asym_vs_allure": -0.31,
+              "allure_lent_s": 322,
+              "allure_rapide_s": 305,
+              "rr_beats": 9290,
+              "rmssd_effort": 5.8,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 326,
+                "fc": 130,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 316,
+                "fc": 138,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 321,
+                "fc": 141,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 321,
+                "fc": 142,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 320,
+                "fc": 142,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 314,
+                "fc": 142,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 309,
+                "fc": 144,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 312,
+                "fc": 146,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 305,
+                "fc": 146,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 298,
+                "fc": 143,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 313,
+                "fc": 148,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 307,
+                "fc": 144,
+                "ca": 176
+              },
+              {
+                "km": 0.21,
+                "ps": 318,
+                "fc": 148,
+                "ca": 176
+              }
+            ]
+          },
+          "status": "done",
+          "score": {
+            "points": 52,
+            "verdict": "failed",
+            "verdict_label": "Échouée",
+            "volume_pct": 87,
+            "volume_points": 94,
+            "pace_points": 0,
+            "pace_target_s": 207,
+            "pace_actual_s": 314,
+            "pace_actual_str": "5'14\"/km",
+            "pace_delta_s": 107,
+            "is_quality": true,
+            "hr": {
+              "avg": 142,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": -1.0,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 87%",
+              "Allure +107\"/km vs cible"
+            ]
+          }
+        },
+        {
+          "date": "2026-09-16",
+          "dow": "Wed",
+          "type": "easy",
+          "title": "Footing 10km",
+          "km": 10.1,
+          "duration_min": 55,
+          "key": false,
+          "description": "10km à 5'26\"/km. Allure conversationnelle, FC en zone 2.",
+          "actual": {
+            "km": 25.7,
+            "duration_min": 128,
+            "pace_sec": 299,
+            "pace_str": "4'59\"/km",
+            "fc": 146,
+            "cadence": 171,
+            "type": "frac_court",
+            "title": "Course à pied en soirée",
+            "n": 2,
+            "note": null,
+            "dyn": {
+              "stance_ms": 224.0,
+              "osc_cm": 10.0,
+              "vratio": 9.07,
+              "balance_l": 50.74,
+              "step_m": 1.09,
+              "temp_c": 27,
+              "temp_max": 30,
+              "resp": 31.4,
+              "power": 375,
+              "np": 383,
+              "te_aero": 2.8,
+              "te_ana": 1.2,
+              "load": 94.4,
+              "strides": 2540,
+              "rpe": 3.0,
+              "feel": 50,
+              "feel_label": "Normal",
+              "drift": {
+                "stance": {
+                  "start": 233.0,
+                  "end": 222.0,
+                  "pct": -4.9
+                },
+                "step": {
+                  "start": 926.0,
+                  "end": 1179.0,
+                  "pct": 27.3
+                },
+                "vratio": {
+                  "start": 9.09,
+                  "end": 9.37,
+                  "pct": 3.1
+                },
+                "osc": {
+                  "start": 86.0,
+                  "end": 111.0,
+                  "pct": 29.2
+                },
+                "hr": {
+                  "start": 126.0,
+                  "end": 158.0,
+                  "pct": 25.9
+                },
+                "cad": {
+                  "start": 91.5,
+                  "end": 87.0,
+                  "pct": -4.9
+                }
+              },
+              "balance_min": 49.44,
+              "balance_max": 52.24,
+              "balance_series": [
+                52.24,
+                51.32,
+                50.06,
+                49.44,
+                50.01,
+                50.86
+              ],
+              "balance_lent": 51.78,
+              "balance_rapide": 49.75,
+              "asym_vs_allure": -1.53,
+              "allure_lent_s": 348,
+              "allure_rapide_s": 276,
+              "rr_beats": 5272,
+              "rmssd_effort": 17.1,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 322,
+                "fc": 127,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 330,
+                "fc": 138,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 314,
+                "fc": 140,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 311,
+                "fc": 139,
+                "ca": 176
+              },
+              {
+                "km": 0.85,
+                "ps": 362,
+                "fc": 132,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 223,
+                "fc": 160,
+                "ca": 180
+              },
+              {
+                "km": 0.2,
+                "ps": 190,
+                "fc": 170,
+                "ca": 183
+              },
+              {
+                "km": 0.23,
+                "ps": 392,
+                "fc": 151,
+                "ca": 157
+              },
+              {
+                "km": 1.0,
+                "ps": 222,
+                "fc": 164,
+                "ca": 181
+              },
+              {
+                "km": 0.2,
+                "ps": 185,
+                "fc": 174,
+                "ca": 187
+              },
+              {
+                "km": 0.21,
+                "ps": 417,
+                "fc": 151,
+                "ca": 149
+              },
+              {
+                "km": 1.0,
+                "ps": 219,
+                "fc": 167,
+                "ca": 180
+              },
+              {
+                "km": 0.2,
+                "ps": 190,
+                "fc": 177,
+                "ca": 184
+              },
+              {
+                "km": 0.21,
+                "ps": 431,
+                "fc": 153,
+                "ca": 154
+              },
+              {
+                "km": 1.0,
+                "ps": 218,
+                "fc": 168,
+                "ca": 179
+              },
+              {
+                "km": 0.2,
+                "ps": 190,
+                "fc": 176,
+                "ca": 182
+              },
+              {
+                "km": 0.19,
+                "ps": 466,
+                "fc": 152,
+                "ca": 136
+              },
+              {
+                "km": 0.3,
+                "ps": 190,
+                "fc": 167,
+                "ca": 184
+              },
+              {
+                "km": 0.08,
+                "ps": 372,
+                "fc": 171,
+                "ca": 154
+              },
+              {
+                "km": 0.3,
+                "ps": 193,
+                "fc": 173,
+                "ca": 184
+              },
+              {
+                "km": 0.07,
+                "ps": 395,
+                "fc": 172,
+                "ca": 154
+              },
+              {
+                "km": 0.3,
+                "ps": 193,
+                "fc": 174,
+                "ca": 183
+              },
+              {
+                "km": 0.08,
+                "ps": 371,
+                "fc": 175,
+                "ca": 158
+              },
+              {
+                "km": 0.3,
+                "ps": 187,
+                "fc": 175,
+                "ca": 183
+              },
+              {
+                "km": 0.08,
+                "ps": 379,
+                "fc": 178,
+                "ca": 156
+              },
+              {
+                "km": 0.3,
+                "ps": 193,
+                "fc": 176,
+                "ca": 183
+              },
+              {
+                "km": 0.06,
+                "ps": 508,
+                "fc": 175,
+                "ca": 134
+              },
+              {
+                "km": 0.3,
+                "ps": 190,
+                "fc": 175,
+                "ca": 182
+              },
+              {
+                "km": 0.06,
+                "ps": 489,
+                "fc": 176,
+                "ca": 132
+              },
+              {
+                "km": 0.3,
+                "ps": 183,
+                "fc": 176,
+                "ca": 184
+              },
+              {
+                "km": 0.06,
+                "ps": 470,
+                "fc": 178,
+                "ca": 139
+              },
+              {
+                "km": 0.3,
+                "ps": 177,
+                "fc": 179,
+                "ca": 184
+              },
+              {
+                "km": 1.0,
+                "ps": 328,
+                "fc": 148,
+                "ca": 175
+              },
+              {
+                "km": 1.0,
+                "ps": 297,
+                "fc": 151,
+                "ca": 183
+              },
+              {
+                "km": 1.0,
+                "ps": 356,
+                "fc": 136,
+                "ca": 184
+              },
+              {
+                "km": 1.0,
+                "ps": 350,
+                "fc": 142,
+                "ca": 183
+              },
+              {
+                "km": 1.0,
+                "ps": 362,
+                "fc": 142,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 362,
+                "fc": 139,
+                "ca": 180
+              },
+              {
+                "km": 0.59,
+                "ps": 363,
+                "fc": 137,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 349,
+                "fc": 122,
+                "ca": 186
+              },
+              {
+                "km": 1.0,
+                "ps": 348,
+                "fc": 129,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 282,
+                "fc": 141,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 270,
+                "fc": 158,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 285,
+                "fc": 160,
+                "ca": 174
+              },
+              {
+                "km": 0.64,
+                "ps": 288,
+                "fc": 155,
+                "ca": 174
+              }
+            ]
+          },
+          "status": "over",
+          "score": {
+            "points": 70,
+            "verdict": "partial",
+            "verdict_label": "Partielle",
+            "volume_pct": 254,
+            "volume_points": 70,
+            "pace_points": null,
+            "pace_target_s": null,
+            "pace_actual_s": null,
+            "pace_actual_str": null,
+            "pace_delta_s": null,
+            "is_quality": false,
+            "hr": {
+              "avg": 146,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 7.6,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 254%"
+            ]
+          }
+        },
+        {
+          "type": "mp_run",
+          "title": "9km allure marathon",
+          "km": 15.5,
+          "duration_min": 78,
+          "key": true,
+          "description": "15min échauffement 5'26\"/km\n9km à allure marathon cible 4'16\"/km\n10min retour calme. Habituation à l'allure de course.",
+          "target_pace": "4'16\"/km",
+          "date": "2026-09-17",
+          "dow": "Thu",
+          "actual": {
+            "km": 8.4,
+            "duration_min": 46,
+            "pace_sec": 325,
+            "pace_str": "5'25\"/km",
+            "fc": 145,
+            "cadence": 174,
+            "type": "footing",
+            "title": "i187589989",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 231.0,
+              "osc_cm": 10.5,
+              "vratio": 9.8,
+              "balance_l": 51.05,
+              "step_m": 1.05,
+              "temp_c": 25,
+              "temp_max": 27,
+              "resp": 33.8,
+              "power": 373,
+              "np": 383,
+              "te_aero": 3.2,
+              "te_ana": 0.0,
+              "load": 108.0,
+              "strides": 3957,
+              "rpe": 3.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 230.0,
+                  "end": 232.0,
+                  "pct": 0.6
+                },
+                "step": {
+                  "start": 1039.0,
+                  "end": 1076.0,
+                  "pct": 3.6
+                },
+                "vratio": {
+                  "start": 9.94,
+                  "end": 9.45,
+                  "pct": -4.9
+                },
+                "osc": {
+                  "start": 105.0,
+                  "end": 104.0,
+                  "pct": -1.2
+                },
+                "hr": {
+                  "start": 135.0,
+                  "end": 154.0,
+                  "pct": 14.0
+                },
+                "cad": {
+                  "start": 86.7,
+                  "end": 87.2,
+                  "pct": 0.6
+                }
+              },
+              "balance_min": 50.7,
+              "balance_max": 52.06,
+              "balance_series": [
+                52.06,
+                50.99,
+                50.79,
+                50.7,
+                50.99,
+                50.9,
+                50.81,
+                51.24,
+                50.98
+              ],
+              "balance_lent": 50.98,
+              "balance_rapide": 50.95,
+              "asym_vs_allure": -0.03,
+              "allure_lent_s": 343,
+              "allure_rapide_s": 311,
+              "rr_beats": 6676,
+              "rmssd_effort": 6.9,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 320,
+                "fc": 131,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 352,
+                "fc": 138,
+                "ca": 166
+              },
+              {
+                "km": 1.0,
+                "ps": 318,
+                "fc": 137,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 356,
+                "fc": 150,
+                "ca": 170
+              },
+              {
+                "km": 1.0,
+                "ps": 312,
+                "fc": 146,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 312,
+                "fc": 144,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 314,
+                "fc": 151,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 323,
+                "fc": 159,
+                "ca": 174
+              },
+              {
+                "km": 0.42,
+                "ps": 307,
+                "fc": 151,
+                "ca": 176
+              }
+            ]
+          },
+          "status": "under",
+          "score": {
+            "points": 16,
+            "verdict": "failed",
+            "verdict_label": "Échouée",
+            "volume_pct": 54,
+            "volume_points": 28,
+            "pace_points": 0,
+            "pace_target_s": 256,
+            "pace_actual_s": 325,
+            "pace_actual_str": "5'25\"/km",
+            "pace_delta_s": 69,
+            "is_quality": true,
+            "hr": {
+              "avg": 145,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 4.2,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 54%",
+              "Allure +69\"/km vs cible"
+            ]
+          }
+        },
+        {
+          "date": "2026-09-18",
+          "dow": "Fri",
+          "type": "recovery",
+          "title": "Footing récup 8km",
+          "km": 7.8,
+          "duration_min": 47,
+          "key": false,
+          "description": "8km très facile, allure récupération. FC zone 1-2 bas.",
+          "actual": {
+            "km": 12.0,
+            "duration_min": 61,
+            "pace_sec": 305,
+            "pace_str": "5'05\"/km",
+            "fc": 139,
+            "cadence": 178,
+            "type": "endurance",
+            "title": "i187853591",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 244.0,
+              "osc_cm": 8.4,
+              "vratio": 7.74,
+              "step_m": 1.09,
+              "temp_c": 21,
+              "temp_max": 26,
+              "power": 345,
+              "np": 346,
+              "te_aero": 3.2,
+              "te_ana": 0.0,
+              "load": 109.5,
+              "strides": 5455,
+              "rpe": 2.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 245.0,
+                  "end": 244.0,
+                  "pct": -0.1
+                },
+                "step": {
+                  "start": 1063.0,
+                  "end": 1104.0,
+                  "pct": 3.8
+                },
+                "vratio": {
+                  "start": 7.8,
+                  "end": 7.74,
+                  "pct": -0.8
+                },
+                "osc": {
+                  "start": 83.0,
+                  "end": 85.0,
+                  "pct": 3.0
+                },
+                "hr": {
+                  "start": 133.0,
+                  "end": 142.0,
+                  "pct": 6.4
+                },
+                "cad": {
+                  "start": 89.2,
+                  "end": 88.2,
+                  "pct": -1.1
+                }
+              },
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 329,
+                "fc": 125,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 295,
+                "fc": 132,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 311,
+                "fc": 137,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 307,
+                "fc": 139,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 301,
+                "fc": 140,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 302,
+                "fc": 141,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 302,
+                "fc": 141,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 301,
+                "fc": 146,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 300,
+                "fc": 144,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 297,
+                "fc": 137,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 307,
+                "fc": 145,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 309,
+                "fc": 141,
+                "ca": 176
+              }
+            ]
+          },
+          "status": "over",
+          "score": {
+            "points": 70,
+            "verdict": "partial",
+            "verdict_label": "Partielle",
+            "volume_pct": 154,
+            "volume_points": 70,
+            "pace_points": null,
+            "pace_target_s": null,
+            "pace_actual_s": null,
+            "pace_actual_str": null,
+            "pace_delta_s": null,
+            "is_quality": false,
+            "hr": {
+              "avg": 139,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 1.5,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 154%"
+            ]
+          }
+        },
+        {
+          "date": "2026-09-19",
+          "dow": "Sat",
+          "type": "easy",
+          "title": "Footing 9km + lignes",
+          "km": 8.4,
+          "duration_min": 49,
+          "key": false,
+          "description": "9km à 5'26\"/km + 4×100m lignes droites en fin. Activation pour la SL de dimanche.",
+          "status": "pending",
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "volume",
+              "delta_pct": -10,
+              "reason": "gérer la charge de la semaine"
+            },
+            {
+              "kind": "note",
+              "text": "Perte de poids rapide sur 25 jours (-2,4kg, MG 14,5%→12,5%) : veille à ne pas sous-alimenter les séances clés, surtout en pleine charge spécifique."
+            }
+          ],
+          "_adapt_volume": true
+        },
+        {
+          "type": "long_prog",
+          "title": "SL progressive 24km",
+          "km": 24,
+          "duration_min": 120,
+          "key": true,
+          "description": "24km progressif : démarre 4'51\"/km, finis allure marathon 4'16\"/km. Travail mental de fin.",
+          "target_pace": "4'16\"/km",
+          "date": "2026-09-20",
+          "dow": "Sun",
+          "status": "pending",
+          "actual": null
+        }
+      ],
+      "compliance": {
+        "km_pct": 117,
+        "km_done": 46.3,
+        "km_planned": 39.6,
+        "km_done_week": 58.3,
+        "km_planned_week": 79.8,
+        "sessions_done": 3,
+        "sessions_planned": 3,
+        "sessions_done_week": 4,
+        "keys_success": 0,
+        "keys_total": 2,
+        "points": 78,
+        "verdict": "partial"
+      },
+      "volume_actual_to_date": 46.3,
+      "volume_planned_to_date": 39.6,
+      "volume_drift_pct": 16.9
     },
     {
-     "date": "2026-08-18",
-     "dow": "Tue",
-     "type": "easy",
-     "title": "Footing facile 60' + 6 lignes droites",
-     "km": 12.0,
-     "duration_min": 60,
-     "key": false,
-     "description": "Réalisé : 11,7 km à 4'52/km.\n[Footing facile · 5'05–5'25/km]\nChaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-     "status": "pending",
-     "target_pace": "5'15\"/km",
-     "target_pace_sec": 315,
-     "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-     "scheduled_time": "06:30"
+      "week_num": 2,
+      "weeks_left": 5,
+      "phase": "peak",
+      "phase_label": "Pic · volume max",
+      "start_date": "2026-09-21",
+      "end_date": "2026-09-27",
+      "target_km": 102.0,
+      "days": [
+        {
+          "date": "2026-09-21",
+          "dow": "Mon",
+          "type": "rest",
+          "title": "Repos",
+          "km": 0,
+          "duration_min": 0,
+          "key": false,
+          "description": "Repos complet ou mobilité/yoga 20-30min. Récupération.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "type": "intervals",
+          "title": "5×1km VMA",
+          "km": 18.4,
+          "duration_min": 101,
+          "key": true,
+          "description": "20min échauffement\n5×1000m à VMA 3'27\"/km · récup 2min\n10min retour calme. Entretien VO2max.",
+          "target_pace": "3'27\"/km",
+          "date": "2026-09-22",
+          "dow": "Tue",
+          "status": "pending",
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Séance à piloter aux sensations : si jambes lourdes après la SL de dimanche, réduire à 4×1km ou repasser en allure seuil plutôt que forcer le 3'27\"/km."
+            }
+          ]
+        },
+        {
+          "date": "2026-09-23",
+          "dow": "Wed",
+          "type": "easy",
+          "title": "Footing 13km",
+          "km": 13.3,
+          "duration_min": 72,
+          "key": false,
+          "description": "13km à 5'26\"/km. Allure conversationnelle, FC en zone 2.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "type": "mp_run",
+          "title": "14km allure marathon · bloc",
+          "km": 20.4,
+          "duration_min": 102,
+          "key": true,
+          "description": "15min échauffement\n14km en bloc à allure marathon cible 3'53\"/km\n10min retour calme. Test de tenue.",
+          "target_pace": "3'53\"/km",
+          "date": "2026-09-24",
+          "dow": "Thu",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "date": "2026-09-25",
+          "dow": "Fri",
+          "type": "recovery",
+          "title": "Footing récup 10km",
+          "km": 10.2,
+          "duration_min": 61,
+          "key": false,
+          "description": "10km très facile, allure récupération. FC zone 1-2 bas.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "date": "2026-09-26",
+          "dow": "Sat",
+          "type": "easy",
+          "title": "Footing 12km + lignes",
+          "km": 12.2,
+          "duration_min": 65,
+          "key": false,
+          "description": "12km à 5'26\"/km + 4×100m lignes droites en fin. Activation pour la SL de dimanche.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "type": "long_mp",
+          "title": "SL 30km · 2×8km MP",
+          "km": 30,
+          "duration_min": 150,
+          "key": true,
+          "description": "30km · 2 blocs de 8km à allure marathon 3'53\"/km séparés par 3km 4'51\"/km.",
+          "target_pace": "3'53\"/km",
+          "date": "2026-09-27",
+          "dow": "Sun",
+          "status": "pending",
+          "actual": null
+        }
+      ]
     },
     {
-     "date": "2026-08-19",
-     "dow": "Wed",
-     "type": "easy",
-     "title": "Footing 50' + gammes",
-     "km": 10.0,
-     "duration_min": 50,
-     "key": false,
-     "description": "Reporté au jeudi.\n[Footing facile · 5'05–5'25/km]\nChaussures : Nike Pegasus 41 « Jakob » (476 km)",
-     "status": "pending",
-     "target_pace": "5'15\"/km",
-     "target_pace_sec": 315,
-     "shoe": "Nike Pegasus 41 « Jakob » (476 km)",
-     "scheduled_time": "06:30"
+      "week_num": 3,
+      "weeks_left": 4,
+      "phase": "peak",
+      "phase_label": "Pic · volume max",
+      "start_date": "2026-09-28",
+      "end_date": "2026-10-04",
+      "target_km": 106.9,
+      "days": [
+        {
+          "date": "2026-09-28",
+          "dow": "Mon",
+          "type": "rest",
+          "title": "Repos",
+          "km": 0,
+          "duration_min": 0,
+          "key": false,
+          "description": "Repos complet ou mobilité/yoga 20-30min. Récupération.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "type": "intervals",
+          "title": "5×1km VMA",
+          "km": 19.2,
+          "duration_min": 106,
+          "key": true,
+          "description": "20min échauffement\n5×1000m à VMA 3'27\"/km · récup 2min\n10min retour calme. Entretien VO2max.",
+          "target_pace": "3'27\"/km",
+          "date": "2026-09-29",
+          "dow": "Tue",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "date": "2026-09-30",
+          "dow": "Wed",
+          "type": "easy",
+          "title": "Footing 14km",
+          "km": 13.9,
+          "duration_min": 75,
+          "key": false,
+          "description": "14km à 5'26\"/km. Allure conversationnelle, FC en zone 2.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "type": "mp_run",
+          "title": "15km allure marathon · bloc",
+          "km": 21.4,
+          "duration_min": 107,
+          "key": true,
+          "description": "15min échauffement\n15km en bloc à allure marathon cible 3'53\"/km\n10min retour calme. Test de tenue.",
+          "target_pace": "3'53\"/km",
+          "date": "2026-10-01",
+          "dow": "Thu",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "date": "2026-10-02",
+          "dow": "Fri",
+          "type": "recovery",
+          "title": "Footing récup 11km",
+          "km": 10.7,
+          "duration_min": 64,
+          "key": false,
+          "description": "11km très facile, allure récupération. FC zone 1-2 bas.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "date": "2026-10-03",
+          "dow": "Sat",
+          "type": "easy",
+          "title": "Footing 13km + lignes",
+          "km": 12.8,
+          "duration_min": 68,
+          "key": false,
+          "description": "13km à 5'26\"/km + 4×100m lignes droites en fin. Activation pour la SL de dimanche.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "type": "long_mp",
+          "title": "SL signature 30km · 20km MP",
+          "km": 30,
+          "duration_min": 147,
+          "key": true,
+          "description": "30km dont 20km à allure marathon cible 3'53\"/km. La séance clé du plan. Nutrition jour J en répétition.",
+          "target_pace": "3'53\"/km",
+          "date": "2026-10-04",
+          "dow": "Sun",
+          "status": "pending",
+          "actual": null
+        }
+      ]
     },
     {
-     "date": "2026-08-20",
-     "dow": "Thu",
-     "type": "rest",
-     "title": "Repos + Muscu B",
-     "km": 0.0,
-     "duration_min": 0,
-     "key": false,
-     "description": "Réalisé à la place : 9,6 km à 5'11/km en On CloudSurfer.",
-     "status": "pending"
+      "week_num": 4,
+      "weeks_left": 3,
+      "phase": "peak",
+      "phase_label": "Pic · volume max",
+      "start_date": "2026-10-05",
+      "end_date": "2026-10-11",
+      "target_km": 87.4,
+      "days": [
+        {
+          "date": "2026-10-05",
+          "dow": "Mon",
+          "type": "rest",
+          "title": "Repos",
+          "km": 0,
+          "duration_min": 0,
+          "key": false,
+          "description": "Repos complet ou mobilité/yoga 20-30min. Récupération.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "type": "intervals",
+          "title": "5×1km VMA",
+          "km": 15.7,
+          "duration_min": 86,
+          "key": true,
+          "description": "20min échauffement\n5×1000m à VMA 3'27\"/km · récup 2min\n10min retour calme. Entretien VO2max.",
+          "target_pace": "3'27\"/km",
+          "date": "2026-10-06",
+          "dow": "Tue",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "date": "2026-10-07",
+          "dow": "Wed",
+          "type": "easy",
+          "title": "Footing 11km",
+          "km": 11.4,
+          "duration_min": 62,
+          "key": false,
+          "description": "11km à 5'26\"/km. Allure conversationnelle, FC en zone 2.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "type": "mp_run",
+          "title": "12km allure marathon · bloc",
+          "km": 17.5,
+          "duration_min": 88,
+          "key": true,
+          "description": "15min échauffement\n12km en bloc à allure marathon cible 3'53\"/km\n10min retour calme. Test de tenue.",
+          "target_pace": "3'53\"/km",
+          "date": "2026-10-08",
+          "dow": "Thu",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "date": "2026-10-09",
+          "dow": "Fri",
+          "type": "recovery",
+          "title": "Footing récup 9km",
+          "km": 8.7,
+          "duration_min": 52,
+          "key": false,
+          "description": "9km très facile, allure récupération. FC zone 1-2 bas.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "date": "2026-10-10",
+          "dow": "Sat",
+          "type": "easy",
+          "title": "Footing 10km + lignes",
+          "km": 10.5,
+          "duration_min": 56,
+          "key": false,
+          "description": "10km à 5'26\"/km + 4×100m lignes droites en fin. Activation pour la SL de dimanche.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "type": "long_prog",
+          "title": "SL progressive 30km",
+          "km": 30,
+          "duration_min": 150,
+          "key": true,
+          "description": "30km progressif. Démarre 4'51\"/km, fini à 4'16\"/km. Forge l'endurance spécifique.",
+          "target_pace": "4'16\"/km",
+          "date": "2026-10-11",
+          "dow": "Sun",
+          "status": "pending",
+          "actual": null
+        }
+      ]
     },
     {
-     "date": "2026-08-21",
-     "dow": "Fri",
-     "type": "seuil",
-     "title": "SEUIL — 4 × 8'",
-     "km": 14.0,
-     "duration_min": 75,
-     "key": true,
-     "description": "Réalisé : 3'55 / 3'53 / 3'51 / 3'52, progressif, 14,8 km au total.\n[Seuil · 3'47–3'53/km]\nChaussures : Adidas Evo SL neuve — réservée aux séances",
-     "status": "pending",
-     "target_pace": "3'50\"/km",
-     "target_pace_sec": 230,
-     "shoe": "Adidas Evo SL neuve — réservée aux séances",
-     "scheduled_time": "06:15"
+      "week_num": 5,
+      "weeks_left": 2,
+      "phase": "taper",
+      "phase_label": "Affûtage",
+      "start_date": "2026-10-12",
+      "end_date": "2026-10-18",
+      "target_km": 63.2,
+      "days": [
+        {
+          "date": "2026-10-12",
+          "dow": "Mon",
+          "type": "rest",
+          "title": "Repos",
+          "km": 0,
+          "duration_min": 0,
+          "key": false,
+          "description": "Repos complet ou mobilité/yoga 20-30min. Récupération.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "type": "intervals",
+          "title": "4×800m VMA · maintien",
+          "km": 9.1,
+          "duration_min": 51,
+          "key": true,
+          "description": "15min échauffement\n4×800m à VMA 3'27\"/km · récup 1'30\n10min retour calme. Réveil neuromusculaire.",
+          "target_pace": "3'27\"/km",
+          "date": "2026-10-13",
+          "dow": "Tue",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "date": "2026-10-14",
+          "dow": "Wed",
+          "type": "easy",
+          "title": "Footing 10km",
+          "km": 9.5,
+          "duration_min": 51,
+          "key": false,
+          "description": "10km à 5'26\"/km. Allure conversationnelle, FC en zone 2.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "type": "mp_run",
+          "title": "5km MP + 4 lignes",
+          "km": 10.08,
+          "duration_min": 57,
+          "key": true,
+          "description": "15min échauffement\n5km allure marathon 4'16\"/km\n10min calme + 4 lignes droites 80m. Vivacité.",
+          "target_pace": "4'16\"/km",
+          "date": "2026-10-15",
+          "dow": "Thu",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "date": "2026-10-16",
+          "dow": "Fri",
+          "type": "recovery",
+          "title": "Footing récup 5km",
+          "km": 5.1,
+          "duration_min": 31,
+          "key": false,
+          "description": "5km très facile, allure récupération. FC zone 1-2 bas.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "date": "2026-10-17",
+          "dow": "Sat",
+          "type": "easy",
+          "title": "Footing 9km + lignes",
+          "km": 8.8,
+          "duration_min": 47,
+          "key": false,
+          "description": "9km à 5'26\"/km + 4×100m lignes droites en fin. Activation pour la SL de dimanche.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "type": "long",
+          "title": "SL pré-affûtage 16km",
+          "km": 15.8,
+          "duration_min": 81,
+          "key": true,
+          "description": "16km dont 10km en allure marathon 4'16\"/km. Dernière SL de qualité.",
+          "target_pace": "4'16\"/km",
+          "date": "2026-10-18",
+          "dow": "Sun",
+          "status": "pending",
+          "actual": null
+        }
+      ]
     },
     {
-     "date": "2026-08-22",
-     "dow": "Sat",
-     "type": "easy",
-     "title": "Footing récupération 50'",
-     "km": 10.0,
-     "duration_min": 50,
-     "key": false,
-     "description": "Réalisé : 9,9 km à 5'08/km.\n[Récupération · 5'15–5'35/km]\nChaussures : On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-     "status": "pending",
-     "target_pace": "5'25\"/km",
-     "target_pace_sec": 325,
-     "shoe": "On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-     "scheduled_time": "08:30"
+      "week_num": 6,
+      "weeks_left": 1,
+      "phase": "taper",
+      "phase_label": "Affûtage",
+      "start_date": "2026-10-19",
+      "end_date": "2026-10-25",
+      "target_km": 43.7,
+      "days": [
+        {
+          "date": "2026-10-19",
+          "dow": "Mon",
+          "type": "rest",
+          "title": "Repos",
+          "km": 0,
+          "duration_min": 0,
+          "key": false,
+          "description": "Repos complet ou mobilité/yoga 20-30min. Récupération.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "type": "intervals",
+          "title": "4×800m VMA · maintien",
+          "km": 6.3,
+          "duration_min": 36,
+          "key": true,
+          "description": "15min échauffement\n4×800m à VMA 3'27\"/km · récup 1'30\n10min retour calme. Réveil neuromusculaire.",
+          "target_pace": "3'27\"/km",
+          "date": "2026-10-20",
+          "dow": "Tue",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "date": "2026-10-21",
+          "dow": "Wed",
+          "type": "easy",
+          "title": "Footing 7km",
+          "km": 6.6,
+          "duration_min": 36,
+          "key": false,
+          "description": "7km à 5'26\"/km. Allure conversationnelle, FC en zone 2.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "type": "mp_run",
+          "title": "3km MP + 4 lignes",
+          "km": 6.96,
+          "duration_min": 39,
+          "key": true,
+          "description": "15min échauffement\n3km allure marathon 4'16\"/km\n10min calme + 4 lignes droites 80m. Vivacité.",
+          "target_pace": "4'16\"/km",
+          "date": "2026-10-22",
+          "dow": "Thu",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "date": "2026-10-23",
+          "dow": "Fri",
+          "type": "rest",
+          "title": "Repos",
+          "km": 0,
+          "duration_min": 0,
+          "key": false,
+          "description": "Repos complet ou mobilité légère.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "date": "2026-10-24",
+          "dow": "Sat",
+          "type": "easy",
+          "title": "Footing 7km + lignes",
+          "km": 6.6,
+          "duration_min": 35,
+          "key": false,
+          "description": "7km à 5'26\"/km + 4×100m lignes droites en fin. Activation pour la SL de dimanche.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "type": "long",
+          "title": "SL de maintien 13km",
+          "km": 13.1,
+          "duration_min": 69,
+          "key": false,
+          "description": "13km en endurance 4'51\"/km. On garde le geste sans creuser la fatigue.",
+          "target_pace": "4'51\"/km",
+          "date": "2026-10-25",
+          "dow": "Sun",
+          "status": "pending",
+          "actual": null
+        }
+      ]
     },
     {
-     "date": "2026-08-23",
-     "dow": "Sun",
-     "type": "long",
-     "title": "SORTIE LONGUE — finish progressif",
-     "km": 22.0,
-     "duration_min": 110,
-     "key": true,
-     "description": "Réalisé : 23,5 km, 17 km à 5'00 puis 5 km à 4'00/km.\n[Endurance active · 4'40–4'55/km]\nChaussures : Adizero Boston 13 (231 km)",
-     "status": "pending",
-     "target_pace": "4'47\"/km",
-     "target_pace_sec": 287,
-     "shoe": "Adizero Boston 13 (231 km)",
-     "scheduled_time": "08:00"
+      "week_num": 7,
+      "weeks_left": 0,
+      "phase": "race",
+      "phase_label": "Semaine de course",
+      "start_date": "2026-10-26",
+      "end_date": "2026-11-01",
+      "target_km": 29.1,
+      "days": [
+        {
+          "date": "2026-10-26",
+          "dow": "Mon",
+          "type": "easy",
+          "title": "Footing court",
+          "km": 6,
+          "duration_min": 35,
+          "key": false,
+          "description": "35min 5'26\"/km. Maintien des automatismes.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "date": "2026-10-27",
+          "dow": "Tue",
+          "type": "easy",
+          "title": "Footing court",
+          "km": 6,
+          "duration_min": 35,
+          "key": false,
+          "description": "35min 5'26\"/km. Maintien des automatismes.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "date": "2026-10-28",
+          "dow": "Wed",
+          "type": "easy",
+          "title": "Footing court",
+          "km": 6,
+          "duration_min": 35,
+          "key": false,
+          "description": "35min 5'26\"/km. Maintien des automatismes.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "date": "2026-10-29",
+          "dow": "Thu",
+          "type": "easy",
+          "title": "Footing court",
+          "km": 6,
+          "duration_min": 35,
+          "key": false,
+          "description": "35min 5'26\"/km. Maintien des automatismes.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "date": "2026-10-30",
+          "dow": "Fri",
+          "type": "shake",
+          "title": "Activation 20min",
+          "km": 4,
+          "duration_min": 20,
+          "key": false,
+          "description": "20min très facile 5'26\"/km + 4-5 lignes droites de 80m. Réveille les jambes.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "date": "2026-10-31",
+          "dow": "Sat",
+          "type": "rest",
+          "title": "Repos veille",
+          "km": 0,
+          "duration_min": 0,
+          "key": false,
+          "description": "Repos complet. Sommeil, hydratation, glucides.",
+          "status": "pending",
+          "actual": null
+        },
+        {
+          "date": "2026-11-01",
+          "dow": "Sun",
+          "type": "race",
+          "title": "🏁 MARATHON NYC",
+          "km": 42.2,
+          "duration_min": 180,
+          "key": true,
+          "description": "Course objectif. Pacing 4'16\"/km pour finir sub-3h. Hydratation + glucides toutes les 30min.",
+          "target_pace": "4'16\"/km",
+          "status": "pending",
+          "actual": null
+        }
+      ]
     }
-   ]
-  },
-  {
-   "week_num": 2,
-   "weeks_left": null,
-   "phase": "build",
-   "phase_label": "Entrée dans l'allure spécifique",
-   "start_date": "2026-08-24",
-   "end_date": "2026-08-30",
-   "target_km": 74.0,
-   "days": [
-    {
-     "date": "2026-08-24",
-     "dow": "Mon",
-     "type": "rest",
-     "title": "Repos + Muscu A",
-     "km": 0.0,
-     "duration_min": 0,
-     "key": false,
-     "description": "Repos course à pied.",
-     "status": "pending"
-    },
-    {
-     "date": "2026-08-25",
-     "dow": "Tue",
-     "type": "easy",
-     "title": "Footing 65' — rodage Zoom Fly 6 (1/3)",
-     "km": 13.0,
-     "duration_min": 65,
-     "key": false,
-     "description": "65' facile à jeun. Pas de lignes droites aujourd'hui.\n\n👟 Premier contact avec les Zoom Fly 6 : plat, aucune accélération. L'objectif est de sentir la plaque, pas de la solliciter. Surveille le mollet droit en fin de sortie et au réveil le lendemain.\n[Footing facile · 5'05–5'25/km]\nChaussures : Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
-     "status": "pending",
-     "target_pace": "5'15\"/km",
-     "target_pace_sec": 315,
-     "shoe": "Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-08-26",
-     "dow": "Wed",
-     "type": "easy",
-     "title": "Footing 50' + gammes",
-     "km": 10.0,
-     "duration_min": 50,
-     "key": false,
-     "description": "50' souple + 10' de gammes.\n[Footing facile · 5'05–5'25/km]\nChaussures : Nike Pegasus 41 « Jakob » (476 km)",
-     "status": "pending",
-     "target_pace": "5'15\"/km",
-     "target_pace_sec": 315,
-     "shoe": "Nike Pegasus 41 « Jakob » (476 km)",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-08-27",
-     "dow": "Thu",
-     "type": "easy",
-     "title": "Footing récupération 45' + 6 LD — rodage Zoom Fly 6 (2/3)",
-     "km": 9.0,
-     "duration_min": 45,
-     "key": false,
-     "description": "45' très facile + 6 lignes droites de 20\". Muscu B le midi.\n\n👟 Deuxième sortie en Zoom Fly 6 : premier contact avec de la vitesse, mais courte et sur jambes fraîches.\n[Récupération · 5'15–5'35/km]\nChaussures : Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
-     "status": "pending",
-     "target_pace": "5'25\"/km",
-     "target_pace_sec": 325,
-     "shoe": "Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-08-28",
-     "dow": "Fri",
-     "type": "seuil",
-     "title": "SEUIL — 2 × 15'",
-     "km": 16.0,
-     "duration_min": 85,
-     "key": true,
-     "description": "3 km d'échauffement\n2 × 15' @ 3'50/km, récupération 3' en trot\n2 km de retour au calme\n\nTes 4 × 8' de vendredi dernier sont sortis à 3'52 de moyenne : on allonge les blocs sans toucher à l'allure.\n[Seuil · 3'47–3'53/km]\nChaussures : Adidas Evo SL neuve — réservée aux séances",
-     "status": "pending",
-     "target_pace": "3'50\"/km",
-     "target_pace_sec": 230,
-     "shoe": "Adidas Evo SL neuve — réservée aux séances",
-     "scheduled_time": "06:15"
-    },
-    {
-     "date": "2026-08-29",
-     "dow": "Sat",
-     "type": "rest",
-     "title": "Repos",
-     "km": 0.0,
-     "duration_min": 0,
-     "key": false,
-     "description": "Repos complet avant la sortie longue. Protocole tendon quand même.",
-     "status": "pending"
-    },
-    {
-     "date": "2026-08-30",
-     "dow": "Sun",
-     "type": "long",
-     "title": "SORTIE LONGUE ALTERNÉE — 5 × 3 km à allure spécifique",
-     "km": 26.0,
-     "duration_min": 125,
-     "key": true,
-     "description": "5 km @ 5'00/km\n5 × (3 km @ 3'57–4'02/km / 1 km @ 4'50/km)\n1 km de retour au calme\n\n15 km à allure spécifique fractionnés en cinq blocs : même charge qu'un bloc continu, mais la tête ne décroche jamais. Maurten 320 en flasque + 1 gel à mi-parcours.\n[Allure spécifique marathon · 3'57–4'02/km]\nChaussures : Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
-     "status": "pending",
-     "target_pace": "3'59\"/km",
-     "target_pace_sec": 239,
-     "shoe": "Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
-     "scheduled_time": "08:00"
-    }
-   ]
-  },
-  {
-   "week_num": 3,
-   "weeks_left": null,
-   "phase": "base",
-   "phase_label": "Reprise de la piste",
-   "start_date": "2026-08-31",
-   "end_date": "2026-09-06",
-   "target_km": 80.0,
-   "days": [
-    {
-     "date": "2026-08-31",
-     "dow": "Mon",
-     "type": "rest",
-     "title": "Repos + Muscu A",
-     "km": 0.0,
-     "duration_min": 0,
-     "key": false,
-     "description": "Repos course à pied.",
-     "status": "pending"
-    },
-    {
-     "date": "2026-09-01",
-     "dow": "Tue",
-     "type": "easy",
-     "title": "Footing 60' + 6 LD — rodage Zoom Fly 6 (3/3)",
-     "km": 12.0,
-     "duration_min": 60,
-     "key": false,
-     "description": "60' facile + 6 LD. Jambes fraîches pour la piste demain soir.\n\n👟 Dernière sortie facile en Zoom Fly 6 avant de les engager à l'allure vendredi. À ce stade elles doivent être transparentes : si le mollet tire encore, vendredi se fait en Evo SL.\n[Footing facile · 5'05–5'25/km]\nChaussures : Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
-     "status": "pending",
-     "target_pace": "5'15\"/km",
-     "target_pace_sec": 315,
-     "shoe": "Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-09-02",
-     "dow": "Wed",
-     "type": "intervals",
-     "title": "PISTE — 6 × 800 m",
-     "km": 16.0,
-     "duration_min": 105,
-     "key": true,
-     "description": "4,5 km en trot pour aller (échauffement, vraiment lent)\nGammes en équipe\nCœur de séance : 6 × 800 m @ 3'28–3'34/km, récupération 2'\n4,5 km en trot pour rentrer\n\nPremière séance piste de la saison : ne cherche pas à suivre les plus rapides sur la 1re, tu montes en régime sur les trois dernières.\n[VO2max (800–2000 m) · 3'28–3'36/km]\nChaussures : Nike Zoom Fly 5 vert/blanc (647 km) — piste",
-     "status": "pending",
-     "target_pace": "3'32\"/km",
-     "target_pace_sec": 212,
-     "shoe": "Nike Zoom Fly 5 vert/blanc (647 km) — piste",
-     "scheduled_time": "18:45"
-    },
-    {
-     "date": "2026-09-03",
-     "dow": "Thu",
-     "type": "easy",
-     "title": "Footing récupération 45'",
-     "km": 9.0,
-     "duration_min": 45,
-     "key": false,
-     "description": "45' très facile — lendemain de piste. Muscu B le midi (allégée).\n[Récupération · 5'15–5'35/km]\nChaussures : On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-     "status": "pending",
-     "target_pace": "5'25\"/km",
-     "target_pace_sec": 325,
-     "shoe": "On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-09-04",
-     "dow": "Fri",
-     "type": "mp",
-     "title": "SPÉCIFIQUE — 10 km continus",
-     "km": 15.0,
-     "duration_min": 80,
-     "key": true,
-     "description": "3 km d'échauffement\n10 km @ 3'57–4'02/km en continu\n2 km de retour au calme\n\nLa séance de référence du bloc. Elle doit être exigeante mais jamais violente : si tu finis en ayant serré, on redescend l'allure spécifique à 4'02–4'06.\n\n👟 Premier test des Zoom Fly 6 à l'allure. Si ça passe, elles sont validées pour tout le bloc spécifique.\n[Allure spécifique marathon · 3'57–4'02/km]\nChaussures : Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
-     "status": "pending",
-     "target_pace": "3'59\"/km",
-     "target_pace_sec": 239,
-     "shoe": "Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
-     "scheduled_time": "06:15"
-    },
-    {
-     "date": "2026-09-05",
-     "dow": "Sat",
-     "type": "easy",
-     "title": "Footing 40'",
-     "km": 8.0,
-     "duration_min": 40,
-     "key": false,
-     "description": "40' très facile.\n[Récupération · 5'15–5'35/km]\nChaussures : Nike Pegasus 41 « Jakob » (476 km)",
-     "status": "pending",
-     "target_pace": "5'25\"/km",
-     "target_pace_sec": 325,
-     "shoe": "Nike Pegasus 41 « Jakob » (476 km)",
-     "scheduled_time": "08:30"
-    },
-    {
-     "date": "2026-09-06",
-     "dow": "Sun",
-     "type": "long",
-     "title": "SORTIE LONGUE PROGRESSIVE — 20 km",
-     "km": 20.0,
-     "duration_min": 100,
-     "key": true,
-     "description": "5 tranches de 4 km, une accélération de 10 s/km à chaque tranche :\n4 km @ 5'05 · 4 km @ 4'55 · 4 km @ 4'45 · 4 km @ 4'35 · 4 km @ 4'25\n\nAucune tranche n'est dure prise isolément. C'est l'enchaînement qui travaille, et tu ne regardes la montre que tous les 4 km.\n[Endurance active · 4'40–4'55/km]\nChaussures : Adizero Boston 13 (231 km)",
-     "status": "pending",
-     "target_pace": "4'47\"/km",
-     "target_pace_sec": 287,
-     "shoe": "Adizero Boston 13 (231 km)",
-     "scheduled_time": "08:00"
-    }
-   ]
-  },
-  {
-   "week_num": 4,
-   "weeks_left": null,
-   "phase": "build",
-   "phase_label": "Développement — premières côtes",
-   "start_date": "2026-09-07",
-   "end_date": "2026-09-13",
-   "target_km": 86.0,
-   "days": [
-    {
-     "date": "2026-09-07",
-     "dow": "Mon",
-     "type": "rest",
-     "title": "Repos + Muscu A",
-     "km": 0.0,
-     "duration_min": 0,
-     "key": false,
-     "description": "Repos course à pied.",
-     "status": "pending"
-    },
-    {
-     "date": "2026-09-08",
-     "dow": "Tue",
-     "type": "easy",
-     "title": "Footing 60' + 6 lignes droites",
-     "km": 12.0,
-     "duration_min": 60,
-     "key": false,
-     "description": "60' facile + 6 LD.\n[Footing facile · 5'05–5'25/km]\nChaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-     "status": "pending",
-     "target_pace": "5'15\"/km",
-     "target_pace_sec": 315,
-     "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-09-09",
-     "dow": "Wed",
-     "type": "intervals",
-     "title": "PISTE — 5 × 1000 m",
-     "km": 17.0,
-     "duration_min": 110,
-     "key": true,
-     "description": "4,5 km en trot pour aller\nGammes en équipe\nCœur de séance : 5 × 1000 m @ 3'28–3'34/km, récupération 2'30\n4,5 km en trot pour rentrer\n[VO2max (800–2000 m) · 3'28–3'36/km]\nChaussures : Nike Zoom Fly 5 vert/blanc (647 km) — piste",
-     "status": "pending",
-     "target_pace": "3'32\"/km",
-     "target_pace_sec": 212,
-     "shoe": "Nike Zoom Fly 5 vert/blanc (647 km) — piste",
-     "scheduled_time": "18:45"
-    },
-    {
-     "date": "2026-09-10",
-     "dow": "Thu",
-     "type": "easy",
-     "title": "Footing récupération 45'",
-     "km": 9.0,
-     "duration_min": 45,
-     "key": false,
-     "description": "45' très facile. Muscu B le midi.\n[Récupération · 5'15–5'35/km]\nChaussures : On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-     "status": "pending",
-     "target_pace": "5'25\"/km",
-     "target_pace_sec": 325,
-     "shoe": "On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-09-11",
-     "dow": "Fri",
-     "type": "seuil",
-     "title": "CÔTES + SEUIL — spécifique ponts NYC",
-     "km": 14.0,
-     "duration_min": 80,
-     "key": true,
-     "description": "3 km d'échauffement\n6 × 3' en côte à 3–4 % à effort seuil, retour en trot dans la descente (descente SOUPLE, aucune relance)\n8' @ 3'50/km sur le plat\n2 km de retour au calme\n\n⚠️ Première séance de côtes du bloc : c'est le test tendon de la semaine. Pente modérée, pas de raidard.\n[Seuil · 3'47–3'53/km]\nChaussures : Adidas Evo SL neuve — réservée aux séances",
-     "status": "pending",
-     "target_pace": "3'50\"/km",
-     "target_pace_sec": 230,
-     "shoe": "Adidas Evo SL neuve — réservée aux séances",
-     "scheduled_time": "06:15"
-    },
-    {
-     "date": "2026-09-12",
-     "dow": "Sat",
-     "type": "easy",
-     "title": "Footing 35'",
-     "km": 6.0,
-     "duration_min": 35,
-     "key": false,
-     "description": "35' récupération.\n[Récupération · 5'15–5'35/km]\nChaussures : Nike Pegasus 41 « Jakob » (476 km)",
-     "status": "pending",
-     "target_pace": "5'25\"/km",
-     "target_pace_sec": 325,
-     "shoe": "Nike Pegasus 41 « Jakob » (476 km)",
-     "scheduled_time": "08:30"
-    },
-    {
-     "date": "2026-09-13",
-     "dow": "Sun",
-     "type": "long",
-     "title": "SORTIE LONGUE ALTERNÉE — 2 × 8 km à allure spécifique",
-     "km": 28.0,
-     "duration_min": 135,
-     "key": true,
-     "description": "5 km @ 5'00/km\n2 × (8 km @ 3'57–4'02/km / 2 km @ 4'50/km)\n3 km de retour au calme\n\nOn passe de blocs de 3 km à des blocs de 8 : c'est là que la séance devient vraiment marathon. Nutrition : flasque Maurten 320 (0–10 km) + Gel 160 aux km 12 et 22 — on teste la tolérance aux gels 40 g sur du long.\n[Allure spécifique marathon · 3'57–4'02/km]\nChaussures : Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
-     "status": "pending",
-     "target_pace": "3'59\"/km",
-     "target_pace_sec": 239,
-     "shoe": "Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
-     "scheduled_time": "07:45"
-    }
-   ]
-  },
-  {
-   "week_num": 5,
-   "weeks_left": null,
-   "phase": "base",
-   "phase_label": "Assimilation",
-   "start_date": "2026-09-14",
-   "end_date": "2026-09-20",
-   "target_km": 70.0,
-   "days": [
-    {
-     "date": "2026-09-14",
-     "dow": "Mon",
-     "type": "rest",
-     "title": "Repos + Muscu A",
-     "km": 0.0,
-     "duration_min": 0,
-     "key": false,
-     "description": "Repos course à pied.",
-     "status": "pending"
-    },
-    {
-     "date": "2026-09-15",
-     "dow": "Tue",
-     "type": "easy",
-     "title": "Footing 60'",
-     "km": 12.0,
-     "duration_min": 60,
-     "key": false,
-     "description": "60' facile, sans lignes droites.\n[Footing facile · 5'05–5'25/km]\nChaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-     "status": "pending",
-     "target_pace": "5'15\"/km",
-     "target_pace_sec": 315,
-     "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-09-16",
-     "dow": "Wed",
-     "type": "intervals",
-     "title": "PISTE allégée — 8 × 400 m",
-     "km": 14.0,
-     "duration_min": 95,
-     "key": true,
-     "description": "4,5 km en trot pour aller\nGammes en équipe\nCœur de séance : 8 × 400 m @ 3'15–3'22/km, récupération 1'30\n4,5 km en trot pour rentrer\n\nCourt et vif, faible coût : c'est une semaine de récupération.\n[VMA courte (200–600 m) · 3'15–3'22/km]\nChaussures : Nike Zoom Fly 5 vert/blanc (647 km) — piste",
-     "status": "pending",
-     "target_pace": "3'18\"/km",
-     "target_pace_sec": 198,
-     "shoe": "Nike Zoom Fly 5 vert/blanc (647 km) — piste",
-     "scheduled_time": "18:45"
-    },
-    {
-     "date": "2026-09-17",
-     "dow": "Thu",
-     "type": "easy",
-     "title": "Footing récupération 45'",
-     "km": 9.0,
-     "duration_min": 45,
-     "key": false,
-     "description": "45' très facile. Muscu B le midi.\n[Récupération · 5'15–5'35/km]\nChaussures : On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-     "status": "pending",
-     "target_pace": "5'25\"/km",
-     "target_pace_sec": 325,
-     "shoe": "On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-09-18",
-     "dow": "Fri",
-     "type": "easy",
-     "title": "Endurance active 55' + 8 LD",
-     "km": 11.0,
-     "duration_min": 55,
-     "key": false,
-     "description": "55' @ 4'40–4'55/km, allure « confortablement engagée » — ce n'est pas une séance.\n8 lignes droites de 20\".\n[Endurance active · 4'40–4'55/km]\nChaussures : Adizero Boston 13 (231 km)",
-     "status": "pending",
-     "target_pace": "4'47\"/km",
-     "target_pace_sec": 287,
-     "shoe": "Adizero Boston 13 (231 km)",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-09-19",
-     "dow": "Sat",
-     "type": "rest",
-     "title": "Repos",
-     "km": 0.0,
-     "duration_min": 0,
-     "key": false,
-     "description": "Repos complet.",
-     "status": "pending"
-    },
-    {
-     "date": "2026-09-20",
-     "dow": "Sun",
-     "type": "long",
-     "title": "SORTIE LONGUE 24 km — finish tenu",
-     "km": 24.0,
-     "duration_min": 120,
-     "key": true,
-     "description": "16 km @ 4'55/km\n8 km @ 4'20/km\n\n📊 POINT D'ÉTAPE N°1 : pesée, sensations, état du tendon, et vérification que l'allure spécifique à 3'57–4'02 tient la route. C'est ici qu'on ajuste si besoin.\n[Endurance active · 4'40–4'55/km]\nChaussures : Adizero Boston 13 (231 km)",
-     "status": "pending",
-     "target_pace": "4'47\"/km",
-     "target_pace_sec": 287,
-     "shoe": "Adizero Boston 13 (231 km)",
-     "scheduled_time": "08:00"
-    }
-   ]
-  },
-  {
-   "week_num": 6,
-   "weeks_left": null,
-   "phase": "build",
-   "phase_label": "Spécifique — 2 × 7 km",
-   "start_date": "2026-09-21",
-   "end_date": "2026-09-27",
-   "target_km": 86.0,
-   "days": [
-    {
-     "date": "2026-09-21",
-     "dow": "Mon",
-     "type": "rest",
-     "title": "Repos + Muscu A",
-     "km": 0.0,
-     "duration_min": 0,
-     "key": false,
-     "description": "Repos course à pied.",
-     "status": "pending"
-    },
-    {
-     "date": "2026-09-22",
-     "dow": "Tue",
-     "type": "easy",
-     "title": "Footing 60' + 6 lignes droites",
-     "km": 12.0,
-     "duration_min": 60,
-     "key": false,
-     "description": "60' facile + 6 LD.\n[Footing facile · 5'05–5'25/km]\nChaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-     "status": "pending",
-     "target_pace": "5'15\"/km",
-     "target_pace_sec": 315,
-     "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-09-23",
-     "dow": "Wed",
-     "type": "seuil",
-     "title": "PISTE — 3 × 2000 m",
-     "km": 17.0,
-     "duration_min": 110,
-     "key": true,
-     "description": "4,5 km en trot pour aller\nGammes en équipe\nCœur de séance : 3 × 2000 m @ 3'47–3'52/km, récupération 3'\n4,5 km en trot pour rentrer\n\nPlus long, plus proche du seuil : la piste devient marathon-compatible.\n[Seuil · 3'47–3'53/km]\nChaussures : Nike Zoom Fly 5 vert/blanc (647 km) — piste",
-     "status": "pending",
-     "target_pace": "3'50\"/km",
-     "target_pace_sec": 230,
-     "shoe": "Nike Zoom Fly 5 vert/blanc (647 km) — piste",
-     "scheduled_time": "18:45"
-    },
-    {
-     "date": "2026-09-24",
-     "dow": "Thu",
-     "type": "easy",
-     "title": "Footing récupération 45'",
-     "km": 9.0,
-     "duration_min": 45,
-     "key": false,
-     "description": "45' très facile. Muscu B le midi.\n[Récupération · 5'15–5'35/km]\nChaussures : On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-     "status": "pending",
-     "target_pace": "5'25\"/km",
-     "target_pace_sec": 325,
-     "shoe": "On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-09-25",
-     "dow": "Fri",
-     "type": "mp",
-     "title": "SPÉCIFIQUE — 2 × 7 km",
-     "km": 18.0,
-     "duration_min": 95,
-     "key": true,
-     "description": "3 km d'échauffement\n2 × 7 km @ 3'57–4'02/km, récupération 1 km @ 4'50/km\n2 km de retour au calme\n\nSéance signature du bloc. Flasque Maurten 320 + 1 gel entre les deux blocs : on répète aussi la nutrition.\n[Allure spécifique marathon · 3'57–4'02/km]\nChaussures : Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
-     "status": "pending",
-     "target_pace": "3'59\"/km",
-     "target_pace_sec": 239,
-     "shoe": "Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
-     "scheduled_time": "06:15"
-    },
-    {
-     "date": "2026-09-26",
-     "dow": "Sat",
-     "type": "easy",
-     "title": "Footing 30'",
-     "km": 6.0,
-     "duration_min": 30,
-     "key": false,
-     "description": "30' récupération.\n[Récupération · 5'15–5'35/km]\nChaussures : Nike Pegasus 41 « Jakob » (476 km)",
-     "status": "pending",
-     "target_pace": "5'25\"/km",
-     "target_pace_sec": 325,
-     "shoe": "Nike Pegasus 41 « Jakob » (476 km)",
-     "scheduled_time": "08:30"
-    },
-    {
-     "date": "2026-09-27",
-     "dow": "Sun",
-     "type": "long",
-     "title": "SORTIE LONGUE PROGRESSIVE — 24 km",
-     "km": 24.0,
-     "duration_min": 120,
-     "key": true,
-     "description": "12 km @ 4'55/km\npuis 12 km en descendant régulièrement de 4'40 à 4'10/km\n\nProgressive continue, sans récupération : la contrainte est différente de l'alterné, et c'est exactement l'état dans lequel tu finiras un marathon.\n[Endurance active · 4'40–4'55/km]\nChaussures : Adizero Boston 13 (231 km)",
-     "status": "pending",
-     "target_pace": "4'47\"/km",
-     "target_pace_sec": 287,
-     "shoe": "Adizero Boston 13 (231 km)",
-     "scheduled_time": "07:45"
-    }
-   ]
-  },
-  {
-   "week_num": 7,
-   "weeks_left": null,
-   "phase": "peak",
-   "phase_label": "PIC DE VOLUME",
-   "start_date": "2026-09-28",
-   "end_date": "2026-10-04",
-   "target_km": 92.0,
-   "days": [
-    {
-     "date": "2026-09-28",
-     "dow": "Mon",
-     "type": "rest",
-     "title": "Repos + Muscu A",
-     "km": 0.0,
-     "duration_min": 0,
-     "key": false,
-     "description": "Repos course à pied.",
-     "status": "pending"
-    },
-    {
-     "date": "2026-09-29",
-     "dow": "Tue",
-     "type": "easy",
-     "title": "Footing 70' + 6 lignes droites",
-     "km": 14.0,
-     "duration_min": 70,
-     "key": false,
-     "description": "70' facile + 6 LD.\n[Footing facile · 5'05–5'25/km]\nChaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-     "status": "pending",
-     "target_pace": "5'15\"/km",
-     "target_pace_sec": 315,
-     "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-09-30",
-     "dow": "Wed",
-     "type": "intervals",
-     "title": "PISTE — 6 × 1000 m",
-     "km": 17.0,
-     "duration_min": 110,
-     "key": true,
-     "description": "4,5 km en trot pour aller\nGammes en équipe\nCœur de séance : 6 × 1000 m @ 3'28–3'34/km, récupération 2'\n4,5 km en trot pour rentrer\n[VO2max (800–2000 m) · 3'28–3'36/km]\nChaussures : Nike Zoom Fly 5 vert/blanc (647 km) — piste",
-     "status": "pending",
-     "target_pace": "3'32\"/km",
-     "target_pace_sec": 212,
-     "shoe": "Nike Zoom Fly 5 vert/blanc (647 km) — piste",
-     "scheduled_time": "18:45"
-    },
-    {
-     "date": "2026-10-01",
-     "dow": "Thu",
-     "type": "easy",
-     "title": "Footing récupération 50'",
-     "km": 10.0,
-     "duration_min": 50,
-     "key": false,
-     "description": "50' très facile. Muscu B le midi.\n[Récupération · 5'15–5'35/km]\nChaussures : On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-     "status": "pending",
-     "target_pace": "5'25\"/km",
-     "target_pace_sec": 325,
-     "shoe": "On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-10-02",
-     "dow": "Fri",
-     "type": "seuil",
-     "title": "SEUIL LONG — 3 × 10'",
-     "km": 15.0,
-     "duration_min": 80,
-     "key": true,
-     "description": "3 km d'échauffement\n3 × 10' @ 3'48–3'52/km, récupération 2'30\n2 km de retour au calme\n[Seuil · 3'47–3'53/km]\nChaussures : Adidas Evo SL neuve — réservée aux séances",
-     "status": "pending",
-     "target_pace": "3'50\"/km",
-     "target_pace_sec": 230,
-     "shoe": "Adidas Evo SL neuve — réservée aux séances",
-     "scheduled_time": "06:15"
-    },
-    {
-     "date": "2026-10-03",
-     "dow": "Sat",
-     "type": "easy",
-     "title": "Footing 40'",
-     "km": 8.0,
-     "duration_min": 40,
-     "key": false,
-     "description": "40' récupération.\n[Récupération · 5'15–5'35/km]\nChaussures : Nike Pegasus 41 « Jakob » (476 km)",
-     "status": "pending",
-     "target_pace": "5'25\"/km",
-     "target_pace_sec": 325,
-     "shoe": "Nike Pegasus 41 « Jakob » (476 km)",
-     "scheduled_time": "08:30"
-    },
-    {
-     "date": "2026-10-04",
-     "dow": "Sun",
-     "type": "long",
-     "title": "SORTIE LONGUE — 2 × 9 km à allure spécifique",
-     "km": 28.0,
-     "duration_min": 135,
-     "key": true,
-     "description": "4 km @ 5'00/km\n2 × (9 km @ 3'57–4'02/km / 2 km @ 4'50/km)\n2 km de retour au calme\n\n📊 POINT D'ÉTAPE N°2 : 18 km à allure spécifique dans une sortie de 28. C'est LA séance qui dit où tu en es — pour New York et, surtout, pour Milan.\n\nNutrition : flasque Maurten 320 (0–10 km) + Gel 160 aux km 12 et 22.\n[Allure spécifique marathon · 3'57–4'02/km]\nChaussures : Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
-     "status": "pending",
-     "target_pace": "3'59\"/km",
-     "target_pace_sec": 239,
-     "shoe": "Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
-     "scheduled_time": "07:45"
-    }
-   ]
-  },
-  {
-   "week_num": 8,
-   "weeks_left": null,
-   "phase": "taper",
-   "phase_label": "AFFÛTAGE VERS LE 20 KM DE PARIS",
-   "start_date": "2026-10-05",
-   "end_date": "2026-10-11",
-   "target_km": 66.0,
-   "days": [
-    {
-     "date": "2026-10-05",
-     "dow": "Mon",
-     "type": "rest",
-     "title": "Repos + Muscu A",
-     "km": 0.0,
-     "duration_min": 0,
-     "key": false,
-     "description": "Repos course à pied. Dernière vraie séance de muscu.",
-     "status": "pending"
-    },
-    {
-     "date": "2026-10-06",
-     "dow": "Tue",
-     "type": "easy",
-     "title": "Footing 60'",
-     "km": 12.0,
-     "duration_min": 60,
-     "key": false,
-     "description": "60' facile.\n[Footing facile · 5'05–5'25/km]\nChaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-     "status": "pending",
-     "target_pace": "5'15\"/km",
-     "target_pace_sec": 315,
-     "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-10-07",
-     "dow": "Wed",
-     "type": "intervals",
-     "title": "PISTE courte — 6 × 500 m",
-     "km": 12.0,
-     "duration_min": 90,
-     "key": true,
-     "description": "4,5 km en trot pour aller\nGammes en équipe\nCœur de séance : 6 × 500 m @ 3'18–3'22/km, récupération 1'30\n4,5 km en trot pour rentrer\n\nCourt et nerveux : on réveille la vitesse sans entamer les jambes pour dimanche.\n[VMA courte (200–600 m) · 3'15–3'22/km]\nChaussures : Nike Zoom Fly 5 vert/blanc (647 km) — piste",
-     "status": "pending",
-     "target_pace": "3'18\"/km",
-     "target_pace_sec": 198,
-     "shoe": "Nike Zoom Fly 5 vert/blanc (647 km) — piste",
-     "scheduled_time": "18:45"
-    },
-    {
-     "date": "2026-10-08",
-     "dow": "Thu",
-     "type": "easy",
-     "title": "Footing récupération 45'",
-     "km": 9.0,
-     "duration_min": 45,
-     "key": false,
-     "description": "45' très facile. Muscu B le midi — dernière séance de charge.\n[Récupération · 5'15–5'35/km]\nChaussures : On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-     "status": "pending",
-     "target_pace": "5'25\"/km",
-     "target_pace_sec": 325,
-     "shoe": "On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-10-09",
-     "dow": "Fri",
-     "type": "easy",
-     "title": "Réveil musculaire pré-compét — 5 LD + 3 × 300",
-     "km": 8.0,
-     "duration_min": 50,
-     "key": false,
-     "description": "5 km facile\n5 lignes droites de 20\"\n3 × 300 m rapides (allure 5 km), récup 1'30\n\nOuvre les jambes sans coût. Rien de dur : le vrai effort est dimanche.\n[Footing facile · 5'05–5'25/km]\nChaussures : Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
-     "status": "pending",
-     "target_pace": "5'15\"/km",
-     "target_pace_sec": 315,
-     "shoe": "Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-10-10",
-     "dow": "Sat",
-     "type": "rest",
-     "title": "Repos (ou déblocage 20')",
-     "km": 0.0,
-     "duration_min": 0,
-     "key": false,
-     "description": "Repos complet, ou 20' de trot très facile si tu as besoin de bouger. Préparation du matériel de course.",
-     "status": "pending"
-    },
-    {
-     "date": "2026-10-11",
-     "dow": "Sun",
-     "type": "race",
-     "title": "🏁 20 KM DE PARIS — course-test",
-     "km": 25.0,
-     "duration_min": 110,
-     "key": true,
-     "description": "3 km d'échauffement + 5 lignes droites\n20 km en course, NÉGATIF SPLIT\n2 km de retour au calme\n\n🎯 CIBLE ~1h18 (3'54/km de moyenne) :\n• km 0–7 : 4'05–4'08, volontairement retenu — tu répètes la discipline de Brooklyn.\n• km 7–14 : 4'00, tu installes.\n• km 14–20 : descente progressive vers 3'52–3'55. Les 5 derniers km sont les plus rapides.\n\n👟 En Alphafly 3, tes chaussures de course éprouvées — pas de test de matériel un jour de course.\n\n📊 LECTURE : ~1h18 → potentiel marathon 2h52–2h54 sur plat → NYC à 4'10–4'15 est une croisière. Si tu sors 1h16, on rediscute un NYC à 4'08. Départ à confirmer selon ton sas.\n[Course 20 km — négatif split · 4'08 → 3'52/km]\nChaussures : Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
-     "status": "pending",
-     "target_pace": "4'00\"/km",
-     "target_pace_sec": 240,
-     "shoe": "Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
-     "scheduled_time": "10:00"
-    }
-   ]
-  },
-  {
-   "week_num": 9,
-   "weeks_left": null,
-   "phase": "peak",
-   "phase_label": "Récupération + répétition générale",
-   "start_date": "2026-10-12",
-   "end_date": "2026-10-18",
-   "target_km": 68.0,
-   "days": [
-    {
-     "date": "2026-10-12",
-     "dow": "Mon",
-     "type": "rest",
-     "title": "Repos — post-course",
-     "km": 0.0,
-     "duration_min": 0,
-     "key": false,
-     "description": "Repos course à pied. Plus de muscu jusqu'au marathon. Protocole tendon quand même.",
-     "status": "pending"
-    },
-    {
-     "date": "2026-10-13",
-     "dow": "Tue",
-     "type": "easy",
-     "title": "Footing très facile 45'",
-     "km": 9.0,
-     "duration_min": 45,
-     "key": false,
-     "description": "45' vraiment souple — lendemain de course, on ne force rien.\n[Récupération · 5'15–5'35/km]\nChaussures : On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-     "status": "pending",
-     "target_pace": "5'25\"/km",
-     "target_pace_sec": 325,
-     "shoe": "On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-10-14",
-     "dow": "Wed",
-     "type": "easy",
-     "title": "Footing 50' + 6 lignes droites",
-     "km": 10.0,
-     "duration_min": 50,
-     "key": false,
-     "description": "50' facile + 6 LD.\n\nPas de piste cette semaine : tu récupères encore du 20 km, les lignes droites suffisent à garder la vivacité.\n[Footing facile · 5'05–5'25/km]\nChaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-     "status": "pending",
-     "target_pace": "5'15\"/km",
-     "target_pace_sec": 315,
-     "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-10-15",
-     "dow": "Thu",
-     "type": "easy",
-     "title": "Footing récupération 40'",
-     "km": 8.0,
-     "duration_min": 40,
-     "key": false,
-     "description": "40' très facile.\n[Récupération · 5'15–5'35/km]\nChaussures : On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-     "status": "pending",
-     "target_pace": "5'25\"/km",
-     "target_pace_sec": 325,
-     "shoe": "On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-10-16",
-     "dow": "Fri",
-     "type": "mp",
-     "title": "SPÉCIFIQUE court — 6 km + test Vaporfly",
-     "km": 11.0,
-     "duration_min": 60,
-     "key": true,
-     "description": "3 km d'échauffement\n6 km @ 3'57–4'02/km\n2 km de retour au calme\n\nCourte touche d'allure spécifique, jambes revenues.\n\n👟 À faire en Vaporfly Next% 3 neuves : le duel final avec les Alphafly 3. Tu choisis ta chaussure de course à la fin de cette séance.\n[Allure spécifique marathon · 3'57–4'02/km]\nChaussures : Nike Vaporfly Next% 3 (neuves) — plan B course",
-     "status": "pending",
-     "target_pace": "3'59\"/km",
-     "target_pace_sec": 239,
-     "shoe": "Nike Vaporfly Next% 3 (neuves) — plan B course",
-     "scheduled_time": "06:15"
-    },
-    {
-     "date": "2026-10-17",
-     "dow": "Sat",
-     "type": "rest",
-     "title": "Repos",
-     "km": 0.0,
-     "duration_min": 0,
-     "key": false,
-     "description": "Repos complet. Préparation du matériel exactement comme un jour de course.",
-     "status": "pending"
-    },
-    {
-     "date": "2026-10-18",
-     "dow": "Sun",
-     "type": "long",
-     "title": "🎯 RÉPÉTITION GÉNÉRALE — 30 km dont 20 à l'allure NYC",
-     "km": 30.0,
-     "duration_min": 150,
-     "key": true,
-     "description": "5 km @ 5'00/km\n20 km @ 4'10–4'15/km\n5 km de retour au calme\n\n🎯 SIMULATION COMPLÈTE — la répétition logistique du marathon, calée sur l'allure de course NYC (pas l'allure spécifique). Ici on ne cherche pas un stimulus, on répète une course :\n• Tenue de course exacte\n• Alphafly 3 « Chicago 25 »\n• Petit-déjeuner identique à celui du 1er novembre\n• Nutrition = protocole EXACT de la course : 1 Gel 100 à H−15', flasque 320 sur 0–10 km, Gel 160 aux km 15 et 25, Gel 100 au km 28. C'est LE jour pour valider la tolérance aux 40 g.\n• Départ à 9h40 pour coller à l'heure de New York\n\n📊 POINT D'ÉTAPE N°3 : après cette séance, l'objectif chrono, la chaussure et le plan nutrition sont figés.\n[Allure de course NYC · 4'10–4'15/km]\nChaussures : Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
-     "status": "pending",
-     "target_pace": "4'12\"/km",
-     "target_pace_sec": 252,
-     "shoe": "Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
-     "scheduled_time": "09:40"
-    }
-   ]
-  },
-  {
-   "week_num": 10,
-   "weeks_left": null,
-   "phase": "taper",
-   "phase_label": "AFFÛTAGE 1 — on enlève le volume",
-   "start_date": "2026-10-19",
-   "end_date": "2026-10-25",
-   "target_km": 60.0,
-   "days": [
-    {
-     "date": "2026-10-19",
-     "dow": "Mon",
-     "type": "rest",
-     "title": "Repos — fin du déficit calorique",
-     "km": 0.0,
-     "duration_min": 0,
-     "key": false,
-     "description": "Repos course à pied. ⚖️ À partir d'aujourd'hui : retour à l'équilibre calorique. Plus de muscu jusqu'à la course.",
-     "status": "pending"
-    },
-    {
-     "date": "2026-10-20",
-     "dow": "Tue",
-     "type": "easy",
-     "title": "Footing 50' + 6 lignes droites",
-     "km": 10.0,
-     "duration_min": 50,
-     "key": false,
-     "description": "50' facile + 6 LD.\n[Footing facile · 5'05–5'25/km]\nChaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-     "status": "pending",
-     "target_pace": "5'15\"/km",
-     "target_pace_sec": 315,
-     "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-10-21",
-     "dow": "Wed",
-     "type": "intervals",
-     "title": "PISTE allégée — 5 × 800 m",
-     "km": 14.0,
-     "duration_min": 90,
-     "key": true,
-     "description": "4,5 km en trot pour aller\nGammes en équipe\nCœur de séance : 5 × 800 m @ 3'30–3'34/km, récupération 2'\n4,5 km en trot pour rentrer\n\nOn garde le rendez-vous mais on divise le volume du cœur de séance.\n[VO2max (800–2000 m) · 3'28–3'36/km]\nChaussures : Nike Zoom Fly 5 vert/blanc (647 km) — piste",
-     "status": "pending",
-     "target_pace": "3'32\"/km",
-     "target_pace_sec": 212,
-     "shoe": "Nike Zoom Fly 5 vert/blanc (647 km) — piste",
-     "scheduled_time": "18:45"
-    },
-    {
-     "date": "2026-10-22",
-     "dow": "Thu",
-     "type": "easy",
-     "title": "Footing récupération 45'",
-     "km": 9.0,
-     "duration_min": 45,
-     "key": false,
-     "description": "45' très facile.\n[Récupération · 5'15–5'35/km]\nChaussures : On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-     "status": "pending",
-     "target_pace": "5'25\"/km",
-     "target_pace_sec": 325,
-     "shoe": "On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-10-23",
-     "dow": "Fri",
-     "type": "mp",
-     "title": "ALLURE NYC — 6 km",
-     "km": 11.0,
-     "duration_min": 60,
-     "key": true,
-     "description": "3 km d'échauffement\n6 km @ 4'10–4'15/km\n2 km de retour au calme\n\nEn chaussures de course, à l'allure de course. Après un bloc entier à 4'00, ça doit te paraître ridiculement facile — c'est exactement le signal qu'on cherche.\n[Allure de course NYC · 4'10–4'15/km]\nChaussures : Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
-     "status": "pending",
-     "target_pace": "4'12\"/km",
-     "target_pace_sec": 252,
-     "shoe": "Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
-     "scheduled_time": "06:15"
-    },
-    {
-     "date": "2026-10-24",
-     "dow": "Sat",
-     "type": "rest",
-     "title": "Repos",
-     "km": 0.0,
-     "duration_min": 0,
-     "key": false,
-     "description": "Repos complet.",
-     "status": "pending"
-    },
-    {
-     "date": "2026-10-25",
-     "dow": "Sun",
-     "type": "long",
-     "title": "SORTIE LONGUE COURTE — 16 km",
-     "km": 16.0,
-     "duration_min": 80,
-     "key": true,
-     "description": "12 km @ 5'00/km\n4 km @ 4'15/km\n\nDernière sortie « longue » — elle n'en a plus que le nom.\n[Endurance active · 4'40–4'55/km]\nChaussures : Adizero Boston 13 (231 km)",
-     "status": "pending",
-     "target_pace": "4'47\"/km",
-     "target_pace_sec": 287,
-     "shoe": "Adizero Boston 13 (231 km)",
-     "scheduled_time": "08:30"
-    }
-   ]
-  },
-  {
-   "week_num": 11,
-   "weeks_left": null,
-   "phase": "taper",
-   "phase_label": "AFFÛTAGE 2 — voyage & course",
-   "start_date": "2026-10-26",
-   "end_date": "2026-11-01",
-   "target_km": 77.2,
-   "days": [
-    {
-     "date": "2026-10-26",
-     "dow": "Mon",
-     "type": "easy",
-     "title": "Footing 45' + 6 lignes droites",
-     "km": 9.0,
-     "duration_min": 45,
-     "key": false,
-     "description": "45' facile + 6 LD de 20\". Rien de plus.\n[Footing facile · 5'05–5'25/km]\nChaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-     "status": "pending",
-     "target_pace": "5'15\"/km",
-     "target_pace_sec": 315,
-     "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-10-27",
-     "dow": "Tue",
-     "type": "seuil",
-     "title": "ACTIVATION — 8 × 1'",
-     "km": 10.0,
-     "duration_min": 55,
-     "key": true,
-     "description": "2 km d'échauffement\n8 × 1' @ 3'50/km, récupération 1'30 en trot\n2 km de retour au calme\n\nDernière touche de vitesse. Objectif : sensations, pas performance.\n[Seuil · 3'47–3'53/km]\nChaussures : Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
-     "status": "pending",
-     "target_pace": "3'50\"/km",
-     "target_pace_sec": 230,
-     "shoe": "Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-10-28",
-     "dow": "Wed",
-     "type": "rest",
-     "title": "Repos (ou trot 30' avec les copains)",
-     "km": 0.0,
-     "duration_min": 0,
-     "key": false,
-     "description": "Pas de cœur de séance à la piste. Si tu y vas, uniquement le trot et les gammes, et tu rentres.",
-     "status": "pending"
-    },
-    {
-     "date": "2026-10-29",
-     "dow": "Thu",
-     "type": "easy",
-     "title": "Footing 35' + 4 LD — dernier run à Paris",
-     "km": 7.0,
-     "duration_min": 35,
-     "key": false,
-     "description": "35' très facile + 4 lignes droites.\n\n🧳 Ce soir : sac bouclé. Chaussures de course, dossard, tenue, gels ET montre EN CABINE.\n[Footing facile · 5'05–5'25/km]\nChaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-     "status": "pending",
-     "target_pace": "5'15\"/km",
-     "target_pace_sec": 315,
-     "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-     "scheduled_time": "06:30"
-    },
-    {
-     "date": "2026-10-30",
-     "dow": "Fri",
-     "type": "shake",
-     "title": "✈️ VOYAGE PARIS → NEW YORK",
-     "km": 4.0,
-     "duration_min": 20,
-     "key": false,
-     "description": "🌅 06h00 : 20' de déblocage très facile (~4 km) avant de partir.\n✈️ 12h30 : décollage.\n\nDans l'avion :\n• Montre à l'heure de New York dès l'embarquement\n• Bas de contention\n• 500 ml d'eau toutes les 2 h, zéro alcool\n• Se lever et marcher toutes les 90'\n• Repas aux heures de NY, pas aux heures de Paris\n• Ne PAS dormir plus de 90' d'affilée\n\nÀ l'arrivée (≈ 15h00 locale) : lumière du jour, marcher 30–40', dîner à 19h locale, coucher 22h30 locale.\n[Récupération · 5'15–5'35/km]\nChaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-     "status": "pending",
-     "target_pace": "5'25\"/km",
-     "target_pace_sec": 325,
-     "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-     "scheduled_time": "06:00"
-    },
-    {
-     "date": "2026-10-31",
-     "dow": "Sat",
-     "type": "easy",
-     "title": "Déverrouillage 25' à Central Park",
-     "km": 5.0,
-     "duration_min": 25,
-     "key": false,
-     "description": "25' très facile + 4 lignes droites + 10' de gammes.\nLe décalage joue pour toi : tu seras naturellement réveillé tôt, profites-en pour courir à 7h locale.\n\n📋 Reste de la journée :\n• Expo tôt et rapide — 1 h debout maximum, puis on s'assoit\n• Repas principal glucidique à midi\n• Dîner léger et tôt (18h30)\n• Préparer la tenue et les gels avant de dormir\n• Coucher 21h30 locale\n[Récupération · 5'15–5'35/km]\nChaussures : Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
-     "status": "pending",
-     "target_pace": "5'25\"/km",
-     "target_pace_sec": 325,
-     "shoe": "Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
-     "scheduled_time": "07:00"
-    },
-    {
-     "date": "2026-11-01",
-     "dow": "Sun",
-     "type": "race",
-     "title": "🗽 TCS NEW YORK CITY MARATHON",
-     "km": 42.2,
-     "duration_min": 175,
-     "key": true,
-     "description": "🎯 OBJECTIF : 2h55–2h58 · allure cible 4'10–4'15/km · sub-3h = 4'15/km\n\n⚠️ Tu as préparé ce marathon à 4'00/km. L'allure de course est volontairement 12 s/km plus lente : c'est ta marge sur un parcours cassant, et c'est ce qui te permettra de le vivre au lieu de le subir. Ne la brûle pas dans les 10 premiers kilomètres.\n\n⏱️ PLAN DE COURSE\n• Km 0–3 — Pont de Verrazzano : 1,6 km de montée. 4'25–4'35, sans discuter. Puis descente : 4'05–4'10 MAXIMUM.\n• Km 3–25 — Brooklyn : la partie qui piège tout le monde. Verrouille 4'10–4'15. Foule énorme, tout paraît facile. Ne descends jamais sous 4'08.\n• Km 25–26 — Queensboro Bridge : montée longue, aucun spectateur, silence total. Accepte 4'25–4'30 à effort constant.\n• Km 26–32 — 1st Avenue : le virage euphorique. LE piège de NYC. Tu restes à 4'12.\n• Km 32–35 — Bronx : creux classique. Gel + relance mentale.\n• Km 35–39 — 5th Avenue : 4 km de faux plat montant, la vraie difficulté. 4'18–4'28, c'est normal.\n• Km 39–42 — Central Park : vallonné. Si tu as de la marge, c'est ici qu'elle sert.\n\n📍 Repère : semi entre 1h28'00 et 1h29'00 = sub-3h très confortable.\n\n🍯 NUTRITION (~225 g de glucides, ~77 g/h) :\n• H−15 min au sas : 1 Gel 100 (25 g) + eau\n• Km 0–10 : flasque Maurten 320 (80 g) sirotée, puis on jette la flasque\n• Km 15 : Gel 160 (40 g)\n• Km 25 : Gel 160 (40 g)\n• Km 32 : Gel 160 (40 g) — le coup de fouet avant la 5th Avenue\n• Km 38 : Gel 100 (25 g)\nChaque gel avec une gorgée d'eau, jamais claqué d'un coup. Eau à chaque table.\n👜 À PORTER : 3 Gel 160 + 1 Gel 100 (4 sachets) + la flasque 320.\n\n⏳ DÉPART : 2 à 3 h d'attente à Fort Wadsworth. Vêtements jetables, couverture de survie, boisson à H − 45', échauffement court (10' de trot + 4 LD) à H − 30', dernier Gel 100 à H − 15'.\n[Allure de course NYC · 4'10–4'15/km]\nChaussures : Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
-     "status": "pending",
-     "target_pace": "4'12\"/km",
-     "target_pace_sec": 252,
-     "shoe": "Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
-     "scheduled_time": "09:40"
-    }
-   ]
-  }
- ],
- "adaptations": []
+  ],
+  "adaptations": []
 }
