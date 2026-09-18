@@ -4827,3 +4827,54 @@ html[data-theme="dark"] {
   .etat-forme-verdict-s { font-size: 11.5px; }
   .etat-forme-i-v { font-size: 13px; }
 }
+
+/* ============================================================
+   État de forme — thème sombre
+
+   Les tuiles indicateurs restaient en pastel clair avec du texte
+   sombre sur fond noir : illisibles. On les bascule sur des fonds
+   sombres teintés, avec du texte clair — mêmes 4 couleurs de sens,
+   juste inversées comme il faut pour préserver le contraste.
+   ============================================================ */
+html[data-theme="dark"] .etat-forme {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.10);
+}
+html[data-theme="dark"] .etat-forme-l          { color: rgba(255, 255, 255, 0.55); }
+html[data-theme="dark"] .etat-forme-verdict-t  { color: rgba(255, 255, 255, 0.95); }
+html[data-theme="dark"] .etat-forme-verdict-s  { color: rgba(255, 255, 255, 0.72); }
+html[data-theme="dark"] .etat-forme-cadran-n   { color: rgba(255, 255, 255, 0.95); }
+html[data-theme="dark"] .etat-forme-cadran svg circle:first-of-type {
+  stroke: rgba(255, 255, 255, 0.10);
+}
+
+/* Tuiles indicateurs : fond teinté sombre, filet coloré, texte clair. */
+html[data-theme="dark"] .etat-forme-i {
+  background: rgba(255, 255, 255, 0.04);
+  border-left-color: rgba(255, 255, 255, 0.30);
+}
+html[data-theme="dark"] .etat-forme-i-h { color: rgba(255, 255, 255, 0.62); }
+html[data-theme="dark"] .etat-forme-i-v { color: rgba(255, 255, 255, 0.95); }
+html[data-theme="dark"] .etat-forme-i-s { color: rgba(255, 255, 255, 0.70); }
+
+html[data-theme="dark"] .etat-forme-i.etat-ok {
+  background: rgba(74, 124, 89, 0.16);
+  border-left-color: #6db884;
+}
+html[data-theme="dark"] .etat-forme-i.etat-ok .trend { color: #86d3ab; }
+
+html[data-theme="dark"] .etat-forme-i.etat-watch {
+  background: rgba(201, 164, 106, 0.16);
+  border-left-color: #d9b872;
+}
+html[data-theme="dark"] .etat-forme-i.etat-watch .trend { color: #ecc989; }
+
+html[data-theme="dark"] .etat-forme-i.etat-alert {
+  background: rgba(196, 71, 46, 0.18);
+  border-left-color: #de6444;
+}
+html[data-theme="dark"] .etat-forme-i.etat-alert .trend { color: #f08a6b; }
+
+html[data-theme="dark"] .etat-forme-l .verdict-bon        { color: #86d3ab; }
+html[data-theme="dark"] .etat-forme-l .verdict-surveiller { color: #ecc989; }
+html[data-theme="dark"] .etat-forme-l .verdict-alerte     { color: #f08a6b; }
