@@ -263,6 +263,92 @@ Règles :
 - Les adaptations automatiques déjà appliquées par le moteur te sont fournies : ne les duplique pas."""
 
 
+def build_forme_fallback(context: dict, error: str = '') -> dict:
+    """Compose un `forme` minimal sans appel modèle.
+
+    S'exécute quand Anthropic échoue : le pipeline continue d'écrire un
+    coach_analysis.json exploitable côté UI, quitte à ce que les phrases
+    soient sèches. Les quatre indicateurs sont calculés à partir des données
+    déjà disponibles dans le contexte (compliance, verdicts récents,
+    ressenti Achille de la dernière séance longue).
+    """
+    recent = context.get('last_14_days') or []
+    weeks = context.get('weeks_summary') or []
+    body = context.get('body') or {}
+
+    # Compliance : dernière semaine avec des données
+    last_week = weeks[-1] if weeks else {}
+    keys_ok = last_week.get('keys_success', 0)
+    keys_tot = last_week.get('keys_total', 0)
+    km_pct = last_week.get('km_pct', 0)
+    if keys_tot > 0:
+        compliance_str = f"{last_week.get('km_done', 0):.0f}/{last_week.get('km_planned', 0):.0f} km · {keys_ok}/{keys_tot} clés"
+    else:
+        compliance_str = f"{km_pct} %"
+    compliance_etat = 'ok' if km_pct >= 80 else 'watch' if km_pct >= 60 else 'alert'
+
+    # Fraîcheur : pas de TSB direct ici, on approxime avec les 3 derniers scores
+    recent_scores = [d.get('score', {}).get('points') for d in recent[-5:]
+                     if d.get('score')]
+    if recent_scores:
+        avg = sum(recent_scores) / len(recent_scores)
+        fraicheur_str = f"{avg:.0f}/100 moy."
+        fraicheur_etat = 'ok' if avg >= 65 else 'watch' if avg >= 45 else 'alert'
+    else:
+        fraicheur_str, fraicheur_etat = '—', 'ok'
+
+    # Efficacité aérobie : dernière dérive cardiaque disponible
+    last_dr = next(
+        (d.get('hr', {}).get('decoupling_pct') for d in reversed(recent)
+         if d.get('hr', {}).get('decoupling_pct') is not None), None)
+    if last_dr is not None:
+        aerobie_str = f"{last_dr:.1f} %"
+        aerobie_etat = 'ok' if last_dr < 5 else 'watch' if last_dr < 8 else 'alert'
+    else:
+        aerobie_str, aerobie_etat = '—', 'ok'
+
+    # Achille : cherche un flag ou une asymétrie forte
+    achille_alerts = 0
+    for d in recent[-5:]:
+        garmin = d.get('garmin') or {}
+        bal = garmin.get('balance_l')
+        if bal is not None and abs(50 - bal) > 3:
+            achille_alerts += 1
+        sensations = (d.get('sensations') or '').lower()
+        if any(k in sensations for k in ('achille', 'tendon', 'douleur')):
+            achille_alerts += 1
+    if achille_alerts >= 2:
+        achille_str, achille_etat = 'signaux', 'watch'
+    else:
+        achille_str, achille_etat = 'stable', 'ok'
+
+    # Verdict global : plus mauvais des 4 états
+    etats = [fraicheur_etat, compliance_etat, aerobie_etat, achille_etat]
+    if 'alert' in etats:
+        verdict, score = 'alerte', 35
+    elif 'watch' in etats:
+        verdict, score = 'surveiller', 60
+    else:
+        verdict, score = 'bon', 78
+
+    return {
+        'score': score, 'verdict': verdict,
+        'headline': f'État composé automatiquement ({verdict})',
+        'detail': ('Le modèle IA n\'a pas répondu — indicateurs calculés '
+                   f"à partir des données locales.{' Erreur : ' + error[:80] if error else ''}"),
+        'indicateurs': {
+            'fraicheur':  {'valeur': fraicheur_str, 'trend': 'flat',
+                           'etat': fraicheur_etat, 'note': 'moyenne 5 dernières'},
+            'compliance': {'valeur': compliance_str, 'trend': 'flat',
+                           'etat': compliance_etat, 'note': 'semaine en cours'},
+            'aerobie':    {'valeur': aerobie_str, 'trend': 'flat',
+                           'etat': aerobie_etat, 'note': 'dernière avec FC'},
+            'achille':    {'valeur': achille_str, 'trend': 'flat',
+                           'etat': achille_etat, 'note': f'{achille_alerts} signal(aux)'},
+        },
+    }
+
+
 def call_model(context: dict) -> dict:
     import anthropic
     client = anthropic.Anthropic()
@@ -400,7 +486,24 @@ def main():
         except Exception:  # noqa: BLE001
             pass
         print(f'✗ Appel modèle échoué : {e}')
-        sys.exit(1)
+        # Fallback : produit un `forme` minimal à partir des données locales
+        # pour que l'onglet Coach affiche quelque chose plutôt qu'un vide,
+        # et que ci_status refléte la panne visible dans l'analyse.
+        forme_fallback = build_forme_fallback(context, error=str(e))
+        analysis_min = {
+            'generated_at': datetime.now().isoformat(timespec='seconds'),
+            'model': MODEL, 'signature': signature,
+            'headline': f'Analyse indisponible ({type(e).__name__})',
+            'analysis': (f"Le coach n'a pas pu produire son analyse : {e}. "
+                         'Les indicateurs affichés sont calculés localement '
+                         'sans intervention du modèle. Retentera au prochain build.'),
+            'forme': forme_fallback,
+            'applied': [], 'pending': [],
+        }
+        ANALYSIS_PATH.write_text(
+            json.dumps(analysis_min, ensure_ascii=False, indent=1), encoding='utf-8')
+        print('✓ Fallback `forme` écrit (analyse minimale)')
+        sys.exit(0)
 
     applied, pending = [], []
     plan_modified = False
