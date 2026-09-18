@@ -439,13 +439,44 @@ def apply_minor(plan: dict, prop: dict) -> tuple[bool, str]:
     return False, 'kind non autorisé en minor'
 
 
+def _write_min_analysis(reason: str, context: dict | None = None):
+    """Écrit un coach_analysis.json minimal avec un `forme` fallback.
+
+    S'exécute quand main() sort avant l'appel modèle (secret absent, plan
+    manquant). Sans cette écriture, l'UI resterait sur une ancienne
+    analyse indéfiniment — la panne était invisible dans un build vert.
+    """
+    forme = build_forme_fallback(context or {}, error=reason) if context is not None \
+        else {'score': 50, 'verdict': 'surveiller',
+              'headline': f'Analyse indisponible : {reason}',
+              'detail': 'Impossible de produire un état de forme sans plan.',
+              'indicateurs': {}}
+    doc = {
+        'generated_at': datetime.now().isoformat(timespec='seconds'),
+        'model': MODEL, 'signature': '',
+        'headline': f'Analyse indisponible : {reason}',
+        'analysis': f'Le coach n\'a pas pu s\'exécuter ({reason}). '
+                    'Les indicateurs affichés sont locaux, sans intervention modèle.',
+        'forme': forme, 'applied': [], 'pending': [],
+    }
+    ANALYSIS_PATH.write_text(json.dumps(doc, ensure_ascii=False, indent=1),
+                             encoding='utf-8')
+    try:
+        from modules.ci_status import note
+        note('coach', ok=False, message=reason)
+    except Exception:  # noqa: BLE001
+        pass
+
+
 def main():
     if not os.environ.get('ANTHROPIC_API_KEY'):
         print('⚠ ANTHROPIC_API_KEY absent — coach IA sauté')
+        _write_min_analysis('ANTHROPIC_API_KEY absent')
         return
 
     if not PLAN_PATH.exists():
         print('⚠ Pas de plan — coach IA sauté')
+        _write_min_analysis('plan_nyc.json absent')
         return
     plan = json.loads(PLAN_PATH.read_text(encoding='utf-8'))
 
