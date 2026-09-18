@@ -172,12 +172,17 @@ jobs:
           fi
           # [skip ci] : empêche le push du bot de re-déclencher un workflow.
           git commit -m "data: sync $(date -u +%Y-%m-%dT%H:%M) [skip ci]"
+          # Rebuild HTML régénère output/index.html qui n'est pas dans `git add
+          # data/` : le rebase refusait de tourner tant que cette modif restait
+          # unstaged. `--autostash` met ces changements de côté le temps du
+          # rebase, les restaure après.
           for i in 1 2 3; do
-            git pull --rebase origin ${{ github.ref_name }}
+            git pull --rebase --autostash origin ${{ github.ref_name }}
             if [ $? -ne 0 ]; then
               echo "⚠ Rebase échoué (tentative $i) — abort et retry"
               git rebase --abort 2>/dev/null || true
-              git pull origin ${{ github.ref_name }} --strategy-option=ours 2>/dev/null || true
+              git stash pop 2>/dev/null || true
+              git pull origin ${{ github.ref_name }} --strategy-option=ours --no-rebase 2>/dev/null || true
               continue
             fi
             git push origin HEAD:${{ github.ref_name }}
