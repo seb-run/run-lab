@@ -6071,9 +6071,22 @@
       aerobie:   'Aérobie',   achille:    'Achille',
     };
 
-    const items = ['fraicheur', 'compliance', 'aerobie', 'achille'].map(k => {
+    // Tri par sévérité — l'œil trouve ce qui appelle une action en premier.
+    // À sévérité égale, on garde l'ordre thématique : compliance en premier
+    // (le plus pilotable), Achille en dernier (spécifique, permanent).
+    const SEV = { alert: 0, watch: 1, ok: 2 };
+    const ORDRE = ['compliance', 'fraicheur', 'aerobie', 'achille'];
+    const cles = ORDRE
+      .filter(k => forme.indicateurs[k])
+      .sort((a, b) => {
+        const sa = SEV[(forme.indicateurs[a].etat || 'ok')];
+        const sb = SEV[(forme.indicateurs[b].etat || 'ok')];
+        if (sa !== sb) return sa - sb;
+        return ORDRE.indexOf(a) - ORDRE.indexOf(b);
+      });
+
+    const items = cles.map(k => {
       const ind = forme.indicateurs[k];
-      if (!ind) return '';
       const etat = ind.etat || 'ok';
       return `<div class="etat-forme-i etat-${escapeHtml(etat)}">
         <div class="etat-forme-i-h">
