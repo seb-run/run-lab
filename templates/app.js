@@ -1785,6 +1785,170 @@
     });
   }
 
+  // ---- MODAL : séance de piste du mercredi (saisie club) ----
+  // Même mécanique que la validation du coach : URL du Worker + jeton en
+  // localStorage (coachConfig, défini plus bas avec le module coach), POST
+  // au Worker qui déclenche apply-slot côté GitHub Actions.
+  function setupSlotModal() {
+    const modal    = document.getElementById('slotModal');
+    const closeBtn = document.getElementById('slotModalClose');
+    const cancelBtn = document.getElementById('slotCancelBtn');
+    const saveBtn   = document.getElementById('slotSaveBtn');
+    const dateEl    = document.getElementById('slotModalDate');
+    const titleEl   = document.getElementById('slotTitle');
+    const warmupEl  = document.getElementById('slotWarmupKm');
+    const cooldownEl = document.getElementById('slotCooldownKm');
+    const repsEl    = document.getElementById('slotReps');
+    const repKmEl   = document.getElementById('slotRepKm');
+    const paceEl    = document.getElementById('slotPace');
+    const recoveryEl = document.getElementById('slotRecovery');
+    const notesEl   = document.getElementById('slotNotes');
+    const previewEl = document.getElementById('slotModalPreview');
+    const fbEl      = document.getElementById('slotModalFb');
+    if (!modal || !saveBtn) return;
+
+    // Format d'affichage cohérent avec le reste du plan : "5×1000m", pas "5×1km".
+    function fmtDist(km) {
+      if (!km) return '';
+      return km <= 2 ? `${Math.round(km * 1000)}m` : `${km}km`;
+    }
+
+    function computeTotal() {
+      const w = parseFloat(warmupEl.value) || 0;
+      const c = parseFloat(cooldownEl.value) || 0;
+      const reps = parseInt(repsEl.value, 10) || 0;
+      const repKm = parseFloat(repKmEl.value) || 0;
+      return Math.round((w + c + reps * repKm) * 10) / 10;
+    }
+
+    function buildDescription() {
+      const w = parseFloat(warmupEl.value) || 0;
+      const c = parseFloat(cooldownEl.value) || 0;
+      const reps = parseInt(repsEl.value, 10) || 0;
+      const repKm = parseFloat(repKmEl.value) || 0;
+      const pace = paceEl.value.trim();
+      const recovery = recoveryEl.value.trim();
+      const notes = notesEl.value.trim();
+      const lines = [];
+      if (w > 0) lines.push(`${w}km échauffement`);
+      if (reps > 0 && repKm > 0) {
+        lines.push(`${reps}×${fmtDist(repKm)}${pace ? ' à ' + pace : ''}${recovery ? ' · récup ' + recovery : ''}`);
+      }
+      if (c > 0) lines.push(`${c}km retour au calme`);
+      if (notes) lines.push(notes);
+      return lines.join('\n');
+    }
+
+    function updatePreview() {
+      const total = computeTotal();
+      const desc = buildDescription();
+      previewEl.innerHTML = `<div class="preview-grid">
+        <div><span class="preview-label">Distance totale</span><span class="preview-val">${total} km</span></div>
+        <div class="preview-info">${escapeHtml(desc).replace(/\n/g, '<br/>') || '<i>Remplis les champs ci-dessus</i>'}</div>
+      </div>`;
+    }
+
+    function openModal() {
+      const iso = nextWednesdayIso();
+      const found = typeof planFindDay === 'function' ? planFindDay(iso) : null;
+      const d = found ? found.day : null;
+      const dateLabel = (new Date(iso)).toLocaleDateString('fr-FR', {weekday: 'long', day: 'numeric', month: 'long'});
+      if (dateEl) dateEl.textContent = dateLabel;
+      modal.dataset.targetDate = iso;
+
+      // Pré-remplissage : si déjà saisi, on repart de la dernière saisie
+      // (via coach_notes), sinon des valeurs par défaut raisonnables.
+      titleEl.value = (d && d._replaced_by_user) ? (d.title || '') : 'Piste club';
+      warmupEl.value = 2;
+      cooldownEl.value = 1.5;
+      repsEl.value = 6;
+      repKmEl.value = 0.8;
+      paceEl.value = (d && d._replaced_by_user) ? (d.target_pace || '') : '';
+      recoveryEl.value = '';
+      notesEl.value = '';
+      if (fbEl) { fbEl.textContent = ''; fbEl.className = 'coach-fb'; }
+      updatePreview();
+
+      modal.hidden = false;
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => titleEl.focus(), 50);
+    }
+
+    function closeModal() {
+      modal.hidden = true;
+      document.body.style.overflow = '';
+    }
+
+    async function save() {
+      const iso = modal.dataset.targetDate || nextWednesdayIso();
+      const title = titleEl.value.trim() || 'Piste club';
+      const payload = {
+        date: iso,
+        title,
+        warmup_km: parseFloat(warmupEl.value) || 0,
+        reps: parseInt(repsEl.value, 10) || 0,
+        rep_km: parseFloat(repKmEl.value) || 0,
+        rep_pace: paceEl.value.trim(),
+        recovery: recoveryEl.value.trim(),
+        cooldown_km: parseFloat(cooldownEl.value) || 0,
+        notes: notesEl.value.trim(),
+      };
+      if (!payload.reps || !payload.rep_km) {
+        alert('Renseigne au moins le nombre de répétitions et la distance par répétition.');
+        return;
+      }
+      if (!confirm(`Envoyer cette séance pour le ${payload.date} ? Elle remplacera la séance prévue ce jour-là.`)) return;
+
+      const cfg = coachConfig(false);
+      if (!cfg) return;
+
+      saveBtn.disabled = true;
+      if (fbEl) { fbEl.textContent = 'envoi…'; fbEl.className = 'coach-fb'; }
+
+      try {
+        const r = await fetch(cfg.base + '/slot', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({...payload, token: cfg.token}),
+        });
+        if (r.status === 401) {
+          localStorage.removeItem(VALIDATE_TOKEN_KEY);
+          throw new Error('jeton refusé — il te sera redemandé');
+        }
+        if (!r.ok) {
+          let msg = 'HTTP ' + r.status;
+          try { const j = await r.json(); if (j && j.error) msg = j.error; } catch {}
+          throw new Error(msg);
+        }
+        if (fbEl) {
+          fbEl.textContent = '✓ envoyée — le plan se met à jour dans ~2 min';
+          fbEl.className = 'coach-fb coach-fb-ok';
+        }
+        setTimeout(closeModal, 1400);
+      } catch (e) {
+        if (fbEl) {
+          fbEl.textContent = '✗ ' + (e && e.message ? e.message : 'échec');
+          fbEl.className = 'coach-fb coach-fb-err';
+        }
+      } finally {
+        saveBtn.disabled = false;
+      }
+    }
+
+    [warmupEl, cooldownEl, repsEl, repKmEl, paceEl, recoveryEl, notesEl].forEach(el => {
+      el.addEventListener('input', updatePreview);
+    });
+    closeBtn.addEventListener('click', closeModal);
+    cancelBtn.addEventListener('click', closeModal);
+    saveBtn.addEventListener('click', save);
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.hidden) closeModal();
+    });
+
+    window.openSlotModal = openModal;
+  }
+
   // ============================================================================
   // ===== 12. MODULE VOLUME ====================================================
   // ============================================================================
@@ -4710,6 +4874,17 @@
            String(d.getDate()).padStart(2,'0');
   }
 
+  // Le mercredi visé par la saisie club : aujourd'hui si on est déjà
+  // mercredi (cas où Seb remplit juste avant de courir), sinon le prochain.
+  function nextWednesdayIso() {
+    const now = new Date();
+    const day = now.getDay(); // 0=dim ... 3=mer ... 6=sam
+    const delta = (3 - day + 7) % 7;
+    const target = new Date(now);
+    target.setDate(now.getDate() + delta);
+    return localISODate(target);
+  }
+
   function planFindToday() {
     if (!PLAN) return null;
     const iso = localISODate();
@@ -4926,6 +5101,15 @@
       rescheduledBlock += `<div class="plan-replaced-banner">
         <span class="plan-replaced-ico">✓</span>
         <span>Séance remplacée par le coach (validée). Prévue à l'origine :
+        <b>${escapeHtml(d._replaced_from.title || '—')}</b></span>
+      </div>`;
+    }
+    // Séance de piste saisie par Seb lui-même (coach du club, le mercredi) :
+    // même logique de bannière, origine et vocabulaire différents.
+    if (d._replaced_by_user && d._replaced_from) {
+      rescheduledBlock += `<div class="plan-replaced-banner plan-replaced-banner-user">
+        <span class="plan-replaced-ico">✎</span>
+        <span>Séance de piste du club, saisie par toi. Prévue à l'origine :
         <b>${escapeHtml(d._replaced_from.title || '—')}</b></span>
       </div>`;
     }
@@ -5201,7 +5385,9 @@
         ? `${escapeHtml(d._rescheduled_title)} <span class="pdc-flag">↻ reprogrammée</span>`
         : d._replaced_by_coach
           ? `${escapeHtml(d.title || 'Séance')} <span class="pdc-flag pdc-flag-replaced">✓ remplacée</span>`
-          : escapeHtml(d.title || (isRest ? 'Repos' : ''));
+          : d._replaced_by_user
+            ? `${escapeHtml(d.title || 'Séance')} <span class="pdc-flag pdc-flag-user">✎ saisie perso</span>`
+            : escapeHtml(d.title || (isRest ? 'Repos' : ''));
 
       // Chip de statut : score si validée, croix si manquée, point sinon
       let chip = '';
@@ -5366,6 +5552,40 @@
       </div>`
     ).join('');
     wrap.innerHTML = cards;
+  }
+
+  // --- Séance de piste du mercredi (saisie club) ------------------------
+  // planFindDay() est définie juste plus bas — les déclarations `function`
+  // sont hoistées dans cette IIFE, l'appel avant sa définition littérale
+  // est donc sûr.
+  function renderSlotCard() {
+    const wrap = document.getElementById('slotCard');
+    if (!wrap || !PLAN) return;
+    const iso = nextWednesdayIso();
+    const found = planFindDay(iso);
+    const dateLabel = (new Date(iso)).toLocaleDateString('fr-FR', {weekday: 'long', day: 'numeric', month: 'long'});
+
+    if (!found) {
+      wrap.innerHTML = `<p class="race-table-empty">Hors période de plan.</p>`;
+      return;
+    }
+    const d = found.day;
+    const isUser = !!d._replaced_by_user;
+
+    const descRaw = (d.description || '').replace(/\n?\[(?:COACH IA|ADAPTÉ)[^\]]*\]/g, '').trim();
+    const descHtml = escapeHtml(descRaw).replace(/\n/g, '<br/>');
+
+    wrap.innerHTML = `
+      <div class="slot-summary">
+        <div class="slot-summary-date">${escapeHtml(dateLabel.charAt(0).toUpperCase() + dateLabel.slice(1))}${isUser ? ' <span class="pdc-flag pdc-flag-user">✎ saisie perso</span>' : ''}</div>
+        <div class="slot-summary-title">${escapeHtml(d.title || 'Séance')}</div>
+        ${d.km ? `<div class="slot-summary-meta">${d.km} km${d.target_pace ? ' · ' + escapeHtml(d.target_pace) : ''}</div>` : ''}
+        ${descRaw ? `<div class="slot-summary-desc">${descHtml}</div>` : ''}
+      </div>
+      <button class="btn-primary slot-open-btn" id="slotOpenBtn" type="button">${isUser ? 'Modifier la séance' : 'Saisir la séance du coach'}</button>
+    `;
+    const btn = document.getElementById('slotOpenBtn');
+    if (btn) btn.addEventListener('click', () => window.openSlotModal && window.openSlotModal());
   }
 
   // --- Fiche séance (bottom-sheet) --------------------------------------
@@ -6151,6 +6371,7 @@
     planRenderCurrentWeek();
     planRenderPaces();
     planRenderCalendar();
+    renderSlotCard();
     // Anciennes vues conservées
     planRenderPhase();
     planRenderVolumeChart();
@@ -6178,6 +6399,7 @@
     setupYearFilter();
     rerenderRaceTab();
     setupRaceModal();
+    setupSlotModal();
     initVolumeTab();
     initSessTab();
     initAeroTab();

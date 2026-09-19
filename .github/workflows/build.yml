@@ -8,7 +8,7 @@ name: build-dashboard
 
 on:
   repository_dispatch:
-    types: [strava-activity, coach-validate]
+    types: [strava-activity, coach-validate, apply-slot]
   schedule:
     - cron: '45 5 * * *'
   # Rebuild auto quand le code du dashboard change (pas de boucle : les commits
@@ -91,6 +91,17 @@ jobs:
         # doit pas tuer tout le pipeline. L'erreur est déjà journalisée dans
         # ci_status.json par apply_proposal lui-même.
         run: python3 scripts/ci/apply_proposal.py --id "$PROP_ID" --action "$PROP_ACTION" || echo "⚠ Validation coach échouée — build poursuivi"
+
+      # Séance de piste du mercredi, saisie par Seb depuis le dashboard
+      # (formulaire → Cloudflare Worker /slot → ce dispatch). Le payload
+      # entier passe en JSON dans une variable d'environnement — jamais
+      # interpolé dans le shell — et est revalidé strictement côté Python.
+      - name: Appliquer la séance du mercredi (saisie club)
+        if: github.event_name == 'repository_dispatch' && github.event.action == 'apply-slot'
+        env:
+          SLOT_PAYLOAD: ${{ toJSON(github.event.client_payload) }}
+          SEB_DATA_DIR: ${{ github.workspace }}/data
+        run: python3 scripts/ci/apply_slot.py || echo "⚠ Séance du mercredi non appliquée — build poursuivi"
 
       - name: Sync Strava (API directe)
         env:

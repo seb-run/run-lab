@@ -128,6 +128,18 @@
     <!-- Colonne vertébrale : la route vers NYC -->
     <div id="homeRoute"></div>
 
+    <!-- Calendrier de la semaine, cliquable : voir "les séances à venir,
+         comme un calendrier où je clique et ça me sort la séance du jour".
+         Remonté au-dessus du pli — avant, il fallait défiler jusqu'en bas
+         pour le voir. -->
+    <article class="card mt-lg" id="homeWeekCard">
+      <header class="card-head">
+        <h3>Semaine en cours</h3>
+        <span class="card-sub" id="homeWeekSub"></span>
+      </header>
+      <div id="homeWeek"></div>
+    </article>
+
     <!-- Les trois réponses, sans défiler -->
     <div class="home-answers" id="homeAnswers">
       <button class="answer answer-today" type="button" data-goto="homeTodayCard">
@@ -182,22 +194,13 @@
       <div id="homeCoach"></div>
     </article>
 
-    <div class="grid grid-2 gap-lg mt-lg">
-      <article class="card" id="homeLastCard">
-        <header class="card-head">
-          <h3>Dernière séance</h3>
-          <span class="card-sub">vs plan</span>
-        </header>
-        <div id="homeLast"></div>
-      </article>
-      <article class="card" id="homeWeekCard">
-        <header class="card-head">
-          <h3>Semaine en cours</h3>
-          <span class="card-sub" id="homeWeekSub"></span>
-        </header>
-        <div id="homeWeek"></div>
-      </article>
-    </div>
+    <article class="card mt-lg" id="homeLastCard">
+      <header class="card-head">
+        <h3>Dernière séance</h3>
+        <span class="card-sub">vs plan</span>
+      </header>
+      <div id="homeLast"></div>
+    </article>
 
     </div><!-- /home-below -->
   </section>
@@ -211,6 +214,17 @@
         <span class="card-sub">Programme adapté à ton plan NYC</span>
       </header>
       <div id="planTodayCard"></div>
+    </article>
+
+    <!-- Bloc 0a-0 : Séance de piste du mercredi — saisie club. Le coach du
+         club donne la séance le lundi soir pour le mercredi ; Seb la saisit
+         lui-même plutôt que d'attendre une IA qui ne la connaît pas. -->
+    <article class="card mt-lg" id="slotCardWrap">
+      <header class="card-head">
+        <h3>Séance piste · mercredi</h3>
+        <span class="card-sub">Ce que donne le coach du club</span>
+      </header>
+      <div id="slotCard"></div>
     </article>
 
     <!-- Bloc 0a : Coach IA -->
@@ -764,6 +778,69 @@
     <footer class="modal-foot">
       <button class="btn-ghost" id="raceCancelBtn">Annuler</button>
       <button class="btn-primary" id="raceSaveBtn">Enregistrer</button>
+    </footer>
+  </div>
+</div>
+
+<!-- ====== MODAL — Séance de piste du mercredi (saisie club) ====== -->
+<div class="modal-backdrop" id="slotModal" hidden>
+  <div class="modal" role="dialog" aria-labelledby="slotModalTitle">
+    <header class="modal-head">
+      <h3 id="slotModalTitle">Séance de piste · <span id="slotModalDate"></span></h3>
+      <button class="modal-close" id="slotModalClose" aria-label="Fermer">×</button>
+    </header>
+
+    <div class="modal-body">
+      <p class="modal-help">Ce que le coach du club a donné pour mercredi. Ça remplace la séance du plan ce jour-là, et le reste de la semaine s'adapte.</p>
+
+      <label class="field">
+        <span class="field-label">Titre</span>
+        <input type="text" id="slotTitle" placeholder="Ex : Piste club · 6×800m" maxlength="80">
+      </label>
+
+      <div class="slot-form-grid">
+        <label class="field">
+          <span class="field-label">Échauffement (km)</span>
+          <input type="number" id="slotWarmupKm" min="0" max="10" step="0.5" value="2">
+        </label>
+        <label class="field">
+          <span class="field-label">Retour au calme (km)</span>
+          <input type="number" id="slotCooldownKm" min="0" max="10" step="0.5" value="1.5">
+        </label>
+      </div>
+
+      <div class="slot-form-grid slot-form-grid-3">
+        <label class="field">
+          <span class="field-label">Répétitions</span>
+          <input type="number" id="slotReps" min="1" max="20" step="1" value="6">
+        </label>
+        <label class="field">
+          <span class="field-label">Distance / rép. (km)</span>
+          <input type="number" id="slotRepKm" min="0.05" max="5" step="0.05" value="0.8">
+        </label>
+        <label class="field">
+          <span class="field-label">Récup entre rép.</span>
+          <input type="text" id="slotRecovery" placeholder="Ex : 90s trot" maxlength="40">
+        </label>
+      </div>
+
+      <label class="field">
+        <span class="field-label">Allure cible de l'effort</span>
+        <input type="text" id="slotPace" placeholder="Ex : 3'30&quot;/km" maxlength="20">
+      </label>
+
+      <label class="field">
+        <span class="field-label">Notes libres (optionnel)</span>
+        <input type="text" id="slotNotes" placeholder="Ex : terrain sec, groupe rapide" maxlength="200">
+      </label>
+
+      <div class="field-preview" id="slotModalPreview"></div>
+      <p class="coach-fb" id="slotModalFb"></p>
+    </div>
+
+    <footer class="modal-foot">
+      <button class="btn-ghost" id="slotCancelBtn">Annuler</button>
+      <button class="btn-primary" id="slotSaveBtn">Envoyer</button>
     </footer>
   </div>
 </div>

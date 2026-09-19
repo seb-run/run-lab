@@ -21,8 +21,12 @@
  *   GET  /?hub.challenge=...&hub.verify_token=...   (validation à la création)
  *   POST /  {object_type:"activity", aspect_type:"create", object_id:..., ...}
  *
- * Le dashboard enverra :
+ * Le dashboard enverra aussi :
  *   POST /validate  {id:"7e4375e9", action:"accept"|"reject", token:"..."}
+ *   POST /slot      {date, title, warmup_km, reps, rep_km, rep_pace,
+ *                     recovery, cooldown_km, notes, token:"..."}
+ *                    — séance de piste du mercredi, saisie depuis l'app.
+ *                    Réutilise VALIDATE_TOKEN (pas de secret séparé).
  */
 
 // Comparaison à temps constant : évite qu'un attaquant devine le jeton
@@ -48,7 +52,7 @@ export default {
     };
 
     // --- Préflight CORS du dashboard ---
-    if (request.method === 'OPTIONS' && url.pathname === '/validate') {
+    if (request.method === 'OPTIONS' && (url.pathname === '/validate' || url.pathname === '/slot')) {
       return new Response(null, { status: 204, headers: corsHeaders });
     }
 
@@ -106,6 +110,82 @@ export default {
           { status: 502, headers: corsHeaders });
       }
       return Response.json({ ok: true, id, action }, { headers: corsHeaders });
+    }
+
+    // --- Séance de piste du mercredi, saisie depuis le dashboard ---
+    if (url.pathname === '/slot') {
+      if (request.method !== 'POST') {
+        return new Response('Method Not Allowed', { status: 405, headers: corsHeaders });
+      }
+      if (!env.VALIDATE_TOKEN) {
+        return Response.json({ error: 'VALIDATE_TOKEN non configuré' },
+          { status: 503, headers: corsHeaders });
+      }
+
+      let body;
+      try {
+        body = await request.json();
+      } catch {
+        return Response.json({ error: 'JSON invalide' }, { status: 400, headers: corsHeaders });
+      }
+
+      if (!safeEqual(String(body.token || ''), env.VALIDATE_TOKEN)) {
+        return Response.json({ error: 'Jeton invalide' }, { status: 401, headers: corsHeaders });
+      }
+
+      // Validation légère ici (bornes larges) : la validation stricte qui
+      // compte est côté apply_slot.py, qui ne fait confiance à rien de ce
+      // qui vient d'Internet. Ce qui suit n'est qu'un garde-fou de premier
+      // niveau pour ne pas envoyer un payload absurde dans le dispatch.
+      const date = String(body.date || '');
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+        return Response.json({ error: 'Date invalide' }, { status: 400, headers: corsHeaders });
+      }
+      const num = (v, lo, hi, def) => {
+        const n = Number(v);
+        return Number.isFinite(n) && n >= lo && n <= hi ? n : def;
+      };
+      const str = (v, max) => String(v || '').trim().slice(0, max);
+
+      const payload = {
+        date,
+        title: str(body.title, 80) || 'Piste club',
+        warmup_km: num(body.warmup_km, 0, 10, 0),
+        reps: Math.round(num(body.reps, 1, 20, 0)),
+        rep_km: num(body.rep_km, 0.05, 5, 0),
+        rep_pace: str(body.rep_pace, 20),
+        recovery: str(body.recovery, 40),
+        cooldown_km: num(body.cooldown_km, 0, 10, 0),
+        notes: str(body.notes, 300),
+      };
+      if (!payload.reps || !payload.rep_km) {
+        return Response.json({ error: 'Répétitions et distance par répétition requises' },
+          { status: 400, headers: corsHeaders });
+      }
+
+      const resp = await fetch(
+        `https://api.github.com/repos/${env.GITHUB_REPO}/dispatches`,
+        {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${env.GITHUB_TOKEN}`,
+            'Accept': 'application/vnd.github+json',
+            'User-Agent': 'seb-metrics-slot',
+            'X-GitHub-Api-Version': '2022-11-28',
+          },
+          body: JSON.stringify({
+            event_type: 'apply-slot',
+            client_payload: payload,
+          }),
+        }
+      );
+      console.log(`slot ${date} → ${resp.status}`);
+
+      if (!resp.ok) {
+        return Response.json({ error: `GitHub a répondu ${resp.status}` },
+          { status: 502, headers: corsHeaders });
+      }
+      return Response.json({ ok: true, date }, { headers: corsHeaders });
     }
 
     // --- Validation d'abonnement Strava (GET avec hub.challenge) ---

@@ -1099,7 +1099,8 @@ h1, h2, h3, h4 {
   letter-spacing: 0.04em;
 }
 .field select,
-.field input[type="text"] {
+.field input[type="text"],
+.field input[type="number"] {
   font-family: inherit;
   font-size: 14px;
   padding: 10px 12px;
@@ -1108,9 +1109,12 @@ h1, h2, h3, h4 {
   background: var(--surface);
   color: var(--text);
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  width: 100%;
+  box-sizing: border-box;
 }
 .field select:focus,
-.field input[type="text"]:focus {
+.field input[type="text"]:focus,
+.field input[type="number"]:focus {
   outline: none;
   border-color: #5b8af5;
   box-shadow: 0 0 0 3px rgba(91, 138, 245, 0.15);
@@ -3538,7 +3542,9 @@ html[data-theme="dark"] .lens.on {
 .home-week-dot {
   flex: 1; aspect-ratio: 1; max-width: 44px; border-radius: 12px;
   display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: transform 0.12s ease;
 }
+.home-week-dot:active { transform: scale(0.92); }
 .home-week-dot span { font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.92); mix-blend-mode: normal; }
 .home-week-dot[style*="background:transparent"] span,
 .home-week-dot[style*="background:var(--surface-3)"] span { color: var(--text-3); }
@@ -4706,6 +4712,41 @@ html[data-theme="dark"] {
 
 /* Chip « remplacée » dans le calendrier hebdo — même famille que « décalée » */
 .pdc-flag-replaced { color: var(--st-ok-tx); }
+
+/* Séance de piste saisie par Seb (coach du club, mercredi) — famille ambre,
+   distincte du vert « remplacée par le coach IA » et du bleu « décalée ». */
+.pdc-flag-user { color: var(--sun-tx); }
+.plan-replaced-banner-user {
+  background: var(--sun-l);
+  border-left-color: var(--sun);
+  color: var(--sun-tx);
+}
+.plan-replaced-banner-user .plan-replaced-ico { color: var(--sun); }
+
+/* ---- Carte + formulaire « séance piste du mercredi » ---------------------- */
+.slot-summary { margin-bottom: 14px; }
+.slot-summary-date {
+  font-size: 12px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.04em; color: var(--text-3); margin-bottom: 4px;
+}
+.slot-summary-title { font-size: 16px; font-weight: 700; color: var(--text); }
+.slot-summary-meta {
+  font-family: var(--font-mono); font-size: 13px; color: var(--text-2);
+  margin-top: 2px;
+}
+.slot-summary-desc {
+  font-size: 13px; color: var(--text-2); line-height: 1.5; margin-top: 8px;
+  white-space: pre-line;
+}
+.slot-open-btn { width: 100%; text-align: center; }
+
+.slot-form-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0 12px;
+}
+.slot-form-grid-3 { grid-template-columns: 1fr 1fr 1.2fr; }
+@media (max-width: 480px) {
+  .slot-form-grid-3 { grid-template-columns: 1fr 1fr; }
+}
 
 /* Notes cascade : marquer comme information système, pas comme consigne coach */
 .plan-coach-notes li.cascade b { color: var(--c-blue); }
