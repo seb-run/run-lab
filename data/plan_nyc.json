@@ -999,7 +999,7 @@
           "duration_min": 49,
           "key": false,
           "description": "9km à 5'26\"/km + 4×100m lignes droites en fin. Activation pour la SL de dimanche.",
-          "status": "pending",
+          "status": "today",
           "actual": null,
           "coach_notes": [
             {
@@ -1025,26 +1025,32 @@
           "date": "2026-09-20",
           "dow": "Sun",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Chaleur et fatigue accumulée cette semaine : pilote cette SL progressive à la FC plutôt qu'à l'allure. Si la dérive cardiaque ressemble à celle du 16/09 (>7%), coupe la portion rapide et termine en footing. Ne dépasse pas les 24km prévus."
+            }
+          ]
         }
       ],
       "compliance": {
-        "km_pct": 117,
-        "km_done": 46.3,
-        "km_planned": 39.6,
+        "km_pct": 123,
+        "km_done": 58.3,
+        "km_planned": 47.4,
         "km_done_week": 58.3,
         "km_planned_week": 79.8,
-        "sessions_done": 3,
-        "sessions_planned": 3,
+        "sessions_done": 4,
+        "sessions_planned": 4,
         "sessions_done_week": 4,
         "keys_success": 0,
         "keys_total": 2,
-        "points": 78,
-        "verdict": "partial"
+        "points": 81,
+        "verdict": "success"
       },
-      "volume_actual_to_date": 46.3,
-      "volume_planned_to_date": 39.6,
-      "volume_drift_pct": 16.9
+      "volume_actual_to_date": 58.3,
+      "volume_planned_to_date": 47.4,
+      "volume_drift_pct": 23.0
     },
     {
       "week_num": 2,
@@ -1109,7 +1115,13 @@
           "date": "2026-09-24",
           "dow": "Thu",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Les deux dernières séances clés (VMA 15/09, MP 17/09) ont été ratées avec des allures 1'40-2min/km trop lentes en pleine chaleur. Si la météo est encore chaude ce jour-là, cap l'effort en FC seuil/marathon plutôt qu'en allure absolue sur les 14km MP, quitte à rallonger légèrement le temps d'effort."
+            }
+          ]
         },
         {
           "date": "2026-09-25",
