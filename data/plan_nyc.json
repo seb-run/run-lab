@@ -999,7 +999,7 @@
           "duration_min": 49,
           "key": false,
           "description": "9km à 5'26\"/km + 4×100m lignes droites en fin. Activation pour la SL de dimanche.",
-          "status": "today",
+          "status": "missed",
           "actual": null,
           "coach_notes": [
             {
@@ -1024,7 +1024,7 @@
           "target_pace": "4'16\"/km",
           "date": "2026-09-20",
           "dow": "Sun",
-          "status": "pending",
+          "status": "today",
           "actual": null,
           "coach_notes": [
             {
@@ -1035,13 +1035,13 @@
         }
       ],
       "compliance": {
-        "km_pct": 123,
+        "km_pct": 104,
         "km_done": 58.3,
-        "km_planned": 47.4,
+        "km_planned": 55.8,
         "km_done_week": 58.3,
         "km_planned_week": 79.8,
         "sessions_done": 4,
-        "sessions_planned": 4,
+        "sessions_planned": 5,
         "sessions_done_week": 4,
         "keys_success": 0,
         "keys_total": 2,
@@ -1049,8 +1049,8 @@
         "verdict": "success"
       },
       "volume_actual_to_date": 58.3,
-      "volume_planned_to_date": 47.4,
-      "volume_drift_pct": 23.0
+      "volume_planned_to_date": 55.8,
+      "volume_drift_pct": 4.5
     },
     {
       "week_num": 2,
@@ -1089,6 +1089,10 @@
             {
               "kind": "note",
               "text": "Séance à piloter aux sensations : si jambes lourdes après la SL de dimanche, réduire à 4×1km ou repasser en allure seuil plutôt que forcer le 3'27\"/km."
+            },
+            {
+              "kind": "note",
+              "text": "Avant de lancer les 5x1km VMA, vérifie les sensations à l'échauffement : si la FC reste basse et l'allure ne suit toujours pas malgré effort ressenti élevé, coupe la séance en footing et préviens-moi plutôt que de forcer."
             }
           ]
         },
