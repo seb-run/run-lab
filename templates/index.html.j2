@@ -793,6 +793,15 @@
     <div class="modal-body">
       <p class="modal-help">Ce que le coach du club a donné pour mercredi. Ça remplace la séance du plan ce jour-là, et le reste de la semaine s'adapte.</p>
 
+      <!-- Import photo : la lecture pré-remplit les champs ci-dessous, mais
+           ne les envoie jamais toute seule — tu relis et corriges avant
+           d'appuyer sur Envoyer. -->
+      <div class="slot-photo-row">
+        <label class="btn-ghost slot-photo-btn" for="slotPhotoInput">📷 Lire une photo de la séance</label>
+        <input type="file" id="slotPhotoInput" accept="image/*" hidden>
+      </div>
+      <p class="slot-photo-status" id="slotPhotoStatus"></p>
+
       <label class="field">
         <span class="field-label">Titre</span>
         <input type="text" id="slotTitle" placeholder="Ex : Piste club · 6×800m" maxlength="80">

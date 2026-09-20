@@ -4748,6 +4748,18 @@ html[data-theme="dark"] {
   .slot-form-grid-3 { grid-template-columns: 1fr 1fr; }
 }
 
+.slot-photo-row { margin-bottom: 4px; }
+.slot-photo-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 100%; cursor: pointer;
+}
+.slot-photo-status {
+  font-size: 12.5px; color: var(--text-2); margin: 6px 0 14px; min-height: 16px;
+}
+.slot-photo-ok { color: var(--st-ok-tx); font-weight: 600; }
+.slot-photo-warn { color: var(--sun-tx); font-weight: 600; }
+.slot-photo-err { color: var(--pin-tx); font-weight: 600; }
+
 /* Notes cascade : marquer comme information système, pas comme consigne coach */
 .plan-coach-notes li.cascade b { color: var(--c-blue); }
 

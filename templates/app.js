@@ -1805,6 +1805,8 @@
     const notesEl   = document.getElementById('slotNotes');
     const previewEl = document.getElementById('slotModalPreview');
     const fbEl      = document.getElementById('slotModalFb');
+    const photoInput = document.getElementById('slotPhotoInput');
+    const photoStatus = document.getElementById('slotPhotoStatus');
     if (!modal || !saveBtn) return;
 
     // Format d'affichage cohérent avec le reste du plan : "5×1000m", pas "5×1km".
@@ -1848,6 +1850,91 @@
       </div>`;
     }
 
+    // Redimensionne côté téléphone avant l'envoi : une photo de coureur pèse
+    // facilement 3-8 Mo, largement plus que ce dont un modèle de lecture a
+    // besoin. 1600px de long côté suffit à lire un post-it ou un écran de
+    // messagerie, et ça passe la requête beaucoup plus vite en 4G.
+    function resizeImageToBase64(file) {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        const reader = new FileReader();
+        reader.onerror = () => reject(new Error('lecture du fichier impossible'));
+        reader.onload = () => {
+          img.onerror = () => reject(new Error('image illisible'));
+          img.onload = () => {
+            const maxDim = 1600;
+            let { width, height } = img;
+            if (width > maxDim || height > maxDim) {
+              const ratio = Math.min(maxDim / width, maxDim / height);
+              width = Math.round(width * ratio);
+              height = Math.round(height * ratio);
+            }
+            const canvas = document.createElement('canvas');
+            canvas.width = width;
+            canvas.height = height;
+            canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+            const dataUrl = canvas.toDataURL('image/jpeg', 0.82);
+            resolve(dataUrl.split(',')[1]); // base64 sans le préfixe data:
+          };
+          img.src = reader.result;
+        };
+        reader.readAsDataURL(file);
+      });
+    }
+
+    async function handlePhoto() {
+      const file = photoInput.files && photoInput.files[0];
+      if (!file) return;
+      const cfg = coachConfig(false);
+      if (!cfg) { photoInput.value = ''; return; }
+
+      if (photoStatus) { photoStatus.textContent = 'Lecture de la photo…'; photoStatus.className = 'slot-photo-status'; }
+
+      try {
+        const base64 = await resizeImageToBase64(file);
+        const r = await fetch(cfg.base + '/slot-ocr', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({image_base64: base64, media_type: 'image/jpeg', token: cfg.token}),
+        });
+        if (r.status === 401) {
+          localStorage.removeItem(VALIDATE_TOKEN_KEY);
+          throw new Error('jeton refusé — il te sera redemandé');
+        }
+        if (!r.ok) {
+          let msg = 'HTTP ' + r.status;
+          try { const j = await r.json(); if (j && j.error) msg = j.error; } catch {}
+          throw new Error(msg);
+        }
+        const data = await r.json();
+        const f = data.fields || {};
+        if (f.title) titleEl.value = f.title;
+        if (f.warmup_km !== undefined) warmupEl.value = f.warmup_km;
+        if (f.reps) repsEl.value = f.reps;
+        if (f.rep_km) repKmEl.value = f.rep_km;
+        if (f.rep_pace) paceEl.value = f.rep_pace;
+        if (f.recovery) recoveryEl.value = f.recovery;
+        if (f.cooldown_km !== undefined) cooldownEl.value = f.cooldown_km;
+        if (f.notes) notesEl.value = f.notes;
+        updatePreview();
+
+        const conf = data.confidence || 'moyenne';
+        if (photoStatus) {
+          photoStatus.textContent = conf === 'basse'
+            ? '⚠ Lecture incertaine — relis bien chaque champ avant d\'envoyer.'
+            : '✓ Lu depuis la photo — vérifie avant d\'envoyer.';
+          photoStatus.className = conf === 'basse' ? 'slot-photo-status slot-photo-warn' : 'slot-photo-status slot-photo-ok';
+        }
+      } catch (e) {
+        if (photoStatus) {
+          photoStatus.textContent = '✗ ' + (e && e.message ? e.message : 'lecture échouée — saisis à la main');
+          photoStatus.className = 'slot-photo-status slot-photo-err';
+        }
+      } finally {
+        photoInput.value = '';
+      }
+    }
+
     function openModal() {
       const iso = nextWednesdayIso();
       const found = typeof planFindDay === 'function' ? planFindDay(iso) : null;
@@ -1867,6 +1954,8 @@
       recoveryEl.value = '';
       notesEl.value = '';
       if (fbEl) { fbEl.textContent = ''; fbEl.className = 'coach-fb'; }
+      if (photoStatus) { photoStatus.textContent = ''; photoStatus.className = 'slot-photo-status'; }
+      if (photoInput) photoInput.value = '';
       updatePreview();
 
       modal.hidden = false;
@@ -1938,6 +2027,7 @@
     [warmupEl, cooldownEl, repsEl, repKmEl, paceEl, recoveryEl, notesEl].forEach(el => {
       el.addEventListener('input', updatePreview);
     });
+    if (photoInput) photoInput.addEventListener('change', handlePhoto);
     closeBtn.addEventListener('click', closeModal);
     cancelBtn.addEventListener('click', closeModal);
     saveBtn.addEventListener('click', save);

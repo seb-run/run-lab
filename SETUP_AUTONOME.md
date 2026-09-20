@@ -120,6 +120,10 @@ github.com → Settings (ton profil) → Developer settings → **Fine-grained t
      acceptes ou refuses une proposition du coach. Sans elle, la route
      `/validate` répond « VALIDATE_TOKEN non configuré ».
    - `GITHUB_REPO` (type Text) : `seb-run/run-lab`
+   - `ANTHROPIC_API_KEY` (type Secret) : requis pour la lecture de photo du
+     formulaire mercredi (route `/slot-ocr`). Tu peux mettre la même clé que
+     celle du coach IA (secret GitHub `ANTHROPIC_API_KEY` du dépôt) — c'est
+     un secret Cloudflare séparé, à poser une deuxième fois ici.
 4. Note l'URL du worker : `https://strava-relay.XXX.workers.dev`
    C'est cette URL que le dashboard réclame au premier refus ou à la première
    acceptation d'une proposition du coach. Elle et le jeton sont gardés en
