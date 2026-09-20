@@ -29,3 +29,8 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # Entrée explicite en ligne de commande : plus fiable que de
+          # compter sur la découverte automatique de wrangler.toml, qui a
+          # échoué une première fois ("Missing entry-point") alors que le
+          # fichier existait bien dans le dépôt.
+          command: deploy scripts/ci/strava-webhook-worker.js --name strava-relay --compatibility-date 2024-09-01
