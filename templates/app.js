@@ -1888,7 +1888,7 @@
       const cfg = coachConfig(false);
       if (!cfg) { photoInput.value = ''; return; }
 
-      if (photoStatus) { photoStatus.textContent = 'Lecture de la photo…'; photoStatus.className = 'slot-photo-status'; }
+      if (photoStatus) { photoStatus.textContent = 'Lecture de la photo…'; photoStatus.className = 'slot-photo-status is-loading'; }
 
       try {
         const base64 = await resizeImageToBase64(file);

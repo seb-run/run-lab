@@ -4759,6 +4759,40 @@ html[data-theme="dark"] {
 .slot-photo-ok { color: var(--st-ok-tx); font-weight: 600; }
 .slot-photo-warn { color: var(--sun-tx); font-weight: 600; }
 .slot-photo-err { color: var(--pin-tx); font-weight: 600; }
+.slot-photo-status.is-loading::before {
+  content: ''; display: inline-block; width: 8px; height: 8px; margin-right: 6px;
+  border-radius: 50%; background: var(--sky);
+  animation: slotPulse 0.9s ease-in-out infinite;
+}
+@keyframes slotPulse {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50%      { opacity: 1;   transform: scale(1.15); }
+}
+
+/* ---- Micro-interactions : retour tactile sur tout ce qui se tape --------- */
+.lens:active,
+.year-btn:active { transform: scale(0.93); }
+
+.plan-day-card {
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.15s ease, border-color var(--t-fast);
+}
+.plan-day-card:hover { border-color: var(--border-2); box-shadow: var(--shadow-sm, 0 1px 3px rgba(15,23,42,.06)); }
+.plan-day-card:active { transform: scale(0.975); }
+
+.plan-cal-day:active { transform: scale(0.85); }
+
+.etat-forme { cursor: pointer; }
+.etat-forme-i { transition: transform 0.12s ease; }
+
+@media (prefers-reduced-motion: reduce) {
+  .lens, .year-btn, .plan-day-card, .plan-cal-day, .etat-forme-i,
+  .home-week-dot, .slot-photo-status.is-loading::before {
+    transition: none; animation: none;
+  }
+  .lens:active, .year-btn:active, .plan-day-card:active,
+  .plan-cal-day:active, .home-week-dot:active { transform: none; }
+}
 
 /* Notes cascade : marquer comme information système, pas comme consigne coach */
 .plan-coach-notes li.cascade b { color: var(--c-blue); }
