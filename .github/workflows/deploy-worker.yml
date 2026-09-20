@@ -1,0 +1,31 @@
+# seb-metrics — déploiement automatique du Worker Cloudflare
+# ==============================================================
+# Évite complètement l'éditeur web de dash.cloudflare.com (capricieux,
+# pénible sur mobile) et tout outil à installer sur le Mac. GitHub Actions
+# fait le déploiement à ta place, dès que le code du worker change.
+#
+# Mise en place (une seule fois) : voir SETUP_AUTONOME.md, section
+# "Déployer le Cloudflare Worker". Il faut deux secrets GitHub :
+#   CLOUDFLARE_API_TOKEN   — dash.cloudflare.com/profile/api-tokens
+#   CLOUDFLARE_ACCOUNT_ID  — visible sur la page d'accueil du dashboard
+name: deploy-worker
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/ci/strava-webhook-worker.js'
+      - 'wrangler.toml'
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Déployer sur Cloudflare Workers
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

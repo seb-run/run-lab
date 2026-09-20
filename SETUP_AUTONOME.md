@@ -127,6 +127,21 @@ github.com → Settings (ton profil) → Developer settings → **Fine-grained t
    Pour les ressaisir : `coachResetValidateConfig()` dans la console du
    navigateur.
 
+### b-bis. Mettre à jour le code du worker sans repasser par l'éditeur
+Le §b n'est nécessaire qu'une fois (créer le worker + poser ses secrets).
+Pour toute mise à jour du code ensuite, `.github/workflows/deploy-worker.yml`
+déploie automatiquement à chaque push qui touche `scripts/ci/strava-webhook-worker.js`
+— plus besoin de l'éditeur web de dash.cloudflare.com, capricieux et pénible
+sur mobile. Deux secrets à poser une fois sur GitHub (Settings → Secrets and
+variables → Actions → New repository secret) :
+- `CLOUDFLARE_API_TOKEN` : dash.cloudflare.com/profile/api-tokens → Create
+  Token → modèle « Edit Cloudflare Workers » → Continue → Create Token.
+- `CLOUDFLARE_ACCOUNT_ID` : visible sur la page d'accueil du dashboard
+  (colonne de droite), ou sur la page du worker lui-même.
+
+Ce sont deux pages simples (formulaire, texte à copier), pas l'éditeur de
+code — elles chargent même quand la section Workers plante.
+
 ### c. Abonner Strava au webhook
 Terminal (remplace les 4 valeurs) :
 ```bash
