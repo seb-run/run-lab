@@ -37,11 +37,11 @@
       "name": "NYC Marathon",
       "date": "2026-11-01",
       "type": "main",
-      "target_time": "2h44'00",
+      "target_time": "2h57'00",
       "strategy_time": "3h00'00",
       "status": "confirmed",
       "priority": "primary",
-      "notes": "Sub-3h objectif jour J (parcours dur, stratégie conservative)"
+      "notes": "Cible revue à 2h55-2h58 (plan v2.5, 20/09/2026) — plafond sub-3h en stratégie conservative"
     }
   ],
   "past_races": [
