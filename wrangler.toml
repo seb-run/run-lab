@@ -1,0 +1,22 @@
+# Déploiement du Worker sans passer par l'éditeur web du dashboard
+# Cloudflare (utile quand dash.cloudflare.com est capricieux).
+#
+# Usage (depuis la racine du repo) :
+#   npm install -g wrangler
+#   wrangler login
+#   wrangler deploy
+#
+# `name` doit correspondre EXACTEMENT au nom du worker déjà créé
+# (visible dans l'URL https://<name>.<ton-sous-domaine>.workers.dev).
+# D'après SETUP_AUTONOME.md il a été créé sous le nom "strava-relay" —
+# si ton URL réelle est différente, corrige la ligne ci-dessous avant
+# de lancer `wrangler deploy`, sinon ça créerait un DEUXIÈME worker au
+# lieu de mettre à jour le tien.
+name = "strava-relay"
+main = "scripts/ci/strava-webhook-worker.js"
+compatibility_date = "2024-09-01"
+
+# Les Variables and Secrets (GITHUB_TOKEN, VERIFY_TOKEN, GITHUB_REPO,
+# VALIDATE_TOKEN, ALLOWED_ORIGIN) restent celles déjà configurées sur le
+# worker existant — `wrangler deploy` ne touche qu'au code, jamais aux
+# secrets déjà en place côté Cloudflare.

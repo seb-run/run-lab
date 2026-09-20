@@ -43,7 +43,9 @@ echo "▸ Ce qui va être publié"
 # Les autres fichiers de `data/` restent au bot du CI.
 CHEMINS=()
 for c in .github modules scripts templates build.py sw.js manifest.webmanifest \
-         .gitignore ETAT_PROJET.md SETUP_AUTONOME.md README.md \
+         .gitignore ETAT_PROJET.md SETUP_AUTONOME.md README.md wrangler.toml \
+         apple-touch-icon.png icon-192.png icon-512.png icon-512-maskable.png \
+         assets \
          data/plan_nyc.json data/config.json; do
   [ -e "$c" ] && CHEMINS+=("$c")
 done
