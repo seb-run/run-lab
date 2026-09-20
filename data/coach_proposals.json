@@ -4,26 +4,6 @@
    "severity": "major",
    "kind": "change_pace",
    "date": "2026-08-25",
-   "field": null,
-   "new_value": "Allure seuil ajustée effort/FC au lieu de 3'50/km strict",
-   "reason": "Même logique que le 18/08 : séance de seuil long (3×12min) calée sur un chrono qui a déjà échoué en conditions chaudes similaires. Mieux vaut piloter à l'effort tant que la météo ne se rafraîchit pas.",
-   "replacement": {
-    "title": "Seuil long piloté à l'effort (chaleur)",
-    "type": "seuil",
-    "km": 16.0,
-    "target_pace": "3'55\"-4'05\"/km selon FC",
-    "description": "3×12min à effort seuil perçu, FC cible ~165-170. Récupération 3min trot entre les blocs. Si la chaleur est toujours forte, réduis à 3×10min plutôt que de forcer le chrono. Priorité : qualité de l'effort, pas le temps affiché au km."
-   },
-   "id": "8054e3bc",
-   "status": "accepted",
-   "created_at": "2026-08-18T06:02:18",
-   "decided_at": "2026-08-23T07:16:30",
-   "applied_detail": "2026-08-25 : Footing 65' + 6 lignes droites → Seuil long piloté à l'effort (chaleur)"
-  },
-  {
-   "severity": "major",
-   "kind": "change_pace",
-   "date": "2026-08-25",
    "field": "target_pace",
    "new_value": "4'00\"-4'05\"/km (cap FC ~168-172bpm)",
    "reason": "Deux séances seuil consécutives (11/08, 18/08) ont raté la cible de 44 à 80s/km sous 28-33°C avec FC basse à mi-parcours, signature typique d'un impact chaleur et non d'une perte de forme (la MP du 13/08 a montré que l'allure spécifique est là). Desserrer la cible protège la qualité du stimulus et évite un 3e échec démoralisant.",
@@ -470,6 +450,24 @@
    "id": "ff7310f7",
    "status": "pending",
    "created_at": "2026-09-20T10:07:59"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-09-20",
+   "field": null,
+   "new_value": "Transformer la SL progressive à allure marathon en SL aisance libre",
+   "reason": "Deux séances clés consécutives ratées sur l'allure (VMA -107s/km, MP +69s/km), une séance manquée, et chaleur persistante 25-27°C : forcer 24km avec un final à 4'16/km risque un 3e échec juste avant le plus gros bloc du mois (MP jeudi + SL30 avec 2×8km MP dimanche). Mieux vaut sécuriser une sortie longue réussie pour repartir sur des bases saines.",
+   "replacement": {
+    "title": "SL aisance 22km",
+    "type": "long",
+    "km": 22.0,
+    "target_pace": "4'45\"-5'00\"/km",
+    "description": "Sortie longue en aisance complète, sans contrainte d'allure marathon aujourd'hui. Cap FC autour de 145-150bpm max, tu ralentis si la chaleur pousse la FC au-dessus. Hydrate-toi bien avant/pendant. Objectif : terminer frais, pas cuit — c'est ça qui compte pour repartir propre mardi sur le VMA."
+   },
+   "id": "1b0ae064",
+   "status": "pending",
+   "created_at": "2026-09-20T19:54:35"
   }
  ]
 }
