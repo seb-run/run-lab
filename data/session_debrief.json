@@ -1,45 +1,45 @@
 {
- "headline": "12km à 5'05\"/km au lieu du footing récup 8km prévu : volume et allure au-dessus du plan.",
+ "headline": "SL progressive réussie : fin plus rapide que l'allure marathon, malgré 27-30°C.",
  "bullets": [
-  "Volume 154% du prévu (12,01km vs 7,8km) — ce n'était plus une sortie récup.",
-  "FC moyenne 139 bpm, 8,7 de moins que ta réf (147,7) à allure comparable — bon signe.",
-  "Contact au sol 244ms, +20ms vs ta réf (224ms) à cette allure — appui plus long qu'habituel."
+  "FC moy 151, sous ta réf de 154.7 (-3.7 bpm) malgré la chaleur (27-30°C).",
+  "Fin de course à 4'09\"/km, plus rapide que la cible marathon (4'16\"/km).",
+  "Equilibre gauche 50.0%, identique à ta réf (49.96%) — rien côté Achille."
  ],
  "points": [
   {
    "label": "FC moyenne",
-   "valeur": "139 bpm",
-   "ecart": "-8,7 vs réf 147,7",
-   "lecture": "FC basse pour cette allure, bon signe",
+   "valeur": "151 bpm",
+   "ecart": "-3.7 vs réf 60j",
+   "lecture": "plus bas que d'habitude malgré chaleur",
    "ton": "bon"
   },
   {
-   "label": "Contact au sol",
-   "valeur": "244 ms",
-   "ecart": "+20 ms vs réf 224 ms",
-   "lecture": "appui plus long que d'habitude",
-   "ton": "vigilance"
+   "label": "Allure finale",
+   "valeur": "4'09\"/km",
+   "ecart": "-7\" vs cible marathon",
+   "lecture": "sous l'allure cible en fin de séance",
+   "ton": "bon"
   },
   {
-   "label": "Volume",
-   "valeur": "12,01 km",
-   "ecart": "+54% vs 7,8 km prévus",
-   "lecture": "récup transformée en sortie longue",
-   "ton": "vigilance"
+   "label": "Equilibre gauche",
+   "valeur": "50.04%",
+   "ecart": "+0.08pt vs réf 49.96%",
+   "lecture": "stable, pas de décharge marquée",
+   "ton": "neutre"
   }
  ],
- "achille": "Aucune donnée d'équilibre G/D sur cette séance (champ vide) — vraisemblablement course sans ceinture.",
- "a_surveiller": "Dérive FC +6,4% en fin de séance alors que la température baisse (24→20°C) — plutôt fatigue que chaleur.",
+ "achille": "Equilibre 50.04%, quasi identique à ta réf (49.96%) — pas de décharge du côté droit.",
+ "a_surveiller": "Drift HR +17.7% sur la séance, mais cohérent avec l'accélération volontaire du progressif.",
  "seance": {
-  "date": "18/09/2026",
-  "heure": "08:33",
-  "titre": "i187853591",
-  "type_detecte": "endurance",
-  "km": 12.01,
-  "duree": "1h 01m 05s",
-  "allure": "5'05\"/km",
-  "fc_moy": 139
+  "date": "20/09/2026",
+  "heure": "12:25",
+  "titre": "i188512279",
+  "type_detecte": "sortie_longue",
+  "km": 25.01,
+  "duree": "1h 55m 36s",
+  "allure": "4'37\"/km",
+  "fc_moy": 151
  },
- "generated_at": "2026-09-18T21:14:42",
- "baseline_n": 33
+ "generated_at": "2026-09-20T12:31:05",
+ "baseline_n": 20
 }

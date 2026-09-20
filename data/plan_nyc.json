@@ -1024,25 +1024,300 @@
           "target_pace": "4'16\"/km",
           "date": "2026-09-20",
           "dow": "Sun",
-          "status": "today",
-          "actual": null,
+          "status": "done",
+          "actual": {
+            "km": 25.0,
+            "duration_min": 116,
+            "pace_sec": 277,
+            "pace_str": "4'37\"/km",
+            "fc": 151,
+            "cadence": 177,
+            "type": "sortie_longue",
+            "title": "i188512279",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 206.0,
+              "osc_cm": 10.9,
+              "vratio": 8.83,
+              "balance_l": 50.04,
+              "step_m": 1.21,
+              "temp_c": 27,
+              "temp_max": 30,
+              "resp": 34.7,
+              "power": 405,
+              "np": 409,
+              "te_aero": 4.5,
+              "te_ana": 0.0,
+              "load": 253.7,
+              "strides": 10231,
+              "rpe": 4.0,
+              "feel": 100,
+              "feel_label": "Très fort",
+              "drift": {
+                "stance": {
+                  "start": 215.0,
+                  "end": 188.0,
+                  "pct": -12.7
+                },
+                "step": {
+                  "start": 1159.0,
+                  "end": 1318.0,
+                  "pct": 13.7
+                },
+                "vratio": {
+                  "start": 8.89,
+                  "end": 8.54,
+                  "pct": -3.9
+                },
+                "osc": {
+                  "start": 105.0,
+                  "end": 115.0,
+                  "pct": 9.1
+                },
+                "hr": {
+                  "start": 142.0,
+                  "end": 167.0,
+                  "pct": 17.7
+                },
+                "cad": {
+                  "start": 88.8,
+                  "end": 88.8,
+                  "pct": -0.0
+                }
+              },
+              "balance_min": 48.85,
+              "balance_max": 50.94,
+              "balance_series": [
+                50.94,
+                49.84,
+                50.53,
+                50.25,
+                50.39,
+                50.47,
+                49.77,
+                49.93,
+                50.68,
+                50.55,
+                50.08,
+                49.99,
+                50.15,
+                49.22,
+                49.49,
+                49.36,
+                49.59,
+                49.78,
+                49.69,
+                49.61,
+                48.85,
+                49.41,
+                50.72,
+                50.61,
+                50.82
+              ],
+              "balance_lent": 50.05,
+              "balance_rapide": 49.78,
+              "asym_vs_allure": 0.17,
+              "allure_lent_s": 294,
+              "allure_rapide_s": 249,
+              "rr_beats": 18207,
+              "rmssd_effort": 5.5,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 292,
+                "fc": 129,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 286,
+                "fc": 136,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 286,
+                "fc": 141,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 288,
+                "fc": 143,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 288,
+                "fc": 142,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 300,
+                "fc": 147,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 287,
+                "fc": 142,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 291,
+                "fc": 149,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 288,
+                "fc": 147,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 288,
+                "fc": 145,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 289,
+                "fc": 146,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 288,
+                "fc": 149,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 296,
+                "fc": 144,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 289,
+                "fc": 146,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 289,
+                "fc": 147,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 292,
+                "fc": 145,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 248,
+                "fc": 162,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 249,
+                "fc": 164,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 246,
+                "fc": 167,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 254,
+                "fc": 168,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 249,
+                "fc": 170,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 249,
+                "fc": 166,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 250,
+                "fc": 168,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 249,
+                "fc": 171,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 301,
+                "fc": 161,
+                "ca": 176
+              }
+            ]
+          },
           "coach_notes": [
             {
               "kind": "note",
               "text": "Chaleur et fatigue accumulée cette semaine : pilote cette SL progressive à la FC plutôt qu'à l'allure. Si la dérive cardiaque ressemble à celle du 16/09 (>7%), coupe la portion rapide et termine en footing. Ne dépasse pas les 24km prévus."
             }
-          ]
+          ],
+          "score": {
+            "points": 99,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 104,
+            "volume_points": 100,
+            "pace_points": 98,
+            "pace_target_s": 256,
+            "pace_actual_s": 277,
+            "pace_actual_str": "4'37\"/km",
+            "pace_delta_s": 21,
+            "is_quality": false,
+            "hr": {
+              "avg": 151,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 1.1,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 104%",
+              "Allure +21\"/km vs cible"
+            ]
+          }
         }
       ],
       "compliance": {
         "km_pct": 104,
         "km_done": 58.3,
         "km_planned": 55.8,
-        "km_done_week": 58.3,
+        "km_done_week": 83.3,
         "km_planned_week": 79.8,
         "sessions_done": 4,
         "sessions_planned": 5,
-        "sessions_done_week": 4,
+        "sessions_done_week": 5,
         "keys_success": 0,
         "keys_total": 2,
         "points": 81,
