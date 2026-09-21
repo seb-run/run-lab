@@ -1293,16 +1293,16 @@
       ],
       "compliance": {
         "km_pct": 103,
-        "km_done": 58.3,
-        "km_planned": 56.7,
+        "km_done": 83.3,
+        "km_planned": 80.7,
         "km_done_week": 83.3,
         "km_planned_week": 80.7,
-        "sessions_done": 4,
-        "sessions_planned": 5,
+        "sessions_done": 5,
+        "sessions_planned": 6,
         "sessions_done_week": 5,
-        "keys_success": 0,
-        "keys_total": 2,
-        "points": 81,
+        "keys_success": 1,
+        "keys_total": 3,
+        "points": 85,
         "verdict": "success"
       },
       "volume_actual_to_date": 58.3,
@@ -1327,7 +1327,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet ou mobilité/yoga 20-30min. Récupération.",
-          "status": "pending",
+          "status": "today",
           "actual": null
         },
         {
@@ -1346,6 +1346,10 @@
             {
               "kind": "note",
               "text": "Vu le raté du 15/09 (5'14/km au lieu de 3'27 visé), pilote cette séance au cap FC plutôt qu'à l'allure stricte. Si les 2-3 premières répétitions sont dures à tenir en allure, coupe la séance courte plutôt que de t'enfoncer."
+            },
+            {
+              "kind": "note",
+              "text": "Chaleur récurrente cette semaine (25-27°C) a probablement pénalisé tes allures de vitesse. Hydrate-toi avant et pendant, échauffe-toi progressivement, et si la FC monte anormalement pour l'allure VMA visée, ne force pas — ton aérobie de fond est solide (SL 25km réussie), pas d'urgence à cramer une s"
             }
           ]
         },
@@ -1411,7 +1415,10 @@
           "status": "pending",
           "actual": null
         }
-      ]
+      ],
+      "volume_actual_to_date": 0.0,
+      "volume_planned_to_date": 0.0,
+      "volume_drift_pct": 0
     },
     {
       "week_num": 3,

@@ -4,37 +4,6 @@
    "severity": "major",
    "kind": "change_pace",
    "date": "2026-08-25",
-   "field": "target_pace",
-   "new_value": "4'00\"-4'05\"/km (cap FC ~168-172bpm)",
-   "reason": "Deux séances seuil consécutives (11/08, 18/08) ont raté la cible de 44 à 80s/km sous 28-33°C avec FC basse à mi-parcours, signature typique d'un impact chaleur et non d'une perte de forme (la MP du 13/08 a montré que l'allure spécifique est là). Desserrer la cible protège la qualité du stimulus et évite un 3e échec démoralisant.",
-   "replacement": {
-    "title": "Seuil long · 3×12' piloté FC",
-    "type": "seuil",
-    "km": 16.0,
-    "target_pace": "4'00\"-4'05\"/km",
-    "description": "Lance-toi tôt le matin (avant 8h si possible) pour limiter la chaleur. Cible 4'00-4'05/km sur les 3×12', mais pilote surtout sur FC (cap ~168-172bpm) plutôt que sur le chrono strict. Si tu sens que ça part en vrille dès le 1er bloc, coupe à 10' et garde la récup complète entre les blocs. L'objectif : qualité de l'effort, pas performance absolue par cette chaleur."
-   },
-   "id": "fc549ea2",
-   "status": "rejected",
-   "created_at": "2026-08-19T06:03:05",
-   "decided_at": "2026-08-23T19:50:29"
-  },
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-08-19",
-   "field": "description_note",
-   "new_value": "Chaleur persistante (28-33°C) depuis 2 semaines : hydrate-toi bien avant/pendant, et ne t'inquiète pas si les allures sont 10-20s/km plus lentes que d'habitude sur les footings — c'est la météo, pas la forme.",
-   "reason": "Contextualiser la dérive d'allure récurrente pour éviter que Sébastien ne s'alarme sur des footings à venir alors que le pattern est clairement météo (temp élevée sur toutes les séances récentes, feel_label cohérents avec l'effort réel).",
-   "id": "7554f88f",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "expired",
-   "created_at": "2026-08-19T06:03:05"
-  },
-  {
-   "severity": "major",
-   "kind": "change_pace",
-   "date": "2026-08-25",
    "field": null,
    "new_value": "seuil recalibré ~4'25-4'35/km au lieu de 3'50",
    "reason": "3 séances clés d'affilée ratées sur l'allure seuil/MP avec FC basse et RPE faible : le seuil visé n'est pas atteignable en ce moment. Mieux vaut revalider une allure réaliste sur une séance courte plutôt que d'accumuler un 3e échec de suite qui plombe la confiance.",
@@ -412,7 +381,7 @@
     "description": "Sortie longue au train fondamental, aucune progression ni segment MP. Objectif : avaler le volume sans creuser la fatigue. Coupe court si jambes lourdes ou chaleur excessive — 18-20km suffisent si besoin."
    },
    "id": "66bd87f9",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-18T21:14:09"
   },
   {
@@ -448,7 +417,7 @@
     "description": "Sortie longue en aérobie strict, sans accélération ni bloc MP. Cours aux sensations, cap FC souple. Mange/bois pendant l'effort (gel ou barre dès 45-50min) pour tester la disponibilité énergétique. Si à mi-parcours ça tire fort à cette allure facile, coupe à 18km plutôt que de forcer."
    },
    "id": "ff7310f7",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-20T10:07:59"
   },
   {
@@ -466,8 +435,44 @@
     "description": "Sortie longue en aisance complète, sans contrainte d'allure marathon aujourd'hui. Cap FC autour de 145-150bpm max, tu ralentis si la chaleur pousse la FC au-dessus. Hydrate-toi bien avant/pendant. Objectif : terminer frais, pas cuit — c'est ça qui compte pour repartir propre mardi sur le VMA."
    },
    "id": "1b0ae064",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-20T19:54:35"
+  },
+  {
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-09-24",
+   "field": "target_pace",
+   "new_value": "4'16\"/km",
+   "reason": "Deux séances clés à allure rapide ratées cette semaine avec écarts massifs (69s et 107s/km) et FC anormalement basse pour l'intensité, probablement liées à la chaleur (25-27°C récurrente). L'aérobie est solide (SL 25km réussie, decoupling 1,1%) donc le problème est spécifique aux allures MP/VMA — je sécurise l'allure pour retrouver une séance réussie plutôt que d'accumuler un 3e échec.",
+   "replacement": {
+    "title": "14km allure marathon stratégie · bloc",
+    "type": "mp_run",
+    "km": 20.4,
+    "target_pace": "4'16\"/km",
+    "description": "Bloc de 14km à l'allure stratégie 4'16/km (au lieu de 4'12). Hydrate-toi bien avant et pendant si chaleur. Si la FC s'envole nettement au-dessus de tes repères habituels pour cette allure, ralentis encore un peu plutôt que forcer — l'objectif est de retrouver une séance réussie et de la confiance."
+   },
+   "id": "84a1bde4",
+   "status": "pending",
+   "created_at": "2026-09-21T11:08:06"
+  },
+  {
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-09-27",
+   "field": "target_pace",
+   "new_value": "4'16\"/km",
+   "reason": "Cohérence avec l'ajustement du 24/09 : sécuriser l'allure MP sur ce gros bloc de 2x8km après deux échecs récents sur allure rapide, pour préserver la qualité de la sortie longue plutôt que de risquer un abandon du bloc.",
+   "replacement": {
+    "title": "SL 30km · 2×8km allure stratégie",
+    "type": "long_mp",
+    "km": 30.0,
+    "target_pace": "4'16\"/km",
+    "description": "30km avec 2x8km à 4'16/km (allure stratégie) au lieu de 4'12. Même logique de progressivité que ta SL du 20/09 qui s'est très bien passée. Surveille l'hydratation dès le matin si chaleur annoncée, et coupe le 2e bloc si la FC s'envole anormalement pour l'allure."
+   },
+   "id": "0ba18d1a",
+   "status": "pending",
+   "created_at": "2026-09-21T11:08:06"
   }
  ]
 }
