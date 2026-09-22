@@ -1327,7 +1327,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet ou mobilité/yoga 20-30min. Récupération.",
-          "status": "today",
+          "status": "done",
           "actual": null
         },
         {
@@ -1340,8 +1340,168 @@
           "target_pace": "3'27\"/km",
           "date": "2026-09-22",
           "dow": "Tue",
-          "status": "pending",
-          "actual": null,
+          "status": "under",
+          "actual": {
+            "km": 12.0,
+            "duration_min": 62,
+            "pace_sec": 310,
+            "pace_str": "5'10\"/km",
+            "fc": 141,
+            "cadence": 178,
+            "type": "endurance",
+            "title": "i189077041",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 227.0,
+              "osc_cm": 9.7,
+              "vratio": 8.87,
+              "balance_l": 51.15,
+              "step_m": 1.08,
+              "temp_c": 15,
+              "temp_max": 28,
+              "resp": 38.0,
+              "power": 357,
+              "np": 360,
+              "te_aero": 3.2,
+              "te_ana": 0.9,
+              "load": 126.1,
+              "strides": 5512,
+              "rpe": 3.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 228.0,
+                  "end": 222.0,
+                  "pct": -2.4
+                },
+                "step": {
+                  "start": 1049.0,
+                  "end": 1120.0,
+                  "pct": 6.8
+                },
+                "vratio": {
+                  "start": 8.88,
+                  "end": 8.86,
+                  "pct": -0.2
+                },
+                "osc": {
+                  "start": 95.0,
+                  "end": 101.0,
+                  "pct": 6.3
+                },
+                "hr": {
+                  "start": 136.0,
+                  "end": 148.0,
+                  "pct": 8.8
+                },
+                "cad": {
+                  "start": 89.2,
+                  "end": 88.2,
+                  "pct": -1.1
+                }
+              },
+              "balance_min": 49.84,
+              "balance_max": 52.51,
+              "balance_series": [
+                52.51,
+                51.64,
+                51.43,
+                51.0,
+                51.01,
+                50.92,
+                50.96,
+                50.97,
+                51.01,
+                51.24,
+                51.12,
+                49.84
+              ],
+              "balance_lent": 51.52,
+              "balance_rapide": 50.85,
+              "asym_vs_allure": -0.67,
+              "allure_lent_s": 318,
+              "allure_rapide_s": 299,
+              "rr_beats": 8904,
+              "rmssd_effort": 6.1,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 327,
+                "fc": 131,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 314,
+                "fc": 135,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 310,
+                "fc": 139,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 308,
+                "fc": 141,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 314,
+                "fc": 135,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 315,
+                "fc": 137,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 313,
+                "fc": 139,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 314,
+                "fc": 139,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 313,
+                "fc": 140,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 311,
+                "fc": 142,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 301,
+                "fc": 152,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 281,
+                "fc": 160,
+                "ca": 176
+              }
+            ]
+          },
           "coach_notes": [
             {
               "kind": "note",
@@ -1351,7 +1511,31 @@
               "kind": "note",
               "text": "Chaleur récurrente cette semaine (25-27°C) a probablement pénalisé tes allures de vitesse. Hydrate-toi avant et pendant, échauffe-toi progressivement, et si la FC monte anormalement pour l'allure VMA visée, ne force pas — ton aérobie de fond est solide (SL 25km réussie), pas d'urgence à cramer une s"
             }
-          ]
+          ],
+          "score": {
+            "points": 28,
+            "verdict": "failed",
+            "verdict_label": "Échouée",
+            "volume_pct": 66,
+            "volume_points": 51,
+            "pace_points": 0,
+            "pace_target_s": 207,
+            "pace_actual_s": 310,
+            "pace_actual_str": "5'10\"/km",
+            "pace_delta_s": 103,
+            "is_quality": true,
+            "hr": {
+              "avg": 141,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 3.2,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 66%",
+              "Allure +103\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-09-23",
@@ -1363,7 +1547,13 @@
           "key": false,
           "description": "13km à 5'26\"/km. Allure conversationnelle, FC en zone 2.",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Reste sur les 13,2km prévus, pas plus. Les deux derniers footings ont dérapé à +154% et +254% du plan juste avant des séances clés qui ont ensuite échoué — objectif cette fois : arriver frais au run allure marathon de jeudi."
+            }
+          ]
         },
         {
           "type": "mp_run",

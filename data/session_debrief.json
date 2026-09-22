@@ -1,45 +1,45 @@
 {
- "headline": "SL progressive réussie : fin plus rapide que l'allure marathon, malgré 27-30°C.",
+ "headline": "VMA prévue (5×1km à 3'27), sortie easy réalisée à 5'10 — séance non conforme au plan.",
  "bullets": [
-  "FC moy 151, sous ta réf de 154.7 (-3.7 bpm) malgré la chaleur (27-30°C).",
-  "Fin de course à 4'09\"/km, plus rapide que la cible marathon (4'16\"/km).",
-  "Equilibre gauche 50.0%, identique à ta réf (49.96%) — rien côté Achille."
+  "FC moy 141 bpm, 5.6 sous ta réf. 146.6 sur allure comparable : effort clairement sous-maximal.",
+  "Dernier km à 4'41/km avec FC +8.8% et foulée +13% : accélération finale, pas du fractionné.",
+  "RPE 3/10 et sensation 'Fort' : ressenti facile, cohérent avec une allure très éloignée de la cible VMA."
  ],
  "points": [
   {
    "label": "FC moyenne",
-   "valeur": "151 bpm",
-   "ecart": "-3.7 vs réf 60j",
-   "lecture": "plus bas que d'habitude malgré chaleur",
+   "valeur": "141 bpm",
+   "ecart": "-5.6 vs réf. 146.6",
+   "lecture": "Effort nettement plus bas que d'habitude",
+   "ton": "neutre"
+  },
+  {
+   "label": "Temps de contact",
+   "valeur": "227 ms",
+   "ecart": "+1.2 ms vs réf. 225.8",
+   "lecture": "Stable, dans ta norme",
    "ton": "bon"
   },
   {
-   "label": "Allure finale",
-   "valeur": "4'09\"/km",
-   "ecart": "-7\" vs cible marathon",
-   "lecture": "sous l'allure cible en fin de séance",
-   "ton": "bon"
-  },
-  {
-   "label": "Equilibre gauche",
-   "valeur": "50.04%",
-   "ecart": "+0.08pt vs réf 49.96%",
-   "lecture": "stable, pas de décharge marquée",
+   "label": "Équilibre gauche",
+   "valeur": "51.15%",
+   "ecart": "+0.6 pt vs réf. 50.52%",
+   "lecture": "Léger surcroît décharge côté droit",
    "ton": "neutre"
   }
  ],
- "achille": "Equilibre 50.04%, quasi identique à ta réf (49.96%) — pas de décharge du côté droit.",
- "a_surveiller": "Drift HR +17.7% sur la séance, mais cohérent avec l'accélération volontaire du progressif.",
+ "achille": "Équilibre 51.15% vs réf. 50.52%, dans ta fourchette habituelle (49.8-52.5%) : rien d'anormal.",
+ "a_surveiller": "Aucun signal type pubalgie : asymétrie diminue avec la vitesse (-0.67), motif inverse de l'antécédent.",
  "seance": {
-  "date": "20/09/2026",
-  "heure": "12:25",
-  "titre": "i188512279",
-  "type_detecte": "sortie_longue",
-  "km": 25.01,
-  "duree": "1h 55m 36s",
-  "allure": "4'37\"/km",
-  "fc_moy": 151
+  "date": "22/09/2026",
+  "heure": "07:29",
+  "titre": "i189077041",
+  "type_detecte": "endurance",
+  "km": 12.01,
+  "duree": "1h 02m 04s",
+  "allure": "5'10\"/km",
+  "fc_moy": 141
  },
- "generated_at": "2026-09-20T12:31:05",
- "baseline_n": 20
+ "generated_at": "2026-09-22T06:37:09",
+ "baseline_n": 32
 }

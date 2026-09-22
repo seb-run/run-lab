@@ -3,24 +3,6 @@
   {
    "severity": "major",
    "kind": "change_pace",
-   "date": "2026-08-25",
-   "field": null,
-   "new_value": "seuil recalibré ~4'25-4'35/km au lieu de 3'50",
-   "reason": "3 séances clés d'affilée ratées sur l'allure seuil/MP avec FC basse et RPE faible : le seuil visé n'est pas atteignable en ce moment. Mieux vaut revalider une allure réaliste sur une séance courte plutôt que d'accumuler un 3e échec de suite qui plombe la confiance.",
-   "replacement": {
-    "title": "Seuil recalibrage · 4×6 min",
-    "type": "seuil",
-    "km": 13.0,
-    "target_pace": "4'30\"/km",
-    "description": "4x6min à 4'30/km avec 2min récup trot. Objectif : retrouver une allure seuil que tu tiens confortablement (FC 160-168, RPE 6-7), pas viser 3'50 pour l'instant. Si ça passe bien et facile, on resserre l'allure la semaine suivante."
-   },
-   "id": "faed5c5f",
-   "status": "expired",
-   "created_at": "2026-08-21T06:05:03"
-  },
-  {
-   "severity": "major",
-   "kind": "change_pace",
    "date": "2026-08-30",
    "field": null,
    "new_value": "portion MP à ~4'40/km au lieu de 4'12, volume total réduit à 22km",
@@ -473,6 +455,18 @@
    "id": "0ba18d1a",
    "status": "pending",
    "created_at": "2026-09-21T11:08:06"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-09-22",
+   "field": "description_note",
+   "new_value": "Avant de lancer les 5×1km à 3'27/km : check météo/hydratation et fais un 1er 1km-test à allure cible. Si tu retombes en dessous de 4'30/km sans forcer comme le 15/09, coupe la séance en footing plutôt que d'insister — l'objectif est de retrouver la sensation VMA, pas d'accumuler du volume lent.",
+   "reason": "La dernière séance de VMA (15/09) s'est déroulée entièrement en allure footing (5'05-5'26/km au lieu de 3'27) avec un RPE très bas — signe d'une séance mal exécutée plutôt qu'effondrée, à corriger avant de répéter le schéma.",
+   "id": "c813636a",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-09-22T06:36:39"
   }
  ]
 }
