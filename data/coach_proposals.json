@@ -2,43 +2,6 @@
  "proposals": [
   {
    "severity": "major",
-   "kind": "change_pace",
-   "date": "2026-08-30",
-   "field": null,
-   "new_value": "portion MP à ~4'40/km au lieu de 4'12, volume total réduit à 22km",
-   "reason": "Après l'échec du MP du 08-20 (5'11 au lieu de 4'12, volume 65%), enchaîner sur une longue avec 10km à 4'12 est trop risqué. On sécurise la sortie longue et on teste une allure MP intermédiaire plus réaliste avant de revenir sur 4'12.",
-   "replacement": {
-    "title": "SL 22 km · 8 km allure progressive",
-    "type": "long_mp",
-    "km": 22.0,
-    "target_pace": "4'40\"/km",
-    "description": "14km footing tranquille à 4'55-5'00/km puis 8km progressifs de 4'50 à 4'40/km. Ne cherche pas 4'12 aujourd'hui : l'objectif est de finir fort et fluide sur la portion rapide, pas de viser un chrono. On recalibrera le MP la semaine prochaine selon ce que ça donne."
-   },
-   "id": "fc290b34",
-   "status": "expired",
-   "created_at": "2026-08-21T06:05:03"
-  },
-  {
-   "severity": "major",
-   "kind": "change_pace",
-   "date": "2026-08-25",
-   "field": null,
-   "new_value": "seuil recalé sur FC plutôt que sur l'allure stricte, fractions raccourcies",
-   "reason": "3 dernières séances de qualité ratées avec allures 40-70s/km plus lentes que la cible malgré FC basse : le seuil à 3'50/km n'est plus réaliste tant que la confiance n'est pas revenue. On recadre sur une allure atteignable pour retrouver une séance réussie.",
-   "replacement": {
-    "title": "Seuil court · 3×10 min",
-    "type": "seuil",
-    "km": 14.0,
-    "target_pace": "3'58\"/km",
-    "description": "3×10 min à allure seuil (3'58\"/km cible, cap FC ~168-172 max), récup 3 min trot entre chaque. Si à 3 min ta FC dépasse le cap ou que ça tire trop, ralentis de 5-10s/km : l'objectif est de finir les 3 blocs propres, pas de tenir un chrono. Échauffement 15 min + retour au calme 10 min inclus dans le volume total."
-   },
-   "id": "05905cbb",
-   "status": "rejected",
-   "created_at": "2026-08-22T06:02:05",
-   "decided_at": "2026-08-23T19:51:16"
-  },
-  {
-   "severity": "major",
    "kind": "change_type",
    "date": "2026-08-30",
    "field": null,
@@ -327,7 +290,7 @@
     "description": "Échauffement 15min facile. Puis 4×6min à allure seuil (3'56/km), récup 2min trot entre chaque. Si les jambes ne suivent pas dès les 2 premières minutes, ralentis à ton ressenti plutôt que d'abandonner l'allure — l'objectif est de finir la séance complète, pas de viser le chrono à tout prix. Retour au calme 10min. Cours si possible tôt le matin pour éviter la chaleur."
    },
    "id": "e8ebcb94",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-16T10:19:56"
   },
   {
@@ -345,7 +308,7 @@
     "description": "Échauffement 3km footing. 4×1km à allure seuil (3'56/km) récup 2min trot. Objectif : retrouver le contrôle de l'allure et la confiance, pas la performance. Si chaleur ou FC qui s'envole, ralentis de 5-10s/km plutôt que de raccourcir la distance. Retour au calme 2km."
    },
    "id": "5efaee10",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-17T11:10:25"
   },
   {
@@ -465,8 +428,44 @@
    "reason": "La dernière séance de VMA (15/09) s'est déroulée entièrement en allure footing (5'05-5'26/km au lieu de 3'27) avec un RPE très bas — signe d'une séance mal exécutée plutôt qu'effondrée, à corriger avant de répéter le schéma.",
    "id": "c813636a",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-22T06:36:39"
+  },
+  {
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-09-24",
+   "field": null,
+   "new_value": "Réduction du volume et retour à l'allure stratégie",
+   "reason": "2 séances allure marathon/VMA ratées coup sur coup (5'25/km puis 5'10/km, très loin des cibles 4'16 et 3'27). On sécurise une exécution réussie avant d'attaquer le bloc SL+MP de dimanche plutôt que d'ajouter une 3e tentative à haut risque d'échec.",
+   "replacement": {
+    "title": "8km allure stratégie",
+    "type": "mp_run",
+    "km": 14.0,
+    "target_pace": "4'16\"/km",
+    "description": "Échauffement 3km footing tranquille, puis 8km à 4'16/km (allure stratégie, pas 4'12). Retour au calme 3km. Objectif : retrouver la sensation de l'allure cible sans te cramer avant le week-end. Coupe la série si les jambes sont lourdes ou si la FC dérive fort."
+   },
+   "id": "f7f8ed48",
+   "status": "pending",
+   "created_at": "2026-09-23T10:19:08"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-09-29",
+   "field": null,
+   "new_value": "Séance VMA raccourcie, allure relâchée",
+   "reason": "2 VMA sur 2 ratées avec plus d'1'40/km d'écart sous la cible, y compris par temps frais (15°C) donc pas une question de chaleur. On revient à un format plus court et moins exigeant pour rebâtir la confiance avant de viser à nouveau le 3'27/km.",
+   "replacement": {
+    "title": "6×600m rythme rapide",
+    "type": "vma",
+    "km": 12.0,
+    "target_pace": "3'40\"/km",
+    "description": "Échauffement 3km + gammes/lignes. 6×600m à 3'40/km (un peu sous VMA, allure 10k rapide) avec récup 1'30 trot entre chaque. Retour au calme 3km. But : retrouver des jambes qui tournent, pas la perf chrono. Arrête la série si ça ne vient pas après 2-3 répétitions."
+   },
+   "id": "38ab2ba3",
+   "status": "pending",
+   "created_at": "2026-09-23T10:19:08"
   }
  ]
 }

@@ -1546,7 +1546,7 @@
           "duration_min": 71,
           "key": false,
           "description": "13km à 5'26\"/km. Allure conversationnelle, FC en zone 2.",
-          "status": "pending",
+          "status": "today",
           "actual": null,
           "coach_notes": [
             {
@@ -1595,7 +1595,7 @@
         {
           "type": "long_mp",
           "title": "SL 30km · 2×8km MP",
-          "km": 30,
+          "km": 33.1,
           "duration_min": 150,
           "key": true,
           "description": "30km · 2 blocs de 8km à allure marathon 4'12\"/km séparés par 3km 4'51\"/km.",
@@ -1603,12 +1603,34 @@
           "date": "2026-09-27",
           "dow": "Sun",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "volume",
+              "delta": 3.1500000000000004,
+              "reason": "compenser le déficit volume de la semaine"
+            }
+          ],
+          "_adapt_volume": true
         }
       ],
-      "volume_actual_to_date": 0.0,
-      "volume_planned_to_date": 0.0,
-      "volume_drift_pct": 0
+      "volume_actual_to_date": 12.0,
+      "volume_planned_to_date": 18.3,
+      "volume_drift_pct": -34.4,
+      "compliance": {
+        "km_pct": 66,
+        "km_done": 12.0,
+        "km_planned": 18.3,
+        "km_done_week": 12.0,
+        "km_planned_week": 107.4,
+        "sessions_done": 1,
+        "sessions_planned": 1,
+        "sessions_done_week": 1,
+        "keys_success": 0,
+        "keys_total": 1,
+        "points": 51,
+        "verdict": "failed"
+      }
     },
     {
       "week_num": 3,
