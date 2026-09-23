@@ -1,45 +1,45 @@
 {
- "headline": "VMA prévue (5×1km à 3'27), sortie easy réalisée à 5'10 — séance non conforme au plan.",
+ "headline": "Fractionné non prévu, volume x1,6, forte chaleur : fatigue nette en fin de sortie.",
  "bullets": [
-  "FC moy 141 bpm, 5.6 sous ta réf. 146.6 sur allure comparable : effort clairement sous-maximal.",
-  "Dernier km à 4'41/km avec FC +8.8% et foulée +13% : accélération finale, pas du fractionné.",
-  "RPE 3/10 et sensation 'Fort' : ressenti facile, cohérent avec une allure très éloignée de la cible VMA."
+  "163% du volume prévu (21,5km vs 13,2km) : fractionné réalisé, footing easy attendu.",
+  "Contact au sol +30% entre début et fin (186→243ms), fatigue marquée en fin de séance.",
+  "FC 155 (+3 vs réf 151,7) et RPE 7 sous 26-29°C : chaleur à prendre en compte."
  ],
  "points": [
   {
-   "label": "FC moyenne",
-   "valeur": "141 bpm",
-   "ecart": "-5.6 vs réf. 146.6",
-   "lecture": "Effort nettement plus bas que d'habitude",
-   "ton": "neutre"
-  },
-  {
    "label": "Temps de contact",
-   "valeur": "227 ms",
-   "ecart": "+1.2 ms vs réf. 225.8",
-   "lecture": "Stable, dans ta norme",
-   "ton": "bon"
+   "valeur": "212ms moyen (186→243ms)",
+   "ecart": "+30,4% du début à la fin (réf 60j : 216ms)",
+   "lecture": "fatigue marquée en fin de course",
+   "ton": "vigilance"
   },
   {
-   "label": "Équilibre gauche",
-   "valeur": "51.15%",
-   "ecart": "+0.6 pt vs réf. 50.52%",
-   "lecture": "Léger surcroît décharge côté droit",
+   "label": "Équilibre selon l'allure",
+   "valeur": "50,7% lent / 48,6% rapide",
+   "ecart": "asym_vs_allure +0,7 (s'ouvre avec la vitesse)",
+   "lecture": "moins de décharge Achille droit à l'effort",
+   "ton": "vigilance"
+  },
+  {
+   "label": "Écart au plan",
+   "valeur": "21,5km vs 13,2km prévus",
+   "ecart": "+63% de volume, fractionné non prévu",
+   "lecture": "séance très différente du plan initial",
    "ton": "neutre"
   }
  ],
- "achille": "Équilibre 51.15% vs réf. 50.52%, dans ta fourchette habituelle (49.8-52.5%) : rien d'anormal.",
- "a_surveiller": "Aucun signal type pubalgie : asymétrie diminue avec la vitesse (-0.67), motif inverse de l'antécédent.",
+ "achille": "Équilibre 49,7% (réf 50,1%), tombe à 48,6% en phase rapide : moins protecteur pour l'Achille.",
+ "a_surveiller": "Asymétrie qui s'ouvre avec la vitesse (+0,7), signature proche de ton épisode adducteur passé.",
  "seance": {
-  "date": "22/09/2026",
-  "heure": "07:29",
-  "titre": "i189077041",
-  "type_detecte": "endurance",
-  "km": 12.01,
-  "duree": "1h 02m 04s",
-  "allure": "5'10\"/km",
-  "fc_moy": 141
+  "date": "23/09/2026",
+  "heure": "19:37",
+  "titre": "i189705957",
+  "type_detecte": "frac_court",
+  "km": 21.52,
+  "duree": "1h 42m 00s",
+  "allure": "4'44\"/km",
+  "fc_moy": 155
  },
- "generated_at": "2026-09-22T06:37:09",
- "baseline_n": 32
+ "generated_at": "2026-09-23T20:26:10",
+ "baseline_n": 29
 }
