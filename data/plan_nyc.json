@@ -1915,8 +1915,164 @@
           "target_pace": "4'12\"/km",
           "date": "2026-09-24",
           "dow": "Thu",
-          "status": "today",
-          "actual": null
+          "status": "under",
+          "actual": {
+            "km": 8.2,
+            "duration_min": 43,
+            "pace_sec": 313,
+            "pace_str": "5'13\"/km",
+            "fc": 137,
+            "cadence": 178,
+            "type": "endurance",
+            "title": "i189884391",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 221.0,
+              "osc_cm": 9.9,
+              "vratio": 9.09,
+              "balance_l": 51.03,
+              "step_m": 1.07,
+              "temp_c": 25,
+              "temp_max": 28,
+              "resp": 35.5,
+              "power": 358,
+              "np": 361,
+              "te_aero": 2.9,
+              "te_ana": 0.0,
+              "load": 79.2,
+              "strides": 3785,
+              "rpe": 3.0,
+              "feel": 100,
+              "feel_label": "Très fort",
+              "drift": {
+                "stance": {
+                  "start": 225.0,
+                  "end": 220.0,
+                  "pct": -2.2
+                },
+                "step": {
+                  "start": 1043.0,
+                  "end": 1079.0,
+                  "pct": 3.5
+                },
+                "vratio": {
+                  "start": 8.97,
+                  "end": 9.27,
+                  "pct": 3.3
+                },
+                "osc": {
+                  "start": 96.0,
+                  "end": 102.0,
+                  "pct": 6.9
+                },
+                "hr": {
+                  "start": 130.0,
+                  "end": 146.0,
+                  "pct": 12.2
+                },
+                "cad": {
+                  "start": 89.3,
+                  "end": 88.0,
+                  "pct": -1.5
+                }
+              },
+              "balance_min": 50.5,
+              "balance_max": 52.19,
+              "balance_series": [
+                52.19,
+                51.61,
+                50.5,
+                50.61,
+                50.61,
+                50.7,
+                51.35,
+                50.62
+              ],
+              "balance_lent": 51.9,
+              "balance_rapide": 50.6,
+              "asym_vs_allure": -1.3,
+              "allure_lent_s": 329,
+              "allure_rapide_s": 301,
+              "rr_beats": 6507,
+              "rmssd_effort": 8.5,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 335,
+                "fc": 120,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 322,
+                "fc": 130,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 302,
+                "fc": 139,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 303,
+                "fc": 138,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 313,
+                "fc": 136,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 301,
+                "fc": 142,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 317,
+                "fc": 145,
+                "ca": 176
+              },
+              {
+                "km": 1.19,
+                "ps": 308,
+                "fc": 146,
+                "ca": 176
+              }
+            ]
+          },
+          "score": {
+            "points": 0,
+            "verdict": "failed",
+            "verdict_label": "Échouée",
+            "volume_pct": 40,
+            "volume_points": 0,
+            "pace_points": 0,
+            "pace_target_s": 252,
+            "pace_actual_s": 313,
+            "pace_actual_str": "5'13\"/km",
+            "pace_delta_s": 61,
+            "is_quality": true,
+            "hr": {
+              "avg": 137,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 6.9,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 40%",
+              "Allure +61\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-09-25",
@@ -1977,11 +2133,11 @@
         "km_pct": 106,
         "km_done": 33.5,
         "km_planned": 31.5,
-        "km_done_week": 33.5,
+        "km_done_week": 41.7,
         "km_planned_week": 107.4,
         "sessions_done": 2,
         "sessions_planned": 2,
-        "sessions_done_week": 2,
+        "sessions_done_week": 3,
         "keys_success": 0,
         "keys_total": 1,
         "points": 80,

@@ -1,45 +1,45 @@
 {
- "headline": "Fractionné non prévu, volume x1,6, forte chaleur : fatigue nette en fin de sortie.",
+ "headline": "Bloc marathon non tenu (8,2km à 5'13 vs 14km à 4'12) mais FC basse, sensations très bonnes.",
  "bullets": [
-  "163% du volume prévu (21,5km vs 13,2km) : fractionné réalisé, footing easy attendu.",
-  "Contact au sol +30% entre début et fin (186→243ms), fatigue marquée en fin de séance.",
-  "FC 155 (+3 vs réf 151,7) et RPE 7 sous 26-29°C : chaleur à prendre en compte."
+  "Volume 40% du plan, allure +61''/km vs cible 4'12 : séance qualifiée échouée.",
+  "FC moy 137 vs 145,7 hab. à allure comparable (-8,6 bpm) malgré RPE 3/10 et feel 100/100.",
+  "Dérive FC +12% en cours de séance, cohérente avec l'accélération de l'allure (335s→301s/km) et 25-28°C."
  ],
  "points": [
   {
-   "label": "Temps de contact",
-   "valeur": "212ms moyen (186→243ms)",
-   "ecart": "+30,4% du début à la fin (réf 60j : 216ms)",
-   "lecture": "fatigue marquée en fin de course",
-   "ton": "vigilance"
+   "label": "FC moyenne",
+   "valeur": "137 bpm",
+   "ecart": "-8,7 bpm vs réf 145,7",
+   "lecture": "Effort perçu bas malgré allure proche cible",
+   "ton": "bon"
   },
   {
-   "label": "Équilibre selon l'allure",
-   "valeur": "50,7% lent / 48,6% rapide",
-   "ecart": "asym_vs_allure +0,7 (s'ouvre avec la vitesse)",
-   "lecture": "moins de décharge Achille droit à l'effort",
-   "ton": "vigilance"
-  },
-  {
-   "label": "Écart au plan",
-   "valeur": "21,5km vs 13,2km prévus",
-   "ecart": "+63% de volume, fractionné non prévu",
-   "lecture": "séance très différente du plan initial",
+   "label": "Équilibre G/D",
+   "valeur": "51,0% gauche",
+   "ecart": "+0,45 pt vs réf 50,6%",
+   "lecture": "Léger surcroît décharge côté droit, stable",
    "ton": "neutre"
+  },
+  {
+   "label": "Volume séance",
+   "valeur": "8,19 km",
+   "ecart": "40% du plan (14km prévus)",
+   "lecture": "Bloc allure marathon non réalisé",
+   "ton": "vigilance"
   }
  ],
- "achille": "Équilibre 49,7% (réf 50,1%), tombe à 48,6% en phase rapide : moins protecteur pour l'Achille.",
- "a_surveiller": "Asymétrie qui s'ouvre avec la vitesse (+0,7), signature proche de ton épisode adducteur passé.",
+ "achille": "Équilibre 51,0% (réf 50,6%), quasi stable, pas de signal net de décharge accrue.",
+ "a_surveiller": "Dérive FC +12% en fin de séance, à surveiller si récurrent hors contexte chaleur/accélération.",
  "seance": {
-  "date": "23/09/2026",
-  "heure": "19:37",
-  "titre": "i189705957",
-  "type_detecte": "frac_court",
-  "km": 21.52,
-  "duree": "1h 42m 00s",
-  "allure": "4'44\"/km",
-  "fc_moy": 155
+  "date": "24/09/2026",
+  "heure": "12:13",
+  "titre": "i189884391",
+  "type_detecte": "endurance",
+  "km": 8.19,
+  "duree": "42m 39s",
+  "allure": "5'13\"/km",
+  "fc_moy": 137
  },
- "generated_at": "2026-09-23T20:26:10",
- "baseline_n": 29
+ "generated_at": "2026-09-24T11:04:49",
+ "baseline_n": 30
 }
