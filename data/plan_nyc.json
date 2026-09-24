@@ -1915,7 +1915,7 @@
           "target_pace": "4'12\"/km",
           "date": "2026-09-24",
           "dow": "Thu",
-          "status": "pending",
+          "status": "today",
           "actual": null
         },
         {
@@ -1940,7 +1940,13 @@
           "key": false,
           "description": "12km à 5'26\"/km + 4×100m lignes droites en fin. Activation pour la SL de dimanche.",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Respecte le volume prévu (12km max) — pas de rallonge. Tes footings dérivent systématiquement x2 en ce moment (21-25km réalisés au lieu de 10-13km prévus), ça grille tes jambes avant les séances clés."
+            }
+          ]
         },
         {
           "type": "long_mp",
@@ -1964,22 +1970,22 @@
           "_adapt_volume": true
         }
       ],
-      "volume_actual_to_date": 12.0,
-      "volume_planned_to_date": 18.3,
-      "volume_drift_pct": -34.4,
+      "volume_actual_to_date": 33.5,
+      "volume_planned_to_date": 31.5,
+      "volume_drift_pct": 6.3,
       "compliance": {
-        "km_pct": 66,
-        "km_done": 12.0,
-        "km_planned": 18.3,
+        "km_pct": 106,
+        "km_done": 33.5,
+        "km_planned": 31.5,
         "km_done_week": 33.5,
         "km_planned_week": 107.4,
-        "sessions_done": 1,
-        "sessions_planned": 1,
+        "sessions_done": 2,
+        "sessions_planned": 2,
         "sessions_done_week": 2,
         "keys_success": 0,
         "keys_total": 1,
-        "points": 51,
-        "verdict": "failed"
+        "points": 80,
+        "verdict": "partial"
       }
     },
     {

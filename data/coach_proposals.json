@@ -1,25 +1,6 @@
 {
  "proposals": [
   {
-   "severity": "major",
-   "kind": "change_type",
-   "date": "2026-08-30",
-   "field": null,
-   "new_value": "portion MP réduite de 10km à 6km, allure MP stratégie plutôt que cible",
-   "reason": "Le dernier bloc MP (20/08) a été un échec net (5'11/km au lieu de 4'12, jamais dans le rythme). Enchaîner directement sur 10km MP au sein d'une sortie longue de 25km est risqué : on réduit le bloc et on vise l'allure stratégie (4'18) pour reconstruire la confiance avant de revenir à 4'12.",
-   "replacement": {
-    "title": "SL 25km · 6km AM",
-    "type": "long_mp",
-    "km": 25.0,
-    "target_pace": "4'18\"/km",
-    "description": "19km en endurance à 4'55-5'00/km, puis 6km à allure marathon stratégie (4'18\"/km) en fin de sortie sur jambes fatiguées, puis retour au calme si besoin. Coupe le bloc MP si la FC s'envole ou si les sensations sont mauvaises : mieux vaut 4km propres que 6km dans le mur."
-   },
-   "id": "ed224e51",
-   "status": "rejected",
-   "created_at": "2026-08-22T06:02:05",
-   "decided_at": "2026-08-23T07:17:31"
-  },
-  {
    "severity": "minor",
    "kind": "add_note",
    "date": "2026-08-23",
@@ -466,6 +447,24 @@
    "id": "38ab2ba3",
    "status": "pending",
    "created_at": "2026-09-23T10:19:08"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-09-24",
+   "field": null,
+   "new_value": "Transformer la séance MP 14km en footing facile",
+   "reason": "3e séance qualité en 9 jours après 2 échecs d'allure nets (VMA 15/09 et 22/09, MP 17/09) + signal mécanique fort la veille (stance_fade/step_fade, RPE 7, charge 503). Risque de forcer une nouvelle contre-performance et d'arriver cramé sur la SL 30km de dimanche.",
+   "replacement": {
+    "title": "Footing facile récupération",
+    "type": "easy",
+    "km": 11.0,
+    "target_pace": "5'26\"/km",
+    "description": "Footing tranquille, aucune notion d'allure. Coupe court si les jambes tirent. Objectif : arriver frais dimanche pour la SL 30km avec 2×8km MP. Hydrate-toi bien, il fait encore chaud."
+   },
+   "id": "6d88e7ed",
+   "status": "pending",
+   "created_at": "2026-09-24T10:32:11"
   }
  ]
 }
