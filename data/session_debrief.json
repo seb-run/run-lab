@@ -1,45 +1,45 @@
 {
- "headline": "Bloc marathon non tenu (8,2km à 5'13 vs 14km à 4'12) mais FC basse, sensations très bonnes.",
+ "headline": "Footing récup prévu (10km) devenu fractionné long 21km, RPE 8, FC en dérive.",
  "bullets": [
-  "Volume 40% du plan, allure +61''/km vs cible 4'12 : séance qualifiée échouée.",
-  "FC moy 137 vs 145,7 hab. à allure comparable (-8,6 bpm) malgré RPE 3/10 et feel 100/100.",
-  "Dérive FC +12% en cours de séance, cohérente avec l'accélération de l'allure (335s→301s/km) et 25-28°C."
+  "21,1km à 4'20\"/km au lieu des 10km zone 1-2 prévus (207% volume), RPE 8, ressenti 'fort'.",
+  "Asymétrie: 50,8% à allure lente vs 48,2% à allure rapide (+2,6 pts), motif proche pubalgie 2025.",
+  "FC +6 vs réf (164 vs 157,7), dérive +7,1% en fin de séance, chaleur 28-32°C : piste plausible."
  ],
  "points": [
   {
-   "label": "FC moyenne",
-   "valeur": "137 bpm",
-   "ecart": "-8,7 bpm vs réf 145,7",
-   "lecture": "Effort perçu bas malgré allure proche cible",
-   "ton": "bon"
-  },
-  {
-   "label": "Équilibre G/D",
-   "valeur": "51,0% gauche",
-   "ecart": "+0,45 pt vs réf 50,6%",
-   "lecture": "Léger surcroît décharge côté droit, stable",
-   "ton": "neutre"
-  },
-  {
-   "label": "Volume séance",
-   "valeur": "8,19 km",
-   "ecart": "40% du plan (14km prévus)",
-   "lecture": "Bloc allure marathon non réalisé",
+   "label": "Volume/allure",
+   "valeur": "21,1km à 260s/km",
+   "ecart": "vs plan 10km zone 1-2",
+   "lecture": "Récup transformée en fractionné long",
    "ton": "vigilance"
+  },
+  {
+   "label": "Asymétrie vitesse",
+   "valeur": "50,8% lent → 48,2% rapide",
+   "ecart": "+2,6 pts, asym_vs_allure +1,01",
+   "lecture": "S'ouvre avec l'allure, motif pubalgie",
+   "ton": "vigilance"
+  },
+  {
+   "label": "FC moyenne",
+   "valeur": "164 bpm",
+   "ecart": "+6 vs réf 157,7 (allure proche)",
+   "lecture": "Dérive +7% en fin de séance",
+   "ton": "neutre"
   }
  ],
- "achille": "Équilibre 51,0% (réf 50,6%), quasi stable, pas de signal net de décharge accrue.",
- "a_surveiller": "Dérive FC +12% en fin de séance, à surveiller si récurrent hors contexte chaleur/accélération.",
+ "achille": "Équilibre gauche 49,1% (réf 49,7%), légèrement sous 50%, rien d'alarmant sur ce point.",
+ "a_surveiller": "L'asymétrie qui s'ouvre à l'allure rapide rappelle le schéma de ta pubalgie 2025.",
  "seance": {
-  "date": "24/09/2026",
-  "heure": "12:13",
-  "titre": "i189884391",
-  "type_detecte": "endurance",
-  "km": 8.19,
-  "duree": "42m 39s",
-  "allure": "5'13\"/km",
-  "fc_moy": 137
+  "date": "25/09/2026",
+  "heure": "11:52",
+  "titre": "i190228696",
+  "type_detecte": "frac_long",
+  "km": 21.1,
+  "duree": "1h 31m 31s",
+  "allure": "4'20\"/km",
+  "fc_moy": 164
  },
- "generated_at": "2026-09-24T11:04:49",
- "baseline_n": 30
+ "generated_at": "2026-09-25T11:46:53",
+ "baseline_n": 10
 }
