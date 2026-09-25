@@ -5,31 +5,6 @@
    "kind": "add_note",
    "date": "2026-08-23",
    "field": "description_note",
-   "new_value": "Vigilance chaleur : le 9/08 une longue sous 32°C avait fait dériver FC et foulée (fatigue mécanique réelle). Si temp élevée aujourd'hui, ralentis de 10-15s/km sans hésiter et hydrate-toi toutes les 20min — l'objectif est la durée (1h50), pas le kilométrage à tout prix.",
-   "reason": "Antécédent direct : sortie longue du 09/08 sous forte chaleur avec dérive cardiaque à 9,1% et stance_drift à 8,9% (fatigue mécanique), suivie de deux séances clés ratées. Même contexte estival possible aujourd'hui.",
-   "id": "5cb2dff4",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "expired",
-   "created_at": "2026-08-23T06:02:29"
-  },
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-08-23",
-   "field": "description_note",
-   "new_value": "Vise 22km pile, pas plus. Le 09/08 tu es parti pour 26km par forte chaleur (RPE9, dérive FC 9%, foulée qui s'allonge en fin de course) et ça a plombé ton seuil deux jours après. Coupe le finish progressif si la FC ou les jambes tirent trop, mieux vaut finir frais que cramé.",
-   "reason": "Répétition du pattern du 09/08 (sortie longue surdosée + chaleur) qui a directement causé l'échec du seuil du 11/08.",
-   "replacement": null,
-   "id": "f023e861",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "expired",
-   "created_at": "2026-08-23T19:00:25"
-  },
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-08-23",
-   "field": "description_note",
    "new_value": "Chaleur + historique du 9/08 (surchauffe à 32°C, stance_drift +8.9%, RPE9) : pars volontairement lent sur les 10-12 premiers km (5'00-5'10/km), ne resserre l'allure vers 4'47 que si les sensations et la FC restent stables. Hydrate-toi tôt et régulièrement, coupe la progression si RPE ou FC s'envolent avant le dernier tiers.",
    "reason": "La sortie longue du 9/08 (même format 'longue') a viré à la surchauffe avec allongement du temps de contact et décrochage cardiaque en fin de course ; la séance du jour porte le même risque avec un profil progressif qui invite à accélérer trop tôt.",
    "replacement": null,
@@ -325,7 +300,7 @@
     "description": "Bloc à l'allure sub-3h (4'16/km), pas plus vite. Échauffement 4km facile, puis 14km au train cible en continu ou en 2×7km avec 2min de trot si besoin. Objectif : retrouver de la régularité, pas de la vitesse."
    },
    "id": "66117c03",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-18T21:14:09"
   },
   {
@@ -379,7 +354,7 @@
     "description": "Bloc de 14km à l'allure stratégie 4'16/km (au lieu de 4'12). Hydrate-toi bien avant et pendant si chaleur. Si la FC s'envole nettement au-dessus de tes repères habituels pour cette allure, ralentis encore un peu plutôt que forcer — l'objectif est de retrouver une séance réussie et de la confiance."
    },
    "id": "84a1bde4",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-21T11:08:06"
   },
   {
@@ -427,7 +402,7 @@
     "description": "Échauffement 3km footing tranquille, puis 8km à 4'16/km (allure stratégie, pas 4'12). Retour au calme 3km. Objectif : retrouver la sensation de l'allure cible sans te cramer avant le week-end. Coupe la série si les jambes sont lourdes ou si la FC dérive fort."
    },
    "id": "f7f8ed48",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-23T10:19:08"
   },
   {
@@ -463,8 +438,38 @@
     "description": "Footing tranquille, aucune notion d'allure. Coupe court si les jambes tirent. Objectif : arriver frais dimanche pour la SL 30km avec 2×8km MP. Hydrate-toi bien, il fait encore chaud."
    },
    "id": "6d88e7ed",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-24T10:32:11"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-09-25",
+   "field": "description_note",
+   "new_value": "Récup stricte : reste sous 10-10,5km, allure très facile. Pas de relance/fractionné caché — objectif est de vider la fatigue, pas d'en ajouter.",
+   "reason": "Pattern répété de footings/récup massivement sur-réalisés (254%, 163% du volume prévu) qui précèdent des séances clés ratées le lendemain.",
+   "id": "d7ae6bcb",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-09-25T10:36:01"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-09-29",
+   "field": null,
+   "new_value": "Reformater la VMA en séance plus courte et plus qualitative pour rebâtir la confiance après 2 échecs consécutifs (FC très basse pendant les intervalles, signe que l'effort demandé n'était pas fourni).",
+   "reason": "Les deux dernières VMA (15/09 et 22/09) ont été réalisées à une FC de 141-142, largement sous ce qu'exige un vrai travail au seuil VMA — ce n'est pas un manque de capacité mais une séance qui n'a jamais été attaquée. Réduire le format permet de retrouver des repères et une vraie sensation d'effort avant de remonter en charge.",
+   "replacement": {
+    "title": "VMA courte - rebuild",
+    "type": "vma",
+    "km": 12.0,
+    "target_pace": "3'30\"/km",
+    "description": "6×600m à 3'30\"/km avec 1'30 récup trot. Objectif : FC doit monter au-dessus de 165 sur chaque répétition — si ce n'est pas le cas, l'allure n'est pas assez poussée. Échauffement 15min + retour au calme 10min. Séance courte volontairement pour retrouver la sensation de l'effort réel avant de remonter en volume."
+   },
+   "id": "0d8ac7e3",
+   "status": "pending",
+   "created_at": "2026-09-25T10:36:01"
   }
  ]
 }

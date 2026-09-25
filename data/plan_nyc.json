@@ -2083,7 +2083,7 @@
           "duration_min": 61,
           "key": false,
           "description": "10km très facile, allure récupération. FC zone 1-2 bas.",
-          "status": "pending",
+          "status": "today",
           "actual": null
         },
         {
@@ -2101,6 +2101,10 @@
             {
               "kind": "note",
               "text": "Respecte le volume prévu (12km max) — pas de rallonge. Tes footings dérivent systématiquement x2 en ce moment (21-25km réalisés au lieu de 10-13km prévus), ça grille tes jambes avant les séances clés."
+            },
+            {
+              "kind": "note",
+              "text": "Veille de la SL 30km avec 2×8km MP : reste strictement sur les 12,2km prévus, allure footing tranquille. Garde les jambes fraîches, c'est la séance test de la semaine."
             }
           ]
         },
@@ -2126,21 +2130,21 @@
           "_adapt_volume": true
         }
       ],
-      "volume_actual_to_date": 33.5,
-      "volume_planned_to_date": 31.5,
-      "volume_drift_pct": 6.3,
+      "volume_actual_to_date": 41.7,
+      "volume_planned_to_date": 51.9,
+      "volume_drift_pct": -19.7,
       "compliance": {
-        "km_pct": 106,
-        "km_done": 33.5,
-        "km_planned": 31.5,
+        "km_pct": 80,
+        "km_done": 41.7,
+        "km_planned": 51.9,
         "km_done_week": 41.7,
         "km_planned_week": 107.4,
-        "sessions_done": 2,
-        "sessions_planned": 2,
+        "sessions_done": 3,
+        "sessions_planned": 3,
         "sessions_done_week": 3,
         "keys_success": 0,
-        "keys_total": 1,
-        "points": 80,
+        "keys_total": 2,
+        "points": 61,
         "verdict": "partial"
       }
     },
