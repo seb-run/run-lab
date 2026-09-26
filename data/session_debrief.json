@@ -1,45 +1,45 @@
 {
- "headline": "Footing récup prévu (10km) devenu fractionné long 21km, RPE 8, FC en dérive.",
+ "headline": "Séance coupée à 6km sur 12,2 prévus (49%) — pas de trace des lignes droites",
  "bullets": [
-  "21,1km à 4'20\"/km au lieu des 10km zone 1-2 prévus (207% volume), RPE 8, ressenti 'fort'.",
-  "Asymétrie: 50,8% à allure lente vs 48,2% à allure rapide (+2,6 pts), motif proche pubalgie 2025.",
-  "FC +6 vs réf (164 vs 157,7), dérive +7,1% en fin de séance, chaleur 28-32°C : piste plausible."
+  "Volume: 6km réalisés vs 12,2km prévus, séance stoppée avant la moitié",
+  "FC moyenne 135 vs 145 en réf. 60j à allure comparable — nettement plus basse",
+  "Équilibre stable 50,1-50,9% du 1er au dernier km, pas d'ouverture avec l'allure"
  ],
  "points": [
   {
-   "label": "Volume/allure",
-   "valeur": "21,1km à 260s/km",
-   "ecart": "vs plan 10km zone 1-2",
-   "lecture": "Récup transformée en fractionné long",
-   "ton": "vigilance"
-  },
-  {
-   "label": "Asymétrie vitesse",
-   "valeur": "50,8% lent → 48,2% rapide",
-   "ecart": "+2,6 pts, asym_vs_allure +1,01",
-   "lecture": "S'ouvre avec l'allure, motif pubalgie",
+   "label": "Volume",
+   "valeur": "6.0 km",
+   "ecart": "-6.2km vs plan (12.2km)",
+   "lecture": "séance écourtée de moitié",
    "ton": "vigilance"
   },
   {
    "label": "FC moyenne",
-   "valeur": "164 bpm",
-   "ecart": "+6 vs réf 157,7 (allure proche)",
-   "lecture": "Dérive +7% en fin de séance",
+   "valeur": "135 bpm",
+   "ecart": "-10 bpm vs réf. 145",
+   "lecture": "effort cardiaque plus léger que d'habitude",
+   "ton": "bon"
+  },
+  {
+   "label": "Contact au sol",
+   "valeur": "236 ms",
+   "ecart": "+10 ms vs réf. 226",
+   "lecture": "appui un peu plus long qu'à l'accoutumée",
    "ton": "neutre"
   }
  ],
- "achille": "Équilibre gauche 49,1% (réf 49,7%), légèrement sous 50%, rien d'alarmant sur ce point.",
- "a_surveiller": "L'asymétrie qui s'ouvre à l'allure rapide rappelle le schéma de ta pubalgie 2025.",
+ "achille": "Équilibre gauche 50,37% vs réf. 50,56% — rien de notable côté droit.",
+ "a_surveiller": "Pas de données distinctes sur les 4×100m prévus — probablement non réalisés.",
  "seance": {
-  "date": "25/09/2026",
-  "heure": "11:52",
-  "titre": "i190228696",
-  "type_detecte": "frac_long",
-  "km": 21.1,
-  "duree": "1h 31m 31s",
-  "allure": "4'20\"/km",
-  "fc_moy": 164
+  "date": "26/09/2026",
+  "heure": "12:19",
+  "titre": "i190511311",
+  "type_detecte": "endurance",
+  "km": 6.0,
+  "duree": "31m 27s",
+  "allure": "5'14\"/km",
+  "fc_moy": 135
  },
- "generated_at": "2026-09-25T11:46:53",
- "baseline_n": 10
+ "generated_at": "2026-09-26T10:57:15",
+ "baseline_n": 30
 }

@@ -2349,8 +2349,121 @@
           "duration_min": 65,
           "key": false,
           "description": "12km à 5'26\"/km + 4×100m lignes droites en fin. Activation pour la SL de dimanche.",
-          "status": "today",
-          "actual": null,
+          "status": "under",
+          "actual": {
+            "km": 6.0,
+            "duration_min": 31,
+            "pace_sec": 314,
+            "pace_str": "5'14\"/km",
+            "fc": 135,
+            "cadence": 179,
+            "type": "endurance",
+            "title": "i190511311",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 236.0,
+              "osc_cm": 9.5,
+              "vratio": 8.76,
+              "balance_l": 50.37,
+              "step_m": 1.06,
+              "temp_c": 27,
+              "temp_max": 30,
+              "resp": 40.1,
+              "power": 359,
+              "np": 360,
+              "te_aero": 2.6,
+              "te_ana": 0.0,
+              "load": 65.4,
+              "strides": 2813,
+              "rpe": 2.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 237.0,
+                  "end": 236.0,
+                  "pct": -0.4
+                },
+                "step": {
+                  "start": 1038.0,
+                  "end": 1073.0,
+                  "pct": 3.3
+                },
+                "vratio": {
+                  "start": 8.72,
+                  "end": 8.88,
+                  "pct": 1.8
+                },
+                "osc": {
+                  "start": 92.0,
+                  "end": 97.0,
+                  "pct": 5.5
+                },
+                "hr": {
+                  "start": 130.0,
+                  "end": 138.0,
+                  "pct": 6.2
+                },
+                "cad": {
+                  "start": 90.0,
+                  "end": 88.5,
+                  "pct": -1.7
+                }
+              },
+              "balance_min": 50.05,
+              "balance_max": 50.86,
+              "balance_series": [
+                50.86,
+                50.1,
+                50.05,
+                50.45,
+                50.47,
+                50.27
+              ],
+              "rr_beats": 4658,
+              "rmssd_effort": 11.6,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 322,
+                "fc": 125,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 314,
+                "fc": 135,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 311,
+                "fc": 136,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 313,
+                "fc": 136,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 314,
+                "fc": 137,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 311,
+                "fc": 139,
+                "ca": 176
+              }
+            ]
+          },
           "coach_notes": [
             {
               "kind": "note",
@@ -2360,7 +2473,30 @@
               "kind": "note",
               "text": "Veille de la SL 30km avec 2×8km MP : reste strictement sur les 12,2km prévus, allure footing tranquille. Garde les jambes fraîches, c'est la séance test de la semaine."
             }
-          ]
+          ],
+          "score": {
+            "points": 18,
+            "verdict": "failed",
+            "verdict_label": "Échouée",
+            "volume_pct": 49,
+            "volume_points": 18,
+            "pace_points": null,
+            "pace_target_s": null,
+            "pace_actual_s": null,
+            "pace_actual_str": null,
+            "pace_delta_s": null,
+            "is_quality": false,
+            "hr": {
+              "avg": 135,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 1.6,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 49%"
+            ]
+          }
         },
         {
           "type": "long_mp",
@@ -2391,11 +2527,11 @@
         "km_pct": 101,
         "km_done": 62.8,
         "km_planned": 62.1,
-        "km_done_week": 62.8,
+        "km_done_week": 68.8,
         "km_planned_week": 107.4,
         "sessions_done": 4,
         "sessions_planned": 4,
-        "sessions_done_week": 4,
+        "sessions_done_week": 5,
         "keys_success": 0,
         "keys_total": 2,
         "points": 77,
