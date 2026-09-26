@@ -1,43 +1,6 @@
 {
  "proposals": [
   {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-08-23",
-   "field": "description_note",
-   "new_value": "Chaleur + historique du 9/08 (surchauffe à 32°C, stance_drift +8.9%, RPE9) : pars volontairement lent sur les 10-12 premiers km (5'00-5'10/km), ne resserre l'allure vers 4'47 que si les sensations et la FC restent stables. Hydrate-toi tôt et régulièrement, coupe la progression si RPE ou FC s'envolent avant le dernier tiers.",
-   "reason": "La sortie longue du 9/08 (même format 'longue') a viré à la surchauffe avec allongement du temps de contact et décrochage cardiaque en fin de course ; la séance du jour porte le même risque avec un profil progressif qui invite à accélérer trop tôt.",
-   "replacement": null,
-   "id": "d78ac019",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "expired",
-   "created_at": "2026-08-23T20:36:42"
-  },
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-08-26",
-   "field": "description_note",
-   "new_value": "Tu roules systématiquement 15-30s/km trop vite sur tes footings depuis 2 semaines (FC qui monte à 147-151 au lieu de rester basse). Aujourd'hui : vraie allure récup, cale-toi sur la FC pas sur la sensation, même si ça paraît trop lent.",
-   "reason": "Pattern répété d'overpacing sur les jours faciles malgré RPE bas — risque d'accumulation de fatigue avant le bloc seuil+longue du week-end.",
-   "id": "0420e3a7",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "expired",
-   "created_at": "2026-08-26T06:06:15"
-  },
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-08-27",
-   "field": "description_note",
-   "new_value": "Vraiment en mode récup : vise 5'25-5'35/km, pas plus vite. Sur tes 3 derniers footings tu es systématiquement 15-25s trop rapide, ça grignote la récup avant le seuil de demain.",
-   "reason": "Tendance récurrente à courir les footings faciles trop vite (4'52 à 5'21 pour des consignes à 5'15-5'25), ce qui réduit l'effet récupération recherché.",
-   "id": "88c73e4b",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "expired",
-   "created_at": "2026-08-27T09:00:28"
-  },
-  {
    "severity": "major",
    "kind": "change_pace",
    "date": "2026-08-30",
@@ -450,7 +413,7 @@
    "reason": "Pattern répété de footings/récup massivement sur-réalisés (254%, 163% du volume prévu) qui précèdent des séances clés ratées le lendemain.",
    "id": "d7ae6bcb",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-25T10:36:01"
   },
   {
@@ -470,6 +433,60 @@
    "id": "0d8ac7e3",
    "status": "pending",
    "created_at": "2026-09-25T10:36:01"
+  },
+  {
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-09-27",
+   "field": null,
+   "new_value": "Réduire le bloc MP et l'allure cible avant d'enchaîner sur une grosse semaine",
+   "reason": "2 échecs mp_run consécutifs (54% et 40% du volume, allures 60-110s/km trop lentes) + fatigue mécanique confirmée le 23/09 (stance +30%, step -20%) et charge énorme les 2 derniers jours (503, 421). Enchaîner 33km avec 2x8km à 4'12 dans cet état est risqué.",
+   "replacement": {
+    "title": "SL 26km · 2×5km MP prudent",
+    "type": "long_mp",
+    "km": 26.0,
+    "target_pace": "4'22\"/km",
+    "description": "Sortie longue à allure facile (5'20-5'30/km), avec 2x5km à 4'20-4'25/km max (pas 4'12) séparés de 3-4min de trot. Coupe court si la FC dérive fort ou si les jambes sont lourdes dès le 1er bloc. L'objectif cette fois c'est de terminer propre, pas de viser le chrono."
+   },
+   "id": "785e3309",
+   "status": "pending",
+   "created_at": "2026-09-26T10:18:55"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-09-29",
+   "field": null,
+   "new_value": "Remplacer la VMA longue par une séance plus courte et cadrée FC",
+   "reason": "2 tentatives de VMA consécutives (15/09 et 22/09) ratées à des allures 5'10-5'20/km au lieu de 3'27, avec des FC qui ne montent jamais (142-148 max) — le corps n'accroche pas l'intensité en ce moment, pas la peine d'insister sur du 5x1km avant d'avoir récupéré.",
+   "replacement": {
+    "title": "6×800m allure 10k, cap FC",
+    "type": "vma",
+    "km": 12.0,
+    "target_pace": "3'38\"/km",
+    "description": "Échauffement 3km facile. 6x800m à allure 10k (3'38/km, pas plus vite), récup trot 2min. Si après 3 répétitions tu ne sens pas de jus, arrête-toi là, c'est un signal à écouter. Objectif : réapprendre à monter en intensité sans s'effondrer, pas battre un chrono."
+   },
+   "id": "7b6b0462",
+   "status": "pending",
+   "created_at": "2026-09-26T10:18:55"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-10-01",
+   "field": null,
+   "new_value": "Réduire le bloc allure marathon à 10km au lieu de 15km",
+   "reason": "Avec le bloc MP échoué 2 fois de suite et le gros week-end SL du 27/09 juste avant, un bloc de 15km à 4'12 le 01/10 est hors de portée dans l'état actuel. Mieux vaut consolider un format plus court et réussi qu'accumuler un 3e échec.",
+   "replacement": {
+    "title": "10km allure marathon · bloc réduit",
+    "type": "mp_run",
+    "km": 16.0,
+    "target_pace": "4'16\"/km",
+    "description": "6km d'échauffement facile, puis 10km à 4'16/km (allure stratégie, pas 4'12), retour au calme 2-3km. Si les 4 premiers km à cette allure sont déjà durs, ralentis à 4'20 plutôt que d'abandonner le bloc. On priorise la réussite qualitative sur le chrono cette semaine."
+   },
+   "id": "30bacbc7",
+   "status": "pending",
+   "created_at": "2026-09-26T10:18:55"
   }
  ]
 }

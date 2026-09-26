@@ -2349,7 +2349,7 @@
           "duration_min": 65,
           "key": false,
           "description": "12km à 5'26\"/km + 4×100m lignes droites en fin. Activation pour la SL de dimanche.",
-          "status": "pending",
+          "status": "today",
           "actual": null,
           "coach_notes": [
             {
@@ -2384,21 +2384,21 @@
           "_adapt_volume": true
         }
       ],
-      "volume_actual_to_date": 41.7,
-      "volume_planned_to_date": 51.9,
-      "volume_drift_pct": -19.7,
+      "volume_actual_to_date": 62.8,
+      "volume_planned_to_date": 62.1,
+      "volume_drift_pct": 1.1,
       "compliance": {
-        "km_pct": 80,
-        "km_done": 41.7,
-        "km_planned": 51.9,
+        "km_pct": 101,
+        "km_done": 62.8,
+        "km_planned": 62.1,
         "km_done_week": 62.8,
         "km_planned_week": 107.4,
-        "sessions_done": 3,
-        "sessions_planned": 3,
+        "sessions_done": 4,
+        "sessions_planned": 4,
         "sessions_done_week": 4,
         "keys_success": 0,
         "keys_total": 2,
-        "points": 61,
+        "points": 77,
         "verdict": "partial"
       }
     },
