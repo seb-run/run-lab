@@ -1,36 +1,6 @@
 {
  "proposals": [
   {
-   "severity": "major",
-   "kind": "change_pace",
-   "date": "2026-08-30",
-   "field": null,
-   "new_value": "Réduction du volume et des blocs spécifiques",
-   "reason": "RPE 7 et découplage 8% sur la dernière séance seuil (distance écourtée), plus un footing récup étendu à 158% la veille : la fatigue accumulée est réelle avant un bloc spécifique de 31km. On garde le stimulus mais on réduit la charge pour ne pas creuser le trou avant VMA et MP continu qui suivent dans la semaine.",
-   "replacement": {
-    "title": "Sortie longue alternée allégée",
-    "type": "long",
-    "km": 26.0,
-    "target_pace": "3'59\"/km sur les blocs, 4'47\"/km entre",
-    "description": "26 km avec 5 x 2 km à 3'59/km (au lieu de 3 km), le reste en footing à 4'47/km. Objectif : conserver le stimulus spécifique marathon sans prolonger l'accumulation de fatigue. Coupe un bloc si les jambes sont lourdes ou si la FC dérive fort — priorise les sensations sur le chrono aujourd'hui."
-   },
-   "id": "ef7e1ba4",
-   "status": "expired",
-   "created_at": "2026-08-29T11:48:14"
-  },
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-08-30",
-   "field": "description_note",
-   "new_value": "31 km avec 5×3 km à allure spécifique : c'est la plus longue sortie du plan à ce jour. Chaleur probable — priorise l'hydratation dès le début, ne force pas l'allure MP si la FC dérive au-delà de la normale sur les premiers 3 km rapides. Mieux vaut finir un peu sous la cible que t'effondrer sur les derniers segments.",
-   "reason": "Volume inédit (31 km) après une semaine déjà chargée (2 seuils + long 23,5 km) et un footing récup non maîtrisé le 27/08 ; risque de gestion d'allure/hydratation par forte chaleur récurrente (26-29°C sur les 2 dernières semaines).",
-   "id": "1f382324",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "expired",
-   "created_at": "2026-08-30T10:42:46"
-  },
-  {
    "severity": "minor",
    "kind": "add_note",
    "date": "2026-09-03",
@@ -487,6 +457,42 @@
    "id": "30bacbc7",
    "status": "pending",
    "created_at": "2026-09-26T10:18:55"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-09-27",
+   "field": "description_note",
+   "new_value": "Réduction de la SL du jour : 26km avec 2×5km MP au lieu de 33km avec 2×8km MP",
+   "reason": "4 séances clés ratées consécutives + signaux de fatigue mécanique réelle (stance_fade/step_fade, RPE 7-8) sur les 2 dernières sorties. Il faut préserver la capacité à faire la SL signature du 4/10, bien plus déterminante.",
+   "replacement": {
+    "title": "SL réduite · 2×5km MP",
+    "type": "long",
+    "km": 26.0,
+    "target_pace": "4'12\"/km",
+    "description": "26km au total : échauffement en footing, puis 2×5km à allure marathon (4'12/km) avec 3-4km de récup entre les blocs, retour en footing tranquille. Objectif : garder le stimulus spécifique sans creuser davantage la fatigue. Coupe si les sensations sont mauvaises dès le premier bloc — mieux vaut finir en footing que forcer."
+   },
+   "id": "638211c3",
+   "status": "pending",
+   "created_at": "2026-09-27T08:42:27"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-09-29",
+   "field": "description_note",
+   "new_value": "Remplacer 5×1km VMA par une séance de vitesse courte et moins exigeante",
+   "reason": "2 séances de VMA consécutives ratées avec des écarts d'allure énormes (+103 à +107s/km) — le corps n'est pas en état d'encaisser ce type d'effort actuellement. Une séance plus courte permet de garder du répondant sans creuser la dette avant la SL signature de dimanche.",
+   "replacement": {
+    "title": "Vitesse courte · 6×500m",
+    "type": "vma",
+    "km": 12.0,
+    "target_pace": "3'30\"/km",
+    "description": "Échauffement 3km footing + gammes. 6×500m à allure VMA (~1'44 par 500m) avec 1'30 de récup trot. Retour au calme 3km. Objectif : réactiver la vitesse sans viser la performance — si les 2 premières répétitions sont dures, arrête à 4 et termine en footing."
+   },
+   "id": "c3563d12",
+   "status": "pending",
+   "created_at": "2026-09-27T08:42:27"
   }
  ]
 }
