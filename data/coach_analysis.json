@@ -1,61 +1,54 @@
 {
- "generated_at": "2026-09-27T08:42:27",
+ "generated_at": "2026-09-28T12:01:29",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-09-24\", \"title\": \"14km allure marathon · bloc\", \"type\": \"mp_run\", \"planned_km\": 20.4, \"key\": true, \"status\": \"under\", \"target_pace\": \"4'12\\\"/km\", \"actual\": {\"km\": 8.2, \"pace_str\": \"5'13\\\"/km\", \"fc\": 137, \"cadence\": 178, \"duration_min\": 43}, \"splits\": \"1:5'35/120/180spm 2:5'22/130/178spm 3:5'02/139/178spm 4:5'03/138/176spm 5:5'13/136/178spm 6:5'01/142/178spm 7:5'17/145/176spm 8:5'08/146/176spm\", \"garmin\": {\"te_aero\": 2.9, \"te_ana\": 0.0, \"load\": 79.2, \"rpe\": 3.0, \"feel_label\": \"Très fort\", \"temp_c\": 25, \"balance_l\": 51.03, \"flags\": [], \"stance_drift_pct\": -2.2, \"step_drift_pct\": 3.5}, \"score\": {\"points\": 0, \"verdict\": \"failed\", \"volume_pct\": 40, \"pace_delta_s\": 61}, \"hr\": {\"avg\": 137, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 6.9, \"flags\": []}}, {\"date\": \"2026-09-25\", \"title\": \"Footing récup 10km\", \"type\": \"recovery\", \"planned_km\": 10.2, \"key\": false, \"status\": \"over\", \"target_pace\": null, \"actual\": {\"km\": 21.1, \"pace_str\": \"4'20\\\"/km\", \"fc\": 164, \"cadence\": 178, \"duration_min\": 92}, \"splits\": \"1:5'10/130/180spm 2:4'56/140/180spm 3:5'14/147/180spm 4:5'28/153/178spm 5:3'53/168/180spm 6:3'58/167/178spm 7:3'54/171/178spm 8:3'57/174/178spm 9:3'56/174/178spm 10:3'56/173/178spm 11:4'02/174/178spm 12:5'03/163/174spm 13:3'57/171/176spm 14:4'00/172/176spm 15:4'00/176/178spm 16:4'03/177/178spm 17:3'54/177/178spm 18:3'59/178/178spm 19:3'55/178/178spm 20:4'55/163/174spm 21:5'18/150/176spm 22:4'52/149/178spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 0.6, \"load\": 421.5, \"rpe\": 8.0, \"feel_label\": \"Fort\", \"temp_c\": 28, \"balance_l\": 49.12, \"flags\": [\"stance_fade\"], \"stance_drift_pct\": 5.5, \"step_drift_pct\": 2.3}, \"score\": {\"points\": 70, \"verdict\": \"partial\", \"volume_pct\": 207, \"pace_delta_s\": null}, \"hr\": {\"avg\": 164, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 3.7, \"flags\": []}}, {\"date\": \"2026-09-26\", \"title\": \"Footing 12km + lignes\", \"type\": \"easy\", \"planned_km\": 12.2, \"key\": false, \"status\": \"under\", \"target_pace\": null, \"actual\": {\"km\": 6.0, \"pace_str\": \"5'14\\\"/km\", \"fc\": 135, \"cadence\": 179, \"duration_min\": 31}, \"splits\": \"1:5'22/125/180spm 2:5'14/135/180spm 3:5'11/136/180spm 4:5'13/136/178spm 5:5'14/137/178spm 6:5'11/139/176spm\", \"garmin\": {\"te_aero\": 2.6, \"te_ana\": 0.0, \"load\": 65.4, \"rpe\": 2.0, \"feel_label\": \"Fort\", \"temp_c\": 27, \"balance_l\": 50.37, \"flags\": [], \"stance_drift_pct\": -0.4, \"step_drift_pct\": 3.3}, \"score\": {\"points\": 18, \"verdict\": \"failed\", \"volume_pct\": 49, \"pace_delta_s\": null}, \"hr\": {\"avg\": 135, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 1.6, \"flags\": []}}]",
- "headline": "Depuis 2 semaines, les séances clés s'effondrent (4/4 ratées) pendant que les footings explosent en volume avec des efforts cachés — la charge est mal gérée, il faut la recentrer avant la SL signature du 4/10.",
- "analysis": "Le pattern est clair et inquiétant : chaque séance clé programmée (VMA du 15/09 et 22/09, MP du 17/09 et 24/09) est ratée avec des écarts d'allure énormes (+60 à +107s/km par rapport à la cible), alors que les footings et récup censés être faciles gonflent à ×1.5-2.5 en volume avec des blocs rapides intercalés (16/09, 23/09, 25/09). Sur ces sorties 'faciles' détournées, Garmin flague de la fatigue mécanique réelle — stance_fade et step_fade le 23/09 (stance +30%, RPE 7, 'Très fort') et le 25/09 (RPE 8, FC moyenne 164 sur une récup) — ce ne sont pas de simples dérives cardio liées à la chaleur, ce sont des signaux de fatigue qui s'accumulent. La seule vraie réussite de la période est la SL progressive du 20/09, bien maîtrisée. Le risque principal maintenant : enchaîner la SL 33km avec 2×8km MP prévue aujourd'hui sur un corps qui montre déjà des signes de casse mécanique, ce qui hypothéquerait la séance la plus importante du bloc, la SL signature du 4/10 (30km dont 20km MP). Le focus de la semaine doit être : réduire l'intensité et le volume des séances exigeantes pour laisser retomber la fatigue, sécuriser la SL signature de dimanche prochain, et arrêter de compenser les clés ratées par des rallonges non planifiées sur les jours faciles.",
+ "signature": "[{\"date\": \"2026-09-25\", \"title\": \"Footing récup 10km\", \"type\": \"recovery\", \"planned_km\": 10.2, \"key\": false, \"status\": \"over\", \"target_pace\": null, \"actual\": {\"km\": 21.1, \"pace_str\": \"4'20\\\"/km\", \"fc\": 164, \"cadence\": 178, \"duration_min\": 92}, \"splits\": \"1:5'10/130/180spm 2:4'56/140/180spm 3:5'14/147/180spm 4:5'28/153/178spm 5:3'53/168/180spm 6:3'58/167/178spm 7:3'54/171/178spm 8:3'57/174/178spm 9:3'56/174/178spm 10:3'56/173/178spm 11:4'02/174/178spm 12:5'03/163/174spm 13:3'57/171/176spm 14:4'00/172/176spm 15:4'00/176/178spm 16:4'03/177/178spm 17:3'54/177/178spm 18:3'59/178/178spm 19:3'55/178/178spm 20:4'55/163/174spm 21:5'18/150/176spm 22:4'52/149/178spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 0.6, \"load\": 421.5, \"rpe\": 8.0, \"feel_label\": \"Fort\", \"temp_c\": 28, \"balance_l\": 49.12, \"flags\": [\"stance_fade\"], \"stance_drift_pct\": 5.5, \"step_drift_pct\": 2.3}, \"score\": {\"points\": 70, \"verdict\": \"partial\", \"volume_pct\": 207, \"pace_delta_s\": null}, \"hr\": {\"avg\": 164, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 3.7, \"flags\": []}}, {\"date\": \"2026-09-26\", \"title\": \"Footing 12km + lignes\", \"type\": \"easy\", \"planned_km\": 12.2, \"key\": false, \"status\": \"under\", \"target_pace\": null, \"actual\": {\"km\": 6.0, \"pace_str\": \"5'14\\\"/km\", \"fc\": 135, \"cadence\": 179, \"duration_min\": 31}, \"splits\": \"1:5'22/125/180spm 2:5'14/135/180spm 3:5'11/136/180spm 4:5'13/136/178spm 5:5'14/137/178spm 6:5'11/139/176spm\", \"garmin\": {\"te_aero\": 2.6, \"te_ana\": 0.0, \"load\": 65.4, \"rpe\": 2.0, \"feel_label\": \"Fort\", \"temp_c\": 27, \"balance_l\": 50.37, \"flags\": [], \"stance_drift_pct\": -0.4, \"step_drift_pct\": 3.3}, \"score\": {\"points\": 18, \"verdict\": \"failed\", \"volume_pct\": 49, \"pace_delta_s\": null}, \"hr\": {\"avg\": 135, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 1.6, \"flags\": []}}, {\"date\": \"2026-09-27\", \"title\": \"SL 30km · 2×8km MP\", \"type\": \"long_mp\", \"planned_km\": 33.1, \"key\": true, \"status\": \"done\", \"target_pace\": \"4'12\\\"/km\", \"actual\": {\"km\": 24.1, \"pace_str\": \"4'34\\\"/km\", \"fc\": 148, \"cadence\": 180, \"duration_min\": 110}, \"splits\": \"1:5'00/131/180spm 2:4'55/142/178spm 3:4'48/136/178spm 4:4'49/140/180spm 5:4'48/144/180spm 6:4'46/146/180spm 7:4'50/144/178spm 8:4'49/142/180spm 9:4'51/143/180spm 10:4'45/141/180spm 11:4'48/142/180spm 12:4'48/142/180spm 13:4'33/148/182spm 14:4'35/147/180spm 15:4'36/146/180spm 16:4'27/150/182spm 17:4'24/153/180spm 18:4'24/155/182spm 19:4'13/158/180spm 20:4'14/158/180spm 21:4'13/159/180spm 22:4'00/164/180spm 23:3'55/167/182spm 24:3'59/172/182spm\", \"garmin\": {\"te_aero\": 4.4, \"te_ana\": 0.0, \"load\": 244.6, \"rpe\": 5.0, \"feel_label\": \"Très fort\", \"temp_c\": 21, \"balance_l\": 48.04, \"flags\": [], \"stance_drift_pct\": -9.9, \"step_drift_pct\": 16.7}, \"score\": {\"points\": 79, \"verdict\": \"partial\", \"volume_pct\": 73, \"pace_delta_s\": 22}, \"hr\": {\"avg\": 148, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": -1.4, \"flags\": []}}]",
+ "headline": "Les sorties longues progressent très bien, mais les séances de qualité (VMA, allure marathon) s'effondrent depuis deux semaines — il faut casser cette spirale avant la SL signature de dimanche.",
+ "analysis": "Le contraste est frappant : tes deux dernières sorties longues (24km et 30km) montrent un decoupling quasi nul (1,1% et -1,4%) et des négatives splits solides jusqu'à 4'08-3'55/km en fin de course — ton moteur aérobie tourne bien. Mais sur toutes les séances de qualité des 14 derniers jours (VMA 15/09, 22/09, MP 17/09, 24/09), tu tournes systématiquement 1' à 1'47 plus lent que la cible, avec des volumes réalisés entre 40 et 87% du prévu — 0/3 clés réussies cette semaine peak. Les footings/récup, eux, explosent en volume (150-250%) avec des données parfois erratiques (splits 3' puis 8', drift de foulée aberrant) qui sentent plus l'artefact GPS qu'une vraie dérive mécanique — je ne tire pas de conclusion là-dessus. Le vrai signal, c'est que tu n'arrives jamais à lancer une séance rapide correctement alors que tu es capable d'accélérer en fin de longue sortie fatiguée : ça ressemble à une histoire de lancement (chaleur, fraîcheur du jour, ou psychologique) plus qu'à un manque de forme. Ta perte de poids (78,2→75,8kg, MG 14,5→12,5%) est notable et rapide sur 3-4 semaines ; couplée aux échecs qualité, ça mérite un œil sur les apports énergétiques autour des séances clés. Focus de la semaine : sécuriser deux réussites qualité courtes plutôt que viser le volume complet, et arriver frais pour la SL signature 30km de dimanche qui est LA séance de la phase peak.",
  "forme": {
-  "score": 42,
-  "verdict": "alerte",
-  "headline": "4 séances clés ratées d'affilée, fatigue mécanique qui pointe",
-  "detail": "Les allures cibles sur VMA et MP ne passent plus du tout (écarts de +60 à +107s/km sur 4 séances), signe que la charge accumulée dépasse ce que le corps encaisse en ce moment. En parallèle, les footings 'faciles' se transforment en sorties de 20+ km avec des blocs rapides cachés dedans, et Garmin flague deux fois une fatigue mécanique réelle (stance_fade + step_fade, RPE 7-8) sur ces jours censés récupérer. Priorité immédiate : couper dans le volume et l'intensité cette semaine pour arriver frais à la SL signature du 4/10.",
+  "score": 58,
+  "verdict": "surveiller",
+  "headline": "Endurance solide, séances de qualité qui s'effondrent",
+  "detail": "Tes deux dernières longues sorties sont excellentes (decoupling -1,4% et 1,1%), preuve que le fond est là. Mais 0/3 séances clés réussies cette semaine, avec des écarts d'allure énormes sur VMA/MP (jusqu'à +1'47/km) : il faut recalibrer l'ambition de ces séances avant qu'elles ne minent la confiance.",
   "indicateurs": {
    "fraicheur": {
-    "valeur": "dette 4j",
+    "valeur": "sous tension",
     "trend": "down",
-    "etat": "alert",
-    "note": "charge mal répartie"
+    "etat": "watch",
+    "note": "clés ratées, 1 sortie tronquée"
    },
    "compliance": {
-    "valeur": "0/4 clés réussies",
+    "valeur": "6/6 séances · 0/3 clés",
     "trend": "down",
     "etat": "alert",
-    "note": "VMA et MP s'effondrent"
+    "note": "qualité systématiquement ratée"
    },
    "aerobie": {
-    "valeur": "1 à 4% stable",
-    "trend": "flat",
+    "valeur": "-1,4 % / 1,1 %",
+    "trend": "up",
     "etat": "ok",
-    "note": "decoupling contenu"
+    "note": "SL très stables, négative splits"
    },
    "achille": {
-    "valeur": "stance +30% le 23/09",
-    "trend": "up",
+    "valeur": "48-52 %",
+    "trend": "flat",
     "etat": "watch",
-    "note": "fatigue mécanique ponctuelle"
+    "note": "flags stance_fade ponctuels"
    }
   }
  },
- "applied": [],
- "pending": [
+ "applied": [
   {
-   "severity": "major",
-   "kind": "change_pace",
-   "date": "2026-09-27",
-   "field": "target_pace",
-   "new_value": "4'16\"/km",
-   "reason": "Cohérence avec l'ajustement du 24/09 : sécuriser l'allure MP sur ce gros bloc de 2x8km après deux échecs récents sur allure rapide, pour préserver la qualité de la sortie longue plutôt que de risquer un abandon du bloc.",
-   "replacement": {
-    "title": "SL 30km · 2×8km allure stratégie",
-    "type": "long_mp",
-    "km": 30.0,
-    "target_pace": "4'16\"/km",
-    "description": "30km avec 2x8km à 4'16/km (allure stratégie) au lieu de 4'12. Même logique de progressivité que ta SL du 20/09 qui s'est très bien passée. Surveille l'hydratation dès le matin si chaleur annoncée, et coupe le 2e bloc si la FC s'envole anormalement pour l'allure."
-   },
-   "id": "0ba18d1a",
-   "status": "pending",
-   "created_at": "2026-09-21T11:08:06"
-  },
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-10-03",
+   "field": "description_note",
+   "new_value": "Repos actif ce jour : allure très cool, coupe s'il fait chaud. Priorité absolue = arriver frais dimanche pour la SL signature 30km (séance clé de la phase peak).",
+   "reason": "Chutes de volume répétées la veille des grosses séances (12km→6km le 26/09). La SL signature du 4/10 est la séance la plus importante de la phase peak, elle doit être protégée.",
+   "id": "a982f470",
+   "detail": "2026-10-03 : note ajoutée"
+  }
+ ],
+ "pending": [
   {
    "severity": "major",
    "kind": "change_type",
@@ -91,24 +84,6 @@
    "id": "0d8ac7e3",
    "status": "pending",
    "created_at": "2026-09-25T10:36:01"
-  },
-  {
-   "severity": "major",
-   "kind": "change_pace",
-   "date": "2026-09-27",
-   "field": null,
-   "new_value": "Réduire le bloc MP et l'allure cible avant d'enchaîner sur une grosse semaine",
-   "reason": "2 échecs mp_run consécutifs (54% et 40% du volume, allures 60-110s/km trop lentes) + fatigue mécanique confirmée le 23/09 (stance +30%, step -20%) et charge énorme les 2 derniers jours (503, 421). Enchaîner 33km avec 2x8km à 4'12 dans cet état est risqué.",
-   "replacement": {
-    "title": "SL 26km · 2×5km MP prudent",
-    "type": "long_mp",
-    "km": 26.0,
-    "target_pace": "4'22\"/km",
-    "description": "Sortie longue à allure facile (5'20-5'30/km), avec 2x5km à 4'20-4'25/km max (pas 4'12) séparés de 3-4min de trot. Coupe court si la FC dérive fort ou si les jambes sont lourdes dès le 1er bloc. L'objectif cette fois c'est de terminer propre, pas de viser le chrono."
-   },
-   "id": "785e3309",
-   "status": "pending",
-   "created_at": "2026-09-26T10:18:55"
   },
   {
    "severity": "major",
@@ -149,24 +124,6 @@
   {
    "severity": "major",
    "kind": "change_type",
-   "date": "2026-09-27",
-   "field": "description_note",
-   "new_value": "Réduction de la SL du jour : 26km avec 2×5km MP au lieu de 33km avec 2×8km MP",
-   "reason": "4 séances clés ratées consécutives + signaux de fatigue mécanique réelle (stance_fade/step_fade, RPE 7-8) sur les 2 dernières sorties. Il faut préserver la capacité à faire la SL signature du 4/10, bien plus déterminante.",
-   "replacement": {
-    "title": "SL réduite · 2×5km MP",
-    "type": "long",
-    "km": 26.0,
-    "target_pace": "4'12\"/km",
-    "description": "26km au total : échauffement en footing, puis 2×5km à allure marathon (4'12/km) avec 3-4km de récup entre les blocs, retour en footing tranquille. Objectif : garder le stimulus spécifique sans creuser davantage la fatigue. Coupe si les sensations sont mauvaises dès le premier bloc — mieux vaut finir en footing que forcer."
-   },
-   "id": "638211c3",
-   "status": "pending",
-   "created_at": "2026-09-27T08:42:27"
-  },
-  {
-   "severity": "major",
-   "kind": "change_type",
    "date": "2026-09-29",
    "field": "description_note",
    "new_value": "Remplacer 5×1km VMA par une séance de vitesse courte et moins exigeante",
@@ -181,6 +138,42 @@
    "id": "c3563d12",
    "status": "pending",
    "created_at": "2026-09-27T08:42:27"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-09-29",
+   "field": null,
+   "new_value": "Remplacer la VMA 5x1km par un format seuil plus court et atteignable",
+   "reason": "3 séances rapides consécutives ratées avec un écart d'allure énorme (+1'47/km max), volume réalisé 40-87%. Casser la spirale d'échec avant de retenter du seuil VMA pur.",
+   "replacement": {
+    "title": "Seuil court 4x1500m",
+    "type": "seuil",
+    "km": 12.0,
+    "target_pace": "3'55\"/km",
+    "description": "Échauffement 3km, puis 4x1500m à 3'55/km, récup 2min trot, retour au calme 2km. Objectif : retrouver la sensation de courir vite sans t'épuiser. Si la chaleur est présente, décale la séance tôt le matin et coupe si tu n'arrives pas à tenir l'allure sur les 2 premières répétitions."
+   },
+   "id": "bc9f966e",
+   "status": "pending",
+   "created_at": "2026-09-28T12:01:29"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-10-01",
+   "field": null,
+   "new_value": "Réduire le bloc MP de 15km à un format 2x4km plus court",
+   "reason": "Aucun bloc MP réussi depuis 2 semaines (dernier essai : 40% du volume à 5'13/km au lieu de 4'12). Sécuriser une réussite avant la SL signature de dimanche plutôt que d'accumuler un 4e échec.",
+   "replacement": {
+    "title": "Bloc MP réduit 2x4km",
+    "type": "mp_run",
+    "km": 16.0,
+    "target_pace": "4'12\"/km",
+    "description": "Échauffement 4km footing progressif, puis 2x4km à 4'12-4'16/km avec 3min récup trot, retour au calme 4km. Vise la régularité plutôt que la performance brute : si l'allure ne vient pas après 1km, ralentis à 4'20 mais termine le format sans t'arrêter."
+   },
+   "id": "7891aa3c",
+   "status": "pending",
+   "created_at": "2026-09-28T12:01:29"
   }
  ]
 }

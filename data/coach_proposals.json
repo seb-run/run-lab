@@ -1,32 +1,6 @@
 {
  "proposals": [
   {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-09-03",
-   "field": "description_note",
-   "new_value": "Vraie récup aujourd'hui : reste à 5'25/km max, ne dépasse pas les 9 km prévus. Hier la piste a montré une fatigue mécanique en fin de séance (foulée qui se raccourcit, appui qui traîne) — le corps a besoin de ce footing pour se relâcher avant le spécifique de demain.",
-   "new_value_note": null,
-   "reason": "Pattern répété de footings trop rapides/trop longs + signes de fatigue mécanique (stance_fade/step_fade) sur la séance de piste de la veille, avec une séance clé MP dès demain.",
-   "replacement": null,
-   "id": "a6a1be52",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "expired",
-   "created_at": "2026-09-03T10:06:29"
-  },
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-09-04",
-   "field": "description_note",
-   "new_value": "Respecte les 15 km prévus sans rallonger — tu as tendance à dépasser le volume sur les séances clés en ce moment. Hydrate-toi bien vu la chaleur récurrente.",
-   "reason": "Pattern récurrent de dépassement de volume sur les séances clés (106%, 132%, 158% sur les 2 dernières semaines) alors que la charge s'accumule déjà fortement.",
-   "id": "e3a2de49",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "expired",
-   "created_at": "2026-09-04T09:57:01"
-  },
-  {
    "severity": "major",
    "kind": "change_type",
    "date": "2026-09-09",
@@ -305,7 +279,7 @@
     "description": "30km avec 2x8km à 4'16/km (allure stratégie) au lieu de 4'12. Même logique de progressivité que ta SL du 20/09 qui s'est très bien passée. Surveille l'hydratation dès le matin si chaleur annoncée, et coupe le 2e bloc si la FC s'envole anormalement pour l'allure."
    },
    "id": "0ba18d1a",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-21T11:08:06"
   },
   {
@@ -419,7 +393,7 @@
     "description": "Sortie longue à allure facile (5'20-5'30/km), avec 2x5km à 4'20-4'25/km max (pas 4'12) séparés de 3-4min de trot. Coupe court si la FC dérive fort ou si les jambes sont lourdes dès le 1er bloc. L'objectif cette fois c'est de terminer propre, pas de viser le chrono."
    },
    "id": "785e3309",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-26T10:18:55"
   },
   {
@@ -473,7 +447,7 @@
     "description": "26km au total : échauffement en footing, puis 2×5km à allure marathon (4'12/km) avec 3-4km de récup entre les blocs, retour en footing tranquille. Objectif : garder le stimulus spécifique sans creuser davantage la fatigue. Coupe si les sensations sont mauvaises dès le premier bloc — mieux vaut finir en footing que forcer."
    },
    "id": "638211c3",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-27T08:42:27"
   },
   {
@@ -493,6 +467,42 @@
    "id": "c3563d12",
    "status": "pending",
    "created_at": "2026-09-27T08:42:27"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-09-29",
+   "field": null,
+   "new_value": "Remplacer la VMA 5x1km par un format seuil plus court et atteignable",
+   "reason": "3 séances rapides consécutives ratées avec un écart d'allure énorme (+1'47/km max), volume réalisé 40-87%. Casser la spirale d'échec avant de retenter du seuil VMA pur.",
+   "replacement": {
+    "title": "Seuil court 4x1500m",
+    "type": "seuil",
+    "km": 12.0,
+    "target_pace": "3'55\"/km",
+    "description": "Échauffement 3km, puis 4x1500m à 3'55/km, récup 2min trot, retour au calme 2km. Objectif : retrouver la sensation de courir vite sans t'épuiser. Si la chaleur est présente, décale la séance tôt le matin et coupe si tu n'arrives pas à tenir l'allure sur les 2 premières répétitions."
+   },
+   "id": "bc9f966e",
+   "status": "pending",
+   "created_at": "2026-09-28T12:01:29"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-10-01",
+   "field": null,
+   "new_value": "Réduire le bloc MP de 15km à un format 2x4km plus court",
+   "reason": "Aucun bloc MP réussi depuis 2 semaines (dernier essai : 40% du volume à 5'13/km au lieu de 4'12). Sécuriser une réussite avant la SL signature de dimanche plutôt que d'accumuler un 4e échec.",
+   "replacement": {
+    "title": "Bloc MP réduit 2x4km",
+    "type": "mp_run",
+    "km": 16.0,
+    "target_pace": "4'12\"/km",
+    "description": "Échauffement 4km footing progressif, puis 2x4km à 4'12-4'16/km avec 3min récup trot, retour au calme 4km. Vise la régularité plutôt que la performance brute : si l'allure ne vient pas après 1km, ralentis à 4'20 mais termine le format sans t'arrêter."
+   },
+   "id": "7891aa3c",
+   "status": "pending",
+   "created_at": "2026-09-28T12:01:29"
   }
  ]
 }

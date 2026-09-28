@@ -2792,16 +2792,16 @@
       "volume_planned_to_date": 74.3,
       "volume_drift_pct": -7.4,
       "compliance": {
-        "km_pct": 93,
-        "km_done": 68.8,
-        "km_planned": 74.3,
+        "km_pct": 86,
+        "km_done": 92.9,
+        "km_planned": 107.4,
         "km_done_week": 92.9,
         "km_planned_week": 107.4,
-        "sessions_done": 5,
-        "sessions_planned": 5,
+        "sessions_done": 6,
+        "sessions_planned": 6,
         "sessions_done_week": 6,
         "keys_success": 0,
-        "keys_total": 2,
+        "keys_total": 3,
         "points": 70,
         "verdict": "partial"
       }
@@ -2824,7 +2824,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet ou mobilité/yoga 20-30min. Récupération.",
-          "status": "pending",
+          "status": "today",
           "actual": null
         },
         {
@@ -2887,7 +2887,13 @@
           "key": false,
           "description": "13km à 5'26\"/km + 4×100m lignes droites en fin. Activation pour la SL de dimanche.",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Repos actif ce jour : allure très cool, coupe s'il fait chaud. Priorité absolue = arriver frais dimanche pour la SL signature 30km (séance clé de la phase peak)."
+            }
+          ]
         },
         {
           "type": "long_mp",
@@ -2902,7 +2908,10 @@
           "status": "pending",
           "actual": null
         }
-      ]
+      ],
+      "volume_actual_to_date": 0.0,
+      "volume_planned_to_date": 0.0,
+      "volume_drift_pct": 0
     },
     {
       "week_num": 4,
