@@ -1,45 +1,45 @@
 {
- "headline": "Séance coupée à 73% du plan, mais nettement plus économe que d'habitude (FC -7,8 bpm).",
+ "headline": "VMA prévue non réalisée (5'14 vs 3'27 cible), mais physio très à l'aise",
  "bullets": [
-  "24,13 km réalisés vs 33,1 km prévus : SL + 2×8km MP non complété (volume 73%).",
-  "FC moy 148 vs 155,8 sur séances à allure comparable (4'34 vs 4'40/km réf).",
-  "Contact au sol 201 ms vs 210 ms réf, vratio 8,39 vs 8,77 réf : appui plus dynamique."
+  "FC 136 bpm, -9.5 vs ta moyenne 145.5 à allure quasi identique (5'14 vs 5'08 réf)",
+  "RPE 2/10, ressenti 'très fort' malgré 23-28°C — chaleur non limitante ici",
+  "Plan: 5×1km à 3'27/km. Réalisé: continu à 5'14/km. Séance à 70% du volume prévu"
  ],
  "points": [
   {
-   "label": "FC vs référence",
-   "valeur": "148 bpm",
-   "ecart": "-7,8 bpm vs réf 155,8",
-   "lecture": "plus économe à allure comparable",
+   "label": "FC moyenne",
+   "valeur": "136 bpm",
+   "ecart": "-9.5 vs réf 145.5",
+   "lecture": "effort nettement plus économique qu'habituel",
    "ton": "bon"
-  },
-  {
-   "label": "Volume séance",
-   "valeur": "24,13 km",
-   "ecart": "-27% vs 33,1 km prévus",
-   "lecture": "séance clairement écourtée",
-   "ton": "vigilance"
   },
   {
    "label": "Temps de contact",
-   "valeur": "201 ms",
-   "ecart": "-9 ms vs réf 210 ms",
-   "lecture": "appui plus court, plus dynamique",
+   "valeur": "222 ms",
+   "ecart": "-3.8 ms vs réf 225.8",
+   "lecture": "appui plus réactif que d'habitude",
    "ton": "bon"
+  },
+  {
+   "label": "Ratio vertical",
+   "valeur": "9.66",
+   "ecart": "+0.56 vs réf 9.1",
+   "lecture": "un peu moins efficient que ta norme",
+   "ton": "neutre"
   }
  ],
- "achille": "Équilibre gauche 48,0% vs réf 49,7% : un peu plus de charge côté droit (Achille) qu'à l'habitude.",
- "a_surveiller": "Asymétrie s'ouvre avec la vitesse (+1,31), motif proche de l'ancien épisode adducteur.",
+ "achille": "Équilibre 50.2% gauche, proche de ta réf (50.5%) — pas de décharge marquée côté droit.",
+ "a_surveiller": "Asymétrie quasi stable avec l'allure (+0.19), très loin du profil pubalgien vu cet hiver.",
  "seance": {
-  "date": "27/09/2026",
-  "heure": "08:28",
-  "titre": "i190760670",
+  "date": "29/09/2026",
+  "heure": "05:50",
+  "titre": "i191403576",
   "type_detecte": "endurance",
-  "km": 24.13,
-  "duree": "1h 50m 00s",
-  "allure": "4'34\"/km",
-  "fc_moy": 148
+  "km": 13.37,
+  "duree": "1h 10m 01s",
+  "allure": "5'14\"/km",
+  "fc_moy": 136
  },
- "generated_at": "2026-09-27T08:43:14",
- "baseline_n": 19
+ "generated_at": "2026-09-29T05:06:43",
+ "baseline_n": 30
 }

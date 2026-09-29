@@ -1,48 +1,6 @@
 {
  "proposals": [
   {
-   "severity": "major",
-   "kind": "change_type",
-   "date": "2026-09-09",
-   "field": null,
-   "new_value": "Réduire la séance de 5×1000m à 4×1000m pour limiter la charge mécanique avant le bloc côtes/seuil + sortie longue alternée.",
-   "reason": "Fade mécanique réel détecté le 02/09 (contact +8.2%, foulée -5.2%, flags stance_fade/step_fade) suivi d'un nouveau signal le 04/09 (contact +6.2%, flag asym_vitesse). Deux marqueurs mécaniques consécutifs sur des séances clés justifient d'alléger avant d'enchaîner 3 séances dures en 5 jours (09, 11, 13/09).",
-   "replacement": {
-    "title": "PISTE — 4×1000m",
-    "type": "vma",
-    "km": 14.0,
-    "target_pace": "3'32\"/km",
-    "description": "4×1000m à 3'32/km, récup trot 2' entre chaque. Focus sur la foulée : si tu sens le contact au sol s'allonger ou la foulée se raccourcir sur les 2 derniers répétitions, coupe la série là. Échauffement 15' + 6 lignes droites avant, retour au calme 10'."
-   },
-   "id": "37c48d0d",
-   "status": "expired",
-   "created_at": "2026-09-05T09:23:40"
-  },
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-09-06",
-   "field": "description_note",
-   "new_value": "Chaleur + fatigue mécanique observée sur les 2 dernières séances clés (stance_fade au 02/09 et 04/09) : garde la progression finale mesurée, ne force pas les derniers km si les jambes tirent. Hydrate-toi bien avant/pendant.",
-   "reason": "Deux séances clés consécutives montrent un stance_drift >4% et un decoupling élevé (7.9% et 12.4%), signe de fatigue mécanique réelle en fin d'effort ; prudence sur la progressivité de cette longue.",
-   "id": "6b203bef",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "expired",
-   "created_at": "2026-09-06T09:35:23"
-  },
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-09-09",
-   "field": "description_note",
-   "new_value": "Vigilance : 2 dernières séances de piste/spécifique ont montré fatigue mécanique (stance_fade, step_fade, asym_vitesse) + forte chaleur récurrente. Aujourd'hui, privilégie la régularité des 1000m au ressenti plutôt que l'allure chrono à tout prix ; stoppe si sensation d'asymétrie ou tension Achille.",
-   "reason": "Accumulation de signaux de fatigue mécanique (stance_fade/step_fade/asym_vitesse) sur les 3 dernières séances de qualité, par forte chaleur répétée.",
-   "id": "15b93e9f",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "expired",
-   "created_at": "2026-09-09T10:08:52"
-  },
-  {
    "severity": "minor",
    "kind": "add_note",
    "date": "2026-09-10",
@@ -503,6 +461,60 @@
    "id": "7891aa3c",
    "status": "pending",
    "created_at": "2026-09-28T12:01:29"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-09-29",
+   "field": null,
+   "new_value": "Remplacement de la VMA par une séance seuil contrôlée",
+   "reason": "3 séances qualité d'affilée (15/09, 22/09) où le rythme réel tourne à 5'10-5'27/km au lieu des 3'27 visés, avec une FC (141-146) bien sous l'effort attendu : le corps n'absorbe plus l'intensité VMA en ce moment. Mieux vaut retravailler la rythmique au seuil pour reconstruire la confiance avant de retenter la VMA.",
+   "replacement": {
+    "title": "Seuil contrôlé 4×1km",
+    "type": "seuil",
+    "km": 12.0,
+    "target_pace": "3'55\"/km",
+    "description": "Échauffement 3km, puis 4x1000m à 3'55/km, récup 2min trot. Objectif : retrouver la sensation de rythme sans s'effondrer. Si les jambes sont lourdes après le 2e rep, arrête-toi là, ce n'est pas grave."
+   },
+   "id": "726a5f06",
+   "status": "pending",
+   "created_at": "2026-09-29T05:06:17"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-10-01",
+   "field": null,
+   "new_value": "Réduction du bloc MP et allure ajustée à la stratégie 4'16",
+   "reason": "Les 2 derniers blocs MP (17/09 et 24/09) ont tourné à 54% puis 40% du volume prévu, avec un rythme proche de 5'15-5'25/km au lieu de 4'12-4'16 visé. Le corps ne tient pas encore cette allure sur plusieurs km d'affilée : on réduit le bloc pour sécuriser une réussite plutôt qu'un 3e échec.",
+   "replacement": {
+    "title": "10km allure marathon (bloc réduit)",
+    "type": "mp_run",
+    "km": 16.0,
+    "target_pace": "4'16\"/km",
+    "description": "Échauffement 4km footing, puis 10km à 4'16/km (allure stratégie, pas 4'12), retour au calme 2km. Découpe en 2x5km avec 1min marche si besoin plutôt que d'abandonner en cours de route."
+   },
+   "id": "353c83b1",
+   "status": "pending",
+   "created_at": "2026-09-29T05:06:17"
+  },
+  {
+   "severity": "major",
+   "kind": "change_type",
+   "date": "2026-10-04",
+   "field": null,
+   "new_value": "Réduction du bloc MP à 12km dans la sortie longue",
+   "reason": "Les 2 dernières sorties longues avec MP (20/09 et 27/09) sont réussies sur l'allure globale mais le bloc MP intégral n'a jamais été bouclé au volume prévu (73% le 27/09). On sécurise la distance totale et on réduit le bloc MP pour ne pas répéter l'échec des séances MP sèches de la semaine.",
+   "replacement": {
+    "title": "SL 26km · 12km MP finale",
+    "type": "long_mp",
+    "km": 26.0,
+    "target_pace": "4'12\"/km",
+    "description": "14km footing progressif (4'50 à 4'30/km), puis 12km à allure marathon 4'12-4'16/km en visant la régularité plutôt que la vitesse. Si ça craque, reviens à 4'30/km plutôt que d'abandonner le bloc."
+   },
+   "id": "7937600b",
+   "status": "pending",
+   "created_at": "2026-09-29T05:06:17"
   }
  ]
 }

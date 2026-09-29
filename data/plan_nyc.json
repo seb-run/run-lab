@@ -2824,7 +2824,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet ou mobilité/yoga 20-30min. Récupération.",
-          "status": "today",
+          "status": "done",
           "actual": null
         },
         {
@@ -2837,8 +2837,205 @@
           "target_pace": "3'27\"/km",
           "date": "2026-09-29",
           "dow": "Tue",
-          "status": "pending",
-          "actual": null
+          "status": "under",
+          "actual": {
+            "km": 13.4,
+            "duration_min": 70,
+            "pace_sec": 314,
+            "pace_str": "5'14\"/km",
+            "fc": 136,
+            "cadence": 177,
+            "type": "endurance",
+            "title": "i191403576",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 222.0,
+              "osc_cm": 10.5,
+              "vratio": 9.66,
+              "balance_l": 50.17,
+              "step_m": 1.06,
+              "temp_c": 23,
+              "temp_max": 32,
+              "resp": 39.2,
+              "power": 372,
+              "np": 373,
+              "te_aero": 3.1,
+              "te_ana": 0.0,
+              "load": 104.8,
+              "strides": 6201,
+              "rpe": 2.0,
+              "feel": 100,
+              "feel_label": "Très fort",
+              "drift": {
+                "stance": {
+                  "start": 219.0,
+                  "end": 224.0,
+                  "pct": 2.5
+                },
+                "step": {
+                  "start": 1045.0,
+                  "end": 1078.0,
+                  "pct": 3.2
+                },
+                "vratio": {
+                  "start": 9.76,
+                  "end": 9.53,
+                  "pct": -2.4
+                },
+                "osc": {
+                  "start": 104.0,
+                  "end": 104.0,
+                  "pct": 0.5
+                },
+                "hr": {
+                  "start": 132.0,
+                  "end": 137.0,
+                  "pct": 3.6
+                },
+                "cad": {
+                  "start": 89.0,
+                  "end": 88.5,
+                  "pct": -0.6
+                }
+              },
+              "balance_min": 49.71,
+              "balance_max": 50.62,
+              "balance_series": [
+                49.79,
+                49.96,
+                50.02,
+                49.71,
+                50.13,
+                50.05,
+                50.47,
+                50.34,
+                50.01,
+                50.21,
+                50.06,
+                50.53,
+                50.62
+              ],
+              "balance_lent": 49.98,
+              "balance_rapide": 50.21,
+              "asym_vs_allure": 0.19,
+              "allure_lent_s": 321,
+              "allure_rapide_s": 308,
+              "rr_beats": 9785,
+              "rmssd_effort": 7.3,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 327,
+                "fc": 127,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 319,
+                "fc": 132,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 319,
+                "fc": 132,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 313,
+                "fc": 134,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 318,
+                "fc": 135,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 310,
+                "fc": 137,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 316,
+                "fc": 141,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 312,
+                "fc": 140,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 313,
+                "fc": 138,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 307,
+                "fc": 138,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 304,
+                "fc": 134,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 310,
+                "fc": 137,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 313,
+                "fc": 138,
+                "ca": 176
+              },
+              {
+                "km": 0.37,
+                "ps": 320,
+                "fc": 138,
+                "ca": 178
+              }
+            ]
+          },
+          "score": {
+            "points": 33,
+            "verdict": "failed",
+            "verdict_label": "Échouée",
+            "volume_pct": 70,
+            "volume_points": 60,
+            "pace_points": 0,
+            "pace_target_s": 207,
+            "pace_actual_s": 314,
+            "pace_actual_str": "5'14\"/km",
+            "pace_delta_s": 107,
+            "is_quality": true,
+            "hr": {
+              "avg": 136,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": -1.3,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 70%",
+              "Allure +107\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-09-30",
@@ -2850,7 +3047,13 @@
           "key": false,
           "description": "14km à 5'26\"/km. Allure conversationnelle, FC en zone 2.",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Rappel : les 3 derniers footings/récup ont dérapé (volume x2, RPE 7-8, allures qui plongent par endroits). Aujourd'hui, allure strictement easy 5'20-5'40/km, zéro relance surprise."
+            }
+          ]
         },
         {
           "type": "mp_run",
