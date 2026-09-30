@@ -1,45 +1,45 @@
 {
- "headline": "VMA prévue non réalisée (5'14 vs 3'27 cible), mais physio très à l'aise",
+ "headline": "Footing prévu transformé en fractionné : 20km au lieu de 14, RPE 9/10.",
  "bullets": [
-  "FC 136 bpm, -9.5 vs ta moyenne 145.5 à allure quasi identique (5'14 vs 5'08 réf)",
-  "RPE 2/10, ressenti 'très fort' malgré 23-28°C — chaleur non limitante ici",
-  "Plan: 5×1km à 3'27/km. Réalisé: continu à 5'14/km. Séance à 70% du volume prévu"
+  "FC moy 156 vs 147 hab. (réf 60j) à allure similaire, mais séance beaucoup plus intense en réalité",
+  "Équilibre gauche 50,4% quasi identique à ta réf (50,25%) : rien pour l'Achille",
+  "Asym_vs_allure -0,21 : l'asymétrie ne s'ouvre pas avec la vitesse, signal rassurant côté adducteur"
  ],
  "points": [
   {
    "label": "FC moyenne",
-   "valeur": "136 bpm",
-   "ecart": "-9.5 vs réf 145.5",
-   "lecture": "effort nettement plus économique qu'habituel",
+   "valeur": "156 bpm",
+   "ecart": "+8,7 vs réf 147,3",
+   "lecture": "Effort réel plus dur qu'un footing",
+   "ton": "vigilance"
+  },
+  {
+   "label": "Équilibre gauche",
+   "valeur": "50,4%",
+   "ecart": "+0,14 vs réf 50,25%",
+   "lecture": "Stable, pas de décharge côté droit",
    "ton": "bon"
   },
   {
-   "label": "Temps de contact",
-   "valeur": "222 ms",
-   "ecart": "-3.8 ms vs réf 225.8",
-   "lecture": "appui plus réactif que d'habitude",
+   "label": "Asym vs allure",
+   "valeur": "-0,21",
+   "ecart": "proche de 0",
+   "lecture": "N'augmente pas avec la vitesse",
    "ton": "bon"
-  },
-  {
-   "label": "Ratio vertical",
-   "valeur": "9.66",
-   "ecart": "+0.56 vs réf 9.1",
-   "lecture": "un peu moins efficient que ta norme",
-   "ton": "neutre"
   }
  ],
- "achille": "Équilibre 50.2% gauche, proche de ta réf (50.5%) — pas de décharge marquée côté droit.",
- "a_surveiller": "Asymétrie quasi stable avec l'allure (+0.19), très loin du profil pubalgien vu cet hiver.",
+ "achille": "Équilibre 50,4% vs 50,25% habituel : rien à signaler ce jour.",
+ "a_surveiller": "14km conversationnel prévu → 20km avec relances à 3'40-3'50/km, RPE 9 : charge non planifiée.",
  "seance": {
-  "date": "29/09/2026",
-  "heure": "05:50",
-  "titre": "i191403576",
-  "type_detecte": "endurance",
-  "km": 13.37,
-  "duree": "1h 10m 01s",
-  "allure": "5'14\"/km",
-  "fc_moy": 136
+  "date": "30/09/2026",
+  "heure": "19:28",
+  "titre": "i192017036",
+  "type_detecte": "frac_court",
+  "km": 20.21,
+  "duree": "1h 39m 21s",
+  "allure": "4'55\"/km",
+  "fc_moy": 156
  },
- "generated_at": "2026-09-29T05:06:43",
- "baseline_n": 30
+ "generated_at": "2026-09-30T19:48:25",
+ "baseline_n": 32
 }
