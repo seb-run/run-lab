@@ -3046,7 +3046,7 @@
           "duration_min": 75,
           "key": false,
           "description": "14km à 5'26\"/km. Allure conversationnelle, FC en zone 2.",
-          "status": "pending",
+          "status": "today",
           "actual": null,
           "coach_notes": [
             {
@@ -3078,7 +3078,13 @@
           "key": false,
           "description": "11km très facile, allure récupération. FC zone 1-2 bas.",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Vraie récup : cap 11km, allure ≥5'40, FC<150. Pas de fartlek caché, pas de relances."
+            }
+          ]
         },
         {
           "date": "2026-10-03",
@@ -3101,7 +3107,7 @@
         {
           "type": "long_mp",
           "title": "SL signature 30km · 20km MP",
-          "km": 30,
+          "km": 32.9,
           "duration_min": 147,
           "key": true,
           "description": "30km dont 20km à allure marathon cible 4'12\"/km. La séance clé du plan. Nutrition jour J en répétition.",
@@ -3109,12 +3115,34 @@
           "date": "2026-10-04",
           "dow": "Sun",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "volume",
+              "delta": 2.8999999999999995,
+              "reason": "compenser le déficit volume de la semaine"
+            }
+          ],
+          "_adapt_volume": true
         }
       ],
-      "volume_actual_to_date": 0.0,
-      "volume_planned_to_date": 0.0,
-      "volume_drift_pct": 0
+      "volume_actual_to_date": 13.4,
+      "volume_planned_to_date": 19.2,
+      "volume_drift_pct": -30.2,
+      "compliance": {
+        "km_pct": 70,
+        "km_done": 13.4,
+        "km_planned": 19.2,
+        "km_done_week": 13.4,
+        "km_planned_week": 110.9,
+        "sessions_done": 1,
+        "sessions_planned": 1,
+        "sessions_done_week": 1,
+        "keys_success": 0,
+        "keys_total": 1,
+        "points": 55,
+        "verdict": "partial"
+      }
     },
     {
       "week_num": 4,

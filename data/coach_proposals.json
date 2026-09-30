@@ -1,30 +1,6 @@
 {
  "proposals": [
   {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-09-10",
-   "field": "description_note",
-   "new_value": "Respecte strictement l'allure recovery (5'25\"/km) et les 9 km prévus — ne rallonge pas. Tu as tendance à systématiquement sur-accélérer et sur-voluminer ces sorties faciles, ce qui a coïncidé avec des signaux de fatigue mécanique (stance/step fade) sur tes 3 dernières séances clés.",
-   "reason": "Pattern répété de sur-volume/sur-allure sur les footings faciles associé à des flags stance_fade/step_fade sur 3 séances clés récentes (02/09, 04/09, 09/09).",
-   "id": "cabb76ea",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "expired",
-   "created_at": "2026-09-10T10:03:39"
-  },
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-09-13",
-   "field": "description_note",
-   "new_value": "Reste sur les 21 km prévus sans rallonger l'échauffement — tu as tendance à ajouter du volume sur tes séances clés ces 2 dernières semaines (charge cumulée déjà élevée). Hydrate-toi bien si la chaleur est présente, et coupe le 2e bloc de 8km si tu sens le contact au sol s'alourdir.",
-   "reason": "Tendance récurrente à dépasser le volume prescrit (100-132% sur les 4 dernières séances clés) combinée à des signaux de fatigue mécanique (stance_fade/step_fade) sur 3 séances récentes — besoin de canaliser la charge avant la 24km du 20/09.",
-   "id": "57ec16cb",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "expired",
-   "created_at": "2026-09-13T10:25:36"
-  },
-  {
    "severity": "major",
    "kind": "change_pace",
    "date": "2026-09-13",
@@ -285,7 +261,7 @@
     "description": "Échauffement 3km + gammes/lignes. 6×600m à 3'40/km (un peu sous VMA, allure 10k rapide) avec récup 1'30 trot entre chaque. Retour au calme 3km. But : retrouver des jambes qui tournent, pas la perf chrono. Arrête la série si ça ne vient pas après 2-3 répétitions."
    },
    "id": "38ab2ba3",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-23T10:19:08"
   },
   {
@@ -333,7 +309,7 @@
     "description": "6×600m à 3'30\"/km avec 1'30 récup trot. Objectif : FC doit monter au-dessus de 165 sur chaque répétition — si ce n'est pas le cas, l'allure n'est pas assez poussée. Échauffement 15min + retour au calme 10min. Séance courte volontairement pour retrouver la sensation de l'effort réel avant de remonter en volume."
    },
    "id": "0d8ac7e3",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-25T10:36:01"
   },
   {
@@ -369,7 +345,7 @@
     "description": "Échauffement 3km facile. 6x800m à allure 10k (3'38/km, pas plus vite), récup trot 2min. Si après 3 répétitions tu ne sens pas de jus, arrête-toi là, c'est un signal à écouter. Objectif : réapprendre à monter en intensité sans s'effondrer, pas battre un chrono."
    },
    "id": "7b6b0462",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-26T10:18:55"
   },
   {
@@ -423,7 +399,7 @@
     "description": "Échauffement 3km footing + gammes. 6×500m à allure VMA (~1'44 par 500m) avec 1'30 de récup trot. Retour au calme 3km. Objectif : réactiver la vitesse sans viser la performance — si les 2 premières répétitions sont dures, arrête à 4 et termine en footing."
    },
    "id": "c3563d12",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-27T08:42:27"
   },
   {
@@ -441,7 +417,7 @@
     "description": "Échauffement 3km, puis 4x1500m à 3'55/km, récup 2min trot, retour au calme 2km. Objectif : retrouver la sensation de courir vite sans t'épuiser. Si la chaleur est présente, décale la séance tôt le matin et coupe si tu n'arrives pas à tenir l'allure sur les 2 premières répétitions."
    },
    "id": "bc9f966e",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-28T12:01:29"
   },
   {
@@ -477,7 +453,7 @@
     "description": "Échauffement 3km, puis 4x1000m à 3'55/km, récup 2min trot. Objectif : retrouver la sensation de rythme sans s'effondrer. Si les jambes sont lourdes après le 2e rep, arrête-toi là, ce n'est pas grave."
    },
    "id": "726a5f06",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-29T05:06:17"
   },
   {
@@ -515,6 +491,29 @@
    "id": "7937600b",
    "status": "pending",
    "created_at": "2026-09-29T05:06:17"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-09-30",
+   "field": "description_note",
+   "new_value": "Cap strict à 14km, allure 5'20-5'40, FC<150. Demain c'est la séance clé MP, arrive frais.",
+   "reason": "Tendance à doubler le volume des footings (254%, 207%, 163% du prévu) juste avant les séances clés qui échouent ensuite.",
+   "id": "c8fda0c6",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-09-30T11:23:31"
+  },
+  {
+   "severity": "major",
+   "kind": "volume_adjust",
+   "date": "2026-10-01",
+   "field": "km",
+   "new_value": 14.0,
+   "reason": "3 séances MP/VMA consécutives ratées (+60 à 107s/km, volume coupé de moitié) alors que tu arrives cramé des footings surdimensionnés. On réduit le volume pour sécuriser la SL signature de dimanche, priorité absolue de la semaine.",
+   "id": "6cecfe50",
+   "status": "pending",
+   "created_at": "2026-09-30T11:23:31"
   }
  ]
 }
