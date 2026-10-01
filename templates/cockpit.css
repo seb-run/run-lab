@@ -248,7 +248,7 @@ body[data-tab="race"] .hero-counters { display: none; }
 .ck-legacy > summary::after { content: " ▾"; }
 
 /* ------------------------------------------------------------- feuille */
-.ck-sheet-bk { position: fixed; inset: 0; z-index: 200; display: flex; align-items: flex-end; justify-content: center; background: rgba(8, 10, 15, 0); transition: background .2s; }
+.ck-sheet-bk { position: fixed; inset: 0; z-index: 500; display: flex; align-items: flex-end; justify-content: center; background: rgba(8, 10, 15, 0); transition: background .2s; }
 .ck-sheet-bk[hidden] { display: none; }
 .ck-sheet-bk.on { background: rgba(8, 10, 15, .55); }
 .ck-sheet {
@@ -284,7 +284,7 @@ body[data-tab="race"] .hero-counters { display: none; }
 .ck-swap-i { color: var(--ck-violet); }
 
 .ck-toast {
-  position: fixed; left: 50%; bottom: calc(86px + env(safe-area-inset-bottom)); z-index: 300; max-width: min(92vw, 420px);
+  position: fixed; left: 50%; bottom: calc(86px + env(safe-area-inset-bottom)); z-index: 600; max-width: min(92vw, 420px);
   transform: translate(-50%, 20px); opacity: 0; pointer-events: none; padding: 12px 16px; border-radius: 14px;
   font-size: 14px; font-weight: 600; color: var(--bg); background: var(--text); box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
   transition: transform .25s var(--ease), opacity .2s;
