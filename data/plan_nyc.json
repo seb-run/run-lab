@@ -8559,7 +8559,13 @@
           "target_pace_sec": 230,
           "shoe": "Adidas Evo SL neuve — réservée aux séances",
           "scheduled_time": "06:15",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Avant de partir sur les 3×10' au seuil : les 3 dernières séances clés montrent un allongement du temps de contact (+13 à +30%) et RPE qui grimpe à 9. Si les mollets/Achille tirent dès le 1er bloc, coupe à 2×10' plutôt que forcer le 3e."
+            }
+          ]
         },
         {
           "date": "2026-10-03",
@@ -8663,7 +8669,13 @@
           "target_pace_sec": 198,
           "shoe": "Nike Zoom Fly 5 vert/blanc (647 km) — piste",
           "scheduled_time": "18:45",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Piste courte 4 jours avant le 20km de Paris : vise la qualité des 6×500m, pas la quantité. Si le contact au sol se dégrade comme sur les séances du 23 et 30/09 (stance_fade/step_fade), arrête à 4 répétitions."
+            }
+          ]
         },
         {
           "date": "2026-10-08",

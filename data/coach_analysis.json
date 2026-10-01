@@ -1,38 +1,39 @@
 {
- "generated_at": "2026-10-01T11:06:08",
+ "generated_at": "2026-10-01T19:02:03",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-09-28\", \"title\": \"Repos\", \"type\": \"rest\", \"planned_km\": 0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-09-29\", \"title\": \"5×1km VMA\", \"type\": \"intervals\", \"planned_km\": 19.2, \"key\": true, \"status\": \"under\", \"target_pace\": \"3'27\\\"/km\", \"actual\": {\"km\": 13.4, \"pace_str\": \"5'14\\\"/km\", \"fc\": 136, \"cadence\": 177, \"duration_min\": 70}, \"splits\": \"1:5'27/127/178spm 2:5'19/132/178spm 3:5'19/132/178spm 4:5'13/134/178spm 5:5'18/135/178spm 6:5'10/137/176spm 7:5'16/141/176spm 8:5'12/140/176spm 9:5'13/138/178spm 10:5'07/138/178spm 11:5'04/134/176spm 12:5'10/137/178spm 13:5'13/138/176spm 14:5'20/138/178spm\", \"garmin\": {\"te_aero\": 3.1, \"te_ana\": 0.0, \"load\": 104.8, \"rpe\": 2.0, \"feel_label\": \"Très fort\", \"temp_c\": 23, \"balance_l\": 50.17, \"flags\": [], \"stance_drift_pct\": 2.5, \"step_drift_pct\": 3.2}, \"score\": {\"points\": 33, \"verdict\": \"failed\", \"volume_pct\": 70, \"pace_delta_s\": 107}, \"hr\": {\"avg\": 136, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": -1.3, \"flags\": []}}, {\"date\": \"2026-09-30\", \"title\": \"Footing 14km\", \"type\": \"easy\", \"planned_km\": 13.9, \"key\": false, \"status\": \"over\", \"target_pace\": null, \"actual\": {\"km\": 20.2, \"pace_str\": \"4'55\\\"/km\", \"fc\": 156, \"cadence\": 171, \"duration_min\": 99}, \"splits\": \"1:5'21/129/178spm 2:5'10/145/178spm 3:5'09/147/176spm 4:5'08/148/176spm 5:5'15/143/176spm 6:3'46/165/182spm 7:4'18/169/178spm 8:3'42/173/182spm 9:4'18/174/176spm 10:3'41/176/180spm 11:4'15/175/176spm 12:3'42/177/180spm 13:4'25/175/174spm 14:3'39/177/178spm 15:4'23/176/174spm 16:3'41/179/180spm 17:4'20/178/172spm 18:3'30/182/180spm 19:7'53/161/138spm 20:3'29/177/182spm 21:7'53/159/136spm 22:3'28/178/182spm 23:8'23/157/130spm 24:3'27/176/182spm 25:8'09/160/132spm 26:3'29/178/182spm 27:7'53/159/136spm 28:3'22/181/180spm 29:8'02/162/148spm 30:5'30/155/176spm (+5 laps)\", \"garmin\": {\"te_aero\": 4.9, \"te_ana\": 3.2, \"load\": 411.7, \"rpe\": 9.0, \"feel_label\": \"Fort\", \"temp_c\": 26, \"balance_l\": 50.39, \"flags\": [\"stance_fade\", \"step_fade\"], \"stance_drift_pct\": 13.4, \"step_drift_pct\": -21.3}, \"score\": {\"points\": 85, \"verdict\": \"success\", \"volume_pct\": 145, \"pace_delta_s\": null}, \"hr\": {\"avg\": 156, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": -10.8, \"flags\": []}}]",
- "headline": "Les séances clés (MP, VMA) s'effondrent systématiquement alors que les footings dégénèrent en sorties longues avec fatigue mécanique réelle — il faut resynchroniser le plan avec ce que le corps peut vraiment faire maintenant.",
- "analysis": "Sur 14 jours, 5 séances clés sur 7 sont en échec ou très sous-volume (40-70% du prévu), avec des allures 60 à 100s/km plus lentes que la cible marathon ou VMA — ce n'est pas un hasard isolé, c'est un pattern. En parallèle, les footings faciles et récup explosent en volume (150 à 200%+) avec des flags stance_fade/step_fade répétés (23/09, 25/09, 30/09) : contact au sol qui s'allonge de 13 à 30%, foulée qui se contracte de 20%+ en fin de sortie — c'est une fatigue mécanique réelle, pas juste de la chaleur. Les deux sorties longues (20/09, 27/09) montrent en revanche un aérobie solide, decoupling très correct (1 à -1,4%), donc le fond est là. Le vrai risque n'est pas cardio, c'est l'incohérence d'exécution : le plan prescrit de la structure (blocs MP, VMA calibrés) et Sébastien les abandonne en route pour improviser des efforts non cadrés sur ses sorties faciles, ce qui charge le mécanique sans construire l'allure spécifique. Focus de la semaine : sécuriser la SL signature du 04/10 en allégeant l'ambition du bloc MP, et retrouver une allure MP réalisable sur la séance du jour pour casser la spirale d'échecs avant qu'elle ne devienne une habitude. Attention particulière à l'Achille et au mécanique en fin de sortie — pas de sprint improvisé sur les footings tant que les flags fade persistent.",
+ "signature": "[{\"date\": \"2026-09-28\", \"title\": \"Repos + Muscu A\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-09-29\", \"title\": \"Footing 70' + 6 lignes droites\", \"type\": \"easy\", \"planned_km\": 14.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'15\\\"/km\", \"actual\": {\"km\": 13.4, \"pace_str\": \"5'14\\\"/km\", \"fc\": 136, \"cadence\": 177, \"duration_min\": 70}, \"splits\": \"1:5'27/127/178spm 2:5'19/132/178spm 3:5'19/132/178spm 4:5'13/134/178spm 5:5'18/135/178spm 6:5'10/137/176spm 7:5'16/141/176spm 8:5'12/140/176spm 9:5'13/138/178spm 10:5'07/138/178spm 11:5'04/134/176spm 12:5'10/137/178spm 13:5'13/138/176spm 14:5'20/138/178spm\", \"garmin\": {\"te_aero\": 3.1, \"te_ana\": 0.0, \"load\": 104.8, \"rpe\": 2.0, \"feel_label\": \"Très fort\", \"temp_c\": 23, \"balance_l\": 50.17, \"flags\": [], \"stance_drift_pct\": 2.5, \"step_drift_pct\": 3.2}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 96, \"pace_delta_s\": -1}, \"hr\": {\"avg\": 136, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": -1.3, \"flags\": []}}, {\"date\": \"2026-09-30\", \"title\": \"PISTE — 6 × 1000 m\", \"type\": \"intervals\", \"planned_km\": 17.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'32\\\"/km\", \"actual\": {\"km\": 20.2, \"pace_str\": \"4'55\\\"/km\", \"fc\": 156, \"cadence\": 171, \"duration_min\": 99}, \"splits\": \"1:5'21/129/178spm 2:5'10/145/178spm 3:5'09/147/176spm 4:5'08/148/176spm 5:5'15/143/176spm 6:3'46/165/182spm 7:4'18/169/178spm 8:3'42/173/182spm 9:4'18/174/176spm 10:3'41/176/180spm 11:4'15/175/176spm 12:3'42/177/180spm 13:4'25/175/174spm 14:3'39/177/178spm 15:4'23/176/174spm 16:3'41/179/180spm 17:4'20/178/172spm 18:3'30/182/180spm 19:7'53/161/138spm 20:3'29/177/182spm 21:7'53/159/136spm 22:3'28/178/182spm 23:8'23/157/130spm 24:3'27/176/182spm 25:8'09/160/132spm 26:3'29/178/182spm 27:7'53/159/136spm 28:3'22/181/180spm 29:8'02/162/148spm 30:5'30/155/176spm (+5 laps)\", \"garmin\": {\"te_aero\": 4.9, \"te_ana\": 3.2, \"load\": 411.7, \"rpe\": 9.0, \"feel_label\": \"Fort\", \"temp_c\": 26, \"balance_l\": 50.39, \"flags\": [\"stance_fade\", \"step_fade\"], \"stance_drift_pct\": 13.4, \"step_drift_pct\": -21.3}, \"score\": {\"points\": 98, \"verdict\": \"success\", \"volume_pct\": 119, \"pace_delta_s\": 4}, \"hr\": {\"avg\": 156, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": -10.8, \"flags\": []}}]|a4f4eeb2e7",
+ "plan_hash": "a4f4eeb2e7",
+ "headline": "Quatre semaines à plus de 100% du volume, 9 séances clés sur 9 réussies — mais la fatigue mécanique s'accumule sur les trois dernières intensités.",
+ "analysis": "Le fond est solide : semaine 4 à 103% du volume avec 3/3 clés, semaine 6 à 108% avec 3/3 clés, et les allures progressent concrètement — ta deuxième sortie longue (27/09) boucle le finish à 3'55-4'09/km avec un decoupling de -1,4%, meilleur que la première SL huit jours plus tôt. Le seuil spécifique du 25/09 (2×7km à 3'54-4'03/km contre 3'59 demandé) confirme que l'allure marathon devient confortable, FC stable à 164 moyenne. Le point qui mérite ton attention : sur les trois dernières séances clés d'intensité (23/09, 25/09, 30/09), le temps de contact au sol s'allonge de +13 à +30% et la foulée se raccourcit jusqu'à -21%, un vrai signal de fatigue mécanique, pas juste cardiaque — le decoupling cardiaque reste lui dans les clous (3 à -11%). Le RPE grimpe aussi en parallèle : 7, puis 8, puis 9 sur ces trois séances. Rien d'alarmant isolément, mais la répétition sur 3 séances d'affilée avec ton historique Achille mérite qu'on lève le pied sur l'intensité pure cette semaine, pas sur le volume. La semaine qui vient est chargée (seuil long, SL 28km avec 2×9km spécifique, piste courte, puis le 20km de Paris en test) : le focus est de tenir les allures sans forcer les intervalles courtes du 07/10 si les jambes signalent la même fatigue.",
  "forme": {
-  "score": 58,
+  "score": 79,
   "verdict": "surveiller",
-  "headline": "Fond solide, mais clés ratées et fatigue mécanique en fin de sortie",
-  "detail": "Tes sorties longues tournent bien (decoupling 1 à -1,4%), mais 5 séances clés sur 7 sont en échec net avec des écarts d'allure énormes (jusqu'à +107s/km sur le VMA du 29/09). Trois footings sur deux semaines montrent un allongement du contact au sol de +13 à +30% et une foulée qui se raccourcit de 20%+ en fin de sortie — c'est mécanique, pas juste cardiaque. Priorité : retrouver une allure MP tenable sur les prochains blocs et stopper les accélérations improvisées en fin de footing.",
+  "headline": "Allures qui progressent, fatigue mécanique qui s'installe",
+  "detail": "Le decoupling cardiaque est excellent sur toutes les séances clés (≤4%, jusqu'à -11% sur les intervalles), preuve que le moteur aérobie tient. Mais le stance_drift a grimpé à +30% puis +13% sur deux des trois dernières séances d'intensité, avec RPE 7→8→9 : c'est une tendance mécanique, pas un aléa météo. Focus cette semaine : garder les séances clés mais rester attentif aux sensations sur l'Achille/mollets avant le 20km de Paris.",
   "indicateurs": {
    "fraicheur": {
-    "valeur": "dette",
+    "valeur": "RPE 7→9",
     "trend": "down",
     "etat": "watch",
-    "note": "charge footings x3-4"
+    "note": "charge qui monte 3 clés"
    },
    "compliance": {
-    "valeur": "1/7 clés réussies",
-    "trend": "down",
-    "etat": "alert",
-    "note": "clés systématiquement ratées"
+    "valeur": "4 sem >100%, 9/9 clés",
+    "trend": "up",
+    "etat": "ok",
+    "note": "série intacte"
    },
    "aerobie": {
-    "valeur": "1 à -1,4%",
-    "trend": "flat",
+    "valeur": "decoupling ≤4%",
+    "trend": "up",
     "etat": "ok",
-    "note": "decoupling SL correct"
+    "note": "finish négatifs tenus"
    },
    "achille": {
-    "valeur": "3 flags fade/14j",
+    "valeur": "stance +13 à +30%",
     "trend": "down",
     "etat": "watch",
-    "note": "fatigue mécanique fin sortie"
+    "note": "fatigue méca répétée"
    }
   }
  },
@@ -40,13 +41,22 @@
   {
    "severity": "minor",
    "kind": "add_note",
-   "date": "2026-10-03",
+   "date": "2026-10-02",
    "field": "description_note",
-   "new_value": "Garde ce footing en footing : pas d'accélérations improvisées en fin de sortie. Les 2 dernières fois (23/09, 30/09) tu as ajouté des segments rapides non prévus en fin de footing avec une nette dégradation de la foulée (contact au sol +13 à +30%, longueur de foulée -20%) — c'est un signal mécanique, pas juste cardio. Si tu veux de l'intensité, garde-la pour les séances dédiées.",
-   "reason": "3 footings sur 14 jours (23/09, 25/09, 30/09) transformés en sorties longues avec sprints finaux et flags stance_fade/step_fade marqués — risque tendon/mécanique à sécuriser avant la SL signature.",
-   "replacement": null,
-   "id": "3c0af43d",
-   "detail": "2026-10-03 : note ajoutée"
+   "new_value": "Avant de partir sur les 3×10' au seuil : les 3 dernières séances clés montrent un allongement du temps de contact (+13 à +30%) et RPE qui grimpe à 9. Si les mollets/Achille tirent dès le 1er bloc, coupe à 2×10' plutôt que forcer le 3e.",
+   "reason": "Pattern de fatigue mécanique répété sur 3 séances clés consécutives (23, 25, 30/09), historique Achille à protéger avant le 20km test.",
+   "id": "a943ebef",
+   "detail": "2026-10-02 : note ajoutée"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-10-07",
+   "field": "description_note",
+   "new_value": "Piste courte 4 jours avant le 20km de Paris : vise la qualité des 6×500m, pas la quantité. Si le contact au sol se dégrade comme sur les séances du 23 et 30/09 (stance_fade/step_fade), arrête à 4 répétitions.",
+   "reason": "Deux des trois dernières séances d'intensité ont déclenché les flags stance_fade/step_fade ; cette séance arrive juste avant la course-test, pas le moment d'accumuler de la fatigue mécanique supplémentaire.",
+   "id": "56906701",
+   "detail": "2026-10-07 : note ajoutée"
   }
  ],
  "pending": []
