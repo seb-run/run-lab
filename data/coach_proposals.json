@@ -3,42 +3,6 @@
   {
    "severity": "major",
    "kind": "change_pace",
-   "date": "2026-09-13",
-   "field": null,
-   "new_value": "Réduction du volume et de l'allure MP du long run du jour",
-   "reason": "Le seuil à 3'56/km a été raté à 36% du volume il y a 3 jours (5'03 réalisé). Viser 3'53/km sur 12km aujourd'hui est hors de portée et risqué vu la fatigue mécanique documentée (step_drift -11.8%, flag step_fade).",
-   "replacement": {
-    "title": "SL 26km · 10km MP stratégie",
-    "type": "long_mp",
-    "km": 26.0,
-    "target_pace": "4'16\"/km",
-    "description": "Sortie longue en endurance à 4'51/km, avec un bloc de 10km à allure stratégie 4'16/km inséré au milieu (pas 3'53). Si les jambes sont lourdes après 5km à ce rythme, reviens en endurance sans forcer. Bois régulièrement, surveille la FC plus que l'allure vu la chaleur possible."
-   },
-   "id": "c5709bd8",
-   "status": "expired",
-   "created_at": "2026-09-13T17:59:19"
-  },
-  {
-   "severity": "major",
-   "kind": "change_pace",
-   "date": "2026-09-15",
-   "field": null,
-   "new_value": "VMA allégée en intensité et volume",
-   "reason": "Le 6×800m à 3'39/km a été raté à 60% du volume avec 80-90s/km de retard. Enchaîner du 5×1000m à 3'28/km (plus rapide encore) sur une semaine déjà en échec sur les séances clés va juste confirmer l'échec et taper sur le moral et les jambes.",
-   "replacement": {
-    "title": "VMA courte 5×800m",
-    "type": "intervals",
-    "km": 12.0,
-    "target_pace": "3'45\"/km",
-    "description": "5×800m à 3'45/km (allure 10k, pas VMA pure) avec 2min30 de récup trot. Objectif : retrouver des allures tenues et propres, pas la vitesse max. Si dès le 3e répétition tu es au-dessus de 3'50/km, arrête là et termine en footing."
-   },
-   "id": "89d37e28",
-   "status": "expired",
-   "created_at": "2026-09-13T17:59:19"
-  },
-  {
-   "severity": "major",
-   "kind": "change_pace",
    "date": "2026-09-15",
    "field": null,
    "new_value": "Allure 10k/seuil au lieu de VMA pure, volume réduit",
@@ -501,7 +465,7 @@
    "reason": "Tendance à doubler le volume des footings (254%, 207%, 163% du prévu) juste avant les séances clés qui échouent ensuite.",
    "id": "c8fda0c6",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
+   "status": "expired",
    "created_at": "2026-09-30T11:23:31"
   },
   {
@@ -514,6 +478,42 @@
    "id": "6cecfe50",
    "status": "pending",
    "created_at": "2026-09-30T11:23:31"
+  },
+  {
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-10-01",
+   "field": null,
+   "new_value": "allure strategy 4'16/km au lieu de 4'12/km sur le bloc MP",
+   "reason": "2 des 3 derniers mp_run ont été abandonnés à 40-54% du volume avec un écart d'allure de +60 à +70s/km vs la cible 4'12. Revenir sur l'allure strategy doit permettre de terminer le bloc et de reconstruire la confiance avant la SL signature.",
+   "replacement": {
+    "title": "15km allure marathon (stratégie)",
+    "type": "mp_run",
+    "km": 18.0,
+    "target_pace": "4'16\"/km",
+    "description": "Échauffe 3km facile. Bloc de 12km à 4'16/km max (pas 4'12), en te concentrant sur la régularité km après km plutôt que la vitesse. Si à mi-bloc la FC grimpe fort ou les jambes lâchent, termine en footing plutôt que d'abandonner complètement — note tes sensations réelles sur la montre."
+   },
+   "id": "75a25c98",
+   "status": "pending",
+   "created_at": "2026-10-01T11:06:08"
+  },
+  {
+   "severity": "major",
+   "kind": "restructure_week",
+   "date": "2026-10-04",
+   "field": null,
+   "new_value": "Réduire le bloc MP de 20km à 14km et baisser l'allure à 4'16/km, volume total ramené à 28km",
+   "reason": "La dernière SL avec bloc MP (27/09) a été écourtée à 73% du volume avec un stance_drift de -9,9% et step_drift +16,7% signe de fatigue mécanique en fin de sortie, et l'allure MP n'a été tenue que sur une fraction du bloc prévu. Enchaîner directement sur 20km MP à 4'12 dans ces conditions est un risque de blessure et d'échec supplémentaire sur ta séance la plus importante du bloc spécifique.",
+   "replacement": {
+    "title": "SL signature 28km · 14km MP",
+    "type": "long_mp",
+    "km": 28.0,
+    "target_pace": "4'16\"/km",
+    "description": "14km d'échauffement progressif en footing (5'00 à 4'40/km), puis bloc de 14km à 4'16/km max — pas 4'12. Retour calme sur les 2 derniers km. Objectif : terminer le bloc MP en entier et stable, pas vite. Si le mécanique (foulée, Achille) tire en fin de bloc, coupe et termine en footing."
+   },
+   "id": "42ca6cac",
+   "status": "pending",
+   "created_at": "2026-10-01T11:06:08"
   }
  ]
 }

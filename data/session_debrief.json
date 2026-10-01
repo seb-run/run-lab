@@ -1,45 +1,45 @@
 {
- "headline": "Footing prévu transformé en fractionné : 20km au lieu de 14, RPE 9/10.",
+ "headline": "Sortie légère, pas le bloc allure marathon prévu (15km à 4'12).",
  "bullets": [
-  "FC moy 156 vs 147 hab. (réf 60j) à allure similaire, mais séance beaucoup plus intense en réalité",
-  "Équilibre gauche 50,4% quasi identique à ta réf (50,25%) : rien pour l'Achille",
-  "Asym_vs_allure -0,21 : l'asymétrie ne s'ouvre pas avec la vitesse, signal rassurant côté adducteur"
+  "Allure 5'17/km, +65\"/km vs cible 4'12, et 9s plus lent que tes sorties comparables (5'08).",
+  "FC 145 bpm, identique à ta réf (145.3) : effort cohérent, pas de dérive cardiaque.",
+  "9 km parcourus sur 21.4 prévus (42%) : le bloc allure marathon n'a pas eu lieu."
  ],
  "points": [
   {
+   "label": "Allure",
+   "valeur": "5'17/km",
+   "ecart": "+9s vs réf. comparable 5'08/km",
+   "lecture": "plus lent que d'habitude à cet effort",
+   "ton": "neutre"
+  },
+  {
    "label": "FC moyenne",
-   "valeur": "156 bpm",
-   "ecart": "+8,7 vs réf 147,3",
-   "lecture": "Effort réel plus dur qu'un footing",
+   "valeur": "145 bpm",
+   "ecart": "identique à ta réf. 60j",
+   "lecture": "effort cardiaque conforme, rien d'anormal",
+   "ton": "bon"
+  },
+  {
+   "label": "Volume",
+   "valeur": "9.01 km",
+   "ecart": "-12.4 km vs plan (21.4 km)",
+   "lecture": "bloc allure marathon non réalisé",
    "ton": "vigilance"
-  },
-  {
-   "label": "Équilibre gauche",
-   "valeur": "50,4%",
-   "ecart": "+0,14 vs réf 50,25%",
-   "lecture": "Stable, pas de décharge côté droit",
-   "ton": "bon"
-  },
-  {
-   "label": "Asym vs allure",
-   "valeur": "-0,21",
-   "ecart": "proche de 0",
-   "lecture": "N'augmente pas avec la vitesse",
-   "ton": "bon"
   }
  ],
- "achille": "Équilibre 50,4% vs 50,25% habituel : rien à signaler ce jour.",
- "a_surveiller": "14km conversationnel prévu → 20km avec relances à 3'40-3'50/km, RPE 9 : charge non planifiée.",
+ "achille": null,
+ "a_surveiller": "Pas de données équilibre/contact au sol (sans ceinture) : rien à dire sur Achille ou adducteur.",
  "seance": {
-  "date": "30/09/2026",
-  "heure": "19:28",
-  "titre": "i192017036",
-  "type_detecte": "frac_court",
-  "km": 20.21,
-  "duree": "1h 39m 21s",
-  "allure": "4'55\"/km",
-  "fc_moy": 156
+  "date": "01/10/2026",
+  "heure": "12:14",
+  "titre": "Course à pied le midi",
+  "type_detecte": "endurance",
+  "km": 9.01,
+  "duree": "47m 31s",
+  "allure": "5'17\"/km",
+  "fc_moy": 145
  },
- "generated_at": "2026-09-30T19:48:25",
- "baseline_n": 32
+ "generated_at": "2026-10-01T11:06:35",
+ "baseline_n": 30
 }

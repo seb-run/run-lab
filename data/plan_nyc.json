@@ -3400,8 +3400,100 @@
           "target_pace": "4'12\"/km",
           "date": "2026-10-01",
           "dow": "Thu",
-          "status": "pending",
-          "actual": null
+          "status": "under",
+          "actual": {
+            "km": 9.0,
+            "duration_min": 48,
+            "pace_sec": 317,
+            "pace_str": "5'17\"/km",
+            "fc": 145,
+            "cadence": 179,
+            "type": "endurance",
+            "title": "Course à pied le midi",
+            "n": 1,
+            "note": null,
+            "dyn": null,
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 324,
+                "fc": 146,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 321,
+                "fc": 147,
+                "ca": 181
+              },
+              {
+                "km": 1.0,
+                "ps": 311,
+                "fc": 138,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 312,
+                "fc": 141,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 315,
+                "fc": 142,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 306,
+                "fc": 146,
+                "ca": 182
+              },
+              {
+                "km": 1.0,
+                "ps": 319,
+                "fc": 149,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 326,
+                "fc": 146,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 314,
+                "fc": 148,
+                "ca": 177
+              }
+            ]
+          },
+          "score": {
+            "points": 2,
+            "verdict": "failed",
+            "verdict_label": "Échouée",
+            "volume_pct": 42,
+            "volume_points": 4,
+            "pace_points": 0,
+            "pace_target_s": 252,
+            "pace_actual_s": 317,
+            "pace_actual_str": "5'17\"/km",
+            "pace_delta_s": 65,
+            "is_quality": true,
+            "hr": {
+              "avg": 145,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 6.6,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 42%",
+              "Allure +65\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-10-02",
@@ -3436,6 +3528,10 @@
             {
               "kind": "note",
               "text": "Repos actif ce jour : allure très cool, coupe s'il fait chaud. Priorité absolue = arriver frais dimanche pour la SL signature 30km (séance clé de la phase peak)."
+            },
+            {
+              "kind": "note",
+              "text": "Garde ce footing en footing : pas d'accélérations improvisées en fin de sortie. Les 2 dernières fois (23/09, 30/09) tu as ajouté des segments rapides non prévus en fin de footing avec une nette dégradation de la foulée (contact au sol +13 à +30%, longueur de foulée -20%) — c'est un signal mécanique,"
             }
           ]
         },
@@ -3461,22 +3557,22 @@
           "_adapt_volume": true
         }
       ],
-      "volume_actual_to_date": 13.4,
-      "volume_planned_to_date": 19.2,
-      "volume_drift_pct": -30.2,
+      "volume_actual_to_date": 33.6,
+      "volume_planned_to_date": 33.1,
+      "volume_drift_pct": 1.5,
       "compliance": {
-        "km_pct": 70,
-        "km_done": 13.4,
-        "km_planned": 19.2,
-        "km_done_week": 33.6,
+        "km_pct": 102,
+        "km_done": 33.6,
+        "km_planned": 33.1,
+        "km_done_week": 42.6,
         "km_planned_week": 110.9,
-        "sessions_done": 1,
-        "sessions_planned": 1,
-        "sessions_done_week": 2,
+        "sessions_done": 2,
+        "sessions_planned": 2,
+        "sessions_done_week": 3,
         "keys_success": 0,
         "keys_total": 1,
-        "points": 55,
-        "verdict": "partial"
+        "points": 84,
+        "verdict": "success"
       }
     },
     {
