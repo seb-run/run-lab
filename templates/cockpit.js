@@ -152,8 +152,11 @@
   }
 
   // ---------------------------------------------------------------- feuille (sheet)
-  let sheet = null;
+  let sheet = null, closeTimer = null;
   function openSheet(html) {
+    // Une fermeture encore en cours (animation) ne doit pas cacher la feuille
+    // qu'on ouvre juste après : c'est ce qui faisait disparaître le formulaire.
+    clearTimeout(closeTimer);
     if (!sheet) {
       sheet = document.createElement('div');
       sheet.className = 'ck-sheet-bk'; sheet.hidden = true;
@@ -172,7 +175,8 @@
     if (!sheet || sheet.hidden) return;
     sheet.classList.remove('on');
     document.body.classList.remove('ck-lock');
-    setTimeout(() => { sheet.hidden = true; }, 220);
+    clearTimeout(closeTimer);
+    closeTimer = setTimeout(() => { sheet.hidden = true; }, 220);
   }
 
   // ---------------------------------------------------------------- Worker (décalage)
