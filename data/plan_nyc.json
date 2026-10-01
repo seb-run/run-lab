@@ -8546,26 +8546,21 @@
           }
         },
         {
+          "type": "long",
+          "title": "SORTIE LONGUE — 2 × 9 km à allure spécifique",
+          "km": 28.0,
+          "duration_min": 135,
+          "key": true,
+          "description": "4 km @ 5'00/km\n2 × (9 km @ 3'57–4'02/km / 2 km @ 4'50/km)\n2 km de retour au calme\n\n📊 POINT D'ÉTAPE N°2 : 18 km à allure spécifique dans une sortie de 28. C'est LA séance qui dit où tu en es — pour New York et, surtout, pour Milan.\n\nNutrition : flasque Maurten 320 (0–10 km) + Gel 160 aux km 12 et 22.\n[Allure spécifique marathon · 3'57–4'02/km]\nChaussures : Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
+          "target_pace": "3'59\"/km",
+          "target_pace_sec": 239,
+          "shoe": "Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
+          "scheduled_time": "07:45",
           "date": "2026-10-02",
           "dow": "Fri",
-          "type": "seuil",
-          "title": "SEUIL LONG — 3 × 10'",
-          "km": 15.0,
-          "duration_min": 80,
-          "key": true,
-          "description": "3 km d'échauffement\n3 × 10' @ 3'48–3'52/km, récupération 2'30\n2 km de retour au calme\n[Seuil · 3'47–3'53/km]\nChaussures : Adidas Evo SL neuve — réservée aux séances",
           "status": "pending",
-          "target_pace": "3'50\"/km",
-          "target_pace_sec": 230,
-          "shoe": "Adidas Evo SL neuve — réservée aux séances",
-          "scheduled_time": "06:15",
           "actual": null,
-          "coach_notes": [
-            {
-              "kind": "note",
-              "text": "Avant de partir sur les 3×10' au seuil : les 3 dernières séances clés montrent un allongement du temps de contact (+13 à +30%) et RPE qui grimpe à 9. Si les mollets/Achille tirent dès le 1er bloc, coupe à 2×10' plutôt que forcer le 3e."
-            }
-          ]
+          "moved_from": "2026-10-04"
         },
         {
           "date": "2026-10-03",
@@ -8584,20 +8579,27 @@
           "actual": null
         },
         {
+          "type": "seuil",
+          "title": "SEUIL LONG — 3 × 10'",
+          "km": 15.0,
+          "duration_min": 80,
+          "key": true,
+          "description": "3 km d'échauffement\n3 × 10' @ 3'48–3'52/km, récupération 2'30\n2 km de retour au calme\n[Seuil · 3'47–3'53/km]\nChaussures : Adidas Evo SL neuve — réservée aux séances",
+          "target_pace": "3'50\"/km",
+          "target_pace_sec": 230,
+          "shoe": "Adidas Evo SL neuve — réservée aux séances",
+          "scheduled_time": "06:15",
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Avant de partir sur les 3×10' au seuil : les 3 dernières séances clés montrent un allongement du temps de contact (+13 à +30%) et RPE qui grimpe à 9. Si les mollets/Achille tirent dès le 1er bloc, coupe à 2×10' plutôt que forcer le 3e."
+            }
+          ],
           "date": "2026-10-04",
           "dow": "Sun",
-          "type": "long",
-          "title": "SORTIE LONGUE — 2 × 9 km à allure spécifique",
-          "km": 28.0,
-          "duration_min": 135,
-          "key": true,
-          "description": "4 km @ 5'00/km\n2 × (9 km @ 3'57–4'02/km / 2 km @ 4'50/km)\n2 km de retour au calme\n\n📊 POINT D'ÉTAPE N°2 : 18 km à allure spécifique dans une sortie de 28. C'est LA séance qui dit où tu en es — pour New York et, surtout, pour Milan.\n\nNutrition : flasque Maurten 320 (0–10 km) + Gel 160 aux km 12 et 22.\n[Allure spécifique marathon · 3'57–4'02/km]\nChaussures : Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
           "status": "pending",
-          "target_pace": "3'59\"/km",
-          "target_pace_sec": 239,
-          "shoe": "Nike Zoom Fly 6 (neuves, reçues le 19/08) — 9,6 mm de drop, 40 mm au talon : séances longues à allure marathon",
-          "scheduled_time": "07:45",
-          "actual": null
+          "actual": null,
+          "moved_from": "2026-10-02"
         }
       ],
       "compliance": {
@@ -8674,6 +8676,10 @@
             {
               "kind": "note",
               "text": "Piste courte 4 jours avant le 20km de Paris : vise la qualité des 6×500m, pas la quantité. Si le contact au sol se dégrade comme sur les séances du 23 et 30/09 (stance_fade/step_fade), arrête à 4 répétitions."
+            },
+            {
+              "kind": "note",
+              "text": "Tiens-toi aux 12 km prévus, pas de rallonge sur les 6×500m. Les deux dernières pistes (23 et 30/09) ont montré un stance/step fade net en fin de séance quand le volume a dépassé 120% du prévu sous forte chaleur — hydrate-toi bien avant et pendant, et coupe la séance si la foulée se dégrade visibleme"
             }
           ]
         },
@@ -9089,5 +9095,12 @@
       ]
     }
   ],
-  "adaptations": []
+  "adaptations": [],
+  "moves": [
+    {
+      "at": "2026-10-01T19:31:43",
+      "from": "2026-10-02",
+      "to": "2026-10-04"
+    }
+  ]
 }

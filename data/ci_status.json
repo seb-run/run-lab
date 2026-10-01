@@ -1,14 +1,14 @@
 {
  "garmin": {
   "ok": true,
-  "at": "2026-10-01T19:28:35",
+  "at": "2026-10-01T19:31:52",
   "message": "0 fichier(s), 7 course(s) vues",
-  "last_ok": "2026-10-01T19:28:35"
+  "last_ok": "2026-10-01T19:31:52"
  },
  "coach": {
   "ok": true,
-  "at": "2026-10-01T19:02:03",
-  "last_ok": "2026-10-01T19:02:03"
+  "at": "2026-10-01T19:33:01",
+  "last_ok": "2026-10-01T19:33:01"
  },
  "debrief": {
   "ok": true,
@@ -20,5 +20,11 @@
   "at": "2026-08-23T19:51:16",
   "message": "reject 05905cbb",
   "last_ok": "2026-08-23T19:51:16"
+ },
+ "move": {
+  "ok": true,
+  "at": "2026-10-01T19:31:43",
+  "message": "2026-10-02 ⇄ 2026-10-04 : « SEUIL LONG — 3 × 10' » ↔ « SORTIE LONGUE — 2 × 9 km à allure spécifique »",
+  "last_ok": "2026-10-01T19:31:43"
  }
 }
