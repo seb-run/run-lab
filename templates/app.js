@@ -1935,8 +1935,8 @@
       }
     }
 
-    function openModal() {
-      const iso = nextWednesdayIso();
+    function openModal(isoArg) {
+      const iso = (typeof isoArg === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(isoArg)) ? isoArg : nextWednesdayIso();
       const found = typeof planFindDay === 'function' ? planFindDay(iso) : null;
       const d = found ? found.day : null;
       const dateLabel = (new Date(iso)).toLocaleDateString('fr-FR', {weekday: 'long', day: 'numeric', month: 'long'});

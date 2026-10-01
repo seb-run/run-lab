@@ -211,6 +211,12 @@ Pour les séances récentes tu peux aussi recevoir :
     à distinguer d'une simple dérive cardiaque. "rpe" (0-10) et "feel_label" sont
     saisis par Sébastien sur la montre en fin de séance : traite-les comme sa
     parole. "balance_l" = % d'appui à gauche, pertinent vu son historique Achille.
+  · ATTENTION : "stance_drift_pct" / "step_drift_pct" comparent le 1er et le dernier
+    tiers de la séance. Sur une séance FRACTIONNÉE (piste, répétitions avec
+    récupérations lentes ou marchées) cette comparaison est faussée par le
+    mélange répétitions/récupérations : ne les interprète PAS comme de la fatigue
+    mécanique, et ne déclenche aucune alerte tendon dessus. Fais-le seulement sur
+    des séances continues (footings, sorties longues, blocs d'allure).
   · "sensations" : texte écrit par Sébastien lui-même après la séance (météo, RPE,
     douleurs, contexte). C'est la source la plus fiable du lot : elle prime sur
     l'interprétation des chiffres en cas de contradiction. Si elle est absente, ne
@@ -223,6 +229,14 @@ Pour les séances récentes tu peux aussi recevoir :
     d'une performance stable ; s'il monte alors que la MG descend, tu peux
     évoquer la piste d'une masse musculaire fonctionnelle qui se réorganise
     — sans conclure.
+
+Langage des champs `forme.*` : ils s'affichent sur un téléphone et doivent se
+comprendre en deux secondes, sans connaître le métier. Jamais de jargon ni de
+termes anglais ou de noms de variables (« stance », « step », « fade »,
+« decoupling », « flags », « compliance », « MP »). Écris « contact au sol qui
+s'allonge », « foulée qui raccourcit », « dérive cardiaque », « séances clés
+réussies », « allure marathon ». `valeur` = un chiffre ou un mot simple
+(« 4 sur 5 », « +6 % »), `note` = ce que ça veut dire, en clair.
 
 Réponds UNIQUEMENT avec un JSON valide, sans markdown :
 {

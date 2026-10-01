@@ -298,3 +298,35 @@ body[data-tab="race"] .hero-counters { display: none; }
 .hero-inner { padding-bottom: 6px; }
 #ckStats .hero-counters { display: flex !important; margin-bottom: 12px; }
 #ckStats .hero-row-2 { display: block !important; }
+
+/* ------------------------------------------------------------- détail d'un indicateur */
+button.ck-tile { text-align: left; width: 100%; font: inherit; color: var(--text); cursor: pointer; -webkit-tap-highlight-color: transparent; transition: transform .12s; }
+button.ck-tile:active { transform: scale(.98); }
+.ck-tile-more { display: inline-flex; align-items: center; gap: 2px; margin-top: 8px; font-size: 12px; font-weight: 700; color: var(--t); }
+.ck-ind { --t: var(--ck-grey); }
+.ck-ind.ck-ok { --t: var(--ck-green); } .ck-ind.ck-watch { --t: var(--ck-amber); } .ck-ind.ck-alert { --t: var(--ck-red); }
+.ck-ind-now { display: flex; flex-direction: column; gap: 4px; margin-top: 12px; padding: 14px; border-radius: 16px; background: color-mix(in srgb, var(--t) 11%, var(--surface-2)); border: 1px solid color-mix(in srgb, var(--t) 30%, var(--border)); }
+.ck-ind-now b { font-size: 26px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; }
+.ck-ind-now span { display: flex; align-items: center; gap: 6px; font-size: 14.5px; color: var(--t); font-weight: 650; }
+.ck-list { display: flex; flex-direction: column; gap: 6px; }
+.ck-li { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 12px; background: var(--surface-2); border: 1px solid var(--border); }
+.ck-li > div:first-child { flex: 1; min-width: 0; }
+.ck-li b { display: block; font-size: 14px; font-weight: 700; }
+.ck-li span { display: block; margin-top: 2px; font-size: 13px; color: var(--text-2); font-variant-numeric: tabular-nums; }
+.ck-li em { flex: none; display: inline-flex; font-style: normal; }
+.ck-li-ok em { color: var(--ck-green); } .ck-li-partial em { color: var(--ck-amber); } .ck-li-fail em, .ck-li-miss em { color: var(--ck-red); }
+.ck-li .ck-bar { flex: 0 0 70px; margin: 0; }
+.ck-scale { display: flex; flex-direction: column; gap: 6px; }
+.ck-scale div { display: flex; gap: 10px; font-size: 13.5px; line-height: 1.35; }
+.ck-scale b { flex: 0 0 96px; font-weight: 750; }
+.ck-scale span { color: var(--text-2); }
+
+/* ------------------------------------------------------------- piste Harbat */
+.ck-harbat { display: flex; align-items: center; gap: 12px; margin: 0 0 12px; padding: 12px; border-radius: 16px; background: color-mix(in srgb, var(--ck-red) 9%, var(--surface)); border: 1px solid color-mix(in srgb, var(--ck-red) 30%, var(--border)); flex-wrap: wrap; }
+.ck-harbat-ico { flex: none; width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; color: #fff; background: var(--ck-red); }
+.ck-harbat-main { flex: 1; min-width: 160px; }
+.ck-harbat-main b { display: block; font-size: 15px; font-weight: 750; }
+.ck-harbat-main span { display: block; margin-top: 2px; font-size: 13px; line-height: 1.35; color: var(--text-2); }
+.ck-ref { margin-top: 6px; font-size: 11.5px; color: var(--ck-green); font-weight: 600; line-height: 1.2; }
+.ck-ref b { font-weight: 800; }
+.ck-li-na em { color: var(--text-3); } .ck-li-na { opacity: .8; }

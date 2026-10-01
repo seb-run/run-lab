@@ -304,11 +304,12 @@
       const v = (FORME.indicateurs || {})[def.k];
       if (!v) return '';
       const etat = ETAT[v.etat] || 'watch';
-      return `<div class="ck-tile ck-${etat}">
+      return `<button type="button" class="ck-tile ck-${etat}" data-ind="${def.k}" aria-label="${def.l} : détails">
         <div class="ck-tile-h">${svg(def.i, 15)}<span>${def.l}</span><em>${svg(trendIcon(v.trend), 15)}</em></div>
         <div class="ck-tile-v">${esc(v.valeur)}</div>
         <div class="ck-tile-n">${esc(v.note)}</div>
-      </div>`;
+        <div class="ck-tile-more">Comprendre ${svg('chevR', 12)}</div>
+      </button>`;
     }).join('');
     host.innerHTML = `
       <section class="ck-hero" style="--tone:${tone.c}">
@@ -428,6 +429,7 @@
     const host = $('#ckHomeWeek'); if (!host) return;
     const w = weeks[currentWeekIdx()]; if (!w) { host.innerHTML = ''; return; }
     host.innerHTML = `<section class="ck-card">${weekStrip(w, true)}
+      ${harbatCard(null)}
       <div class="ck-actions"><button class="ck-btn" type="button" data-goto-plan>Voir tout le plan ${svg('chevR', 14)}</button></div></section>`;
   }
 
@@ -474,6 +476,7 @@
         <span>${fmtKm(st.done)} faits sur ${fmtKm(st.planned)}${st.keys ? ` · clés ${st.keysDone}/${st.keys}` : ''}</span></div>
       <div class="ck-bar ck-bar-lg"><i style="width:${pct}%"></i></div>
       ${src ? `<div class="ck-banner">${svg('swap', 16)}<span>Échange <b>${esc(src.title)}</b> (${esc(fmtDay(src.date))}) avec un autre jour.</span><button type="button" class="ck-btn ck-btn-sm" data-cancel-move>Annuler</button></div>` : ''}
+      ${harbatCard(w)}
       <div class="ck-rows">${rows}</div>`;
   }
 
@@ -587,6 +590,134 @@
     } catch (e) { toast('Échec : ' + (e && e.message ? e.message : 'réseau'), 'err'); }
   }
 
+
+  // ---------------------------------------------------------------- détail d'un indicateur de forme
+  const IND_INFO = {
+    fraicheur: {
+      q: 'Fraîcheur : as-tu bien récupéré ?',
+      what: "Compare ce que tu as couru ces 7 derniers jours à ton rythme habituel des 3 semaines d'avant. Beaucoup plus que d'habitude = « dette » de fatigue à rembourser par du repos ou des footings faciles.",
+      scale: [['Équilibre', 'ta charge récente ≈ ton habitude'], ['Dette', 'plus de +15 % vs ton habitude : récupération à soigner'], ['Frais', 'moins que d\'habitude : prêt à frapper fort']],
+    },
+    compliance: {
+      q: 'Plan tenu : fais-tu ce qui est prévu ?',
+      what: "Sur les 14 derniers jours : combien de séances clés (les plus importantes du plan : allure marathon, fractionné, sortie longue) tu as réussies, c'est-à-dire réalisées à la bonne allure et sur la bonne distance.",
+      scale: [['Réussie', 'score 70/100 ou plus'], ['Partielle', 'entre 40 et 70 : distance ou allure à moitié tenue'], ['Ratée', 'moins de 40 : on ne compte pas, ce n\'est pas grave isolément']],
+    },
+    achille: {
+      q: 'Achille : le tendon et la mécanique tiennent-ils ?',
+      what: "Ta ceinture cardio mesure deux choses à chaque foulée. Le « temps de contact au sol » (combien de temps le pied reste posé) et la « longueur de foulée ». Quand, en fin de sortie, le contact s'allonge ou la foulée raccourcit, c'est le signe que les muscles et tendons se fatiguent. Avec ta tendinopathie de l'Achille droit, c'est le signal à surveiller en premier.",
+      scale: [['Contact au sol', 'alerte si +4 % ou plus entre le début et la fin de la sortie'], ['Foulée', 'alerte si −3 % ou plus (elle raccourcit)'], ['Une fois', 'pas grave. Trois fois en deux semaines : on allège']],
+    },
+    aerobie: {
+      q: 'Aérobie : ton moteur tient-il la distance ?',
+      what: "La « dérive cardiaque » : de combien ton cœur accélère entre la 1re et la 2e moitié d'une sortie à allure constante. Moins elle monte, meilleur est ton endurance. C'est l'indicateur qui prédit le mieux un bon marathon.",
+      scale: [['Moins de 3 %', 'excellent'], ['3 à 5 %', 'bon'], ['Plus de 5 %', 'à travailler (chaleur et fatigue comptent aussi)']],
+    },
+  };
+  function recentActual(daysBack) {
+    const from = isoLocal(new Date(parse(TODAY).getTime() - daysBack * 864e5));
+    return allDays().filter(d => d.date >= from && d.date <= TODAY && d.actual).sort((a, b) => b.date.localeCompare(a.date));
+  }
+  const pct = (n) => (n > 0 ? '+' : n < 0 ? '−' : '') + Math.abs(n).toString().replace('.', ',') + ' %';
+  function indicatorData(key) {
+    if (key === 'compliance') {
+      const rows = recentActual(14).filter(d => d.key).map(d => {
+        const s = dayState(d);
+        return { ok: s.k, l: fmtDay(d.date) + ' · ' + d.title, r: (s.pts != null ? s.pts + '/100' : s.label) + (d.score && d.score.reasons && d.score.reasons.length ? ' — ' + d.score.reasons.join(', ') : '') };
+      });
+      const missed = allDays().filter(d => d.key && d.date < TODAY && d.date >= isoLocal(new Date(parse(TODAY).getTime() - 14 * 864e5)) && !isDone(d) && d.type !== 'rest');
+      missed.forEach(d => rows.push({ ok: 'miss', l: fmtDay(d.date) + ' · ' + d.title, r: 'Non réalisée' }));
+      return rows.sort((a, b) => 0);
+    }
+    if (key === 'achille') {
+      return recentActual(21).filter(d => d.actual.dyn && d.actual.dyn.drift).map(d => {
+        const dr = d.actual.dyn.drift, st = dr.stance && dr.stance.pct, sp = dr.step && dr.step.pct;
+        const bad = (st != null && st > 4) || (sp != null && sp < -3);
+        // Sur une séance fractionnée, le 1er et le dernier tiers n'ont pas le même
+        // mélange de répétitions et de récupérations : la comparaison est faussée.
+        const interval = ['intervals', 'seuil'].includes(d.type) || /piste|\d\s*[×x]\s*\d/i.test(d.title || '');
+        return { ok: interval ? 'na' : bad ? 'fail' : 'ok', l: fmtDay(d.date) + ' · ' + fmtKm(d.actual.km),
+          r: (st != null ? 'contact au sol ' + pct(st) : '') + (sp != null ? ' · foulée ' + pct(sp) : '') + (interval ? ' — séance fractionnée : mesure peu fiable' : '') };
+      });
+    }
+    if (key === 'aerobie') {
+      return recentActual(35).filter(d => d.actual.km >= 14 && d.score && d.score.hr && d.score.hr.decoupling_pct != null).map(d => {
+        const v = d.score.hr.decoupling_pct;
+        return { ok: v <= 5 ? 'ok' : 'partial', l: fmtDay(d.date) + ' · ' + fmtKm(d.actual.km), r: 'dérive cardiaque ' + pct(v) };
+      });
+    }
+    if (key === 'fraicheur') {
+      const idx = currentWeekIdx();
+      return weeks.slice(Math.max(0, idx - 3), idx + 1).map((w, i, arr) => {
+        const st = weekStats(w), cur = i === arr.length - 1;
+        return { ok: 'bar', l: 'Semaine ' + w.week_num + (cur ? ' (en cours)' : ''), r: fmtKm(st.done) + (cur ? ' faits sur ' : ' sur ') + fmtKm(st.planned), v: st.planned ? Math.min(100, st.done / st.planned * 100) : 0 };
+      });
+    }
+    return [];
+  }
+  function openIndicator(key) {
+    const info = IND_INFO[key], v = FORME && FORME.indicateurs && FORME.indicateurs[key];
+    if (!info || !v) return;
+    const etat = ETAT[v.etat] || 'watch';
+    const def = IND.find(x => x.k === key);
+    const rows = indicatorData(key);
+    openSheet(`
+      <div class="ck-ind ck-${etat}">
+        <span class="ck-sheet-tag" style="--c:var(--t)">${svg(def.i, 14)} ${esc(def.l)}</span>
+        <h3 class="ck-sheet-h">${esc(info.q)}</h3>
+        <div class="ck-ind-now"><b>${esc(v.valeur)}</b><span>${svg(trendIcon(v.trend), 16)} ${esc(v.note)}</span></div>
+      </div>
+      <div class="ck-sheet-sec"><h4>En clair</h4><p>${esc(info.what)}</p></div>
+      <div class="ck-sheet-sec"><h4>Tes derniers chiffres</h4>
+        ${rows.length ? `<div class="ck-list">${rows.map(r => `<div class="ck-li ck-li-${r.ok}"><div><b>${esc(r.l)}</b><span>${esc(r.r)}</span></div>${r.ok === 'bar' ? `<div class="ck-bar"><i style="width:${r.v}%"></i></div>` : `<em>${r.ok === 'ok' ? svg('check', 15) : r.ok === 'na' ? svg('info', 15) : svg('cross', 15)}</em>`}</div>`).join('')}</div>`
+          : '<p class="ck-muted">Pas encore de mesure exploitable sur cette période' + (key === 'achille' ? ' (la ceinture cardio est nécessaire pour mesurer le contact au sol).' : '.') + '</p>'}
+      </div>
+      <div class="ck-sheet-sec"><h4>Pour t'y retrouver</h4>
+        <div class="ck-scale">${info.scale.map(x => `<div><b>${esc(x[0])}</b><span>${esc(x[1])}</span></div>`).join('')}</div>
+      </div>
+      ${FORME.detail ? `<div class="ck-sheet-sec"><h4>Lecture du coach</h4><p>${esc(FORME.detail)}</p></div>` : ''}`);
+  }
+
+  // ---------------------------------------------------------------- piste Harbat (mercredi soir)
+  function nextWedWithin(w) {
+    const pool = w ? w.days : allDays();
+    return pool.filter(x => parse(x.date).getDay() === 3 && x.date >= TODAY && x.type !== 'race')
+      .sort((a, b) => a.date.localeCompare(b.date))[0] || null;
+  }
+  // w = semaine affichée (onglet Plan) ; sans semaine : le prochain mercredi du plan (accueil).
+  function harbatCard(w) {
+    const d = nextWedWithin(w); if (!d) return '';
+    const set = d._replaced_by_user;
+    return `<div class="ck-harbat">
+      <div class="ck-harbat-ico">${svg('bolt', 20)}</div>
+      <div class="ck-harbat-main"><b>Piste Harbat · ${esc(fmtDayLong(d.date))}</b>
+        <span>${set ? 'Séance saisie : ' + esc(d.title) : 'Tu connais la séance du club ? Saisis-la (ou prends-la en photo) : elle remplace le prévu et la semaine s\'adapte.'}</span></div>
+      <button type="button" class="ck-btn ck-btn-primary" data-harbat="${d.date}">${set ? 'Modifier' : 'Saisir la séance'}</button>
+    </div>`;
+  }
+  function openHarbat(iso) {
+    if (typeof window.openSlotModal === 'function') window.openSlotModal(iso);
+    else toast('Saisie indisponible, recharge la page.', 'err');
+  }
+
+
+  // L'estimation d'allure vient de tes séances récentes ; or elles sont
+  // prescrites sous le maximum, donc l'estimateur sous-évalue. On affiche à côté
+  // ce que tu as réellement couru en course.
+  function annotateMarathonRef() {
+    const card = $('.pace-card[data-c="marathon"]'); if (!card || card.querySelector('.ck-ref')) return;
+    const races = (RAW.races && RAW.races.past_races) || [];
+    const limit = isoLocal(new Date(parse(TODAY).getTime() - 365 * 864e5));
+    const best = races.filter(r => r.distance_key === 'marathon' && (r.start_time || '').slice(0, 10) >= limit && r.km && r.time_s)
+      .map(r => ({ r, p: r.time_s / r.km })).sort((a, b) => a.p - b.p)[0];
+    if (!best) return;
+    const m = Math.floor(best.p / 60), sec = Math.round(best.p % 60);
+    const el = document.createElement('div');
+    el.className = 'ck-ref';
+    el.innerHTML = `En course : <b>${m}'${String(sec).padStart(2, '0')}"</b>`;
+    el.title = best.r.name + ' — l\'estimation vient de tes séances (prescrites sous le maximum), elle sous-évalue ta vraie forme.';
+    card.appendChild(el);
+  }
   // ---------------------------------------------------------------- orchestration
   function activate(tab) { const b = $(`.tab[data-tab="${tab}"]`); if (b) b.click(); }
   function renderAll() {
@@ -615,9 +746,14 @@
     ['.hero-counters', '.hero-row-2'].forEach(sel => { const el = $(sel, hdr || document); if (el) stats.appendChild(el); });
     home.appendChild(stats);
     renderAll();
+    annotateMarathonRef();
 
     document.addEventListener('click', (e) => {
       const t = e.target;
+      const ind = t.closest('[data-ind]');
+      if (ind) { openIndicator(ind.dataset.ind); return; }
+      const hb = t.closest('[data-harbat]');
+      if (hb) { openHarbat(hb.dataset.harbat); return; }
       const swapTo = t.closest('[data-swap-to]');
       if (swapTo) { e.stopPropagation(); confirmSwap(swapTo.dataset.swapTo); return; }
       const mv = t.closest('[data-move-day]');
