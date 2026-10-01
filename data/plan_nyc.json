@@ -3412,7 +3412,56 @@
             "title": "Course à pied le midi",
             "n": 1,
             "note": null,
-            "dyn": null,
+            "dyn": {
+              "stance_ms": 246.0,
+              "osc_cm": 8.3,
+              "vratio": 7.84,
+              "step_m": 1.05,
+              "temp_c": 24,
+              "temp_max": 29,
+              "power": 342,
+              "np": 345,
+              "te_aero": 3.2,
+              "te_ana": 0.0,
+              "load": 108.6,
+              "strides": 4253,
+              "rpe": 2.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 246.0,
+                  "end": 249.0,
+                  "pct": 1.4
+                },
+                "step": {
+                  "start": 1037.0,
+                  "end": 1068.0,
+                  "pct": 3.0
+                },
+                "vratio": {
+                  "start": 7.83,
+                  "end": 7.95,
+                  "pct": 1.5
+                },
+                "osc": {
+                  "start": 81.0,
+                  "end": 85.0,
+                  "pct": 4.5
+                },
+                "hr": {
+                  "start": 143.0,
+                  "end": 148.0,
+                  "pct": 3.3
+                },
+                "cad": {
+                  "start": 89.3,
+                  "end": 87.3,
+                  "pct": -2.2
+                }
+              },
+              "flags": []
+            },
             "splits": [
               {
                 "km": 1.0,
