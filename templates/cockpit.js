@@ -774,6 +774,10 @@
     });
   }
 
+  // Outils partagés avec cockpit2.js (Labo, Courses, Renfo).
+  window.__ck = { RAW, esc, svg, ICONS, openSheet, closeSheet, toast, isoLocal, parse, TODAY, dayDiff,
+    fmtDay, fmtDayLong, fmtKm, allDays, weeks, DOW, MON, dayState, isDone, TYPES, tmeta };
+
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mount);
   else mount();
 })();

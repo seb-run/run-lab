@@ -1,0 +1,105 @@
+/* ============================================================================
+   seb-metrics — cockpit2.css  (Labo, Courses, Renfo)
+   ============================================================================ */
+
+/* ------------------------------------------------------------- bandeau commun */
+.ck2-hero { margin-top: 4px; padding: 18px 16px; border-radius: 22px; background: radial-gradient(120% 100% at 0% 0%, color-mix(in srgb, var(--ck-blue) 16%, transparent), transparent 60%), var(--surface); border: 1px solid var(--border-2); }
+.ck2-hero-k { font-size: 12px; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; color: var(--text-3); }
+.ck2-hero-t { margin-top: 8px; font-size: 16px; line-height: 1.4; font-weight: 600; letter-spacing: -0.01em; }
+.ck2-hero-renfo { background: radial-gradient(120% 100% at 0% 0%, color-mix(in srgb, var(--ck-green) 18%, transparent), transparent 60%), var(--surface); }
+.ck2-sub { margin: 20px 2px 10px; font-size: 12px; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; color: var(--text-3); }
+
+/* ------------------------------------------------------------- Labo */
+.ck2-trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 12px; }
+.ck2-trio div { padding: 10px 6px; border-radius: 14px; text-align: center; background: var(--surface-2); border: 1px solid var(--border); }
+.ck2-trio b { display: block; font-size: 28px; line-height: 1.05; font-weight: 800; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
+.ck2-trio span { display: block; margin-top: 4px; font-size: 12px; color: var(--text-2); }
+.ck2-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.ck2-lens { --t: var(--ck-grey); text-align: left; font: inherit; color: var(--text); cursor: pointer; padding: 13px 13px 12px; border-radius: 16px; position: relative; overflow: hidden; background: color-mix(in srgb, var(--t) 8%, var(--surface)); border: 1px solid color-mix(in srgb, var(--t) 26%, var(--border)); -webkit-tap-highlight-color: transparent; transition: transform .12s; }
+.ck2-lens:active { transform: scale(.98); }
+.ck2-lens::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--t); }
+.ck2-t-ok { --t: var(--ck-green); } .ck2-t-watch { --t: var(--ck-amber); } .ck2-t-na { --t: var(--ck-blue); }
+.ck2-lens-h { display: flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 750; color: var(--text-2); }
+.ck2-lens-h .ck-i { color: var(--t); }
+.ck2-lens-big { margin-top: 8px; font-size: 24px; line-height: 1.1; font-weight: 800; letter-spacing: -0.035em; font-variant-numeric: tabular-nums; }
+.ck2-lens-l { margin-top: 5px; font-size: 12.5px; line-height: 1.3; color: var(--text-2); }
+
+/* ------------------------------------------------------------- Courses */
+.ck2-evs { display: flex; flex-direction: column; gap: 8px; margin-bottom: 4px; }
+.ck2-ev { display: flex; align-items: center; gap: 12px; padding: 12px; border-radius: 16px; background: var(--surface); border: 1px solid var(--border); }
+.ck2-ev.is-main { border-color: var(--ck-red); background: color-mix(in srgb, var(--ck-red) 8%, var(--surface)); }
+.ck2-ev-j { flex: none; width: 82px; text-align: center; }
+.ck2-ev-j b { white-space: nowrap; }
+.ck2-ev-j b { display: block; font-size: 24px; font-weight: 800; letter-spacing: -0.04em; line-height: 1.05; font-variant-numeric: tabular-nums; }
+.ck2-ev-j span { display: block; margin-top: 2px; font-size: 11.5px; color: var(--text-3); }
+.ck2-ev-n b { display: block; font-size: 15.5px; font-weight: 750; letter-spacing: -0.015em; line-height: 1.2; }
+.ck2-ev-n span { display: block; margin-top: 3px; font-size: 13px; color: var(--text-2); }
+.ck2-rung { margin-top: 14px; }
+.ck2-rung-h { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.ck2-rung-h b { font-size: 14.5px; font-weight: 750; }
+.ck2-rung-h span { font-size: 13px; color: var(--text-2); font-variant-numeric: tabular-nums; }
+.ck2-rung-bar { height: 10px; margin-top: 6px; border-radius: 99px; background: var(--ck-track); overflow: hidden; }
+.ck2-rung-bar i { display: block; height: 100%; border-radius: 99px; background: var(--ck-green); }
+.ck2-rung.is-hard .ck2-rung-bar i { background: var(--ck-amber); }
+.ck2-rung.is-dream .ck2-rung-bar i { background: var(--ck-violet); }
+.ck2-rung-n { margin-top: 5px; font-size: 12.5px; color: var(--text-2); }
+.ck2-gates { margin-top: 18px; padding: 12px 14px; border-radius: 14px; background: var(--surface-2); border: 1px solid var(--border); font-size: 13.5px; line-height: 1.4; }
+.ck2-gates b { display: block; margin-bottom: 6px; font-size: 14px; }
+.ck2-gates ol { padding-left: 18px; color: var(--text-2); } .ck2-gates li { margin-top: 4px; }
+.ck2-prs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.ck2-pr { padding: 12px; border-radius: 14px; background: var(--surface-2); border: 1px solid var(--border); }
+.ck2-pr span { display: block; font-size: 12px; font-weight: 700; color: var(--text-3); text-transform: uppercase; letter-spacing: .05em; }
+.ck2-pr b { display: block; margin-top: 4px; font-size: 22px; font-weight: 800; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.ck2-pr em { display: block; margin-top: 3px; font-style: normal; font-size: 12.5px; color: var(--text-2); }
+.ck2-pr-na { opacity: .55; }
+.ck2-mar { display: flex; flex-direction: column; gap: 9px; }
+.ck2-mar-r { display: grid; grid-template-columns: 92px 1fr 66px; align-items: center; gap: 8px; font-size: 13px; }
+.ck2-mar-r span { font-weight: 650; } .ck2-mar-r span i { font-style: normal; color: var(--text-3); font-weight: 500; }
+.ck2-mar-b { height: 12px; border-radius: 99px; background: var(--ck-track); overflow: hidden; }
+.ck2-mar-b i { display: block; height: 100%; border-radius: 99px; background: color-mix(in srgb, var(--ck-blue) 70%, transparent); }
+.ck2-mar-r.is-rp .ck2-mar-b i { background: var(--ck-green); }
+.ck2-mar-r b { text-align: right; font-variant-numeric: tabular-nums; font-weight: 750; }
+
+/* ------------------------------------------------------------- Renfo */
+.ck2-warn { display: flex; gap: 10px; margin-top: 12px; padding: 12px; border-radius: 14px; font-size: 13.5px; line-height: 1.4; color: var(--text); background: color-mix(in srgb, var(--ck-amber) 12%, var(--surface)); border: 1px solid color-mix(in srgb, var(--ck-amber) 35%, var(--border)); }
+.ck2-warn .ck-i { color: var(--ck-amber); margin-top: 1px; }
+.ck2-warn-s { margin-top: 14px; font-size: 13px; color: var(--ck-amber); font-weight: 650; }
+.ck2-planmus { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 12px; font-size: 13px; }
+.ck2-planmus b { margin-right: 4px; }
+.ck2-planmus span { padding: 5px 10px; border-radius: 99px; background: var(--surface-2); border: 1px solid var(--border); color: var(--text-2); }
+.ck2-routines { display: flex; flex-direction: column; gap: 10px; margin-top: 14px; }
+.ck2-routine { --c: var(--ck-green); display: flex; align-items: center; gap: 12px; text-align: left; font: inherit; color: var(--text); cursor: pointer; width: 100%; padding: 14px; border-radius: 18px; background: color-mix(in srgb, var(--c) 8%, var(--surface)); border: 1px solid color-mix(in srgb, var(--c) 30%, var(--border)); -webkit-tap-highlight-color: transparent; }
+.ck2-routine:active { transform: scale(.99); }
+.ck2-routine-ico { flex: none; width: 48px; height: 48px; border-radius: 15px; display: grid; place-items: center; color: #fff; background: var(--c); }
+.ck2-routine-main { flex: 1; min-width: 0; }
+.ck2-routine-main b { display: block; font-size: 16.5px; font-weight: 750; letter-spacing: -0.02em; }
+.ck2-routine-main > span { display: block; margin-top: 2px; font-size: 13px; color: var(--text-2); }
+.ck2-routine-dots { display: flex; align-items: center; gap: 5px; margin-top: 8px; }
+.ck2-routine-dots i { width: 14px; height: 14px; border-radius: 99px; border: 2px solid var(--border-2); }
+.ck2-routine-dots i.on { background: var(--c); border-color: var(--c); }
+.ck2-routine-dots em { margin-left: 6px; font-style: normal; font-size: 12px; color: var(--text-2); }
+.ck2-lib-h { margin-top: 22px; }
+.ck2-lib { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.ck2-ex { text-align: left; font: inherit; color: var(--text); cursor: pointer; padding: 8px 10px 12px; border-radius: 16px; background: var(--surface); border: 1px solid var(--border); -webkit-tap-highlight-color: transparent; }
+.ck2-ex b { display: block; margin-top: 4px; font-size: 14px; font-weight: 700; line-height: 1.2; }
+.ck2-ex span { display: block; margin-top: 3px; font-size: 12px; color: var(--text-2); }
+
+/* figures animées */
+.ck2-fig { display: block; width: 100%; height: auto; border-radius: 12px; background: color-mix(in srgb, var(--ck-green) 6%, var(--surface-2)); }
+.ck2-fig-xs { width: 74px; flex: none; }
+.ck2-fig-lg { background: color-mix(in srgb, var(--ck-green) 7%, var(--surface-2)); border: 1px solid var(--border); }
+.ck2-bone { stroke-width: 6; stroke-linecap: round; fill: none; }
+.ck2-bone-n, .ck2-bone-b { stroke: var(--text); }
+.ck2-bone-f { stroke: var(--text-3); opacity: .75; }
+.ck2-head { fill: var(--text); }
+.ck2-floor { stroke: var(--border-2); stroke-width: 2; stroke-dasharray: 4 4; }
+.ck2-prop { fill: color-mix(in srgb, var(--ck-amber) 40%, var(--surface-3)); stroke: var(--ck-amber); stroke-width: 1.5; }
+.ck2-demo { position: relative; margin: 14px 0; }
+.ck2-cue { position: absolute; left: 10px; bottom: 10px; padding: 5px 10px; border-radius: 99px; font-size: 12.5px; font-weight: 700; color: var(--bg); background: var(--text); }
+.ck2-steps { padding-left: 20px; font-size: 14.5px; line-height: 1.5; } .ck2-steps li { margin-top: 6px; }
+.ck2-mistakes { padding-left: 20px; font-size: 14px; line-height: 1.45; color: var(--text-2); } .ck2-mistakes li { margin-top: 4px; }
+.ck2-rlist { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
+.ck2-rex { display: flex; align-items: center; gap: 10px; text-align: left; font: inherit; color: var(--text); cursor: pointer; width: 100%; padding: 8px 12px 8px 8px; border-radius: 14px; background: var(--surface-2); border: 1px solid var(--border); }
+.ck2-rex-n { flex: none; width: 24px; height: 24px; border-radius: 99px; display: grid; place-items: center; font-size: 12px; font-weight: 800; color: var(--bg); background: var(--text); }
+.ck2-rex b { display: block; font-size: 14.5px; font-weight: 700; line-height: 1.2; }
+.ck2-rex span:not(.ck2-rex-n) { display: block; margin-top: 3px; font-size: 12.5px; color: var(--text-2); }
