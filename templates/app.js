@@ -4986,6 +4986,84 @@
     return null;
   }
 
+  // Tous les jours du plan, à plat — évite de refaire la double boucle
+  // semaines/jours à chaque endroit qui en a besoin (série, jalons,
+  // comparaison de séances clés).
+  function flattenPlanDays() {
+    if (!PLAN) return [];
+    const days = [];
+    (PLAN.weeks || []).forEach(w => (w.days || []).forEach(d => days.push(d)));
+    return days;
+  }
+
+  // Dépassement de soi : compare une séance clé qui vient d'être faite à la
+  // précédente séance clé du même type (même effort, comparaison honnête).
+  // Ne dit rien si on n'a pas de point de comparaison ou si la donnée
+  // manque — pas de fausse motivation sur des chiffres incomplets.
+  function computeKeySurpass(d) {
+    if (!d || !d.key || !d.actual || !d.score || !d.type) return null;
+    const iso = d.date;
+    const prior = flattenPlanDays()
+      .filter(o => o.key && o.type === d.type && o.actual && o.score && o.date < iso)
+      .sort((a, b) => (a.date < b.date ? 1 : -1))[0]; // le plus récent avant celui-ci
+    if (!prior) return null;
+
+    const out = { prior, deltas: [] };
+    // Allure : pace_sec plus bas = plus rapide.
+    if (d.actual.pace_sec && prior.actual.pace_sec) {
+      const diff = prior.actual.pace_sec - d.actual.pace_sec; // positif = plus rapide
+      if (Math.abs(diff) >= 3) {
+        out.deltas.push({
+          kind: 'pace',
+          faster: diff > 0,
+          text: diff > 0
+            ? `${Math.round(diff)}s/km plus rapide que la dernière fois sur ce type de séance`
+            : `${Math.round(-diff)}s/km plus lent que la dernière fois — pas grave, ça arrive`,
+        });
+      }
+    }
+    // Volume réalisé, si la séance clé porte sur la distance plutôt que l'allure.
+    if (d.actual.km && prior.actual.km && Math.abs(d.actual.km - prior.actual.km) >= 0.5) {
+      const diffKm = Math.round((d.actual.km - prior.actual.km) * 10) / 10;
+      out.deltas.push({
+        kind: 'km',
+        faster: diffKm > 0,
+        text: diffKm > 0
+          ? `+${diffKm} km parcourus vs la dernière séance clé du même type`
+          : `${diffKm} km vs la dernière séance clé du même type`,
+      });
+    }
+    // Score global du coach, dernier recours si pace/km n'ont rien donné.
+    if (!out.deltas.length && typeof d.score.points === 'number' && typeof prior.score.points === 'number') {
+      const diffPts = d.score.points - prior.score.points;
+      if (diffPts !== 0) {
+        out.deltas.push({
+          kind: 'score',
+          faster: diffPts > 0,
+          text: diffPts > 0
+            ? `Séance mieux exécutée que la dernière fois (+${diffPts} pts)`
+            : `Un peu en retrait vs la dernière fois (${diffPts} pts) — la régularité compte plus qu'une séance isolée`,
+        });
+      }
+    }
+    if (!out.deltas.length) return null;
+    out.improved = out.deltas.some(x => x.faster);
+    return out;
+  }
+
+  function keySurpassBlock(d) {
+    const s = computeKeySurpass(d);
+    if (!s) return '';
+    const d1 = s.deltas[0];
+    const priorDate = (new Date(s.prior.date)).toLocaleDateString('fr-FR', {day: 'numeric', month: 'short'});
+    return `<div class="plan-surpass ${s.improved ? 'is-up' : 'is-flat'}">
+      <span class="plan-surpass-ico">${s.improved ? '📈' : '↔︎'}</span>
+      <div><b>Dépassement de soi</b> · ${escapeHtml(d1.text)}
+        <span class="plan-surpass-ref">vs ${escapeHtml(s.prior.title || 'séance')} du ${priorDate}</span>
+      </div>
+    </div>`;
+  }
+
   function planFindCurrentWeek() {
     if (!PLAN) return null;
     const iso = localISODate();
@@ -5224,6 +5302,7 @@
           ${displayPace ? `<div><span class="kv-label">${d.key ? 'Allure du bloc' : 'Allure'}</span><span class="kv-value">${escapeHtml(displayPace)}</span></div>` : ''}
         </div>
         ${actualBlock}
+        ${keySurpassBlock(d)}
         <p class="plan-today-desc${d.actual ? ' is-done' : ''}">${displayDesc}</p>
         ${coachNotesHtml}
         ${shoeLine(d)}
@@ -5950,6 +6029,98 @@
     wrap.innerHTML = `<div class="home-week-dots">${dots}</div>${bar}`;
   }
 
+  // --- Séries & jalons (gamification) -----------------------------------
+  // Pas de points gratuits : chaque repère est une lecture directe de
+  // PLAN, déjà en mémoire. Rien de nouveau à calculer côté build.
+  function computeStreaksAndMilestones() {
+    if (!PLAN || !PLAN.weeks || !PLAN.weeks.length) return null;
+    const todayIso = localISODate();
+
+    // Semaines de compliance tenue, en partant de la plus récente semaine
+    // déjà terminée et en remontant tant que le verdict reste "success".
+    const pastWeeks = PLAN.weeks.filter(w => w.end_date < todayIso && w.compliance);
+    let weekStreak = 0;
+    for (let i = pastWeeks.length - 1; i >= 0; i--) {
+      if (pastWeeks[i].compliance.verdict === 'success') weekStreak++;
+      else break;
+    }
+
+    // Séances clés d'affilée réussies, toutes semaines confondues.
+    const allDays = flattenPlanDays();
+    const pastKeyDays = allDays
+      .filter(d => d.key && d.date <= todayIso && d.score)
+      .sort((a, b) => (a.date < b.date ? 1 : -1)); // plus récent d'abord
+    let keyStreak = 0;
+    for (const d of pastKeyDays) {
+      if (d.score.verdict === 'success') keyStreak++;
+      else break;
+    }
+
+    // Prochain palier kilométrique : somme des km réellement courus sur
+    // toute la période du plan, jusqu'à aujourd'hui inclus.
+    let kmDone = 0;
+    allDays.forEach(d => {
+      if (d.date <= todayIso && d.actual && d.actual.km) kmDone += d.actual.km;
+    });
+    const nextMilestone = Math.ceil((kmDone + 1) / 100) * 100;
+    const kmToGo = Math.max(0, Math.round((nextMilestone - kmDone) * 10) / 10);
+
+    // Dernier record officiel, si posé dans les 45 derniers jours.
+    let recentRecord = null;
+    try {
+      const records = computeRecords(getAllRaces());
+      const cutoff = Date.now() - 45 * 86400000;
+      for (const dist of RACES.distances) {
+        const rec = records[dist.key];
+        if (rec && rec._date && rec._date.getTime() >= cutoff) {
+          if (!recentRecord || rec._date > recentRecord._date) {
+            recentRecord = { ...rec, _distLabel: dist.label };
+          }
+        }
+      }
+    } catch (e) { /* onglet Courses pas encore initialisé au premier rendu : tant pis */ }
+
+    return { weekStreak, keyStreak, kmDone: Math.round(kmDone), nextMilestone, kmToGo, recentRecord };
+  }
+
+  function renderStreaksCard() {
+    const wrap = document.getElementById('streaksCard');
+    if (!wrap) return;
+    const s = computeStreaksAndMilestones();
+    if (!s) { wrap.innerHTML = ''; return; }
+
+    const items = [];
+    items.push(`<div class="streak-item">
+      <span class="streak-ico">🔥</span>
+      <div><span class="streak-v">${s.weekStreak}</span> semaine${s.weekStreak > 1 ? 's' : ''} d'affilée dans le rythme</div>
+    </div>`);
+    items.push(`<div class="streak-item">
+      <span class="streak-ico">🎯</span>
+      <div><span class="streak-v">${s.keyStreak}</span> séance${s.keyStreak > 1 ? 's' : ''} clé${s.keyStreak > 1 ? 's' : ''} d'affilée réussie${s.keyStreak > 1 ? 's' : ''}</div>
+    </div>`);
+    if (s.kmToGo > 0) {
+      items.push(`<div class="streak-item">
+        <span class="streak-ico">🏁</span>
+        <div><span class="streak-v">${s.kmToGo}</span> km avant le cap des <b>${s.nextMilestone}</b> km parcourus sur ce plan</div>
+      </div>`);
+    }
+    if (s.recentRecord) {
+      items.push(`<div class="streak-item streak-item-record">
+        <span class="streak-ico">🏆</span>
+        <div>Record perso <b>${escapeHtml(s.recentRecord._distLabel)}</b> · ${fmtChrono(s.recentRecord.time_s)}
+          <span class="streak-sub">${escapeHtml(s.recentRecord.name || 'course')}</span></div>
+      </div>`);
+    }
+
+    wrap.innerHTML = `<article class="card mt-lg streaks-card">
+      <header class="card-head">
+        <h3>Séries &amp; jalons</h3>
+        <span class="card-sub">${s.kmDone} km courus sur ce plan</span>
+      </header>
+      <div class="streaks-grid">${items.join('')}</div>
+    </article>`;
+  }
+
   // --- Compteurs odomètre ---------------------------------------------
   function animateNum(el, target, dec, suffix) {
     if (!el) return;
@@ -6451,6 +6622,7 @@
     homeRenderDuel();
     homeRenderLast();
     homeRenderWeek();
+    renderStreaksCard();
   }
 
   function renderPlanTab() {

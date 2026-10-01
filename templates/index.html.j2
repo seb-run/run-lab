@@ -93,8 +93,8 @@
     <span>Plan</span>
   </button>
   <button class="tab" data-tab="sess">
-    <svg class="tab-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l5-11 4 7 3-4 4 8"/></svg>
-    <span>Séances</span>
+    <svg class="tab-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6.5L4 18.5A2 2 0 006 21.5h12a2 2 0 002-3L15 8.5V2"/><path d="M9 2h6"/><path d="M7.5 15h9"/></svg>
+    <span>Labo</span>
   </button>
   <button class="tab" data-tab="race">
     <svg class="tab-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v5a6 6 0 01-12 0V3z"/><path d="M6 5H3v2a4 4 0 004 4M18 5h3v2a4 4 0 01-4 4"/></svg>
@@ -139,6 +139,11 @@
       </header>
       <div id="homeWeek"></div>
     </article>
+
+    <!-- Séries et jalons : la couche « gamification » — pas des points
+         gratuits, des repères qui prouvent la progression avec des chiffres
+         réels (séries tenues, prochain palier kilométrique, dernier record). -->
+    <div id="streaksCard"></div>
 
     <!-- Les trois réponses, sans défiler -->
     <div class="home-answers" id="homeAnswers">
@@ -305,8 +310,13 @@
     </article>
   </section>
 
-  <!-- SÉANCES — quatre onglets, sept angles de lecture -->
+  <!-- LABO — anciennement « Séances » : historique complet + sept angles
+       d'analyse avancée (dérive, équilibre, charge, efficacité, volume,
+       progression). Pas un écran du quotidien — l'endroit où creuser quand
+       une question précise se pose, pas une destination qu'on ouvre par
+       réflexe. -->
   <section class="tab-content" id="t-sess">
+    <p class="labo-intro">Historique complet et analyses avancées — VMA, charge, dérive de foulée. Pas besoin d'y passer tous les jours : c'est là quand tu veux creuser un chiffre précis.</p>
     <nav class="lens-bar" id="lensBar" role="tablist" aria-label="Angle de lecture">
       <button class="lens on" data-lens="list" role="tab" aria-selected="true" aria-controls="l-list">
         <svg class="lens-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>

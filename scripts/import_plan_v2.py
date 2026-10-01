@@ -186,14 +186,14 @@ def convert_week(v2_week, first_week_num_offset, allures_ref):
 
 def meta_from_v2(v2, weeks):
     """Bloc `meta` compatible app à partir du v2."""
-    goal_date = None
-    for w in weeks:
-        for d in w['days']:
-            if d.get('type') == 'race':
-                goal_date = d['date']
-                break
-        if goal_date: break
-    goal_date = goal_date or v2.get('meta', {}).get('objectif', '2026-11-01')
+    # La date d'objectif est celle de la course principale déclarée par le plan
+    # (clé `course`). Ne pas la déduire de la première séance « race » : un plan
+    # peut contenir une course-test (20 km de Paris le 11/10) et le build, voyant
+    # une date différente de NYC, régénérerait le plan en écrasant l'import.
+    goal_date = (v2.get('course') or {}).get('date')
+    if not goal_date:
+        races = [d['date'] for w in weeks for d in w['days'] if d.get('type') == 'race']
+        goal_date = races[-1] if races else '2026-11-01'
 
     a = v2.get('allures', {})
     def milieu(code):

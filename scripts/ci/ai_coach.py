@@ -42,6 +42,12 @@ MODEL = os.environ.get('ANTHROPIC_MODEL', 'claude-sonnet-5')
 # Garde-fous ajustements mineurs
 MINOR_KM_MAX_PCT = 0.10          # ±10 % max sur le volume d'un jour
 MINOR_HORIZON_DAYS = 10          # on ne touche pas au-delà de 10 jours
+# Propositions « majeures » appliquées sans clic quand elles sont sûres :
+# remplacement structuré, jour futur (pas aujourd'hui), pas une course, et dans
+# les 7 jours. L'original reste dans day['_replaced_from'] et le journal
+# `applied` : le coach agit seul, mais rien ne se perd.
+AUTO_MAJOR_KINDS = {'change_pace', 'change_type', 'move_session'}
+AUTO_MAJOR_HORIZON_DAYS = 7
 
 
 # ============================================================================
@@ -168,6 +174,25 @@ def build_context(plan: dict) -> dict:
 
 SYSTEM_PROMPT = """Tu es le coach running de Sébastien. Objectif : NYC Marathon (2026-11-01), sub-3h.
 Tu reçois l'état du plan : 14 derniers jours scorés (réussie/partielle/échouée/manquée), conformité hebdo, 10 prochains jours.
+
+Ton : direct, jamais complaisant, mais orienté vers ce qui progresse. Un coach qui
+prépare une course dans 5 semaines n'a pas le temps de flatter, mais il sait qu'un
+athlète qui ne voit que ses manques finit par lâcher. Concrètement :
+  · Toujours ancrer sur un chiffre réel — jamais de "bravo, continue comme ça"
+    générique. "3 séances clés d'affilée dans le rythme" motive, "tu progresses
+    bien" ne motive personne car ça ne veut rien dire.
+  · Une séance ratée ou une semaine partielle se nomme sans détour (le tutoiement
+    direct reste), mais se referme sur ce qui reste vrai malgré ça : la tendance de
+    fond, la marge encore disponible avant la course, ou ce qu'il y a à corriger
+    concrètement — jamais sur un constat qui laisse Sébastien sans prise.
+  · Le "dépassement de soi" (une séance clé plus rapide ou plus solide que la
+    précédente du même type) mérite d'être nommé explicitement quand les chiffres le
+    montrent — c'est le signal le plus concret qu'un plan fonctionne, plus parlant
+    qu'un volume hebdomadaire respecté.
+  · Pas de dramatisation non plus : une dérive cardiaque un jour de canicule ou une
+    séance manquée isolée ne sont pas des signaux d'alarme. Réserve le registre
+    "à surveiller"/"alerte" aux vrais motifs (répétition, douleur, tendance qui
+    dure), pas à un aléa ponctuel.
 
 Pour les séances récentes tu peux aussi recevoir :
   · "splits" : allure/FC/cadence km par km, format "3:5'21/141/176spm". Sers-t'en pour
@@ -468,6 +493,41 @@ def _write_min_analysis(reason: str, context: dict | None = None):
         pass
 
 
+def apply_major_auto(plan: dict, prop: dict) -> tuple[bool, str]:
+    """Applique seul une proposition majeure sûre (voir AUTO_MAJOR_KINDS)."""
+    if os.environ.get('COACH_AUTO_MAJOR', '1') == '0':
+        return False, 'auto-application désactivée'
+    if prop.get('kind') not in AUTO_MAJOR_KINDS:
+        return False, 'kind à valider à la main'
+    r = prop.get('replacement')
+    if not isinstance(r, dict) or not (r.get('title') and r.get('type')):
+        return False, 'pas de remplacement structuré'
+    try:
+        dd = date.fromisoformat(prop.get('date', ''))
+    except Exception:
+        return False, 'date invalide'
+    today = date.today()
+    if dd <= today:
+        return False, 'jour passé ou en cours'
+    if dd > today + timedelta(days=AUTO_MAJOR_HORIZON_DAYS):
+        return False, f'au-delà de {AUTO_MAJOR_HORIZON_DAYS} jours'
+    day = find_day(plan, prop['date'])
+    if not day:
+        return False, 'jour introuvable'
+    if day.get('type') == 'race' or r.get('type') == 'race':
+        return False, 'jour de course intouchable'
+    try:
+        from scripts.ci.apply_proposal import _apply_replacement
+    except Exception:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from apply_proposal import _apply_replacement
+    ok, detail = _apply_replacement(day, prop)
+    if ok:
+        day.setdefault('coach_notes', [])[-1:] and day['coach_notes'][-1].update(
+            {'auto': True, 'reason': str(prop.get('reason', ''))[:300]})
+    return ok, detail
+
+
 def main():
     if not os.environ.get('ANTHROPIC_API_KEY'):
         print('⚠ ANTHROPIC_API_KEY absent — coach IA sauté')
@@ -490,7 +550,17 @@ def main():
     # Version 2 du schéma (introduction du champ `forme`) : le skip est levé
     # tant que l'ancienne analyse en cache n'a pas ce champ, sinon le nouveau
     # format ne serait jamais produit.
-    signature = json.dumps(context['last_14_days'][-3:], ensure_ascii=False)
+    # L'empreinte du plan fait partie de la signature : un plan importé ou une
+    # séance décalée doivent relancer l'analyse, sinon le coach continue de
+    # juger le réel contre un plan caduc (clés « ratées » face à une séance
+    # qui n'était plus au programme).
+    plan_fp = json.dumps(
+        [[d.get('date'), d.get('title'), d.get('km')]
+         for w in plan.get('weeks', []) for d in w.get('days', [])
+         if d.get('date') and d['date'] >= (date.today() - timedelta(days=14)).isoformat()],
+        ensure_ascii=False)
+    plan_hash = __import__('hashlib').md5(plan_fp.encode()).hexdigest()[:10]
+    signature = json.dumps(context['last_14_days'][-3:], ensure_ascii=False) + '|' + plan_hash
     if ANALYSIS_PATH.exists() and '--force' not in sys.argv:
         try:
             prev = json.loads(ANALYSIS_PATH.read_text(encoding='utf-8'))
@@ -552,8 +622,16 @@ def main():
                 pending.append(prop)
                 print(f'  ↗ mineur escaladé ({detail})')
         else:
-            pending.append(prop)
-            print(f"  ● majeur en attente : {prop.get('kind')} {prop.get('date', '')}")
+            ok, detail = apply_major_auto(plan, prop)
+            if ok:
+                plan_modified = True
+                applied.append({**prop, 'detail': detail, 'auto_major': True})
+                prop['status'] = 'auto_applied'
+                print(f'  ✓ majeur appliqué seul : {detail}')
+            else:
+                prop['guardrail_reject'] = detail
+                pending.append(prop)
+                print(f"  ● majeur en attente ({detail}) : {prop.get('kind')} {prop.get('date', '')}")
 
     # Persistance des propositions majeures (merge avec l'historique)
     proposals_doc = {'proposals': []}
@@ -563,6 +641,21 @@ def main():
         except Exception:
             pass
     existing = proposals_doc.get('proposals', [])
+    # Plan changé (import, séance décalée) depuis la dernière analyse : les
+    # propositions en attente ont été écrites contre un plan caduc. On les
+    # expire plutôt que de laisser valider une « correction » d'une séance
+    # qui n'existe plus.
+    prev_hash = None
+    try:
+        prev_hash = (json.loads(ANALYSIS_PATH.read_text(encoding='utf-8')).get('plan_hash')
+                     if ANALYSIS_PATH.exists() else None)
+    except Exception:  # noqa: BLE001
+        pass
+    if prev_hash and prev_hash != plan_hash:
+        for p in existing:
+            if p.get('status') == 'pending':
+                p['status'] = 'expired'
+                p['expired_reason'] = 'plan_changed'
     # Purge : garde les 30 dernières, marque expirées celles dont la date est passée
     today_iso = date.today().isoformat()
     for p in existing:
@@ -581,6 +674,7 @@ def main():
         'generated_at': datetime.now().isoformat(timespec='seconds'),
         'model': MODEL,
         'signature': signature,
+        'plan_hash': plan_hash,
         'headline': result.get('headline', ''),
         'analysis': result.get('analysis', ''),
         # État de forme composé par le coach : centre de gravité de l'onglet

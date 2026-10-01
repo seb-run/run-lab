@@ -187,6 +187,15 @@ def build_html(
     js_path = os.path.join(templates_dir, 'app.js')
     css_content = _read_file(css_path) if os.path.exists(css_path) else ""
     js_content = _read_file(js_path) if os.path.exists(js_path) else ""
+    # Couche « cockpit » (accueil forme + plan hebdo) : fichiers à part pour ne
+    # pas alourdir app.js, concaténés après lui (même IIFE-free, même page).
+    for extra, kind in (('cockpit.css', 'css'), ('cockpit.js', 'js')):
+        extra_path = os.path.join(templates_dir, extra)
+        if os.path.exists(extra_path):
+            if kind == 'css':
+                css_content += "\n" + _read_file(extra_path)
+            else:
+                js_content += "\n" + _read_file(extra_path)
 
     # Calcul des agrégats
     overview = compute_overview(sessions)

@@ -219,6 +219,55 @@ export default {
       return Response.json({ ok: true, date }, { headers: corsHeaders });
     }
 
+    // --- Séance décalée depuis le dashboard (échange de deux jours) ---
+    if (url.pathname === '/move') {
+      if (request.method !== 'POST') {
+        return new Response('Method Not Allowed', { status: 405, headers: corsHeaders });
+      }
+      if (!env.VALIDATE_TOKEN) {
+        return Response.json({ error: 'VALIDATE_TOKEN non configuré' },
+          { status: 503, headers: corsHeaders });
+      }
+      let body;
+      try {
+        body = await request.json();
+      } catch {
+        return Response.json({ error: 'JSON invalide' }, { status: 400, headers: corsHeaders });
+      }
+      if (!safeEqual(String(body.token || ''), env.VALIDATE_TOKEN)) {
+        return Response.json({ error: 'Jeton invalide' }, { status: 401, headers: corsHeaders });
+      }
+      // Garde-fou de premier niveau ; la validation stricte est dans apply_move.py.
+      const from = String(body.from || '');
+      const to = String(body.to || '');
+      const isoRe = /^\d{4}-\d{2}-\d{2}$/;
+      if (!isoRe.test(from) || !isoRe.test(to)) {
+        return Response.json({ error: 'Date invalide' }, { status: 400, headers: corsHeaders });
+      }
+      const resp = await fetch(
+        `https://api.github.com/repos/${env.GITHUB_REPO}/dispatches`,
+        {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${env.GITHUB_TOKEN}`,
+            'Accept': 'application/vnd.github+json',
+            'User-Agent': 'seb-metrics-move',
+            'X-GitHub-Api-Version': '2022-11-28',
+          },
+          body: JSON.stringify({
+            event_type: 'move-session',
+            client_payload: { from, to },
+          }),
+        }
+      );
+      console.log(`move ${from} -> ${to} → ${resp.status}`);
+      if (!resp.ok) {
+        return Response.json({ error: `GitHub a répondu ${resp.status}` },
+          { status: 502, headers: corsHeaders });
+      }
+      return Response.json({ ok: true, from, to }, { headers: corsHeaders });
+    }
+
     // --- Lecture d'une photo de séance (coach du club) ---
     if (url.pathname === '/slot-ocr') {
       if (request.method !== 'POST') {

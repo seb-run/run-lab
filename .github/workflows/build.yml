@@ -8,7 +8,7 @@ name: build-dashboard
 
 on:
   repository_dispatch:
-    types: [strava-activity, coach-validate, apply-slot]
+    types: [strava-activity, coach-validate, apply-slot, move-session]
   schedule:
     - cron: '45 5 * * *'
   # Rebuild auto quand le code du dashboard change (pas de boucle : les commits
@@ -102,6 +102,17 @@ jobs:
           SLOT_PAYLOAD: ${{ toJSON(github.event.client_payload) }}
           SEB_DATA_DIR: ${{ github.workspace }}/data
         run: python3 scripts/ci/apply_slot.py || echo "⚠ Séance du mercredi non appliquée — build poursuivi"
+
+      # Séance décalée depuis le dashboard (glisser / « Décaler » → Worker /move).
+      # Même précaution que ci-dessus : payload en variable d'environnement,
+      # revalidé strictement côté Python. Le coach relit le plan décalé à l'étape
+      # suivante, et s'adapte seul.
+      - name: Décaler une séance
+        if: github.event_name == 'repository_dispatch' && github.event.action == 'move-session'
+        env:
+          MOVE_PAYLOAD: ${{ toJSON(github.event.client_payload) }}
+          SEB_DATA_DIR: ${{ github.workspace }}/data
+        run: python3 scripts/ci/apply_move.py || echo "⚠ Séance non décalée — build poursuivi"
 
       - name: Sync Strava (API directe)
         env:

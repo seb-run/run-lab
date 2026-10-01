@@ -1,0 +1,300 @@
+/* ============================================================================
+   seb-metrics — cockpit.css  (accompagne cockpit.js)
+   Lisible en un regard : une couleur = un sens, de gros chiffres, peu de texte.
+   ============================================================================ */
+:root {
+  --ck-green:  #2f9e63;
+  --ck-amber:  #d8962a;
+  --ck-red:    #d9503a;
+  --ck-blue:   #4a74c9;
+  --ck-violet: #8250df;
+  --ck-lime:   #7fb02a;
+  --ck-grey:   #8b93a1;
+  --ck-track:  color-mix(in srgb, var(--text) 10%, transparent);
+  --ck-r: 18px;
+}
+html[data-theme="dark"] {
+  --ck-green:  #4cc38a;
+  --ck-amber:  #efb04a;
+  --ck-red:    #f2705a;
+  --ck-blue:   #7aa0f0;
+  --ck-violet: #a98af5;
+  --ck-lime:   #a6d44f;
+  --ck-grey:   #8c97a8;
+}
+
+.ck-hidden { display: none !important; }
+.ck-i { flex: none; vertical-align: -3px; }
+.ck-muted { color: var(--text-2); font-size: 14px; line-height: 1.45; }
+body.ck-lock { overflow: hidden; }
+
+/* L'en-tête (compteurs + allures de forme) n'a de sens que sur l'accueil :
+   sur les autres onglets il mangeait l'écran avant le contenu. */
+body[data-tab="plan"] .hero-row-2,
+body[data-tab="sess"] .hero-row-2,
+body[data-tab="race"] .hero-row-2,
+body[data-tab="plan"] .hero-counters,
+body[data-tab="sess"] .hero-counters,
+body[data-tab="race"] .hero-counters { display: none; }
+
+/* ------------------------------------------------------------- cartes */
+.ck-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--ck-r); padding: 16px; margin-top: 14px;
+}
+.ck-card-h { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
+.ck-card-h h3 { font-size: 17px; font-weight: 750; letter-spacing: -0.02em; }
+.ck-card-h span { font-size: 12.5px; color: var(--text-3); font-variant-numeric: tabular-nums; }
+
+/* ------------------------------------------------------------- boutons */
+.ck-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.ck-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  min-height: 44px; padding: 0 16px; border-radius: 12px; cursor: pointer;
+  font: 600 14.5px/1 var(--font-sans); color: var(--text);
+  background: var(--surface-2); border: 1px solid var(--border-2);
+  -webkit-tap-highlight-color: transparent; transition: transform .12s, background .15s;
+}
+.ck-btn:active { transform: scale(.97); }
+.ck-btn-primary { background: var(--text); color: var(--bg); border-color: var(--text); }
+.ck-btn-sm { min-height: 36px; padding: 0 12px; font-size: 13.5px; }
+.ck-btn:focus-visible, .ck-row:focus-visible, .ck-dot:focus-visible, .ck-nav:focus-visible, .ck-rb:focus-visible {
+  outline: 2px solid var(--ck-blue); outline-offset: 2px;
+}
+
+/* ------------------------------------------------------------- forme (hero) */
+.ck-hero {
+  margin-top: 4px; padding: 18px 16px 16px; border-radius: 22px;
+  background:
+    radial-gradient(120% 90% at 0% 0%, color-mix(in srgb, var(--tone) 16%, transparent), transparent 60%),
+    var(--surface);
+  border: 1px solid color-mix(in srgb, var(--tone) 30%, var(--border));
+}
+.ck-hero-top { display: flex; align-items: center; gap: 14px; }
+.ck-hero-gauge { flex: 0 0 132px; }
+.ck-gauge { width: 100%; height: auto; display: block; }
+.ck-gauge-n { font: 800 44px/1 var(--font-sans); fill: var(--text); letter-spacing: -0.04em; }
+.ck-gauge-s { font: 600 11px var(--font-mono); fill: var(--text-3); letter-spacing: .08em; }
+.ck-verdict {
+  display: inline-block; padding: 4px 11px; border-radius: 99px; margin-bottom: 8px;
+  font: 700 12px/1.2 var(--font-sans); letter-spacing: .06em; text-transform: uppercase;
+  color: var(--tone); background: color-mix(in srgb, var(--tone) 14%, transparent);
+}
+.ck-headline { font-size: 15px; line-height: 1.32; font-weight: 650; letter-spacing: -0.015em; }
+.ck-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+.ck-chip {
+  display: inline-flex; align-items: center; gap: 5px; padding: 5px 10px; border-radius: 99px;
+  font-size: 12.5px; white-space: nowrap; font-weight: 600; color: var(--text-2);
+  background: var(--surface-2); border: 1px solid var(--border);
+}
+.ck-chip-key { color: var(--ck-violet); border-color: color-mix(in srgb, var(--ck-violet) 35%, var(--border)); }
+.ck-tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+.ck-tile {
+  --t: var(--ck-grey);
+  position: relative; padding: 12px 12px 11px; border-radius: 14px; overflow: hidden;
+  background: color-mix(in srgb, var(--t) 11%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--t) 28%, var(--border));
+}
+.ck-tile::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--t); }
+.ck-ok { --t: var(--ck-green); } .ck-watch { --t: var(--ck-amber); } .ck-alert { --t: var(--ck-red); }
+.ck-tile-h { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; color: var(--text-2); letter-spacing: .02em; }
+.ck-tile-h em { margin-left: auto; color: var(--t); display: inline-flex; }
+.ck-tile-h .ck-i { color: var(--t); }
+.ck-tile-v { margin-top: 7px; font-size: 19px; line-height: 1.12; font-weight: 800; letter-spacing: -0.025em; overflow-wrap: anywhere; }
+.ck-tile-n { margin-top: 4px; font-size: 12.5px; color: var(--text-2); line-height: 1.3; }
+.ck-more { margin-top: 12px; border-top: 1px solid var(--border); padding-top: 10px; }
+.ck-more summary { cursor: pointer; font-size: 13.5px; font-weight: 650; color: var(--text-2); list-style: none; }
+.ck-more summary::-webkit-details-marker { display: none; }
+.ck-more summary::after { content: " ▾"; }
+.ck-more p { margin-top: 8px; font-size: 14px; line-height: 1.5; color: var(--text-2); }
+
+/* ------------------------------------------------------------- séance du jour */
+.ck-session {
+  --c: var(--ck-grey);
+  display: flex; align-items: center; gap: 12px; padding: 12px; border-radius: 14px;
+  background: color-mix(in srgb, var(--c) 9%, var(--surface-2));
+  border: 1px solid color-mix(in srgb, var(--c) 26%, var(--border));
+}
+.ck-session-ico {
+  flex: none; width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center;
+  color: #fff; background: var(--c);
+}
+.ck-session-main { min-width: 0; flex: 1; }
+.ck-session-k { font-size: 11.5px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--text-3); }
+.ck-session-t { font-size: 17px; font-weight: 750; letter-spacing: -0.02em; line-height: 1.2; margin-top: 2px; }
+.ck-session-m { font-size: 14px; color: var(--text-2); margin-top: 3px; font-variant-numeric: tabular-nums; }
+.ck-key {
+  display: inline-block; padding: 2px 6px; border-radius: 6px; font: 800 10px/1.3 var(--font-sans);
+  letter-spacing: .08em; color: var(--ck-violet);
+  background: color-mix(in srgb, var(--ck-violet) 14%, transparent); vertical-align: 2px;
+}
+.ck-desc { margin-top: 10px; font-size: 14px; line-height: 1.45; color: var(--text-2); }
+.ck-rest { display: flex; gap: 12px; align-items: center; padding: 12px; border-radius: 14px; background: var(--surface-2); color: var(--text-2); }
+.ck-rest b { display: block; color: var(--text); font-size: 16px; }
+.ck-rest span { font-size: 13.5px; }
+.ck-result { margin-top: 10px; padding: 11px 12px; border-radius: 12px; border: 1px solid var(--border); background: var(--surface-2); }
+.ck-result-badge { display: flex; align-items: center; gap: 7px; font-size: 15px; }
+.ck-result-badge i { margin-left: auto; font-style: normal; font-weight: 800; font-variant-numeric: tabular-nums; }
+.ck-r-ok { border-color: color-mix(in srgb, var(--ck-green) 40%, var(--border)); background: color-mix(in srgb, var(--ck-green) 10%, var(--surface)); }
+.ck-r-ok .ck-result-badge { color: var(--ck-green); }
+.ck-r-partial { border-color: color-mix(in srgb, var(--ck-amber) 40%, var(--border)); background: color-mix(in srgb, var(--ck-amber) 10%, var(--surface)); }
+.ck-r-partial .ck-result-badge { color: var(--ck-amber); }
+.ck-r-fail, .ck-r-miss { border-color: color-mix(in srgb, var(--ck-red) 40%, var(--border)); background: color-mix(in srgb, var(--ck-red) 10%, var(--surface)); }
+.ck-r-fail .ck-result-badge, .ck-r-miss .ck-result-badge { color: var(--ck-red); }
+.ck-result-d { margin-top: 5px; font-size: 14px; color: var(--text); font-variant-numeric: tabular-nums; }
+.ck-result-r { margin-top: 3px; font-size: 13px; color: var(--text-2); }
+
+/* ------------------------------------------------------------- recos */
+.ck-recos { display: flex; flex-direction: column; gap: 10px; }
+.ck-reco { --t: var(--ck-grey); display: flex; gap: 11px; padding: 12px; border-radius: 14px; background: color-mix(in srgb, var(--t) 8%, var(--surface-2)); border: 1px solid color-mix(in srgb, var(--t) 24%, var(--border)); }
+.ck-reco-ask { --t: var(--ck-violet); } .ck-reco-done { --t: var(--ck-green); } .ck-reco-watch { --t: var(--ck-amber); }
+.ck-reco-ico { flex: none; width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; color: var(--t); background: color-mix(in srgb, var(--t) 15%, transparent); }
+.ck-reco-main { min-width: 0; flex: 1; }
+.ck-reco-tag { font-size: 11.5px; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; color: var(--t); }
+.ck-reco-t { margin-top: 2px; font-size: 15.5px; font-weight: 700; letter-spacing: -0.01em; line-height: 1.25; }
+.ck-reco-s { margin-top: 4px; font-size: 13.5px; line-height: 1.4; color: var(--text-2); }
+.ck-reco-sent { opacity: .5; pointer-events: none; }
+.ck-empty { display: flex; align-items: center; gap: 10px; color: var(--ck-green); font-weight: 650; font-size: 15px; }
+
+/* ------------------------------------------------------------- semaine (pastilles) */
+.ck-dots { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
+.ck-dot {
+  --c: var(--ck-grey);
+  display: flex; flex-direction: column; align-items: center; gap: 5px; padding: 8px 0 7px;
+  border-radius: 14px; cursor: pointer; font-family: inherit; color: var(--text);
+  background: var(--surface-2); border: 1px solid var(--border);
+}
+.ck-dot-d { font-size: 11.5px; font-weight: 700; color: var(--text-3); }
+.ck-dot-c { width: 28px; height: 28px; border-radius: 99px; display: grid; place-items: center; color: #fff; background: var(--c); }
+.ck-dot-k { font-size: 12px; font-weight: 750; min-height: 14px; font-variant-numeric: tabular-nums; }
+.ck-dot.ck-s-rest .ck-dot-c { background: transparent; border: 2px dashed var(--border-2); }
+.ck-dot.ck-s-todo .ck-dot-c, .ck-dot.ck-s-today .ck-dot-c { background: color-mix(in srgb, var(--c) 22%, var(--surface)); color: var(--c); }
+.ck-dot.ck-s-ok .ck-dot-c { background: var(--ck-green); }
+.ck-dot.ck-s-partial .ck-dot-c { background: var(--ck-amber); }
+.ck-dot.ck-s-fail .ck-dot-c, .ck-dot.ck-s-miss .ck-dot-c { background: var(--ck-red); }
+.ck-dot.is-today { border-color: var(--text); box-shadow: 0 0 0 1px var(--text) inset; }
+.ck-dot.is-key .ck-dot-d { color: var(--ck-violet); }
+.ck-bar { height: 7px; border-radius: 99px; background: var(--ck-track); margin-top: 12px; overflow: hidden; }
+.ck-bar > i { display: block; height: 100%; border-radius: 99px; background: var(--ck-green); transition: width .5s var(--ease); }
+.ck-bar-lg { height: 9px; margin: 8px 0 14px; }
+
+/* ------------------------------------------------------------- plan : semaine */
+.ck-plan { margin-top: 4px; }
+.ck-weeknav { display: flex; align-items: center; gap: 8px; }
+.ck-weeknav-t { flex: 1; text-align: center; }
+.ck-weeknav-t b { display: block; font-size: 19px; font-weight: 800; letter-spacing: -0.025em; }
+.ck-weeknav-t b i { font-style: normal; color: var(--text-3); font-weight: 600; font-size: 14px; }
+.ck-weeknav-t span { font-size: 13px; color: var(--text-2); }
+.ck-nav { width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center; cursor: pointer; color: var(--text); background: var(--surface); border: 1px solid var(--border-2); }
+.ck-nav:disabled { opacity: .3; cursor: default; }
+.ck-phase { --c: var(--ck-grey); display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 2px 10px; margin-top: 14px; padding: 9px 12px; border-radius: 12px; font-size: 13.5px; background: color-mix(in srgb, var(--c) 12%, var(--surface)); border: 1px solid color-mix(in srgb, var(--c) 30%, var(--border)); }
+.ck-phase b { font-weight: 750; }
+.ck-phase span { color: var(--text-2); font-variant-numeric: tabular-nums; }
+.ck-banner { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; padding: 10px 12px; border-radius: 12px; font-size: 13.5px; line-height: 1.3; color: var(--ck-violet); background: color-mix(in srgb, var(--ck-violet) 12%, var(--surface)); border: 1px solid color-mix(in srgb, var(--ck-violet) 35%, var(--border)); }
+.ck-banner span { flex: 1; color: var(--text); }
+
+.ck-rows { display: flex; flex-direction: column; gap: 8px; }
+.ck-row {
+  --c: var(--ck-grey);
+  display: flex; align-items: center; gap: 10px; padding: 10px 10px 10px 8px; min-height: 64px;
+  border-radius: 16px; cursor: pointer; background: var(--surface); border: 1px solid var(--border);
+  transition: opacity .2s, transform .12s;
+}
+.ck-row:active { transform: scale(.992); }
+.ck-row-date { flex: none; width: 38px; text-align: center; }
+.ck-row-date b { display: block; font-size: 11.5px; font-weight: 700; color: var(--text-3); text-transform: uppercase; letter-spacing: .05em; }
+.ck-row-date span { display: block; font-size: 20px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.ck-row-bar { flex: none; align-self: stretch; width: 5px; border-radius: 99px; background: var(--c); }
+.ck-row-main { min-width: 0; flex: 1; }
+.ck-row-t { font-size: 15.5px; font-weight: 700; letter-spacing: -0.015em; line-height: 1.22; }
+.ck-row-m { margin-top: 3px; font-size: 13px; color: var(--text-2); font-variant-numeric: tabular-nums; }
+.ck-row-m b { color: var(--text); font-weight: 650; }
+.ck-moved { font-style: normal; color: var(--ck-violet); font-weight: 700; }
+.ck-row-r { flex: none; display: flex; align-items: center; gap: 6px; }
+.ck-state { display: inline-flex; align-items: center; gap: 4px; padding: 4px 8px; border-radius: 99px; font-size: 12.5px; font-weight: 800; }
+.ck-st-ok { color: var(--ck-green); background: color-mix(in srgb, var(--ck-green) 14%, transparent); }
+.ck-st-partial { color: var(--ck-amber); background: color-mix(in srgb, var(--ck-amber) 16%, transparent); }
+.ck-st-fail, .ck-st-miss { color: var(--ck-red); background: color-mix(in srgb, var(--ck-red) 14%, transparent); }
+.ck-badge { font-size: 12px; font-weight: 700; color: var(--ck-violet); }
+.ck-mv { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; cursor: pointer; color: var(--text-2); background: var(--surface-2); border: 1px solid var(--border); }
+.ck-row.is-today { border-color: var(--text); box-shadow: 0 0 0 1px var(--text) inset; }
+.ck-row.ck-s-rest { background: transparent; border-style: dashed; min-height: 52px; }
+.ck-row.ck-s-rest .ck-row-bar { background: var(--border-2); }
+.ck-row.ck-s-rest .ck-row-t { color: var(--text-2); font-weight: 600; }
+.ck-row.ck-s-ok, .ck-row.ck-s-partial, .ck-row.ck-s-fail, .ck-row.ck-s-miss { background: color-mix(in srgb, var(--c) 5%, var(--surface)); }
+.ck-row.is-src { border-color: var(--ck-violet); background: color-mix(in srgb, var(--ck-violet) 10%, var(--surface)); }
+.ck-row.is-target { border-color: var(--ck-violet); border-style: dashed; }
+.ck-row.is-dim { opacity: .38; }
+
+/* ------------------------------------------------------------- frise des semaines */
+.ck-ribbon { display: grid; grid-template-columns: repeat(11, minmax(0, 1fr)); gap: 4px; align-items: end; }
+@media (max-width: 380px) { .ck-ribbon { gap: 3px; } }
+.ck-rb { --c: var(--ck-grey); display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 6px 0 5px; border-radius: 10px; cursor: pointer; font-family: inherit; color: var(--text); background: transparent; border: 1px solid transparent; min-width: 0; }
+.ck-rb-km { font-size: 10.5px; font-weight: 700; color: var(--text-2); font-variant-numeric: tabular-nums; }
+.ck-rb-col { position: relative; width: 100%; max-width: 24px; height: 96px; display: flex; align-items: flex-end; }
+.ck-rb-plan { position: absolute; left: 0; right: 0; bottom: 0; border-radius: 6px; background: color-mix(in srgb, var(--c) 38%, transparent); }
+.ck-rb-done { position: absolute; left: 0; right: 0; bottom: 0; border-radius: 6px; background: var(--c); }
+.ck-rb-n { font-size: 10.5px; font-weight: 700; color: var(--text-3); min-height: 14px; display: inline-flex; align-items: center; }
+.ck-rb.is-view { background: var(--surface-2); border-color: var(--border-2); }
+.ck-rb.is-cur .ck-rb-n { color: var(--text); }
+.ck-rb.is-cur .ck-rb-km { color: var(--text); }
+.ck-legend { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 10px; font-size: 12px; color: var(--text-2); }
+.ck-legend i { display: inline-block; width: 9px; height: 9px; border-radius: 3px; margin-right: 5px; }
+.ck-lg-done { background: var(--text-2); }
+
+.ck-legacy { margin-top: 18px; }
+.ck-legacy > summary { cursor: pointer; padding: 14px 4px; font-size: 14px; font-weight: 650; color: var(--text-2); list-style: none; }
+.ck-legacy > summary::-webkit-details-marker { display: none; }
+.ck-legacy > summary::after { content: " ▾"; }
+
+/* ------------------------------------------------------------- feuille */
+.ck-sheet-bk { position: fixed; inset: 0; z-index: 200; display: flex; align-items: flex-end; justify-content: center; background: rgba(8, 10, 15, 0); transition: background .2s; }
+.ck-sheet-bk[hidden] { display: none; }
+.ck-sheet-bk.on { background: rgba(8, 10, 15, .55); }
+.ck-sheet {
+  position: relative; width: 100%; max-width: 560px; max-height: 88vh; overflow-y: auto; overscroll-behavior: contain;
+  padding: 10px 18px calc(24px + env(safe-area-inset-bottom)); border-radius: 24px 24px 0 0;
+  background: var(--surface); border: 1px solid var(--border-2); border-bottom: none;
+  transform: translateY(30px); opacity: 0; transition: transform .25s var(--ease), opacity .2s;
+}
+.ck-sheet-bk.on .ck-sheet { transform: none; opacity: 1; }
+@media (min-width: 700px) { .ck-sheet-bk { align-items: center; } .ck-sheet { border-radius: 24px; border-bottom: 1px solid var(--border-2); } }
+.ck-sheet-grip { width: 40px; height: 5px; border-radius: 99px; background: var(--border-2); margin: 0 auto 10px; }
+.ck-sheet-x { position: absolute; top: 12px; right: 12px; width: 40px; height: 40px; border-radius: 99px; cursor: pointer; font-size: 16px; color: var(--text-2); background: var(--surface-2); border: 1px solid var(--border); }
+.ck-sheet-head { --c: var(--ck-grey); }
+.ck-sheet-tag { display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px; border-radius: 99px; font-size: 12px; font-weight: 750; color: var(--c); background: color-mix(in srgb, var(--c) 14%, transparent); }
+.ck-sheet-h { margin: 10px 40px 4px 0; font-size: 21px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.2; }
+.ck-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 8px; margin: 14px 0; }
+.ck-facts div { padding: 10px 12px; border-radius: 12px; background: var(--surface-2); border: 1px solid var(--border); }
+.ck-facts span { display: block; font-size: 11.5px; font-weight: 700; color: var(--text-3); text-transform: uppercase; letter-spacing: .05em; }
+.ck-facts b { display: block; margin-top: 3px; font-size: 17px; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.ck-sheet-sec { margin-top: 16px; }
+.ck-sheet-sec h4 { font-size: 12px; font-weight: 750; color: var(--text-3); text-transform: uppercase; letter-spacing: .07em; margin-bottom: 6px; }
+.ck-sheet-sec p { font-size: 14.5px; line-height: 1.5; color: var(--text); }
+.ck-pre { white-space: pre-wrap; }
+.ck-note { padding: 9px 11px; border-radius: 10px; margin-bottom: 6px; background: color-mix(in srgb, var(--ck-violet) 9%, var(--surface-2)); font-size: 13.5px !important; }
+.ck-field { display: block; margin-top: 14px; }
+.ck-field span { display: block; font-size: 12.5px; font-weight: 700; color: var(--text-2); margin-bottom: 6px; }
+.ck-field input { width: 100%; min-height: 48px; padding: 0 14px; border-radius: 12px; font: 500 16px var(--font-sans); color: var(--text); background: var(--surface-2); border: 1px solid var(--border-2); }
+.ck-swap { display: flex; align-items: center; gap: 10px; margin: 16px 0; }
+.ck-swap-c { flex: 1; min-width: 0; padding: 12px; border-radius: 14px; background: var(--surface-2); border: 1px solid var(--border); }
+.ck-swap-c span { font-size: 12px; font-weight: 750; color: var(--text-3); text-transform: uppercase; }
+.ck-swap-c b { display: block; margin: 3px 0; font-size: 14.5px; line-height: 1.25; }
+.ck-swap-c i { font-style: normal; font-size: 12.5px; color: var(--ck-violet); font-weight: 700; }
+.ck-swap-i { color: var(--ck-violet); }
+
+.ck-toast {
+  position: fixed; left: 50%; bottom: calc(86px + env(safe-area-inset-bottom)); z-index: 300; max-width: min(92vw, 420px);
+  transform: translate(-50%, 20px); opacity: 0; pointer-events: none; padding: 12px 16px; border-radius: 14px;
+  font-size: 14px; font-weight: 600; color: var(--bg); background: var(--text); box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+  transition: transform .25s var(--ease), opacity .2s;
+}
+.ck-toast.on { transform: translate(-50%, 0); opacity: 1; }
+.ck-toast[data-kind="err"] { background: var(--ck-red); color: #fff; }
+
+@media (prefers-reduced-motion: reduce) { .ck-bar > i, .ck-sheet, .ck-toast, .ck-btn { transition: none; } }
+
+/* En-tête réduit à l'identité ; les compteurs vivent désormais dans #ckStats. */
+.hero-inner { padding-bottom: 6px; }
+#ckStats .hero-counters { display: flex !important; margin-bottom: 12px; }
+#ckStats .hero-row-2 { display: block !important; }
