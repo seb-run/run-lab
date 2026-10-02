@@ -1,45 +1,45 @@
 {
- "headline": "Sortie légère, pas le bloc allure marathon prévu (15km à 4'12).",
+ "headline": "Allure spécifique tenue pile dans la cible, mais FC et asymétrie dérivent avec la chaleur.",
  "bullets": [
-  "Allure 5'17/km, +65\"/km vs cible 4'12, et 9s plus lent que tes sorties comparables (5'08).",
-  "FC 145 bpm, identique à ta réf (145.3) : effort cohérent, pas de dérive cardiaque.",
-  "9 km parcourus sur 21.4 prévus (42%) : le bloc allure marathon n'a pas eu lieu."
+  "Les 2×9km cibles tenus à 3'55-4'00/km, pile dans la fourchette 3'57-4'02.",
+  "FC dérive +6% (159→169) pendant l'effort, chaleur 25-29°C, RPE 9/10 'très fort'.",
+  "Asymétrie s'ouvre avec la vitesse : 50,4% lent vs 48,1% rapide — motif proche de l'adducteur hiver 2025."
  ],
  "points": [
   {
-   "label": "Allure",
-   "valeur": "5'17/km",
-   "ecart": "+9s vs réf. comparable 5'08/km",
-   "lecture": "plus lent que d'habitude à cet effort",
-   "ton": "neutre"
-  },
-  {
-   "label": "FC moyenne",
-   "valeur": "145 bpm",
-   "ecart": "identique à ta réf. 60j",
-   "lecture": "effort cardiaque conforme, rien d'anormal",
+   "label": "Allure spécifique",
+   "valeur": "3'55-4'00/km sur les blocs",
+   "ecart": "dans la cible 3'57-4'02",
+   "lecture": "objectif tenu malgré la moyenne globale plus lente",
    "ton": "bon"
   },
   {
-   "label": "Volume",
-   "valeur": "9.01 km",
-   "ecart": "-12.4 km vs plan (21.4 km)",
-   "lecture": "bloc allure marathon non réalisé",
+   "label": "FC",
+   "valeur": "164 bpm moy, 159→169 en bloc",
+   "ecart": "+6 bpm vs réf. 158",
+   "lecture": "chaleur 25-29°C, possible fatigue",
+   "ton": "vigilance"
+  },
+  {
+   "label": "Asymétrie vs allure",
+   "valeur": "50,4% lent → 48,1% rapide",
+   "ecart": "asym +1,51, s'ouvre avec la vitesse",
+   "lecture": "motif proche de l'épisode adducteur 2025",
    "ton": "vigilance"
   }
  ],
- "achille": null,
- "a_surveiller": "Pas de données équilibre/contact au sol (sans ceinture) : rien à dire sur Achille ou adducteur.",
+ "achille": "Équilibre global 49,1% proche de ta réf. 49,4%, mais descend à 47-48% sur les blocs rapides (charge droite).",
+ "a_surveiller": "Asymétrie qui s'ouvre avec la vitesse : signature proche de ta pubalgie 2025, à surveiller.",
  "seance": {
-  "date": "01/10/2026",
-  "heure": "12:14",
-  "titre": "Course à pied le midi",
-  "type_detecte": "endurance",
-  "km": 9.01,
-  "duree": "47m 31s",
-  "allure": "5'17\"/km",
-  "fc_moy": 145
+  "date": "02/10/2026",
+  "heure": "11:42",
+  "titre": "i192604186",
+  "type_detecte": "sortie_longue",
+  "km": 28.01,
+  "duree": "2h 00m 35s",
+  "allure": "4'18\"/km",
+  "fc_moy": 164
  },
- "generated_at": "2026-10-01T11:06:35",
- "baseline_n": 30
+ "generated_at": "2026-10-02T11:53:01",
+ "baseline_n": 10
 }
