@@ -1,13 +1,14 @@
 {
  "garmin": {
   "ok": true,
-  "at": "2026-10-01T20:25:46",
-  "message": "0 fichier(s), 7 course(s) vues",
-  "last_ok": "2026-10-01T20:25:46"
+  "at": "2026-10-02T11:21:47",
+  "message": "0 fichier(s), 6 course(s) vues",
+  "last_ok": "2026-10-02T11:21:47"
  },
  "coach": {
-  "ok": true,
-  "at": "2026-10-01T19:33:01",
+  "ok": false,
+  "at": "2026-10-02T11:23:04",
+  "message": "JSONDecodeError: Extra data: line 34 column 4 (char 2604)",
   "last_ok": "2026-10-01T19:33:01"
  },
  "debrief": {

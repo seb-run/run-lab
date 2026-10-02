@@ -8558,7 +8558,7 @@
           "scheduled_time": "07:45",
           "date": "2026-10-02",
           "dow": "Fri",
-          "status": "pending",
+          "status": "today",
           "actual": null,
           "moved_from": "2026-10-04"
         },
@@ -8603,22 +8603,22 @@
         }
       ],
       "compliance": {
-        "km_pct": 108,
-        "km_done": 33.6,
-        "km_planned": 31.0,
+        "km_pct": 104,
+        "km_done": 42.6,
+        "km_planned": 41.0,
         "km_done_week": 42.6,
         "km_planned_week": 92.0,
-        "sessions_done": 2,
-        "sessions_planned": 2,
+        "sessions_done": 3,
+        "sessions_planned": 3,
         "sessions_done_week": 3,
         "keys_success": 1,
         "keys_total": 1,
         "points": 100,
         "verdict": "success"
       },
-      "volume_actual_to_date": 33.6,
-      "volume_planned_to_date": 31.0,
-      "volume_drift_pct": 8.4
+      "volume_actual_to_date": 42.6,
+      "volume_planned_to_date": 41.0,
+      "volume_drift_pct": 3.9
     },
     {
       "week_num": 8,

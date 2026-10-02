@@ -1,53 +1,41 @@
 {
- "generated_at": "2026-10-01T19:33:01",
+ "generated_at": "2026-10-02T11:23:04",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-09-28\", \"title\": \"Repos + Muscu A\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-09-29\", \"title\": \"Footing 70' + 6 lignes droites\", \"type\": \"easy\", \"planned_km\": 14.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'15\\\"/km\", \"actual\": {\"km\": 13.4, \"pace_str\": \"5'14\\\"/km\", \"fc\": 136, \"cadence\": 177, \"duration_min\": 70}, \"splits\": \"1:5'27/127/178spm 2:5'19/132/178spm 3:5'19/132/178spm 4:5'13/134/178spm 5:5'18/135/178spm 6:5'10/137/176spm 7:5'16/141/176spm 8:5'12/140/176spm 9:5'13/138/178spm 10:5'07/138/178spm 11:5'04/134/176spm 12:5'10/137/178spm 13:5'13/138/176spm 14:5'20/138/178spm\", \"garmin\": {\"te_aero\": 3.1, \"te_ana\": 0.0, \"load\": 104.8, \"rpe\": 2.0, \"feel_label\": \"Très fort\", \"temp_c\": 23, \"balance_l\": 50.17, \"flags\": [], \"stance_drift_pct\": 2.5, \"step_drift_pct\": 3.2}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 96, \"pace_delta_s\": -1}, \"hr\": {\"avg\": 136, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": -1.3, \"flags\": []}}, {\"date\": \"2026-09-30\", \"title\": \"PISTE — 6 × 1000 m\", \"type\": \"intervals\", \"planned_km\": 17.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'32\\\"/km\", \"actual\": {\"km\": 20.2, \"pace_str\": \"4'55\\\"/km\", \"fc\": 156, \"cadence\": 171, \"duration_min\": 99}, \"splits\": \"1:5'21/129/178spm 2:5'10/145/178spm 3:5'09/147/176spm 4:5'08/148/176spm 5:5'15/143/176spm 6:3'46/165/182spm 7:4'18/169/178spm 8:3'42/173/182spm 9:4'18/174/176spm 10:3'41/176/180spm 11:4'15/175/176spm 12:3'42/177/180spm 13:4'25/175/174spm 14:3'39/177/178spm 15:4'23/176/174spm 16:3'41/179/180spm 17:4'20/178/172spm 18:3'30/182/180spm 19:7'53/161/138spm 20:3'29/177/182spm 21:7'53/159/136spm 22:3'28/178/182spm 23:8'23/157/130spm 24:3'27/176/182spm 25:8'09/160/132spm 26:3'29/178/182spm 27:7'53/159/136spm 28:3'22/181/180spm 29:8'02/162/148spm 30:5'30/155/176spm (+5 laps)\", \"garmin\": {\"te_aero\": 4.9, \"te_ana\": 3.2, \"load\": 411.7, \"rpe\": 9.0, \"feel_label\": \"Fort\", \"temp_c\": 26, \"balance_l\": 50.39, \"flags\": [\"stance_fade\", \"step_fade\"], \"stance_drift_pct\": 13.4, \"step_drift_pct\": -21.3}, \"score\": {\"points\": 98, \"verdict\": \"success\", \"volume_pct\": 119, \"pace_delta_s\": 4}, \"hr\": {\"avg\": 156, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": -10.8, \"flags\": []}}]|405712ee95",
- "plan_hash": "405712ee95",
- "headline": "Compliance à 100% et allures tenues sur 4 séances clés d'affilée, mais fatigue mécanique répétée (stance+step fade) sur les deux dernières pistes — à canaliser avant Paris.",
- "analysis": "Les chiffres sont solides : 14/14 séances réalisées, volume hebdo entre 103% et 119% du prévu depuis 4 semaines, et les 4 dernières séances clés (seuil, spécifique MP, SL progressive, intervalles) toutes réussies avec des allures souvent plus rapides que la cible (-20s sur le seuil, -2s pile sur le MP, -13s sur la SL). La SL progressive du 27/09 est un vrai dépassement : 24km à 4'34 de moyenne en finissant sous 4' au dernier km, avec une décroissance cardiaque quasi nulle (-1,4%) — meilleure que celle du 20/09 sur le même type de séance. Le signal à surveiller n'est pas cardiaque mais mécanique : les séances piste du 23/09 et du 30/09 montrent toutes les deux un stance_fade et step_fade marqués en fin d'effort (jusqu'à +30% de temps de contact, foulée qui se raccourcit de 20%), couplé à un net dépassement de volume (119-126% du prévu) et une chaleur élevée (26-28°C). Ce n'est pas un hasard isolé, c'est le même schéma deux fois en 8 jours sur le même type de séance — ton Achille a un historique, c'est le point à corriger avant la course-test du 11/10. Focus de la semaine : respecter le volume prescrit sur les séances piste (arrêter les reps supplémentaires), bien t'hydrater par temps chaud, et garder la même rigueur sur la SL de vendredi qui n'a pas besoin d'être plus rapide que prévu à 4 semaines de NYC.",
+ "signature": "[{\"date\": \"2026-09-29\", \"title\": \"Footing 70' + 6 lignes droites\", \"type\": \"easy\", \"planned_km\": 14.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'15\\\"/km\", \"actual\": {\"km\": 13.4, \"pace_str\": \"5'14\\\"/km\", \"fc\": 136, \"cadence\": 177, \"duration_min\": 70}, \"splits\": \"1:5'27/127/178spm 2:5'19/132/178spm 3:5'19/132/178spm 4:5'13/134/178spm 5:5'18/135/178spm 6:5'10/137/176spm 7:5'16/141/176spm 8:5'12/140/176spm 9:5'13/138/178spm 10:5'07/138/178spm 11:5'04/134/176spm 12:5'10/137/178spm 13:5'13/138/176spm 14:5'20/138/178spm\", \"garmin\": {\"te_aero\": 3.1, \"te_ana\": 0.0, \"load\": 104.8, \"rpe\": 2.0, \"feel_label\": \"Très fort\", \"temp_c\": 23, \"balance_l\": 50.17, \"flags\": [], \"stance_drift_pct\": 2.5, \"step_drift_pct\": 3.2}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 96, \"pace_delta_s\": -1}, \"hr\": {\"avg\": 136, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": -1.3, \"flags\": []}}, {\"date\": \"2026-09-30\", \"title\": \"PISTE — 6 × 1000 m\", \"type\": \"intervals\", \"planned_km\": 17.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'32\\\"/km\", \"actual\": {\"km\": 20.2, \"pace_str\": \"4'55\\\"/km\", \"fc\": 156, \"cadence\": 171, \"duration_min\": 99}, \"splits\": \"1:5'21/129/178spm 2:5'10/145/178spm 3:5'09/147/176spm 4:5'08/148/176spm 5:5'15/143/176spm 6:3'46/165/182spm 7:4'18/169/178spm 8:3'42/173/182spm 9:4'18/174/176spm 10:3'41/176/180spm 11:4'15/175/176spm 12:3'42/177/180spm 13:4'25/175/174spm 14:3'39/177/178spm 15:4'23/176/174spm 16:3'41/179/180spm 17:4'20/178/172spm 18:3'30/182/180spm 19:7'53/161/138spm 20:3'29/177/182spm 21:7'53/159/136spm 22:3'28/178/182spm 23:8'23/157/130spm 24:3'27/176/182spm 25:8'09/160/132spm 26:3'29/178/182spm 27:7'53/159/136spm 28:3'22/181/180spm 29:8'02/162/148spm 30:5'30/155/176spm (+5 laps)\", \"garmin\": {\"te_aero\": 4.9, \"te_ana\": 3.2, \"load\": 411.7, \"rpe\": 9.0, \"feel_label\": \"Fort\", \"temp_c\": 26, \"balance_l\": 50.39, \"flags\": [\"stance_fade\", \"step_fade\"], \"stance_drift_pct\": 13.4, \"step_drift_pct\": -21.3}, \"score\": {\"points\": 98, \"verdict\": \"success\", \"volume_pct\": 119, \"pace_delta_s\": 4}, \"hr\": {\"avg\": 156, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": -10.8, \"flags\": []}}, {\"date\": \"2026-10-01\", \"title\": \"Footing récupération 50'\", \"type\": \"easy\", \"planned_km\": 10.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'25\\\"/km\", \"actual\": {\"km\": 9.0, \"pace_str\": \"5'17\\\"/km\", \"fc\": 145, \"cadence\": 179, \"duration_min\": 48}, \"splits\": \"1:5'24/146/180spm 2:5'21/147/181spm 3:5'11/138/178spm 4:5'12/141/180spm 5:5'15/142/180spm 6:5'06/146/182spm 7:5'19/149/176spm 8:5'26/146/177spm 9:5'14/148/177spm\", \"garmin\": {\"te_aero\": 3.2, \"te_ana\": 0.0, \"load\": 108.6, \"rpe\": 2.0, \"feel_label\": \"Fort\", \"temp_c\": 24, \"flags\": [], \"stance_drift_pct\": 1.4, \"step_drift_pct\": 3.0}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 90, \"pace_delta_s\": -8}, \"hr\": {\"avg\": 145, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 6.6, \"flags\": []}}]|0ed1f187fc",
+ "headline": "Analyse indisponible (JSONDecodeError)",
+ "analysis": "Le coach n'a pas pu produire son analyse : Extra data: line 34 column 4 (char 2604). Les indicateurs affichés sont calculés localement sans intervention du modèle. Retentera au prochain build.",
  "forme": {
-  "score": 76,
+  "score": 60,
   "verdict": "surveiller",
-  "headline": "Allures et volume au top, mécanique à canaliser sur piste",
-  "detail": "Sur les 8 derniers jours tu as enchaîné seuil, MP, SL et intervalles — 4 séances clés réussies, c'est la preuve que le plan tient. Mais stance_fade + step_fade sur les deux pistes (23/09 et 30/09) signalent une fatigue mécanique de fin de séance, amplifiée par un volume systématiquement au-dessus du prévu (jusqu'à 126%) en pleine chaleur. Objectif cette semaine : respecter les distances annoncées sur la piste du 07/10, pas un mètre de plus.",
+  "headline": "État composé automatiquement (surveiller)",
+  "detail": "Le modèle IA n'a pas répondu — indicateurs calculés à partir des données locales. Erreur : Extra data: line 34 column 4 (char 2604)",
   "indicateurs": {
    "fraicheur": {
-    "valeur": "charge haute",
-    "trend": "down",
-    "etat": "watch",
-    "note": "4 clés en 8 jours"
+    "valeur": "100/100 moy.",
+    "trend": "flat",
+    "etat": "ok",
+    "note": "moyenne 5 dernières"
    },
    "compliance": {
-    "valeur": "14/14 séances · 100%",
-    "trend": "up",
+    "valeur": "43/41 km · 1/1 clés",
+    "trend": "flat",
     "etat": "ok",
-    "note": "aucune manquée"
+    "note": "semaine en cours"
    },
    "aerobie": {
-    "valeur": "-1,4 %",
-    "trend": "up",
-    "etat": "ok",
-    "note": "dérive nulle sur SL du 27/09"
+    "valeur": "6.6 %",
+    "trend": "flat",
+    "etat": "watch",
+    "note": "dernière avec FC"
    },
    "achille": {
-    "valeur": "fade x2/8j",
-    "trend": "down",
-    "etat": "watch",
-    "note": "stance+step fade sur piste"
+    "valeur": "stable",
+    "trend": "flat",
+    "etat": "ok",
+    "note": "0 signal(aux)"
    }
   }
  },
- "applied": [
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-10-07",
-   "field": "description_note",
-   "new_value": "Tiens-toi aux 12 km prévus, pas de rallonge sur les 6×500m. Les deux dernières pistes (23 et 30/09) ont montré un stance/step fade net en fin de séance quand le volume a dépassé 120% du prévu sous forte chaleur — hydrate-toi bien avant et pendant, et coupe la séance si la foulée se dégrade visiblement sur les derniers 500m.",
-   "reason": "Deux séances piste récentes affichent un fade mécanique marqué (stance_drift jusqu'à +30%, step_drift jusqu'à -21%) corrélé à un dépassement de volume (119-126%) et une chaleur élevée (26-28°C) — risque réel vu l'historique Achille, à couper avant que ça se répète une 3e fois.",
-   "id": "f15325bd",
-   "detail": "2026-10-07 : note ajoutée"
-  }
- ],
+ "applied": [],
  "pending": []
 }
