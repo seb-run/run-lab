@@ -149,81 +149,7 @@
               "rr_beats": 9005,
               "rmssd_effort": 7.2,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 297,
-                "fc": 134,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 293,
-                "fc": 149,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 294,
-                "fc": 148,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 289,
-                "fc": 148,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 294,
-                "fc": 148,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 274,
-                "fc": 156,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 277,
-                "fc": 162,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 299,
-                "fc": 151,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 293,
-                "fc": 154,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 286,
-                "fc": 155,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 304,
-                "fc": 155,
-                "ca": 176
-              },
-              {
-                "km": 0.71,
-                "ps": 317,
-                "fc": 155,
-                "ca": 176
-              }
-            ]
+            }
           },
           "score": {
             "points": 97,
@@ -8870,7 +8796,7 @@
           "duration_min": 40,
           "key": false,
           "description": "40' récupération.\n[Récupération · 5'15–5'35/km]\nChaussures : Nike Pegasus 41 « Jakob » (476 km)",
-          "status": "pending",
+          "status": "today",
           "target_pace": "5'25\"/km",
           "target_pace_sec": 325,
           "shoe": "Nike Pegasus 41 « Jakob » (476 km)",
@@ -8892,6 +8818,10 @@
             {
               "kind": "note",
               "text": "Avant de partir sur les 3×10' au seuil : les 3 dernières séances clés montrent un allongement du temps de contact (+13 à +30%) et RPE qui grimpe à 9. Si les mollets/Achille tirent dès le 1er bloc, coupe à 2×10' plutôt que forcer le 3e."
+            },
+            {
+              "kind": "note",
+              "text": "Tiens l'allure 3'50/km sans forcer au-delà — vise RPE8 max, pas de sprint final sur le dernier bloc. Tu enchaînes une 3e séance à forte intensité en 9 jours avec un signal de contact au sol allongé le 2/10 : l'objectif est d'arriver frais pour le 20km de Paris dimanche, pas de tout donner demain."
             }
           ],
           "date": "2026-10-04",
@@ -8902,22 +8832,22 @@
         }
       ],
       "compliance": {
-        "km_pct": 104,
-        "km_done": 42.6,
-        "km_planned": 41.0,
+        "km_pct": 102,
+        "km_done": 70.6,
+        "km_planned": 69.0,
         "km_done_week": 70.6,
         "km_planned_week": 92.0,
-        "sessions_done": 3,
-        "sessions_planned": 3,
+        "sessions_done": 4,
+        "sessions_planned": 4,
         "sessions_done_week": 4,
-        "keys_success": 1,
-        "keys_total": 1,
+        "keys_success": 2,
+        "keys_total": 2,
         "points": 100,
         "verdict": "success"
       },
-      "volume_actual_to_date": 42.6,
-      "volume_planned_to_date": 41.0,
-      "volume_drift_pct": 3.9
+      "volume_actual_to_date": 70.6,
+      "volume_planned_to_date": 69.0,
+      "volume_drift_pct": 2.3
     },
     {
       "week_num": 8,
