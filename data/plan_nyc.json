@@ -8826,20 +8826,248 @@
           ],
           "date": "2026-10-04",
           "dow": "Sun",
-          "status": "today",
-          "actual": null,
-          "moved_from": "2026-10-02"
+          "status": "done",
+          "actual": {
+            "km": 14.8,
+            "duration_min": 67,
+            "pace_sec": 271,
+            "pace_str": "4'31\"/km",
+            "fc": 155,
+            "cadence": 176,
+            "type": "frac_court",
+            "title": "i193478717",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 202.0,
+              "osc_cm": 10.6,
+              "vratio": 8.53,
+              "balance_l": 48.78,
+              "step_m": 1.24,
+              "temp_c": 28,
+              "temp_max": 31,
+              "resp": 35.9,
+              "power": 405,
+              "np": 418,
+              "te_aero": 4.5,
+              "te_ana": 0.8,
+              "load": 262.2,
+              "strides": 5849,
+              "rpe": 5.0,
+              "feel": 100,
+              "feel_label": "Très fort",
+              "drift": {
+                "stance": {
+                  "start": 202.0,
+                  "end": 206.0,
+                  "pct": 2.0
+                },
+                "step": {
+                  "start": 1184.0,
+                  "end": 1258.0,
+                  "pct": 6.3
+                },
+                "vratio": {
+                  "start": 8.58,
+                  "end": 8.46,
+                  "pct": -1.4
+                },
+                "osc": {
+                  "start": 102.0,
+                  "end": 107.0,
+                  "pct": 5.3
+                },
+                "hr": {
+                  "start": 145.0,
+                  "end": 161.0,
+                  "pct": 10.4
+                },
+                "cad": {
+                  "start": 89.1,
+                  "end": 87.6,
+                  "pct": -1.6
+                }
+              },
+              "balance_min": 46.55,
+              "balance_max": 51.19,
+              "balance_series": [
+                49.0,
+                50.54,
+                49.01,
+                50.48,
+                47.88,
+                47.83,
+                47.68,
+                50.0,
+                47.16,
+                46.88,
+                47.5,
+                50.06,
+                47.72,
+                46.55,
+                46.96,
+                49.83,
+                49.71,
+                51.19
+              ],
+              "balance_lent": 49.93,
+              "balance_rapide": 47.37,
+              "asym_vs_allure": 2.56,
+              "allure_lent_s": 332,
+              "allure_rapide_s": 227,
+              "rr_beats": 10976,
+              "rmssd_effort": 10.1,
+              "flags": [
+                "asym_vitesse"
+              ]
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 323,
+                "fc": 127,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 327,
+                "fc": 131,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 311,
+                "fc": 138,
+                "ca": 178
+              },
+              {
+                "km": 0.5,
+                "ps": 329,
+                "fc": 144,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 230,
+                "fc": 162,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 226,
+                "fc": 170,
+                "ca": 176
+              },
+              {
+                "km": 0.63,
+                "ps": 229,
+                "fc": 171,
+                "ca": 176
+              },
+              {
+                "km": 0.44,
+                "ps": 343,
+                "fc": 151,
+                "ca": 172
+              },
+              {
+                "km": 1.0,
+                "ps": 232,
+                "fc": 168,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 230,
+                "fc": 174,
+                "ca": 176
+              },
+              {
+                "km": 0.61,
+                "ps": 225,
+                "fc": 173,
+                "ca": 176
+              },
+              {
+                "km": 0.44,
+                "ps": 339,
+                "fc": 149,
+                "ca": 172
+              },
+              {
+                "km": 1.0,
+                "ps": 228,
+                "fc": 169,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 229,
+                "fc": 174,
+                "ca": 176
+              },
+              {
+                "km": 0.64,
+                "ps": 224,
+                "fc": 176,
+                "ca": 178
+              },
+              {
+                "km": 0.43,
+                "ps": 350,
+                "fc": 153,
+                "ca": 166
+              },
+              {
+                "km": 1.0,
+                "ps": 288,
+                "fc": 152,
+                "ca": 176
+              },
+              {
+                "km": 1.07,
+                "ps": 310,
+                "fc": 149,
+                "ca": 176
+              }
+            ]
+          },
+          "moved_from": "2026-10-02",
+          "score": {
+            "points": 100,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 99,
+            "volume_points": 100,
+            "pace_points": 100,
+            "pace_target_s": 230,
+            "pace_actual_s": 228,
+            "pace_actual_str": "3'48\"/km",
+            "pace_delta_s": -2,
+            "is_quality": true,
+            "hr": {
+              "avg": 155,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 4.7,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 99%",
+              "Allure −2\"/km vs cible"
+            ]
+          }
         }
       ],
       "compliance": {
         "km_pct": 92,
         "km_done": 70.6,
         "km_planned": 77.0,
-        "km_done_week": 70.6,
+        "km_done_week": 85.4,
         "km_planned_week": 92.0,
         "sessions_done": 4,
         "sessions_planned": 5,
-        "sessions_done_week": 4,
+        "sessions_done_week": 5,
         "keys_success": 2,
         "keys_total": 2,
         "points": 95,
