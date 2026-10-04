@@ -8796,7 +8796,7 @@
           "duration_min": 40,
           "key": false,
           "description": "40' récupération.\n[Récupération · 5'15–5'35/km]\nChaussures : Nike Pegasus 41 « Jakob » (476 km)",
-          "status": "today",
+          "status": "missed",
           "target_pace": "5'25\"/km",
           "target_pace_sec": 325,
           "shoe": "Nike Pegasus 41 « Jakob » (476 km)",
@@ -8826,28 +8826,28 @@
           ],
           "date": "2026-10-04",
           "dow": "Sun",
-          "status": "pending",
+          "status": "today",
           "actual": null,
           "moved_from": "2026-10-02"
         }
       ],
       "compliance": {
-        "km_pct": 102,
+        "km_pct": 92,
         "km_done": 70.6,
-        "km_planned": 69.0,
+        "km_planned": 77.0,
         "km_done_week": 70.6,
         "km_planned_week": 92.0,
         "sessions_done": 4,
-        "sessions_planned": 4,
+        "sessions_planned": 5,
         "sessions_done_week": 4,
         "keys_success": 2,
         "keys_total": 2,
-        "points": 100,
+        "points": 95,
         "verdict": "success"
       },
       "volume_actual_to_date": 70.6,
-      "volume_planned_to_date": 69.0,
-      "volume_drift_pct": 2.3
+      "volume_planned_to_date": 77.0,
+      "volume_drift_pct": -8.3
     },
     {
       "week_num": 8,

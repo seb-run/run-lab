@@ -5,24 +5,6 @@
    "kind": "change_pace",
    "date": "2026-09-15",
    "field": null,
-   "new_value": "Allure 10k/seuil au lieu de VMA pure, volume réduit",
-   "reason": "Deux séances rapides consécutives ratées à 60-90s/km trop lent malgré FC et RPE bas : le problème n'est pas la fatigue mécanique mais l'incapacité à attaquer l'allure VMA en ce moment (chaleur + charge cumulée). Mieux vaut sécuriser une réussite à une intensité plus abordable que risquer un 3e échec.",
-   "replacement": {
-    "title": "5×800m allure 10k/seuil",
-    "type": "intervals",
-    "km": 12.0,
-    "target_pace": "3'50\"/km",
-    "description": "Échauffement 3km facile. 5×800m à 3'50\"/km (r=2min trot). Objectif : retrouver des sensations de réussite sur du rapide sans viser la VMA pure. Si la 1re répétition est difficile, arrête-toi à 4 et rentre en footing. Cours tôt le matin ou le soir pour éviter le pic de chaleur."
-   },
-   "id": "1ee603c3",
-   "status": "expired",
-   "created_at": "2026-09-14T11:00:16"
-  },
-  {
-   "severity": "major",
-   "kind": "change_pace",
-   "date": "2026-09-15",
-   "field": null,
    "new_value": "allure VMA (3'28) remplacée par allure seuil/10k (3'45-3'50) avec récup allongée",
    "reason": "2 séances clés vitesse consécutives ratées en distance ET en allure malgré RPE bas et FC basse — pattern chaleur, pas fatigue. Éviter un 3e échec qui n'apporterait rien et risque d'entamer la confiance.",
    "replacement": {
@@ -521,6 +503,18 @@
    "status": "expired",
    "created_at": "2026-10-01T11:06:08",
    "expired_reason": "plan_changed"
+  },
+  {
+   "severity": "minor",
+   "kind": "volume_adjust",
+   "date": "2026-10-04",
+   "field": "km",
+   "new_value": 13.5,
+   "reason": "RPE 9 sur les deux dernières séances clés + footing raté la veille : on allège de 10% pour arriver frais au 20km de Paris dans 7 jours, sans toucher à la structure de la séance.",
+   "id": "deb3ec64",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-10-04T11:18:49"
   }
  ]
 }
