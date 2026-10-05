@@ -285,69 +285,7 @@
               "rr_beats": 7425,
               "rmssd_effort": 6.0,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 324,
-                "fc": 130,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 311,
-                "fc": 140,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 313,
-                "fc": 142,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 308,
-                "fc": 145,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 306,
-                "fc": 148,
-                "ca": 174
-              },
-              {
-                "km": 1.0,
-                "ps": 307,
-                "fc": 144,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 301,
-                "fc": 143,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 314,
-                "fc": 146,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 311,
-                "fc": 146,
-                "ca": 174
-              },
-              {
-                "km": 0.65,
-                "ps": 318,
-                "fc": 142,
-                "ca": 174
-              }
-            ]
+            }
           },
           "score": null
         },
@@ -9060,17 +8998,17 @@
         }
       ],
       "compliance": {
-        "km_pct": 92,
-        "km_done": 70.6,
-        "km_planned": 77.0,
+        "km_pct": 93,
+        "km_done": 85.4,
+        "km_planned": 92.0,
         "km_done_week": 85.4,
         "km_planned_week": 92.0,
-        "sessions_done": 4,
-        "sessions_planned": 5,
+        "sessions_done": 5,
+        "sessions_planned": 6,
         "sessions_done_week": 5,
-        "keys_success": 2,
-        "keys_total": 2,
-        "points": 95,
+        "keys_success": 3,
+        "keys_total": 3,
+        "points": 96,
         "verdict": "success"
       },
       "volume_actual_to_date": 70.6,
@@ -9095,7 +9033,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos course à pied. Dernière vraie séance de muscu.",
-          "status": "pending",
+          "status": "today",
           "actual": null
         },
         {
@@ -9200,7 +9138,10 @@
           "scheduled_time": "10:00",
           "actual": null
         }
-      ]
+      ],
+      "volume_actual_to_date": 0.0,
+      "volume_planned_to_date": 0.0,
+      "volume_drift_pct": 0
     },
     {
       "week_num": 9,

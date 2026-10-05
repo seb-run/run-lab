@@ -513,8 +513,9 @@
    "reason": "RPE 9 sur les deux dernières séances clés + footing raté la veille : on allège de 10% pour arriver frais au 20km de Paris dans 7 jours, sans toucher à la structure de la séance.",
    "id": "deb3ec64",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
-   "created_at": "2026-10-04T11:18:49"
+   "status": "expired",
+   "created_at": "2026-10-04T11:18:49",
+   "expired_reason": "plan_changed"
   }
  ]
 }
