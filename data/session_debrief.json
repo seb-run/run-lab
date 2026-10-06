@@ -1,45 +1,45 @@
 {
- "headline": "Séance stoppée à 65% du volume, allure tenue, FC qui dérive nettement sous forte chaleur.",
+ "headline": "Footing prévu transformé en fractionné : 22,4 km au lieu de 12, avec portions à 3'20/km.",
  "bullets": [
-  "7.81/12km prévus (65%), arrêt à 41min au lieu de 60min.",
-  "FC +14.7% en séance (134→153bpm) à allure stable, 27°C, découplage 8.7%.",
-  "Contact sol 251ms, +24ms vs réf. 60j (226.7ms) — chaussures neuves Hyperboost Edge."
+  "Volume 22,44 km vs 12 km prévus — 252% du plan, bien au-delà d'un footing.",
+  "Allure moyenne 4'59/km mais pointes à 3'20-3'48/km : écart énorme avec la cible 5'15/km.",
+  "FC moyenne 151 bpm, +3 vs ta réf. 60j (147,94) à allure comparable — logique vu les accélérations."
  ],
  "points": [
   {
-   "label": "Volume",
-   "valeur": "7.81 km",
-   "ecart": "65% du plan (12km prévus)",
-   "lecture": "séance écourtée, arrêt anticipé",
-   "ton": "vigilance"
-  },
-  {
-   "label": "Dérive FC",
-   "valeur": "+14.7% (134→153bpm)",
-   "ecart": "découplage 8.7%, flag drift_high",
-   "lecture": "chaleur 27°C probable en cause",
-   "ton": "vigilance"
-  },
-  {
-   "label": "Temps de contact",
-   "valeur": "251 ms",
-   "ecart": "+24ms vs réf. 60j (226.7ms)",
-   "lecture": "stable sur la séance, chaussures neuves",
+   "label": "FC moyenne",
+   "valeur": "151 bpm",
+   "ecart": "+3 bpm vs réf. 147,94",
+   "lecture": "Léger surplus, cohérent avec les accélérations",
    "ton": "neutre"
+  },
+  {
+   "label": "Volume",
+   "valeur": "22,44 km",
+   "ecart": "+10,44 km vs 12 km prévus",
+   "lecture": "Séance bien plus longue que prévu",
+   "ton": "vigilance"
+  },
+  {
+   "label": "Portions rapides",
+   "valeur": "~3'20-3'48/km",
+   "ecart": "loin sous la cible 5'15/km",
+   "lecture": "Intervalles non prévus au plan",
+   "ton": "vigilance"
   }
  ],
- "achille": "Équilibre gauche/droit absent sur cette séance (pas de ceinture/footpod) — rien à signaler.",
- "a_surveiller": "Dérive FC marquée par forte chaleur : vérifier hydratation sur les prochaines sorties à 27°C+.",
+ "achille": "Pas de donnée d'équilibre gauche/droit cette séance (capteur absent).",
+ "a_surveiller": "Footing devenu fractionné : charge et impact plus élevés, à surveiller pour le tendon d'Achille.",
  "seance": {
   "date": "06/10/2026",
-  "heure": "12:24",
-  "titre": "i194219217",
-  "type_detecte": "footing",
-  "km": 7.81,
-  "duree": "41m 26s",
-  "allure": "5'18\"/km",
-  "fc_moy": 143
+  "heure": "19:26",
+  "titre": "Evening Run",
+  "type_detecte": "frac_court",
+  "km": 22.44,
+  "duree": "1h 49m 10s",
+  "allure": "4'52\"/km",
+  "fc_moy": 151
  },
- "generated_at": "2026-10-06T11:09:52",
- "baseline_n": 28
+ "generated_at": "2026-10-06T19:33:20",
+ "baseline_n": 34
 }

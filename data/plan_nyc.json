@@ -8923,21 +8923,21 @@
           "duration_min": 60,
           "key": false,
           "description": "60' facile.\n[Footing facile · 5'05–5'25/km]\nChaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-          "status": "under",
+          "status": "over",
           "target_pace": "5'15\"/km",
           "target_pace_sec": 315,
           "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
           "scheduled_time": "06:30",
           "actual": {
-            "km": 7.8,
-            "duration_min": 41,
-            "pace_sec": 318,
-            "pace_str": "5'18\"/km",
-            "fc": 143,
-            "cadence": 175,
-            "type": "footing",
-            "title": "i194219217",
-            "n": 1,
+            "km": 30.2,
+            "duration_min": 151,
+            "pace_sec": 299,
+            "pace_str": "4'59\"/km",
+            "fc": 147,
+            "cadence": 172,
+            "type": "frac_court",
+            "title": "Evening Run",
+            "n": 2,
             "note": null,
             "dyn": {
               "stance_ms": 251.0,
@@ -8992,6 +8992,198 @@
             "splits": [
               {
                 "km": 1.0,
+                "ps": 315,
+                "fc": 129,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 307,
+                "fc": 142,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 312,
+                "fc": 142,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 306,
+                "fc": 144,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 311,
+                "fc": 144,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 305,
+                "fc": 139,
+                "ca": 175
+              },
+              {
+                "km": 1.0,
+                "ps": 311,
+                "fc": 149,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 319,
+                "fc": 137,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 313,
+                "fc": 146,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 320,
+                "fc": 140,
+                "ca": 174
+              },
+              {
+                "km": 0.29,
+                "ps": 322,
+                "fc": 138,
+                "ca": 175
+              },
+              {
+                "km": 0.4,
+                "ps": 202,
+                "fc": 164,
+                "ca": 189
+              },
+              {
+                "km": 0.07,
+                "ps": 386,
+                "fc": 165,
+                "ca": 163
+              },
+              {
+                "km": 0.4,
+                "ps": 202,
+                "fc": 171,
+                "ca": 185
+              },
+              {
+                "km": 0.06,
+                "ps": 514,
+                "fc": 169,
+                "ca": 165
+              },
+              {
+                "km": 0.4,
+                "ps": 200,
+                "fc": 174,
+                "ca": 187
+              },
+              {
+                "km": 0.24,
+                "ps": 367,
+                "fc": 156,
+                "ca": 166
+              },
+              {
+                "km": 1.0,
+                "ps": 225,
+                "fc": 168,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 216,
+                "fc": 179,
+                "ca": 182
+              },
+              {
+                "km": 0.17,
+                "ps": 523,
+                "fc": 153,
+                "ca": 141
+              },
+              {
+                "km": 1.0,
+                "ps": 228,
+                "fc": 169,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 217,
+                "fc": 178,
+                "ca": 181
+              },
+              {
+                "km": 0.17,
+                "ps": 533,
+                "fc": 156,
+                "ca": 141
+              },
+              {
+                "km": 0.4,
+                "ps": 200,
+                "fc": 171,
+                "ca": 190
+              },
+              {
+                "km": 0.4,
+                "ps": 215,
+                "fc": 175,
+                "ca": 184
+              },
+              {
+                "km": 0.4,
+                "ps": 200,
+                "fc": 174,
+                "ca": 186
+              },
+              {
+                "km": 0.05,
+                "ps": 570,
+                "fc": 174,
+                "ca": 121
+              },
+              {
+                "km": 1.0,
+                "ps": 314,
+                "fc": 153,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 304,
+                "fc": 148,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
+                "ps": 318,
+                "fc": 146,
+                "ca": 179
+              },
+              {
+                "km": 1.0,
+                "ps": 322,
+                "fc": 148,
+                "ca": 178
+              },
+              {
+                "km": 0.89,
+                "ps": 316,
+                "fc": 143,
+                "ca": 177
+              },
+              {
+                "km": 1.0,
                 "ps": 324,
                 "fc": 124,
                 "ca": 182
@@ -9041,30 +9233,27 @@
             ]
           },
           "score": {
-            "points": 72,
-            "verdict": "partial",
-            "verdict_label": "Partielle",
-            "volume_pct": 65,
-            "volume_points": 50,
+            "points": 84,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 252,
+            "volume_points": 70,
             "pace_points": 100,
             "pace_target_s": 315,
-            "pace_actual_s": 318,
-            "pace_actual_str": "5'18\"/km",
-            "pace_delta_s": 3,
+            "pace_actual_s": 299,
+            "pace_actual_str": "4'59\"/km",
+            "pace_delta_s": -16,
             "is_quality": false,
             "hr": {
-              "avg": 143,
+              "avg": 147,
               "cap": null,
               "over_cap": null,
-              "decoupling_pct": 8.7,
-              "flags": [
-                "drift_high"
-              ]
+              "decoupling_pct": 5.0,
+              "flags": []
             },
             "reasons": [
-              "Volume 65%",
-              "Allure +3\"/km vs cible",
-              "Dérive cardiaque +8.7%"
+              "Volume 252%",
+              "Allure −16\"/km vs cible"
             ]
           }
         },
