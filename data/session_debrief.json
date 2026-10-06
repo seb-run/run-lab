@@ -1,45 +1,45 @@
 {
- "headline": "Séance au plan parfaite, mais appui un peu plus chargé à droite et asymétrie qui monte avec la vitesse.",
+ "headline": "Séance stoppée à 65% du volume, allure tenue, FC qui dérive nettement sous forte chaleur.",
  "bullets": [
-  "Équilibre gauche 48,8 %, -0,8 pt vs réf. 49,6 % : légère surcharge côté droit (Achille).",
-  "Asymétrie 49,9 % lent → 47,4 % rapide (+2,56), même profil que ta pubalgie 2025.",
-  "Contact au sol 202 ms, -6 ms vs réf. 208 ms : appui plus dynamique malgré 28-31°C."
+  "7.81/12km prévus (65%), arrêt à 41min au lieu de 60min.",
+  "FC +14.7% en séance (134→153bpm) à allure stable, 27°C, découplage 8.7%.",
+  "Contact sol 251ms, +24ms vs réf. 60j (226.7ms) — chaussures neuves Hyperboost Edge."
  ],
  "points": [
   {
+   "label": "Volume",
+   "valeur": "7.81 km",
+   "ecart": "65% du plan (12km prévus)",
+   "lecture": "séance écourtée, arrêt anticipé",
+   "ton": "vigilance"
+  },
+  {
+   "label": "Dérive FC",
+   "valeur": "+14.7% (134→153bpm)",
+   "ecart": "découplage 8.7%, flag drift_high",
+   "lecture": "chaleur 27°C probable en cause",
+   "ton": "vigilance"
+  },
+  {
    "label": "Temps de contact",
-   "valeur": "202 ms",
-   "ecart": "-6 ms vs réf. 60j (208 ms)",
-   "lecture": "Appui plus dynamique que d'habitude",
-   "ton": "bon"
-  },
-  {
-   "label": "Équilibre G/D",
-   "valeur": "48,8 %",
-   "ecart": "-0,8 pt vs réf. 49,6 %",
-   "lecture": "Léger surplus de charge côté droit",
-   "ton": "vigilance"
-  },
-  {
-   "label": "Asymétrie vs allure",
-   "valeur": "+2,56 pts",
-   "ecart": "49,9 % lent → 47,4 % rapide",
-   "lecture": "S'ouvre avec la vitesse",
-   "ton": "vigilance"
+   "valeur": "251 ms",
+   "ecart": "+24ms vs réf. 60j (226.7ms)",
+   "lecture": "stable sur la séance, chaussures neuves",
+   "ton": "neutre"
   }
  ],
- "achille": "Équilibre 48,8 % (sous ta réf. 49,6 %) : un peu plus de charge côté droit aujourd'hui.",
- "a_surveiller": "Asymétrie qui s'ouvre avec la vitesse (+2,56), motif proche de ton adducteur 2025 — à suivre.",
+ "achille": "Équilibre gauche/droit absent sur cette séance (pas de ceinture/footpod) — rien à signaler.",
+ "a_surveiller": "Dérive FC marquée par forte chaleur : vérifier hydratation sur les prochaines sorties à 27°C+.",
  "seance": {
-  "date": "04/10/2026",
-  "heure": "17:04",
-  "titre": "i193478717",
-  "type_detecte": "frac_court",
-  "km": 14.76,
-  "duree": "1h 06m 34s",
-  "allure": "4'31\"/km",
-  "fc_moy": 155
+  "date": "06/10/2026",
+  "heure": "12:24",
+  "titre": "i194219217",
+  "type_detecte": "footing",
+  "km": 7.81,
+  "duree": "41m 26s",
+  "allure": "5'18\"/km",
+  "fc_moy": 143
  },
- "generated_at": "2026-10-04T16:21:28",
- "baseline_n": 20
+ "generated_at": "2026-10-06T11:09:52",
+ "baseline_n": 28
 }

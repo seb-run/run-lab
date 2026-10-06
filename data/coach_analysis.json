@@ -1,39 +1,39 @@
 {
- "generated_at": "2026-10-05T12:40:48",
+ "generated_at": "2026-10-06T11:09:27",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-10-02\", \"title\": \"SORTIE LONGUE — 2 × 9 km à allure spécifique\", \"type\": \"long\", \"planned_km\": 28.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'59\\\"/km\", \"actual\": {\"km\": 28.0, \"pace_str\": \"4'18\\\"/km\", \"fc\": 164, \"cadence\": 178, \"duration_min\": 121}, \"splits\": \"1:5'06/126/180spm 2:5'00/136/178spm 3:4'56/147/178spm 4:4'54/150/176spm 5:3'59/165/178spm 6:3'58/169/176spm 7:3'58/173/178spm 8:3'58/174/178spm 9:3'57/174/176spm 10:3'55/172/178spm 11:3'58/171/178spm 12:3'54/172/178spm 13:3'59/175/178spm 14:4'48/162/176spm 15:4'47/157/178spm 16:3'59/166/178spm 17:4'00/172/178spm 18:4'00/175/178spm 19:3'58/176/178spm 20:3'57/176/180spm 21:3'57/176/180spm 22:3'55/177/180spm 23:3'59/178/178spm 24:4'00/179/178spm 25:4'49/166/176spm 26:4'48/159/178spm 27:5'03/160/178spm 28:4'59/148/178spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 0.0, \"load\": 507.9, \"rpe\": 9.0, \"feel_label\": \"Très fort\", \"temp_c\": 25, \"balance_l\": 49.06, \"flags\": [\"stance_fade\", \"asym_vitesse\"], \"stance_drift_pct\": 6.0, \"step_drift_pct\": -0.5}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 100, \"pace_delta_s\": 19}, \"hr\": {\"avg\": 164, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 2.8, \"flags\": []}}, {\"date\": \"2026-10-03\", \"title\": \"Footing 40'\", \"type\": \"easy\", \"planned_km\": 8.0, \"key\": false, \"status\": \"missed\", \"target_pace\": \"5'25\\\"/km\"}, {\"date\": \"2026-10-04\", \"title\": \"SEUIL LONG — 3 × 10'\", \"type\": \"seuil\", \"planned_km\": 15.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'50\\\"/km\", \"actual\": {\"km\": 14.8, \"pace_str\": \"4'31\\\"/km\", \"fc\": 155, \"cadence\": 176, \"duration_min\": 67}, \"splits\": \"1:5'23/127/180spm 2:5'27/131/178spm 3:5'11/138/178spm 4:5'29/144/176spm 5:3'50/162/180spm 6:3'46/170/176spm 7:3'49/171/176spm 8:5'43/151/172spm 9:3'52/168/178spm 10:3'50/174/176spm 11:3'45/173/176spm 12:5'39/149/172spm 13:3'48/169/176spm 14:3'49/174/176spm 15:3'44/176/178spm 16:5'50/153/166spm 17:4'48/152/176spm 18:5'10/149/176spm\", \"garmin\": {\"te_aero\": 4.5, \"te_ana\": 0.8, \"load\": 262.2, \"rpe\": 5.0, \"feel_label\": \"Très fort\", \"temp_c\": 28, \"balance_l\": 48.78, \"flags\": [\"asym_vitesse\"], \"stance_drift_pct\": 2.0, \"step_drift_pct\": 6.3}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 99, \"pace_delta_s\": -2}, \"hr\": {\"avg\": 155, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 4.7, \"flags\": []}}]|c68305c046",
- "plan_hash": "c68305c046",
- "headline": "Allure marathon tenue deux fois d'affilée sur volume croissant (7km puis 9km) : le plan tourne, cap sur le test de Paris dimanche.",
- "analysis": "Quatre semaines d'affilée en succès, avec un volume entre 93% et 119% du prévu et quasi toutes les séances clés réussies (seule la semaine 5 a laissé une clé de côté). Le vrai signal fort est ailleurs : le 25/09 tu tiens 2×7km à 3'59/km pile sur la cible marathon, et le 02/10 tu refais l'exercice sur 2×9km à la même allure — c'est un vrai dépassement, tu absorbes plus de volume à vitesse identique. La sortie longue progressive du 27/09 va dans le même sens : negative split jusqu'à 3'55/km en fin de course avec un decoupling négatif (-1,4%), signe d'une base aérobie qui tient sous la fatigue. Le seuil du 04/10 passe aussi malgré 28°C, allures cibles respectées sur les trois blocs de 10'. Le seul accroc est le footing manqué du 03/10 — isolé, sans rien à en tirer. Le risque, c'est l'accumulation : trois séances clés à RPE 8-9 en dix jours par forte chaleur, donc la fraîcheur est à surveiller cette semaine, pas la mécanique (foulée et contact au sol stables sur les sorties continues). Le plan a déjà prévu l'affûtage qui va bien : garde-le tel quel, laisse le 20km de Paris dimanche faire son travail de test à allure marathon sans en rajouter.",
+ "signature": "[{\"date\": \"2026-10-03\", \"title\": \"Footing 40'\", \"type\": \"easy\", \"planned_km\": 8.0, \"key\": false, \"status\": \"missed\", \"target_pace\": \"5'25\\\"/km\"}, {\"date\": \"2026-10-04\", \"title\": \"SEUIL LONG — 3 × 10'\", \"type\": \"seuil\", \"planned_km\": 15.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'50\\\"/km\", \"actual\": {\"km\": 14.8, \"pace_str\": \"4'31\\\"/km\", \"fc\": 155, \"cadence\": 176, \"duration_min\": 67}, \"splits\": \"1:5'23/127/180spm 2:5'27/131/178spm 3:5'11/138/178spm 4:5'29/144/176spm 5:3'50/162/180spm 6:3'46/170/176spm 7:3'49/171/176spm 8:5'43/151/172spm 9:3'52/168/178spm 10:3'50/174/176spm 11:3'45/173/176spm 12:5'39/149/172spm 13:3'48/169/176spm 14:3'49/174/176spm 15:3'44/176/178spm 16:5'50/153/166spm 17:4'48/152/176spm 18:5'10/149/176spm\", \"garmin\": {\"te_aero\": 4.5, \"te_ana\": 0.8, \"load\": 262.2, \"rpe\": 5.0, \"feel_label\": \"Très fort\", \"temp_c\": 28, \"balance_l\": 48.78, \"flags\": [\"asym_vitesse\"], \"stance_drift_pct\": 2.0, \"step_drift_pct\": 6.3}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 99, \"pace_delta_s\": -2}, \"hr\": {\"avg\": 155, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 4.7, \"flags\": []}}, {\"date\": \"2026-10-05\", \"title\": \"Repos + Muscu A\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}]|544a8e7d91",
+ "plan_hash": "544a8e7d91",
+ "headline": "6 séances clés sur 6 réussies en deux semaines — tu arrives à la course-test de Paris dans la meilleure forme du cycle, à condition de vraiment couper le robinet d'ici dimanche.",
+ "analysis": "Le bloc du 23/09 au 04/10 est net : seuil, 2 pistes, 2 sorties à allure spécifique, une longue progressive — six séances clés, six succès, avec des segments à allure marathon tenus pile (3'55-4'00/km) malgré 25-28°C. La sortie longue progressive du 27/09 est le signal le plus parlant : 24 km finis sous l'allure marathon stratégique avec un RPE de 5 seulement, c'est un vrai gain aérobie. Seul accroc : un footing manqué le 03/10, isolé et sans gravité. Le point à ne pas lâcher : l'équilibre d'appui gauche glisse de 51 % à 48,8 % sur les deux dernières semaines, avec deux flags d'asymétrie de vitesse coup sur coup (02/10 et 04/10) — pas une alerte tendon, mais une tendance qui mérite d'être surveillée vu ton historique Achille. Tu enchaînes trois séances à forte charge en cinq jours (30/09, 02/10, 04/10) juste avant la course-test : la semaine qui vient doit vraiment servir à vider la charge, pas à en rajouter. Le programme prévu (PISTE courte mercredi, déblocage samedi, 20 km de Paris dimanche) fait déjà ce travail — ne le densifie pas davantage. Focus de la semaine : arriver frais dimanche et observer les sensations d'appui pendant le 20 km, c'est le meilleur test grandeur nature avant le bloc spécifique du 16/10.",
  "forme": {
-  "score": 85,
-  "verdict": "bon",
-  "headline": "Allure marathon confirmée deux fois, fraîcheur à reconstituer",
-  "detail": "Trois séances clés à RPE 8-9 en dix jours de chaleur ont tapé dans la réserve, mais l'allure marathon est validée sur 9km d'affilée (02/10) après l'avoir été sur 7km (25/09) — la progression est réelle, pas un coup de chance. Le plan bascule déjà vers l'affûtage cette semaine : laisse-le faire, le 20km de Paris dimanche fera le point.",
+  "score": 78,
+  "verdict": "surveiller",
+  "headline": "6/6 séances clés réussies, appui gauche à surveiller",
+  "detail": "Trois mois de travail qui paient : tes allures spécifiques et ta sortie longue progressive sont les plus propres du cycle. L'appui gauche a glissé de 51 % à 48,8 % en deux semaines avec deux flags d'asymétrie coup sur coup — rien d'alarmant mais à regarder pendant le 20 km de Paris. Priorité cette semaine : laisser la charge redescendre avant dimanche.",
   "indicateurs": {
    "fraicheur": {
-    "valeur": "dette ~2j",
+    "valeur": "dette modérée",
     "trend": "down",
     "etat": "watch",
-    "note": "3 clés dures en 10 jours"
+    "note": "3 clés en 5 jours, repos requis"
    },
    "compliance": {
-    "valeur": "13/14 séances · 1 manquée",
-    "trend": "flat",
-    "etat": "ok",
-    "note": "footing isolé, sans gravité"
-   },
-   "aerobie": {
-    "valeur": "-1,4 % sur la SL",
+    "valeur": "6/6 clés réussies",
     "trend": "up",
     "etat": "ok",
-    "note": "décroissance négative = top forme"
+    "note": "1 footing manqué, isolé"
    },
-   "achille": {
-    "valeur": "stable ~49 %",
+   "aerobie": {
+    "valeur": "2,8 %",
     "trend": "flat",
     "etat": "ok",
-    "note": "pas d'asymétrie notable"
+    "note": "dérive maîtrisée malgré chaleur"
+   },
+   "achille": {
+    "valeur": "48,8 %",
+    "trend": "down",
+    "etat": "watch",
+    "note": "asymétrie d'appui en hausse"
    }
   }
  },
