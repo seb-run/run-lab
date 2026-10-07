@@ -2,24 +2,6 @@
  "proposals": [
   {
    "severity": "major",
-   "kind": "change_pace",
-   "date": "2026-09-15",
-   "field": null,
-   "new_value": "allure VMA (3'28) remplacée par allure seuil/10k (3'45-3'50) avec récup allongée",
-   "reason": "2 séances clés vitesse consécutives ratées en distance ET en allure malgré RPE bas et FC basse — pattern chaleur, pas fatigue. Éviter un 3e échec qui n'apporterait rien et risque d'entamer la confiance.",
-   "replacement": {
-    "title": "5×1000m allure seuil/10k (chaleur)",
-    "type": "intervals",
-    "km": 12.0,
-    "target_pace": "3'50\"/km",
-    "description": "5×1000m à 3'48-3'52/km, récup 2min trot entre chaque. Objectif : retrouver des sensations positives sur du rapide sans viser le chrono VMA par cette chaleur. Hydrate-toi avant/pendant, arrête la série si FC s'envole anormalement pour l'allure. Si ça passe bien et frais, tu pourras revenir sur du 3'28 la semaine prochaine."
-   },
-   "id": "a1a76bdb",
-   "status": "expired",
-   "created_at": "2026-09-15T05:12:06"
-  },
-  {
-   "severity": "major",
    "kind": "change_type",
    "date": "2026-09-22",
    "field": null,
@@ -516,6 +498,18 @@
    "status": "expired",
    "created_at": "2026-10-04T11:18:49",
    "expired_reason": "plan_changed"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-10-11",
+   "field": "description_note",
+   "new_value": "Course-test, pas course-chrono : tiens 4'00/km sans dépasser, surtout dans les 5 premiers km où tu pars souvent trop vite sur tes séances clés. L'objectif est d'en ressortir frais pour enchaîner la dernière grosse semaine avant le taper.",
+   "reason": "Tendance répétée à dépasser les allures cibles sur les séances clés (SL, seuil, intervalles) — à canaliser sur une course officielle à 5 semaines du marathon pour ne pas entamer la forme.",
+   "id": "4b4aa231",
+   "guardrail_reject": "jour de course intouchable",
+   "status": "pending",
+   "created_at": "2026-10-07T07:24:33"
   }
  ]
 }
