@@ -1,39 +1,39 @@
 {
- "generated_at": "2026-10-07T07:30:36",
+ "generated_at": "2026-10-07T07:45:52",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-10-04\", \"title\": \"SEUIL LONG — 3 × 10'\", \"type\": \"seuil\", \"planned_km\": 15.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'50\\\"/km\", \"actual\": {\"km\": 14.8, \"pace_str\": \"4'31\\\"/km\", \"fc\": 155, \"cadence\": 176, \"duration_min\": 67}, \"splits\": \"1:5'23/127/180spm 2:5'27/131/178spm 3:5'11/138/178spm 4:5'29/144/176spm 5:3'50/162/180spm 6:3'46/170/176spm 7:3'49/171/176spm 8:5'43/151/172spm 9:3'52/168/178spm 10:3'50/174/176spm 11:3'45/173/176spm 12:5'39/149/172spm 13:3'48/169/176spm 14:3'49/174/176spm 15:3'44/176/178spm 16:5'50/153/166spm 17:4'48/152/176spm 18:5'10/149/176spm\", \"garmin\": {\"te_aero\": 4.5, \"te_ana\": 0.8, \"load\": 262.2, \"rpe\": 5.0, \"feel_label\": \"Très fort\", \"temp_c\": 28, \"balance_l\": 48.78, \"flags\": [\"asym_vitesse\"], \"stance_drift_pct\": 2.0, \"step_drift_pct\": 6.3}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 99, \"pace_delta_s\": -2}, \"hr\": {\"avg\": 155, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 4.7, \"flags\": []}}, {\"date\": \"2026-10-05\", \"title\": \"Repos + Muscu A\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-10-06\", \"title\": \"PISTE Harbat — 3×400 · 2×2000 (semi + 10 km) · 3×400\", \"type\": \"intervals\", \"planned_km\": 30.3, \"key\": true, \"status\": \"done\", \"target_pace\": null, \"actual\": {\"km\": 30.2, \"pace_str\": \"4'59\\\"/km\", \"fc\": 147, \"cadence\": 171, \"duration_min\": 151}, \"splits\": \"1:5'15/129/178spm 2:5'07/141/178spm 3:5'12/141/174spm 4:5'06/144/178spm 5:5'11/144/176spm 6:5'05/139/174spm 7:5'11/149/176spm 8:5'19/137/174spm 9:5'13/146/176spm 10:5'20/140/174spm 11:5'28/138/174spm 12:3'22/163/188spm 13:6'40/165/162spm 14:3'23/171/184spm 15:8'52/171/132spm 16:3'20/173/186spm 17:6'12/156/166spm 18:3'45/168/178spm 19:3'37/179/182spm 20:8'49/154/140spm 21:3'48/169/176spm 22:3'37/177/180spm 23:8'59/158/140spm 24:3'21/171/190spm 25:3'34/175/184spm 26:3'21/174/184spm 27:9'49/175/120spm 28:5'14/153/176spm 29:5'05/148/176spm 30:5'18/146/178spm (+10 laps)\", \"garmin\": {\"te_aero\": 4.6, \"te_ana\": 3.2, \"load\": 372.0, \"rpe\": 6.0, \"feel_label\": \"Fort\", \"temp_c\": 24, \"balance_l\": 48.81, \"flags\": [\"asym_vitesse\"], \"stance_drift_pct\": -5.2, \"step_drift_pct\": 11.1}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 100, \"pace_delta_s\": null}, \"hr\": {\"avg\": 147, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 5.1, \"flags\": []}}]|cc20dd5db5",
- "plan_hash": "cc20dd5db5",
- "headline": "Bloc peak bouclé à 100% des séances clés : tu arrives à la course-test du 20 km de Paris avec de la forme réelle, pas juste du volume.",
- "analysis": "Les 4 dernières semaines sont toutes en 'success', avec un pic à 92,9 km (108% du prévu) semaine 6 et 3/3 clés réussies deux semaines de suite. Le signal le plus solide : ta SL progressive du 27/09 (24 km, négative de 5'00 à 3'55/km) affiche une dérive cardiaque de -1,4% — ta FC n'a même pas suivi l'accélération, c'est le genre de chiffre qui dit que le moteur aérobie tient. Même chose sur la SL spécifique 28 km du 02/10 à 25°C : allure marathon tenue sur les segments rapides (3'54-4'00) avec seulement 2,8% de dérive, malgré la chaleur. Seul accroc réel : le footing du 03/10 manqué, isolé, aucune suite à lui donner. Le point à surveiller n'est pas une alerte mais une vigilance : la séance Harbat du 06/10 (30,2 km, 151 min, charge 372) arrive 5 jours avant le 20 km de Paris — le plan a déjà prévu la coupure (repos aujourd'hui, footings légers, repos samedi), reste à la respecter à la lettre sans y ajouter de kilomètres. Focus de la semaine : zéro initiative perso avant dimanche, tu arrives frais ou le test ne vaudra rien.",
+ "signature": "[{\"date\": \"2026-10-04\", \"title\": \"SEUIL LONG — 3 × 10'\", \"type\": \"seuil\", \"planned_km\": 15.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'50\\\"/km\", \"actual\": {\"km\": 14.8, \"pace_str\": \"4'31\\\"/km\", \"fc\": 155, \"cadence\": 176, \"duration_min\": 67}, \"splits\": \"1:5'23/127/180spm 2:5'27/131/178spm 3:5'11/138/178spm 4:5'29/144/176spm 5:3'50/162/180spm 6:3'46/170/176spm 7:3'49/171/176spm 8:5'43/151/172spm 9:3'52/168/178spm 10:3'50/174/176spm 11:3'45/173/176spm 12:5'39/149/172spm 13:3'48/169/176spm 14:3'49/174/176spm 15:3'44/176/178spm 16:5'50/153/166spm 17:4'48/152/176spm 18:5'10/149/176spm\", \"garmin\": {\"te_aero\": 4.5, \"te_ana\": 0.8, \"load\": 262.2, \"rpe\": 5.0, \"feel_label\": \"Très fort\", \"temp_c\": 28, \"balance_l\": 48.78, \"flags\": [\"asym_vitesse\"], \"stance_drift_pct\": 2.0, \"step_drift_pct\": 6.3}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 99, \"pace_delta_s\": -2}, \"hr\": {\"avg\": 155, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 4.7, \"flags\": []}}, {\"date\": \"2026-10-05\", \"title\": \"Repos + Muscu A\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-10-06\", \"title\": \"PISTE Harbat — 3×400 · 2×2000 (semi + 10 km) · 3×400\", \"type\": \"intervals\", \"planned_km\": 30.3, \"key\": true, \"status\": \"done\", \"target_pace\": null, \"actual\": {\"km\": 30.2, \"pace_str\": \"4'59\\\"/km\", \"fc\": 147, \"cadence\": 171, \"duration_min\": 151}, \"splits\": \"1:5'15/129/178spm 2:5'07/141/178spm 3:5'12/141/174spm 4:5'06/144/178spm 5:5'11/144/176spm 6:5'05/139/174spm 7:5'11/149/176spm 8:5'19/137/174spm 9:5'13/146/176spm 10:5'20/140/174spm 11:5'28/138/174spm 12:3'22/163/188spm 13:6'40/165/162spm 14:3'23/171/184spm 15:8'52/171/132spm 16:3'20/173/186spm 17:6'12/156/166spm 18:3'45/168/178spm 19:3'37/179/182spm 20:8'49/154/140spm 21:3'48/169/176spm 22:3'37/177/180spm 23:8'59/158/140spm 24:3'21/171/190spm 25:3'34/175/184spm 26:3'21/174/184spm 27:9'49/175/120spm 28:5'14/153/176spm 29:5'05/148/176spm 30:5'18/146/178spm (+10 laps)\", \"garmin\": {\"te_aero\": 4.6, \"te_ana\": 3.2, \"load\": 372.0, \"rpe\": 6.0, \"feel_label\": \"Fort\", \"temp_c\": 24, \"balance_l\": 48.81, \"flags\": [\"asym_vitesse\"], \"stance_drift_pct\": -5.2, \"step_drift_pct\": 11.1}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 100, \"pace_delta_s\": null}, \"hr\": {\"avg\": 147, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 5.1, \"flags\": []}}]|bc528c8944",
+ "plan_hash": "bc528c8944",
+ "headline": "30 km de piste bouclés en RPE 6 lundi contre 21 km en RPE 7 trois semaines plus tôt : la forme monte juste avant le test du 20 km de Paris.",
+ "analysis": "Les chiffres sont nets : 7 séances clés sur 7 réussies ces 14 derniers jours, dont deux sorties longues où tu as tapé les allures spécifiques (3'54-4'00/km sur les 2×9 km du 2/10, pile sur la cible 3'59). Le vrai signal de forme, c'est la comparaison Harbat (30,2 km, 151 min, RPE 6 'Fort') vs la piste du 23/09 (21,5 km, 102 min, RPE 7 'Très fort') : tu encaisses plus de volume pour moins de fatigue perçue. La dérive cardiaque reste sous contrôle sur toutes les séances continues malgré des températures à 24-28°C (jamais au-dessus de 5%, hors séances fractionnées où la mesure n'a pas de sens). Seul point répétitif à noter : un flag d'asymétrie de vitesse est ressorti sur 3 séances (25/09, 04/10, 06/10) — pas de douleur signalée, mais une récurrence qui mérite d'être surveillée sur la sortie longue plutôt qu'ignorée. Le footing du 3/10 manqué est un non-événement isolé, ne t'en préoccupe pas. Le plan des 10 prochains jours est cohérent : tu tapères proprement avant le 20 km de Paris dimanche (cible 3'52/km, 1h17'30), puis tu repars sur du spécifique dès le 16/10. Rien à changer cette semaine — garde les jambes fraîches, le travail de fond est fait.",
  "forme": {
-  "score": 82,
+  "score": 83,
   "verdict": "bon",
-  "headline": "Bloc peak réussi, repos à respecter avant le test",
-  "detail": "3 séances clés d'affilée réussies aux allures cibles et une dérive cardiaque record (-1,4%) sur la SL du 27/09 : le fond aérobie est là. La charge du 06/10 (151 min, charge 372) laisse une dette de récup normale avant le 20 km de Paris dimanche — les jours de repos prévus doivent être tenus sans y toucher.",
+  "headline": "Charge mieux encaissée, asymétrie à surveiller",
+  "detail": "7 séances clés sur 7 réussies en 14 jours, et la Harbat de 30 km passée en RPE 6 contre RPE 7 pour 21 km trois semaines plus tôt — la charge passe mieux. Un flag d'asymétrie de vitesse revient sur 3 séances (25/09, 04/10, 06/10) : rien d'alarmant sans douleur, mais à garder à l'œil. Focus : jambes fraîches d'ici dimanche, vise 3'52/km sans pousser au-delà sur le 20 km de Paris.",
   "indicateurs": {
    "fraicheur": {
-    "valeur": "dette modérée",
-    "trend": "down",
-    "etat": "watch",
-    "note": "grosse séance le 06/10, repos en cours"
+    "valeur": "équilibre",
+    "trend": "flat",
+    "etat": "ok",
+    "note": "taper calé avant course"
    },
    "compliance": {
-    "valeur": "13/14 séances faites",
-    "trend": "flat",
+    "valeur": "7/7 clés",
+    "trend": "up",
     "etat": "ok",
-    "note": "1 footing manqué, isolé"
+    "note": "toutes réussies"
    },
    "aerobie": {
-    "valeur": "2,8 %",
+    "valeur": "<5%",
     "trend": "flat",
     "etat": "ok",
-    "note": "dérive maîtrisée malgré chaleur"
+    "note": "dérive sous contrôle"
    },
    "achille": {
-    "valeur": "stable",
+    "valeur": "x3/14j",
     "trend": "flat",
-    "etat": "ok",
-    "note": "appui 48-51%, rien d'alarmant"
+    "etat": "watch",
+    "note": "asymétrie à surveiller"
    }
   }
  },
