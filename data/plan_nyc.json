@@ -8856,10 +8856,10 @@
           "date": "2026-10-06",
           "dow": "Tue",
           "type": "intervals",
-          "title": "PISTE Harbat (Bois de Boulogne) + footing midi",
+          "title": "PISTE Harbat — 3×400 · 2×2000 (semi + 10 km) · 3×400",
           "km": 30.3,
           "key": true,
-          "description": "Fait mardi au lieu de mercredi : piste fermée, séance refaite au Bois de Boulogne.\nMidi : 7,8 km faciles avec un collègue.\nSoir : 10 km d'échauffement (dont 7 km pour aller à la piste), puis 3×400 m à 3'21, 2×2000 m à 3'42, 3×400 m à 3'25, et 5 km de retour au calme.",
+          "description": "Fait mardi au lieu de mercredi : piste fermée, séance refaite au Bois de Boulogne.\nMidi : 7,8 km faciles avec un collègue.\nSoir : 10 km d'échauffement (dont 7 km pour aller à la piste), puis 3×400 m à 3'21, 2×2000 m (1er km allure semi 3'45–3'48, 2e km allure 10 km 3'37), 3×400 m à 3'25, et 5 km de retour au calme.",
           "status": "done",
           "scheduled_time": "19:26",
           "actual": {
