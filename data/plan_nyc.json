@@ -9318,17 +9318,23 @@
           "date": "2026-10-11",
           "dow": "Sun",
           "type": "race",
-          "title": "🏁 20 KM DE PARIS — course-test",
+          "title": "🏁 20 KM DE PARIS — course-test (cible 1h17'30, 1h16 si tout est parfait)",
           "km": 25.0,
           "duration_min": 110,
           "key": true,
-          "description": "3 km d'échauffement + 5 lignes droites\n20 km en course, NÉGATIF SPLIT\n2 km de retour au calme\n\n🎯 CIBLE ~1h18 (3'54/km de moyenne) :\n• km 0–7 : 4'05–4'08, volontairement retenu — tu répètes la discipline de Brooklyn.\n• km 7–14 : 4'00, tu installes.\n• km 14–20 : descente progressive vers 3'52–3'55. Les 5 derniers km sont les plus rapides.\n\n👟 En Alphafly 3, tes chaussures de course éprouvées — pas de test de matériel un jour de course.\n\n📊 LECTURE : ~1h18 → potentiel marathon 2h52–2h54 sur plat → NYC à 4'10–4'15 est une croisière. Si tu sors 1h16, on rediscute un NYC à 4'08. Départ à confirmer selon ton sas.\n[Course 20 km — négatif split · 4'08 → 3'52/km]\nChaussures : Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
+          "description": "3 km d'échauffement + 5 lignes droites, fini 10 min avant ta vague.\n20 km en course, NÉGATIF SPLIT, À L'EFFORT PLUS QU'À L'ALLURE.\n\n🎯 CIBLE 1h17'30 (3'52/km) · si tout est parfait ~1h16'30 (3'50/km).\n• km 0–1 : quais, foule, FC encore basse. Ne rattrape rien (en 2022 : 4'27 au 1er km).\n• km 1–4 : montée vers l'Étoile par l'avenue Marceau : effort constant, tu acceptes ~4'05. Puis descente de l'avenue Foch : tu laisses filer sans dépasser 3'55.\n• km 4–9 : Bois de Boulogne. Une montée se fait sentir vers le km 6 (en 2022 tu y as perdu ~8\"/km) : même effort, pas plus. Objectif km 0–7 : 3'58 de moyenne.\n• km 7–14 : Auteuil, porte Molitor, porte de Saint-Cloud, retour sur les quais : tu installes 3'53. Prends l'eau au km 10 ou 12.\n• km 14 = POINT DE DÉCISION. FC dans ta zone seuil (≈165–172), souffle contrôlé, foulée propre : tu relâches vers 3'45 jusqu'à l'arrivée. Sinon tu TIENS 3'52, sans héroïsme.\n• km 13–17 : relances à la sortie des passages sous voie, sur les quais : garde le rythme, aucune accélération brusque (Achille, aine).\n• km 17–20 : Grand Palais, Concorde, Tuileries, Pont Royal, arrivée quai Branly. Là, tu peux tout donner.\n\n📍 Départ pont d'Iéna à 9h00, 60 vagues de 500 coureurs toutes les 2 minutes. Ravitos km 3, 6, 10, 12, 15, 18. Vérifie ta vague au retrait des dossards : ça fixe ton heure de départ et ta météo.\n🌡️ Prévision indicative (à revérifier samedi) : frais, vers 11 °C tôt le matin, bon pour la performance.\n👟 Alphafly 3, tes chaussures de course éprouvées.\n\n📊 LECTURE : tu ne déduis pas trop pour NYC d'un chrono obtenu sur un parcours favorable. 1h17–1h18 propre = NYC à 4'10–4'15 en croisière. 1h16 propre = on rediscute 4'08.\n⚠️ Après la course : 7 à 10 jours de récupération avant de rechercher l'intensité.",
           "status": "pending",
-          "target_pace": "4'00\"/km",
-          "target_pace_sec": 240,
+          "target_pace": "3'52\"/km",
+          "target_pace_sec": 232,
           "shoe": "Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
           "scheduled_time": "10:00",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Stratégie révisée le 07/10 : 3'58 / 3'53 / décision au km 14. 1h16 est une issue possible, pas une cible de départ."
+            }
+          ]
         }
       ],
       "volume_actual_to_date": 30.2,
