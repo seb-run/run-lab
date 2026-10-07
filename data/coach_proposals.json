@@ -508,8 +508,9 @@
    "reason": "Tendance répétée à dépasser les allures cibles sur les séances clés (SL, seuil, intervalles) — à canaliser sur une course officielle à 5 semaines du marathon pour ne pas entamer la forme.",
    "id": "4b4aa231",
    "guardrail_reject": "jour de course intouchable",
-   "status": "pending",
-   "created_at": "2026-10-07T07:24:33"
+   "status": "expired",
+   "created_at": "2026-10-07T07:24:33",
+   "expired_reason": "plan_changed"
   }
  ]
 }
