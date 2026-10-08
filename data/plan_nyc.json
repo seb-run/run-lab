@@ -651,153 +651,7 @@
               "rr_beats": 18090,
               "rmssd_effort": 17.7,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 297,
-                "fc": 136,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 291,
-                "fc": 144,
-                "ca": 182
-              },
-              {
-                "km": 1.0,
-                "ps": 292,
-                "fc": 145,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 293,
-                "fc": 144,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 296,
-                "fc": 145,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 289,
-                "fc": 145,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 291,
-                "fc": 146,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 293,
-                "fc": 148,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 293,
-                "fc": 152,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 295,
-                "fc": 150,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 292,
-                "fc": 152,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 293,
-                "fc": 152,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 294,
-                "fc": 151,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 300,
-                "fc": 151,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 297,
-                "fc": 152,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 306,
-                "fc": 153,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 297,
-                "fc": 152,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 241,
-                "fc": 165,
-                "ca": 182
-              },
-              {
-                "km": 1.0,
-                "ps": 238,
-                "fc": 174,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 240,
-                "fc": 180,
-                "ca": 182
-              },
-              {
-                "km": 1.0,
-                "ps": 234,
-                "fc": 179,
-                "ca": 182
-              },
-              {
-                "km": 1.0,
-                "ps": 237,
-                "fc": 182,
-                "ca": 182
-              },
-              {
-                "km": 1.0,
-                "ps": 333,
-                "fc": 165,
-                "ca": 176
-              },
-              {
-                "km": 0.51,
-                "ps": 320,
-                "fc": 157,
-                "ca": 178
-              }
-            ]
+            }
           },
           "score": {
             "points": 100,
@@ -9245,7 +9099,7 @@
         {
           "date": "2026-10-07",
           "dow": "Wed",
-          "status": "today",
+          "status": "done",
           "actual": null,
           "type": "rest",
           "title": "Repos (récupération après 30 km)",
@@ -9267,18 +9121,181 @@
           "duration_min": 40,
           "key": false,
           "description": "40' très facile. Muscu B le midi — dernière séance de charge.\n[Récupération · 5'15–5'35/km]\nChaussures : On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-          "status": "pending",
+          "status": "done",
           "target_pace": "5'25\"/km",
           "target_pace_sec": 325,
           "shoe": "On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
           "scheduled_time": "06:30",
-          "actual": null,
+          "actual": {
+            "km": 8.5,
+            "duration_min": 44,
+            "pace_sec": 314,
+            "pace_str": "5'14\"/km",
+            "fc": 139,
+            "cadence": 178,
+            "type": "endurance",
+            "title": "i194913736",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 225.0,
+              "osc_cm": 10.0,
+              "vratio": 9.28,
+              "balance_l": 50.97,
+              "step_m": 1.06,
+              "temp_c": 20,
+              "temp_max": 29,
+              "resp": 37.4,
+              "power": 375,
+              "np": 379,
+              "te_aero": 3.0,
+              "te_ana": 0.0,
+              "load": 86.5,
+              "strides": 3950,
+              "rpe": 2.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 224.0,
+                  "end": 228.0,
+                  "pct": 1.7
+                },
+                "step": {
+                  "start": 1036.0,
+                  "end": 1069.0,
+                  "pct": 3.2
+                },
+                "vratio": {
+                  "start": 9.42,
+                  "end": 9.25,
+                  "pct": -1.8
+                },
+                "osc": {
+                  "start": 99.0,
+                  "end": 101.0,
+                  "pct": 1.7
+                },
+                "hr": {
+                  "start": 135.0,
+                  "end": 142.0,
+                  "pct": 4.8
+                },
+                "cad": {
+                  "start": 89.0,
+                  "end": 89.0,
+                  "pct": 0.0
+                }
+              },
+              "balance_min": 50.37,
+              "balance_max": 52.17,
+              "balance_series": [
+                52.17,
+                51.26,
+                50.98,
+                50.71,
+                50.5,
+                50.48,
+                50.93,
+                50.95,
+                50.37
+              ],
+              "balance_lent": 51.47,
+              "balance_rapide": 50.64,
+              "asym_vs_allure": -0.83,
+              "allure_lent_s": 321,
+              "allure_rapide_s": 307,
+              "rr_beats": 6346,
+              "rmssd_effort": 8.4,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 324,
+                "fc": 130,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 319,
+                "fc": 136,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 319,
+                "fc": 140,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 313,
+                "fc": 142,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 308,
+                "fc": 140,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 310,
+                "fc": 137,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 317,
+                "fc": 143,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 303,
+                "fc": 142,
+                "ca": 178
+              },
+              {
+                "km": 0.48,
+                "ps": 312,
+                "fc": 139,
+                "ca": 178
+              }
+            ]
+          },
           "coach_notes": [
             {
               "kind": "note",
               "text": "Séance Harbat lourde mardi (6,4 km de qualité) : ce footing est de la récupération pure, allure très facile, FC basse."
             }
-          ]
+          ],
+          "score": {
+            "points": 100,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 106,
+            "volume_points": 100,
+            "pace_points": 100,
+            "pace_target_s": 325,
+            "pace_actual_s": 314,
+            "pace_actual_str": "5'14\"/km",
+            "pace_delta_s": -11,
+            "is_quality": false,
+            "hr": {
+              "avg": 139,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 0.8,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 106%",
+              "Allure −11\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-10-09",
@@ -9299,6 +9316,10 @@
             {
               "kind": "note",
               "text": "Veille de J-2 : les lignes droites sont là pour réveiller, pas pour fatiguer. Arrête-toi à la 4e si les jambes sont lourdes."
+            },
+            {
+              "kind": "note",
+              "text": "Pendant les lignes droites, sois attentif aux sensations sur l'appui gauche/droite (mollet, tendon d'Achille) — 3 flags d'asymétrie de vitesse sur les dernières séances. Note si quelque chose tire ou gêne, même léger."
             }
           ]
         },
@@ -9344,11 +9365,11 @@
         "km_pct": 100,
         "km_done": 30.2,
         "km_planned": 30.3,
-        "km_done_week": 30.2,
+        "km_done_week": 38.7,
         "km_planned_week": 71.3,
         "sessions_done": 1,
         "sessions_planned": 1,
-        "sessions_done_week": 1,
+        "sessions_done_week": 2,
         "keys_success": 1,
         "keys_total": 1,
         "points": 100,

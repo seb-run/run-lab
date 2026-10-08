@@ -1,45 +1,45 @@
 {
- "headline": "Footing prévu transformé en fractionné : 22,4 km au lieu de 12, avec portions à 3'20/km.",
+ "headline": "Footing facile réussi, FC basse, aucun signal d'alerte.",
  "bullets": [
-  "Volume 22,44 km vs 12 km prévus — 252% du plan, bien au-delà d'un footing.",
-  "Allure moyenne 4'59/km mais pointes à 3'20-3'48/km : écart énorme avec la cible 5'15/km.",
-  "FC moyenne 151 bpm, +3 vs ta réf. 60j (147,94) à allure comparable — logique vu les accélérations."
+  "5'14/km, 11\" plus vite que la cible plan, mais FC 139 = 6 bpm sous ta moyenne 60j",
+  "Équilibre gauche 50.97%, quasi identique à ta réf (50.53%) — rien à signaler",
+  "Asymétrie se resserre avec la vitesse (-0.83) : pas le profil de ta pubalgie"
  ],
  "points": [
   {
    "label": "FC moyenne",
-   "valeur": "151 bpm",
-   "ecart": "+3 bpm vs réf. 147,94",
-   "lecture": "Léger surplus, cohérent avec les accélérations",
+   "valeur": "139 bpm",
+   "ecart": "-6.5 vs réf 145.5",
+   "lecture": "basse pour cette allure, bon signe",
+   "ton": "bon"
+  },
+  {
+   "label": "Équilibre gauche",
+   "valeur": "50.97%",
+   "ecart": "+0.4 vs réf 50.53%",
+   "lecture": "stable, pas de décharge marquée",
    "ton": "neutre"
   },
   {
-   "label": "Volume",
-   "valeur": "22,44 km",
-   "ecart": "+10,44 km vs 12 km prévus",
-   "lecture": "Séance bien plus longue que prévu",
-   "ton": "vigilance"
-  },
-  {
-   "label": "Portions rapides",
-   "valeur": "~3'20-3'48/km",
-   "ecart": "loin sous la cible 5'15/km",
-   "lecture": "Intervalles non prévus au plan",
-   "ton": "vigilance"
+   "label": "Asym vs allure",
+   "valeur": "-0.83",
+   "ecart": "se resserre avec la vitesse",
+   "lecture": "inverse du motif adducteur hiver",
+   "ton": "bon"
   }
  ],
- "achille": "Pas de donnée d'équilibre gauche/droit cette séance (capteur absent).",
- "a_surveiller": "Footing devenu fractionné : charge et impact plus élevés, à surveiller pour le tendon d'Achille.",
+ "achille": "Équilibre 50.97% proche de ta réf 50.53%, pas de décharge marquée côté droit.",
+ "a_surveiller": null,
  "seance": {
-  "date": "06/10/2026",
-  "heure": "19:26",
-  "titre": "Evening Run",
-  "type_detecte": "frac_court",
-  "km": 22.44,
-  "duree": "1h 49m 10s",
-  "allure": "4'52\"/km",
-  "fc_moy": 151
+  "date": "08/10/2026",
+  "heure": "06:20",
+  "titre": "i194913736",
+  "type_detecte": "endurance",
+  "km": 8.48,
+  "duree": "44m 24s",
+  "allure": "5'14\"/km",
+  "fc_moy": 139
  },
- "generated_at": "2026-10-06T19:33:20",
- "baseline_n": 34
+ "generated_at": "2026-10-08T05:11:49",
+ "baseline_n": 30
 }
