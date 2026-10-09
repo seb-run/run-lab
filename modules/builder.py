@@ -189,7 +189,7 @@ def build_html(
     js_content = _read_file(js_path) if os.path.exists(js_path) else ""
     # Couche « cockpit » (accueil forme + plan hebdo) : fichiers à part pour ne
     # pas alourdir app.js, concaténés après lui (même IIFE-free, même page).
-    for extra, kind in (('cockpit.css', 'css'), ('cockpit2.css', 'css'), ('cockpit.js', 'js'), ('cockpit2.js', 'js')):
+    for extra, kind in (('cockpit.css', 'css'), ('cockpit2.css', 'css'), ('cockpit3.css', 'css'), ('cockpit.js', 'js'), ('cockpit2.js', 'js'), ('cockpit3.js', 'js')):
         extra_path = os.path.join(templates_dir, extra)
         if os.path.exists(extra_path):
             if kind == 'css':

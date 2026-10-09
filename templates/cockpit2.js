@@ -495,6 +495,9 @@
     toast('Séance de renfo enregistrée. Bien joué.');
   }
 
+  // Partagé avec cockpit3.js (mobilité)
+  window.__ck2 = { EX, figHtml, startFigs };
+
   // ---------------------------------------------------------------- montage
   function mount() {
     renderLabo(); renderCourses(); renderRenfo();

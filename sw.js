@@ -5,7 +5,7 @@
    La version du cache est bumpée à chaque changement du plan pour forcer
    Safari iOS à jeter la version précédente : le network-first ne suffit pas
    quand l'iPhone est en tunnel/lockscreen et sert son cache indéfiniment. */
-const CACHE = 'seb-metrics-v7-2026-10-01';
+const CACHE = 'seb-metrics-v8-2026-10-09';
 
 self.addEventListener('install', (e) => {
   self.skipWaiting();

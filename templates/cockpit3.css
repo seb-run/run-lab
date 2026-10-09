@@ -1,0 +1,49 @@
+/* ============================================================================
+   seb-metrics — cockpit3.css : MOBILITÉ
+   ============================================================================ */
+.ck3-seg { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 4px; margin: 4px 0 14px; border-radius: 16px; background: var(--surface-3); border: 1px solid var(--border); }
+.ck3-seg button { min-height: 44px; border-radius: 12px; border: none; cursor: pointer; font: 700 15px var(--font-sans); color: var(--text-2); background: transparent; -webkit-tap-highlight-color: transparent; }
+.ck3-seg button.on { color: var(--text); background: var(--surface); box-shadow: 0 1px 3px rgba(0, 0, 0, .12); }
+.ck3-pane { display: none; }
+.ck3-pane.on { display: block; }
+
+.ck3-hero { background: radial-gradient(120% 100% at 0% 0%, color-mix(in srgb, var(--ck-violet) 16%, transparent), transparent 60%), var(--surface); }
+.ck3-dots { display: flex; gap: 6px; margin-top: 14px; }
+.ck3-dot { flex: 1; height: 34px; border-radius: 10px; display: grid; place-items: center; font-size: 12px; font-weight: 750; color: var(--text-3); background: var(--surface-2); border: 1px solid var(--border); }
+.ck3-dot.on { color: #fff; background: var(--ck-green); border-color: var(--ck-green); }
+.ck3-dot.today { box-shadow: 0 0 0 2px var(--text) inset; }
+.ck3-dot.today.on { box-shadow: none; outline: 2px solid var(--text); outline-offset: 1px; }
+
+.ck3-now { margin-top: 14px; padding: 16px; border-radius: 18px; background: color-mix(in srgb, var(--ck-violet) 9%, var(--surface)); border: 1px solid color-mix(in srgb, var(--ck-violet) 32%, var(--border)); }
+.ck3-now-k { font-size: 12px; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; color: var(--ck-violet); }
+.ck3-now-t { margin-top: 4px; font-size: 22px; font-weight: 800; letter-spacing: -0.03em; }
+.ck3-now p { margin: 6px 0 12px; font-size: 14px; line-height: 1.4; color: var(--text-2); }
+
+.ck3-routine { position: relative; }
+.ck3-routine .ck2-routine { padding-right: 70px; }
+.ck3-play { position: absolute; right: 14px; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 99px; border: none; cursor: pointer; display: grid; place-items: center; color: #fff; background: var(--c, var(--ck-green)); -webkit-tap-highlight-color: transparent; }
+.ck3-play:active { transform: translateY(-50%) scale(.94); }
+.ck3-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 7px; }
+.ck3-tags i { font-style: normal; font-size: 11.5px; font-weight: 650; padding: 3px 8px; border-radius: 99px; color: var(--text-2); background: var(--surface-2); border: 1px solid var(--border); }
+
+/* carte d'accueil */
+.ck3-sugg { display: flex; align-items: center; gap: 12px; padding: 12px; border-radius: 14px; background: color-mix(in srgb, var(--c) 9%, var(--surface-2)); border: 1px solid color-mix(in srgb, var(--c) 28%, var(--border)); }
+.ck3-sugg-ico { flex: none; width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center; color: #fff; background: var(--c); }
+.ck3-sugg-main b { display: block; font-size: 16.5px; font-weight: 750; letter-spacing: -0.02em; }
+.ck3-sugg-main span { display: block; margin-top: 3px; font-size: 13px; line-height: 1.35; color: var(--text-2); }
+
+/* mode guidé */
+.ck3-guide { padding-top: 6px; }
+.ck3-g-head { display: flex; justify-content: space-between; margin-right: 44px; font-size: 13px; font-weight: 700; color: var(--text-2); }
+.ck3-g-bar { margin: 8px 0 12px; }
+.ck3-g-name { font-size: 20px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.2; }
+.ck3-g-side { display: inline-block; margin-top: 6px; padding: 4px 12px; border-radius: 99px; font-size: 13px; font-weight: 750; color: var(--ck-violet); background: color-mix(in srgb, var(--ck-violet) 14%, transparent); }
+.ck3-g-side-none { visibility: hidden; }
+.ck3-g-time { margin-top: 6px; font-size: 64px; font-weight: 800; letter-spacing: -0.05em; line-height: 1; font-variant-numeric: tabular-nums; }
+.ck3-g-time small { font-size: 22px; font-weight: 700; margin-left: 4px; color: var(--text-3); }
+.ck3-g-cue { margin-top: 8px; font-size: 14.5px; color: var(--text-2); }
+.ck3-g-actions .ck-btn { flex: 1; }
+.ck3-g-end { text-align: center; padding: 18px 4px 4px; }
+.ck3-g-end-ico { width: 72px; height: 72px; margin: 0 auto 12px; border-radius: 99px; display: grid; place-items: center; color: #fff; background: var(--ck-green); }
+.ck3-g-end h3 { font-size: 24px; font-weight: 800; letter-spacing: -0.03em; }
+.ck3-g-end p { margin-top: 6px; color: var(--text-2); }
