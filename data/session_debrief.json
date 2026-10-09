@@ -1,45 +1,45 @@
 {
- "headline": "Footing facile réussi, FC basse, aucun signal d'alerte.",
+ "headline": "Séance transformée en rapide (4'48 vs 5'15 prévu), bien encaissée : FC basse, RPE 3/10.",
  "bullets": [
-  "5'14/km, 11\" plus vite que la cible plan, mais FC 139 = 6 bpm sous ta moyenne 60j",
-  "Équilibre gauche 50.97%, quasi identique à ta réf (50.53%) — rien à signaler",
-  "Asymétrie se resserre avec la vitesse (-0.83) : pas le profil de ta pubalgie"
+  "FC 142 à 4'48/km, soit 8 bpm sous ta réf (150 à allure comparable) : forme en hausse.",
+  "Volume 125% du plan et allure -27\"/km vs cible — la consigne 'rien de dur' n'a pas été suivie.",
+  "Asymétrie -0.81 avec la vitesse (s'atténue en accélérant) : pas le profil de ta pubalgie 2025."
  ],
  "points": [
   {
    "label": "FC moyenne",
-   "valeur": "139 bpm",
-   "ecart": "-6.5 vs réf 145.5",
-   "lecture": "basse pour cette allure, bon signe",
+   "valeur": "142 bpm",
+   "ecart": "-8 bpm vs réf 150 à allure comparable",
+   "lecture": "cardio très économe aujourd'hui",
    "ton": "bon"
   },
   {
-   "label": "Équilibre gauche",
-   "valeur": "50.97%",
-   "ecart": "+0.4 vs réf 50.53%",
-   "lecture": "stable, pas de décharge marquée",
+   "label": "Allure réalisée",
+   "valeur": "4'48\"/km",
+   "ecart": "-27\" vs cible plan (5'15\")",
+   "lecture": "séance facile transformée en rapide",
+   "ton": "vigilance"
+  },
+  {
+   "label": "Équilibre fin de séance",
+   "valeur": "51.2% gauche (dernier split)",
+   "ecart": "+1.1pt vs moyenne séance 50.08%",
+   "lecture": "léger report côté gauche en finissant",
    "ton": "neutre"
-  },
-  {
-   "label": "Asym vs allure",
-   "valeur": "-0.83",
-   "ecart": "se resserre avec la vitesse",
-   "lecture": "inverse du motif adducteur hiver",
-   "ton": "bon"
   }
  ],
- "achille": "Équilibre 50.97% proche de ta réf 50.53%, pas de décharge marquée côté droit.",
- "a_surveiller": null,
+ "achille": "Équilibre global neutre (50.08% vs réf 50.02%), léger report côté gauche sur la fin.",
+ "a_surveiller": "Volume 125% et allure bien au-dessus du plan 'réveil' avant l'effort clé de dimanche.",
  "seance": {
-  "date": "08/10/2026",
-  "heure": "06:20",
-  "titre": "i194913736",
-  "type_detecte": "endurance",
-  "km": 8.48,
-  "duree": "44m 24s",
-  "allure": "5'14\"/km",
-  "fc_moy": 139
+  "date": "09/10/2026",
+  "heure": "12:12",
+  "titre": "i195390334",
+  "type_detecte": "frac_court",
+  "km": 10.01,
+  "duree": "48m 05s",
+  "allure": "4'48\"/km",
+  "fc_moy": 142
  },
- "generated_at": "2026-10-08T05:11:49",
- "baseline_n": 30
+ "generated_at": "2026-10-09T11:05:13",
+ "baseline_n": 32
 }

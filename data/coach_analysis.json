@@ -1,39 +1,39 @@
 {
- "generated_at": "2026-10-08T05:11:22",
+ "generated_at": "2026-10-09T11:04:42",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-10-05\", \"title\": \"Repos + Muscu A\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-10-06\", \"title\": \"PISTE Harbat — 3×400 · 2×2000 (semi + 10 km) · 3×400\", \"type\": \"intervals\", \"planned_km\": 30.3, \"key\": true, \"status\": \"done\", \"target_pace\": null, \"actual\": {\"km\": 30.2, \"pace_str\": \"4'59\\\"/km\", \"fc\": 147, \"cadence\": 171, \"duration_min\": 151}, \"splits\": \"1:5'15/129/178spm 2:5'07/141/178spm 3:5'12/141/174spm 4:5'06/144/178spm 5:5'11/144/176spm 6:5'05/139/174spm 7:5'11/149/176spm 8:5'19/137/174spm 9:5'13/146/176spm 10:5'20/140/174spm 11:5'28/138/174spm 12:3'22/163/188spm 13:6'40/165/162spm 14:3'23/171/184spm 15:8'52/171/132spm 16:3'20/173/186spm 17:6'12/156/166spm 18:3'45/168/178spm 19:3'37/179/182spm 20:8'49/154/140spm 21:3'48/169/176spm 22:3'37/177/180spm 23:8'59/158/140spm 24:3'21/171/190spm 25:3'34/175/184spm 26:3'21/174/184spm 27:9'49/175/120spm 28:5'14/153/176spm 29:5'05/148/176spm 30:5'18/146/178spm (+10 laps)\", \"garmin\": {\"te_aero\": 4.6, \"te_ana\": 3.2, \"load\": 372.0, \"rpe\": 6.0, \"feel_label\": \"Fort\", \"temp_c\": 24, \"balance_l\": 48.81, \"flags\": [\"asym_vitesse\"], \"stance_drift_pct\": -5.2, \"step_drift_pct\": 11.1}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 100, \"pace_delta_s\": null}, \"hr\": {\"avg\": 147, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 5.1, \"flags\": []}}, {\"date\": \"2026-10-07\", \"title\": \"Repos (récupération après 30 km)\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}]|58123bd590",
- "plan_hash": "58123bd590",
- "headline": "Bloc spécifique bouclé à 6/6 clés réussies — tendon gauche/droit à garder à l'œil avant le 20 km.",
- "analysis": "Les 14 derniers jours sont du solide : 6 séances clés sur 6 validées, dont la sortie longue progressive du 27/09 (décrochage cardiaque -1,4%, le meilleur chiffre du bloc) et la spécifique du 02/10 qui améliore encore ce ratio vitesse/FC (2,8% contre 3,7% deux semaines plus tôt) malgré une chaleur comparable. Le vrai signal de forme : la séance Harbat du 06/10 (30,2 km, structure complexe) t'a coûté un RPE de 6, là où le 6×1000 (20 km, bien moins long) t'avait mis à 9 cinq jours plus tôt — ton corps absorbe mieux la charge qu'il y a deux semaines. Seul point d'attention réel : un flag d'asymétrie de vitesse revient sur trois séances consécutives (02/10, 04/10, 06/10), ce qui mérite d'être surveillé vu ton historique Achille, même si rien dans les données n'indique une douleur. Le plan a déjà bien anticipé le 20 km de Paris avec un vrai relâchement (deux footings légers + repos), donc pas besoin d'y toucher. Focus de la semaine : rester attentif aux sensations sur l'appui pendant les lignes droites de vendredi et pendant la course elle-même, et noter si une gêne apparaît — sinon, le plan roule comme prévu vers la répétition générale du 18/10.",
+ "signature": "[{\"date\": \"2026-10-06\", \"title\": \"PISTE Harbat — 3×400 · 2×2000 (semi + 10 km) · 3×400\", \"type\": \"intervals\", \"planned_km\": 30.3, \"key\": true, \"status\": \"done\", \"target_pace\": null, \"actual\": {\"km\": 30.2, \"pace_str\": \"4'59\\\"/km\", \"fc\": 147, \"cadence\": 171, \"duration_min\": 151}, \"splits\": \"1:5'15/129/178spm 2:5'07/141/178spm 3:5'12/141/174spm 4:5'06/144/178spm 5:5'11/144/176spm 6:5'05/139/174spm 7:5'11/149/176spm 8:5'19/137/174spm 9:5'13/146/176spm 10:5'20/140/174spm 11:5'28/138/174spm 12:3'22/163/188spm 13:6'40/165/162spm 14:3'23/171/184spm 15:8'52/171/132spm 16:3'20/173/186spm 17:6'12/156/166spm 18:3'45/168/178spm 19:3'37/179/182spm 20:8'49/154/140spm 21:3'48/169/176spm 22:3'37/177/180spm 23:8'59/158/140spm 24:3'21/171/190spm 25:3'34/175/184spm 26:3'21/174/184spm 27:9'49/175/120spm 28:5'14/153/176spm 29:5'05/148/176spm 30:5'18/146/178spm (+10 laps)\", \"garmin\": {\"te_aero\": 4.6, \"te_ana\": 3.2, \"load\": 372.0, \"rpe\": 6.0, \"feel_label\": \"Fort\", \"temp_c\": 24, \"balance_l\": 48.81, \"flags\": [\"asym_vitesse\"], \"stance_drift_pct\": -5.2, \"step_drift_pct\": 11.1}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 100, \"pace_delta_s\": null}, \"hr\": {\"avg\": 147, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 5.1, \"flags\": []}}, {\"date\": \"2026-10-07\", \"title\": \"Repos (récupération après 30 km)\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-10-08\", \"title\": \"Footing récupération 40'\", \"type\": \"easy\", \"planned_km\": 8.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'25\\\"/km\", \"actual\": {\"km\": 8.5, \"pace_str\": \"5'14\\\"/km\", \"fc\": 139, \"cadence\": 178, \"duration_min\": 44}, \"splits\": \"1:5'24/130/178spm 2:5'19/136/178spm 3:5'19/140/178spm 4:5'13/142/178spm 5:5'08/140/178spm 6:5'10/137/178spm 7:5'17/143/178spm 8:5'03/142/178spm 9:5'12/139/178spm\", \"garmin\": {\"te_aero\": 3.0, \"te_ana\": 0.0, \"load\": 86.5, \"rpe\": 2.0, \"feel_label\": \"Fort\", \"temp_c\": 20, \"balance_l\": 50.97, \"flags\": [], \"stance_drift_pct\": 1.7, \"step_drift_pct\": 3.2}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 106, \"pace_delta_s\": -11}, \"hr\": {\"avg\": 139, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 0.8, \"flags\": []}}]|8046a8f964",
+ "plan_hash": "8046a8f964",
+ "headline": "Six séances clés sur six réussies en deux semaines, dont un 2×9 km à allure spécifique quasi parfait sous 25°C — le plan tient, reste l'œil sur une asymétrie qui traîne.",
+ "analysis": "Le bloc est solide : sortie longue progressive du 27/09 bouclée en négative split avec une dérive cardiaque de -1,4 %, puis le 2 octobre tu as tenu 2×9 km quasi pile sur l'allure NYC (3'55-4'00 vs 3'59 cible) malgré 25°C et un RPE à 9 — c'est exactement le genre de séance qui construit la confiance à 3 semaines de l'objectif. Les séances de seuil et de VMA sont dans les clous, et le seul accroc des 14 derniers jours est un footing facile manqué, isolé et sans conséquence. Le point à ne pas lâcher des yeux : le flag 'asymétrie de vitesse' est sorti trois séances d'affilée (2, 4 et 6 octobre), sans douleur rapportée ni déséquilibre d'appui marqué (48-51 % stable), mais avec ton historique Achille ça mérite une vigilance active plutôt qu'une ignorance. Cette semaine : gère intelligemment le 20 km de Paris dimanche — c'est un test, pas une finale, pars sur 3'52 et ne va pas chercher le chrono à tout prix — puis protège la récupération avant la répétition générale du 18 octobre qui est la vraie séance de vérité.",
  "forme": {
-  "score": 82,
+  "score": 84,
   "verdict": "surveiller",
-  "headline": "6/6 clés réussies, asymétrie de vitesse à surveiller",
-  "detail": "Tes séances clés passent toutes, et la dérive cardiaque reste maîtrisée malgré la chaleur (2 à 5% sur les sorties longues). Le vrai point à ne pas lâcher : un flag d'asymétrie de vitesse est sorti 3 fois en une semaine (02/10, 04/10, 06/10) — rien d'alarmant isolément, mais à checker vu ton passif Achille. Taper engagé avant le 20 km, laisse le corps encaisser.",
+  "headline": "Exécution excellente, asymétrie à surveiller avant le gros bloc",
+  "detail": "Tes séances clés passent toutes (6/6 sur 14 jours) et la dérive cardiaque reste basse même en conditions chaudes — c'est le signal le plus solide que le plan fonctionne. Le flag d'asymétrie de vitesse répété sur trois séances (02, 04, 06/10) n'est pas une alerte mais mérite d'être suivi avant la sortie de 30 km du 18 octobre.",
   "indicateurs": {
    "fraicheur": {
-    "valeur": "taper engagé",
-    "trend": "up",
-    "etat": "ok",
-    "note": "charge coupée avant le 20 km"
-   },
-   "compliance": {
-    "valeur": "6/6 clés sur 14j",
-    "trend": "up",
-    "etat": "ok",
-    "note": "série parfaite sur les clés"
-   },
-   "aerobie": {
-    "valeur": "1 à 5%",
+    "valeur": "équilibre",
     "trend": "flat",
     "etat": "ok",
-    "note": "dérive maîtrisée malgré chaleur"
+    "note": "taper avant test 20km"
+   },
+   "compliance": {
+    "valeur": "101% km · 1/1 clé",
+    "trend": "up",
+    "etat": "ok",
+    "note": "semaine taper tenue"
+   },
+   "aerobie": {
+    "valeur": "2,8 %",
+    "trend": "up",
+    "etat": "ok",
+    "note": "dérive quasi nulle"
    },
    "achille": {
-    "valeur": "asym. x3/7j",
-    "trend": "down",
+    "valeur": "asym. x3",
+    "trend": "flat",
     "etat": "watch",
-    "note": "asymétrie de vitesse répétée"
+    "note": "flag vitesse répété"
    }
   }
  },
@@ -41,12 +41,12 @@
   {
    "severity": "minor",
    "kind": "add_note",
-   "date": "2026-10-09",
+   "date": "2026-10-18",
    "field": "description_note",
-   "new_value": "Pendant les lignes droites, sois attentif aux sensations sur l'appui gauche/droite (mollet, tendon d'Achille) — 3 flags d'asymétrie de vitesse sur les dernières séances. Note si quelque chose tire ou gêne, même léger.",
-   "reason": "Flag asymétrie vitesse récurrent sur 3 séances (02/10, 04/10, 06/10), historique Achille à surveiller avant le 20 km test.",
-   "id": "4c0869b4",
-   "detail": "2026-10-09 : note ajoutée"
+   "new_value": "Vigilance Achille/asymétrie : flag 'vitesse asymétrique' présent sur 3 séances récentes (02/10, 04/10, 06/10). Si tiraillement ou gêne au mollet/tendon pendant les 20 km à allure NYC, coupe net et termine en footing facile plutôt que de forcer.",
+   "reason": "Flag asym_vitesse répété 3 séances consécutives avant la plus grosse sortie du bloc (30 km dont 20 à allure NYC) — aucune douleur rapportée à ce jour, mais le contexte Achille justifie une vigilance active.",
+   "id": "45a3cb9e",
+   "detail": "2026-10-18 : note ajoutée"
   }
  ],
  "pending": []
