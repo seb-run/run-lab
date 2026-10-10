@@ -9586,8 +9586,127 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet, ou 20' de trot très facile si tu as besoin de bouger. Préparation du matériel de course.",
-          "status": "pending",
-          "actual": null
+          "status": "bonus",
+          "actual": {
+            "km": 5.8,
+            "duration_min": 30,
+            "pace_sec": 310,
+            "pace_str": "5'10\"/km",
+            "fc": 143,
+            "cadence": 178,
+            "type": "endurance",
+            "title": "i195690083",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 217.0,
+              "osc_cm": 10.2,
+              "vratio": 9.31,
+              "balance_l": 51.3,
+              "step_m": 1.07,
+              "temp_c": 21,
+              "temp_max": 27,
+              "resp": 33.9,
+              "power": 374,
+              "np": 378,
+              "te_aero": 2.8,
+              "te_ana": 0.0,
+              "load": 73.6,
+              "strides": 2673,
+              "rpe": 2.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 214.0,
+                  "end": 222.0,
+                  "pct": 3.6
+                },
+                "step": {
+                  "start": 1048.0,
+                  "end": 1078.0,
+                  "pct": 2.9
+                },
+                "vratio": {
+                  "start": 9.3,
+                  "end": 9.52,
+                  "pct": 2.4
+                },
+                "osc": {
+                  "start": 99.0,
+                  "end": 105.0,
+                  "pct": 5.7
+                },
+                "hr": {
+                  "start": 138.0,
+                  "end": 146.0,
+                  "pct": 5.7
+                },
+                "cad": {
+                  "start": 89.5,
+                  "end": 88.0,
+                  "pct": -1.7
+                }
+              },
+              "balance_min": 51.09,
+              "balance_max": 51.66,
+              "balance_series": [
+                51.66,
+                51.33,
+                51.25,
+                51.11,
+                51.29,
+                51.09
+              ],
+              "balance_lent": 51.48,
+              "balance_rapide": 51.1,
+              "asym_vs_allure": -0.37,
+              "allure_lent_s": 315,
+              "allure_rapide_s": 305,
+              "rr_beats": 4348,
+              "rmssd_effort": 7.5,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 317,
+                "fc": 134,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 311,
+                "fc": 143,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 308,
+                "fc": 143,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 303,
+                "fc": 143,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 314,
+                "fc": 146,
+                "ca": 176
+              },
+              {
+                "km": 0.8,
+                "ps": 307,
+                "fc": 147,
+                "ca": 176
+              }
+            ]
+          },
+          "score": null
         },
         {
           "date": "2026-10-11",
@@ -9612,21 +9731,21 @@
           ]
         }
       ],
-      "volume_actual_to_date": 38.7,
-      "volume_planned_to_date": 38.3,
-      "volume_drift_pct": 1.0,
+      "volume_actual_to_date": 48.7,
+      "volume_planned_to_date": 46.3,
+      "volume_drift_pct": 5.2,
       "compliance": {
-        "km_pct": 101,
-        "km_done": 38.7,
-        "km_planned": 38.3,
-        "km_done_week": 48.7,
+        "km_pct": 105,
+        "km_done": 48.7,
+        "km_planned": 46.3,
+        "km_done_week": 54.5,
         "km_planned_week": 71.3,
-        "sessions_done": 2,
-        "sessions_planned": 2,
-        "sessions_done_week": 3,
+        "sessions_done": 3,
+        "sessions_planned": 3,
+        "sessions_done_week": 4,
         "keys_success": 1,
         "keys_total": 1,
-        "points": 100,
+        "points": 98,
         "verdict": "success"
       }
     },
@@ -9665,7 +9784,13 @@
           "target_pace_sec": 325,
           "shoe": "On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
           "scheduled_time": "06:30",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Reste vraiment facile aujourd'hui. Sur la sortie longue du 2/10, le temps de contact au sol s'était allongé de 6% en fin d'effort — rien d'alarmant isolément, mais écoute le mollet/tendon après le 20 km d'hier. Si tension ou raideur, coupe la séance en deux et marche 5 min."
+            }
+          ]
         },
         {
           "date": "2026-10-14",

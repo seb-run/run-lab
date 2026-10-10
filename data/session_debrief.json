@@ -1,45 +1,45 @@
 {
- "headline": "Séance transformée en rapide (4'48 vs 5'15 prévu), bien encaissée : FC basse, RPE 3/10.",
+ "headline": "Footing facile sans signal particulier, équilibre stable dans ta norme habituelle.",
  "bullets": [
-  "FC 142 à 4'48/km, soit 8 bpm sous ta réf (150 à allure comparable) : forme en hausse.",
-  "Volume 125% du plan et allure -27\"/km vs cible — la consigne 'rien de dur' n'a pas été suivie.",
-  "Asymétrie -0.81 avec la vitesse (s'atténue en accélérant) : pas le profil de ta pubalgie 2025."
+  "FC 143 bpm vs 145 réf, allure 5'10\"/km proche de ta réf (5'06\"/km) — séance cohérente.",
+  "Appui gauche 51,3% vs 50,5% réf : léger surplus habituel, pas d'évolution notable.",
+  "Asymétrie se resserre avec l'allure (-0,37), à l'opposé du pattern de ton ancien adducteur."
  ],
  "points": [
   {
-   "label": "FC moyenne",
-   "valeur": "142 bpm",
-   "ecart": "-8 bpm vs réf 150 à allure comparable",
-   "lecture": "cardio très économe aujourd'hui",
+   "label": "Contact sol",
+   "valeur": "217 ms",
+   "ecart": "-8 ms vs réf 225 ms",
+   "lecture": "contact plus court que d'habitude",
    "ton": "bon"
   },
   {
-   "label": "Allure réalisée",
-   "valeur": "4'48\"/km",
-   "ecart": "-27\" vs cible plan (5'15\")",
-   "lecture": "séance facile transformée en rapide",
-   "ton": "vigilance"
+   "label": "Équilibre G/D",
+   "valeur": "51,3% gauche",
+   "ecart": "+0,8 pt vs réf 50,5%",
+   "lecture": "décharge légère et habituelle du droit",
+   "ton": "neutre"
   },
   {
-   "label": "Équilibre fin de séance",
-   "valeur": "51.2% gauche (dernier split)",
-   "ecart": "+1.1pt vs moyenne séance 50.08%",
-   "lecture": "léger report côté gauche en finissant",
+   "label": "Ratio vertical",
+   "valeur": "9,31",
+   "ecart": "+0,29 vs réf 9,02",
+   "lecture": "oscillation un peu plus marquée",
    "ton": "neutre"
   }
  ],
- "achille": "Équilibre global neutre (50.08% vs réf 50.02%), léger report côté gauche sur la fin.",
- "a_surveiller": "Volume 125% et allure bien au-dessus du plan 'réveil' avant l'effort clé de dimanche.",
+ "achille": "Appui gauche 51,3%, en ligne avec ta tendance de fond (réf 50,5%) — rien de nouveau.",
+ "a_surveiller": "30' couru au lieu du repos/20' prévu, mais RPE 2 et effort très facile : sans conséquence.",
  "seance": {
-  "date": "09/10/2026",
-  "heure": "12:12",
-  "titre": "i195390334",
-  "type_detecte": "frac_court",
-  "km": 10.01,
-  "duree": "48m 05s",
-  "allure": "4'48\"/km",
-  "fc_moy": 142
+  "date": "10/10/2026",
+  "heure": "10:12",
+  "titre": "i195690083",
+  "type_detecte": "endurance",
+  "km": 5.8,
+  "duree": "30m 00s",
+  "allure": "5'10\"/km",
+  "fc_moy": 143
  },
- "generated_at": "2026-10-09T11:05:13",
- "baseline_n": 32
+ "generated_at": "2026-10-10T08:48:32",
+ "baseline_n": 33
 }
