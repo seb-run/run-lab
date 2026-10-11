@@ -1,45 +1,45 @@
 {
- "headline": "Footing facile sans signal particulier, équilibre stable dans ta norme habituelle.",
+ "headline": "3'43/km, négatif split propre et net sous cible — mais asymétrie qui s'ouvre avec la vitesse.",
  "bullets": [
-  "FC 143 bpm vs 145 réf, allure 5'10\"/km proche de ta réf (5'06\"/km) — séance cohérente.",
-  "Appui gauche 51,3% vs 50,5% réf : léger surplus habituel, pas d'évolution notable.",
-  "Asymétrie se resserre avec l'allure (-0,37), à l'opposé du pattern de ton ancien adducteur."
+  "Allure 3'43/km, 9\" sous la cible (3'52) — négatif split réussi, 232→210 s/km du 1er au dernier km.",
+  "FC moy 173, +10 vs réf (163) mais allure bien plus rapide que les séances comparées (223 vs 263 s/km).",
+  "Équilibre gauche 47.9%, sous ta réf (49.3%) et se dégrade avec la vitesse (asym_vs_allure +0.88)."
  ],
  "points": [
   {
-   "label": "Contact sol",
-   "valeur": "217 ms",
-   "ecart": "-8 ms vs réf 225 ms",
-   "lecture": "contact plus court que d'habitude",
-   "ton": "bon"
-  },
-  {
    "label": "Équilibre G/D",
-   "valeur": "51,3% gauche",
-   "ecart": "+0,8 pt vs réf 50,5%",
-   "lecture": "décharge légère et habituelle du droit",
+   "valeur": "47.9%",
+   "ecart": "-1.4 pt vs réf 49.3%",
+   "lecture": "charge le droit, s'accentue à l'accélération",
+   "ton": "vigilance"
+  },
+  {
+   "label": "FC moyenne",
+   "valeur": "173 bpm",
+   "ecart": "+10 vs réf 163",
+   "lecture": "cohérent avec l'allure plus rapide",
    "ton": "neutre"
   },
   {
-   "label": "Ratio vertical",
-   "valeur": "9,31",
-   "ecart": "+0,29 vs réf 9,02",
-   "lecture": "oscillation un peu plus marquée",
-   "ton": "neutre"
+   "label": "Temps de contact",
+   "valeur": "162 ms",
+   "ecart": "-37 ms vs réf 199 ms",
+   "lecture": "normal à cette allure, rien d'anormal",
+   "ton": "bon"
   }
  ],
- "achille": "Appui gauche 51,3%, en ligne avec ta tendance de fond (réf 50,5%) — rien de nouveau.",
- "a_surveiller": "30' couru au lieu du repos/20' prévu, mais RPE 2 et effort très facile : sans conséquence.",
+ "achille": "Équilibre sous 50% (47.9%, réf 49.3%) : léger surplus de charge côté droit sur cette séance.",
+ "a_surveiller": "Asymétrie qui s'ouvre avec la vitesse (+0.88) — signature proche de ton ancien adducteur, à noter.",
  "seance": {
-  "date": "10/10/2026",
-  "heure": "10:12",
-  "titre": "i195690083",
-  "type_detecte": "endurance",
-  "km": 5.8,
-  "duree": "30m 00s",
-  "allure": "5'10\"/km",
-  "fc_moy": 143
+  "date": "11/10/2026",
+  "heure": "09:02",
+  "titre": "i196021161",
+  "type_detecte": "tempo",
+  "km": 20.01,
+  "duree": "1h 14m 17s",
+  "allure": "3'43\"/km",
+  "fc_moy": 173
  },
- "generated_at": "2026-10-10T08:48:32",
- "baseline_n": 33
+ "generated_at": "2026-10-11T08:41:05",
+ "baseline_n": 7
 }
