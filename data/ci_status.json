@@ -1,14 +1,14 @@
 {
  "garmin": {
   "ok": true,
-  "at": "2026-10-11T11:36:28",
-  "message": "0 fichier(s), 8 course(s) vues",
-  "last_ok": "2026-10-11T11:36:28"
+  "at": "2026-10-12T07:28:30",
+  "message": "0 fichier(s), 7 course(s) vues",
+  "last_ok": "2026-10-12T07:28:30"
  },
  "coach": {
   "ok": true,
-  "at": "2026-10-11T08:40:31",
-  "last_ok": "2026-10-11T08:40:31"
+  "at": "2026-10-12T07:29:44",
+  "last_ok": "2026-10-12T07:29:44"
  },
  "debrief": {
   "ok": true,
@@ -26,5 +26,11 @@
   "at": "2026-10-01T19:31:43",
   "message": "2026-10-02 ⇄ 2026-10-04 : « SEUIL LONG — 3 × 10' » ↔ « SORTIE LONGUE — 2 × 9 km à allure spécifique »",
   "last_ok": "2026-10-01T19:31:43"
+ },
+ "apply_slot": {
+  "ok": true,
+  "at": "2026-10-12T07:28:17",
+  "message": "2026-10-14 : Footing 50' + 6 lignes droites → Piste club (12.0km)",
+  "last_ok": "2026-10-12T07:28:17"
  }
 }

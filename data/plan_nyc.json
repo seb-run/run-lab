@@ -956,99 +956,7 @@
               "rr_beats": 11309,
               "rmssd_effort": 6.7,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 330,
-                "fc": 128,
-                "ca": 184
-              },
-              {
-                "km": 1.0,
-                "ps": 308,
-                "fc": 136,
-                "ca": 184
-              },
-              {
-                "km": 1.0,
-                "ps": 307,
-                "fc": 139,
-                "ca": 182
-              },
-              {
-                "km": 1.0,
-                "ps": 303,
-                "fc": 138,
-                "ca": 182
-              },
-              {
-                "km": 1.0,
-                "ps": 301,
-                "fc": 136,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 299,
-                "fc": 153,
-                "ca": 182
-              },
-              {
-                "km": 1.0,
-                "ps": 298,
-                "fc": 149,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 314,
-                "fc": 156,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 301,
-                "fc": 165,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 298,
-                "fc": 160,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 299,
-                "fc": 158,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 310,
-                "fc": 158,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 310,
-                "fc": 150,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 307,
-                "fc": 153,
-                "ca": 176
-              },
-              {
-                "km": 0.21,
-                "ps": 317,
-                "fc": 148,
-                "ca": 174
-              }
-            ]
+            }
           },
           "score": {
             "points": 84,
@@ -9927,17 +9835,17 @@
       "volume_planned_to_date": 46.3,
       "volume_drift_pct": 17.7,
       "compliance": {
-        "km_pct": 118,
-        "km_done": 54.5,
-        "km_planned": 46.3,
+        "km_pct": 108,
+        "km_done": 77.0,
+        "km_planned": 71.3,
         "km_done_week": 77.0,
         "km_planned_week": 71.3,
-        "sessions_done": 3,
-        "sessions_planned": 3,
+        "sessions_done": 4,
+        "sessions_planned": 4,
         "sessions_done_week": 5,
-        "keys_success": 1,
-        "keys_total": 1,
-        "points": 98,
+        "keys_success": 2,
+        "keys_total": 2,
+        "points": 99,
         "verdict": "success"
       }
     },
@@ -9959,7 +9867,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos course à pied. Plus de muscu jusqu'au marathon. Protocole tendon quand même.",
-          "status": "pending",
+          "status": "today",
           "actual": null
         },
         {
@@ -9987,18 +9895,31 @@
         {
           "date": "2026-10-14",
           "dow": "Wed",
-          "type": "easy",
-          "title": "Footing 50' + 6 lignes droites",
-          "km": 10.0,
-          "duration_min": 50,
-          "key": false,
-          "description": "50' facile + 6 LD.\n\nPas de piste cette semaine : tu récupères encore du 20 km, les lignes droites suffisent à garder la vivacité.\n[Footing facile · 5'05–5'25/km]\nChaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
+          "type": "intervals",
+          "title": "Piste club",
+          "km": 12.0,
+          "key": true,
+          "description": "5km échauffement\n10×500m à 3’40\"/km · récup 200m actif 4’20\"/km\n2km retour au calme\nPiste",
           "status": "pending",
-          "target_pace": "5'15\"/km",
+          "target_pace": "3’40\"/km",
           "target_pace_sec": 315,
-          "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
+          "shoe": "On Cloudsurfer",
           "scheduled_time": "06:30",
-          "actual": null
+          "actual": null,
+          "_replaced_by_user": true,
+          "_replaced_from": {
+            "title": "Footing 50' + 6 lignes droites",
+            "target_pace": "5'15\"/km"
+          },
+          "shoe_note": "10 mm : le drop élevé porte le gros du volume facile.",
+          "_shoe_key": "on_cs",
+          "coach_notes": [
+            {
+              "kind": "user_slot",
+              "text": "Séance club saisie par toi le 2026-10-12.",
+              "validated": true
+            }
+          ]
         },
         {
           "date": "2026-10-15",
@@ -10063,10 +9984,17 @@
             {
               "kind": "note",
               "text": "Vigilance Achille/asymétrie : flag 'vitesse asymétrique' présent sur 3 séances récentes (02/10, 04/10, 06/10). Si tiraillement ou gêne au mollet/tendon pendant les 20 km à allure NYC, coupe net et termine en footing facile plutôt que de forcer."
+            },
+            {
+              "kind": "note",
+              "text": "Sortie longue du 02/10 : contact au sol allongé de 6 % en fin de séance. Sur ces 30 km, reste attentif à ta posture/cadence dans le dernier tiers, surtout si la fatigue se fait sentir."
             }
           ]
         }
-      ]
+      ],
+      "volume_actual_to_date": 0.0,
+      "volume_planned_to_date": 0.0,
+      "volume_drift_pct": 0
     },
     {
       "week_num": 10,
