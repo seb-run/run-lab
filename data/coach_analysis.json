@@ -1,39 +1,39 @@
 {
- "generated_at": "2026-10-12T07:29:44",
+ "generated_at": "2026-10-13T05:19:39",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-10-09\", \"title\": \"Réveil musculaire pré-compét — 5 LD + 3 × 300\", \"type\": \"easy\", \"planned_km\": 8.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'15\\\"/km\", \"actual\": {\"km\": 10.0, \"pace_str\": \"4'48\\\"/km\", \"fc\": 142, \"cadence\": 178, \"duration_min\": 48}, \"splits\": \"1:4'55/122/176spm 2:4'52/134/178spm 3:4'59/136/176spm 4:4'54/141/178spm 5:4'59/141/176spm 6:3'10/149/192spm 7:5'14/157/170spm 8:3'11/156/190spm 9:5'14/159/170spm 10:3'24/153/182spm 11:5'11/155/170spm 12:3'22/154/184spm 13:5'07/160/168spm 14:3'25/156/186spm 15:5'13/161/168spm 16:3'21/166/188spm 17:5'32/157/170spm 18:3'19/164/190spm 19:6'19/155/166spm 20:3'16/163/188spm 21:5'04/159/172spm 22:4'59/140/176spm 23:5'10/138/176spm 24:5'07/141/176spm\", \"garmin\": {\"te_aero\": 3.3, \"te_ana\": 2.2, \"load\": 166.9, \"rpe\": 3.0, \"feel_label\": \"Très fort\", \"temp_c\": 21, \"balance_l\": 50.08, \"flags\": [\"stance_fade\", \"step_fade\"], \"stance_drift_pct\": 7.6, \"step_drift_pct\": -3.7}, \"score\": {\"points\": 87, \"verdict\": \"success\", \"volume_pct\": 125, \"pace_delta_s\": -27}, \"hr\": {\"avg\": 142, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 4.0, \"flags\": []}}, {\"date\": \"2026-10-10\", \"title\": \"Repos (ou déblocage 20')\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"bonus\", \"target_pace\": null, \"actual\": {\"km\": 5.8, \"pace_str\": \"5'10\\\"/km\", \"fc\": 143, \"cadence\": 178, \"duration_min\": 30}, \"splits\": \"1:5'17/134/180spm 2:5'11/143/178spm 3:5'08/143/180spm 4:5'03/143/178spm 5:5'14/146/176spm 6:5'07/147/176spm\", \"garmin\": {\"te_aero\": 2.8, \"te_ana\": 0.0, \"load\": 73.6, \"rpe\": 2.0, \"feel_label\": \"Fort\", \"temp_c\": 21, \"balance_l\": 51.3, \"flags\": [], \"stance_drift_pct\": 3.6, \"step_drift_pct\": 2.9}}, {\"date\": \"2026-10-11\", \"title\": \"🏁 20 KM DE PARIS — course-test (cible 1h17'30, 1h16 si tout est parfait)\", \"type\": \"race\", \"planned_km\": 25.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'52\\\"/km\", \"actual\": {\"km\": 22.5, \"pace_str\": \"4'01\\\"/km\", \"fc\": 152, \"cadence\": 179, \"duration_min\": 90}, \"splits\": \"1:3'52/148/184spm 2:3'58/170/182spm 3:3'45/167/182spm 4:3'48/167/180spm 5:3'46/169/182spm 6:3'47/170/180spm 7:3'48/171/180spm 8:3'42/169/180spm 9:3'41/173/182spm 10:3'45/175/180spm 11:3'38/175/180spm 12:3'37/175/182spm 13:3'38/175/180spm 14:3'41/177/182spm 15:3'44/175/178spm 16:3'38/178/178spm 17:3'40/179/180spm 18:3'35/178/178spm 19:3'41/179/178spm 20:3'30/183/178spm 21:5'36/128/180spm 22:7'25/134/170spm 23:6'01/128/172spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 1.0, \"load\": 525.8, \"rpe\": 8.0, \"feel_label\": \"Très fort\", \"temp_c\": 21, \"balance_l\": 47.9, \"flags\": [\"asym\"], \"stance_drift_pct\": -4.5, \"step_drift_pct\": 6.7}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 90, \"pace_delta_s\": -9}, \"hr\": {\"avg\": 152, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 1.2, \"flags\": []}}]|74a14fae04",
- "plan_hash": "74a14fae04",
- "headline": "20 km de Paris couru en 1h14'14 contre un objectif de 1h17'30 — allure 3'42/km avec une dérive cardiaque de seulement 1,2 %.",
- "analysis": "Tu termines le bloc le plus dur du plan sur un vrai signal : 3min16 d'avance sur ton objectif de la course-test, à une allure moyenne de 3'42/km quand tu visais 3'52/km, avec un decoupling de 1,2 % — le rapport vitesse/FC qui tient quasi parfaitement sur 20 km. C'est la meilleure validation possible de ton allure marathon cible (4'12/km) : tu as un matelas de vitesse réel. Sur les 14 derniers jours, 5 séances clés sur 5 réussies (piste, sortie longue spécifique, seuil, Harbat 30 km, course-test), un seul footing manqué le 3/10 — non-événement. Le seul point que je note : ta sortie longue du 2/10 (28 km, allure spécifique) montre un contact au sol qui s'allonge de 6 % en fin de séance, au-dessus du seuil d'alerte mécanique. C'est isolé pour l'instant, pas une tendance, mais ta prochaine échéance — les 30 km dont 20 à allure NYC le 18/10 — est le même format de séance longue et continue : surveille ta foulée en fin de sortie. Le risque principal cette semaine n'est pas la forme, c'est l'accumulation : piste Harbat mercredi dernier + course dimanche = grosse charge sur 5 jours, donc profite du repos d'aujourd'hui sans culpabiliser.",
+ "signature": "[{\"date\": \"2026-10-10\", \"title\": \"Repos (ou déblocage 20')\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"bonus\", \"target_pace\": null, \"actual\": {\"km\": 5.8, \"pace_str\": \"5'10\\\"/km\", \"fc\": 143, \"cadence\": 178, \"duration_min\": 30}, \"splits\": \"1:5'17/134/180spm 2:5'11/143/178spm 3:5'08/143/180spm 4:5'03/143/178spm 5:5'14/146/176spm 6:5'07/147/176spm\", \"garmin\": {\"te_aero\": 2.8, \"te_ana\": 0.0, \"load\": 73.6, \"rpe\": 2.0, \"feel_label\": \"Fort\", \"temp_c\": 21, \"balance_l\": 51.3, \"flags\": [], \"stance_drift_pct\": 3.6, \"step_drift_pct\": 2.9}}, {\"date\": \"2026-10-11\", \"title\": \"🏁 20 KM DE PARIS — course-test (cible 1h17'30, 1h16 si tout est parfait)\", \"type\": \"race\", \"planned_km\": 25.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'52\\\"/km\", \"actual\": {\"km\": 22.5, \"pace_str\": \"4'01\\\"/km\", \"fc\": 152, \"cadence\": 179, \"duration_min\": 90}, \"splits\": \"1:3'52/148/184spm 2:3'58/170/182spm 3:3'45/167/182spm 4:3'48/167/180spm 5:3'46/169/182spm 6:3'47/170/180spm 7:3'48/171/180spm 8:3'42/169/180spm 9:3'41/173/182spm 10:3'45/175/180spm 11:3'38/175/180spm 12:3'37/175/182spm 13:3'38/175/180spm 14:3'41/177/182spm 15:3'44/175/178spm 16:3'38/178/178spm 17:3'40/179/180spm 18:3'35/178/178spm 19:3'41/179/178spm 20:3'30/183/178spm 21:5'36/128/180spm 22:7'25/134/170spm 23:6'01/128/172spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 1.0, \"load\": 525.8, \"rpe\": 8.0, \"feel_label\": \"Très fort\", \"temp_c\": 21, \"balance_l\": 47.9, \"flags\": [\"asym\"], \"stance_drift_pct\": -4.5, \"step_drift_pct\": 6.7}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 90, \"pace_delta_s\": -9}, \"hr\": {\"avg\": 152, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 1.2, \"flags\": []}}, {\"date\": \"2026-10-12\", \"title\": \"Repos — post-course\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}]|c87c1c3678",
+ "plan_hash": "c87c1c3678",
+ "headline": "20 km de Paris en négative split à 3'43/km avec un décrochage cardiaque de 1,2 % — la forme NYC est validée.",
+ "analysis": "Tu sors d'un bloc de 4 semaines toutes validées, avec 8 séances clés réussies sur 10 au total et un seul footing raté (le 3/10, non clé). Le vrai signal du moment c'est le 20 km de Paris : objectif 3'52/km (1h17'30), tu as tourné à 3'43/km en negative split pur (3'52 au 1er km, 3'30 au 20e), avec un décrochage cardiaque de seulement 1,2 % — c'est nettement au-dessus de ton objectif NYC et ça confirme que le plan fonctionne. Le seuil long du 4/10 et le fractionné piste du 6/10 ont aussi été exécutés proprement (décrochage 4,7 % et 5,1 %, RPE modéré 5-6), donc la caisse répond aussi bien en VMA qu'en seuil long. Point de vigilance réel : la sortie longue du 2/10 (2×9km à allure spécifique) montre un allongement du contact au sol de 6 % en fin d'effort avec une légère asymétrie de vitesse gauche/droite — un signal isolé, mais avec ton historique Achille ça mérite un œil, surtout que tu enchaînes la répétition générale de 30 km (dont 20 à l'allure NYC) le 18/10, une semaine seulement après un effort compétitif à RPE 8. Le risque principal cette semaine n'est pas la forme — c'est l'empilement : la piste club de demain (14/10) arrive 3 jours après une course costaude. Focus : exécute-la en qualité contrôlée, pas en charge maximale, pour arriver frais sur le 30 km du 18/10 qui est ton vrai test avant le taper final.",
  "forme": {
-  "score": 87,
+  "score": 85,
   "verdict": "bon",
-  "headline": "Course-test réussie large, un point mécanique à surveiller",
-  "detail": "Tu sors d'une semaine à forte charge (Harbat 30 km + course 20 km en 5 jours) avec un résultat qui dépasse l'objectif de 3min16 et un cardio très stable. Le contact au sol qui s'allonge de 6 % sur la sortie longue du 2/10 reste isolé mais mérite un œil lors de la répétition générale du 18/10, format similaire. Focus des prochains jours : laisser la fraîcheur revenir avant la piste de mercredi.",
+  "headline": "Fitness confirmée, gérer l'enchaînement avant le 30 km",
+  "detail": "Le 20 km de Paris est le signal fort : 3'43/km en négatif, décrochage cardiaque de seulement 1,2 %. La sortie longue du 2/10 montre un contact au sol qui s'allonge de 6 % en fin d'effort avec une légère asymétrie gauche/droite — à surveiller vu l'historique Achille, sans alarme sur un épisode isolé. Focus : la piste du 14/10 en qualité contrôlée pour arriver frais sur les 20 km à l'allure NYC du 18/10.",
   "indicateurs": {
    "fraicheur": {
-    "valeur": "J+1 course",
-    "trend": "down",
-    "etat": "watch",
-    "note": "charge cumulée forte"
+    "valeur": "J+2 post-course",
+    "trend": "flat",
+    "etat": "ok",
+    "note": "récup normale, rien d'anormal"
    },
    "compliance": {
-    "valeur": "13/14 séances · 5/5 clés",
-    "trend": "up",
+    "valeur": "13/14 séances, 8/10 clés",
+    "trend": "flat",
     "etat": "ok",
-    "note": "quasi parfait"
+    "note": "1 footing manqué (non clé)"
    },
    "aerobie": {
     "valeur": "1,2 %",
-    "trend": "flat",
+    "trend": "down",
     "etat": "ok",
-    "note": "très stable sur course-test"
+    "note": "décrochage quasi nul sur 20km"
    },
    "achille": {
-    "valeur": "+6 % (02/10)",
-    "trend": "flat",
+    "valeur": "+6 % contact",
+    "trend": "up",
     "etat": "watch",
-    "note": "contact au sol à surveiller"
+    "note": "asymétrie SL du 02/10"
    }
   }
  },
@@ -41,12 +41,12 @@
   {
    "severity": "minor",
    "kind": "add_note",
-   "date": "2026-10-18",
+   "date": "2026-10-14",
    "field": "description_note",
-   "new_value": "Sortie longue du 02/10 : contact au sol allongé de 6 % en fin de séance. Sur ces 30 km, reste attentif à ta posture/cadence dans le dernier tiers, surtout si la fatigue se fait sentir.",
-   "reason": "Un signal mécanique isolé (contact au sol +6% sur la sortie du 02/10) sur un format de séance similaire à venir — simple vigilance, pas un motif de réduction de charge.",
-   "id": "1009342a",
-   "detail": "2026-10-18 : note ajoutée"
+   "new_value": "Tu sors d'un 20km à RPE 8 il y a 3 jours : fais cette piste en qualité contrôlée, pas en record. Garde de la fraîcheur pour les 20km à l'allure NYC du 18/10.",
+   "reason": "Effort compétitif récent (RPE8, 20km en négative split) à seulement 3 jours de cette séance clé, elle-même suivie de près par la répétition générale du 18/10.",
+   "id": "0709ba2c",
+   "detail": "2026-10-14 : note ajoutée"
   }
  ],
  "pending": []
