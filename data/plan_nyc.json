@@ -9978,12 +9978,117 @@
           "km": 12.0,
           "key": true,
           "description": "5km échauffement\n10×500m à 3’40\"/km · récup 200m actif 4’20\"/km\n2km retour au calme\nPiste",
-          "status": "today",
+          "status": "under",
           "target_pace": "3’40\"/km",
           "target_pace_sec": 315,
           "shoe": "On Cloudsurfer",
           "scheduled_time": "06:30",
-          "actual": null,
+          "actual": {
+            "km": 6.9,
+            "duration_min": 35,
+            "pace_sec": 308,
+            "pace_str": "5'08\"/km",
+            "fc": 148,
+            "cadence": 176,
+            "type": "endurance",
+            "title": "i197154255",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 247.0,
+              "osc_cm": 8.6,
+              "vratio": 7.86,
+              "step_m": 1.1,
+              "temp_c": 21,
+              "temp_max": 27,
+              "power": 359,
+              "np": 375,
+              "te_aero": 3.3,
+              "te_ana": 0.0,
+              "load": 122.3,
+              "strides": 3109,
+              "rpe": 1.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 254.0,
+                  "end": 241.0,
+                  "pct": -5.1
+                },
+                "step": {
+                  "start": 999.0,
+                  "end": 1206.0,
+                  "pct": 20.8
+                },
+                "vratio": {
+                  "start": 8.23,
+                  "end": 7.53,
+                  "pct": -8.5
+                },
+                "osc": {
+                  "start": 82.0,
+                  "end": 90.0,
+                  "pct": 10.4
+                },
+                "hr": {
+                  "start": 139.0,
+                  "end": 158.0,
+                  "pct": 13.5
+                },
+                "cad": {
+                  "start": 88.0,
+                  "end": 87.1,
+                  "pct": -1.1
+                }
+              },
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 347,
+                "fc": 127,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 345,
+                "fc": 145,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 321,
+                "fc": 146,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 289,
+                "fc": 154,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 288,
+                "fc": 157,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 284,
+                "fc": 160,
+                "ca": 176
+              },
+              {
+                "km": 0.86,
+                "ps": 279,
+                "fc": 156,
+                "ca": 172
+              }
+            ]
+          },
           "_replaced_by_user": true,
           "_replaced_from": {
             "title": "Footing 50' + 6 lignes droites",
@@ -10001,7 +10106,30 @@
               "kind": "note",
               "text": "Tu sors d'un 20km à RPE 8 il y a 3 jours : fais cette piste en qualité contrôlée, pas en record. Garde de la fraîcheur pour les 20km à l'allure NYC du 18/10."
             }
-          ]
+          ],
+          "score": {
+            "points": 35,
+            "verdict": "failed",
+            "verdict_label": "Échouée",
+            "volume_pct": 58,
+            "volume_points": 35,
+            "pace_points": null,
+            "pace_target_s": null,
+            "pace_actual_s": null,
+            "pace_actual_str": null,
+            "pace_delta_s": null,
+            "is_quality": true,
+            "hr": {
+              "avg": 148,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": -2.4,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 58%"
+            ]
+          }
         },
         {
           "date": "2026-10-15",
@@ -10081,11 +10209,11 @@
         "km_pct": 111,
         "km_done": 10.0,
         "km_planned": 9.0,
-        "km_done_week": 10.0,
+        "km_done_week": 16.9,
         "km_planned_week": 70.0,
         "sessions_done": 1,
         "sessions_planned": 1,
-        "sessions_done_week": 1,
+        "sessions_done_week": 2,
         "keys_success": 0,
         "keys_total": 0,
         "points": 100,

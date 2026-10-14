@@ -1,45 +1,45 @@
 {
- "headline": "Facile mais pas si facile : 5'12/km au lieu des 5'25 prévus",
+ "headline": "Séance clé non réalisée : 58% du volume, allure cible jamais atteinte.",
  "bullets": [
-  "Allure 5'12/km, 13s plus vite que la cible 5'25 — consigne 'on ne force rien' pas tenue.",
-  "FC moy 143 bpm, sous ta réf 60j (144,8) malgré l'allure plus soutenue — effort maîtrisé.",
-  "Equilibre gauche 50,68% (réf 50,57%), stable, pas d'ouverture avec la vitesse (asym -0,02)."
+  "6,86km/12km prévus (58%), jamais atteint 3'40\"/km (meilleur passage 4'39/km).",
+  "Contact au sol 247ms, +23ms vs ta réf. à allure comparable (224ms).",
+  "RPE 1, ressenti 'Fort' : effort perçu très facile malgré séance interrompue."
  ],
  "points": [
   {
-   "label": "Allure vs cible",
-   "valeur": "5'12/km",
-   "ecart": "-13s vs cible 5'25",
-   "lecture": "plus rapide que prévu en récup",
+   "label": "Volume réalisé",
+   "valeur": "6.86 km",
+   "ecart": "-42% vs 12km prévus",
+   "lecture": "séance clé non terminée",
    "ton": "vigilance"
   },
   {
-   "label": "FC moyenne",
-   "valeur": "143 bpm",
-   "ecart": "-1,8 vs réf 60j",
-   "lecture": "effort contenu malgré l'allure",
-   "ton": "bon"
+   "label": "Temps de contact",
+   "valeur": "247 ms",
+   "ecart": "+23ms vs réf. 224ms",
+   "lecture": "appui au sol plus long",
+   "ton": "vigilance"
   },
   {
-   "label": "Equilibre gauche",
-   "valeur": "50,68%",
-   "ecart": "+0,11 vs réf 60j",
-   "lecture": "stable, pas d'asymétrie qui s'ouvre",
-   "ton": "neutre"
+   "label": "Ratio vertical",
+   "valeur": "7.86",
+   "ecart": "-1.16 vs réf. 9.02",
+   "lecture": "meilleur que d'habitude",
+   "ton": "bon"
   }
  ],
- "achille": "Equilibre 50,68% proche de ta réf 50,57% — pas de décharge accrue du côté droit.",
- "a_surveiller": "Km et allure au-dessus du plan la veille d'une vraie récup post-course — à modérer demain.",
+ "achille": "Équilibre G/D non mesuré aujourd'hui (pas de ceinture) : suivi impossible.",
+ "a_surveiller": "Contact au sol allongé (+23ms) à allure équivalente : à revérifier la prochaine sortie.",
  "seance": {
-  "date": "13/10/2026",
-  "heure": "06:11",
-  "titre": "i196674738",
+  "date": "14/10/2026",
+  "heure": "12:13",
+  "titre": "i197154255",
   "type_detecte": "endurance",
-  "km": 10.01,
-  "duree": "52m 07s",
-  "allure": "5'12\"/km",
-  "fc_moy": 143
+  "km": 6.86,
+  "duree": "35m 14s",
+  "allure": "5'08\"/km",
+  "fc_moy": 148
  },
- "generated_at": "2026-10-13T05:20:05",
- "baseline_n": 31
+ "generated_at": "2026-10-14T11:07:13",
+ "baseline_n": 34
 }
