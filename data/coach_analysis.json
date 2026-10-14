@@ -1,53 +1,42 @@
 {
- "generated_at": "2026-10-13T05:19:39",
+ "generated_at": "2026-10-14T10:37:58",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-10-10\", \"title\": \"Repos (ou déblocage 20')\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"bonus\", \"target_pace\": null, \"actual\": {\"km\": 5.8, \"pace_str\": \"5'10\\\"/km\", \"fc\": 143, \"cadence\": 178, \"duration_min\": 30}, \"splits\": \"1:5'17/134/180spm 2:5'11/143/178spm 3:5'08/143/180spm 4:5'03/143/178spm 5:5'14/146/176spm 6:5'07/147/176spm\", \"garmin\": {\"te_aero\": 2.8, \"te_ana\": 0.0, \"load\": 73.6, \"rpe\": 2.0, \"feel_label\": \"Fort\", \"temp_c\": 21, \"balance_l\": 51.3, \"flags\": [], \"stance_drift_pct\": 3.6, \"step_drift_pct\": 2.9}}, {\"date\": \"2026-10-11\", \"title\": \"🏁 20 KM DE PARIS — course-test (cible 1h17'30, 1h16 si tout est parfait)\", \"type\": \"race\", \"planned_km\": 25.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'52\\\"/km\", \"actual\": {\"km\": 22.5, \"pace_str\": \"4'01\\\"/km\", \"fc\": 152, \"cadence\": 179, \"duration_min\": 90}, \"splits\": \"1:3'52/148/184spm 2:3'58/170/182spm 3:3'45/167/182spm 4:3'48/167/180spm 5:3'46/169/182spm 6:3'47/170/180spm 7:3'48/171/180spm 8:3'42/169/180spm 9:3'41/173/182spm 10:3'45/175/180spm 11:3'38/175/180spm 12:3'37/175/182spm 13:3'38/175/180spm 14:3'41/177/182spm 15:3'44/175/178spm 16:3'38/178/178spm 17:3'40/179/180spm 18:3'35/178/178spm 19:3'41/179/178spm 20:3'30/183/178spm 21:5'36/128/180spm 22:7'25/134/170spm 23:6'01/128/172spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 1.0, \"load\": 525.8, \"rpe\": 8.0, \"feel_label\": \"Très fort\", \"temp_c\": 21, \"balance_l\": 47.9, \"flags\": [\"asym\"], \"stance_drift_pct\": -4.5, \"step_drift_pct\": 6.7}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 90, \"pace_delta_s\": -9}, \"hr\": {\"avg\": 152, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 1.2, \"flags\": []}}, {\"date\": \"2026-10-12\", \"title\": \"Repos — post-course\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}]|c87c1c3678",
- "plan_hash": "c87c1c3678",
- "headline": "20 km de Paris en négative split à 3'43/km avec un décrochage cardiaque de 1,2 % — la forme NYC est validée.",
- "analysis": "Tu sors d'un bloc de 4 semaines toutes validées, avec 8 séances clés réussies sur 10 au total et un seul footing raté (le 3/10, non clé). Le vrai signal du moment c'est le 20 km de Paris : objectif 3'52/km (1h17'30), tu as tourné à 3'43/km en negative split pur (3'52 au 1er km, 3'30 au 20e), avec un décrochage cardiaque de seulement 1,2 % — c'est nettement au-dessus de ton objectif NYC et ça confirme que le plan fonctionne. Le seuil long du 4/10 et le fractionné piste du 6/10 ont aussi été exécutés proprement (décrochage 4,7 % et 5,1 %, RPE modéré 5-6), donc la caisse répond aussi bien en VMA qu'en seuil long. Point de vigilance réel : la sortie longue du 2/10 (2×9km à allure spécifique) montre un allongement du contact au sol de 6 % en fin d'effort avec une légère asymétrie de vitesse gauche/droite — un signal isolé, mais avec ton historique Achille ça mérite un œil, surtout que tu enchaînes la répétition générale de 30 km (dont 20 à l'allure NYC) le 18/10, une semaine seulement après un effort compétitif à RPE 8. Le risque principal cette semaine n'est pas la forme — c'est l'empilement : la piste club de demain (14/10) arrive 3 jours après une course costaude. Focus : exécute-la en qualité contrôlée, pas en charge maximale, pour arriver frais sur le 30 km du 18/10 qui est ton vrai test avant le taper final.",
+ "signature": "[{\"date\": \"2026-10-11\", \"title\": \"🏁 20 KM DE PARIS — course-test (cible 1h17'30, 1h16 si tout est parfait)\", \"type\": \"race\", \"planned_km\": 25.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'52\\\"/km\", \"actual\": {\"km\": 22.5, \"pace_str\": \"4'01\\\"/km\", \"fc\": 152, \"cadence\": 179, \"duration_min\": 90}, \"splits\": \"1:3'52/148/184spm 2:3'58/170/182spm 3:3'45/167/182spm 4:3'48/167/180spm 5:3'46/169/182spm 6:3'47/170/180spm 7:3'48/171/180spm 8:3'42/169/180spm 9:3'41/173/182spm 10:3'45/175/180spm 11:3'38/175/180spm 12:3'37/175/182spm 13:3'38/175/180spm 14:3'41/177/182spm 15:3'44/175/178spm 16:3'38/178/178spm 17:3'40/179/180spm 18:3'35/178/178spm 19:3'41/179/178spm 20:3'30/183/178spm 21:5'36/128/180spm 22:7'25/134/170spm 23:6'01/128/172spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 1.0, \"load\": 525.8, \"rpe\": 8.0, \"feel_label\": \"Très fort\", \"temp_c\": 21, \"balance_l\": 47.9, \"flags\": [\"asym\"], \"stance_drift_pct\": -4.5, \"step_drift_pct\": 6.7}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 90, \"pace_delta_s\": -9}, \"hr\": {\"avg\": 152, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 1.2, \"flags\": []}}, {\"date\": \"2026-10-12\", \"title\": \"Repos — post-course\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-10-13\", \"title\": \"Footing très facile 45'\", \"type\": \"easy\", \"planned_km\": 9.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'25\\\"/km\", \"actual\": {\"km\": 10.0, \"pace_str\": \"5'12\\\"/km\", \"fc\": 143, \"cadence\": 176, \"duration_min\": 52}, \"splits\": \"1:5'22/133/176spm 2:5'17/141/176spm 3:5'23/143/176spm 4:5'20/143/176spm 5:5'14/145/176spm 6:5'08/145/176spm 7:5'03/142/178spm 8:5'01/148/178spm 9:5'13/150/176spm 10:5'02/142/176spm\", \"garmin\": {\"te_aero\": 3.1, \"te_ana\": 0.0, \"load\": 100.3, \"rpe\": 2.0, \"feel_label\": \"Fort\", \"temp_c\": 24, \"balance_l\": 50.68, \"flags\": [], \"stance_drift_pct\": -1.5, \"step_drift_pct\": 4.9}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 111, \"pace_delta_s\": -13}, \"hr\": {\"avg\": 143, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": -2.7, \"flags\": []}}]|ee7d4159f4",
+ "plan_hash": "ee7d4159f4",
+ "headline": "5 séances clés sur 5 réussies en deux semaines, dont un 20 km de Paris couru sous la cible.",
+ "analysis": "Les 14 derniers jours sont propres : toutes les séances clés sont passées, le volume tourne à 108-111 % du planifié trois semaines de suite, et le 20 km de Paris en course-test confirme la tendance — 3'35 à 3'48/km sur l'essentiel du parcours contre 3'52 visé, avec une dérive cardiaque quasi nulle (1,2 %) malgré un RPE à 8. La sortie longue du 02/10 (2x9 km à allure spécifique) raconte la même histoire : allures sous la cible, décorrélation à 2,8 %, aucun signal de fatigue aérobie à cette intensité. Côté mécanique, rien à signaler non plus sur les séances continues — le contact au sol et la foulée restent dans les clous, pas d'alerte tendon. Le seul accroc est un footing easy manqué le 03/10, sans conséquence vu le reste. Le vrai test arrive dimanche 18/10 : 30 km dont 20 à l'allure NYC. C'est cette séance qui doit confirmer ce que le 20 km de Paris a déjà montré — garde la même gestion d'effort, ne pars pas plus vite que 4'12/km sur le bloc spécifique même si les jambes répondent bien.",
  "forme": {
-  "score": 85,
+  "score": 87,
   "verdict": "bon",
-  "headline": "Fitness confirmée, gérer l'enchaînement avant le 30 km",
-  "detail": "Le 20 km de Paris est le signal fort : 3'43/km en négatif, décrochage cardiaque de seulement 1,2 %. La sortie longue du 2/10 montre un contact au sol qui s'allonge de 6 % en fin d'effort avec une légère asymétrie gauche/droite — à surveiller vu l'historique Achille, sans alarme sur un épisode isolé. Focus : la piste du 14/10 en qualité contrôlée pour arriver frais sur les 20 km à l'allure NYC du 18/10.",
+  "headline": "Forme solide, cap sur le 20 km NYC du 18/10",
+  "detail": "5 séances clés réussies sur 5 en deux semaines, dont un 20 km de Paris couru à 3'35-3'48/km contre 3'52 visé. Cœur et tendon ne montrent aucun signal d'alerte, la dérive cardiaque est quasi nulle (1,2 % sur le test). Focus de la semaine : la répétition générale du 18/10, 30 km dont 20 à l'allure NYC — c'est le vrai verdict avant la course.",
   "indicateurs": {
    "fraicheur": {
-    "valeur": "J+2 post-course",
-    "trend": "flat",
+    "valeur": "récupéré",
+    "trend": "up",
     "etat": "ok",
-    "note": "récup normale, rien d'anormal"
+    "note": "FC basse, repos pris"
    },
    "compliance": {
-    "valeur": "13/14 séances, 8/10 clés",
-    "trend": "flat",
+    "valeur": "13/14 séances · 5/5 clés",
+    "trend": "up",
     "etat": "ok",
-    "note": "1 footing manqué (non clé)"
+    "note": "quasi parfait sur 14j"
    },
    "aerobie": {
     "valeur": "1,2 %",
     "trend": "down",
     "etat": "ok",
-    "note": "décrochage quasi nul sur 20km"
+    "note": "dérive quasi nulle au test"
    },
    "achille": {
-    "valeur": "+6 % contact",
-    "trend": "up",
-    "etat": "watch",
-    "note": "asymétrie SL du 02/10"
+    "valeur": "stable",
+    "trend": "flat",
+    "etat": "ok",
+    "note": "aucun signal tendon"
    }
   }
  },
- "applied": [
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-10-14",
-   "field": "description_note",
-   "new_value": "Tu sors d'un 20km à RPE 8 il y a 3 jours : fais cette piste en qualité contrôlée, pas en record. Garde de la fraîcheur pour les 20km à l'allure NYC du 18/10.",
-   "reason": "Effort compétitif récent (RPE8, 20km en négative split) à seulement 3 jours de cette séance clé, elle-même suivie de près par la répétition générale du 18/10.",
-   "id": "0709ba2c",
-   "detail": "2026-10-14 : note ajoutée"
-  }
- ],
+ "applied": [],
  "pending": []
 }

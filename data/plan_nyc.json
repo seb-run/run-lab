@@ -9978,7 +9978,7 @@
           "km": 12.0,
           "key": true,
           "description": "5km échauffement\n10×500m à 3’40\"/km · récup 200m actif 4’20\"/km\n2km retour au calme\nPiste",
-          "status": "pending",
+          "status": "today",
           "target_pace": "3’40\"/km",
           "target_pace_sec": 315,
           "shoe": "On Cloudsurfer",
@@ -10074,9 +10074,23 @@
           ]
         }
       ],
-      "volume_actual_to_date": 0.0,
-      "volume_planned_to_date": 0.0,
-      "volume_drift_pct": 0
+      "volume_actual_to_date": 10.0,
+      "volume_planned_to_date": 9.0,
+      "volume_drift_pct": 11.1,
+      "compliance": {
+        "km_pct": 111,
+        "km_done": 10.0,
+        "km_planned": 9.0,
+        "km_done_week": 10.0,
+        "km_planned_week": 70.0,
+        "sessions_done": 1,
+        "sessions_planned": 1,
+        "sessions_done_week": 1,
+        "keys_success": 0,
+        "keys_total": 0,
+        "points": 100,
+        "verdict": "success"
+      }
     },
     {
       "week_num": 10,
