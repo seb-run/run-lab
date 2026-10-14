@@ -9978,21 +9978,21 @@
           "km": 12.0,
           "key": true,
           "description": "5km échauffement\n10×500m à 3’40\"/km · récup 200m actif 4’20\"/km\n2km retour au calme\nPiste",
-          "status": "under",
+          "status": "over",
           "target_pace": "3’40\"/km",
           "target_pace_sec": 315,
           "shoe": "On Cloudsurfer",
           "scheduled_time": "06:30",
           "actual": {
-            "km": 6.9,
-            "duration_min": 35,
-            "pace_sec": 308,
-            "pace_str": "5'08\"/km",
-            "fc": 148,
-            "cadence": 176,
-            "type": "endurance",
-            "title": "i197154255",
-            "n": 1,
+            "km": 20.3,
+            "duration_min": 92,
+            "pace_sec": 272,
+            "pace_str": "4'32\"/km",
+            "fc": 152,
+            "cadence": 178,
+            "type": "frac_court",
+            "title": "Evening Run",
+            "n": 2,
             "note": null,
             "dyn": {
               "stance_ms": 247.0,
@@ -10045,6 +10045,186 @@
               "flags": []
             },
             "splits": [
+              {
+                "km": 1.0,
+                "ps": 317,
+                "fc": 123,
+                "ca": 184
+              },
+              {
+                "km": 1.0,
+                "ps": 310,
+                "fc": 131,
+                "ca": 181
+              },
+              {
+                "km": 1.0,
+                "ps": 310,
+                "fc": 136,
+                "ca": 178
+              },
+              {
+                "km": 0.38,
+                "ps": 395,
+                "fc": 129,
+                "ca": 171
+              },
+              {
+                "km": 0.5,
+                "ps": 224,
+                "fc": 155,
+                "ca": 182
+              },
+              {
+                "km": 0.2,
+                "ps": 249,
+                "fc": 159,
+                "ca": 177
+              },
+              {
+                "km": 0.51,
+                "ps": 220,
+                "fc": 165,
+                "ca": 182
+              },
+              {
+                "km": 0.2,
+                "ps": 246,
+                "fc": 166,
+                "ca": 178
+              },
+              {
+                "km": 0.51,
+                "ps": 222,
+                "fc": 168,
+                "ca": 180
+              },
+              {
+                "km": 0.21,
+                "ps": 241,
+                "fc": 167,
+                "ca": 176
+              },
+              {
+                "km": 0.51,
+                "ps": 218,
+                "fc": 168,
+                "ca": 180
+              },
+              {
+                "km": 0.21,
+                "ps": 245,
+                "fc": 167,
+                "ca": 177
+              },
+              {
+                "km": 0.51,
+                "ps": 213,
+                "fc": 168,
+                "ca": 181
+              },
+              {
+                "km": 0.21,
+                "ps": 253,
+                "fc": 166,
+                "ca": 175
+              },
+              {
+                "km": 0.51,
+                "ps": 211,
+                "fc": 169,
+                "ca": 179
+              },
+              {
+                "km": 0.21,
+                "ps": 245,
+                "fc": 168,
+                "ca": 175
+              },
+              {
+                "km": 0.52,
+                "ps": 214,
+                "fc": 170,
+                "ca": 179
+              },
+              {
+                "km": 0.2,
+                "ps": 244,
+                "fc": 169,
+                "ca": 175
+              },
+              {
+                "km": 0.51,
+                "ps": 211,
+                "fc": 171,
+                "ca": 180
+              },
+              {
+                "km": 0.21,
+                "ps": 247,
+                "fc": 169,
+                "ca": 175
+              },
+              {
+                "km": 0.51,
+                "ps": 214,
+                "fc": 171,
+                "ca": 179
+              },
+              {
+                "km": 0.2,
+                "ps": 245,
+                "fc": 170,
+                "ca": 176
+              },
+              {
+                "km": 0.51,
+                "ps": 209,
+                "fc": 172,
+                "ca": 181
+              },
+              {
+                "km": 0.2,
+                "ps": 237,
+                "fc": 172,
+                "ca": 176
+              },
+              {
+                "km": 0.51,
+                "ps": 205,
+                "fc": 174,
+                "ca": 181
+              },
+              {
+                "km": 0.2,
+                "ps": 245,
+                "fc": 172,
+                "ca": 177
+              },
+              {
+                "km": 0.51,
+                "ps": 186,
+                "fc": 176,
+                "ca": 183
+              },
+              {
+                "km": 0.2,
+                "ps": 258,
+                "fc": 176,
+                "ca": 173
+              },
+              {
+                "km": 1.0,
+                "ps": 294,
+                "fc": 154,
+                "ca": 177
+              },
+              {
+                "km": 0.49,
+                "ps": 270,
+                "fc": 155,
+                "ca": 182
+              },
               {
                 "km": 1.0,
                 "ps": 347,
@@ -10108,11 +10288,11 @@
             }
           ],
           "score": {
-            "points": 35,
-            "verdict": "failed",
-            "verdict_label": "Échouée",
-            "volume_pct": 58,
-            "volume_points": 35,
+            "points": 70,
+            "verdict": "partial",
+            "verdict_label": "Partielle",
+            "volume_pct": 169,
+            "volume_points": 70,
             "pace_points": null,
             "pace_target_s": null,
             "pace_actual_s": null,
@@ -10120,14 +10300,14 @@
             "pace_delta_s": null,
             "is_quality": true,
             "hr": {
-              "avg": 148,
+              "avg": 152,
               "cap": null,
               "over_cap": null,
-              "decoupling_pct": -2.4,
+              "decoupling_pct": 16.4,
               "flags": []
             },
             "reasons": [
-              "Volume 58%"
+              "Volume 169%"
             ]
           }
         },
@@ -10209,7 +10389,7 @@
         "km_pct": 111,
         "km_done": 10.0,
         "km_planned": 9.0,
-        "km_done_week": 16.9,
+        "km_done_week": 30.3,
         "km_planned_week": 70.0,
         "sessions_done": 1,
         "sessions_planned": 1,

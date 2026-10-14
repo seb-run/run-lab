@@ -1,45 +1,45 @@
 {
- "headline": "Séance clé non réalisée : 58% du volume, allure cible jamais atteinte.",
+ "headline": "Fractionné plus rapide que prévu, mais zéro donnée d'équilibre pied ce soir.",
  "bullets": [
-  "6,86km/12km prévus (58%), jamais atteint 3'40\"/km (meilleur passage 4'39/km).",
-  "Contact au sol 247ms, +23ms vs ta réf. à allure comparable (224ms).",
-  "RPE 1, ressenti 'Fort' : effort perçu très facile malgré séance interrompue."
+  "10×500m piste : moyenne 3'32\"/km, 8s/km plus vite que la cible 3'40\"/km.",
+  "Dernier rep à 3'06\"/km (34s/km sous cible), FC 176 vs 155 au 1er rep.",
+  "Aucune donnée d'équilibre pied (footpod absent) : rien sur le talon droit."
  ],
  "points": [
   {
-   "label": "Volume réalisé",
-   "valeur": "6.86 km",
-   "ecart": "-42% vs 12km prévus",
-   "lecture": "séance clé non terminée",
+   "label": "Rythme fractionné",
+   "valeur": "3'32\"/km moy.",
+   "ecart": "-8s/km vs cible 3'40\"/km",
+   "lecture": "Plus rapide que prévu",
    "ton": "vigilance"
   },
   {
-   "label": "Temps de contact",
-   "valeur": "247 ms",
-   "ecart": "+23ms vs réf. 224ms",
-   "lecture": "appui au sol plus long",
+   "label": "Dernier 500m",
+   "valeur": "3'06\"/km",
+   "ecart": "-34s/km vs cible",
+   "lecture": "Forte accélération finale",
    "ton": "vigilance"
   },
   {
-   "label": "Ratio vertical",
-   "valeur": "7.86",
-   "ecart": "-1.16 vs réf. 9.02",
-   "lecture": "meilleur que d'habitude",
+   "label": "FC moyenne séance",
+   "valeur": "155 bpm",
+   "ecart": "-3 bpm vs réf. 158 (allure plus rapide)",
+   "lecture": "Bonne tenue cardiaque",
    "ton": "bon"
   }
  ],
- "achille": "Équilibre G/D non mesuré aujourd'hui (pas de ceinture) : suivi impossible.",
- "a_surveiller": "Contact au sol allongé (+23ms) à allure équivalente : à revérifier la prochaine sortie.",
+ "achille": null,
+ "a_surveiller": "Dernier 500m 34s/km sous la cible, accélération marquée en fin de séance.",
  "seance": {
   "date": "14/10/2026",
-  "heure": "12:13",
-  "titre": "i197154255",
-  "type_detecte": "endurance",
-  "km": 6.86,
-  "duree": "35m 14s",
-  "allure": "5'08\"/km",
-  "fc_moy": 148
+  "heure": "19:41",
+  "titre": "Evening Run",
+  "type_detecte": "frac_court",
+  "km": 13.44,
+  "duree": "57m 00s",
+  "allure": "4'14\"/km",
+  "fc_moy": 155
  },
- "generated_at": "2026-10-14T11:07:13",
- "baseline_n": 34
+ "generated_at": "2026-10-14T18:55:21",
+ "baseline_n": 12
 }
