@@ -1,45 +1,45 @@
 {
- "headline": "Fractionné plus rapide que prévu, mais zéro donnée d'équilibre pied ce soir.",
+ "headline": "Sortie rallongée (127% du prévu), allure maîtrisée, FC sous ta référence, rien d'alarmant.",
  "bullets": [
-  "10×500m piste : moyenne 3'32\"/km, 8s/km plus vite que la cible 3'40\"/km.",
-  "Dernier rep à 3'06\"/km (34s/km sous cible), FC 176 vs 155 au 1er rep.",
-  "Aucune donnée d'équilibre pied (footpod absent) : rien sur le talon droit."
+  "10.16 km vs 8 prévus (+27%), allure 5'34/km bien dans la cible 5'25-5'35.",
+  "FC moy 137 bpm, 4 de moins que ta réf (141), malgré 25-29°C et RPE très bas (3/10).",
+  "Équilibre gauche 51.1% (réf 50.9%) : asymétrie quasi stable avec l'allure (+0.36, faible)."
  ],
  "points": [
   {
-   "label": "Rythme fractionné",
-   "valeur": "3'32\"/km moy.",
-   "ecart": "-8s/km vs cible 3'40\"/km",
-   "lecture": "Plus rapide que prévu",
-   "ton": "vigilance"
-  },
-  {
-   "label": "Dernier 500m",
-   "valeur": "3'06\"/km",
-   "ecart": "-34s/km vs cible",
-   "lecture": "Forte accélération finale",
-   "ton": "vigilance"
-  },
-  {
-   "label": "FC moyenne séance",
-   "valeur": "155 bpm",
-   "ecart": "-3 bpm vs réf. 158 (allure plus rapide)",
-   "lecture": "Bonne tenue cardiaque",
+   "label": "Contact au sol",
+   "valeur": "223 ms",
+   "ecart": "-6 ms vs réf 229.5 ms",
+   "lecture": "plus court malgré allure plus lente",
    "ton": "bon"
+  },
+  {
+   "label": "FC moyenne",
+   "valeur": "137 bpm",
+   "ecart": "-4 bpm vs réf 141",
+   "lecture": "effort perçu faible, cohérent",
+   "ton": "bon"
+  },
+  {
+   "label": "Équilibre gauche",
+   "valeur": "51.1%",
+   "ecart": "+0.2 pt vs réf 50.9%",
+   "lecture": "stable, pas de pic à l'allure rapide",
+   "ton": "neutre"
   }
  ],
- "achille": null,
- "a_surveiller": "Dernier 500m 34s/km sous la cible, accélération marquée en fin de séance.",
+ "achille": "Équilibre 51.1% proche de ta réf (50.9%), pas de décharge marquée côté droit.",
+ "a_surveiller": "FC monte de 129 à 146 bpm en fin de course, lié à l'accélération progressive, pas d'alerte.",
  "seance": {
-  "date": "14/10/2026",
-  "heure": "19:41",
-  "titre": "Evening Run",
-  "type_detecte": "frac_court",
-  "km": 13.44,
-  "duree": "57m 00s",
-  "allure": "4'14\"/km",
-  "fc_moy": 155
+  "date": "15/10/2026",
+  "heure": "12:21",
+  "titre": "i197558703",
+  "type_detecte": "footing",
+  "km": 10.16,
+  "duree": "56m 28s",
+  "allure": "5'34\"/km",
+  "fc_moy": 137
  },
- "generated_at": "2026-10-14T18:55:21",
- "baseline_n": 12
+ "generated_at": "2026-10-15T11:24:23",
+ "baseline_n": 16
 }

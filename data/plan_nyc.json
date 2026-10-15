@@ -10156,12 +10156,182 @@
           "duration_min": 40,
           "key": false,
           "description": "40' très facile.\n[Récupération · 5'15–5'35/km]\nChaussures : On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-          "status": "today",
+          "status": "done",
           "target_pace": "5'25\"/km",
           "target_pace_sec": 325,
           "shoe": "On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
           "scheduled_time": "06:30",
-          "actual": null
+          "actual": {
+            "km": 10.2,
+            "duration_min": 56,
+            "pace_sec": 334,
+            "pace_str": "5'34\"/km",
+            "fc": 137,
+            "cadence": 178,
+            "type": "footing",
+            "title": "i197558703",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 223.0,
+              "osc_cm": 9.8,
+              "vratio": 9.65,
+              "balance_l": 51.12,
+              "step_m": 1.0,
+              "temp_c": 25,
+              "temp_max": 29,
+              "resp": 34.5,
+              "power": 345,
+              "np": 348,
+              "te_aero": 3.0,
+              "te_ana": 0.0,
+              "load": 89.0,
+              "strides": 5033,
+              "rpe": 3.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 223.0,
+                  "end": 224.0,
+                  "pct": 0.4
+                },
+                "step": {
+                  "start": 964.0,
+                  "end": 1038.0,
+                  "pct": 7.6
+                },
+                "vratio": {
+                  "start": 9.51,
+                  "end": 9.62,
+                  "pct": 1.2
+                },
+                "osc": {
+                  "start": 94.0,
+                  "end": 102.0,
+                  "pct": 8.8
+                },
+                "hr": {
+                  "start": 129.0,
+                  "end": 146.0,
+                  "pct": 13.4
+                },
+                "cad": {
+                  "start": 89.8,
+                  "end": 88.3,
+                  "pct": -1.6
+                }
+              },
+              "balance_min": 50.47,
+              "balance_max": 51.79,
+              "balance_series": [
+                50.73,
+                50.81,
+                50.47,
+                50.61,
+                51.24,
+                51.45,
+                51.05,
+                51.39,
+                51.79,
+                51.63
+              ],
+              "balance_lent": 51.0,
+              "balance_rapide": 51.36,
+              "asym_vs_allure": 0.36,
+              "allure_lent_s": 352,
+              "allure_rapide_s": 321,
+              "rr_beats": 8066,
+              "rmssd_effort": 9.3,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 372,
+                "fc": 116,
+                "ca": 182
+              },
+              {
+                "km": 1.0,
+                "ps": 351,
+                "fc": 128,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 334,
+                "fc": 132,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 326,
+                "fc": 139,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 328,
+                "fc": 139,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 336,
+                "fc": 143,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 320,
+                "fc": 140,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 317,
+                "fc": 146,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 328,
+                "fc": 146,
+                "ca": 176
+              },
+              {
+                "km": 1.16,
+                "ps": 324,
+                "fc": 146,
+                "ca": 176
+              }
+            ]
+          },
+          "score": {
+            "points": 93,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 127,
+            "volume_points": 88,
+            "pace_points": 100,
+            "pace_target_s": 325,
+            "pace_actual_s": 334,
+            "pace_actual_str": "5'34\"/km",
+            "pace_delta_s": 9,
+            "is_quality": false,
+            "hr": {
+              "avg": 137,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 3.4,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 127%",
+              "Allure +9\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-10-16",
@@ -10231,11 +10401,11 @@
         "km_pct": 144,
         "km_done": 30.3,
         "km_planned": 21.0,
-        "km_done_week": 30.3,
+        "km_done_week": 40.5,
         "km_planned_week": 70.0,
         "sessions_done": 2,
         "sessions_planned": 2,
-        "sessions_done_week": 2,
+        "sessions_done_week": 3,
         "keys_success": 0,
         "keys_total": 1,
         "points": 94,
