@@ -10342,18 +10342,162 @@
           "duration_min": 60,
           "key": true,
           "description": "3 km d'échauffement\n6 km @ 3'57–4'02/km\n2 km de retour au calme\n\nCourte touche d'allure spécifique, jambes revenues.\n\n👟 À faire en Vaporfly Next% 3 neuves : le duel final avec les Alphafly 3. Tu choisis ta chaussure de course à la fin de cette séance.\n[Allure spécifique marathon · 3'57–4'02/km]\nChaussures : Nike Vaporfly Next% 3 (neuves) — plan B course",
-          "status": "today",
+          "status": "under",
           "target_pace": "3'59\"/km",
           "target_pace_sec": 239,
           "shoe": "Nike Vaporfly Next% 3 (neuves) — plan B course",
           "scheduled_time": "06:15",
-          "actual": null,
+          "actual": {
+            "km": 7.0,
+            "duration_min": 36,
+            "pace_sec": 312,
+            "pace_str": "5'12\"/km",
+            "fc": 134,
+            "cadence": 177,
+            "type": "endurance",
+            "title": "i197916017",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 220.0,
+              "osc_cm": 10.0,
+              "vratio": 9.23,
+              "balance_l": 51.1,
+              "step_m": 1.06,
+              "temp_c": 24,
+              "temp_max": 27,
+              "resp": 37.7,
+              "power": 364,
+              "np": 367,
+              "te_aero": 2.7,
+              "te_ana": 0.0,
+              "load": 70.3,
+              "strides": 3234,
+              "rpe": 1.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 221.0,
+                  "end": 219.0,
+                  "pct": -0.8
+                },
+                "step": {
+                  "start": 1034.0,
+                  "end": 1080.0,
+                  "pct": 4.5
+                },
+                "vratio": {
+                  "start": 9.23,
+                  "end": 9.45,
+                  "pct": 2.4
+                },
+                "osc": {
+                  "start": 97.0,
+                  "end": 104.0,
+                  "pct": 7.9
+                },
+                "hr": {
+                  "start": 128.0,
+                  "end": 140.0,
+                  "pct": 8.7
+                },
+                "cad": {
+                  "start": 89.0,
+                  "end": 87.5,
+                  "pct": -1.7
+                }
+              },
+              "balance_min": 50.3,
+              "balance_max": 52.11,
+              "balance_series": [
+                52.11,
+                51.52,
+                51.11,
+                50.3,
+                50.84,
+                51.07,
+                50.7
+              ],
+              "rr_beats": 5508,
+              "rmssd_effort": 11.6,
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 318,
+                "fc": 120,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 309,
+                "fc": 130,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 315,
+                "fc": 135,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 307,
+                "fc": 137,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 310,
+                "fc": 138,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 312,
+                "fc": 140,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 314,
+                "fc": 139,
+                "ca": 174
+              }
+            ]
+          },
           "coach_notes": [
             {
               "kind": "note",
               "text": "Tiens strictement les 11 km prévus, pas de rallonge. Après les 20,3 km d'hier (169% du prévu), la priorité est d'arriver frais dimanche pour les 30 km avec 20 à allure NYC — c'est la vraie répétition générale."
             }
-          ]
+          ],
+          "score": {
+            "points": 26,
+            "verdict": "failed",
+            "verdict_label": "Échouée",
+            "volume_pct": 64,
+            "volume_points": 47,
+            "pace_points": 0,
+            "pace_target_s": 239,
+            "pace_actual_s": 312,
+            "pace_actual_str": "5'12\"/km",
+            "pace_delta_s": 73,
+            "is_quality": true,
+            "hr": {
+              "avg": 134,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 2.8,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 64%",
+              "Allure +73\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-10-17",
@@ -10401,11 +10545,11 @@
         "km_pct": 140,
         "km_done": 40.5,
         "km_planned": 29.0,
-        "km_done_week": 40.5,
+        "km_done_week": 47.5,
         "km_planned_week": 70.0,
         "sessions_done": 3,
         "sessions_planned": 3,
-        "sessions_done_week": 3,
+        "sessions_done_week": 4,
         "keys_success": 0,
         "keys_total": 1,
         "points": 95,

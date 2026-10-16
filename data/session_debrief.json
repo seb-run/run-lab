@@ -1,45 +1,45 @@
 {
- "headline": "Sortie rallongée (127% du prévu), allure maîtrisée, FC sous ta référence, rien d'alarmant.",
+ "headline": "Sortie easy, pas le test spécifique prévu : -4 km, allure +65s/km",
  "bullets": [
-  "10.16 km vs 8 prévus (+27%), allure 5'34/km bien dans la cible 5'25-5'35.",
-  "FC moy 137 bpm, 4 de moins que ta réf (141), malgré 25-29°C et RPE très bas (3/10).",
-  "Équilibre gauche 51.1% (réf 50.9%) : asymétrie quasi stable avec l'allure (+0.36, faible)."
+  "7 km à 5'12/km au lieu des 11 km @3'57-4'02 : séance spécifique non réalisée.",
+  "FC 134 bpm, -10 vs ta réf (144) à cette allure — ressenti très facile (RPE 1).",
+  "Dérive FC +8,7% sur la séance (128→140), à relier à la chaleur (24-27°C)."
  ],
  "points": [
   {
-   "label": "Contact au sol",
-   "valeur": "223 ms",
-   "ecart": "-6 ms vs réf 229.5 ms",
-   "lecture": "plus court malgré allure plus lente",
-   "ton": "bon"
-  },
-  {
-   "label": "FC moyenne",
-   "valeur": "137 bpm",
-   "ecart": "-4 bpm vs réf 141",
-   "lecture": "effort perçu faible, cohérent",
+   "label": "Temps de contact",
+   "valeur": "220 ms",
+   "ecart": "-6 ms vs réf. 226 ms",
+   "lecture": "appui plus réactif qu'à l'habitude",
    "ton": "bon"
   },
   {
    "label": "Équilibre gauche",
-   "valeur": "51.1%",
-   "ecart": "+0.2 pt vs réf 50.9%",
-   "lecture": "stable, pas de pic à l'allure rapide",
+   "valeur": "51,1 %",
+   "ecart": "+0,5 pt vs réf. 50,65 %",
+   "lecture": "léger décharge côté droit, proche norme",
+   "ton": "neutre"
+  },
+  {
+   "label": "Ratio vertical",
+   "valeur": "9,23",
+   "ecart": "+0,24 vs réf. 8,99",
+   "lecture": "légèrement moins efficient que d'habitude",
    "ton": "neutre"
   }
  ],
- "achille": "Équilibre 51.1% proche de ta réf (50.9%), pas de décharge marquée côté droit.",
- "a_surveiller": "FC monte de 129 à 146 bpm en fin de course, lié à l'accélération progressive, pas d'alerte.",
+ "achille": "Appui gauche 51,1%, proche de ta réf (50,65%) — rien d'alarmant côté Achille.",
+ "a_surveiller": "Asymétrie se resserre avec l'allure (km4 : 0,3 pt) — inverse du motif pubalgie hiver 2025.",
  "seance": {
-  "date": "15/10/2026",
-  "heure": "12:21",
-  "titre": "i197558703",
-  "type_detecte": "footing",
-  "km": 10.16,
-  "duree": "56m 28s",
-  "allure": "5'34\"/km",
-  "fc_moy": 137
+  "date": "16/10/2026",
+  "heure": "12:20",
+  "titre": "i197916017",
+  "type_detecte": "endurance",
+  "km": 7.01,
+  "duree": "36m 29s",
+  "allure": "5'12\"/km",
+  "fc_moy": 134
  },
- "generated_at": "2026-10-15T11:24:23",
- "baseline_n": 16
+ "generated_at": "2026-10-16T11:06:38",
+ "baseline_n": 32
 }
