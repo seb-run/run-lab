@@ -2,24 +2,6 @@
  "proposals": [
   {
    "severity": "major",
-   "kind": "change_type",
-   "date": "2026-09-22",
-   "field": null,
-   "new_value": "Remplacer la séance VMA 5×1km par une séance seuil courte et plus accessible pour retrouver un succès avant de remonter en intensité",
-   "reason": "3 séances d'intensité consécutives (VMA, seuil, VMA) ont été courues 80-100s/km plus lentes que la cible avec 36-87% du volume prévu, malgré FC et RPE bas — le stimulus vitesse ne passe pas actuellement, chaleur probable. Insister sur du 3'28/km maintenant risque un nouvel échec, on baisse l'exigence pour reconstruire.",
-   "replacement": {
-    "title": "Seuil court 4×6min",
-    "type": "seuil",
-    "km": 12.0,
-    "target_pace": "3'56\"/km",
-    "description": "Échauffement 15min facile. Puis 4×6min à allure seuil (3'56/km), récup 2min trot entre chaque. Si les jambes ne suivent pas dès les 2 premières minutes, ralentis à ton ressenti plutôt que d'abandonner l'allure — l'objectif est de finir la séance complète, pas de viser le chrono à tout prix. Retour au calme 10min. Cours si possible tôt le matin pour éviter la chaleur."
-   },
-   "id": "e8ebcb94",
-   "status": "expired",
-   "created_at": "2026-09-16T10:19:56"
-  },
-  {
-   "severity": "major",
    "kind": "change_pace",
    "date": "2026-09-22",
    "field": null,
@@ -511,6 +493,18 @@
    "status": "expired",
    "created_at": "2026-10-07T07:24:33",
    "expired_reason": "plan_changed"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-10-16",
+   "field": "description_note",
+   "new_value": "Séance courte : reste strictement sur les 6 km à allure cible, pas plus. Objectif du jour = tester les chaussures, pas repousser tes limites. La vraie séance clé, c'est dimanche (30 km dont 20 à allure NYC) — arrive dessus frais, pas sur la réserve.",
+   "reason": "Volume déjà +69% sur la séance du 14/10 et fatigue résiduelle visible sur le footing du 15/10 (+9s/km vs consigne) ; la répétition générale de dimanche est la séance la plus importante du cycle avant le taper.",
+   "id": "c90522e9",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-10-16T10:07:52"
   }
  ]
 }
