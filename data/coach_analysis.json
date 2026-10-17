@@ -1,60 +1,62 @@
 {
- "generated_at": "2026-10-17T09:42:47",
+ "generated_at": "2026-10-17T09:55:49",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-10-14\", \"title\": \"Piste club\", \"type\": \"intervals\", \"planned_km\": 12.0, \"key\": true, \"status\": \"over\", \"target_pace\": \"3’40\\\"/km\", \"actual\": {\"km\": 20.3, \"pace_str\": \"4'32\\\"/km\", \"fc\": 152, \"cadence\": 178, \"duration_min\": 92}, \"splits\": \"1:5'17/123/184spm 2:5'10/131/181spm 3:5'10/136/178spm 4:6'35/129/171spm 5:3'44/155/182spm 6:4'09/159/177spm 7:3'40/165/182spm 8:4'06/166/178spm 9:3'42/168/180spm 10:4'01/167/176spm 11:3'38/168/180spm 12:4'05/167/177spm 13:3'33/168/181spm 14:4'13/166/175spm 15:3'31/169/179spm 16:4'05/168/175spm 17:3'34/170/179spm 18:4'04/169/175spm 19:3'31/171/180spm 20:4'07/169/175spm 21:3'34/171/179spm 22:4'05/170/176spm 23:3'29/172/181spm 24:3'57/172/176spm 25:3'25/174/181spm 26:4'05/172/177spm 27:3'06/176/183spm 28:4'18/176/173spm 29:4'54/154/177spm 30:4'30/155/182spm (+7 laps)\", \"garmin\": {\"te_aero\": 3.3, \"te_ana\": 0.0, \"load\": 122.3, \"rpe\": 1.0, \"feel_label\": \"Fort\", \"temp_c\": 21, \"flags\": [], \"stance_drift_pct\": -5.1, \"step_drift_pct\": 20.8}, \"score\": {\"points\": 70, \"verdict\": \"partial\", \"volume_pct\": 169, \"pace_delta_s\": null}, \"hr\": {\"avg\": 152, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 16.4, \"flags\": []}}, {\"date\": \"2026-10-15\", \"title\": \"Footing récupération 40'\", \"type\": \"easy\", \"planned_km\": 8.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'25\\\"/km\", \"actual\": {\"km\": 10.2, \"pace_str\": \"5'34\\\"/km\", \"fc\": 137, \"cadence\": 178, \"duration_min\": 56}, \"splits\": \"1:6'12/116/182spm 2:5'51/128/178spm 3:5'34/132/180spm 4:5'26/139/178spm 5:5'28/139/176spm 6:5'36/143/178spm 7:5'20/140/180spm 8:5'17/146/178spm 9:5'28/146/176spm 10:5'24/146/176spm\", \"garmin\": {\"te_aero\": 3.0, \"te_ana\": 0.0, \"load\": 89.0, \"rpe\": 3.0, \"feel_label\": \"Fort\", \"temp_c\": 25, \"balance_l\": 51.12, \"flags\": [], \"stance_drift_pct\": 0.4, \"step_drift_pct\": 7.6}, \"score\": {\"points\": 93, \"verdict\": \"success\", \"volume_pct\": 127, \"pace_delta_s\": 9}, \"hr\": {\"avg\": 137, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 3.4, \"flags\": []}}, {\"date\": \"2026-10-16\", \"title\": \"SPÉCIFIQUE court — 6 km + test Vaporfly\", \"type\": \"mp\", \"planned_km\": 11.0, \"key\": true, \"status\": \"under\", \"target_pace\": \"3'59\\\"/km\", \"actual\": {\"km\": 7.0, \"pace_str\": \"5'12\\\"/km\", \"fc\": 134, \"cadence\": 177, \"duration_min\": 36}, \"splits\": \"1:5'18/120/178spm 2:5'09/130/178spm 3:5'15/135/178spm 4:5'07/137/176spm 5:5'10/138/178spm 6:5'12/140/176spm 7:5'14/139/174spm\", \"garmin\": {\"te_aero\": 2.7, \"te_ana\": 0.0, \"load\": 70.3, \"rpe\": 1.0, \"feel_label\": \"Fort\", \"temp_c\": 24, \"balance_l\": 51.1, \"flags\": [], \"stance_drift_pct\": -0.8, \"step_drift_pct\": 4.5}, \"score\": {\"points\": 26, \"verdict\": \"failed\", \"volume_pct\": 64, \"pace_delta_s\": 73}, \"hr\": {\"avg\": 134, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 2.8, \"flags\": []}}]|65bc5b54d1",
- "plan_hash": "65bc5b54d1",
- "headline": "Trois semaines solides cassées net par le test allure NYC — on protège la répétition générale de demain.",
- "analysis": "Les semaines 6, 7 et 8 sont propres : 8 séances clés sur 8 réussies, volume tenu entre 93 et 108 %. Cette semaine casse la série. Le fractionné du 14 a dérapé à 20,3 km au lieu de 12 prévus (169 % du volume), avec un décrochage cardiaque à 16,4 %. Deux jours après, le test allure NYC du 16 s'effondre : 5'12/km au lieu des 3'59 visés, 73 secondes de retard par kilomètre, seulement 64 % du volume couru. Ce n'est pas un hasard isolé — ça suit directement les 20 km de Paris où tu casses dans le dernier kilomètre (RPE 8, les trois derniers relevés passent de 3'30 à 7'25/km). Tu arrives fatigué à la plus grosse séance du cycle, prévue demain (30 km dont 20 à l'allure NYC), à 14 jours de la course : je l'allège pour protéger le bloc plutôt que risquer un nouvel échec ou une blessure. Côté solide : la dérive cardiaque reste normale sur tes sorties continues (4,7 % sur le seuil long, sous les 5 % sur tous les footings post-course), ton équilibre d'appui est stable (48-51 %), et ta composition corporelle a bien évolué (75,8 kg / 12,5 % MG en septembre contre 78,2 kg / 14,5 % en août) — le poids ne joue pas contre toi. Focus de la semaine : exécuter la version allégée de demain, observer comment le corps répond, et ne remettre le couvert à pleine intensité le 23 que si les sensations suivent.",
+ "signature": "[{\"date\": \"2026-10-14\", \"title\": \"Piste club\", \"type\": \"intervals\", \"planned_km\": 12.0, \"key\": true, \"status\": \"over\", \"target_pace\": \"3’40\\\"/km\", \"actual\": {\"km\": 20.3, \"pace_str\": \"4'32\\\"/km\", \"fc\": 152, \"cadence\": 178, \"duration_min\": 92}, \"splits\": \"1:5'17/123/184spm 2:5'10/131/181spm 3:5'10/136/178spm 4:6'35/129/171spm 5:3'44/155/182spm 6:4'09/159/177spm 7:3'40/165/182spm 8:4'06/166/178spm 9:3'42/168/180spm 10:4'01/167/176spm 11:3'38/168/180spm 12:4'05/167/177spm 13:3'33/168/181spm 14:4'13/166/175spm 15:3'31/169/179spm 16:4'05/168/175spm 17:3'34/170/179spm 18:4'04/169/175spm 19:3'31/171/180spm 20:4'07/169/175spm 21:3'34/171/179spm 22:4'05/170/176spm 23:3'29/172/181spm 24:3'57/172/176spm 25:3'25/174/181spm 26:4'05/172/177spm 27:3'06/176/183spm 28:4'18/176/173spm 29:4'54/154/177spm 30:4'30/155/182spm (+7 laps)\", \"garmin\": {\"te_aero\": 3.3, \"te_ana\": 0.0, \"load\": 122.3, \"rpe\": 1.0, \"feel_label\": \"Fort\", \"temp_c\": 21, \"flags\": [], \"stance_drift_pct\": -5.1, \"step_drift_pct\": 20.8}, \"score\": {\"points\": 70, \"verdict\": \"partial\", \"volume_pct\": 169, \"pace_delta_s\": null}, \"hr\": {\"avg\": 152, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 16.4, \"flags\": []}}, {\"date\": \"2026-10-15\", \"title\": \"Footing récupération 40'\", \"type\": \"easy\", \"planned_km\": 8.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'25\\\"/km\", \"actual\": {\"km\": 10.2, \"pace_str\": \"5'34\\\"/km\", \"fc\": 137, \"cadence\": 178, \"duration_min\": 56}, \"splits\": \"1:6'12/116/182spm 2:5'51/128/178spm 3:5'34/132/180spm 4:5'26/139/178spm 5:5'28/139/176spm 6:5'36/143/178spm 7:5'20/140/180spm 8:5'17/146/178spm 9:5'28/146/176spm 10:5'24/146/176spm\", \"garmin\": {\"te_aero\": 3.0, \"te_ana\": 0.0, \"load\": 89.0, \"rpe\": 3.0, \"feel_label\": \"Fort\", \"temp_c\": 25, \"balance_l\": 51.12, \"flags\": [], \"stance_drift_pct\": 0.4, \"step_drift_pct\": 7.6}, \"score\": {\"points\": 93, \"verdict\": \"success\", \"volume_pct\": 127, \"pace_delta_s\": 9}, \"hr\": {\"avg\": 137, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 3.4, \"flags\": []}}, {\"date\": \"2026-10-16\", \"title\": \"SPÉCIFIQUE court — 6 km + test Vaporfly\", \"type\": \"mp\", \"planned_km\": 11.0, \"key\": true, \"status\": \"under\", \"target_pace\": \"3'59\\\"/km\", \"actual\": {\"km\": 7.0, \"pace_str\": \"5'12\\\"/km\", \"fc\": 134, \"cadence\": 177, \"duration_min\": 36}, \"splits\": \"1:5'18/120/178spm 2:5'09/130/178spm 3:5'15/135/178spm 4:5'07/137/176spm 5:5'10/138/178spm 6:5'12/140/176spm 7:5'14/139/174spm\", \"garmin\": {\"te_aero\": 2.7, \"te_ana\": 0.0, \"load\": 70.3, \"rpe\": 1.0, \"feel_label\": \"Fort\", \"temp_c\": 24, \"balance_l\": 51.1, \"flags\": [], \"stance_drift_pct\": -0.8, \"step_drift_pct\": 4.5}, \"score\": {\"points\": 26, \"verdict\": \"failed\", \"volume_pct\": 64, \"pace_delta_s\": 73}, \"hr\": {\"avg\": 134, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 2.8, \"flags\": []}}]|41278c8008",
+ "plan_hash": "41278c8008",
+ "headline": "20 km de Paris canon (dérive 1,2 %), mais la semaine qui a suivi a explosé le volume et cassé une séance clé.",
+ "analysis": "Le test course du 11/10 est la vraie bonne nouvelle : 20 km à environ 3'45/km, dérive cardiaque de seulement 1,2 % malgré un effort à RPE 8 — c'est exactement le signal qu'on veut 3 semaines avant NYC. Le problème, c'est ce qui suit : le 14/10 tu enchaînes une piste club à 20,3 km au lieu des 12 prévus (169 % du volume), avec une dérive cardiaque à 16,4 %, puis le 16/10 la séance allure échoue complètement — 73 secondes/km plus lent que la cible et seulement 64 % du volume bouclé. Trois footings de suite montrent aussi une foulée qui raccourcit de plus en plus (3,2 % → 4,9 % → 7,6 %), cohérent avec une fatigue qui s'accumule, pas avec une mauvaise passe isolée. La semaine 9 affiche 119 % du volume planifié mais 0 séance clé réussie sur 2 — ce n'est pas un problème de rigueur, c'est un problème de dosage : tu as ajouté de la charge au mauvais moment, juste après un effort de course. Le risque à 15 jours de l'objectif, ce n'est pas la forme — elle est là — c'est d'arriver épuisé le jour J à force d'empiler les kilomètres bonus. Focus de la semaine : exécuter la répétition générale de demain sans y ajouter un gramme, zéro séance club imprévue, et laisser le corps encaisser la fin du déficit calorique annoncée mardi.",
  "forme": {
-  "score": 58,
+  "score": 60,
   "verdict": "surveiller",
-  "headline": "0/2 clés cette semaine, fatigue avant la grosse séance",
-  "detail": "3 semaines à 100 % sur les clés, puis 0/2 cette semaine : le fractionné du 14 a explosé à 169 % du volume prévu, et le test allure NYC du 16 a tourné à 5'12/km au lieu de 3'59. La dérive cardiaque reste propre sur les sorties continues (4,7 %) et l'équilibre d'appui est stable, donc pas d'alerte mécanique. Focus : séance allégée demain, remonter en charge seulement si les jambes répondent.",
+  "headline": "Bon test course, fatigue accumulée depuis",
+  "detail": "Le 20 km de Paris a validé le moteur aérobie (1,2 % de dérive, négatif splits), mais la piste imprévue de 20 km trois jours après a cassé le rythme et la séance allure du lendemain a lâché à 73 s/km du cap. Trois footings d'affilée montrent une foulée qui raccourcit de plus en plus (3,2 % → 7,6 %) : signal à surveiller avant la répétition générale de demain, pas à ignorer.",
   "indicateurs": {
    "fraicheur": {
-    "valeur": "faible",
+    "valeur": "fatigue post-surcharge",
     "trend": "down",
     "etat": "watch",
-    "note": "post-Paris + piste surchargée"
+    "note": "séance ratée le 16/10"
    },
    "compliance": {
-    "valeur": "4/4 séances · 0/2 clés",
+    "valeur": "119 % volume · 0/2 clés",
     "trend": "down",
     "etat": "watch",
-    "note": "2 clés ratées cette semaine"
+    "note": "semaine 9 déréglée"
    },
    "aerobie": {
-    "valeur": "4,7 %",
-    "trend": "flat",
+    "valeur": "1,2 %",
+    "trend": "up",
     "etat": "ok",
-    "note": "dérive normale (seuil long)"
+    "note": "très solide au 20 km Paris"
    },
    "achille": {
-    "valeur": "stable (48-51 %)",
-    "trend": "flat",
-    "etat": "ok",
-    "note": "pas d'asymétrie notable"
+    "valeur": "+7,6 %",
+    "trend": "up",
+    "etat": "watch",
+    "note": "foulée raccourcit, 3 footings"
    }
   }
  },
  "applied": [
   {
-   "severity": "major",
-   "kind": "change_pace",
+   "severity": "minor",
+   "kind": "volume_adjust",
    "date": "2026-10-18",
-   "field": null,
-   "new_value": "Réduire la répétition générale à 27 km dont 12 km à l'allure NYC au lieu de 30 km dont 20 km",
-   "reason": "Deux clés sur deux ratées cette semaine (piste surchargée à 169 % le 14, échec total du test allure NYC le 16 à 5'12/km au lieu de 3'59) juste avant la plus grosse séance du cycle à 14 jours de la course — on réduit le volume à allure marathon pour sécuriser le bloc plutôt que de risquer un nouvel échec ou une blessure.",
-   "replacement": {
-    "title": "Répétition générale allégée",
-    "type": "long",
-    "km": 27.0,
-    "target_pace": "4'12\"/km",
-    "description": "7 km très facile en échauffement (5'15/km), puis 12 km à l'allure NYC (4'12/km) en te concentrant sur les sensations plus que sur le chrono, puis 8 km retour au calme (5'00-5'15/km). Si les jambes répondent bien sur les 12 km, tu as la confirmation qu'il te faut. Si ça tire comme le 16, tu coupes le bloc allure et tu termines en facile — pas d'orgueil sur cette séance."
-   },
-   "id": "fa4ceab5",
-   "detail": "2026-10-18 : 🎯 RÉPÉTITION GÉNÉRALE — 30 km dont 20 à l'allure NYC → Répétition générale allégée",
-   "auto_major": true
+   "field": "km",
+   "new_value": 24.0,
+   "reason": "Semaine à 119 % du volume prévu + séance allure ratée 2 jours avant : réduire légèrement la répétition générale pour sécuriser la récupération avant les 2 dernières semaines de taper.",
+   "id": "677f14fd",
+   "detail": "2026-10-18 : 27→24.3 km"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-10-21",
+   "field": "description_note",
+   "new_value": "Vigilance dérive cardiaque : mercredi dernier elle est montée à 16,4 % sur une séance piste similaire. Si tu sens le même décalage FC/allure se creuser après la 3e répétition, arrête à 4×800 au lieu de 5.",
+   "reason": "Dernière séance piste comparable (14/10) a montré une dérive cardiaque de 16,4 %, nette au-delà du seuil habituel, dans un contexte déjà fatigué.",
+   "id": "c61373e0",
+   "detail": "2026-10-21 : note ajoutée"
   }
  ],
  "pending": []

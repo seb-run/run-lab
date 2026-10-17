@@ -1,45 +1,45 @@
 {
- "headline": "Sortie easy, pas le test spécifique prévu : -4 km, allure +65s/km",
+ "headline": "Repos prévu, 30km réalisés à 4'16\"/km avec segments à 4'00\" — gros écart au plan à J-15",
  "bullets": [
-  "7 km à 5'12/km au lieu des 11 km @3'57-4'02 : séance spécifique non réalisée.",
-  "FC 134 bpm, -10 vs ta réf (144) à cette allure — ressenti très facile (RPE 1).",
-  "Dérive FC +8,7% sur la séance (128→140), à relier à la chaleur (24-27°C)."
+  "FC 155 vs 158 habituel, alors que l'allure était plus rapide (4'16 vs 4'27 réf) — bon signe",
+  "Appui 48.8% vs 49.3% réf, légèrement plus chargé côté droit (Achille), écart faible",
+  "Asymétrie quasi stable lent/rapide (48.93 vs 48.72) — pas le motif pubalgie"
  ],
  "points": [
   {
-   "label": "Temps de contact",
-   "valeur": "220 ms",
-   "ecart": "-6 ms vs réf. 226 ms",
-   "lecture": "appui plus réactif qu'à l'habitude",
+   "label": "FC moyenne",
+   "valeur": "155 bpm",
+   "ecart": "-3 vs réf 158",
+   "lecture": "plus bas malgré allure plus rapide",
    "ton": "bon"
   },
   {
-   "label": "Équilibre gauche",
-   "valeur": "51,1 %",
-   "ecart": "+0,5 pt vs réf. 50,65 %",
-   "lecture": "léger décharge côté droit, proche norme",
+   "label": "Temps de contact",
+   "valeur": "190 ms",
+   "ecart": "-12 ms vs réf 202",
+   "lecture": "cohérent avec l'allure plus rapide",
    "ton": "neutre"
   },
   {
-   "label": "Ratio vertical",
-   "valeur": "9,23",
-   "ecart": "+0,24 vs réf. 8,99",
-   "lecture": "légèrement moins efficient que d'habitude",
-   "ton": "neutre"
+   "label": "Dérive fin de séance",
+   "valeur": "stance +5.6%, FC +7.9%",
+   "ecart": "flag stance_fade détecté",
+   "lecture": "fatigue perceptible sur la fin des 30km",
+   "ton": "vigilance"
   }
  ],
- "achille": "Appui gauche 51,1%, proche de ta réf (50,65%) — rien d'alarmant côté Achille.",
- "a_surveiller": "Asymétrie se resserre avec l'allure (km4 : 0,3 pt) — inverse du motif pubalgie hiver 2025.",
+ "achille": "Appui 48.8% vs réf 49.3%, légèrement plus de charge côté droit, écart faible à surveiller.",
+ "a_surveiller": "Repos complet prévu, 30km soutenus réalisés à J-15 du marathon — écart majeur au plan.",
  "seance": {
-  "date": "16/10/2026",
-  "heure": "12:20",
-  "titre": "i197916017",
-  "type_detecte": "endurance",
-  "km": 7.01,
-  "duree": "36m 29s",
-  "allure": "5'12\"/km",
-  "fc_moy": 134
+  "date": "17/10/2026",
+  "heure": "09:41",
+  "titre": "i198249316",
+  "type_detecte": "sortie_longue",
+  "km": 30.01,
+  "duree": "2h 07m 51s",
+  "allure": "4'16\"/km",
+  "fc_moy": 155
  },
- "generated_at": "2026-10-16T11:06:38",
- "baseline_n": 32
+ "generated_at": "2026-10-17T09:56:21",
+ "baseline_n": 13
 }
