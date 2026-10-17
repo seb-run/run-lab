@@ -1401,81 +1401,7 @@
               "rr_beats": 9014,
               "rmssd_effort": 8.2,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 302,
-                "fc": 132,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 297,
-                "fc": 144,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 298,
-                "fc": 148,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 298,
-                "fc": 149,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 290,
-                "fc": 147,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 292,
-                "fc": 146,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 284,
-                "fc": 149,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 294,
-                "fc": 151,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 282,
-                "fc": 151,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 284,
-                "fc": 147,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 292,
-                "fc": 153,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 298,
-                "fc": 150,
-                "ca": 176
-              }
-            ]
+            }
           },
           "score": {
             "points": 98,
@@ -10508,22 +10434,22 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet. Préparation du matériel exactement comme un jour de course.",
-          "status": "pending",
+          "status": "today",
           "actual": null
         },
         {
           "date": "2026-10-18",
           "dow": "Sun",
           "type": "long",
-          "title": "🎯 RÉPÉTITION GÉNÉRALE — 30 km dont 20 à l'allure NYC",
-          "km": 30.0,
+          "title": "Répétition générale allégée",
+          "km": 27.0,
           "duration_min": 150,
           "key": true,
-          "description": "5 km @ 5'00/km\n20 km @ 4'10–4'15/km\n5 km de retour au calme\n\n🎯 SIMULATION COMPLÈTE — la répétition logistique du marathon, calée sur l'allure de course NYC (pas l'allure spécifique). Ici on ne cherche pas un stimulus, on répète une course :\n• Tenue de course exacte\n• Alphafly 3 « Chicago 25 »\n• Petit-déjeuner identique à celui du 1er novembre\n• Nutrition = protocole EXACT de la course : 1 Gel 100 à H−15', flasque 320 sur 0–10 km, Gel 160 aux km 15 et 25, Gel 100 au km 28. C'est LE jour pour valider la tolérance aux 40 g.\n• Départ à 9h40 pour coller à l'heure de New York\n\n📊 POINT D'ÉTAPE N°3 : après cette séance, l'objectif chrono, la chaussure et le plan nutrition sont figés.\n[Allure de course NYC · 4'10–4'15/km]\nChaussures : Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
+          "description": "7 km très facile en échauffement (5'15/km), puis 12 km à l'allure NYC (4'12/km) en te concentrant sur les sensations plus que sur le chrono, puis 8 km retour au calme (5'00-5'15/km). Si les jambes répondent bien sur les 12 km, tu as la confirmation qu'il te faut. Si ça tire comme le 16, tu coupes le bloc allure et tu termines en facile — pas d'orgueil sur cette séance.",
           "status": "pending",
           "target_pace": "4'12\"/km",
           "target_pace_sec": 252,
-          "shoe": "Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
+          "shoe": "Evo SL (neuve)",
           "scheduled_time": "09:40",
           "actual": null,
           "coach_notes": [
@@ -10534,25 +10460,41 @@
             {
               "kind": "note",
               "text": "Sortie longue du 02/10 : contact au sol allongé de 6 % en fin de séance. Sur ces 30 km, reste attentif à ta posture/cadence dans le dernier tiers, surtout si la fatigue se fait sentir."
+            },
+            {
+              "kind": "replacement",
+              "from_title": "🎯 RÉPÉTITION GÉNÉRALE — 30 km dont 20 à l'allure NYC",
+              "to_title": "Répétition générale allégée",
+              "text": "7 km très facile en échauffement (5'15/km), puis 12 km à l'allure NYC (4'12/km) en te concentrant sur les sensations plus que sur le chrono, puis 8 km retour au calme (5'00-5'15/km). Si les jambes répondent bien sur les 12 km, tu as la confirmation qu'il te faut. Si ça tire comme le 16, tu coupes le bloc allure et tu termines en facile — pas d'orgueil sur cette séance.",
+              "validated": true,
+              "auto": true,
+              "reason": "Deux clés sur deux ratées cette semaine (piste surchargée à 169 % le 14, échec total du test allure NYC le 16 à 5'12/km au lieu de 3'59) juste avant la plus grosse séance du cycle à 14 jours de la course — on réduit le volume à allure marathon pour sécuriser le bloc plutôt que de risquer un nouvel é"
             }
-          ]
+          ],
+          "_replaced_by_coach": true,
+          "_replaced_from": {
+            "title": "🎯 RÉPÉTITION GÉNÉRALE — 30 km dont 20 à l'allure NYC",
+            "target_pace": "4'12\"/km"
+          },
+          "shoe_note": "Légère et amortie, confortable sur la durée.",
+          "_shoe_key": "evosl_new"
         }
       ],
-      "volume_actual_to_date": 40.5,
-      "volume_planned_to_date": 29.0,
-      "volume_drift_pct": 39.7,
+      "volume_actual_to_date": 47.5,
+      "volume_planned_to_date": 40.0,
+      "volume_drift_pct": 18.8,
       "compliance": {
-        "km_pct": 140,
-        "km_done": 40.5,
-        "km_planned": 29.0,
+        "km_pct": 119,
+        "km_done": 47.5,
+        "km_planned": 40.0,
         "km_done_week": 47.5,
-        "km_planned_week": 70.0,
-        "sessions_done": 3,
-        "sessions_planned": 3,
+        "km_planned_week": 67.0,
+        "sessions_done": 4,
+        "sessions_planned": 4,
         "sessions_done_week": 4,
         "keys_success": 0,
-        "keys_total": 1,
-        "points": 95,
+        "keys_total": 2,
+        "points": 89,
         "verdict": "success"
       }
     },

@@ -1,14 +1,14 @@
 {
  "garmin": {
   "ok": true,
-  "at": "2026-10-16T18:59:46",
-  "message": "0 fichier(s), 9 course(s) vues",
-  "last_ok": "2026-10-16T18:59:46"
+  "at": "2026-10-17T09:40:58",
+  "message": "0 fichier(s), 8 course(s) vues",
+  "last_ok": "2026-10-17T09:40:58"
  },
  "coach": {
   "ok": true,
-  "at": "2026-10-16T10:07:52",
-  "last_ok": "2026-10-16T10:07:52"
+  "at": "2026-10-17T09:42:47",
+  "last_ok": "2026-10-17T09:42:47"
  },
  "debrief": {
   "ok": true,
