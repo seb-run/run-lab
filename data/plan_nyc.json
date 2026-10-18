@@ -1544,243 +1544,7 @@
                 "stance_fade",
                 "step_fade"
               ]
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 305,
-                "fc": 131,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 315,
-                "fc": 150,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 304,
-                "fc": 154,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 301,
-                "fc": 156,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 326,
-                "fc": 145,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 314,
-                "fc": 144,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 309,
-                "fc": 149,
-                "ca": 174
-              },
-              {
-                "km": 0.22,
-                "ps": 325,
-                "fc": 139,
-                "ca": 174
-              },
-              {
-                "km": 0.4,
-                "ps": 215,
-                "fc": 166,
-                "ca": 182
-              },
-              {
-                "km": 0.2,
-                "ps": 257,
-                "fc": 171,
-                "ca": 176
-              },
-              {
-                "km": 0.4,
-                "ps": 218,
-                "fc": 174,
-                "ca": 180
-              },
-              {
-                "km": 0.2,
-                "ps": 272,
-                "fc": 173,
-                "ca": 176
-              },
-              {
-                "km": 0.4,
-                "ps": 218,
-                "fc": 176,
-                "ca": 182
-              },
-              {
-                "km": 0.2,
-                "ps": 262,
-                "fc": 176,
-                "ca": 174
-              },
-              {
-                "km": 0.4,
-                "ps": 217,
-                "fc": 178,
-                "ca": 180
-              },
-              {
-                "km": 0.2,
-                "ps": 262,
-                "fc": 178,
-                "ca": 174
-              },
-              {
-                "km": 0.4,
-                "ps": 212,
-                "fc": 180,
-                "ca": 178
-              },
-              {
-                "km": 0.2,
-                "ps": 264,
-                "fc": 179,
-                "ca": 172
-              },
-              {
-                "km": 0.4,
-                "ps": 218,
-                "fc": 181,
-                "ca": 178
-              },
-              {
-                "km": 0.2,
-                "ps": 271,
-                "fc": 178,
-                "ca": 174
-              },
-              {
-                "km": 0.4,
-                "ps": 212,
-                "fc": 181,
-                "ca": 180
-              },
-              {
-                "km": 0.2,
-                "ps": 269,
-                "fc": 181,
-                "ca": 172
-              },
-              {
-                "km": 0.4,
-                "ps": 213,
-                "fc": 182,
-                "ca": 178
-              },
-              {
-                "km": 0.2,
-                "ps": 275,
-                "fc": 181,
-                "ca": 172
-              },
-              {
-                "km": 0.4,
-                "ps": 213,
-                "fc": 183,
-                "ca": 178
-              },
-              {
-                "km": 0.2,
-                "ps": 288,
-                "fc": 181,
-                "ca": 170
-              },
-              {
-                "km": 0.4,
-                "ps": 214,
-                "fc": 183,
-                "ca": 178
-              },
-              {
-                "km": 0.2,
-                "ps": 273,
-                "fc": 182,
-                "ca": 170
-              },
-              {
-                "km": 0.4,
-                "ps": 213,
-                "fc": 186,
-                "ca": 178
-              },
-              {
-                "km": 0.2,
-                "ps": 264,
-                "fc": 184,
-                "ca": 168
-              },
-              {
-                "km": 0.4,
-                "ps": 217,
-                "fc": 186,
-                "ca": 174
-              },
-              {
-                "km": 0.2,
-                "ps": 269,
-                "fc": 185,
-                "ca": 170
-              },
-              {
-                "km": 1.0,
-                "ps": 342,
-                "fc": 163,
-                "ca": 164
-              },
-              {
-                "km": 1.0,
-                "ps": 312,
-                "fc": 160,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 324,
-                "fc": 156,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 333,
-                "fc": 156,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 346,
-                "fc": 156,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 331,
-                "fc": 158,
-                "ca": 174
-              },
-              {
-                "km": 0.68,
-                "ps": 346,
-                "fc": 158,
-                "ca": 176
-              }
-            ]
+            }
           },
           "score": {
             "points": 92,
@@ -10735,7 +10499,7 @@
           "duration_min": 150,
           "key": true,
           "description": "7 km très facile en échauffement (5'15/km), puis 12 km à l'allure NYC (4'12/km) en te concentrant sur les sensations plus que sur le chrono, puis 8 km retour au calme (5'00-5'15/km). Si les jambes répondent bien sur les 12 km, tu as la confirmation qu'il te faut. Si ça tire comme le 16, tu coupes le bloc allure et tu termines en facile — pas d'orgueil sur cette séance.",
-          "status": "pending",
+          "status": "today",
           "target_pace": "4'12\"/km",
           "target_pace_sec": 252,
           "shoe": "Evo SL (neuve)",
@@ -10779,12 +10543,12 @@
           "_shoe_key": "evosl_new"
         }
       ],
-      "volume_actual_to_date": 47.5,
+      "volume_actual_to_date": 77.5,
       "volume_planned_to_date": 40.0,
-      "volume_drift_pct": 18.8,
+      "volume_drift_pct": 93.8,
       "compliance": {
-        "km_pct": 119,
-        "km_done": 47.5,
+        "km_pct": 194,
+        "km_done": 77.5,
         "km_planned": 40.0,
         "km_done_week": 77.5,
         "km_planned_week": 64.3,
@@ -10816,7 +10580,13 @@
           "key": false,
           "description": "Repos course à pied. ⚖️ À partir d'aujourd'hui : retour à l'équilibre calorique. Plus de muscu jusqu'à la course.",
           "status": "pending",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Vrai repos aujourd'hui, pas de bonus run. Tu as déjà fait 30 km non prévus avant-hier (17/10) : laisse le corps encaisser avant la piste de mercredi et l'allure NYC de vendredi."
+            }
+          ]
         },
         {
           "date": "2026-10-20",

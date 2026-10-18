@@ -2,24 +2,6 @@
  "proposals": [
   {
    "severity": "major",
-   "kind": "change_pace",
-   "date": "2026-09-22",
-   "field": null,
-   "new_value": "Réduction du nombre de répétitions et allure cible ajustée à l'allure seuil plutôt que VMA",
-   "reason": "3 séances d'intensité consécutives échouées en distance et en allure (6×800m, 2×15min seuil, 5×1000m VMA) malgré RPE bas — besoin de retrouver une réussite sur l'intensité avant d'enchaîner avec le bloc MP 14km du 24/09 et le SL 30km du 27/09.",
-   "replacement": {
-    "title": "4×1km seuil (progressif)",
-    "type": "seuil",
-    "km": 14.0,
-    "target_pace": "3'56\"/km",
-    "description": "Échauffement 3km footing. 4×1km à allure seuil (3'56/km) récup 2min trot. Objectif : retrouver le contrôle de l'allure et la confiance, pas la performance. Si chaleur ou FC qui s'envole, ralentis de 5-10s/km plutôt que de raccourcir la distance. Retour au calme 2km."
-   },
-   "id": "5efaee10",
-   "status": "expired",
-   "created_at": "2026-09-17T11:10:25"
-  },
-  {
-   "severity": "major",
    "kind": "restructure_week",
    "date": "2026-09-20",
    "field": null,
@@ -506,6 +488,18 @@
    "status": "expired",
    "created_at": "2026-10-16T10:07:52",
    "expired_reason": "plan_changed"
+  },
+  {
+   "severity": "minor",
+   "kind": "volume_adjust",
+   "date": "2026-10-18",
+   "field": "km",
+   "new_value": 21.9,
+   "reason": "30 km non planifiés la veille (17/10) en plus d'une séance clé ratée le 16/10 : réduire légèrement le volume du jour protège la qualité de l'allure plutôt que d'empiler du volume.",
+   "id": "5e98bb5b",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-10-18T09:55:28"
   }
  ]
 }
