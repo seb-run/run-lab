@@ -1665,51 +1665,7 @@
               "rr_beats": 5660,
               "rmssd_effort": 6.3,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 314,
-                "fc": 134,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 303,
-                "fc": 147,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 313,
-                "fc": 146,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 302,
-                "fc": 150,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 305,
-                "fc": 148,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 302,
-                "fc": 156,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 316,
-                "fc": 154,
-                "ca": 174
-              }
-            ]
+            }
           },
           "score": {
             "points": 87,
@@ -10499,7 +10455,7 @@
           "duration_min": 150,
           "key": true,
           "description": "7 km très facile en échauffement (5'15/km), puis 12 km à l'allure NYC (4'12/km) en te concentrant sur les sensations plus que sur le chrono, puis 8 km retour au calme (5'00-5'15/km). Si les jambes répondent bien sur les 12 km, tu as la confirmation qu'il te faut. Si ça tire comme le 16, tu coupes le bloc allure et tu termines en facile — pas d'orgueil sur cette séance.",
-          "status": "today",
+          "status": "missed",
           "target_pace": "4'12\"/km",
           "target_pace_sec": 252,
           "shoe": "Evo SL (neuve)",
@@ -10547,16 +10503,16 @@
       "volume_planned_to_date": 40.0,
       "volume_drift_pct": 93.8,
       "compliance": {
-        "km_pct": 194,
+        "km_pct": 121,
         "km_done": 77.5,
-        "km_planned": 40.0,
+        "km_planned": 64.3,
         "km_done_week": 77.5,
         "km_planned_week": 64.3,
         "sessions_done": 4,
-        "sessions_planned": 4,
+        "sessions_planned": 5,
         "sessions_done_week": 5,
         "keys_success": 0,
-        "keys_total": 2,
+        "keys_total": 3,
         "points": 89,
         "verdict": "success"
       }
@@ -10579,7 +10535,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos course à pied. ⚖️ À partir d'aujourd'hui : retour à l'équilibre calorique. Plus de muscu jusqu'à la course.",
-          "status": "pending",
+          "status": "today",
           "actual": null,
           "coach_notes": [
             {
@@ -10602,29 +10558,49 @@
           "target_pace_sec": 315,
           "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
           "scheduled_time": "06:30",
-          "actual": null
+          "actual": null,
+          "_rescheduled_from": "2026-10-18",
+          "_rescheduled_title": "Répétition générale allégée",
+          "_rescheduled_desc": "7 km très facile en échauffement (5'15/km), puis 12 km à l'allure NYC (4'12/km) en te concentrant sur les sensations plus que sur le chrono, puis 8 km retour au calme (5'00-5'15/km). Si les jambes répondent bien sur les 12 km, tu as la confirmation qu'il te faut. Si ça tire comme le 16, tu coupes le bloc allure et tu termines en facile — pas d'orgueil sur cette séance.",
+          "_rescheduled_pace": "4'12\"/km"
         },
         {
           "date": "2026-10-21",
           "dow": "Wed",
-          "type": "intervals",
-          "title": "PISTE allégée — 5 × 800 m",
-          "km": 14.0,
+          "type": "vma",
+          "title": "Piste allégée réduite — 4 × 800 m",
+          "km": 11.0,
           "duration_min": 90,
           "key": true,
-          "description": "4,5 km en trot pour aller\nGammes en équipe\nCœur de séance : 5 × 800 m @ 3'30–3'34/km, récupération 2'\n4,5 km en trot pour rentrer\n\nOn garde le rendez-vous mais on divise le volume du cœur de séance.\n[VO2max (800–2000 m) · 3'28–3'36/km]\nChaussures : Nike Zoom Fly 5 vert/blanc (647 km) — piste",
+          "description": "4 × 800 m à 3'40/km, récupération trot 2' entre chaque. Échauffement 15' + 6 lignes droites, retour au calme 10'. Si les jambes sont encore lourdes après la générale de la veille, coupe à 3 répétitions sans culpabiliser — l'objectif est d'arriver frais sur la séance allure NYC du 23.",
           "status": "pending",
-          "target_pace": "3'32\"/km",
+          "target_pace": "3'40\"/km",
           "target_pace_sec": 212,
-          "shoe": "Nike Zoom Fly 5 vert/blanc (647 km) — piste",
+          "shoe": "Adizero Boston 13",
           "scheduled_time": "18:45",
           "actual": null,
           "coach_notes": [
             {
               "kind": "note",
               "text": "Vigilance dérive cardiaque : mercredi dernier elle est montée à 16,4 % sur une séance piste similaire. Si tu sens le même décalage FC/allure se creuser après la 3e répétition, arrête à 4×800 au lieu de 5."
+            },
+            {
+              "kind": "replacement",
+              "from_title": "PISTE allégée — 5 × 800 m",
+              "to_title": "Piste allégée réduite — 4 × 800 m",
+              "text": "4 × 800 m à 3'40/km, récupération trot 2' entre chaque. Échauffement 15' + 6 lignes droites, retour au calme 10'. Si les jambes sont encore lourdes après la générale de la veille, coupe à 3 répétitions sans culpabiliser — l'objectif est d'arriver frais sur la séance allure NYC du 23.",
+              "validated": true,
+              "auto": true,
+              "reason": "La générale allégée (24 km) vient d'être repositionnée sur le 20/10 — enchaîner le lendemain avec une piste à 3'32/km reproduit le schéma qui a fait échouer la séance allure marathon du 16/10. On sécurise la récupération avant les 2 séances clés qui suivent (allure NYC le 23, sortie longue le 25)."
             }
-          ]
+          ],
+          "_replaced_by_coach": true,
+          "_replaced_from": {
+            "title": "PISTE allégée — 5 × 800 m",
+            "target_pace": "3'32\"/km"
+          },
+          "shoe_note": "Dynamique et ferme, pour le travail rapide.",
+          "_shoe_key": "boston13"
         },
         {
           "date": "2026-10-22",
@@ -10686,7 +10662,10 @@
           "scheduled_time": "08:30",
           "actual": null
         }
-      ]
+      ],
+      "volume_actual_to_date": 0.0,
+      "volume_planned_to_date": 0.0,
+      "volume_drift_pct": 0
     },
     {
       "week_num": 11,
@@ -10808,7 +10787,15 @@
       ]
     }
   ],
-  "adaptations": [],
+  "adaptations": [
+    {
+      "kind": "reschedule_key",
+      "from_date": "2026-10-18",
+      "to_date": "2026-10-20",
+      "title": "Répétition générale allégée",
+      "reason": "Séance clé manquée — repositionnée sur un jour libre"
+    }
+  ],
   "moves": [
     {
       "at": "2026-10-01T19:31:43",

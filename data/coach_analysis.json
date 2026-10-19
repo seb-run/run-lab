@@ -1,66 +1,61 @@
 {
- "generated_at": "2026-10-18T09:55:28",
+ "generated_at": "2026-10-19T11:18:25",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-10-15\", \"title\": \"Footing récupération 40'\", \"type\": \"easy\", \"planned_km\": 8.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'25\\\"/km\", \"actual\": {\"km\": 10.2, \"pace_str\": \"5'34\\\"/km\", \"fc\": 137, \"cadence\": 178, \"duration_min\": 56}, \"splits\": \"1:6'12/116/182spm 2:5'51/128/178spm 3:5'34/132/180spm 4:5'26/139/178spm 5:5'28/139/176spm 6:5'36/143/178spm 7:5'20/140/180spm 8:5'17/146/178spm 9:5'28/146/176spm 10:5'24/146/176spm\", \"garmin\": {\"te_aero\": 3.0, \"te_ana\": 0.0, \"load\": 89.0, \"rpe\": 3.0, \"feel_label\": \"Fort\", \"temp_c\": 25, \"balance_l\": 51.12, \"flags\": [], \"stance_drift_pct\": 0.4, \"step_drift_pct\": 7.6}, \"score\": {\"points\": 93, \"verdict\": \"success\", \"volume_pct\": 127, \"pace_delta_s\": 9}, \"hr\": {\"avg\": 137, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 3.4, \"flags\": []}}, {\"date\": \"2026-10-16\", \"title\": \"SPÉCIFIQUE court — 6 km + test Vaporfly\", \"type\": \"mp\", \"planned_km\": 11.0, \"key\": true, \"status\": \"under\", \"target_pace\": \"3'59\\\"/km\", \"actual\": {\"km\": 7.0, \"pace_str\": \"5'12\\\"/km\", \"fc\": 134, \"cadence\": 177, \"duration_min\": 36}, \"splits\": \"1:5'18/120/178spm 2:5'09/130/178spm 3:5'15/135/178spm 4:5'07/137/176spm 5:5'10/138/178spm 6:5'12/140/176spm 7:5'14/139/174spm\", \"garmin\": {\"te_aero\": 2.7, \"te_ana\": 0.0, \"load\": 70.3, \"rpe\": 1.0, \"feel_label\": \"Fort\", \"temp_c\": 24, \"balance_l\": 51.1, \"flags\": [], \"stance_drift_pct\": -0.8, \"step_drift_pct\": 4.5}, \"score\": {\"points\": 26, \"verdict\": \"failed\", \"volume_pct\": 64, \"pace_delta_s\": 73}, \"hr\": {\"avg\": 134, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 2.8, \"flags\": []}}, {\"date\": \"2026-10-17\", \"title\": \"Repos\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"bonus\", \"target_pace\": null, \"actual\": {\"km\": 30.0, \"pace_str\": \"4'16\\\"/km\", \"fc\": 155, \"cadence\": 179, \"duration_min\": 128}, \"splits\": \"1:5'01/127/178spm 2:4'58/133/180spm 3:4'53/134/178spm 4:4'51/135/176spm 5:4'53/132/174spm 6:3'59/153/180spm 7:4'01/162/178spm 8:3'58/159/180spm 9:4'01/159/178spm 10:3'58/160/178spm 11:3'58/161/178spm 12:3'56/163/178spm 13:3'59/162/180spm 14:4'02/163/178spm 15:3'59/162/178spm 16:3'59/163/180spm 17:3'59/163/178spm 18:3'59/165/180spm 19:3'59/164/180spm 20:3'58/165/180spm 21:3'56/165/180spm 22:3'54/165/180spm 23:3'55/165/180spm 24:3'56/167/180spm 25:3'57/168/180spm 26:4'41/157/178spm 27:4'41/154/180spm 28:4'44/150/178spm 29:4'50/151/180spm 30:4'55/149/178spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 0.0, \"load\": 400.0, \"rpe\": 5.0, \"feel_label\": \"Très fort\", \"temp_c\": 20, \"balance_l\": 48.81, \"flags\": [\"stance_fade\"], \"stance_drift_pct\": 5.6, \"step_drift_pct\": -0.3}}]|43bfaac9c8",
- "plan_hash": "43bfaac9c8",
- "headline": "20 km de Paris confirmés sous l'allure cible, mais la semaine de transition part en roue libre côté volume.",
- "analysis": "Le fond est solide : sur les 20 km de Paris, tu es passé de 3'52/km à 3'30/km en fin de course avec une dérive cardiaque de 1,2 % seulement — c'est la preuve chiffrée que ton aérobie tient à l'allure de course, bien en dessous de ta cible marathon de 4'12. Depuis, deux signaux à corriger : la séance spécifique allure NYC du 16/10 a été ratée net (26 pts, 64 % du volume prévu, 73s/km trop lent, arrêtée à 7 km sur 11), et le jour de repos du 17/10 s'est transformé en 30 km bonus à 4'16/km de moyenne — exactement l'inverse de ce qu'il faut faire à J-14. Résultat : la semaine 9 affiche 77,5 km pour 40 prévus, soit 194 % du plan, pile la semaine où il fallait doser pour arriver frais. Aucun signal d'alarme mécanique — l'équilibre gauche/droite reste autour de 50 %, pas de dérive répétée — mais le contact au sol qui s'allonge de 5,6 % sur ce 30 km bonus est à surveiller si le schéma se répète. Le risque n'est pas la blessure, c'est d'arriver cramé sur les deux dernières séances clés (piste du 21 et retest allure NYC du 23) qui doivent, elles, être propres. Focus de la semaine : respecter les jours de repos comme des jours de repos, et profiter du 23/10 pour effacer l'échec du 16 — la fitness est là, il faut juste la livrer au bon moment.",
+ "signature": "[{\"date\": \"2026-10-16\", \"title\": \"SPÉCIFIQUE court — 6 km + test Vaporfly\", \"type\": \"mp\", \"planned_km\": 11.0, \"key\": true, \"status\": \"under\", \"target_pace\": \"3'59\\\"/km\", \"actual\": {\"km\": 7.0, \"pace_str\": \"5'12\\\"/km\", \"fc\": 134, \"cadence\": 177, \"duration_min\": 36}, \"splits\": \"1:5'18/120/178spm 2:5'09/130/178spm 3:5'15/135/178spm 4:5'07/137/176spm 5:5'10/138/178spm 6:5'12/140/176spm 7:5'14/139/174spm\", \"garmin\": {\"te_aero\": 2.7, \"te_ana\": 0.0, \"load\": 70.3, \"rpe\": 1.0, \"feel_label\": \"Fort\", \"temp_c\": 24, \"balance_l\": 51.1, \"flags\": [], \"stance_drift_pct\": -0.8, \"step_drift_pct\": 4.5}, \"score\": {\"points\": 26, \"verdict\": \"failed\", \"volume_pct\": 64, \"pace_delta_s\": 73}, \"hr\": {\"avg\": 134, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 2.8, \"flags\": []}}, {\"date\": \"2026-10-17\", \"title\": \"Repos\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"bonus\", \"target_pace\": null, \"actual\": {\"km\": 30.0, \"pace_str\": \"4'16\\\"/km\", \"fc\": 155, \"cadence\": 179, \"duration_min\": 128}, \"splits\": \"1:5'01/127/178spm 2:4'58/133/180spm 3:4'53/134/178spm 4:4'51/135/176spm 5:4'53/132/174spm 6:3'59/153/180spm 7:4'01/162/178spm 8:3'58/159/180spm 9:4'01/159/178spm 10:3'58/160/178spm 11:3'58/161/178spm 12:3'56/163/178spm 13:3'59/162/180spm 14:4'02/163/178spm 15:3'59/162/178spm 16:3'59/163/180spm 17:3'59/163/178spm 18:3'59/165/180spm 19:3'59/164/180spm 20:3'58/165/180spm 21:3'56/165/180spm 22:3'54/165/180spm 23:3'55/165/180spm 24:3'56/167/180spm 25:3'57/168/180spm 26:4'41/157/178spm 27:4'41/154/180spm 28:4'44/150/178spm 29:4'50/151/180spm 30:4'55/149/178spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 0.0, \"load\": 400.0, \"rpe\": 5.0, \"feel_label\": \"Très fort\", \"temp_c\": 20, \"balance_l\": 48.81, \"flags\": [\"stance_fade\"], \"stance_drift_pct\": 5.6, \"step_drift_pct\": -0.3}}, {\"date\": \"2026-10-18\", \"title\": \"Répétition générale allégée\", \"type\": \"long\", \"planned_km\": 24.3, \"key\": true, \"status\": \"missed\", \"target_pace\": \"4'12\\\"/km\"}]|6e978506be",
+ "plan_hash": "6e978506be",
+ "headline": "Le 20 km de Paris est ton meilleur signal aérobie à ce jour, mais la semaine qui a suivi est partie dans tous les sens.",
+ "analysis": "Le 11/10, tu as couru 20 km à 3'45/km de moyenne avec seulement 1,2 % de dérive cardiaque — c'est le chiffre le plus solide de toute la préparation, ça valide ton seuil pour le sub-3h. Mais depuis, le script n'est plus respecté : piste du 14/10 à 16,4 % de dérive (3 jours après une course, logique), séance allure marathon du 16/10 ratée à 26 points (7 km à 5'12 au lieu de 11 km à 3'59), puis un 30 km non planifié le 17/10 sur un jour de repos avec un bloc proche de l'allure marathon pendant 20 km, et enfin la générale du 18/10 totalement manquée. Résultat : 0 clé réussie sur 3 cette semaine alors que tu as fait 121 % du volume prévu — ce n'est pas un manque d'entraînement, c'est un manque de discipline sur le calendrier. Le contact au sol a dérivé de +5,6 % sur ce 30 km surprise, un vrai signal mécanique à surveiller vu l'historique Achille, pas une alarme mais un point à ne pas ignorer. La générale a été repositionnée demain (20/10) par le moteur — bien, mais enchaîner derrière une piste à 3'32/km le 21/10 reproduit exactement le schéma qui a fait échouer la séance du 16/10. Focus de la semaine : suivre le plan tel qu'il est écrit, zéro bonus non planifié, et alléger la piste du 21 pour sécuriser la générale plutôt que la fragiliser.",
  "forme": {
-  "score": 73,
+  "score": 64,
   "verdict": "surveiller",
-  "headline": "Fitness confirmée, discipline de charge à resserrer",
-  "detail": "Le 20 km de Paris a validé ta vitesse marathon avec une dérive cardiaque de seulement 1,2 % — c'est net. Mais 77,5 km faits pour 40 prévus cette semaine, et un jour de repos transformé en 30 km, construisent une dette de fraîcheur juste avant les deux dernières séances clés. Prochain focus : vrai repos lundi, puis exécution propre sur la piste du 21 et le retest allure NYC du 23.",
+  "headline": "Physio solide, mais le planning part en roue libre",
+  "detail": "Le 20 km de Paris à 1,2 % de dérive cardiaque est un vrai acquis — ton moteur aérobie tourne bien. Mais 0/3 clés réussies cette semaine avec un 30 km non planifié et une générale manquée montrent une gestion du calendrier à resserrer, pas une baisse de forme. Le contact au sol allongé de 5,6 % sur ce 30 km surprise mérite un oeil, sans drame, à 13 jours de la course.",
   "indicateurs": {
    "fraicheur": {
-    "valeur": "+37 km",
+    "valeur": "dette 2 j",
     "trend": "down",
     "etat": "watch",
-    "note": "volume x2 cette semaine"
+    "note": "30km surprise + générale ratée"
    },
    "compliance": {
-    "valeur": "0/2 clés réussies",
+    "valeur": "0/3 clés S9",
     "trend": "down",
     "etat": "watch",
-    "note": "volume fait, qualité ratée"
+    "note": "volume +21%, script dévié"
    },
    "aerobie": {
     "valeur": "1,2 %",
-    "trend": "up",
+    "trend": "flat",
     "etat": "ok",
-    "note": "excellente dérive sur 20 km"
+    "note": "excellente maîtrise en course"
    },
    "achille": {
-    "valeur": "5,6 %",
+    "valeur": "+5,6 %",
     "trend": "up",
     "etat": "watch",
-    "note": "contact allongé après 30 km"
+    "note": "contact allongé sur 30km bonus"
    }
   }
  },
  "applied": [
   {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-10-19",
-   "field": "description_note",
-   "new_value": "Vrai repos aujourd'hui, pas de bonus run. Tu as déjà fait 30 km non prévus avant-hier (17/10) : laisse le corps encaisser avant la piste de mercredi et l'allure NYC de vendredi.",
-   "reason": "Pattern répété de jours de repos transformés en sorties bonus (10/10, 17/10) juste avant des semaines à séances clés serrées — à 14 jours de la course, la fraîcheur prime sur le volume supplémentaire.",
-   "id": "9531db26",
-   "detail": "2026-10-19 : note ajoutée"
+   "severity": "major",
+   "kind": "change_pace",
+   "date": "2026-10-21",
+   "field": null,
+   "new_value": "4 × 800 m à 3'40/km au lieu de 5 × 800 m à 3'32/km",
+   "reason": "La générale allégée (24 km) vient d'être repositionnée sur le 20/10 — enchaîner le lendemain avec une piste à 3'32/km reproduit le schéma qui a fait échouer la séance allure marathon du 16/10. On sécurise la récupération avant les 2 séances clés qui suivent (allure NYC le 23, sortie longue le 25).",
+   "replacement": {
+    "title": "Piste allégée réduite — 4 × 800 m",
+    "type": "vma",
+    "km": 11.0,
+    "target_pace": "3'40\"/km",
+    "description": "4 × 800 m à 3'40/km, récupération trot 2' entre chaque. Échauffement 15' + 6 lignes droites, retour au calme 10'. Si les jambes sont encore lourdes après la générale de la veille, coupe à 3 répétitions sans culpabiliser — l'objectif est d'arriver frais sur la séance allure NYC du 23."
+   },
+   "id": "ea0daa6b",
+   "detail": "2026-10-21 : PISTE allégée — 5 × 800 m → Piste allégée réduite — 4 × 800 m",
+   "auto_major": true
   }
  ],
- "pending": [
-  {
-   "severity": "minor",
-   "kind": "volume_adjust",
-   "date": "2026-10-18",
-   "field": "km",
-   "new_value": 21.9,
-   "reason": "30 km non planifiés la veille (17/10) en plus d'une séance clé ratée le 16/10 : réduire légèrement le volume du jour protège la qualité de l'allure plutôt que d'empiler du volume.",
-   "id": "5e98bb5b",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
-   "created_at": "2026-10-18T09:55:28"
-  }
- ]
+ "pending": []
 }

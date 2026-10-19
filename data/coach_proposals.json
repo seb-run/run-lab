@@ -498,8 +498,9 @@
    "reason": "30 km non planifiés la veille (17/10) en plus d'une séance clé ratée le 16/10 : réduire légèrement le volume du jour protège la qualité de l'allure plutôt que d'empiler du volume.",
    "id": "5e98bb5b",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
-   "created_at": "2026-10-18T09:55:28"
+   "status": "expired",
+   "created_at": "2026-10-18T09:55:28",
+   "expired_reason": "plan_changed"
   }
  ]
 }
