@@ -18,6 +18,11 @@ Garde-fous (le payload vient d'Internet, tout est revalidé) :
   - jour de course intouchable
   - même semaine ou semaines voisines : écart ≤ 6 jours
 
+Mode rétroactif (`retro: true`) : « je l'ai faite un autre jour ». Là, c'est
+l'inverse : le jour prévu (`from`) n'a rien d'enregistré, le jour réel (`to`) porte
+la séance faite. On échange les contenus pour rattacher la séance à son jour réel,
+sans toucher à ce qui a été couru. Écart ≤ 4 jours, passé ou aujourd'hui seulement.
+
 Usage (CI uniquement) :
     MOVE_PAYLOAD='{"from":"2026-10-07","to":"2026-10-08"}' python3 scripts/ci/apply_move.py
 
@@ -62,6 +67,39 @@ def find_day(plan: dict, iso: str):
             if d.get('date') == iso:
                 return d
     return None
+
+
+def swap_retro(plan: dict, a_iso: str, b_iso: str) -> str:
+    """Rattache la séance prévue le jour A à la séance réellement faite le jour B."""
+    today = date.today()
+    for iso in (a_iso, b_iso):
+        if not DATE_RE.match(iso or ''):
+            _fail(f'date invalide : {iso!r}')
+    a_d, b_d = date.fromisoformat(a_iso), date.fromisoformat(b_iso)
+    if a_d == b_d or abs((a_d - b_d).days) > 4:
+        _fail('écart invalide (1 à 4 jours)')
+    if a_d > today or b_d > today:
+        _fail('rattachement rétroactif : passé ou aujourd\'hui uniquement')
+    a, b = find_day(plan, a_iso), find_day(plan, b_iso)
+    if not a or not b:
+        _fail('jour introuvable dans le plan')
+    if a.get('type') == 'race' or b.get('type') == 'race':
+        _fail('jour de course intouchable')
+    if a.get('actual'):
+        _fail(f'{a_iso} a déjà une séance enregistrée')
+    if not b.get('actual'):
+        _fail(f"{b_iso} n'a aucune séance enregistrée à rattacher")
+    keep_a = {k: a.get(k) for k in SLOT_KEYS if k in a}
+    keep_b = {k: b.get(k) for k in SLOT_KEYS if k in b}
+    content_a = {k: v for k, v in a.items() if k not in SLOT_KEYS}
+    content_b = {k: v for k, v in b.items() if k not in SLOT_KEYS}
+    a.clear(); a.update(content_b); a.update(keep_a)
+    b.clear(); b.update(content_a); b.update(keep_b)
+    a['moved_from'] = b_iso; b['moved_from'] = a_iso
+    plan.setdefault('moves', []).append({
+        'at': datetime.now().isoformat(timespec='seconds'), 'from': a_iso, 'to': b_iso, 'retro': True})
+    plan['moves'] = plan['moves'][-30:]
+    return f"{b_iso} : « {content_a.get('title')} » faite ce jour-là au lieu du {a_iso}"
 
 
 def swap(plan: dict, a_iso: str, b_iso: str) -> str:
@@ -114,7 +152,7 @@ def main():
     if not PLAN_PATH.exists():
         _fail('plan_nyc.json absent')
     plan = json.loads(PLAN_PATH.read_text(encoding='utf-8'))
-    detail = swap(plan, a_iso, b_iso)
+    detail = swap_retro(plan, a_iso, b_iso) if payload.get('retro') is True else swap(plan, a_iso, b_iso)
     PLAN_PATH.write_text(json.dumps(plan, ensure_ascii=False, indent=2, default=str),
                          encoding='utf-8')
     print(f'✓ Séance décalée — {detail}')

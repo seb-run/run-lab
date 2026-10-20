@@ -203,13 +203,13 @@
       closeSheet(); if (then) setTimeout(then, 260);
     };
   }
-  async function sendMove(from, to) {
+  async function sendMove(from, to, retro) {
     const c = cfg();
-    if (!c) { askConfig(() => sendMove(from, to)); return; }
+    if (!c) { askConfig(() => sendMove(from, to, retro)); return; }
     try {
       const r = await fetch(c.base + '/move', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ from, to, token: c.token }),
+        body: JSON.stringify(retro ? { from, to, retro: true, token: c.token } : { from, to, token: c.token }),
       });
       if (r.status === 401) { try { localStorage.removeItem(TOKEN_KEY); } catch (e) {} throw new Error('jeton refusé — il te sera redemandé'); }
       if (!r.ok) { let m = 'HTTP ' + r.status; try { const j = await r.json(); if (j.error) m = j.error; } catch (e) {} throw new Error(m); }
@@ -544,8 +544,27 @@
       <div class="ck-actions">
         ${canMove(d) && d.type !== 'rest' ? `<button class="ck-btn ck-btn-primary" type="button" data-move-day="${d.date}">${svg('swap', 16)} Décaler cette séance</button>` : ''}
         ${canMove(d) && d.type === 'rest' ? `<button class="ck-btn" type="button" data-move-day="${d.date}">${svg('swap', 16)} Échanger ce repos</button>` : ''}
+        ${s.k === 'miss' && retroCandidates(d).length ? `<button class="ck-btn ck-btn-primary" type="button" data-retro="${d.date}">${svg('check', 16)} Je l'ai faite un autre jour</button>` : ''}
       </div>`);
     return body;
+  }
+
+  // « Je l'ai faite un autre jour » : rattache une séance prévue mais non enregistrée
+  // à celle réellement courue un jour voisin.
+  function retroCandidates(d) {
+    return allDays().filter(c => c !== d && c.actual && !c.key && c.type !== 'race' && c.date <= TODAY &&
+      Math.abs(dayDiff(c.date, d.date)) <= 4 && ['bonus', 'over', 'under', 'done'].includes(c.status) &&
+      (d.type === 'long' ? c.actual.km >= 12 : c.actual.km >= 4));
+  }
+  function openRetro(iso) {
+    const d = findDay(iso); if (!d) return;
+    const cands = retroCandidates(d);
+    const body = openSheet(`
+      <h3 class="ck-sheet-h">Quelle sortie était « ${esc(d.title)} » ?</h3>
+      <p class="ck-muted">Prévue le ${esc(fmtDayLong(d.date))}. Choisis la sortie que tu as réellement courue à la place : elle sera rattachée à cette séance, et ton plan et ton coach la jugeront comme telle.</p>
+      <div class="ck-list">${cands.map(c => `<button type="button" class="ck-li ck-retro-li" data-retro-to="${c.date}">
+        <div><b>${esc(fmtDayLong(c.date))}</b><span>${esc(fmtKm(c.actual.km))}${c.actual.pace_str ? ' · ' + esc(c.actual.pace_str) : ''}${c.actual.fc ? ' · FC ' + c.actual.fc : ''}</span></div><em>${svg('chevR', 16)}</em></button>`).join('')}</div>`);
+    $$('[data-retro-to]', body).forEach(b => { b.onclick = () => { closeSheet(); setTimeout(() => sendMove(iso, b.dataset.retroTo, true), 260); }; });
   }
 
   function startMove(iso) {
@@ -750,6 +769,8 @@
 
     document.addEventListener('click', (e) => {
       const t = e.target;
+      const rt = t.closest('[data-retro]');
+      if (rt) { openRetro(rt.dataset.retro); return; }
       const ind = t.closest('[data-ind]');
       if (ind) { openIndicator(ind.dataset.ind); return; }
       const hb = t.closest('[data-harbat]');
@@ -776,7 +797,7 @@
 
   // Outils partagés avec cockpit2.js (Labo, Courses, Renfo).
   window.__ck = { RAW, esc, svg, ICONS, openSheet, closeSheet, toast, isoLocal, parse, TODAY, dayDiff,
-    fmtDay, fmtDayLong, fmtKm, allDays, weeks, DOW, MON, dayState, isDone, TYPES, tmeta };
+    fmtDay, fmtDayLong, fmtKm, allDays, weeks, DOW, MON, dayState, isDone, TYPES, tmeta, cfg, askConfig, URL_KEY, TOKEN_KEY, findDay };
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mount);
   else mount();

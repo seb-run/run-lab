@@ -52,22 +52,48 @@ function safeEqual(a, b) {
 // Lecture de la photo envoyée par le coach du club. Le vocabulaire de piste
 // français ("éch", "récup", "VMA", distances sans unité type "6x800") est
 // explicité dans le prompt plutôt que supposé connu du modèle.
-const OCR_SYSTEM_PROMPT = `Tu lis une photo ou capture d'écran envoyée par un coach de club d'athlétisme, décrivant une séance de piste. Le texte peut être manuscrit, tapé dans une messagerie, ou un tableau d'entraînement. Français courant, abréviations fréquentes : "éch"/"ech" (échauffement), "récup"/"r" (récupération), "rc" (retour au calme), "VMA", "seuil". Distances souvent sans unité ("6x800" = 6 répétitions de 800m). Allures au format "3'30" ou "3:30" (min'sec par km).
+const OCR_SYSTEM_PROMPT = `Tu lis une photo ou capture d'écran envoyée par un coach de club d'athlétisme, décrivant une séance de piste. Le texte peut être manuscrit, tapé dans une messagerie, ou une affiche. Français courant, abréviations : "éch"/"ech" (échauffement), "récup"/"r" (récupération), "rc" (retour au calme), "VMA", "seuil", "10K", "5K", "semi", "marathon". Allures au format "3'30" ou "3:30" (min'sec par km).
 
-Réponds UNIQUEMENT avec un objet JSON, sans texte autour ni bloc de code, exactement dans ce format :
+Une séance est une SUITE de blocs d'effort, chacun avec sa distance, parfois son allure et sa récupération. Exemple : « 1600 - 800 - 1200 - 600 - 1000 - 500 », avec sous l'affiche « 1600M allure MARATHON · 800M allure SEUIL · 1200M allure SEMI … » et « RECUP 1'30 PUIS 1'15 PUIS 1' ». Tu dois restituer CHAQUE bloc, dans l'ordre, sans les regrouper ni les uniformiser. Ne réponds jamais « 6 × 1000 » pour une suite de distances différentes.
+
+Règles de lecture :
+- "label" : l'allure NOMMÉE, parmi marathon, semi, seuil, 10k, 5k, vma, libre. Si le coach écrit "allure SEUIL", label="seuil". N'invente pas d'allure chiffrée.
+- "pace" : une allure chiffrée UNIQUEMENT si elle est écrite pour cette séance (ex. "3'30"). Sinon chaîne vide.
+- IGNORE tout paragraphe intitulé EXEMPLE, « pour un objectif de… », ou tableau d'allures d'un autre athlète : ces chiffres illustrent un cas fictif et ne sont pas ceux de la séance. Lis la structure (distances, noms d'allures, récupérations), jamais ces valeurs.
+- "rest" : la récupération ENTRE ce bloc et le suivant. Quand le coach donne une liste de récupérations plus courte que la liste des blocs (« 1'30 puis 1'15 puis 1' » pour 6 blocs), chaque valeur couvre autant de blocs consécutifs que nécessaire, dans l'ordre (ici 2 blocs par valeur). Pas de récupération après le dernier bloc.
+- "optional": true pour un bloc marqué « en option », « facultatif », « si ça va ».
+- "warmup_km" / "cooldown_km" : seulement si écrits, sinon 0.
+
+Réponds UNIQUEMENT avec un objet JSON, sans texte autour ni bloc de code :
 {
-  "title": "titre court, ex: Piste club · 6x800m",
-  "warmup_km": nombre (km d'échauffement, 0 si absent),
-  "reps": nombre entier (répétitions de l'effort principal),
-  "rep_km": nombre (distance d'une répétition en km, ex 0.8 pour 800m),
-  "rep_pace": "allure cible telle qu'écrite, ex: 3'30\\"/km, ou chaîne vide",
-  "recovery": "récupération entre répétitions telle qu'écrite, ex: 90s trot, ou chaîne vide",
-  "cooldown_km": nombre (km de retour au calme, 0 si absent),
-  "notes": "précisions utiles non capturées ailleurs (séries multiples, terrain, allure progressive...), chaîne vide sinon",
+  "title": "titre court, ex: Piste club · 1600-800-1200-600-1000-500",
+  "warmup_km": nombre,
+  "blocks": [ {"dist_m": nombre entier, "label": "marathon|semi|seuil|10k|5k|vma|libre", "pace": "", "rest": "1'30", "optional": false} ],
+  "cooldown_km": nombre,
+  "notes": "précisions utiles non capturées ailleurs (terrain, consignes), chaîne vide sinon",
   "confidence": "haute" ou "moyenne" ou "basse"
 }
 
-Si la séance a plusieurs blocs différents (ex: 2 séries de 5x400m avec récup différente entre les séries), garde la structure dominante dans les champs et mets le détail complet dans "notes". Si l'image est illisible ou ne montre pas de séance d'entraînement, renvoie confidence:"basse", title:"Illisible", et les autres champs à leurs valeurs par défaut. Ne réponds qu'avec le JSON.`;
+Si l'image est illisible ou ne montre pas de séance, renvoie confidence:"basse", title:"Illisible", blocks:[]. Ne réponds qu'avec le JSON.`;
+
+const BLOCK_LABELS = ['marathon', 'semi', 'seuil', '10k', '5k', 'vma', 'libre'];
+function cleanBlocks(list) {
+  if (!Array.isArray(list)) return [];
+  const out = [];
+  for (const b of list.slice(0, 30)) {
+    const dist = Number(b && b.dist_m);
+    if (!Number.isFinite(dist) || dist < 50 || dist > 6000) continue;
+    const label = String((b && b.label) || '').toLowerCase();
+    out.push({
+      dist_m: Math.round(dist),
+      label: BLOCK_LABELS.includes(label) ? label : 'libre',
+      pace: String((b && b.pace) || '').trim().slice(0, 20),
+      rest: String((b && b.rest) || '').trim().slice(0, 12),
+      optional: !!(b && b.optional === true),
+    });
+  }
+  return out;
+}
 
 export default {
   async fetch(request, env) {
@@ -178,20 +204,26 @@ export default {
       };
       const str = (v, max) => String(v || '').trim().slice(0, max);
 
+      const blocks = cleanBlocks(body.blocks);
       const payload = {
         date,
         title: str(body.title, 80) || 'Piste club',
-        warmup_km: num(body.warmup_km, 0, 10, 0),
-        reps: Math.round(num(body.reps, 1, 20, 0)),
-        rep_km: num(body.rep_km, 0.05, 5, 0),
-        rep_pace: str(body.rep_pace, 20),
-        recovery: str(body.recovery, 40),
-        cooldown_km: num(body.cooldown_km, 0, 10, 0),
+        warmup_km: num(body.warmup_km, 0, 15, 0),
+        cooldown_km: num(body.cooldown_km, 0, 15, 0),
         notes: str(body.notes, 300),
       };
-      if (!payload.reps || !payload.rep_km) {
-        return Response.json({ error: 'Répétitions et distance par répétition requises' },
-          { status: 400, headers: corsHeaders });
+      if (blocks.length) {
+        payload.blocks = blocks;
+      } else {
+        // Ancien format : un seul bloc de répétitions.
+        payload.reps = Math.round(num(body.reps, 1, 20, 0));
+        payload.rep_km = num(body.rep_km, 0.05, 5, 0);
+        payload.rep_pace = str(body.rep_pace, 20);
+        payload.recovery = str(body.recovery, 40);
+        if (!payload.reps || !payload.rep_km) {
+          return Response.json({ error: 'Au moins un bloc d\'effort requis' },
+            { status: 400, headers: corsHeaders });
+        }
       }
 
       const resp = await fetch(
@@ -256,7 +288,7 @@ export default {
           },
           body: JSON.stringify({
             event_type: 'move-session',
-            client_payload: { from, to },
+            client_payload: body.retro === true ? { from, to, retro: true } : { from, to },
           }),
         }
       );
@@ -321,7 +353,7 @@ export default {
           },
           body: JSON.stringify({
             model: env.ANTHROPIC_MODEL || 'claude-sonnet-5',
-            max_tokens: 1024,
+            max_tokens: 4096,
             system: OCR_SYSTEM_PROMPT,
             messages: [{
               role: 'user',
@@ -376,12 +408,9 @@ export default {
       const str = (v, max) => String(v || '').trim().slice(0, max);
       const clean = {
         title: str(fields.title, 80) || 'Piste club',
-        warmup_km: num(fields.warmup_km, 0, 10, 0),
-        reps: Math.round(num(fields.reps, 0, 20, 0)),
-        rep_km: num(fields.rep_km, 0, 5, 0),
-        rep_pace: str(fields.rep_pace, 20),
-        recovery: str(fields.recovery, 40),
-        cooldown_km: num(fields.cooldown_km, 0, 10, 0),
+        warmup_km: num(fields.warmup_km, 0, 15, 0),
+        blocks: cleanBlocks(fields.blocks),
+        cooldown_km: num(fields.cooldown_km, 0, 15, 0),
         notes: str(fields.notes, 300),
       };
       const confidence = ['haute', 'moyenne', 'basse'].includes(fields.confidence) ? fields.confidence : 'moyenne';

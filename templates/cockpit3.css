@@ -47,3 +47,36 @@
 .ck3-g-end-ico { width: 72px; height: 72px; margin: 0 auto 12px; border-radius: 99px; display: grid; place-items: center; color: #fff; background: var(--ck-green); }
 .ck3-g-end h3 { font-size: 24px; font-weight: 800; letter-spacing: -0.03em; }
 .ck3-g-end p { margin-top: 6px; color: var(--text-2); }
+
+/* ============================================================================
+   Séance du club (cockpit4.js)
+   ============================================================================ */
+.ck4-in { display: flex; gap: 8px; margin: 12px 0 4px; }
+.ck4-in .ck-btn { flex: 1; cursor: pointer; }
+.ck4-paste { margin-top: 8px; display: flex; flex-direction: column; gap: 8px; }
+.ck4-paste[hidden] { display: none; }
+.ck4-paste textarea { width: 100%; padding: 12px; border-radius: 12px; font: 500 14px/1.4 var(--font-sans); color: var(--text); background: var(--surface-2); border: 1px solid var(--border-2); resize: vertical; }
+.ck4-fb { min-height: 20px; margin: 8px 0 0; font-size: 13.5px; font-weight: 600; color: var(--text-2); }
+.ck4-fb[data-kind="ok"] { color: var(--ck-green); } .ck4-fb[data-kind="err"] { color: var(--ck-red); } .ck4-fb[data-kind="warn"] { color: var(--ck-amber); }
+.ck4-row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.ck4-hint { margin-top: 6px; font-size: 12.5px; color: var(--text-3); }
+.ck4-blocks { display: flex; flex-direction: column; gap: 8px; margin-bottom: 10px; }
+.ck4-blk { display: flex; gap: 8px; align-items: flex-start; padding: 10px; border-radius: 14px; background: var(--surface-2); border: 1px solid var(--border); }
+.ck4-blk.is-opt { border-style: dashed; opacity: .85; }
+.ck4-blk-n { flex: none; width: 24px; height: 24px; margin-top: 18px; border-radius: 99px; display: grid; place-items: center; font-size: 12px; font-weight: 800; color: var(--bg); background: var(--text); }
+.ck4-blk-f { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+.ck4-l1 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.ck4-l2 { display: grid; grid-template-columns: 1.3fr 1fr auto; gap: 8px; align-items: end; }
+.ck4-blk label span, .ck-field span { display: block; font-size: 11.5px; font-weight: 700; color: var(--text-3); margin-bottom: 3px; }
+.ck4-blk input[type="number"], .ck4-blk input[type="text"], .ck4-blk select, .ck4-pgrid input { width: 100%; min-height: 42px; padding: 0 10px; border-radius: 10px; font: 600 15px var(--font-sans); color: var(--text); background: var(--surface); border: 1px solid var(--border-2); }
+.ck4-chk { display: flex; flex-direction: column; align-items: center; }
+.ck4-chk input { width: 22px; height: 22px; margin-top: 6px; }
+.ck4-del { flex: none; width: 36px; height: 36px; margin-top: 12px; border-radius: 10px; border: 1px solid var(--border); background: var(--surface); color: var(--text-2); cursor: pointer; }
+.ck4-paces { margin-top: 14px; }
+.ck4-paces summary { cursor: pointer; font-size: 13.5px; font-weight: 650; color: var(--text-2); }
+.ck4-pgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 8px; }
+.ck4-prev { margin-top: 14px; padding: 12px 14px; border-radius: 14px; background: color-mix(in srgb, var(--ck-red) 7%, var(--surface-2)); border: 1px solid color-mix(in srgb, var(--ck-red) 25%, var(--border)); }
+.ck4-prev-h { display: flex; justify-content: space-between; align-items: baseline; }
+.ck4-prev-h b { font-size: 22px; font-weight: 800; letter-spacing: -0.03em; }
+.ck4-prev-h span { font-size: 12.5px; color: var(--text-2); }
+.ck4-prev-l { margin-top: 6px; font-size: 13.5px; line-height: 1.5; font-variant-numeric: tabular-nums; }

@@ -644,7 +644,97 @@ def generate_plan(
 # MATCHING SÉANCES RÉELLES → PLAN
 # ============================================================================
 
-def attach_actuals(plan: dict, sessions: list[dict]) -> dict:
+# Champs qui appartiennent à l'emplacement (le jour), pas à la séance.
+_SLOT_KEYS = ('date', 'dow', 'status', 'actual', 'score')
+_QUALITY_TYPES = ('frac', 'tempo', 'seuil', 'marathon', 'semi', '10k', 'vma', 'cote')
+
+
+def _is_quality_actual(a: dict) -> bool:
+    t = (a.get('type') or '').lower()
+    return any(t.startswith(k) for k in _QUALITY_TYPES)
+
+
+def relink_moved_sessions(plan: dict) -> int:
+    """Rattache une séance clé faite un autre jour que prévu.
+
+    Cas typique : la sortie longue du dimanche courue le samedi. Sans cette
+    étape, le samedi apparaît comme « bonus » sur un jour de repos et le
+    dimanche comme « manquée » : le plan reprogramme alors la séance clé, le
+    coach lit une semaine « dispersée » et juge l'exécution, alors que la séance
+    a bien été faite. On échange donc le contenu des deux jours (comme le ferait
+    un décalage manuel) quand la correspondance est nette :
+
+      - jour clé raté (passé) ou à venir dans les 3 jours ;
+      - jour voisin (±3 j) sans clé, portant une séance réalisée ;
+      - distance cohérente (≥ 70 % du prévu ; ≥ 80 % pour un jour encore à venir)
+        et, hors sortie longue, nature de séance de qualité.
+
+    Retourne le nombre d'échanges. Sans effet si rien ne correspond : on préfère
+    laisser un doute visible plutôt que d'inventer un rattachement.
+    """
+    today = date.today()
+    days = [d for w in plan.get('weeks', []) for d in w.get('days', [])]
+    by_date = {d.get('date'): d for d in days}
+    n = 0
+    for k in days:
+        if not k.get('key') or k.get('type') == 'race' or k.get('actual') or k.get('moved_from'):
+            continue
+        planned = k.get('km') or 0
+        if planned <= 0:
+            continue
+        try:
+            kd = date.fromisoformat(k['date'])
+        except Exception:
+            continue
+        future = kd >= today
+        if future and (kd - today).days > 3:
+            continue
+        best = None
+        for off in (-1, 1, -2, 2, -3, 3):
+            c = by_date.get((kd + timedelta(days=off)).isoformat())
+            if not c or c is k or c.get('key') or c.get('moved_from') or c.get('type') == 'race':
+                continue
+            a = c.get('actual')
+            if not a or c.get('status') not in ('bonus', 'over'):
+                continue
+            km = a.get('km') or 0
+            ratio = km / planned
+            if ratio < (0.8 if future else 0.7) or ratio > 1.6:
+                continue
+            if future and date.fromisoformat(c['date']) > today:
+                continue
+            if k.get('type') == 'long':
+                if km < 14:
+                    continue
+            elif not _is_quality_actual(a):
+                continue
+            score = abs(ratio - 1) + 0.05 * abs(off)
+            if best is None or score < best[0]:
+                best = (score, c)
+        if not best:
+            continue
+        c = best[1]
+        a_slot = {x: k.get(x) for x in _SLOT_KEYS if x in k}
+        b_slot = {x: c.get(x) for x in _SLOT_KEYS if x in c}
+        a_content = {x: v for x, v in k.items() if x not in _SLOT_KEYS}
+        b_content = {x: v for x, v in c.items() if x not in _SLOT_KEYS}
+        k_iso, c_iso = k['date'], c['date']
+        k.clear(); k.update(b_content); k.update(a_slot)
+        c.clear(); c.update(a_content); c.update(b_slot)
+        k['moved_from'] = c_iso; c['moved_from'] = k_iso
+        k['auto_relinked'] = True; c['auto_relinked'] = True
+        c.setdefault('coach_notes', []).append({
+            'kind': 'note',
+            'text': f"Séance clé faite le {c_iso[8:]}/{c_iso[5:7]} au lieu du {k_iso[8:]}/{k_iso[5:7]} : rattachée automatiquement.",
+        })
+        plan.setdefault('moves', []).append({
+            'at': datetime.now().isoformat(timespec='seconds'), 'from': k_iso, 'to': c_iso, 'auto': True})
+        plan['moves'] = plan['moves'][-30:]
+        n += 1
+    return n
+
+
+def attach_actuals(plan: dict, sessions: list[dict], _relinked: bool = False) -> dict:
     """
     Marque chaque jour passé du plan :
       - 'done'   : séance prévue ET réalisée
@@ -747,6 +837,10 @@ def attach_actuals(plan: dict, sessions: list[dict]) -> dict:
                 continue
             day['status'] = 'pending'
             day['actual'] = None
+
+    # Séance clé faite un autre jour : on rattache puis on recalcule statuts et scores.
+    if not _relinked and relink_moved_sessions(plan):
+        return attach_actuals(plan, sessions, _relinked=True)
 
     # Scores hebdo (conformité volume + qualité)
     if score_weeks:
