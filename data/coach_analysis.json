@@ -1,39 +1,39 @@
 {
- "generated_at": "2026-10-20T18:41:13",
+ "generated_at": "2026-10-20T18:57:14",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-10-17\", \"title\": \"Répétition générale allégée\", \"type\": \"long\", \"planned_km\": 24.3, \"key\": true, \"status\": \"done\", \"target_pace\": \"4'12\\\"/km\", \"actual\": {\"km\": 30.0, \"pace_str\": \"4'16\\\"/km\", \"fc\": 155, \"cadence\": 179, \"duration_min\": 128}, \"splits\": \"1:5'01/127/178spm 2:4'58/133/180spm 3:4'53/134/178spm 4:4'51/135/176spm 5:4'53/132/174spm 6:3'59/153/180spm 7:4'01/162/178spm 8:3'58/159/180spm 9:4'01/159/178spm 10:3'58/160/178spm 11:3'58/161/178spm 12:3'56/163/178spm 13:3'59/162/180spm 14:4'02/163/178spm 15:3'59/162/178spm 16:3'59/163/180spm 17:3'59/163/178spm 18:3'59/165/180spm 19:3'59/164/180spm 20:3'58/165/180spm 21:3'56/165/180spm 22:3'54/165/180spm 23:3'55/165/180spm 24:3'56/167/180spm 25:3'57/168/180spm 26:4'41/157/178spm 27:4'41/154/180spm 28:4'44/150/178spm 29:4'50/151/180spm 30:4'55/149/178spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 0.0, \"load\": 400.0, \"rpe\": 5.0, \"feel_label\": \"Très fort\", \"temp_c\": 20, \"balance_l\": 48.81, \"flags\": [\"stance_fade\"], \"stance_drift_pct\": 5.6, \"step_drift_pct\": -0.3}, \"score\": {\"points\": 95, \"verdict\": \"success\", \"volume_pct\": 123, \"pace_delta_s\": 4}, \"hr\": {\"avg\": 155, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 5.1, \"flags\": []}}, {\"date\": \"2026-10-18\", \"title\": \"Repos\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-10-19\", \"title\": \"Repos — fin du déficit calorique\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}]|0213c4f1f0",
- "plan_hash": "0213c4f1f0",
- "headline": "20 km test avalé à 3'30-3'48/km (loin sous l'allure visée), mais le volume dérape depuis 4 semaines — il est temps de vraiment lever le pied à J-12.",
- "analysis": "Ta forme de fond est solide : le 20 km de Paris a été couru sur un rythme nettement plus rapide que l'allure cible (3'52/km), avec une dérive cardiaque de seulement 1,2 % — ton moteur aérobie tient la route à haute intensité. La sortie longue du 17/10, 30 km à 4'16/km (4 secondes de l'allure NYC), confirme que tu sais répéter l'effort marathon même fatigué. Le vrai point noir, c'est la séance spécifique du 16/10 : ratée à 73 secondes/km au-dessus de la cible, sur seulement 64 % du volume prévu — conséquence directe du cumul course-test + séance piste à 169 % du volume la veille. Ce n'est pas un signal d'alerte isolé, c'est un symptôme : tu dépasses le volume planifié chaque semaine depuis 4 semaines (108 %, 93 %, 108 %, 121 %), et en semaine 9 ça t'a coûté 2 des 3 séances clés. À 12 jours de New York, la priorité n'est plus d'ajouter des kilomètres, c'est de les enlever : respecte les distances prescrites sur les séances clés à venir (4×800, allure NYC, SL 16 km) sans rallonger, pour arriver frais plutôt que creusé.",
+ "signature": "[{\"date\": \"2026-10-17\", \"title\": \"Répétition générale allégée\", \"type\": \"long\", \"planned_km\": 24.3, \"key\": true, \"status\": \"done\", \"target_pace\": \"4'12\\\"/km\", \"actual\": {\"km\": 30.0, \"pace_str\": \"4'16\\\"/km\", \"fc\": 155, \"cadence\": 179, \"duration_min\": 128}, \"splits\": \"1:5'01/127/178spm 2:4'58/133/180spm 3:4'53/134/178spm 4:4'51/135/176spm 5:4'53/132/174spm 6:3'59/153/180spm 7:4'01/162/178spm 8:3'58/159/180spm 9:4'01/159/178spm 10:3'58/160/178spm 11:3'58/161/178spm 12:3'56/163/178spm 13:3'59/162/180spm 14:4'02/163/178spm 15:3'59/162/178spm 16:3'59/163/180spm 17:3'59/163/178spm 18:3'59/165/180spm 19:3'59/164/180spm 20:3'58/165/180spm 21:3'56/165/180spm 22:3'54/165/180spm 23:3'55/165/180spm 24:3'56/167/180spm 25:3'57/168/180spm 26:4'41/157/178spm 27:4'41/154/180spm 28:4'44/150/178spm 29:4'50/151/180spm 30:4'55/149/178spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 0.0, \"load\": 400.0, \"rpe\": 5.0, \"feel_label\": \"Très fort\", \"temp_c\": 20, \"balance_l\": 48.81, \"flags\": [\"stance_fade\"], \"stance_drift_pct\": 5.6, \"step_drift_pct\": -0.3}, \"score\": {\"points\": 95, \"verdict\": \"success\", \"volume_pct\": 123, \"pace_delta_s\": 4}, \"hr\": {\"avg\": 155, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 5.1, \"flags\": []}}, {\"date\": \"2026-10-18\", \"title\": \"Repos\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-10-19\", \"title\": \"Repos — fin du déficit calorique\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}]|e25a8b8a2d",
+ "plan_hash": "e25a8b8a2d",
+ "headline": "Course-test et répétition générale au niveau sub-3h, mais le ratio volume/qualité de la semaine 9 doit se resserrer en taper.",
+ "analysis": "Deux séances valent de l'or cette quinzaine : le 20 km de Paris du 11/10, couru à 3'35-3'48/km en plein effort avec un découplage FC/allure de seulement 1,2 %, et la répétition générale du 17/10 — 20 km enchaînés à 3'54-4'02/km (quasi allure cible 3'59) sur 30 km au total, découplage 5,1 % maîtrisé. C'est le signal le plus concret que tu as reçu depuis le début du plan : ton corps tient l'allure course sur volume long. Mais la semaine 9 affiche 121 % du volume prévu (77,5 km vs 64,3) pour seulement 1 séance clé réussie sur 3 : la piste club du 14/10 a dérapé à 169 % du volume prévu avec un découplage de 16,4 %, et le lendemain la séance spécifique allure NYC du 16/10 s'est effondrée (5'12/km au lieu de 3'59, seulement 64 % du volume fait). La séquence est claire — tu as accumulé du volume non prescrit juste avant une séance de qualité, et elle en a payé le prix. À 12 jours de la course, le risque n'est plus l'entraînement insuffisant, c'est l'excès de kilomètres gratuits qui grignote la fraîcheur nécessaire aux séances clés qui restent (VMA le 21, allure NYC le 23, longue le 25, seuil le 27). Côté mécanique, rien d'alarmant : équilibre d'appui stable (48-51 % gauche), seule la foulée du 30 km affiche un contact au sol +5,6 % en fin de course, cohérent avec la distance et sans douleur signalée. Focus de la semaine : exécuter les séances prescrites à la lettre, sans rallonge, pour arriver à New York sur la dynamique du 17/10 et pas sur celle du 14/10.",
  "forme": {
   "score": 74,
   "verdict": "surveiller",
-  "headline": "Fitness au rendez-vous, mais le taper n'en est pas un",
-  "detail": "Le 20 km test et la SL de 30 km à allure marathon montrent une forme solide — le moteur est prêt. Mais 4 semaines d'affilée au-dessus du volume prévu (jusqu'à 121 %) ont fait sauter une séance clé sur deux cette semaine : la marge de récup se resserre juste quand elle devrait s'élargir. Focus des 12 prochains jours : exécuter les séances telles que prescrites, sans rallonge.",
+  "headline": "Fitness au niveau, gestion du volume en taper à resserrer",
+  "detail": "La répétition générale du 17/10 (20 km à allure cible, découplage 5,1 %) confirme que le sub-3h est dans tes jambes. Le point à corriger : la semaine dernière à 121 % du volume prévu n'a produit qu'1 séance clé réussie sur 3, et l'excès de volume du 14/10 a directement plombé la séance spécifique du 16/10. Pour les 12 jours restants, zéro kilomètre bonus — les séances prescrites suffisent.",
   "indicateurs": {
    "fraicheur": {
-    "valeur": "dette légère",
-    "trend": "down",
-    "etat": "watch",
-    "note": "4 sem. en surcharge volume"
+    "valeur": "+6",
+    "trend": "up",
+    "etat": "ok",
+    "note": "2 jours off, bien récupéré"
    },
    "compliance": {
-    "valeur": "121 % volume S9",
-    "trend": "up",
+    "valeur": "77,5/64,3 km · 1/3 clés",
+    "trend": "down",
     "etat": "watch",
-    "note": "distances systém. dépassées"
+    "note": "trop de volume, pas assez de clés"
    },
    "aerobie": {
     "valeur": "5,1 %",
     "trend": "flat",
     "etat": "ok",
-    "note": "dérive normale sur SL 30 km"
+    "note": "découplage maîtrisé sur 30 km"
    },
    "achille": {
-    "valeur": "stable 48-51 %",
+    "valeur": "stable",
     "trend": "flat",
     "etat": "ok",
-    "note": "équilibre gauche/droite dans la norme"
+    "note": "équilibre d'appui 48-51 %, pas de douleur"
    }
   }
  },
@@ -41,22 +41,22 @@
   {
    "severity": "minor",
    "kind": "add_note",
-   "date": "2026-10-23",
+   "date": "2026-10-21",
    "field": "description_note",
-   "new_value": "Tiens-toi strictement aux 11 km à l'allure NYC, pas un mètre de plus. L'objectif est de reconstruire la confiance après le raté du 16/10, pas de tester le volume.",
-   "reason": "Dernière séance allure marathon ratée (-73s/km, 64% du volume prévu) suite au cumul course-test + séance piste à 169% de volume la veille.",
-   "id": "6e78a562",
-   "detail": "2026-10-23 : note ajoutée"
+   "new_value": "Piste allégée : fais exactement les 4×800 prévus, pas une rallonge. Après la semaine à 121 % de volume, l'objectif est la fraîcheur pour l'allure NYC du 23, pas le kilométrage.",
+   "reason": "La surcharge de volume du 14/10 a directement précédé l'échec de la séance spécifique du 16/10 ; éviter de reproduire le schéma à 2 jours de la séance MP clé.",
+   "id": "67e013d9",
+   "detail": "2026-10-21 : note ajoutée"
   },
   {
    "severity": "minor",
    "kind": "add_note",
-   "date": "2026-10-25",
+   "date": "2026-10-23",
    "field": "description_note",
-   "new_value": "Coupe à 16 km pile, même si les jambes donnent envie de rallonger. 4 semaines d'affilée au-dessus du volume prévu : la marge de récup doit se reconstituer avant le 1er novembre, pas se creuser davantage.",
-   "reason": "Volume hebdo systématiquement dépassé (108%, 93%, 108%, 121% sur les 4 dernières semaines) alors qu'on entre dans la vraie phase d'affûtage à 12 jours de la course.",
-   "id": "bd043a9b",
-   "detail": "2026-10-25 : note ajoutée"
+   "new_value": "Allure NYC 6 km à 4'12/km strict, pas plus vite. La dernière tentative (16/10) a cassé à 5'12/km après une semaine trop chargée — ici l'enjeu est de retrouver la sensation de contrôle du 17/10, pas de prouver quoi que ce soit.",
+   "reason": "Dernière séance de ce type ratée (volume_pct 64, pace_delta +73s) ; cadrer l'allure cible après un épisode d'échec évite une surcompensation.",
+   "id": "405f3045",
+   "detail": "2026-10-23 : note ajoutée"
   }
  ],
  "pending": []
