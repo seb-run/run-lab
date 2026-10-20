@@ -1797,99 +1797,7 @@
                 "stance_fade",
                 "asym_vitesse"
               ]
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 320,
-                "fc": 126,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 299,
-                "fc": 140,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 306,
-                "fc": 141,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 232,
-                "fc": 161,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 235,
-                "fc": 170,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 235,
-                "fc": 172,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 237,
-                "fc": 176,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 236,
-                "fc": 176,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 236,
-                "fc": 178,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 235,
-                "fc": 178,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 244,
-                "fc": 182,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 244,
-                "fc": 181,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 244,
-                "fc": 183,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 323,
-                "fc": 166,
-                "ca": 170
-              },
-              {
-                "km": 1.07,
-                "ps": 308,
-                "fc": 167,
-                "ca": 174
-              }
-            ]
+            }
           },
           "score": {
             "points": 100,
@@ -10535,7 +10443,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos course à pied. ⚖️ À partir d'aujourd'hui : retour à l'équilibre calorique. Plus de muscu jusqu'à la course.",
-          "status": "today",
+          "status": "done",
           "actual": null,
           "coach_notes": [
             {
@@ -10553,7 +10461,7 @@
           "duration_min": 50,
           "key": false,
           "description": "50' facile + 6 LD.\n[Footing facile · 5'05–5'25/km]\nChaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-          "status": "pending",
+          "status": "today",
           "target_pace": "5'15\"/km",
           "target_pace_sec": 315,
           "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
@@ -10592,6 +10500,10 @@
               "validated": true,
               "auto": true,
               "reason": "La générale allégée (24 km) vient d'être repositionnée sur le 20/10 — enchaîner le lendemain avec une piste à 3'32/km reproduit le schéma qui a fait échouer la séance allure marathon du 16/10. On sécurise la récupération avant les 2 séances clés qui suivent (allure NYC le 23, sortie longue le 25)."
+            },
+            {
+              "kind": "note",
+              "text": "Respecte le format 4×800 à 3'40/km précisément, sans rallonger. La piste du 14 a dérapé à 169 % du volume prévu avec un décrochage cardiaque à 16 % — objectif ici : qualité, pas quantité."
             }
           ],
           "_replaced_by_coach": true,
@@ -10616,7 +10528,11 @@
           "target_pace_sec": 325,
           "shoe": "On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
           "scheduled_time": "06:30",
-          "actual": null
+          "actual": null,
+          "_rescheduled_from": "2026-10-18",
+          "_rescheduled_title": "Répétition générale allégée",
+          "_rescheduled_desc": "7 km très facile en échauffement (5'15/km), puis 12 km à l'allure NYC (4'12/km) en te concentrant sur les sensations plus que sur le chrono, puis 8 km retour au calme (5'00-5'15/km). Si les jambes répondent bien sur les 12 km, tu as la confirmation qu'il te faut. Si ça tire comme le 16, tu coupes le bloc allure et tu termines en facile — pas d'orgueil sur cette séance.",
+          "_rescheduled_pace": "4'12\"/km"
         },
         {
           "date": "2026-10-23",
@@ -10632,7 +10548,13 @@
           "target_pace_sec": 252,
           "shoe": "Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
           "scheduled_time": "06:15",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Vise pile 4'12/km sur les 6 km. Le spécifique du 16 a été couru à 5'12/km (73 sec/km trop lent) — c'était un footing, pas un travail d'allure. Cette fois, le repère est le chrono, pas la sensation."
+            }
+          ]
         },
         {
           "date": "2026-10-24",
@@ -10791,7 +10713,7 @@
     {
       "kind": "reschedule_key",
       "from_date": "2026-10-18",
-      "to_date": "2026-10-20",
+      "to_date": "2026-10-22",
       "title": "Répétition générale allégée",
       "reason": "Séance clé manquée — repositionnée sur un jour libre"
     }
