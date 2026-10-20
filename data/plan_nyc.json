@@ -10054,15 +10054,59 @@
           }
         },
         {
+          "type": "long",
+          "title": "Répétition générale allégée",
+          "km": 24.3,
+          "duration_min": 150,
+          "key": true,
+          "description": "7 km très facile en échauffement (5'15/km), puis 12 km à l'allure NYC (4'12/km) en te concentrant sur les sensations plus que sur le chrono, puis 8 km retour au calme (5'00-5'15/km). Si les jambes répondent bien sur les 12 km, tu as la confirmation qu'il te faut. Si ça tire comme le 16, tu coupes le bloc allure et tu termines en facile — pas d'orgueil sur cette séance.",
+          "target_pace": "4'12\"/km",
+          "target_pace_sec": 252,
+          "shoe": "Evo SL (neuve)",
+          "scheduled_time": "09:40",
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Vigilance Achille/asymétrie : flag 'vitesse asymétrique' présent sur 3 séances récentes (02/10, 04/10, 06/10). Si tiraillement ou gêne au mollet/tendon pendant les 20 km à allure NYC, coupe net et termine en footing facile plutôt que de forcer."
+            },
+            {
+              "kind": "note",
+              "text": "Sortie longue du 02/10 : contact au sol allongé de 6 % en fin de séance. Sur ces 30 km, reste attentif à ta posture/cadence dans le dernier tiers, surtout si la fatigue se fait sentir."
+            },
+            {
+              "kind": "replacement",
+              "from_title": "🎯 RÉPÉTITION GÉNÉRALE — 30 km dont 20 à l'allure NYC",
+              "to_title": "Répétition générale allégée",
+              "text": "7 km très facile en échauffement (5'15/km), puis 12 km à l'allure NYC (4'12/km) en te concentrant sur les sensations plus que sur le chrono, puis 8 km retour au calme (5'00-5'15/km). Si les jambes répondent bien sur les 12 km, tu as la confirmation qu'il te faut. Si ça tire comme le 16, tu coupes le bloc allure et tu termines en facile — pas d'orgueil sur cette séance.",
+              "validated": true,
+              "auto": true,
+              "reason": "Deux clés sur deux ratées cette semaine (piste surchargée à 169 % le 14, échec total du test allure NYC le 16 à 5'12/km au lieu de 3'59) juste avant la plus grosse séance du cycle à 14 jours de la course — on réduit le volume à allure marathon pour sécuriser le bloc plutôt que de risquer un nouvel é"
+            },
+            {
+              "kind": "volume",
+              "from": 27.0,
+              "to": 24.3,
+              "reason": "Semaine à 119 % du volume prévu + séance allure ratée 2 jours avant : réduire légèrement la répétition générale pour sécuriser la récupération avant les 2 dernières semaines de taper."
+            },
+            {
+              "kind": "note",
+              "text": "Répétition générale : tiens-toi strictement aux 24,3 km prévus, pas un km de plus. Après le dérapage du 14 (169 % du volume) suivi de l'échec du 16, ton corps te dit que tu dépasses la charge qu'il peut absorber en ce moment. Allure NYC stricte, pas de surenchère."
+            },
+            {
+              "kind": "note",
+              "text": "Séance clé faite le 17/10 au lieu du 18/10 : rattachée automatiquement."
+            }
+          ],
+          "_replaced_by_coach": true,
+          "_replaced_from": {
+            "title": "🎯 RÉPÉTITION GÉNÉRALE — 30 km dont 20 à l'allure NYC",
+            "target_pace": "4'12\"/km"
+          },
+          "shoe_note": "Légère et amortie, confortable sur la durée.",
+          "_shoe_key": "evosl_new",
           "date": "2026-10-17",
           "dow": "Sat",
-          "type": "rest",
-          "title": "Repos",
-          "km": 0.0,
-          "duration_min": 0,
-          "key": false,
-          "description": "Repos complet. Préparation du matériel exactement comme un jour de course.",
-          "status": "bonus",
+          "status": "done",
           "actual": {
             "km": 30.0,
             "duration_min": 128,
@@ -10352,59 +10396,47 @@
               }
             ]
           },
-          "score": null
+          "score": {
+            "points": 95,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 123,
+            "volume_points": 92,
+            "pace_points": 100,
+            "pace_target_s": 252,
+            "pace_actual_s": 256,
+            "pace_actual_str": "4'16\"/km",
+            "pace_delta_s": 4,
+            "is_quality": false,
+            "hr": {
+              "avg": 155,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 5.1,
+              "flags": []
+            },
+            "reasons": [
+              "Séance remplacée par le coach (validée)",
+              "Volume 123%",
+              "Allure +4\"/km vs cible"
+            ]
+          },
+          "moved_from": "2026-10-18",
+          "auto_relinked": true
         },
         {
+          "type": "rest",
+          "title": "Repos",
+          "km": 0.0,
+          "duration_min": 0,
+          "key": false,
+          "description": "Repos complet. Préparation du matériel exactement comme un jour de course.",
           "date": "2026-10-18",
           "dow": "Sun",
-          "type": "long",
-          "title": "Répétition générale allégée",
-          "km": 24.3,
-          "duration_min": 150,
-          "key": true,
-          "description": "7 km très facile en échauffement (5'15/km), puis 12 km à l'allure NYC (4'12/km) en te concentrant sur les sensations plus que sur le chrono, puis 8 km retour au calme (5'00-5'15/km). Si les jambes répondent bien sur les 12 km, tu as la confirmation qu'il te faut. Si ça tire comme le 16, tu coupes le bloc allure et tu termines en facile — pas d'orgueil sur cette séance.",
-          "status": "missed",
-          "target_pace": "4'12\"/km",
-          "target_pace_sec": 252,
-          "shoe": "Evo SL (neuve)",
-          "scheduled_time": "09:40",
+          "status": "done",
           "actual": null,
-          "coach_notes": [
-            {
-              "kind": "note",
-              "text": "Vigilance Achille/asymétrie : flag 'vitesse asymétrique' présent sur 3 séances récentes (02/10, 04/10, 06/10). Si tiraillement ou gêne au mollet/tendon pendant les 20 km à allure NYC, coupe net et termine en footing facile plutôt que de forcer."
-            },
-            {
-              "kind": "note",
-              "text": "Sortie longue du 02/10 : contact au sol allongé de 6 % en fin de séance. Sur ces 30 km, reste attentif à ta posture/cadence dans le dernier tiers, surtout si la fatigue se fait sentir."
-            },
-            {
-              "kind": "replacement",
-              "from_title": "🎯 RÉPÉTITION GÉNÉRALE — 30 km dont 20 à l'allure NYC",
-              "to_title": "Répétition générale allégée",
-              "text": "7 km très facile en échauffement (5'15/km), puis 12 km à l'allure NYC (4'12/km) en te concentrant sur les sensations plus que sur le chrono, puis 8 km retour au calme (5'00-5'15/km). Si les jambes répondent bien sur les 12 km, tu as la confirmation qu'il te faut. Si ça tire comme le 16, tu coupes le bloc allure et tu termines en facile — pas d'orgueil sur cette séance.",
-              "validated": true,
-              "auto": true,
-              "reason": "Deux clés sur deux ratées cette semaine (piste surchargée à 169 % le 14, échec total du test allure NYC le 16 à 5'12/km au lieu de 3'59) juste avant la plus grosse séance du cycle à 14 jours de la course — on réduit le volume à allure marathon pour sécuriser le bloc plutôt que de risquer un nouvel é"
-            },
-            {
-              "kind": "volume",
-              "from": 27.0,
-              "to": 24.3,
-              "reason": "Semaine à 119 % du volume prévu + séance allure ratée 2 jours avant : réduire légèrement la répétition générale pour sécuriser la récupération avant les 2 dernières semaines de taper."
-            },
-            {
-              "kind": "note",
-              "text": "Répétition générale : tiens-toi strictement aux 24,3 km prévus, pas un km de plus. Après le dérapage du 14 (169 % du volume) suivi de l'échec du 16, ton corps te dit que tu dépasses la charge qu'il peut absorber en ce moment. Allure NYC stricte, pas de surenchère."
-            }
-          ],
-          "_replaced_by_coach": true,
-          "_replaced_from": {
-            "title": "🎯 RÉPÉTITION GÉNÉRALE — 30 km dont 20 à l'allure NYC",
-            "target_pace": "4'12\"/km"
-          },
-          "shoe_note": "Légère et amortie, confortable sur la durée.",
-          "_shoe_key": "evosl_new"
+          "moved_from": "2026-10-17",
+          "auto_relinked": true
         }
       ],
       "volume_actual_to_date": 77.5,
@@ -10416,12 +10448,12 @@
         "km_planned": 64.3,
         "km_done_week": 77.5,
         "km_planned_week": 64.3,
-        "sessions_done": 4,
+        "sessions_done": 5,
         "sessions_planned": 5,
         "sessions_done_week": 5,
-        "keys_success": 0,
+        "keys_success": 1,
         "keys_total": 3,
-        "points": 89,
+        "points": 91,
         "verdict": "success"
       }
     },
@@ -10688,6 +10720,10 @@
             {
               "kind": "note",
               "text": "Vise pile 4'12/km sur les 6 km. Le spécifique du 16 a été couru à 5'12/km (73 sec/km trop lent) — c'était un footing, pas un travail d'allure. Cette fois, le repère est le chrono, pas la sensation."
+            },
+            {
+              "kind": "note",
+              "text": "Tiens-toi strictement aux 11 km à l'allure NYC, pas un mètre de plus. L'objectif est de reconstruire la confiance après le raté du 16/10, pas de tester le volume."
             }
           ]
         },
@@ -10717,7 +10753,13 @@
           "target_pace_sec": 287,
           "shoe": "Adizero Boston 13 (231 km)",
           "scheduled_time": "08:30",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Coupe à 16 km pile, même si les jambes donnent envie de rallonger. 4 semaines d'affilée au-dessus du volume prévu : la marge de récup doit se reconstituer avant le 1er novembre, pas se creuser davantage."
+            }
+          ]
         }
       ],
       "volume_actual_to_date": 0.0,
@@ -10844,20 +10886,18 @@
       ]
     }
   ],
-  "adaptations": [
-    {
-      "kind": "reschedule_key",
-      "from_date": "2026-10-18",
-      "to_date": "2026-10-22",
-      "title": "Répétition générale allégée",
-      "reason": "Séance clé manquée — repositionnée sur un jour libre"
-    }
-  ],
+  "adaptations": [],
   "moves": [
     {
       "at": "2026-10-01T19:31:43",
       "from": "2026-10-02",
       "to": "2026-10-04"
+    },
+    {
+      "at": "2026-10-20T18:39:52",
+      "from": "2026-10-18",
+      "to": "2026-10-17",
+      "auto": true
     }
   ]
 }

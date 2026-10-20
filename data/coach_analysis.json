@@ -1,39 +1,39 @@
 {
- "generated_at": "2026-10-20T10:27:00",
+ "generated_at": "2026-10-20T18:41:13",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-10-17\", \"title\": \"Repos\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"bonus\", \"target_pace\": null, \"actual\": {\"km\": 30.0, \"pace_str\": \"4'16\\\"/km\", \"fc\": 155, \"cadence\": 179, \"duration_min\": 128}, \"splits\": \"1:5'01/127/178spm 2:4'58/133/180spm 3:4'53/134/178spm 4:4'51/135/176spm 5:4'53/132/174spm 6:3'59/153/180spm 7:4'01/162/178spm 8:3'58/159/180spm 9:4'01/159/178spm 10:3'58/160/178spm 11:3'58/161/178spm 12:3'56/163/178spm 13:3'59/162/180spm 14:4'02/163/178spm 15:3'59/162/178spm 16:3'59/163/180spm 17:3'59/163/178spm 18:3'59/165/180spm 19:3'59/164/180spm 20:3'58/165/180spm 21:3'56/165/180spm 22:3'54/165/180spm 23:3'55/165/180spm 24:3'56/167/180spm 25:3'57/168/180spm 26:4'41/157/178spm 27:4'41/154/180spm 28:4'44/150/178spm 29:4'50/151/180spm 30:4'55/149/178spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 0.0, \"load\": 400.0, \"rpe\": 5.0, \"feel_label\": \"Très fort\", \"temp_c\": 20, \"balance_l\": 48.81, \"flags\": [\"stance_fade\"], \"stance_drift_pct\": 5.6, \"step_drift_pct\": -0.3}}, {\"date\": \"2026-10-18\", \"title\": \"Répétition générale allégée\", \"type\": \"long\", \"planned_km\": 24.3, \"key\": true, \"status\": \"missed\", \"target_pace\": \"4'12\\\"/km\"}, {\"date\": \"2026-10-19\", \"title\": \"Repos — fin du déficit calorique\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}]|7413e111e3",
- "plan_hash": "7413e111e3",
- "headline": "Semaine 9 dispersée (0/3 clés réussies) mais le fond est là : 20 km de Paris couru sous l'allure cible.",
- "analysis": "Regarde les deux faces de la semaine : d'un côté, 3 séances clés sur 3 ratées ou décalées — la piste du 14 explosée en volume (169 %, décrochage cardiaque à 16,4 %), le spécifique allure NYC du 16 tourné à 5'12/km au lieu de 3'59 (quasi un footing), et la sortie longue du 18 zappée parce que tu avais improvisé 30 km la veille. De l'autre côté, le 20 km de Paris du 11 : tu as roulé à 3'36-3'48/km sur l'essentiel de la course, nettement sous ton cap de 3'52, avec un décrochage cardiaque de seulement 1,2 % — c'est le signal le plus solide du mois, ton moteur aérobie répond. Le vrai risque maintenant n'est pas la forme, c'est la discipline : à 12 jours de la course tu dois arrêter les sorties bonus non planifiées (30 km improvisé, piste à 169 % du prévu) et exécuter le plan tel qu'il est écrit, surtout les allures spécifiques. Le plan a déjà réagi (piste allégée à 4×800 le 21, spécifique repositionné le 23) — ton focus cette semaine : viser pile 3'40/km sur le 4×800 et pile 4'12/km sur les 6 km spécifiques, sans y ajouter de kilomètres de ton cru.",
+ "signature": "[{\"date\": \"2026-10-17\", \"title\": \"Répétition générale allégée\", \"type\": \"long\", \"planned_km\": 24.3, \"key\": true, \"status\": \"done\", \"target_pace\": \"4'12\\\"/km\", \"actual\": {\"km\": 30.0, \"pace_str\": \"4'16\\\"/km\", \"fc\": 155, \"cadence\": 179, \"duration_min\": 128}, \"splits\": \"1:5'01/127/178spm 2:4'58/133/180spm 3:4'53/134/178spm 4:4'51/135/176spm 5:4'53/132/174spm 6:3'59/153/180spm 7:4'01/162/178spm 8:3'58/159/180spm 9:4'01/159/178spm 10:3'58/160/178spm 11:3'58/161/178spm 12:3'56/163/178spm 13:3'59/162/180spm 14:4'02/163/178spm 15:3'59/162/178spm 16:3'59/163/180spm 17:3'59/163/178spm 18:3'59/165/180spm 19:3'59/164/180spm 20:3'58/165/180spm 21:3'56/165/180spm 22:3'54/165/180spm 23:3'55/165/180spm 24:3'56/167/180spm 25:3'57/168/180spm 26:4'41/157/178spm 27:4'41/154/180spm 28:4'44/150/178spm 29:4'50/151/180spm 30:4'55/149/178spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 0.0, \"load\": 400.0, \"rpe\": 5.0, \"feel_label\": \"Très fort\", \"temp_c\": 20, \"balance_l\": 48.81, \"flags\": [\"stance_fade\"], \"stance_drift_pct\": 5.6, \"step_drift_pct\": -0.3}, \"score\": {\"points\": 95, \"verdict\": \"success\", \"volume_pct\": 123, \"pace_delta_s\": 4}, \"hr\": {\"avg\": 155, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 5.1, \"flags\": []}}, {\"date\": \"2026-10-18\", \"title\": \"Repos\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-10-19\", \"title\": \"Repos — fin du déficit calorique\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}]|0213c4f1f0",
+ "plan_hash": "0213c4f1f0",
+ "headline": "20 km test avalé à 3'30-3'48/km (loin sous l'allure visée), mais le volume dérape depuis 4 semaines — il est temps de vraiment lever le pied à J-12.",
+ "analysis": "Ta forme de fond est solide : le 20 km de Paris a été couru sur un rythme nettement plus rapide que l'allure cible (3'52/km), avec une dérive cardiaque de seulement 1,2 % — ton moteur aérobie tient la route à haute intensité. La sortie longue du 17/10, 30 km à 4'16/km (4 secondes de l'allure NYC), confirme que tu sais répéter l'effort marathon même fatigué. Le vrai point noir, c'est la séance spécifique du 16/10 : ratée à 73 secondes/km au-dessus de la cible, sur seulement 64 % du volume prévu — conséquence directe du cumul course-test + séance piste à 169 % du volume la veille. Ce n'est pas un signal d'alerte isolé, c'est un symptôme : tu dépasses le volume planifié chaque semaine depuis 4 semaines (108 %, 93 %, 108 %, 121 %), et en semaine 9 ça t'a coûté 2 des 3 séances clés. À 12 jours de New York, la priorité n'est plus d'ajouter des kilomètres, c'est de les enlever : respecte les distances prescrites sur les séances clés à venir (4×800, allure NYC, SL 16 km) sans rallonger, pour arriver frais plutôt que creusé.",
  "forme": {
-  "score": 66,
+  "score": 74,
   "verdict": "surveiller",
-  "headline": "0/3 clés réussies cette semaine, mais moteur aérobie intact",
-  "detail": "Le 20 km de Paris (3'40-3'48/km, décrochage 1,2 %) montre une forme solide. Mais la dispersion de la semaine — piste à 169 % du volume prévu, spécifique loupé de 73 secondes/km, longue remplacée par un 30 km improvisé — doit s'arrêter : à 12 jours de New York, l'exécution compte plus que le volume.",
+  "headline": "Fitness au rendez-vous, mais le taper n'en est pas un",
+  "detail": "Le 20 km test et la SL de 30 km à allure marathon montrent une forme solide — le moteur est prêt. Mais 4 semaines d'affilée au-dessus du volume prévu (jusqu'à 121 %) ont fait sauter une séance clé sur deux cette semaine : la marge de récup se resserre juste quand elle devrait s'élargir. Focus des 12 prochains jours : exécuter les séances telles que prescrites, sans rallonge.",
   "indicateurs": {
    "fraicheur": {
     "valeur": "dette légère",
     "trend": "down",
     "etat": "watch",
-    "note": "30 km + piste non prévus"
+    "note": "4 sem. en surcharge volume"
    },
    "compliance": {
-    "valeur": "0/3 clés réussies",
-    "trend": "down",
+    "valeur": "121 % volume S9",
+    "trend": "up",
     "etat": "watch",
-    "note": "volume ok, exécution non"
+    "note": "distances systém. dépassées"
    },
    "aerobie": {
-    "valeur": "1,2 %",
+    "valeur": "5,1 %",
     "trend": "flat",
     "etat": "ok",
-    "note": "décrochage faible en course"
+    "note": "dérive normale sur SL 30 km"
    },
    "achille": {
-    "valeur": "48 % appui gauche",
+    "valeur": "stable 48-51 %",
     "trend": "flat",
-    "etat": "watch",
-    "note": "asymétrie sur efforts durs"
+    "etat": "ok",
+    "note": "équilibre gauche/droite dans la norme"
    }
   }
  },
@@ -41,22 +41,22 @@
   {
    "severity": "minor",
    "kind": "add_note",
-   "date": "2026-10-21",
+   "date": "2026-10-23",
    "field": "description_note",
-   "new_value": "Respecte le format 4×800 à 3'40/km précisément, sans rallonger. La piste du 14 a dérapé à 169 % du volume prévu avec un décrochage cardiaque à 16 % — objectif ici : qualité, pas quantité.",
-   "reason": "Séance clé précédente de type piste largement sur-réalisée en volume avec décrochage cardiaque notable (16,4%), besoin de recadrer sur la consigne exacte.",
-   "id": "1f873905",
-   "detail": "2026-10-21 : note ajoutée"
+   "new_value": "Tiens-toi strictement aux 11 km à l'allure NYC, pas un mètre de plus. L'objectif est de reconstruire la confiance après le raté du 16/10, pas de tester le volume.",
+   "reason": "Dernière séance allure marathon ratée (-73s/km, 64% du volume prévu) suite au cumul course-test + séance piste à 169% de volume la veille.",
+   "id": "6e78a562",
+   "detail": "2026-10-23 : note ajoutée"
   },
   {
    "severity": "minor",
    "kind": "add_note",
-   "date": "2026-10-23",
+   "date": "2026-10-25",
    "field": "description_note",
-   "new_value": "Vise pile 4'12/km sur les 6 km. Le spécifique du 16 a été couru à 5'12/km (73 sec/km trop lent) — c'était un footing, pas un travail d'allure. Cette fois, le repère est le chrono, pas la sensation.",
-   "reason": "Séance clé 'allure NYC' précédente complètement ratée côté allure (5'12 vs 3'59 cible), nécessité de recalibrer l'objectif avant la répétition.",
-   "id": "13a3d249",
-   "detail": "2026-10-23 : note ajoutée"
+   "new_value": "Coupe à 16 km pile, même si les jambes donnent envie de rallonger. 4 semaines d'affilée au-dessus du volume prévu : la marge de récup doit se reconstituer avant le 1er novembre, pas se creuser davantage.",
+   "reason": "Volume hebdo systématiquement dépassé (108%, 93%, 108%, 121% sur les 4 dernières semaines) alors qu'on entre dans la vraie phase d'affûtage à 12 jours de la course.",
+   "id": "bd043a9b",
+   "detail": "2026-10-25 : note ajoutée"
   }
  ],
  "pending": []
