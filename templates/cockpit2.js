@@ -32,8 +32,8 @@
     layers: '<path d="M12 3l9 5-9 5-9-5 9-5zM3 13l9 5 9-5"/>',
   });
   const pct1 = (n) => (n > 0 ? '+' : n < 0 ? '−' : '') + Math.abs(Math.round(n * 10) / 10).toString().replace('.', ',') + ' %';
-  const fmtPace = (s) => { if (!s) return '—'; const m = Math.floor(s / 60), r = Math.round(s % 60); return m + "'" + String(r === 60 ? 0 : r).padStart(2, '0') + '"'; };
-  const fmtTime = (s) => { const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), r = Math.round(s % 60); return (h ? h + 'h' + String(m).padStart(2, '0') : m) + "'" + String(r).padStart(2, '0') + (h ? '' : '"'); };
+  const fmtPace = (sec) => { if (!sec) return '—'; const s = Math.round(sec); return Math.floor(s / 60) + "'" + String(s % 60).padStart(2, '0') + '"'; };
+  const fmtTime = (sec) => { const s = Math.round(sec), h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), r = s % 60; return (h ? h + 'h' + String(m).padStart(2, '0') : m) + "'" + String(r).padStart(2, '0') + (h ? '' : '"'); };
   const dmy = (d) => { const [dd, mm, yy] = d.split('/').map(Number); return new Date(yy, mm - 1, dd); };
   const daysAgo = (n) => new Date(parse(TODAY).getTime() - n * 864e5);
 
@@ -141,7 +141,7 @@
   // ====================================================================
   // COURSES
   // ====================================================================
-  const DIST = [['5k', '5 km', 5], ['10k', '10 km', 10], ['semi', 'Semi', 21.0975], ['marathon', 'Marathon', 42.195]];
+  const DIST = [['5k', '5 km', 5], ['10k', '10 km', 10], ['20k', '20 km', 20], ['semi', 'Semi', 21.0975], ['marathon', 'Marathon', 42.195]];
   function bestByDistance() {
     const races = (RAW.races && RAW.races.past_races) || [];
     return DIST.map(([k, l, official]) => {
@@ -171,6 +171,54 @@
     { l: '2h39', s: 9540, note: 'objectif rêve' },
   ];
 
+
+  // ---------------------------------------------------------------- allures de la forme du moment
+  // Référence : la meilleure course (≥ 5 km) des 120 derniers jours, ramenée à une
+  // équivalence 20 km par la formule de Riegel (exposant 1,06), puis redéclinée.
+  // C'est un ordre de grandeur honnête, pas une mesure : il se met à jour tout seul
+  // à chaque nouvelle course.
+  const RIEGEL = 1.06;
+  function fitnessModel() {
+    const races = ((RAW.races && RAW.races.past_races) || []).filter(r => r.time_s && r.km && r.km >= 4.7 && r.start_time);
+    const limit = isoLocal(daysAgo(120));
+    const km = { '5k': 5, '10k': 10, '15k': 15, '20k': 20, semi: 21.0975, marathon: 42.195 };
+    let best = null;
+    races.filter(r => r.start_time.slice(0, 10) >= limit).forEach(r => {
+      const d = km[r.distance_key] || r.km;
+      const t20 = r.time_s * Math.pow(20 / d, RIEGEL);          // équivalent 20 km
+      if (!best || t20 < best.t20) best = { r, t20 };
+    });
+    if (!best) return null;
+    const T = (dist) => best.t20 * Math.pow(dist / 20, RIEGEL);
+    const marathon = T(42.195) * 1.025;                          // l'endurance coûte ~2,5 % en plus
+    const nycT = (() => { const t = (RAW.plan && RAW.plan.meta && RAW.plan.meta.target_time) || "2h55'00"; const m = t.match(/(\d+)h(\d+)'?(\d+)?/); return m ? (+m[1] * 3600 + +m[2] * 60 + (+m[3] || 0)) : 10500; })();
+    return {
+      ref: best.r, t20: best.t20,
+      rows: [
+        { k: '5k', l: '5 km', t: T(5), pace: T(5) / 5 },
+        { k: '10k', l: '10 km', t: T(10), pace: T(10) / 10 },
+        { k: 'seuil', l: 'Seuil (≈ 1 h)', pace: T(10) / 10 * 1.032 },
+        { k: 'semi', l: 'Semi', t: T(21.0975), pace: T(21.0975) / 21.0975 },
+        { k: 'marathon', l: 'Marathon, ton potentiel', t: marathon, pace: marathon / 42.195 },
+        { k: 'nyc', l: 'NYC · objectif du plan', t: nycT, pace: nycT / 42.195 },
+      ],
+      vma: T(5) / 5 * 0.965,
+    };
+  }
+  function renderFitness(host) {
+    const m = fitnessModel(); if (!m) return '';
+    const d = m.ref.start_time.slice(0, 10).split('-').reverse().join('/');
+    return `<div class="ck-card ck2-fit">
+      <div class="ck-card-h"><h3>Tes allures du moment</h3><span>d'après ${esc(m.ref.name.replace(/ \d{4}$/, ''))}</span></div>
+      <p class="ck-muted">Calculées à partir de ta course du ${esc(d)} (${fmtTime(m.ref.time_s)}). Elles se recalculent à chaque nouvelle course.</p>
+      <div class="ck2-fit-rows">${m.rows.map(r => `<div class="ck2-fit-r${r.k === 'nyc' ? ' is-nyc' : ''}">
+        <span>${esc(r.l)}</span><b>${fmtPace(r.pace)}/km</b><em>${r.t ? fmtTime(r.t) : ''}</em></div>`).join('')}
+        <div class="ck2-fit-r"><span>VMA (≈ 3 000 m)</span><b>${fmtPace(m.vma)}/km</b><em></em></div></div>
+      <p class="ck2-fit-n">Le marathon est ton potentiel à plat par temps frais. L'objectif NYC est volontairement plus lent : parcours dur, et on protège la fin de course.</p>
+    </div>`;
+  }
+  window.__ckFitness = fitnessModel;
+
   function renderCourses() {
     const root = $('#t-race'); if (!root || $('#ckCourses')) return;
     const up = upcoming();
@@ -194,6 +242,8 @@
       <section id="ckCourses" class="ck2-courses">
         <div class="ck-card-h"><h3>Prochaines échéances</h3><span>${up.length}</span></div>
         <div class="ck2-evs">${events || '<p class="ck-muted">Aucune course à venir.</p>'}</div>
+
+        ${renderFitness()}
 
         <div class="ck-card ck2-ladder">
           <div class="ck-card-h"><h3>L'échelle des objectifs</h3><span>marathon</span></div>

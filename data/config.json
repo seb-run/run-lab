@@ -51,11 +51,11 @@
       "name": "NYC Marathon",
       "date": "2026-11-01",
       "type": "main",
-      "target_time": "2h57'00",
+      "target_time": "2h55'00",
       "strategy_time": "3h00'00",
       "status": "confirmed",
       "priority": "primary",
-      "notes": "Cible revue à 2h55-2h58 (plan v2.5, 20/09/2026) — plafond sub-3h en stratégie conservative"
+      "notes": "Plan de course base 2h55 (4'09/km), décision à la sensation au km 32 (révisé le 20/10/2026 après le 20 km de Paris en 1h14'17)."
     },
     {
       "name": "Marathon de Milan",
@@ -69,6 +69,14 @@
     }
   ],
   "past_races": [
+    {
+      "name": "20 km de Paris 2026",
+      "start_time": "2026-10-11T09:02",
+      "distance_key": "20k",
+      "km": 20.01,
+      "time_s": 4457,
+      "note": "1h14'17 · negative split 37'52 / 36'22 · FC moy 173, dérive 1,2 %"
+    },
     {
       "name": "Marathon de Paris 2026",
       "start_time": "2026-04-12T08:00",

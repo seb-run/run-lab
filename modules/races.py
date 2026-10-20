@@ -39,6 +39,7 @@ RACE_DISTANCES = [
     {'key': '5k',       'label': '5K',       'target_km': 5.0,     'min_km': 4.95,  'max_km': 5.20},
     {'key': '10k',      'label': '10K',      'target_km': 10.0,    'min_km': 9.90,  'max_km': 10.30},
     {'key': '15k',      'label': '15K',      'target_km': 15.0,    'min_km': 14.85, 'max_km': 15.30},
+    {'key': '20k',      'label': '20K',      'target_km': 20.0,    'min_km': 19.90, 'max_km': 20.60},
     {'key': 'semi',     'label': 'Semi',     'target_km': 21.0975, 'min_km': 21.00, 'max_km': 21.40},
     {'key': 'marathon', 'label': 'Marathon', 'target_km': 42.195,  'min_km': 41.90, 'max_km': 42.50},
 ]

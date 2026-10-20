@@ -24,8 +24,18 @@
   const PACES_KEY = 'runlab.clubpaces';
   const DEFAULT_PACES = { marathon: "4'00\"", seuil: "3'41\"", semi: "3'44\"", '10k': "3'34\"", '5k': "3'25\"", vma: "3'18\"" };
   const LABELS = [['libre', 'Libre'], ['marathon', 'Marathon'], ['semi', 'Semi'], ['seuil', 'Seuil'], ['10k', '10 km'], ['5k', '5 km'], ['vma', 'VMA']];
+  const fmtP = (sec) => { const m = Math.floor(sec / 60), r = Math.round(sec % 60); return m + "'" + String(r === 60 ? 0 : r).padStart(2, '0') + '"'; };
+  // Allures par défaut recalculées sur ta forme du moment (cockpit2 : tes dernières courses),
+  // l'allure « marathon » du club étant celle de ton objectif marathon, pas ton potentiel.
+  function modelPaces() {
+    try {
+      const m = window.__ckFitness && window.__ckFitness(); if (!m) return {};
+      const by = {}; m.rows.forEach(r => { by[r.k] = r.pace; });
+      return { marathon: fmtP(by.nyc), seuil: fmtP(by.seuil), semi: fmtP(by.semi), '10k': fmtP(by['10k']), '5k': fmtP(by['5k']), vma: fmtP(m.vma) };
+    } catch (e) { return {}; }
+  }
   function loadPaces() {
-    try { return Object.assign({}, DEFAULT_PACES, JSON.parse(localStorage.getItem(PACES_KEY) || '{}')); } catch (e) { return Object.assign({}, DEFAULT_PACES); }
+    try { return Object.assign({}, DEFAULT_PACES, modelPaces(), JSON.parse(localStorage.getItem(PACES_KEY) || '{}')); } catch (e) { return Object.assign({}, DEFAULT_PACES, modelPaces()); }
   }
   function savePaces(p) { try { localStorage.setItem(PACES_KEY, JSON.stringify(p)); } catch (e) {} }
   const withUnit = (p) => (p ? (/\/km/.test(p) ? p : p + '/km') : '');
@@ -154,7 +164,7 @@
         <button type="button" class="ck-btn ck-btn-sm" id="ck4Add">+ Ajouter un bloc</button></div>
       <label class="ck-field"><span>Notes (facultatif)</span><input id="ck4Notes" type="text" maxlength="300" placeholder="ex. : au Bois de Boulogne, piste fermée"></label>
       <details class="ck4-paces"><summary>Mes allures de référence</summary>
-        <p class="ck-muted">Estimées d'après ton 20 km de Paris (1h14'17). Modifie-les, elles sont gardées sur cet appareil.</p>
+        <p class="ck-muted">Calculées d'après ta forme du moment (ton dernier 20 km). « Marathon » = l'allure de ton objectif. Modifie-les, elles sont gardées sur cet appareil.</p>
         <div class="ck4-pgrid" id="ck4Pg"></div></details>
       <div id="ck4Prev" class="ck4-prev"></div>
       <div class="ck-actions"><button type="button" class="ck-btn ck-btn-primary" id="ck4Send">Envoyer au plan</button><button type="button" class="ck-btn" id="ck4Cancel">Annuler</button></div>
