@@ -1,45 +1,45 @@
 {
- "headline": "Repos prévu, 30km réalisés à 4'16\"/km avec segments à 4'00\" — gros écart au plan à J-15",
+ "headline": "Temps de contact au sol allongé (+18ms) — possible lien avec les chaussures neuves",
  "bullets": [
-  "FC 155 vs 158 habituel, alors que l'allure était plus rapide (4'16 vs 4'27 réf) — bon signe",
-  "Appui 48.8% vs 49.3% réf, légèrement plus chargé côté droit (Achille), écart faible",
-  "Asymétrie quasi stable lent/rapide (48.93 vs 48.72) — pas le motif pubalgie"
+  "Contact sol 245ms vs 227ms en réf (+18ms), avec Hyperboost Edge neuves 45mm de stack",
+  "8.01km sur 10 prévus (80%) alors que RPE à 1/10 et sensation 'Fort' — pourquoi écourté ?",
+  "Vratio 7.82 vs 8.97 en réf : meilleure stabilité verticale que d'habitude à allure proche"
  ],
  "points": [
   {
-   "label": "FC moyenne",
-   "valeur": "155 bpm",
-   "ecart": "-3 vs réf 158",
-   "lecture": "plus bas malgré allure plus rapide",
-   "ton": "bon"
+   "label": "Temps de contact",
+   "valeur": "245 ms",
+   "ecart": "+18 ms vs réf 60j (227 ms)",
+   "lecture": "chaussure neuve ou fatigue tendineuse à surveiller",
+   "ton": "vigilance"
   },
   {
-   "label": "Temps de contact",
-   "valeur": "190 ms",
-   "ecart": "-12 ms vs réf 202",
-   "lecture": "cohérent avec l'allure plus rapide",
+   "label": "Volume réalisé",
+   "valeur": "8.01 km",
+   "ecart": "-2 km vs plan (10 km)",
+   "lecture": "séance coupée malgré sensations très faciles",
    "ton": "neutre"
   },
   {
-   "label": "Dérive fin de séance",
-   "valeur": "stance +5.6%, FC +7.9%",
-   "ecart": "flag stance_fade détecté",
-   "lecture": "fatigue perceptible sur la fin des 30km",
-   "ton": "vigilance"
+   "label": "Ratio vertical",
+   "valeur": "7.82",
+   "ecart": "-1.15 vs réf (8.97)",
+   "lecture": "technique plus économique que d'habitude",
+   "ton": "bon"
   }
  ],
- "achille": "Appui 48.8% vs réf 49.3%, légèrement plus de charge côté droit, écart faible à surveiller.",
- "a_surveiller": "Repos complet prévu, 30km soutenus réalisés à J-15 du marathon — écart majeur au plan.",
+ "achille": "Équilibre gauche/droit absent sur toute la séance (capteur manquant) — rien à comparer.",
+ "a_surveiller": "Contact sol en hausse (+18ms) et dérive +5.6% sur la foulée en fin de séance.",
  "seance": {
-  "date": "17/10/2026",
-  "heure": "09:41",
-  "titre": "i198249316",
-  "type_detecte": "sortie_longue",
-  "km": 30.01,
-  "duree": "2h 07m 51s",
-  "allure": "4'16\"/km",
-  "fc_moy": 155
+  "date": "20/10/2026",
+  "heure": "12:22",
+  "titre": "i199451429",
+  "type_detecte": "footing",
+  "km": 8.01,
+  "duree": "42m 15s",
+  "allure": "5'17\"/km",
+  "fc_moy": 144
  },
- "generated_at": "2026-10-17T09:56:21",
- "baseline_n": 13
+ "generated_at": "2026-10-20T11:07:07",
+ "baseline_n": 28
 }
