@@ -1,39 +1,39 @@
 {
- "generated_at": "2026-10-20T18:57:14",
+ "generated_at": "2026-10-21T10:38:00",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-10-17\", \"title\": \"Répétition générale allégée\", \"type\": \"long\", \"planned_km\": 24.3, \"key\": true, \"status\": \"done\", \"target_pace\": \"4'12\\\"/km\", \"actual\": {\"km\": 30.0, \"pace_str\": \"4'16\\\"/km\", \"fc\": 155, \"cadence\": 179, \"duration_min\": 128}, \"splits\": \"1:5'01/127/178spm 2:4'58/133/180spm 3:4'53/134/178spm 4:4'51/135/176spm 5:4'53/132/174spm 6:3'59/153/180spm 7:4'01/162/178spm 8:3'58/159/180spm 9:4'01/159/178spm 10:3'58/160/178spm 11:3'58/161/178spm 12:3'56/163/178spm 13:3'59/162/180spm 14:4'02/163/178spm 15:3'59/162/178spm 16:3'59/163/180spm 17:3'59/163/178spm 18:3'59/165/180spm 19:3'59/164/180spm 20:3'58/165/180spm 21:3'56/165/180spm 22:3'54/165/180spm 23:3'55/165/180spm 24:3'56/167/180spm 25:3'57/168/180spm 26:4'41/157/178spm 27:4'41/154/180spm 28:4'44/150/178spm 29:4'50/151/180spm 30:4'55/149/178spm\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 0.0, \"load\": 400.0, \"rpe\": 5.0, \"feel_label\": \"Très fort\", \"temp_c\": 20, \"balance_l\": 48.81, \"flags\": [\"stance_fade\"], \"stance_drift_pct\": 5.6, \"step_drift_pct\": -0.3}, \"score\": {\"points\": 95, \"verdict\": \"success\", \"volume_pct\": 123, \"pace_delta_s\": 4}, \"hr\": {\"avg\": 155, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 5.1, \"flags\": []}}, {\"date\": \"2026-10-18\", \"title\": \"Repos\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-10-19\", \"title\": \"Repos — fin du déficit calorique\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}]|e25a8b8a2d",
- "plan_hash": "e25a8b8a2d",
- "headline": "Course-test et répétition générale au niveau sub-3h, mais le ratio volume/qualité de la semaine 9 doit se resserrer en taper.",
- "analysis": "Deux séances valent de l'or cette quinzaine : le 20 km de Paris du 11/10, couru à 3'35-3'48/km en plein effort avec un découplage FC/allure de seulement 1,2 %, et la répétition générale du 17/10 — 20 km enchaînés à 3'54-4'02/km (quasi allure cible 3'59) sur 30 km au total, découplage 5,1 % maîtrisé. C'est le signal le plus concret que tu as reçu depuis le début du plan : ton corps tient l'allure course sur volume long. Mais la semaine 9 affiche 121 % du volume prévu (77,5 km vs 64,3) pour seulement 1 séance clé réussie sur 3 : la piste club du 14/10 a dérapé à 169 % du volume prévu avec un découplage de 16,4 %, et le lendemain la séance spécifique allure NYC du 16/10 s'est effondrée (5'12/km au lieu de 3'59, seulement 64 % du volume fait). La séquence est claire — tu as accumulé du volume non prescrit juste avant une séance de qualité, et elle en a payé le prix. À 12 jours de la course, le risque n'est plus l'entraînement insuffisant, c'est l'excès de kilomètres gratuits qui grignote la fraîcheur nécessaire aux séances clés qui restent (VMA le 21, allure NYC le 23, longue le 25, seuil le 27). Côté mécanique, rien d'alarmant : équilibre d'appui stable (48-51 % gauche), seule la foulée du 30 km affiche un contact au sol +5,6 % en fin de course, cohérent avec la distance et sans douleur signalée. Focus de la semaine : exécuter les séances prescrites à la lettre, sans rallonge, pour arriver à New York sur la dynamique du 17/10 et pas sur celle du 14/10.",
+ "signature": "[{\"date\": \"2026-10-18\", \"title\": \"Repos\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-10-19\", \"title\": \"Repos — fin du déficit calorique\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-10-20\", \"title\": \"Footing 50' + 6 lignes droites\", \"type\": \"easy\", \"planned_km\": 10.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'15\\\"/km\", \"actual\": {\"km\": 8.0, \"pace_str\": \"5'17\\\"/km\", \"fc\": 144, \"cadence\": 179, \"duration_min\": 42}, \"splits\": \"1:5'27/139/184spm 2:5'24/143/182spm 3:5'18/144/182spm 4:5'07/143/178spm 5:5'16/148/178spm 6:5'10/146/174spm 7:5'18/143/178spm 8:5'13/142/178spm\", \"garmin\": {\"te_aero\": 3.0, \"te_ana\": 0.0, \"load\": 92.3, \"rpe\": 1.0, \"feel_label\": \"Fort\", \"temp_c\": 18, \"flags\": [], \"stance_drift_pct\": 1.5, \"step_drift_pct\": 5.6}, \"score\": {\"points\": 89, \"verdict\": \"success\", \"volume_pct\": 80, \"pace_delta_s\": 2}, \"hr\": {\"avg\": 144, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": -0.9, \"flags\": []}}]|9ba4c97697",
+ "plan_hash": "9ba4c97697",
+ "headline": "20 km de Paris et 30 km à l'allure validés, mais tu rajoutes du volume sur chaque séance clé à 11 jours de New York.",
+ "analysis": "Les chiffres de fond sont bons : 132 km parcourus sur 115 km prévus ces 14 derniers jours (115 %), le 20 km de Paris bouclé à 4'01/km avec seulement -9 s d'écart à la cible, et la répétition générale du 17/10 — 30 km à 4'16/km, decoupling 5,1 % — qui colle quasi parfaitement à l'allure stratégie NYC (4'12). Le vrai point noir, c'est le schéma qui se répète : piste du 14/10 faite à 169 % du volume prévu (20,3 km au lieu de 12), sortie longue du 17/10 à 123 % (30 au lieu de 24,3). Tu arrives en forme, mais tu grignotes ta fraîcheur en rajoutant systématiquement du kilométrage sur les séances clés, alors qu'on est en affûtage. La séance MP du 16/10 ratée (5'12/km au lieu de 3'59, soit +73 s) ne m'inquiète pas en soi : RPE à 1, sensation « Fort » — ce n'est pas un corps qui craque, plutôt un test chaussures mal calé en rythme, probablement sur les jambes de la grosse piste de la veille. Le contact au sol qui s'allonge de 5,6 % en fin de 30 km mérite un œil, vu l'historique Achille, sans être alarmant à ce stade. Focus de la semaine : respecter au gramme près les volumes annoncés sur les 3 séances clés qui restent (piste 11 km aujourd'hui, allure NYC 11 km vendredi, longue 18 km dimanche) — zéro rajout, l'objectif n'est plus d'accumuler mais d'arriver frais.",
  "forme": {
-  "score": 74,
+  "score": 70,
   "verdict": "surveiller",
-  "headline": "Fitness au niveau, gestion du volume en taper à resserrer",
-  "detail": "La répétition générale du 17/10 (20 km à allure cible, découplage 5,1 %) confirme que le sub-3h est dans tes jambes. Le point à corriger : la semaine dernière à 121 % du volume prévu n'a produit qu'1 séance clé réussie sur 3, et l'excès de volume du 14/10 a directement plombé la séance spécifique du 16/10. Pour les 12 jours restants, zéro kilomètre bonus — les séances prescrites suffisent.",
+  "headline": "Fitness solide, mais tu surdoses les séances clés en plein taper",
+  "detail": "Le 20 km de Paris et le 30 km à l'allure NYC sont deux preuves concrètes que le plan tient (pace_delta -9 s et dérive cardiaque à 5,1 %). Le souci : 3 des 4 dernières séances clés ont été faites bien au-dessus du volume prescrit (jusqu'à 169 % sur la piste), ce qui grignote la fraîcheur à 11 jours de la course. Sur les 3 séances clés qui restent cette semaine, tiens-toi strictement aux kilométrages indiqués.",
   "indicateurs": {
    "fraicheur": {
-    "valeur": "+6",
-    "trend": "up",
-    "etat": "ok",
-    "note": "2 jours off, bien récupéré"
-   },
-   "compliance": {
-    "valeur": "77,5/64,3 km · 1/3 clés",
+    "valeur": "dette taper",
     "trend": "down",
     "etat": "watch",
-    "note": "trop de volume, pas assez de clés"
+    "note": "3 séances clés surdosées"
+   },
+   "compliance": {
+    "valeur": "132/115 km · 2/4 clés",
+    "trend": "flat",
+    "etat": "watch",
+    "note": "volume haut, clés mitigées"
    },
    "aerobie": {
     "valeur": "5,1 %",
     "trend": "flat",
     "etat": "ok",
-    "note": "découplage maîtrisé sur 30 km"
+    "note": "dérive maîtrisée sur 30 km"
    },
    "achille": {
-    "valeur": "stable",
-    "trend": "flat",
-    "etat": "ok",
-    "note": "équilibre d'appui 48-51 %, pas de douleur"
+    "valeur": "+5,6 %",
+    "trend": "up",
+    "etat": "watch",
+    "note": "contact ↑ en fin de 30 km"
    }
   }
  },
@@ -41,23 +41,26 @@
   {
    "severity": "minor",
    "kind": "add_note",
-   "date": "2026-10-21",
+   "date": "2026-10-25",
    "field": "description_note",
-   "new_value": "Piste allégée : fais exactement les 4×800 prévus, pas une rallonge. Après la semaine à 121 % de volume, l'objectif est la fraîcheur pour l'allure NYC du 23, pas le kilométrage.",
-   "reason": "La surcharge de volume du 14/10 a directement précédé l'échec de la séance spécifique du 16/10 ; éviter de reproduire le schéma à 2 jours de la séance MP clé.",
-   "id": "67e013d9",
-   "detail": "2026-10-21 : note ajoutée"
-  },
+   "new_value": "18 km, pas plus. Le 17/10 tu as fait 30 km au lieu de 24,3 prévus — très bonne séance en soi, mais c'est le genre de rallonge à ne plus refaire si près de la course.",
+   "reason": "Même logique : dernière sortie longue dépassée de 23 %, à corriger avant la course pour préserver la fraîcheur.",
+   "id": "f061cc72",
+   "detail": "2026-10-25 : note ajoutée"
+  }
+ ],
+ "pending": [
   {
    "severity": "minor",
    "kind": "add_note",
-   "date": "2026-10-23",
+   "date": "2026-10-21",
    "field": "description_note",
-   "new_value": "Allure NYC 6 km à 4'12/km strict, pas plus vite. La dernière tentative (16/10) a cassé à 5'12/km après une semaine trop chargée — ici l'enjeu est de retrouver la sensation de contrôle du 17/10, pas de prouver quoi que ce soit.",
-   "reason": "Dernière séance de ce type ratée (volume_pct 64, pace_delta +73s) ; cadrer l'allure cible après un épisode d'échec évite une surcompensation.",
-   "id": "405f3045",
-   "detail": "2026-10-23 : note ajoutée"
+   "new_value": "Cap strict à 11 km aujourd'hui. La dernière piste a été faite à 169 % du prévu (20,3 km au lieu de 12) — à 11 jours de NYC, pas un mètre de plus que la consigne.",
+   "reason": "Pattern de surdosage répété sur les séances piste/longue en pleine phase d'affûtage, risque d'arriver fatigué le jour J.",
+   "id": "aeebaf1a",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-10-21T10:38:00"
   }
- ],
- "pending": []
+ ]
 }

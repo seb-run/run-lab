@@ -1898,63 +1898,7 @@
                 }
               },
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 318,
-                "fc": 126,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 310,
-                "fc": 136,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 308,
-                "fc": 138,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 307,
-                "fc": 137,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 307,
-                "fc": 137,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 303,
-                "fc": 133,
-                "ca": 174
-              },
-              {
-                "km": 1.0,
-                "ps": 307,
-                "fc": 142,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 317,
-                "fc": 140,
-                "ca": 176
-              },
-              {
-                "km": 0.66,
-                "ps": 338,
-                "fc": 140,
-                "ca": 172
-              }
-            ]
+            }
           },
           "score": {
             "points": 100,
@@ -10648,7 +10592,7 @@
           "duration_min": 90,
           "key": true,
           "description": "4 × 800 m à 3'40/km, récupération trot 2' entre chaque. Échauffement 15' + 6 lignes droites, retour au calme 10'. Si les jambes sont encore lourdes après la générale de la veille, coupe à 3 répétitions sans culpabiliser — l'objectif est d'arriver frais sur la séance allure NYC du 23.",
-          "status": "pending",
+          "status": "today",
           "target_pace": "3'40\"/km",
           "target_pace_sec": 212,
           "shoe": "Adizero Boston 13",
@@ -10752,7 +10696,7 @@
           "dow": "Sun",
           "type": "long",
           "title": "SORTIE LONGUE COURTE — 16 km",
-          "km": 16.0,
+          "km": 18.0,
           "duration_min": 80,
           "key": true,
           "description": "12 km @ 5'00/km\n4 km @ 4'15/km\n\nDernière sortie « longue » — elle n'en a plus que le nom.\n[Endurance active · 4'40–4'55/km]\nChaussures : Adizero Boston 13 (231 km)",
@@ -10766,13 +10710,37 @@
             {
               "kind": "note",
               "text": "Coupe à 16 km pile, même si les jambes donnent envie de rallonger. 4 semaines d'affilée au-dessus du volume prévu : la marge de récup doit se reconstituer avant le 1er novembre, pas se creuser davantage."
+            },
+            {
+              "kind": "volume",
+              "delta": 2,
+              "reason": "compenser le déficit volume de la semaine"
+            },
+            {
+              "kind": "note",
+              "text": "18 km, pas plus. Le 17/10 tu as fait 30 km au lieu de 24,3 prévus — très bonne séance en soi, mais c'est le genre de rallonge à ne plus refaire si près de la course."
             }
-          ]
+          ],
+          "_adapt_volume": true
         }
       ],
-      "volume_actual_to_date": 0.0,
-      "volume_planned_to_date": 0.0,
-      "volume_drift_pct": 0
+      "volume_actual_to_date": 8.0,
+      "volume_planned_to_date": 10.0,
+      "volume_drift_pct": -20.0,
+      "compliance": {
+        "km_pct": 80,
+        "km_done": 8.0,
+        "km_planned": 10.0,
+        "km_done_week": 8.0,
+        "km_planned_week": 59.0,
+        "sessions_done": 1,
+        "sessions_planned": 1,
+        "sessions_done_week": 1,
+        "keys_success": 0,
+        "keys_total": 0,
+        "points": 84,
+        "verdict": "success"
+      }
     },
     {
       "week_num": 11,
