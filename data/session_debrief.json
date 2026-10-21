@@ -1,45 +1,45 @@
 {
- "headline": "Temps de contact au sol allongé (+18ms) — possible lien avec les chaussures neuves",
+ "headline": "Pas le fractionné prévu : 21 km remplacés, allure variable. Un signal d'asymétrie à noter.",
  "bullets": [
-  "Contact sol 245ms vs 227ms en réf (+18ms), avec Hyperboost Edge neuves 45mm de stack",
-  "8.01km sur 10 prévus (80%) alors que RPE à 1/10 et sensation 'Fort' — pourquoi écourté ?",
-  "Vratio 7.82 vs 8.97 en réf : meilleure stabilité verticale que d'habitude à allure proche"
+  "Séance remplacée par le coach : 21,01 km vs 11 prévus, allure moy 4'50/km (réf comparable 4'58/km)",
+  "Équilibre d'appui 50,97% en phase lente → 48,13% en phase rapide : l'écart s'ouvre avec la vitesse (+0,9)",
+  "Décrochage cardiaque 8,7% signalé, mais séance non stable en allure (lent/rapide/lent) — à relativiser"
  ],
  "points": [
   {
-   "label": "Temps de contact",
-   "valeur": "245 ms",
-   "ecart": "+18 ms vs réf 60j (227 ms)",
-   "lecture": "chaussure neuve ou fatigue tendineuse à surveiller",
+   "label": "Équilibre vs allure",
+   "valeur": "50,97% lent / 48,13% rapide",
+   "ecart": "asym_vs_allure +0,9, s'ouvre avec la vitesse",
+   "lecture": "motif proche de ton ancien épisode adducteur",
    "ton": "vigilance"
   },
   {
-   "label": "Volume réalisé",
-   "valeur": "8.01 km",
-   "ecart": "-2 km vs plan (10 km)",
-   "lecture": "séance coupée malgré sensations très faciles",
+   "label": "Contact au sol",
+   "valeur": "226 ms",
+   "ecart": "+6 ms vs réf 219,7 ms",
+   "lecture": "cohérent avec l'allure moyenne du jour",
    "ton": "neutre"
   },
   {
-   "label": "Ratio vertical",
-   "valeur": "7.82",
-   "ecart": "-1.15 vs réf (8.97)",
-   "lecture": "technique plus économique que d'habitude",
-   "ton": "bon"
+   "label": "Dérive cardiaque",
+   "valeur": "decoupling 8,7%",
+   "ecart": "flag drift_high, mais allure non constante",
+   "lecture": "interprétation prudente sur ce format",
+   "ton": "neutre"
   }
  ],
- "achille": "Équilibre gauche/droit absent sur toute la séance (capteur manquant) — rien à comparer.",
- "a_surveiller": "Contact sol en hausse (+18ms) et dérive +5.6% sur la foulée en fin de séance.",
+ "achille": "Équilibre global 49,93% (réf 50,31%) mais tombe à 47,5% en phase rapide : droit plus chargé.",
+ "a_surveiller": "L'asymétrie qui s'ouvre avec la vitesse rappelle la signature de ton épisode adducteur 2025.",
  "seance": {
-  "date": "20/10/2026",
-  "heure": "12:22",
-  "titre": "i199451429",
-  "type_detecte": "footing",
-  "km": 8.01,
-  "duree": "42m 15s",
-  "allure": "5'17\"/km",
-  "fc_moy": 144
+  "date": "21/10/2026",
+  "heure": "19:25",
+  "titre": "i200133857",
+  "type_detecte": "frac_court",
+  "km": 21.01,
+  "duree": "1h 41m 40s",
+  "allure": "4'50\"/km",
+  "fc_moy": 147
  },
- "generated_at": "2026-10-20T11:07:07",
- "baseline_n": 28
+ "generated_at": "2026-10-21T19:40:51",
+ "baseline_n": 33
 }

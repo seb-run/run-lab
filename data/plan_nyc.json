@@ -10592,12 +10592,287 @@
           "duration_min": 90,
           "key": true,
           "description": "4 × 800 m à 3'40/km, récupération trot 2' entre chaque. Échauffement 15' + 6 lignes droites, retour au calme 10'. Si les jambes sont encore lourdes après la générale de la veille, coupe à 3 répétitions sans culpabiliser — l'objectif est d'arriver frais sur la séance allure NYC du 23.",
-          "status": "today",
+          "status": "over",
           "target_pace": "3'40\"/km",
           "target_pace_sec": 212,
           "shoe": "Adizero Boston 13",
           "scheduled_time": "18:45",
-          "actual": null,
+          "actual": {
+            "km": 21.0,
+            "duration_min": 102,
+            "pace_sec": 290,
+            "pace_str": "4'50\"/km",
+            "fc": 147,
+            "cadence": 179,
+            "type": "frac_court",
+            "title": "i200133857",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 226.0,
+              "osc_cm": 9.5,
+              "vratio": 8.51,
+              "balance_l": 49.93,
+              "step_m": 1.13,
+              "temp_c": 18,
+              "temp_max": 27,
+              "resp": 36.3,
+              "power": 390,
+              "np": 407,
+              "te_aero": 4.6,
+              "te_ana": 3.1,
+              "load": 367.7,
+              "strides": 9093,
+              "rpe": 5.0,
+              "feel": 100,
+              "feel_label": "Très fort",
+              "drift": {
+                "stance": {
+                  "start": 228.0,
+                  "end": 247.0,
+                  "pct": 8.4
+                },
+                "step": {
+                  "start": 1071.0,
+                  "end": 973.0,
+                  "pct": -9.2
+                },
+                "vratio": {
+                  "start": 9.31,
+                  "end": 8.58,
+                  "pct": -7.8
+                },
+                "osc": {
+                  "start": 98.0,
+                  "end": 85.0,
+                  "pct": -14.0
+                },
+                "hr": {
+                  "start": 137.0,
+                  "end": 141.0,
+                  "pct": 3.0
+                },
+                "cad": {
+                  "start": 88.6,
+                  "end": 91.2,
+                  "pct": 2.9
+                }
+              },
+              "balance_min": 47.5,
+              "balance_max": 51.66,
+              "balance_series": [
+                50.68,
+                50.28,
+                49.51,
+                48.61,
+                49.92,
+                50.76,
+                50.07,
+                48.33,
+                48.76,
+                48.55,
+                48.29,
+                47.84,
+                47.89,
+                47.84,
+                47.5,
+                50.39,
+                50.83,
+                51.66,
+                51.08,
+                50.92,
+                51.11,
+                50.91
+              ],
+              "balance_lent": 50.97,
+              "balance_rapide": 48.13,
+              "asym_vs_allure": 0.9,
+              "allure_lent_s": 345,
+              "allure_rapide_s": 207,
+              "rr_beats": 17530,
+              "rmssd_effort": 12.5,
+              "flags": [
+                "stance_fade",
+                "step_fade"
+              ]
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 317,
+                "fc": 121,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 329,
+                "fc": 134,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 317,
+                "fc": 137,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 310,
+                "fc": 142,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 322,
+                "fc": 133,
+                "ca": 178
+              },
+              {
+                "km": 0.95,
+                "ps": 375,
+                "fc": 132,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 235,
+                "fc": 161,
+                "ca": 182
+              },
+              {
+                "km": 0.6,
+                "ps": 233,
+                "fc": 167,
+                "ca": 180
+              },
+              {
+                "km": 0.29,
+                "ps": 311,
+                "fc": 152,
+                "ca": 178
+              },
+              {
+                "km": 0.8,
+                "ps": 212,
+                "fc": 170,
+                "ca": 182
+              },
+              {
+                "km": 0.27,
+                "ps": 336,
+                "fc": 154,
+                "ca": 172
+              },
+              {
+                "km": 1.0,
+                "ps": 215,
+                "fc": 171,
+                "ca": 180
+              },
+              {
+                "km": 0.2,
+                "ps": 218,
+                "fc": 175,
+                "ca": 180
+              },
+              {
+                "km": 0.24,
+                "ps": 314,
+                "fc": 161,
+                "ca": 172
+              },
+              {
+                "km": 0.6,
+                "ps": 205,
+                "fc": 172,
+                "ca": 182
+              },
+              {
+                "km": 0.23,
+                "ps": 330,
+                "fc": 160,
+                "ca": 172
+              },
+              {
+                "km": 1.0,
+                "ps": 208,
+                "fc": 174,
+                "ca": 182
+              },
+              {
+                "km": 0.18,
+                "ps": 329,
+                "fc": 167,
+                "ca": 170
+              },
+              {
+                "km": 0.5,
+                "ps": 193,
+                "fc": 174,
+                "ca": 184
+              },
+              {
+                "km": 0.18,
+                "ps": 330,
+                "fc": 168,
+                "ca": 172
+              },
+              {
+                "km": 1.0,
+                "ps": 209,
+                "fc": 176,
+                "ca": 182
+              },
+              {
+                "km": 0.5,
+                "ps": 199,
+                "fc": 179,
+                "ca": 182
+              },
+              {
+                "km": 1.0,
+                "ps": 326,
+                "fc": 148,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 304,
+                "fc": 143,
+                "ca": 184
+              },
+              {
+                "km": 1.0,
+                "ps": 346,
+                "fc": 134,
+                "ca": 186
+              },
+              {
+                "km": 1.0,
+                "ps": 338,
+                "fc": 139,
+                "ca": 184
+              },
+              {
+                "km": 1.0,
+                "ps": 339,
+                "fc": 141,
+                "ca": 182
+              },
+              {
+                "km": 1.0,
+                "ps": 344,
+                "fc": 142,
+                "ca": 182
+              },
+              {
+                "km": 0.47,
+                "ps": 347,
+                "fc": 143,
+                "ca": 178
+              }
+            ]
+          },
           "coach_notes": [
             {
               "kind": "note",
@@ -10627,7 +10902,35 @@
             "target_pace": "3'32\"/km"
           },
           "shoe_note": "Dynamique et ferme, pour le travail rapide.",
-          "_shoe_key": "boston13"
+          "_shoe_key": "boston13",
+          "score": {
+            "points": 38,
+            "verdict": "failed",
+            "verdict_label": "Échouée",
+            "volume_pct": 191,
+            "volume_points": 70,
+            "pace_points": 0,
+            "pace_target_s": 220,
+            "pace_actual_s": 290,
+            "pace_actual_str": "4'50\"/km",
+            "pace_delta_s": 70,
+            "is_quality": false,
+            "hr": {
+              "avg": 147,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 8.7,
+              "flags": [
+                "drift_high"
+              ]
+            },
+            "reasons": [
+              "Séance remplacée par le coach (validée)",
+              "Volume 191%",
+              "Allure +70\"/km vs cible",
+              "Dérive cardiaque +8.7%"
+            ]
+          }
         },
         {
           "date": "2026-10-22",
@@ -10731,11 +11034,11 @@
         "km_pct": 80,
         "km_done": 8.0,
         "km_planned": 10.0,
-        "km_done_week": 8.0,
+        "km_done_week": 29.0,
         "km_planned_week": 59.0,
         "sessions_done": 1,
         "sessions_planned": 1,
-        "sessions_done_week": 1,
+        "sessions_done_week": 2,
         "keys_success": 0,
         "keys_total": 0,
         "points": 84,
