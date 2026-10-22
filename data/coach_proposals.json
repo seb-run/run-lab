@@ -493,8 +493,9 @@
    "reason": "Pattern de surdosage répété sur les séances piste/longue en pleine phase d'affûtage, risque d'arriver fatigué le jour J.",
    "id": "aeebaf1a",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
-   "created_at": "2026-10-21T10:38:00"
+   "status": "expired",
+   "created_at": "2026-10-21T10:38:00",
+   "expired_reason": "plan_changed"
   }
  ]
 }

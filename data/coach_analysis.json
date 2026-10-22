@@ -1,39 +1,39 @@
 {
- "generated_at": "2026-10-21T10:38:00",
+ "generated_at": "2026-10-22T10:41:19",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-10-18\", \"title\": \"Repos\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-10-19\", \"title\": \"Repos — fin du déficit calorique\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-10-20\", \"title\": \"Footing 50' + 6 lignes droites\", \"type\": \"easy\", \"planned_km\": 10.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'15\\\"/km\", \"actual\": {\"km\": 8.0, \"pace_str\": \"5'17\\\"/km\", \"fc\": 144, \"cadence\": 179, \"duration_min\": 42}, \"splits\": \"1:5'27/139/184spm 2:5'24/143/182spm 3:5'18/144/182spm 4:5'07/143/178spm 5:5'16/148/178spm 6:5'10/146/174spm 7:5'18/143/178spm 8:5'13/142/178spm\", \"garmin\": {\"te_aero\": 3.0, \"te_ana\": 0.0, \"load\": 92.3, \"rpe\": 1.0, \"feel_label\": \"Fort\", \"temp_c\": 18, \"flags\": [], \"stance_drift_pct\": 1.5, \"step_drift_pct\": 5.6}, \"score\": {\"points\": 89, \"verdict\": \"success\", \"volume_pct\": 80, \"pace_delta_s\": 2}, \"hr\": {\"avg\": 144, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": -0.9, \"flags\": []}}]|9ba4c97697",
- "plan_hash": "9ba4c97697",
- "headline": "20 km de Paris et 30 km à l'allure validés, mais tu rajoutes du volume sur chaque séance clé à 11 jours de New York.",
- "analysis": "Les chiffres de fond sont bons : 132 km parcourus sur 115 km prévus ces 14 derniers jours (115 %), le 20 km de Paris bouclé à 4'01/km avec seulement -9 s d'écart à la cible, et la répétition générale du 17/10 — 30 km à 4'16/km, decoupling 5,1 % — qui colle quasi parfaitement à l'allure stratégie NYC (4'12). Le vrai point noir, c'est le schéma qui se répète : piste du 14/10 faite à 169 % du volume prévu (20,3 km au lieu de 12), sortie longue du 17/10 à 123 % (30 au lieu de 24,3). Tu arrives en forme, mais tu grignotes ta fraîcheur en rajoutant systématiquement du kilométrage sur les séances clés, alors qu'on est en affûtage. La séance MP du 16/10 ratée (5'12/km au lieu de 3'59, soit +73 s) ne m'inquiète pas en soi : RPE à 1, sensation « Fort » — ce n'est pas un corps qui craque, plutôt un test chaussures mal calé en rythme, probablement sur les jambes de la grosse piste de la veille. Le contact au sol qui s'allonge de 5,6 % en fin de 30 km mérite un œil, vu l'historique Achille, sans être alarmant à ce stade. Focus de la semaine : respecter au gramme près les volumes annoncés sur les 3 séances clés qui restent (piste 11 km aujourd'hui, allure NYC 11 km vendredi, longue 18 km dimanche) — zéro rajout, l'objectif n'est plus d'accumuler mais d'arriver frais.",
+ "signature": "[{\"date\": \"2026-10-19\", \"title\": \"Repos — fin du déficit calorique\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-10-20\", \"title\": \"Footing 50' + 6 lignes droites\", \"type\": \"easy\", \"planned_km\": 10.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'15\\\"/km\", \"actual\": {\"km\": 8.0, \"pace_str\": \"5'17\\\"/km\", \"fc\": 144, \"cadence\": 179, \"duration_min\": 42}, \"splits\": \"1:5'27/139/184spm 2:5'24/143/182spm 3:5'18/144/182spm 4:5'07/143/178spm 5:5'16/148/178spm 6:5'10/146/174spm 7:5'18/143/178spm 8:5'13/142/178spm\", \"garmin\": {\"te_aero\": 3.0, \"te_ana\": 0.0, \"load\": 92.3, \"rpe\": 1.0, \"feel_label\": \"Fort\", \"temp_c\": 18, \"flags\": [], \"stance_drift_pct\": 1.5, \"step_drift_pct\": 5.6}, \"score\": {\"points\": 89, \"verdict\": \"success\", \"volume_pct\": 80, \"pace_delta_s\": 2}, \"hr\": {\"avg\": 144, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": -0.9, \"flags\": []}}, {\"date\": \"2026-10-21\", \"title\": \"Piste allégée réduite — 4 × 800 m\", \"type\": \"vma\", \"planned_km\": 11.0, \"key\": true, \"status\": \"over\", \"target_pace\": \"3'40\\\"/km\", \"actual\": {\"km\": 21.0, \"pace_str\": \"4'50\\\"/km\", \"fc\": 147, \"cadence\": 179, \"duration_min\": 102}, \"splits\": \"1:5'17/121/178spm 2:5'29/134/178spm 3:5'17/137/176spm 4:5'10/142/174spm 5:5'22/133/178spm 6:6'15/132/174spm 7:3'55/161/182spm 8:3'53/167/180spm 9:5'11/152/178spm 10:3'32/170/182spm 11:5'36/154/172spm 12:3'35/171/180spm 13:3'38/175/180spm 14:5'14/161/172spm 15:3'25/172/182spm 16:5'30/160/172spm 17:3'28/174/182spm 18:5'29/167/170spm 19:3'13/174/184spm 20:5'30/168/172spm 21:3'29/176/182spm 22:3'19/179/182spm 23:5'26/148/178spm 24:5'04/143/184spm 25:5'46/134/186spm 26:5'38/139/184spm 27:5'39/141/182spm 28:5'44/142/182spm 29:5'47/143/178spm\", \"garmin\": {\"te_aero\": 4.6, \"te_ana\": 3.1, \"load\": 367.7, \"rpe\": 5.0, \"feel_label\": \"Très fort\", \"temp_c\": 18, \"balance_l\": 49.93, \"flags\": [\"stance_fade\", \"step_fade\"], \"stance_drift_pct\": 8.4, \"step_drift_pct\": -9.2}, \"score\": {\"points\": 38, \"verdict\": \"failed\", \"volume_pct\": 191, \"pace_delta_s\": 70}, \"hr\": {\"avg\": 147, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 8.7, \"flags\": [\"drift_high\"]}}]|d0a2a74f2f",
+ "plan_hash": "d0a2a74f2f",
+ "headline": "Répétition générale au top (20 km à l'allure du 2h55), mais le volume s'emballe en plein taper.",
+ "analysis": "Le fait marquant des 14 derniers jours, c'est le 17 octobre : 20 km à 3'58-4'02/km dans une sortie de 30 km, pile l'allure qui donne 2h55, avec seulement 5,1 % de dérive cardiaque et un RPE à 5/10 sur un ressenti 'très fort'. C'est la preuve concrète que la caisse est là pour viser le sub-3 à New York. Mais regarde le volume des séances clés : sur les 4 dernières, 3 ont explosé le plan — 169 % le 14/10, 123 % le 17/10, 191 % le 21/10. Deux à trois fois le kilométrage prévu sur des séances de piste censées rester courtes et pointues. En pleine phase d'affûtage, à 10 jours de la course, ce n'est pas un bonus de forme, c'est une fuite d'énergie que tu n'as plus le temps de récupérer. Les deux séances clés ratées sur le papier (MP du 16, VMA du 21) ne traduisent pas une baisse de forme — RPE bas, sensations fortes — mais un non-respect du format prescrit. Côté mécanique rien d'alarmant : le contact au sol ne dépasse le seuil de 4 % qu'une fois, sur la sortie longue du 17 (5,6 %), pas de série qui inquiète. Le focus de la semaine : exécuter EXACTEMENT les kilomètres prévus sur le bloc allure NYC du 23 et la sortie longue du 25 — la preuve que ça marche est déjà faite, inutile de forcer.",
  "forme": {
-  "score": 70,
+  "score": 74,
   "verdict": "surveiller",
-  "headline": "Fitness solide, mais tu surdoses les séances clés en plein taper",
-  "detail": "Le 20 km de Paris et le 30 km à l'allure NYC sont deux preuves concrètes que le plan tient (pace_delta -9 s et dérive cardiaque à 5,1 %). Le souci : 3 des 4 dernières séances clés ont été faites bien au-dessus du volume prescrit (jusqu'à 169 % sur la piste), ce qui grignote la fraîcheur à 11 jours de la course. Sur les 3 séances clés qui restent cette semaine, tiens-toi strictement aux kilométrages indiqués.",
+  "headline": "Allure cible validée, mais le volume dérape en taper",
+  "detail": "Le 17/10, tu as couru 20 km à l'allure du 2h55 avec seulement 5,1 % de dérive cardiaque — la forme est bien là. Mais 3 séances clés sur 4 ont dépassé le plan de 120 à 190 % de volume à 10 jours de la course, ce qui ronge la fraîcheur sans bénéfice supplémentaire. Prochain focus : respecter au kilomètre près le bloc allure du 23 et la sortie longue du 25.",
   "indicateurs": {
    "fraicheur": {
-    "valeur": "dette taper",
-    "trend": "down",
-    "etat": "watch",
-    "note": "3 séances clés surdosées"
+    "valeur": "repos pris 18-19/10",
+    "trend": "up",
+    "etat": "ok",
+    "note": "bien récupéré avant la répète"
    },
    "compliance": {
-    "valeur": "132/115 km · 2/4 clés",
-    "trend": "flat",
+    "valeur": "3/4 clés en sur-volume",
+    "trend": "down",
     "etat": "watch",
-    "note": "volume haut, clés mitigées"
+    "note": "volume dépasse le plan en taper"
    },
    "aerobie": {
     "valeur": "5,1 %",
     "trend": "flat",
     "etat": "ok",
-    "note": "dérive maîtrisée sur 30 km"
+    "note": "dérive maîtrisée à l'allure cible"
    },
    "achille": {
-    "valeur": "+5,6 %",
-    "trend": "up",
+    "valeur": "48,8 % appui G",
+    "trend": "down",
     "etat": "watch",
-    "note": "contact ↑ en fin de 30 km"
+    "note": "asymétrie sous charge à surveiller"
    }
   }
  },
@@ -41,26 +41,23 @@
   {
    "severity": "minor",
    "kind": "add_note",
-   "date": "2026-10-25",
+   "date": "2026-10-23",
    "field": "description_note",
-   "new_value": "18 km, pas plus. Le 17/10 tu as fait 30 km au lieu de 24,3 prévus — très bonne séance en soi, mais c'est le genre de rallonge à ne plus refaire si près de la course.",
-   "reason": "Même logique : dernière sortie longue dépassée de 23 %, à corriger avant la course pour préserver la fraîcheur.",
-   "id": "f061cc72",
-   "detail": "2026-10-25 : note ajoutée"
-  }
- ],
- "pending": [
+   "new_value": "Respecte strictement les 11 km prévus (6 km à l'allure NYC + rodage) — pas de bonus km. Les 3 dernières séances clés ont dépassé le plan de 120 à 190 %, ça grignote ta fraîcheur à 9 jours de la course.",
+   "reason": "Pattern répété de sur-volume sur séances clés (14/10: 169 %, 17/10: 123 %, 21/10: 191 %) en pleine phase d'affûtage.",
+   "id": "0e5f3697",
+   "detail": "2026-10-23 : note ajoutée"
+  },
   {
    "severity": "minor",
    "kind": "add_note",
-   "date": "2026-10-21",
+   "date": "2026-10-25",
    "field": "description_note",
-   "new_value": "Cap strict à 11 km aujourd'hui. La dernière piste a été faite à 169 % du prévu (20,3 km au lieu de 12) — à 11 jours de NYC, pas un mètre de plus que la consigne.",
-   "reason": "Pattern de surdosage répété sur les séances piste/longue en pleine phase d'affûtage, risque d'arriver fatigué le jour J.",
-   "id": "aeebaf1a",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
-   "created_at": "2026-10-21T10:38:00"
+   "new_value": "Vise exactement 18 km, pas plus. Tu as déjà validé l'allure cible (3'58-4'02/km) sur 20 km le 17/10 — inutile de rallonger encore, cette sortie longue doit consolider la fraîcheur, pas prouver une forme déjà démontrée.",
+   "reason": "Même pattern de sur-volume sur sortie longue (30 km réalisés au lieu de 24,3 le 17/10) ; à 7 jours de la course, priorité à la fraîcheur plutôt qu'au kilométrage.",
+   "id": "2be435e3",
+   "detail": "2026-10-25 : note ajoutée"
   }
- ]
+ ],
+ "pending": []
 }

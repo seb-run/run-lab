@@ -2032,135 +2032,7 @@
               "rr_beats": 14193,
               "rmssd_effort": 4.8,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 293,
-                "fc": 135,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 302,
-                "fc": 140,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 303,
-                "fc": 142,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 294,
-                "fc": 146,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 290,
-                "fc": 144,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 289,
-                "fc": 146,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 290,
-                "fc": 142,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 292,
-                "fc": 144,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 281,
-                "fc": 147,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 285,
-                "fc": 149,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 283,
-                "fc": 148,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 277,
-                "fc": 151,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 266,
-                "fc": 153,
-                "ca": 174
-              },
-              {
-                "km": 1.0,
-                "ps": 268,
-                "fc": 151,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 268,
-                "fc": 152,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 270,
-                "fc": 155,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 255,
-                "fc": 157,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 257,
-                "fc": 155,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 258,
-                "fc": 158,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 254,
-                "fc": 161,
-                "ca": 176
-              },
-              {
-                "km": 0.31,
-                "ps": 274,
-                "fc": 162,
-                "ca": 176
-              }
-            ]
+            }
           },
           "score": {
             "points": 100,
@@ -10941,7 +10813,7 @@
           "duration_min": 45,
           "key": false,
           "description": "45' très facile.\n[Récupération · 5'15–5'35/km]\nChaussures : On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-          "status": "pending",
+          "status": "today",
           "target_pace": "5'25\"/km",
           "target_pace_sec": 325,
           "shoe": "On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
@@ -10979,6 +10851,10 @@
             {
               "kind": "note",
               "text": "Allure NYC 6 km à 4'12/km strict, pas plus vite. La dernière tentative (16/10) a cassé à 5'12/km après une semaine trop chargée — ici l'enjeu est de retrouver la sensation de contrôle du 17/10, pas de prouver quoi que ce soit."
+            },
+            {
+              "kind": "note",
+              "text": "Respecte strictement les 11 km prévus (6 km à l'allure NYC + rodage) — pas de bonus km. Les 3 dernières séances clés ont dépassé le plan de 120 à 190 %, ça grignote ta fraîcheur à 9 jours de la course."
             }
           ]
         },
@@ -11022,26 +10898,30 @@
             {
               "kind": "note",
               "text": "18 km, pas plus. Le 17/10 tu as fait 30 km au lieu de 24,3 prévus — très bonne séance en soi, mais c'est le genre de rallonge à ne plus refaire si près de la course."
+            },
+            {
+              "kind": "note",
+              "text": "Vise exactement 18 km, pas plus. Tu as déjà validé l'allure cible (3'58-4'02/km) sur 20 km le 17/10 — inutile de rallonger encore, cette sortie longue doit consolider la fraîcheur, pas prouver une forme déjà démontrée."
             }
           ],
           "_adapt_volume": true
         }
       ],
-      "volume_actual_to_date": 8.0,
-      "volume_planned_to_date": 10.0,
-      "volume_drift_pct": -20.0,
+      "volume_actual_to_date": 29.0,
+      "volume_planned_to_date": 21.0,
+      "volume_drift_pct": 38.1,
       "compliance": {
-        "km_pct": 80,
-        "km_done": 8.0,
-        "km_planned": 10.0,
+        "km_pct": 138,
+        "km_done": 29.0,
+        "km_planned": 21.0,
         "km_done_week": 29.0,
         "km_planned_week": 59.0,
-        "sessions_done": 1,
-        "sessions_planned": 1,
+        "sessions_done": 2,
+        "sessions_planned": 2,
         "sessions_done_week": 2,
         "keys_success": 0,
-        "keys_total": 0,
-        "points": 84,
+        "keys_total": 1,
+        "points": 85,
         "verdict": "success"
       }
     },
