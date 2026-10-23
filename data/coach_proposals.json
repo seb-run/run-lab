@@ -488,8 +488,9 @@
    "reason": "MP du 16/10 ratée (5'12/km au lieu de 3'59) et VMA du 21/10 doublée en volume (21 km au lieu de 11) : pattern de sorties club qui prennent le pas sur la séance prescrite en pleine phase de taper.",
    "id": "0617a3c8",
    "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
-   "created_at": "2026-10-23T10:33:12"
+   "status": "rejected",
+   "created_at": "2026-10-23T10:33:12",
+   "decided_at": "2026-10-23T19:24:50"
   }
  ]
 }

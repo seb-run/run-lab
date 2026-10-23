@@ -49,18 +49,5 @@
    "detail": "2026-10-27 : note ajoutée"
   }
  ],
- "pending": [
-  {
-   "severity": "minor",
-   "kind": "add_note",
-   "date": "2026-10-23",
-   "field": "description_note",
-   "new_value": "Respecte les 11 km prévus (6 km à 4'12/km), pas un de plus. Les deux dernières séances club ont doublé en volume — à J-8, chaque km en trop coûte de la fraîcheur, pas de la forme.",
-   "reason": "MP du 16/10 ratée (5'12/km au lieu de 3'59) et VMA du 21/10 doublée en volume (21 km au lieu de 11) : pattern de sorties club qui prennent le pas sur la séance prescrite en pleine phase de taper.",
-   "id": "0617a3c8",
-   "guardrail_reject": "jour passé ou en cours",
-   "status": "pending",
-   "created_at": "2026-10-23T10:33:12"
-  }
- ]
+ "pending": []
 }
