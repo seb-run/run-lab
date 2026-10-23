@@ -2,24 +2,6 @@
  "proposals": [
   {
    "severity": "major",
-   "kind": "change_pace",
-   "date": "2026-09-24",
-   "field": null,
-   "new_value": "Allure ramenée de 3'53\"/km à 4'16\"/km (sub-3h) pour le bloc MP",
-   "reason": "Viser l'allure 2h44 alors que l'allure sub-3h (4'16) a été manquée 3 jours plus tôt (5'25/km, sous-distance) n'a pas de sens actuellement. On recalibre sur l'objectif prioritaire sub-3h.",
-   "replacement": {
-    "title": "14km allure marathon (sub-3h) · bloc",
-    "type": "mp_run",
-    "km": 18.0,
-    "target_pace": "4'16\"/km",
-    "description": "Bloc à l'allure sub-3h (4'16/km), pas plus vite. Échauffement 4km facile, puis 14km au train cible en continu ou en 2×7km avec 2min de trot si besoin. Objectif : retrouver de la régularité, pas de la vitesse."
-   },
-   "id": "66117c03",
-   "status": "expired",
-   "created_at": "2026-09-18T21:14:09"
-  },
-  {
-   "severity": "major",
    "kind": "change_type",
    "date": "2026-09-20",
    "field": null,
@@ -496,6 +478,18 @@
    "status": "expired",
    "created_at": "2026-10-21T10:38:00",
    "expired_reason": "plan_changed"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-10-23",
+   "field": "description_note",
+   "new_value": "Respecte les 11 km prévus (6 km à 4'12/km), pas un de plus. Les deux dernières séances club ont doublé en volume — à J-8, chaque km en trop coûte de la fraîcheur, pas de la forme.",
+   "reason": "MP du 16/10 ratée (5'12/km au lieu de 3'59) et VMA du 21/10 doublée en volume (21 km au lieu de 11) : pattern de sorties club qui prennent le pas sur la séance prescrite en pleine phase de taper.",
+   "id": "0617a3c8",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-10-23T10:33:12"
   }
  ]
 }

@@ -10813,7 +10813,7 @@
           "duration_min": 45,
           "key": false,
           "description": "45' très facile.\n[Récupération · 5'15–5'35/km]\nChaussures : On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
-          "status": "today",
+          "status": "missed",
           "target_pace": "5'25\"/km",
           "target_pace_sec": 325,
           "shoe": "On CloudSurfer (163 km) — 10 mm de drop, 37 mm au talon : la meilleure du placard pour le tendon",
@@ -10833,7 +10833,7 @@
           "duration_min": 60,
           "key": true,
           "description": "3 km d'échauffement\n6 km @ 4'10–4'15/km\n2 km de retour au calme\n\nEn chaussures de course, à l'allure de course. Après un bloc entier à 4'00, ça doit te paraître ridiculement facile — c'est exactement le signal qu'on cherche.\n[Allure de course NYC · 4'10–4'15/km]\nChaussures : Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
-          "status": "pending",
+          "status": "today",
           "target_pace": "4'12\"/km",
           "target_pace_sec": 252,
           "shoe": "Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
@@ -10908,20 +10908,20 @@
         }
       ],
       "volume_actual_to_date": 29.0,
-      "volume_planned_to_date": 21.0,
-      "volume_drift_pct": 38.1,
+      "volume_planned_to_date": 30.0,
+      "volume_drift_pct": -3.3,
       "compliance": {
-        "km_pct": 138,
+        "km_pct": 97,
         "km_done": 29.0,
-        "km_planned": 21.0,
+        "km_planned": 30.0,
         "km_done_week": 29.0,
         "km_planned_week": 59.0,
         "sessions_done": 2,
-        "sessions_planned": 2,
+        "sessions_planned": 3,
         "sessions_done_week": 2,
         "keys_success": 0,
         "keys_total": 1,
-        "points": 85,
+        "points": 83,
         "verdict": "success"
       }
     },
@@ -10964,7 +10964,13 @@
           "target_pace_sec": 230,
           "shoe": "Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
           "scheduled_time": "06:30",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Dernière séance qualité avant NYC : cible stricte 10 km, 8×1' au seuil. Pas de club, pas de rallonge — l'objectif est l'activation, pas la performance."
+            }
+          ]
         },
         {
           "date": "2026-10-28",
