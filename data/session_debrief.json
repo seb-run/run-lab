@@ -1,45 +1,45 @@
 {
- "headline": "Pas le fractionné prévu : 21 km remplacés, allure variable. Un signal d'asymétrie à noter.",
+ "headline": "Allure NYC tenue (4'14\"/km) avec RPE bas — mais équilibre qui bascule côté Achille en accélérant.",
  "bullets": [
-  "Séance remplacée par le coach : 21,01 km vs 11 prévus, allure moy 4'50/km (réf comparable 4'58/km)",
-  "Équilibre d'appui 50,97% en phase lente → 48,13% en phase rapide : l'écart s'ouvre avec la vitesse (+0,9)",
-  "Décrochage cardiaque 8,7% signalé, mais séance non stable en allure (lent/rapide/lent) — à relativiser"
+  "Bloc rapide à 4'14\"/km, pile dans la cible 4'10-4'15.",
+  "FC moy 152 vs 154,9 habituel à cette allure — moins cher payé.",
+  "RPE 4/10, ressenti \"Fort\" sur de l'allure course — bon signal."
  ],
  "points": [
   {
-   "label": "Équilibre vs allure",
-   "valeur": "50,97% lent / 48,13% rapide",
-   "ecart": "asym_vs_allure +0,9, s'ouvre avec la vitesse",
-   "lecture": "motif proche de ton ancien épisode adducteur",
+   "label": "Allure cible",
+   "valeur": "4'14\"/km",
+   "ecart": "+2s vs cible 4'12\"",
+   "lecture": "dans la fourchette demandée",
+   "ton": "bon"
+  },
+  {
+   "label": "FC moyenne",
+   "valeur": "152 bpm",
+   "ecart": "-2,9 vs réf. 60j (154,9)",
+   "lecture": "moins de coût cardiaque qu'avant",
+   "ton": "bon"
+  },
+  {
+   "label": "Équilibre à l'allure rapide",
+   "valeur": "48,4% gauche",
+   "ecart": "vs 51,1% en lent (asym +0,55)",
+   "lecture": "charge qui glisse vers l'Achille droit",
    "ton": "vigilance"
-  },
-  {
-   "label": "Contact au sol",
-   "valeur": "226 ms",
-   "ecart": "+6 ms vs réf 219,7 ms",
-   "lecture": "cohérent avec l'allure moyenne du jour",
-   "ton": "neutre"
-  },
-  {
-   "label": "Dérive cardiaque",
-   "valeur": "decoupling 8,7%",
-   "ecart": "flag drift_high, mais allure non constante",
-   "lecture": "interprétation prudente sur ce format",
-   "ton": "neutre"
   }
  ],
- "achille": "Équilibre global 49,93% (réf 50,31%) mais tombe à 47,5% en phase rapide : droit plus chargé.",
- "a_surveiller": "L'asymétrie qui s'ouvre avec la vitesse rappelle la signature de ton épisode adducteur 2025.",
+ "achille": "Équilibre sous 50% (48,4%) sur le bloc rapide = appui accru côté Achille droit pendant l'effort.",
+ "a_surveiller": "Asymétrie qui s'ouvre avec l'allure (+0,55) — signature proche de l'épisode adducteur de l'hiver 2025.",
  "seance": {
-  "date": "21/10/2026",
-  "heure": "19:25",
-  "titre": "i200133857",
-  "type_detecte": "frac_court",
-  "km": 21.01,
-  "duree": "1h 41m 40s",
-  "allure": "4'50\"/km",
-  "fc_moy": 147
+  "date": "23/10/2026",
+  "heure": "12:21",
+  "titre": "i200710161",
+  "type_detecte": "frac_long",
+  "km": 13.57,
+  "duree": "1h 02m 35s",
+  "allure": "4'37\"/km",
+  "fc_moy": 152
  },
- "generated_at": "2026-10-21T19:40:51",
- "baseline_n": 33
+ "generated_at": "2026-10-23T11:54:34",
+ "baseline_n": 22
 }
