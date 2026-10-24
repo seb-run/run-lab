@@ -2195,81 +2195,7 @@
               "rr_beats": 8912,
               "rmssd_effort": 5.8,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 323,
-                "fc": 129,
-                "ca": 172
-              },
-              {
-                "km": 1.0,
-                "ps": 299,
-                "fc": 140,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 314,
-                "fc": 145,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 314,
-                "fc": 145,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 307,
-                "fc": 145,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 305,
-                "fc": 145,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 299,
-                "fc": 149,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 302,
-                "fc": 152,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 298,
-                "fc": 148,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 303,
-                "fc": 144,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 315,
-                "fc": 148,
-                "ca": 176
-              },
-              {
-                "km": 0.73,
-                "ps": 303,
-                "fc": 145,
-                "ca": 178
-              }
-            ]
+            }
           },
           "score": {
             "points": 100,
@@ -11067,7 +10993,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Repos complet.",
-          "status": "pending",
+          "status": "today",
           "actual": null
         },
         {
@@ -11102,26 +11028,30 @@
             {
               "kind": "note",
               "text": "Vise exactement 18 km, pas plus. Tu as déjà validé l'allure cible (3'58-4'02/km) sur 20 km le 17/10 — inutile de rallonger encore, cette sortie longue doit consolider la fraîcheur, pas prouver une forme déjà démontrée."
+            },
+            {
+              "kind": "note",
+              "text": "Respecte strictement les 16-18 km prévus, sans rallonge. Le 17/10 tu es passé de 24,3 à 30 km, le 21/10 de 11 à 21 km — à J-7 ce n'est plus de la préparation, c'est de la fatigue en plus. Cette sortie doit rester un déblocage des jambes, pas un test de charge."
             }
           ],
           "_adapt_volume": true
         }
       ],
-      "volume_actual_to_date": 29.0,
-      "volume_planned_to_date": 30.0,
-      "volume_drift_pct": -3.3,
+      "volume_actual_to_date": 42.6,
+      "volume_planned_to_date": 41.0,
+      "volume_drift_pct": 3.9,
       "compliance": {
-        "km_pct": 97,
-        "km_done": 29.0,
-        "km_planned": 30.0,
+        "km_pct": 104,
+        "km_done": 42.6,
+        "km_planned": 41.0,
         "km_done_week": 42.6,
         "km_planned_week": 59.0,
-        "sessions_done": 2,
-        "sessions_planned": 3,
+        "sessions_done": 3,
+        "sessions_planned": 4,
         "sessions_done_week": 3,
-        "keys_success": 0,
-        "keys_total": 1,
-        "points": 83,
+        "keys_success": 1,
+        "keys_total": 2,
+        "points": 90,
         "verdict": "success"
       }
     },

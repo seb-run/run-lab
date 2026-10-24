@@ -1,39 +1,39 @@
 {
- "generated_at": "2026-10-23T10:33:12",
+ "generated_at": "2026-10-24T09:49:30",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-10-20\", \"title\": \"Footing 50' + 6 lignes droites\", \"type\": \"easy\", \"planned_km\": 10.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'15\\\"/km\", \"actual\": {\"km\": 8.0, \"pace_str\": \"5'17\\\"/km\", \"fc\": 144, \"cadence\": 179, \"duration_min\": 42}, \"splits\": \"1:5'27/139/184spm 2:5'24/143/182spm 3:5'18/144/182spm 4:5'07/143/178spm 5:5'16/148/178spm 6:5'10/146/174spm 7:5'18/143/178spm 8:5'13/142/178spm\", \"garmin\": {\"te_aero\": 3.0, \"te_ana\": 0.0, \"load\": 92.3, \"rpe\": 1.0, \"feel_label\": \"Fort\", \"temp_c\": 18, \"flags\": [], \"stance_drift_pct\": 1.5, \"step_drift_pct\": 5.6}, \"score\": {\"points\": 89, \"verdict\": \"success\", \"volume_pct\": 80, \"pace_delta_s\": 2}, \"hr\": {\"avg\": 144, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": -0.9, \"flags\": []}}, {\"date\": \"2026-10-21\", \"title\": \"Piste allégée réduite — 4 × 800 m\", \"type\": \"vma\", \"planned_km\": 11.0, \"key\": true, \"status\": \"over\", \"target_pace\": \"3'40\\\"/km\", \"actual\": {\"km\": 21.0, \"pace_str\": \"4'50\\\"/km\", \"fc\": 147, \"cadence\": 179, \"duration_min\": 102}, \"splits\": \"1:5'17/121/178spm 2:5'29/134/178spm 3:5'17/137/176spm 4:5'10/142/174spm 5:5'22/133/178spm 6:6'15/132/174spm 7:3'55/161/182spm 8:3'53/167/180spm 9:5'11/152/178spm 10:3'32/170/182spm 11:5'36/154/172spm 12:3'35/171/180spm 13:3'38/175/180spm 14:5'14/161/172spm 15:3'25/172/182spm 16:5'30/160/172spm 17:3'28/174/182spm 18:5'29/167/170spm 19:3'13/174/184spm 20:5'30/168/172spm 21:3'29/176/182spm 22:3'19/179/182spm 23:5'26/148/178spm 24:5'04/143/184spm 25:5'46/134/186spm 26:5'38/139/184spm 27:5'39/141/182spm 28:5'44/142/182spm 29:5'47/143/178spm\", \"garmin\": {\"te_aero\": 4.6, \"te_ana\": 3.1, \"load\": 367.7, \"rpe\": 5.0, \"feel_label\": \"Très fort\", \"temp_c\": 18, \"balance_l\": 49.93, \"flags\": [\"stance_fade\", \"step_fade\"], \"stance_drift_pct\": 8.4, \"step_drift_pct\": -9.2}, \"score\": {\"points\": 38, \"verdict\": \"failed\", \"volume_pct\": 191, \"pace_delta_s\": 70}, \"hr\": {\"avg\": 147, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 8.7, \"flags\": [\"drift_high\"]}}, {\"date\": \"2026-10-22\", \"title\": \"Footing récupération 45'\", \"type\": \"easy\", \"planned_km\": 9.0, \"key\": false, \"status\": \"missed\", \"target_pace\": \"5'25\\\"/km\"}]|1f9da6aff1",
- "plan_hash": "1f9da6aff1",
- "headline": "Fitness validée par le 20K (3'45/km, dérive 1,2%) — mais le taper part en vrille avec deux séances clés doublées en volume.",
- "analysis": "Ton 20K de Paris est la donnée la plus solide des 14 derniers jours : l'essentiel de la course avalé autour de 3'45/km avec une dérive cardiaque de seulement 1,2%, c'est une confirmation nette que le sub-3h est jouable. Ta longue du 17/10 va dans le même sens : 18 km tenus entre 3'56 et 4'02/km au sein d'une sortie de 30 km, pile dans ta cible marathon, charge élevée bien encaissée. Mais le reste de la semaine raconte une autre histoire : la séance spécifique allure NYC du 16/10 a été transformée en jogging (5'12/km au lieu de 3'59, échec net), et la VMA du 21/10 a doublé en volume — 21 km au lieu de 11 — avec une dérive cardiaque à 8,7%. Deux séances clés sur trois ratées, toutes deux gonflées par les sorties club, à J-9 de la course. Ce n'est plus un problème de forme, c'est un problème de discipline de taper : chaque kilomètre ajouté au mauvais moment mange de la fraîcheur que tu ne récupéreras pas avant le 1er novembre. Le footing manqué du 22/10 n'est pas le signal — la tendance à transformer les séances qualité en sorties à rallonge, oui. Focus cette semaine : respecter au gramme près les volumes prescrits sur l'allure NYC d'aujourd'hui et le seuil du 27, zéro rallonge club. Tu n'as plus rien à prouver à l'entraînement, seulement de la fraîcheur à préserver.",
+ "signature": "[{\"date\": \"2026-10-21\", \"title\": \"Piste allégée réduite — 4 × 800 m\", \"type\": \"vma\", \"planned_km\": 11.0, \"key\": true, \"status\": \"over\", \"target_pace\": \"3'40\\\"/km\", \"actual\": {\"km\": 21.0, \"pace_str\": \"4'50\\\"/km\", \"fc\": 147, \"cadence\": 179, \"duration_min\": 102}, \"splits\": \"1:5'17/121/178spm 2:5'29/134/178spm 3:5'17/137/176spm 4:5'10/142/174spm 5:5'22/133/178spm 6:6'15/132/174spm 7:3'55/161/182spm 8:3'53/167/180spm 9:5'11/152/178spm 10:3'32/170/182spm 11:5'36/154/172spm 12:3'35/171/180spm 13:3'38/175/180spm 14:5'14/161/172spm 15:3'25/172/182spm 16:5'30/160/172spm 17:3'28/174/182spm 18:5'29/167/170spm 19:3'13/174/184spm 20:5'30/168/172spm 21:3'29/176/182spm 22:3'19/179/182spm 23:5'26/148/178spm 24:5'04/143/184spm 25:5'46/134/186spm 26:5'38/139/184spm 27:5'39/141/182spm 28:5'44/142/182spm 29:5'47/143/178spm\", \"garmin\": {\"te_aero\": 4.6, \"te_ana\": 3.1, \"load\": 367.7, \"rpe\": 5.0, \"feel_label\": \"Très fort\", \"temp_c\": 18, \"balance_l\": 49.93, \"flags\": [\"stance_fade\", \"step_fade\"], \"stance_drift_pct\": 8.4, \"step_drift_pct\": -9.2}, \"score\": {\"points\": 38, \"verdict\": \"failed\", \"volume_pct\": 191, \"pace_delta_s\": 70}, \"hr\": {\"avg\": 147, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 8.7, \"flags\": [\"drift_high\"]}}, {\"date\": \"2026-10-22\", \"title\": \"Footing récupération 45'\", \"type\": \"easy\", \"planned_km\": 9.0, \"key\": false, \"status\": \"missed\", \"target_pace\": \"5'25\\\"/km\"}, {\"date\": \"2026-10-23\", \"title\": \"ALLURE NYC — 6 km\", \"type\": \"mp\", \"planned_km\": 11.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"4'12\\\"/km\", \"actual\": {\"km\": 13.6, \"pace_str\": \"4'37\\\"/km\", \"fc\": 152, \"cadence\": 182, \"duration_min\": 63}, \"splits\": \"1:5'33/120/190spm 2:5'18/132/188spm 3:5'10/143/186spm 4:4'56/152/186spm 5:3'51/166/182spm 6:4'00/169/180spm 7:3'59/172/178spm 8:4'00/166/178spm 9:3'59/172/178spm 10:3'59/176/178spm 11:5'12/143/176spm 12:4'54/142/184spm 13:5'04/149/182spm 14:4'43/148/178spm\", \"garmin\": {\"te_aero\": 4.3, \"te_ana\": 0.5, \"load\": 232.3, \"rpe\": 4.0, \"feel_label\": \"Fort\", \"temp_c\": 20, \"balance_l\": 49.96, \"flags\": [\"stance_fade\"], \"stance_drift_pct\": 5.9, \"step_drift_pct\": -0.8}, \"score\": {\"points\": 95, \"verdict\": \"success\", \"volume_pct\": 124, \"pace_delta_s\": 2}, \"hr\": {\"avg\": 152, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 3.5, \"flags\": []}}]|f865bd7f46",
+ "plan_hash": "f865bd7f46",
+ "headline": "Deux dernières séances clés pile à l'allure marathon (+2s, +4s d'écart), mais tu dépasses le volume prévu depuis 4 semaines d'affilée — à 8 jours de NYC, il faut resserrer.",
+ "analysis": "Le 20 km de Paris du 11/10 est un vrai signal : négative split quasi parfait et dérive cardiaque de seulement 1,2 % sur l'effort le plus dur du cycle. Les deux séances typées VMA/MP intermédiaires (16/10 et 21/10) ont loupé leurs allures de 70-73 secondes au km — mais les deux séances les plus spécifiques qui comptent vraiment, le 17/10 (30 km avec bloc allure marathon tenu à 3'56-4'02) et le 23/10 (test allure NYC à 2s de la cible), sont des réussites nettes. C'est le signal le plus parlant à J-8 : ta capacité à tenir l'allure course est intacte et même affûtée. Le vrai risque n'est pas l'allure, c'est le volume : 93 %, 108 %, 121 %, 104 % du prévu sur les 4 dernières semaines — tu rallonges systématiquement au lieu de couper, y compris en taper (30 km au lieu de 24,3 le 17/10, 21 km au lieu de 11 le 21/10). Le footing récup du 22/10 manqué dans la foulée n'est pas anodin dans ce contexte : tu enchaînes volume en trop et récup sautée. Léger signal mécanique à surveiller aussi : contact au sol qui s'allonge de 5,6 à 5,9 % sur les deux dernières sorties longues/spécifiques, rien d'alarmant isolément mais à ne pas laisser s'installer juste avant la course. Focus cette semaine : respecter les distances prévues au gramme près, zéro rallonge, priorité à la fraîcheur plutôt qu'au kilomètre en plus.",
  "forme": {
-  "score": 72,
+  "score": 74,
   "verdict": "surveiller",
-  "headline": "Fitness au top, taper mal tenu cette semaine",
-  "detail": "Le 20K (3'45/km, dérive 1,2%) et la longue à allure marathon confirment que la caisse est là. Mais deux séances clés sur trois ont explosé en volume cette semaine (21 km au lieu de 11, 20 km au lieu de 12) — en plein taper, c'est de la fraîcheur en moins pour le 1er novembre. Focus : respecter les distances prescrites sur les deux dernières séances qualité avant NYC, sans rallonge.",
+  "headline": "Allure marathon nickel, mais volume en roue libre",
+  "detail": "Tes deux derniers tests d'allure marathon sont dans le mille (écart de 2 et 4 secondes au km) — la vitesse de course n'est pas le sujet. Le sujet, c'est le volume : 4 semaines de suite au-dessus du plan (jusqu'à 121 %), avec un footing récup sauté le 22/10. À J-8, chaque km en trop est un km de fraîcheur en moins pour New York.",
   "indicateurs": {
    "fraicheur": {
-    "valeur": "+18 km hors plan",
-    "trend": "down",
-    "etat": "watch",
-    "note": "séances club à rallonge"
-   },
-   "compliance": {
-    "valeur": "2/5 clés réussies",
-    "trend": "down",
-    "etat": "watch",
-    "note": "allure NYC et VMA ratées"
-   },
-   "aerobie": {
-    "valeur": "1,2 % dérive (20K)",
+    "valeur": "taper engagé",
     "trend": "up",
     "etat": "ok",
-    "note": "test marathon très solide"
+    "note": "2 repos pris cette semaine"
+   },
+   "compliance": {
+    "valeur": "104% volume · 1/2 clés",
+    "trend": "down",
+    "etat": "watch",
+    "note": "volume dépassé 4 sem. de suite"
+   },
+   "aerobie": {
+    "valeur": "5,1%",
+    "trend": "flat",
+    "etat": "ok",
+    "note": "dérive normale sur 30 km"
    },
    "achille": {
-    "valeur": "+5,6 %",
-    "trend": "flat",
+    "valeur": "5,6%",
+    "trend": "up",
     "etat": "watch",
-    "note": "contact au sol, longue du 17/10"
+    "note": "contact qui s'allonge en fin d'effort"
    }
   }
  },
@@ -41,12 +41,12 @@
   {
    "severity": "minor",
    "kind": "add_note",
-   "date": "2026-10-27",
+   "date": "2026-10-25",
    "field": "description_note",
-   "new_value": "Dernière séance qualité avant NYC : cible stricte 10 km, 8×1' au seuil. Pas de club, pas de rallonge — l'objectif est l'activation, pas la performance.",
-   "reason": "Même dynamique de volume doublé que le 10/21 (VMA 21 km au lieu de 11) : à J-5 du départ, une répétition de cet écart annulerait le bénéfice du taper.",
-   "id": "1197df25",
-   "detail": "2026-10-27 : note ajoutée"
+   "new_value": "Respecte strictement les 16-18 km prévus, sans rallonge. Le 17/10 tu es passé de 24,3 à 30 km, le 21/10 de 11 à 21 km — à J-7 ce n'est plus de la préparation, c'est de la fatigue en plus. Cette sortie doit rester un déblocage des jambes, pas un test de charge.",
+   "reason": "4 semaines consécutives au-dessus du volume planifié (93 à 121 %), dont deux dépassements massifs sur séances clés récentes — risque d'arriver à NYC avec moins de fraîcheur que prévu malgré un plan de taper correct.",
+   "id": "5e7ce73c",
+   "detail": "2026-10-25 : note ajoutée"
   }
  ],
  "pending": []
