@@ -5,24 +5,6 @@
    "kind": "change_type",
    "date": "2026-09-20",
    "field": null,
-   "new_value": "Retirer la progression allure marathon, transformer en sortie longue aérobie pure",
-   "reason": "3 sessions clés/footing en difficulté sur les 5 derniers jours (VMA -107s/km, MP -69s/km, footing erratique, séance manquée) + perte de poids rapide sur 1 mois : mieux vaut confirmer que le moteur répond avant de remettre de l'allure marathon sur 24km, surtout avec VMA mardi et bloc MP+SL30km derrière.",
-   "replacement": {
-    "title": "SL aérobie 22km",
-    "type": "long",
-    "km": 22.0,
-    "target_pace": "4'50\"/km",
-    "description": "Sortie longue en aérobie strict, sans accélération ni bloc MP. Cours aux sensations, cap FC souple. Mange/bois pendant l'effort (gel ou barre dès 45-50min) pour tester la disponibilité énergétique. Si à mi-parcours ça tire fort à cette allure facile, coupe à 18km plutôt que de forcer."
-   },
-   "id": "ff7310f7",
-   "status": "expired",
-   "created_at": "2026-09-20T10:07:59"
-  },
-  {
-   "severity": "major",
-   "kind": "change_type",
-   "date": "2026-09-20",
-   "field": null,
    "new_value": "Transformer la SL progressive à allure marathon en SL aisance libre",
    "reason": "Deux séances clés consécutives ratées sur l'allure (VMA -107s/km, MP +69s/km), une séance manquée, et chaleur persistante 25-27°C : forcer 24km avec un final à 4'16/km risque un 3e échec juste avant le plus gros bloc du mois (MP jeudi + SL30 avec 2×8km MP dimanche). Mieux vaut sécuriser une sortie longue réussie pour repartir sur des bases saines.",
    "replacement": {
@@ -491,6 +473,18 @@
    "status": "rejected",
    "created_at": "2026-10-23T10:33:12",
    "decided_at": "2026-10-23T19:24:50"
+  },
+  {
+   "severity": "minor",
+   "kind": "add_note",
+   "date": "2026-10-25",
+   "field": "description_note",
+   "new_value": "Tiens les 18 km pile, allure 4'47/km sans forcer. Tes deux dernières sorties qualité ont dépassé le volume prévu de 70 à 90 % — à 6 jours de la course, l'objectif n'est plus d'accumuler des kilomètres mais d'arriver frais à New York.",
+   "reason": "Pattern répété de dépassement de volume sur les séances qualité (169 %, 191 % du prévu les 14 et 21/10) ; à ce stade du taper, la priorité est la fraîcheur, pas le kilométrage additionnel.",
+   "id": "49249dcc",
+   "guardrail_reject": "jour passé ou en cours",
+   "status": "pending",
+   "created_at": "2026-10-25T10:10:53"
   }
  ]
 }
