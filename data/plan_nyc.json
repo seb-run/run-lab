@@ -10835,12 +10835,152 @@
           "duration_min": 80,
           "key": true,
           "description": "12 km @ 5'00/km\n4 km @ 4'15/km\n\nDernière sortie « longue » — elle n'en a plus que le nom.\n[Endurance active · 4'40–4'55/km]\nChaussures : Adizero Boston 13 (231 km)",
-          "status": "today",
+          "status": "done",
           "target_pace": "4'47\"/km",
           "target_pace_sec": 287,
           "shoe": "Adizero Boston 13 (231 km)",
           "scheduled_time": "08:30",
-          "actual": null,
+          "actual": {
+            "km": 20.1,
+            "duration_min": 97,
+            "pace_sec": 290,
+            "pace_str": "4'50\"/km",
+            "fc": null,
+            "cadence": 176,
+            "type": "endurance",
+            "title": "Course à pied le matin",
+            "n": 1,
+            "note": null,
+            "dyn": null,
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 257,
+                "fc": null,
+                "ca": 172
+              },
+              {
+                "km": 1.0,
+                "ps": 288,
+                "fc": null,
+                "ca": 172
+              },
+              {
+                "km": 1.0,
+                "ps": 316,
+                "fc": null,
+                "ca": 172
+              },
+              {
+                "km": 1.0,
+                "ps": 307,
+                "fc": null,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 304,
+                "fc": null,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 292,
+                "fc": null,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 296,
+                "fc": null,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 293,
+                "fc": null,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 292,
+                "fc": null,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 290,
+                "fc": null,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 288,
+                "fc": null,
+                "ca": 176
+              },
+              {
+                "km": 0.67,
+                "ps": 291,
+                "fc": null,
+                "ca": 172
+              },
+              {
+                "km": 1.0,
+                "ps": 251,
+                "fc": null,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 261,
+                "fc": null,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 268,
+                "fc": null,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 311,
+                "fc": null,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 306,
+                "fc": null,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 300,
+                "fc": null,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 298,
+                "fc": null,
+                "ca": 172
+              },
+              {
+                "km": 1.0,
+                "ps": 292,
+                "fc": null,
+                "ca": 178
+              },
+              {
+                "km": 0.38,
+                "ps": 284,
+                "fc": null,
+                "ca": 178
+              }
+            ]
+          },
           "coach_notes": [
             {
               "kind": "note",
@@ -10864,7 +11004,25 @@
               "text": "Respecte strictement les 16-18 km prévus, sans rallonge. Le 17/10 tu es passé de 24,3 à 30 km, le 21/10 de 11 à 21 km — à J-7 ce n'est plus de la préparation, c'est de la fatigue en plus. Cette sortie doit rester un déblocage des jambes, pas un test de charge."
             }
           ],
-          "_adapt_volume": true
+          "_adapt_volume": true,
+          "score": {
+            "points": 100,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 112,
+            "volume_points": 100,
+            "pace_points": 100,
+            "pace_target_s": 287,
+            "pace_actual_s": 290,
+            "pace_actual_str": "4'50\"/km",
+            "pace_delta_s": 3,
+            "is_quality": false,
+            "hr": null,
+            "reasons": [
+              "Volume 112%",
+              "Allure +3\"/km vs cible"
+            ]
+          }
         }
       ],
       "volume_actual_to_date": 42.6,
@@ -10874,11 +11032,11 @@
         "km_pct": 104,
         "km_done": 42.6,
         "km_planned": 41.0,
-        "km_done_week": 42.6,
+        "km_done_week": 62.7,
         "km_planned_week": 59.0,
         "sessions_done": 3,
         "sessions_planned": 4,
-        "sessions_done_week": 3,
+        "sessions_done_week": 4,
         "keys_success": 1,
         "keys_total": 2,
         "points": 90,
