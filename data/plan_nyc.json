@@ -2449,57 +2449,7 @@
               "rr_beats": 5908,
               "rmssd_effort": 6.6,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 307,
-                "fc": 140,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 303,
-                "fc": 143,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 306,
-                "fc": 145,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 304,
-                "fc": 144,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 306,
-                "fc": 150,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 301,
-                "fc": 150,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 298,
-                "fc": 153,
-                "ca": 180
-              },
-              {
-                "km": 0.79,
-                "ps": 299,
-                "fc": 152,
-                "ca": 178
-              }
-            ]
+            }
           },
           "score": {
             "points": 94,
@@ -11029,17 +10979,17 @@
       "volume_planned_to_date": 41.0,
       "volume_drift_pct": 3.9,
       "compliance": {
-        "km_pct": 104,
-        "km_done": 42.6,
-        "km_planned": 41.0,
+        "km_pct": 106,
+        "km_done": 62.7,
+        "km_planned": 59.0,
         "km_done_week": 62.7,
         "km_planned_week": 59.0,
-        "sessions_done": 3,
-        "sessions_planned": 4,
+        "sessions_done": 4,
+        "sessions_planned": 5,
         "sessions_done_week": 4,
-        "keys_success": 1,
-        "keys_total": 2,
-        "points": 90,
+        "keys_success": 2,
+        "keys_total": 3,
+        "points": 92,
         "verdict": "success"
       }
     },
@@ -11061,7 +11011,7 @@
           "duration_min": 45,
           "key": false,
           "description": "45' facile + 6 LD de 20\". Rien de plus.\n[Footing facile · 5'05–5'25/km]\nChaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-          "status": "pending",
+          "status": "today",
           "target_pace": "5'15\"/km",
           "target_pace_sec": 315,
           "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
@@ -11087,6 +11037,10 @@
             {
               "kind": "note",
               "text": "Dernière séance qualité avant NYC : cible stricte 10 km, 8×1' au seuil. Pas de club, pas de rallonge — l'objectif est l'activation, pas la performance."
+            },
+            {
+              "kind": "note",
+              "text": "Cap strict à 10 km, pas de kilomètre bonus. Les deux dernières séances piste/VMA ont fait 150-190% du prévu avec des allures qui s'effondrent en fin de séance — l'objectif ici est l'activation, pas le volume. Tu t'arrêtes pile sur la consigne."
             }
           ]
         },
@@ -11172,7 +11126,10 @@
             }
           ]
         }
-      ]
+      ],
+      "volume_actual_to_date": 0.0,
+      "volume_planned_to_date": 0.0,
+      "volume_drift_pct": 0
     }
   ],
   "adaptations": [],
