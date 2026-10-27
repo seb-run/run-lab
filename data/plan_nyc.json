@@ -2582,129 +2582,7 @@
               "rr_beats": 12564,
               "rmssd_effort": 9.6,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 316,
-                "fc": 132,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 304,
-                "fc": 141,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 317,
-                "fc": 140,
-                "ca": 176
-              },
-              {
-                "km": 0.75,
-                "ps": 241,
-                "fc": 163,
-                "ca": 178
-              },
-              {
-                "km": 0.59,
-                "ps": 305,
-                "fc": 144,
-                "ca": 174
-              },
-              {
-                "km": 0.76,
-                "ps": 238,
-                "fc": 165,
-                "ca": 176
-              },
-              {
-                "km": 0.81,
-                "ps": 310,
-                "fc": 145,
-                "ca": 174
-              },
-              {
-                "km": 0.78,
-                "ps": 231,
-                "fc": 168,
-                "ca": 178
-              },
-              {
-                "km": 0.9,
-                "ps": 308,
-                "fc": 147,
-                "ca": 174
-              },
-              {
-                "km": 0.77,
-                "ps": 235,
-                "fc": 168,
-                "ca": 176
-              },
-              {
-                "km": 0.79,
-                "ps": 314,
-                "fc": 149,
-                "ca": 174
-              },
-              {
-                "km": 0.78,
-                "ps": 231,
-                "fc": 171,
-                "ca": 176
-              },
-              {
-                "km": 0.8,
-                "ps": 313,
-                "fc": 151,
-                "ca": 172
-              },
-              {
-                "km": 0.79,
-                "ps": 227,
-                "fc": 173,
-                "ca": 178
-              },
-              {
-                "km": 0.91,
-                "ps": 315,
-                "fc": 149,
-                "ca": 172
-              },
-              {
-                "km": 1.0,
-                "ps": 223,
-                "fc": 168,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 229,
-                "fc": 174,
-                "ca": 178
-              },
-              {
-                "km": 0.12,
-                "ps": 232,
-                "fc": 177,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 311,
-                "fc": 162,
-                "ca": 174
-              },
-              {
-                "km": 1.0,
-                "ps": 305,
-                "fc": 153,
-                "ca": 174
-              }
-            ]
+            }
           },
           "score": {
             "points": 98,
@@ -11011,7 +10889,7 @@
           "duration_min": 45,
           "key": false,
           "description": "45' facile + 6 LD de 20\". Rien de plus.\n[Footing facile · 5'05–5'25/km]\nChaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-          "status": "today",
+          "status": "missed",
           "target_pace": "5'15\"/km",
           "target_pace_sec": 315,
           "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
@@ -11027,7 +10905,7 @@
           "duration_min": 55,
           "key": true,
           "description": "2 km d'échauffement\n8 × 1' @ 3'50/km, récupération 1'30 en trot\n2 km de retour au calme\n\nDernière touche de vitesse. Objectif : sensations, pas performance.\n[Seuil · 3'47–3'53/km]\nChaussures : Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
-          "status": "pending",
+          "status": "today",
           "target_pace": "3'50\"/km",
           "target_pace_sec": 230,
           "shoe": "Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
@@ -11128,8 +11006,22 @@
         }
       ],
       "volume_actual_to_date": 0.0,
-      "volume_planned_to_date": 0.0,
-      "volume_drift_pct": 0
+      "volume_planned_to_date": 9.0,
+      "volume_drift_pct": -100.0,
+      "compliance": {
+        "km_pct": 0,
+        "km_done": 0.0,
+        "km_planned": 9.0,
+        "km_done_week": 0.0,
+        "km_planned_week": 77.2,
+        "sessions_done": 0,
+        "sessions_planned": 1,
+        "sessions_done_week": 0,
+        "keys_success": 0,
+        "keys_total": 0,
+        "points": 0,
+        "verdict": "failed"
+      }
     }
   ],
   "adaptations": [],
