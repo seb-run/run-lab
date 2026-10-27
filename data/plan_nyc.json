@@ -10905,12 +10905,197 @@
           "duration_min": 55,
           "key": true,
           "description": "2 km d'échauffement\n8 × 1' @ 3'50/km, récupération 1'30 en trot\n2 km de retour au calme\n\nDernière touche de vitesse. Objectif : sensations, pas performance.\n[Seuil · 3'47–3'53/km]\nChaussures : Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
-          "status": "today",
+          "status": "done",
           "target_pace": "3'50\"/km",
           "target_pace_sec": 230,
           "shoe": "Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
           "scheduled_time": "06:30",
-          "actual": null,
+          "actual": {
+            "km": 8.0,
+            "duration_min": 41,
+            "pace_sec": 305,
+            "pace_str": "5'05\"/km",
+            "fc": 145,
+            "cadence": 178,
+            "type": "frac_court",
+            "title": "i202270239",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 245.0,
+              "osc_cm": 8.5,
+              "vratio": 7.81,
+              "step_m": 1.09,
+              "temp_c": 21,
+              "temp_max": 27,
+              "power": 362,
+              "np": 383,
+              "te_aero": 3.2,
+              "te_ana": 1.9,
+              "load": 139.0,
+              "strides": 3597,
+              "rpe": 3.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 244.0,
+                  "end": 256.0,
+                  "pct": 4.7
+                },
+                "step": {
+                  "start": 1009.0,
+                  "end": 1039.0,
+                  "pct": 2.9
+                },
+                "vratio": {
+                  "start": 7.8,
+                  "end": 8.22,
+                  "pct": 5.3
+                },
+                "osc": {
+                  "start": 79.0,
+                  "end": 85.0,
+                  "pct": 8.4
+                },
+                "hr": {
+                  "start": 126.0,
+                  "end": 149.0,
+                  "pct": 18.7
+                },
+                "cad": {
+                  "start": 91.0,
+                  "end": 87.0,
+                  "pct": -4.4
+                }
+              },
+              "flags": [
+                "stance_fade"
+              ]
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 326,
+                "fc": 123,
+                "ca": 182
+              },
+              {
+                "km": 1.0,
+                "ps": 322,
+                "fc": 128,
+                "ca": 182
+              },
+              {
+                "km": 0.51,
+                "ps": 323,
+                "fc": 132,
+                "ca": 178
+              },
+              {
+                "km": 0.27,
+                "ps": 224,
+                "fc": 157,
+                "ca": 182
+              },
+              {
+                "km": 0.27,
+                "ps": 329,
+                "fc": 152,
+                "ca": 176
+              },
+              {
+                "km": 0.26,
+                "ps": 229,
+                "fc": 150,
+                "ca": 182
+              },
+              {
+                "km": 0.26,
+                "ps": 345,
+                "fc": 150,
+                "ca": 174
+              },
+              {
+                "km": 0.27,
+                "ps": 224,
+                "fc": 152,
+                "ca": 182
+              },
+              {
+                "km": 0.26,
+                "ps": 343,
+                "fc": 154,
+                "ca": 172
+              },
+              {
+                "km": 0.26,
+                "ps": 235,
+                "fc": 157,
+                "ca": 180
+              },
+              {
+                "km": 0.25,
+                "ps": 358,
+                "fc": 155,
+                "ca": 172
+              },
+              {
+                "km": 0.26,
+                "ps": 231,
+                "fc": 156,
+                "ca": 178
+              },
+              {
+                "km": 0.27,
+                "ps": 336,
+                "fc": 160,
+                "ca": 174
+              },
+              {
+                "km": 0.26,
+                "ps": 228,
+                "fc": 159,
+                "ca": 184
+              },
+              {
+                "km": 0.28,
+                "ps": 327,
+                "fc": 157,
+                "ca": 174
+              },
+              {
+                "km": 0.26,
+                "ps": 229,
+                "fc": 161,
+                "ca": 182
+              },
+              {
+                "km": 0.27,
+                "ps": 329,
+                "fc": 160,
+                "ca": 172
+              },
+              {
+                "km": 0.27,
+                "ps": 227,
+                "fc": 161,
+                "ca": 182
+              },
+              {
+                "km": 1.0,
+                "ps": 341,
+                "fc": 152,
+                "ca": 174
+              },
+              {
+                "km": 0.53,
+                "ps": 337,
+                "fc": 149,
+                "ca": 174
+              }
+            ]
+          },
           "coach_notes": [
             {
               "kind": "note",
@@ -10920,7 +11105,31 @@
               "kind": "note",
               "text": "Cap strict à 10 km, pas de kilomètre bonus. Les deux dernières séances piste/VMA ont fait 150-190% du prévu avec des allures qui s'effondrent en fin de séance — l'objectif ici est l'activation, pas le volume. Tu t'arrêtes pile sur la consigne."
             }
-          ]
+          ],
+          "score": {
+            "points": 89,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 80,
+            "volume_points": 80,
+            "pace_points": 100,
+            "pace_target_s": 230,
+            "pace_actual_s": 228,
+            "pace_actual_str": "3'48\"/km",
+            "pace_delta_s": -2,
+            "is_quality": true,
+            "hr": {
+              "avg": 145,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": null,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 80%",
+              "Allure −2\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-10-28",
@@ -11012,11 +11221,11 @@
         "km_pct": 0,
         "km_done": 0.0,
         "km_planned": 9.0,
-        "km_done_week": 0.0,
+        "km_done_week": 8.0,
         "km_planned_week": 77.2,
         "sessions_done": 0,
         "sessions_planned": 1,
-        "sessions_done_week": 0,
+        "sessions_done_week": 1,
         "keys_success": 0,
         "keys_total": 0,
         "points": 0,

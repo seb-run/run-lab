@@ -1,45 +1,45 @@
 {
- "headline": "20 km bouclés, +2 km de plus que prévu, allure cible tenue.",
+ "headline": "Fractions dans le rythme (3'48\"/km), mais séance écourtée : 8 km sur 10 prévus.",
  "bullets": [
-  "Allure 4'50\"/km, 3\" plus lent que la cible mais dans ta zone d'endurance.",
-  "Cadence 176 ppm, identique à ta moyenne 60j (176.8) — rien à signaler.",
-  "Accélération vers le 13e km (4'11-4'28) puis retour vers 5'00 en fin de sortie."
+  "Allure fractions 3'48\"/km, 2\" plus vite que la cible 3'50 — objectif vitesse atteint.",
+  "Volume 80% du plan : 8,01 km réalisés sur 10 km prévus, 2 km manquants.",
+  "Temps de contact au sol 245 ms, +18 ms vs ta moyenne 60j (226 ms) à allure comparable."
  ],
  "points": [
   {
-   "label": "Allure moyenne",
-   "valeur": "4'50\"/km",
-   "ecart": "+3\" vs cible plan",
-   "lecture": "cible quasi tenue sur 20 km",
+   "label": "Allure fractions",
+   "valeur": "3'48\"/km",
+   "ecart": "-2 s vs cible 3'50",
+   "lecture": "cible de vitesse atteinte",
    "ton": "bon"
   },
   {
-   "label": "Cadence",
-   "valeur": "176 ppm",
-   "ecart": "conforme à réf. 60j (176.8)",
-   "lecture": "aucune variation notable",
-   "ton": "neutre"
+   "label": "Contact au sol",
+   "valeur": "245 ms",
+   "ecart": "+18,6 ms vs réf. 60j (226 ms)",
+   "lecture": "appui plus long qu'à l'habitude",
+   "ton": "vigilance"
   },
   {
-   "label": "Volume",
-   "valeur": "20.07 km",
-   "ecart": "112% du prévu (18 km)",
-   "lecture": "sortie plus longue que prévu",
+   "label": "Volume réalisé",
+   "valeur": "8,01 km / 10 km",
+   "ecart": "80% du plan",
+   "lecture": "séance interrompue avant la fin",
    "ton": "neutre"
   }
  ],
- "achille": "Pas de donnée d'équilibre gauche/droite cette séance — ceinture probablement absente.",
- "a_surveiller": "Pas de FC ni de contact au sol enregistrés — aucune lecture possible sur l'effort ou l'impact.",
+ "achille": "Pas de données d'équilibre gauche/droit aujourd'hui — ceinture ou footpod probablement absent.",
+ "a_surveiller": "Contact au sol en hausse en fin de séance (+4,7%) ; FC monte avec l'intensité des fractions, cohérent.",
  "seance": {
-  "date": "25/10/2026",
-  "heure": "09:32",
-  "titre": "Course à pied le matin",
-  "type_detecte": "endurance",
-  "km": 20.07,
-  "duree": "1h 37m 02s",
-  "allure": "4'50\"/km",
-  "fc_moy": null
+  "date": "27/10/2026",
+  "heure": "12:21",
+  "titre": "i202270239",
+  "type_detecte": "frac_court",
+  "km": 8.01,
+  "duree": "40m 42s",
+  "allure": "5'05\"/km",
+  "fc_moy": 145
  },
- "generated_at": "2026-10-25T11:48:23",
- "baseline_n": 33
+ "generated_at": "2026-10-27T12:06:04",
+ "baseline_n": 31
 }
