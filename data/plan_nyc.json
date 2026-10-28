@@ -2697,45 +2697,7 @@
               "rr_beats": 4851,
               "rmssd_effort": 8.8,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 319,
-                "fc": 129,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 319,
-                "fc": 140,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 321,
-                "fc": 140,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 320,
-                "fc": 138,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 324,
-                "fc": 139,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 326,
-                "fc": 136,
-                "ca": 176
-              }
-            ]
+            }
           },
           "score": {
             "points": 100,
@@ -11140,7 +11102,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Pas de cœur de séance à la piste. Si tu y vas, uniquement le trot et les gammes, et tu rentres.",
-          "status": "pending",
+          "status": "today",
           "actual": null
         },
         {
@@ -11157,7 +11119,13 @@
           "target_pace_sec": 315,
           "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
           "scheduled_time": "06:30",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "Pile 7km, pas de rallonge. Tes 3 dernières sorties clés ont toutes dépassé le plan de 60 à 90% — ici l'objectif est des jambes fraîches, pas du kilométrage en plus."
+            }
+          ]
         },
         {
           "date": "2026-10-30",
@@ -11189,7 +11157,13 @@
           "target_pace_sec": 325,
           "shoe": "Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
           "scheduled_time": "07:00",
-          "actual": null
+          "actual": null,
+          "coach_notes": [
+            {
+              "kind": "note",
+              "text": "5km et stop. Allure cool uniquement, aucune accélération. C'est le dernier déverrouillage avant le marathon, pas une occasion de tester tes jambes."
+            }
+          ]
         },
         {
           "date": "2026-11-01",
@@ -11214,22 +11188,22 @@
           ]
         }
       ],
-      "volume_actual_to_date": 0.0,
-      "volume_planned_to_date": 9.0,
-      "volume_drift_pct": -100.0,
+      "volume_actual_to_date": 8.0,
+      "volume_planned_to_date": 19.0,
+      "volume_drift_pct": -57.9,
       "compliance": {
-        "km_pct": 0,
-        "km_done": 0.0,
-        "km_planned": 9.0,
+        "km_pct": 42,
+        "km_done": 8.0,
+        "km_planned": 19.0,
         "km_done_week": 8.0,
         "km_planned_week": 77.2,
-        "sessions_done": 0,
-        "sessions_planned": 1,
+        "sessions_done": 1,
+        "sessions_planned": 2,
         "sessions_done_week": 1,
-        "keys_success": 0,
-        "keys_total": 0,
-        "points": 0,
-        "verdict": "failed"
+        "keys_success": 1,
+        "keys_total": 1,
+        "points": 61,
+        "verdict": "partial"
       }
     }
   ],
