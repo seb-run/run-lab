@@ -2841,183 +2841,7 @@
               "flags": [
                 "stance_fade"
               ]
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 302,
-                "fc": 132,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 301,
-                "fc": 142,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 304,
-                "fc": 144,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 302,
-                "fc": 144,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 296,
-                "fc": 145,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 234,
-                "fc": 160,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 236,
-                "fc": 163,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 237,
-                "fc": 165,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 239,
-                "fc": 167,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 236,
-                "fc": 170,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 235,
-                "fc": 169,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 238,
-                "fc": 168,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 236,
-                "fc": 167,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 290,
-                "fc": 152,
-                "ca": 182
-              },
-              {
-                "km": 1.0,
-                "ps": 308,
-                "fc": 147,
-                "ca": 182
-              },
-              {
-                "km": 1.0,
-                "ps": 237,
-                "fc": 165,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 239,
-                "fc": 167,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 241,
-                "fc": 168,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 239,
-                "fc": 168,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 237,
-                "fc": 167,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 236,
-                "fc": 170,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 242,
-                "fc": 168,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 242,
-                "fc": 171,
-                "ca": 178
-              },
-              {
-                "km": 1.0,
-                "ps": 291,
-                "fc": 159,
-                "ca": 174
-              },
-              {
-                "km": 1.0,
-                "ps": 292,
-                "fc": 154,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 288,
-                "fc": 150,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 300,
-                "fc": 152,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 294,
-                "fc": 152,
-                "ca": 176
-              },
-              {
-                "km": 0.21,
-                "ps": 319,
-                "fc": 151,
-                "ca": 172
-              }
-            ]
+            }
           },
           "score": {
             "points": 94,
@@ -11102,7 +10926,7 @@
           "duration_min": 0,
           "key": false,
           "description": "Pas de cœur de séance à la piste. Si tu y vas, uniquement le trot et les gammes, et tu rentres.",
-          "status": "today",
+          "status": "done",
           "actual": null
         },
         {
@@ -11114,7 +10938,7 @@
           "duration_min": 35,
           "key": false,
           "description": "35' très facile + 4 lignes droites.\n\n🧳 Ce soir : sac bouclé. Chaussures de course, dossard, tenue, gels ET montre EN CABINE.\n[Footing facile · 5'05–5'25/km]\nChaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-          "status": "pending",
+          "status": "today",
           "target_pace": "5'15\"/km",
           "target_pace_sec": 315,
           "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
