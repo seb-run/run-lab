@@ -1,45 +1,45 @@
 {
- "headline": "Fractions dans le rythme (3'48\"/km), mais séance écourtée : 8 km sur 10 prévus.",
+ "headline": "Dernier footing avant NY : séance facile, bien réussie, RPE très bas",
  "bullets": [
-  "Allure fractions 3'48\"/km, 2\" plus vite que la cible 3'50 — objectif vitesse atteint.",
-  "Volume 80% du plan : 8,01 km réalisés sur 10 km prévus, 2 km manquants.",
-  "Temps de contact au sol 245 ms, +18 ms vs ta moyenne 60j (226 ms) à allure comparable."
+  "FC moy 148 bpm, +4 vs réf 60j (144), pour une allure quasi identique (5'10 vs 5'07 hab.)",
+  "Temps de contact 247ms, +20ms vs ta moyenne 60j (227ms), allure comparable",
+  "Volume 114% (8,01km vs 7 prévus), allure cible tenue (-5\"/km), RPE 2/10"
  ],
  "points": [
   {
-   "label": "Allure fractions",
-   "valeur": "3'48\"/km",
-   "ecart": "-2 s vs cible 3'50",
-   "lecture": "cible de vitesse atteinte",
-   "ton": "bon"
-  },
-  {
-   "label": "Contact au sol",
-   "valeur": "245 ms",
-   "ecart": "+18,6 ms vs réf. 60j (226 ms)",
-   "lecture": "appui plus long qu'à l'habitude",
+   "label": "Temps de contact",
+   "valeur": "247 ms",
+   "ecart": "+20ms vs réf 60j (227ms)",
+   "lecture": "plus long que d'habitude, allure identique",
    "ton": "vigilance"
   },
   {
-   "label": "Volume réalisé",
-   "valeur": "8,01 km / 10 km",
-   "ecart": "80% du plan",
-   "lecture": "séance interrompue avant la fin",
+   "label": "FC moyenne",
+   "valeur": "148 bpm",
+   "ecart": "+4 vs réf 60j (144)",
+   "lecture": "cardio un peu plus sollicité, RPE pourtant bas",
    "ton": "neutre"
+  },
+  {
+   "label": "Ratio vertical",
+   "valeur": "7.84",
+   "ecart": "-1.04 vs réf 60j (8.88)",
+   "lecture": "meilleure stabilité verticale que d'habitude",
+   "ton": "bon"
   }
  ],
- "achille": "Pas de données d'équilibre gauche/droit aujourd'hui — ceinture ou footpod probablement absent.",
- "a_surveiller": "Contact au sol en hausse en fin de séance (+4,7%) ; FC monte avec l'intensité des fractions, cohérent.",
+ "achille": "Équilibre G/D non mesuré cette séance (champ vide) — aucun signal exploitable.",
+ "a_surveiller": "Contact au sol +20ms vs réf, chaussures neuves (Hyperboost Edge) — à surveiller, sans urgence.",
  "seance": {
-  "date": "27/10/2026",
-  "heure": "12:21",
-  "titre": "i202270239",
-  "type_detecte": "frac_court",
+  "date": "29/10/2026",
+  "heure": "12:11",
+  "titre": "i203130161",
+  "type_detecte": "endurance",
   "km": 8.01,
-  "duree": "40m 42s",
-  "allure": "5'05\"/km",
-  "fc_moy": 145
+  "duree": "41m 20s",
+  "allure": "5'10\"/km",
+  "fc_moy": 148
  },
- "generated_at": "2026-10-27T12:06:04",
- "baseline_n": 31
+ "generated_at": "2026-10-29T11:58:13",
+ "baseline_n": 32
 }

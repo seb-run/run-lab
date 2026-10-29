@@ -1,9 +1,9 @@
 {
  "garmin": {
   "ok": true,
-  "at": "2026-10-29T11:45:57",
-  "message": "0 fichier(s), 2 course(s) vues",
-  "last_ok": "2026-10-29T11:45:57"
+  "at": "2026-10-29T11:57:36",
+  "message": "1 fichier(s), 3 course(s) vues",
+  "last_ok": "2026-10-29T11:57:36"
  },
  "coach": {
   "ok": true,
@@ -12,8 +12,8 @@
  },
  "debrief": {
   "ok": true,
-  "at": "2026-10-27T12:06:04",
-  "last_ok": "2026-10-27T12:06:04"
+  "at": "2026-10-29T11:58:13",
+  "last_ok": "2026-10-29T11:58:13"
  },
  "coach_validate": {
   "ok": true,
