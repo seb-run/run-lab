@@ -11095,7 +11095,7 @@
           "duration_min": 20,
           "key": false,
           "description": "🌅 06h00 : 20' de déblocage très facile (~4 km) avant de partir.\n✈️ 12h30 : décollage.\n\nDans l'avion :\n• Montre à l'heure de New York dès l'embarquement\n• Bas de contention\n• 500 ml d'eau toutes les 2 h, zéro alcool\n• Se lever et marcher toutes les 90'\n• Repas aux heures de NY, pas aux heures de Paris\n• Ne PAS dormir plus de 90' d'affilée\n\nÀ l'arrivée (≈ 15h00 locale) : lumière du jour, marcher 30–40', dîner à 19h locale, coucher 22h30 locale.\n[Récupération · 5'15–5'35/km]\nChaussures : Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
-          "status": "pending",
+          "status": "today",
           "target_pace": "5'25\"/km",
           "target_pace_sec": 325,
           "shoe": "Adidas Hyperboost Edge (neuve) — 45 mm de stack, volume facile",
@@ -11147,21 +11147,21 @@
           ]
         }
       ],
-      "volume_actual_to_date": 8.0,
-      "volume_planned_to_date": 19.0,
-      "volume_drift_pct": -57.9,
+      "volume_actual_to_date": 16.0,
+      "volume_planned_to_date": 26.0,
+      "volume_drift_pct": -38.5,
       "compliance": {
-        "km_pct": 42,
-        "km_done": 8.0,
-        "km_planned": 19.0,
+        "km_pct": 62,
+        "km_done": 16.0,
+        "km_planned": 26.0,
         "km_done_week": 16.0,
         "km_planned_week": 77.2,
-        "sessions_done": 1,
-        "sessions_planned": 2,
+        "sessions_done": 2,
+        "sessions_planned": 3,
         "sessions_done_week": 2,
         "keys_success": 1,
         "keys_total": 1,
-        "points": 61,
+        "points": 75,
         "verdict": "partial"
       }
     }

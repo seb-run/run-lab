@@ -1,39 +1,39 @@
 {
- "generated_at": "2026-10-29T11:47:10",
+ "generated_at": "2026-10-30T11:39:53",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-10-26\", \"title\": \"Footing 45' + 6 lignes droites\", \"type\": \"easy\", \"planned_km\": 9.0, \"key\": false, \"status\": \"missed\", \"target_pace\": \"5'15\\\"/km\"}, {\"date\": \"2026-10-27\", \"title\": \"ACTIVATION — 8 × 1'\", \"type\": \"seuil\", \"planned_km\": 10.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'50\\\"/km\", \"actual\": {\"km\": 8.0, \"pace_str\": \"5'05\\\"/km\", \"fc\": 145, \"cadence\": 178, \"duration_min\": 41}, \"splits\": \"1:5'26/123/182spm 2:5'22/128/182spm 3:5'23/132/178spm 4:3'44/157/182spm 5:5'29/152/176spm 6:3'49/150/182spm 7:5'45/150/174spm 8:3'44/152/182spm 9:5'43/154/172spm 10:3'55/157/180spm 11:5'58/155/172spm 12:3'51/156/178spm 13:5'36/160/174spm 14:3'48/159/184spm 15:5'27/157/174spm 16:3'49/161/182spm 17:5'29/160/172spm 18:3'47/161/182spm 19:5'41/152/174spm 20:5'37/149/174spm\", \"garmin\": {\"te_aero\": 3.2, \"te_ana\": 1.9, \"load\": 139.0, \"rpe\": 3.0, \"feel_label\": \"Fort\", \"temp_c\": 21, \"flags\": [\"stance_fade\"], \"stance_drift_pct\": 4.7, \"step_drift_pct\": 2.9}, \"score\": {\"points\": 89, \"verdict\": \"success\", \"volume_pct\": 80, \"pace_delta_s\": -2}, \"hr\": {\"avg\": 145, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": null, \"flags\": []}}, {\"date\": \"2026-10-28\", \"title\": \"Repos (ou trot 30' avec les copains)\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}]|f1e0084a04",
- "plan_hash": "f1e0084a04",
- "headline": "3 séances clés d'affilée réussies pour clôturer la prépa — il ne reste plus qu'à arriver frais dimanche.",
- "analysis": "Tu es à J-3, et le gros du travail est fait : la répétition générale de 30km (négative split, dérive cardiaque à 5,1%), la sortie allure NYC à 4'12 quasi parfaite, et l'activation seuil de mardi — trois clés d'affilée réussies pour fermer la préparation. La dérive cardiaque reste maîtrisée sur toutes les sorties continues (3,4%, 5,1%, -0,9%), le moteur aérobie tient malgré un volume chargé sur les semaines 8 et 9 (108% et 121% du plan). Les deux footings manqués (22 et 26 oct) et la séance VMA ratée du 21 (191% de volume, structure chaotique dans les splits) sont du bruit de fin de prépa, pas un signal : zéro séance clé perdue depuis le 17 octobre. Côté tendon, rien d'anormal — équilibre gauche/droite stable entre 49 et 51%, aucune plainte dans tes retours. Le vrai sujet maintenant, c'est le voyage : vol vers New York vendredi, décalage horaire, nouveau climat — plus de risque là que dans tes jambes. Garde les trois prochaines sorties légères comme prévu (35', shake-out, déverrouillage à Central Park), hydrate-toi large pendant le vol, dors un maximum. Le plan ne bouge pas : la préparation est faite, il ne reste qu'à arriver frais dimanche.",
+ "signature": "[{\"date\": \"2026-10-27\", \"title\": \"ACTIVATION — 8 × 1'\", \"type\": \"seuil\", \"planned_km\": 10.0, \"key\": true, \"status\": \"done\", \"target_pace\": \"3'50\\\"/km\", \"actual\": {\"km\": 8.0, \"pace_str\": \"5'05\\\"/km\", \"fc\": 145, \"cadence\": 178, \"duration_min\": 41}, \"splits\": \"1:5'26/123/182spm 2:5'22/128/182spm 3:5'23/132/178spm 4:3'44/157/182spm 5:5'29/152/176spm 6:3'49/150/182spm 7:5'45/150/174spm 8:3'44/152/182spm 9:5'43/154/172spm 10:3'55/157/180spm 11:5'58/155/172spm 12:3'51/156/178spm 13:5'36/160/174spm 14:3'48/159/184spm 15:5'27/157/174spm 16:3'49/161/182spm 17:5'29/160/172spm 18:3'47/161/182spm 19:5'41/152/174spm 20:5'37/149/174spm\", \"garmin\": {\"te_aero\": 3.2, \"te_ana\": 1.9, \"load\": 139.0, \"rpe\": 3.0, \"feel_label\": \"Fort\", \"temp_c\": 21, \"flags\": [\"stance_fade\"], \"stance_drift_pct\": 4.7, \"step_drift_pct\": 2.9}, \"score\": {\"points\": 89, \"verdict\": \"success\", \"volume_pct\": 80, \"pace_delta_s\": -2}, \"hr\": {\"avg\": 145, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": null, \"flags\": []}}, {\"date\": \"2026-10-28\", \"title\": \"Repos (ou trot 30' avec les copains)\", \"type\": \"rest\", \"planned_km\": 0.0, \"key\": false, \"status\": \"done\", \"target_pace\": null}, {\"date\": \"2026-10-29\", \"title\": \"Footing 35' + 4 LD — dernier run à Paris\", \"type\": \"easy\", \"planned_km\": 7.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'15\\\"/km\", \"actual\": {\"km\": 8.0, \"pace_str\": \"5'10\\\"/km\", \"fc\": 148, \"cadence\": 176, \"duration_min\": 41}, \"splits\": \"1:5'28/133/180spm 2:5'09/149/176spm 3:5'04/145/176spm 4:5'07/147/176spm 5:4'59/149/176spm 6:5'05/153/176spm 7:5'12/156/170spm 8:5'13/154/174spm\", \"garmin\": {\"te_aero\": 3.3, \"te_ana\": 0.0, \"load\": 120.1, \"rpe\": 2.0, \"feel_label\": \"Fort\", \"temp_c\": 20, \"flags\": [], \"stance_drift_pct\": 2.0, \"step_drift_pct\": 3.6}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 114, \"pace_delta_s\": -5}, \"hr\": {\"avg\": 148, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 6.8, \"flags\": []}}]|81e5dbc6d0",
+ "plan_hash": "81e5dbc6d0",
+ "headline": "3 séances clés dans le dur (17, 23, 25 oct) à moins de 5 s/km de la cible — le travail est fait, reste à gérer les 48h qui viennent.",
+ "analysis": "Les trois répétitions générales qui comptaient sont toutes validées avec une précision d'allure remarquable : la sortie longue du 17/10 à 4'16/km (cible 4'12, écart 4s), le bloc allure NYC du 23/10 à 4'37/km moyen avec un segment à 3'51-4'00/km parfaitement tenu, et la sortie longue courte du 25/10 bouclée à 4'50/km avec zéro écart de rythme. C'est le signal le plus concret qu'on puisse demander avant une course : ton corps répond à l'allure marathon sous charge. Les deux footings manqués (22 et 26/10) et la séance VMA chaotique du 21/10 ne pèsent rien face à ça — la VMA en particulier était un fractionné à grande variabilité, pas une alerte. Le seul point à garder en tête : un contact au sol qui s'allonge au-delà de 4% sur deux séances clés (5.6% le 17/10, 5.9% le 23/10), mais il est retombé à 2.0% sur ton dernier footing du 29/10, donc rien d'alarmant à ce stade. Le plan des deux prochains jours est minimal et c'est voulu — voyage, déverrouillage léger à Central Park, puis course. Le seul vrai sujet maintenant, c'est le décalage horaire, le sommeil et l'hydratation, pas l'entraînement.",
  "forme": {
-  "score": 84,
+  "score": 87,
   "verdict": "bon",
-  "headline": "Taper réussi, 3 clés d'affilée dans la cible",
-  "detail": "Dress rehearsal 30km, allure NYC et seuil enchaînés avec succès, dérive cardiaque sous 5% sur tes sorties continues. Les footings manqués et la VMA ratée du 21 sont anecdotiques en fin de taper. Focus des 3 jours : voyage et récupération, pas la forme physique.",
+  "headline": "3 séances clés réussies d'affilée, prêt pour dimanche",
+  "detail": "Tes trois dernières séances de référence sont dans un mouchoir de poche par rapport à l'allure cible — entre 2 et 4 secondes d'écart par km, ce qui est excellent à ce stade. Le contact au sol qui s'était un peu allongé (5.6-5.9%) est redescendu à 2% sur ton dernier footing, donc pas de souci tendon à l'approche. Les deux jours restants : dormir, récupérer du vol, rien de plus à prouver à l'entraînement.",
   "indicateurs": {
    "fraicheur": {
-    "valeur": "2 repos + taper",
+    "valeur": "+12",
     "trend": "up",
     "etat": "ok",
-    "note": "jambes fraîches avant J-0"
+    "note": "taper bien géré"
    },
    "compliance": {
     "valeur": "3/3 clés réussies",
     "trend": "up",
     "etat": "ok",
-    "note": "30km, MP, seuil enchaînés"
+    "note": "allures NYC tenues"
    },
    "aerobie": {
-    "valeur": "3 à 5 %",
+    "valeur": "3,5 %",
     "trend": "flat",
     "etat": "ok",
-    "note": "dérive maîtrisée malgré volume"
+    "note": "dérive normale, allure NYC"
    },
    "achille": {
-    "valeur": "49-51 %",
-    "trend": "flat",
+    "valeur": "2,0 %",
+    "trend": "down",
     "etat": "ok",
-    "note": "équilibre stable, rien à signaler"
+    "note": "redescendu, pas d'alerte"
    }
   }
  },
