@@ -1,45 +1,45 @@
 {
- "headline": "Dernier footing avant NY : séance facile, bien réussie, RPE très bas",
+ "headline": "Déverrouillage couru à 4'53/km, bien plus vite que les 5'25-5'35 visés",
  "bullets": [
-  "FC moy 148 bpm, +4 vs réf 60j (144), pour une allure quasi identique (5'10 vs 5'07 hab.)",
-  "Temps de contact 247ms, +20ms vs ta moyenne 60j (227ms), allure comparable",
-  "Volume 114% (8,01km vs 7 prévus), allure cible tenue (-5\"/km), RPE 2/10"
+  "Allure 4'53/km vs 5'25-5'35 au plan — nettement plus rapide que prévu pour un facile",
+  "FC 141 moy, -5 vs réf 146 à allure comparable — belle aisance, RPE 3/10 confirme",
+  "Contact au sol 242ms, +18ms vs réf 224ms à allure similaire — à surveiller"
  ],
  "points": [
   {
-   "label": "Temps de contact",
-   "valeur": "247 ms",
-   "ecart": "+20ms vs réf 60j (227ms)",
-   "lecture": "plus long que d'habitude, allure identique",
+   "label": "Allure",
+   "valeur": "4'53\"/km",
+   "ecart": "-7s vs réf 299.78s/km, -32s vs cible plan",
+   "lecture": "bien plus rapide que le facile prévu",
    "ton": "vigilance"
   },
   {
    "label": "FC moyenne",
-   "valeur": "148 bpm",
-   "ecart": "+4 vs réf 60j (144)",
-   "lecture": "cardio un peu plus sollicité, RPE pourtant bas",
-   "ton": "neutre"
+   "valeur": "141 bpm",
+   "ecart": "-5 vs réf 145.78 bpm",
+   "lecture": "coût cardiaque bas pour l'allure",
+   "ton": "bon"
   },
   {
-   "label": "Ratio vertical",
-   "valeur": "7.84",
-   "ecart": "-1.04 vs réf 60j (8.88)",
-   "lecture": "meilleure stabilité verticale que d'habitude",
-   "ton": "bon"
+   "label": "Temps de contact",
+   "valeur": "242 ms",
+   "ecart": "+18 ms vs réf 224 ms",
+   "lecture": "plus long que d'habitude, s'améliore en séance",
+   "ton": "neutre"
   }
  ],
- "achille": "Équilibre G/D non mesuré cette séance (champ vide) — aucun signal exploitable.",
- "a_surveiller": "Contact au sol +20ms vs réf, chaussures neuves (Hyperboost Edge) — à surveiller, sans urgence.",
+ "achille": "Pas de données d'équilibre G/D (champ vide) — probablement sans ceinture cette fois.",
+ "a_surveiller": "Séance 'très facile' courue 32s/km plus vite que la consigne, à 2 jours de New York.",
  "seance": {
-  "date": "29/10/2026",
-  "heure": "12:11",
-  "titre": "i203130161",
+  "date": "31/10/2026",
+  "heure": "13:17",
+  "titre": "i203927138",
   "type_detecte": "endurance",
-  "km": 8.01,
-  "duree": "41m 20s",
-  "allure": "5'10\"/km",
-  "fc_moy": 148
+  "km": 5.01,
+  "duree": "24m 29s",
+  "allure": "4'53\"/km",
+  "fc_moy": 141
  },
- "generated_at": "2026-10-29T11:58:13",
- "baseline_n": 32
+ "generated_at": "2026-10-31T12:48:19",
+ "baseline_n": 37
 }

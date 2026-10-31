@@ -11031,18 +11031,135 @@
           "duration_min": 25,
           "key": false,
           "description": "25' très facile + 4 lignes droites + 10' de gammes.\nLe décalage joue pour toi : tu seras naturellement réveillé tôt, profites-en pour courir à 7h locale.\n\n📋 Reste de la journée :\n• Expo tôt et rapide — 1 h debout maximum, puis on s'assoit\n• Repas principal glucidique à midi\n• Dîner léger et tôt (18h30)\n• Préparer la tenue et les gels avant de dormir\n• Coucher 21h30 locale\n[Récupération · 5'15–5'35/km]\nChaussures : Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
-          "status": "today",
+          "status": "done",
           "target_pace": "5'25\"/km",
           "target_pace_sec": 325,
           "shoe": "Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
           "scheduled_time": "07:00",
-          "actual": null,
+          "actual": {
+            "km": 5.0,
+            "duration_min": 24,
+            "pace_sec": 293,
+            "pace_str": "4'53\"/km",
+            "fc": 141,
+            "cadence": 173,
+            "type": "endurance",
+            "title": "i203927138",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 242.0,
+              "osc_cm": 8.7,
+              "vratio": 7.65,
+              "step_m": 1.14,
+              "temp_c": 18,
+              "temp_max": 26,
+              "power": 376,
+              "np": 396,
+              "te_aero": 2.8,
+              "te_ana": 0.0,
+              "load": 77.6,
+              "strides": 2166,
+              "rpe": 3.0,
+              "feel": 75,
+              "feel_label": "Fort",
+              "drift": {
+                "stance": {
+                  "start": 249.0,
+                  "end": 240.0,
+                  "pct": -3.6
+                },
+                "step": {
+                  "start": 1003.0,
+                  "end": 1192.0,
+                  "pct": 18.8
+                },
+                "vratio": {
+                  "start": 8.04,
+                  "end": 7.51,
+                  "pct": -6.6
+                },
+                "osc": {
+                  "start": 80.0,
+                  "end": 90.0,
+                  "pct": 11.3
+                },
+                "hr": {
+                  "start": 136.0,
+                  "end": 135.0,
+                  "pct": -0.7
+                },
+                "cad": {
+                  "start": 87.0,
+                  "end": 88.0,
+                  "pct": 1.1
+                }
+              },
+              "flags": []
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 342,
+                "fc": 127,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 312,
+                "fc": 145,
+                "ca": 172
+              },
+              {
+                "km": 1.0,
+                "ps": 248,
+                "fc": 162,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 278,
+                "fc": 144,
+                "ca": 168
+              },
+              {
+                "km": 1.0,
+                "ps": 286,
+                "fc": 135,
+                "ca": 176
+              }
+            ]
+          },
           "coach_notes": [
             {
               "kind": "note",
               "text": "5km et stop. Allure cool uniquement, aucune accélération. C'est le dernier déverrouillage avant le marathon, pas une occasion de tester tes jambes."
             }
-          ]
+          ],
+          "score": {
+            "points": 86,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 100,
+            "volume_points": 100,
+            "pace_points": 70,
+            "pace_target_s": 325,
+            "pace_actual_s": 293,
+            "pace_actual_str": "4'53\"/km",
+            "pace_delta_s": -32,
+            "is_quality": false,
+            "hr": {
+              "avg": 141,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": null,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 100%",
+              "Allure −32\"/km vs cible"
+            ]
+          }
         },
         {
           "date": "2026-11-01",
@@ -11074,11 +11191,11 @@
         "km_pct": 53,
         "km_done": 16.0,
         "km_planned": 30.0,
-        "km_done_week": 16.0,
+        "km_done_week": 21.0,
         "km_planned_week": 77.2,
         "sessions_done": 2,
         "sessions_planned": 4,
-        "sessions_done_week": 2,
+        "sessions_done_week": 3,
         "keys_success": 1,
         "keys_total": 1,
         "points": 70,
