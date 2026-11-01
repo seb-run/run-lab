@@ -1,45 +1,45 @@
 {
- "headline": "Déverrouillage couru à 4'53/km, bien plus vite que les 5'25-5'35 visés",
+ "headline": "Sub-3h de justesse (2h59'51), net coup de moins bien après le 20e km",
  "bullets": [
-  "Allure 4'53/km vs 5'25-5'35 au plan — nettement plus rapide que prévu pour un facile",
-  "FC 141 moy, -5 vs réf 146 à allure comparable — belle aisance, RPE 3/10 confirme",
-  "Contact au sol 242ms, +18ms vs réf 224ms à allure similaire — à surveiller"
+  "FC 165 bpm, +9 vs réf 60j (155.8), découplage 7.4% — chaleur (24°C) + fatigue plausibles",
+  "Allure 230-250s/km jusqu'au 20e km, puis 260-270s/km jusqu'à l'arrivée : net ralentissement",
+  "Équilibre G/D 48.1%, proche réf 49.3% ; asym vitesse quasi nulle (0.13), pas de signal pubalgie"
  ],
  "points": [
   {
-   "label": "Allure",
-   "valeur": "4'53\"/km",
-   "ecart": "-7s vs réf 299.78s/km, -32s vs cible plan",
-   "lecture": "bien plus rapide que le facile prévu",
-   "ton": "vigilance"
-  },
-  {
    "label": "FC moyenne",
-   "valeur": "141 bpm",
-   "ecart": "-5 vs réf 145.78 bpm",
-   "lecture": "coût cardiaque bas pour l'allure",
-   "ton": "bon"
+   "valeur": "165 bpm",
+   "ecart": "+9 vs réf 60j (155,8)",
+   "lecture": "Effort plus intense, allure aussi plus rapide",
+   "ton": "neutre"
   },
   {
    "label": "Temps de contact",
-   "valeur": "242 ms",
-   "ecart": "+18 ms vs réf 224 ms",
-   "lecture": "plus long que d'habitude, s'améliore en séance",
+   "valeur": "197 ms moy, 176→215 ms",
+   "ecart": "+22% entre début et fin",
+   "lecture": "Fatigue nette en fin de course",
+   "ton": "vigilance"
+  },
+  {
+   "label": "Équilibre G/D",
+   "valeur": "48,14%",
+   "ecart": "-1,18 pt vs réf 49,32%",
+   "lecture": "Pas de décharge accrue du droit",
    "ton": "neutre"
   }
  ],
- "achille": "Pas de données d'équilibre G/D (champ vide) — probablement sans ceinture cette fois.",
- "a_surveiller": "Séance 'très facile' courue 32s/km plus vite que la consigne, à 2 jours de New York.",
+ "achille": "Équilibre stable (48,1% vs réf 49,3%), pas de décharge accrue du côté droit ce jour.",
+ "a_surveiller": "Ralentissement net après le 20e km, contact au sol +22% en fin : fatigue marquée.",
  "seance": {
-  "date": "31/10/2026",
-  "heure": "13:17",
-  "titre": "i203927138",
-  "type_detecte": "endurance",
-  "km": 5.01,
-  "duree": "24m 29s",
-  "allure": "4'53\"/km",
-  "fc_moy": 141
+  "date": "01/11/2026",
+  "heure": "09:11",
+  "titre": "Course à pied le matin",
+  "type_detecte": "marathon",
+  "km": 42.55,
+  "duree": "2h 59m 51s",
+  "allure": "4'14\"/km",
+  "fc_moy": 165
  },
- "generated_at": "2026-10-31T12:48:19",
- "baseline_n": 37
+ "generated_at": "2026-11-01T17:28:44",
+ "baseline_n": 12
 }

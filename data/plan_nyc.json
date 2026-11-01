@@ -10898,18 +10898,422 @@
           "duration_min": 175,
           "key": true,
           "description": "PLAN DE COURSE · base 2h55'00 (4'09/km, 6'40/mile)\n\n🎯 L'IDÉE : une course régulière à l'effort jusqu'au km 32, puis TU décides à la sensation : tenir ou accélérer. Pré-check au km 30, décision au km 32.\n\n📍 PAR TRONÇONS (repères approximatifs, à vérifier sur le plan officiel NYRR)\n• km 0–8 · Verrazzano puis début de Brooklyn : 4'10. Le 1er mile monte, le 2e descend : ne rattrape rien, le vent et la foule font le reste.\n• km 8–21 · Brooklyn, Queens, mi-course au Pulaski : 4'08. Mi-course visée ≈ 1h27'30. Une avance de 20–30 s est un bonus, pas un objectif.\n• km 21–24 · approche du Queensboro : 4'08.\n• km 24–26 · pont de Queensboro, la grande bosse : même effort, 4'14 sur le pont. Pas de public : ne t'enflamme pas à la descente.\n• km 26–31 · First Avenue, large, légère descente : 4'08. C'est ici que les 4'00 « faciles » te coûtent cher dans le Bronx. Aucune allure sous 4'05 avant le km 32.\n• km 31–37 · Willis Avenue Bridge, Bronx, Madison Ave Bridge, Fifth Avenue en faux plat montant : 4'10 à l'effort égal (l'allure baisse en montée, c'est normal).\n• km 37–42,2 · Central Park, quelques bosses, arrivée légèrement montante : 4'08, ou ce que tu as.\n\n⏱️ PASSAGES (2h55'04) : 5 km 20'50 · 10 km 41'36 · 15 km 1h02'16 · 20 km 1h22'56 · semi 1h27'28 · 25 km 1h43'42 · 30 km 2h04'28 · 32 km 2h12'46 · 35 km 2h25'16 · 40 km 2h46'00.\n\n🧭 KM 30 · PRÉ-CHECK : nutrition prise comme prévu ? FC stable ? jambes propres ? Rien à changer, juste regarder.\n\n🚦 KM 32 · DÉCISION (mile 20)\n✅ « Je relâche » seulement si les trois sont vrais : (1) FC ≤ ~170 à 4'08–4'10, (2) effort ressenti ≤ 7/10 et souffle maîtrisé, (3) foulée propre, ni crampe ni tendon.\n   → jusqu'au km 37 (Fifth Ave) : même allure, effort +1 cran, pas plus. Dans Central Park : descends vers 4'00–4'05 selon les jambes, dernier km à fond. Gain visé : 1 à 2 min (≈ 2h53–2h54).\n🛑 Sinon : tu TIENS 4'10–4'12 jusqu'au bout, sans rien chercher. Objectif 2h55–2h56. Rien n'est perdu à tenir.\n\n⚠️ LEÇON DE CHICAGO 2025 : km 1–25 à 3'48–3'56, puis effondrement jusqu'à 4'43. Paris 2026 (2h50'03) : 3'58–4'01 sur 30 km, 4'06–4'09 ensuite. À 4'09 tu cours à un effort plus bas que Paris : c'est voulu. NYC se gagne après le km 32.\n\n🔋 NUTRITION (à valider avec ce que tu supportes) : flasque 320 avant/au départ, gel 160 aux km 12 et 22, un 3ᵉ vers le km 30–32 si toléré. Eau à chaque ravito, sans arrêt.\n👟 Alphafly 3.\n📅 Départ à confirmer selon ta vague. Revérifie la météo la veille.",
-          "status": "today",
+          "status": "done",
           "target_pace": "4'09\"/km",
           "target_pace_sec": 249,
           "shoe": "Nike Alphafly 3 « Chicago 25 » (126 km) — chaussure de course prioritaire",
           "scheduled_time": "09:40",
-          "actual": null,
+          "actual": {
+            "km": 42.5,
+            "duration_min": 180,
+            "pace_sec": 254,
+            "pace_str": "4'14\"/km",
+            "fc": 165,
+            "cadence": 177,
+            "type": "marathon",
+            "title": "Course à pied le matin",
+            "n": 1,
+            "note": null,
+            "dyn": {
+              "stance_ms": 197.0,
+              "osc_cm": 10.9,
+              "vratio": 8.01,
+              "balance_l": 48.14,
+              "step_m": 1.33,
+              "temp_c": 20,
+              "temp_max": 24,
+              "resp": 38.9,
+              "power": 434,
+              "np": 442,
+              "te_aero": 5.0,
+              "te_ana": 0.4,
+              "load": 586.0,
+              "strides": 15833,
+              "rpe": 10.0,
+              "feel": 50,
+              "feel_label": "Normal",
+              "drift": {
+                "stance": {
+                  "start": 176.0,
+                  "end": 215.0,
+                  "pct": 22.1
+                },
+                "step": {
+                  "start": 1370.0,
+                  "end": 1302.0,
+                  "pct": -5.0
+                },
+                "vratio": {
+                  "start": 7.72,
+                  "end": 8.06,
+                  "pct": 4.5
+                },
+                "osc": {
+                  "start": 109.0,
+                  "end": 107.0,
+                  "pct": -1.1
+                },
+                "hr": {
+                  "start": 163.0,
+                  "end": 166.0,
+                  "pct": 1.7
+                },
+                "cad": {
+                  "start": 90.4,
+                  "end": 86.1,
+                  "pct": -4.8
+                }
+              },
+              "balance_min": 45.86,
+              "balance_max": 50.01,
+              "balance_series": [
+                48.03,
+                48.97,
+                49.55,
+                48.5,
+                48.67,
+                48.56,
+                48.84,
+                49.21,
+                49.19,
+                48.19,
+                47.39,
+                47.07,
+                46.96,
+                46.66,
+                48.11,
+                46.84,
+                45.86,
+                46.35,
+                47.35,
+                46.61,
+                47.12,
+                47.4,
+                46.22,
+                47.73,
+                50.01,
+                47.33,
+                47.17,
+                46.83,
+                47.5,
+                47.93,
+                49.6,
+                49.36,
+                48.95,
+                49.32,
+                48.42,
+                48.48,
+                49.14,
+                49.46,
+                48.3,
+                48.56,
+                49.85,
+                48.97,
+                49.85
+              ],
+              "balance_lent": 48.54,
+              "balance_rapide": 48.41,
+              "asym_vs_allure": 0.13,
+              "allure_lent_s": 273,
+              "allure_rapide_s": 236,
+              "rr_beats": 29826,
+              "rmssd_effort": 11.5,
+              "flags": [
+                "stance_fade",
+                "step_fade"
+              ]
+            },
+            "splits": [
+              {
+                "km": 1.0,
+                "ps": 281,
+                "fc": 146,
+                "ca": 182
+              },
+              {
+                "km": 1.0,
+                "ps": 238,
+                "fc": 159,
+                "ca": 184
+              },
+              {
+                "km": 1.0,
+                "ps": 228,
+                "fc": 152,
+                "ca": 184
+              },
+              {
+                "km": 1.0,
+                "ps": 237,
+                "fc": 159,
+                "ca": 184
+              },
+              {
+                "km": 1.0,
+                "ps": 239,
+                "fc": 161,
+                "ca": 182
+              },
+              {
+                "km": 1.0,
+                "ps": 238,
+                "fc": 165,
+                "ca": 182
+              },
+              {
+                "km": 1.0,
+                "ps": 238,
+                "fc": 166,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 234,
+                "fc": 167,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 231,
+                "fc": 168,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 240,
+                "fc": 171,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 239,
+                "fc": 167,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 243,
+                "fc": 165,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 247,
+                "fc": 166,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 250,
+                "fc": 169,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 243,
+                "fc": 165,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 242,
+                "fc": 165,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 249,
+                "fc": 168,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 243,
+                "fc": 167,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 239,
+                "fc": 166,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 249,
+                "fc": 169,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 244,
+                "fc": 167,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 249,
+                "fc": 168,
+                "ca": 180
+              },
+              {
+                "km": 1.0,
+                "ps": 247,
+                "fc": 168,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 261,
+                "fc": 169,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 281,
+                "fc": 172,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 235,
+                "fc": 165,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 259,
+                "fc": 165,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 261,
+                "fc": 165,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 250,
+                "fc": 164,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 264,
+                "fc": 165,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 390,
+                "fc": 157,
+                "ca": 132
+              },
+              {
+                "km": 1.0,
+                "ps": 271,
+                "fc": 164,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 262,
+                "fc": 163,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 267,
+                "fc": 163,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 266,
+                "fc": 164,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 263,
+                "fc": 166,
+                "ca": 176
+              },
+              {
+                "km": 1.0,
+                "ps": 256,
+                "fc": 167,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 267,
+                "fc": 170,
+                "ca": 178
+              },
+              {
+                "km": 1.0,
+                "ps": 272,
+                "fc": 167,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 258,
+                "fc": 164,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 250,
+                "fc": 168,
+                "ca": 174
+              },
+              {
+                "km": 1.0,
+                "ps": 242,
+                "fc": 172,
+                "ca": 172
+              },
+              {
+                "km": 0.55,
+                "ps": 230,
+                "fc": 176,
+                "ca": 172
+              }
+            ]
+          },
           "coach_notes": [
             {
               "kind": "note",
               "text": "Plan de course révisé le 20/10 : base 2h55, régulier jusqu'au km 32, décision à la sensation (3 critères)."
             }
-          ]
+          ],
+          "score": {
+            "points": 100,
+            "verdict": "success",
+            "verdict_label": "Réussie",
+            "volume_pct": 101,
+            "volume_points": 100,
+            "pace_points": 100,
+            "pace_target_s": 249,
+            "pace_actual_s": 250,
+            "pace_actual_str": "4'10\"/km",
+            "pace_delta_s": 1,
+            "is_quality": true,
+            "hr": {
+              "avg": 165,
+              "cap": null,
+              "over_cap": null,
+              "decoupling_pct": 7.4,
+              "flags": []
+            },
+            "reasons": [
+              "Volume 101%",
+              "Allure +1\"/km vs cible"
+            ]
+          }
         }
       ],
       "volume_actual_to_date": 21.0,
@@ -10919,11 +11323,11 @@
         "km_pct": 60,
         "km_done": 21.0,
         "km_planned": 35.0,
-        "km_done_week": 21.0,
+        "km_done_week": 63.5,
         "km_planned_week": 77.2,
         "sessions_done": 3,
         "sessions_planned": 5,
-        "sessions_done_week": 3,
+        "sessions_done_week": 4,
         "keys_success": 1,
         "keys_total": 1,
         "points": 73,
