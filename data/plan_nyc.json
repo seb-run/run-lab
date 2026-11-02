@@ -3247,63 +3247,7 @@
               "rr_beats": 6676,
               "rmssd_effort": 6.9,
               "flags": []
-            },
-            "splits": [
-              {
-                "km": 1.0,
-                "ps": 320,
-                "fc": 131,
-                "ca": 180
-              },
-              {
-                "km": 1.0,
-                "ps": 352,
-                "fc": 138,
-                "ca": 166
-              },
-              {
-                "km": 1.0,
-                "ps": 318,
-                "fc": 137,
-                "ca": 174
-              },
-              {
-                "km": 1.0,
-                "ps": 356,
-                "fc": 150,
-                "ca": 170
-              },
-              {
-                "km": 1.0,
-                "ps": 312,
-                "fc": 146,
-                "ca": 174
-              },
-              {
-                "km": 1.0,
-                "ps": 312,
-                "fc": 144,
-                "ca": 176
-              },
-              {
-                "km": 1.0,
-                "ps": 314,
-                "fc": 151,
-                "ca": 174
-              },
-              {
-                "km": 1.0,
-                "ps": 323,
-                "fc": 159,
-                "ca": 174
-              },
-              {
-                "km": 0.42,
-                "ps": 307,
-                "fc": 151,
-                "ca": 176
-              }
-            ]
+            }
           },
           "score": {
             "points": 100,
@@ -11320,18 +11264,18 @@
       "volume_planned_to_date": 35.0,
       "volume_drift_pct": -40.0,
       "compliance": {
-        "km_pct": 60,
-        "km_done": 21.0,
-        "km_planned": 35.0,
+        "km_pct": 82,
+        "km_done": 63.5,
+        "km_planned": 77.2,
         "km_done_week": 63.5,
         "km_planned_week": 77.2,
-        "sessions_done": 3,
-        "sessions_planned": 5,
+        "sessions_done": 4,
+        "sessions_planned": 6,
         "sessions_done_week": 4,
-        "keys_success": 1,
-        "keys_total": 1,
-        "points": 73,
-        "verdict": "partial"
+        "keys_success": 2,
+        "keys_total": 2,
+        "points": 87,
+        "verdict": "success"
       }
     }
   ],

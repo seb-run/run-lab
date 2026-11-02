@@ -1,39 +1,39 @@
 {
- "generated_at": "2026-11-01T12:02:47",
+ "generated_at": "2026-11-02T13:52:15",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-10-29\", \"title\": \"Footing 35' + 4 LD — dernier run à Paris\", \"type\": \"easy\", \"planned_km\": 7.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'15\\\"/km\", \"actual\": {\"km\": 8.0, \"pace_str\": \"5'10\\\"/km\", \"fc\": 148, \"cadence\": 176, \"duration_min\": 41}, \"splits\": \"1:5'28/133/180spm 2:5'09/149/176spm 3:5'04/145/176spm 4:5'07/147/176spm 5:4'59/149/176spm 6:5'05/153/176spm 7:5'12/156/170spm 8:5'13/154/174spm\", \"garmin\": {\"te_aero\": 3.3, \"te_ana\": 0.0, \"load\": 120.1, \"rpe\": 2.0, \"feel_label\": \"Fort\", \"temp_c\": 20, \"flags\": [], \"stance_drift_pct\": 2.0, \"step_drift_pct\": 3.6}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 114, \"pace_delta_s\": -5}, \"hr\": {\"avg\": 148, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 6.8, \"flags\": []}}, {\"date\": \"2026-10-30\", \"title\": \"✈️ VOYAGE PARIS → NEW YORK\", \"type\": \"shake\", \"planned_km\": 4.0, \"key\": false, \"status\": \"missed\", \"target_pace\": \"5'25\\\"/km\"}, {\"date\": \"2026-10-31\", \"title\": \"Déverrouillage 25' à Central Park\", \"type\": \"easy\", \"planned_km\": 5.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'25\\\"/km\", \"actual\": {\"km\": 5.0, \"pace_str\": \"4'53\\\"/km\", \"fc\": 141, \"cadence\": 173, \"duration_min\": 24}, \"splits\": \"1:5'42/127/176spm 2:5'12/145/172spm 3:4'08/162/174spm 4:4'38/144/168spm 5:4'46/135/176spm\", \"garmin\": {\"te_aero\": 2.8, \"te_ana\": 0.0, \"load\": 77.6, \"rpe\": 3.0, \"feel_label\": \"Fort\", \"temp_c\": 18, \"flags\": [], \"stance_drift_pct\": -3.6, \"step_drift_pct\": 18.8}, \"score\": {\"points\": 86, \"verdict\": \"success\", \"volume_pct\": 100, \"pace_delta_s\": -32}, \"hr\": {\"avg\": 141, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": null, \"flags\": []}}]|1058417693",
- "plan_hash": "1058417693",
- "headline": "Jour J : taper propre, jambes prêtes, direction 2h55 à Central Park.",
- "analysis": "Les 3 dernières semaines avant le taper final ont été solides : 106-121% du volume prévu, et les séances clés qui comptent le plus ont tenu — allure marathon le 23/10 avec des segments à 3'51-4'00/km et une dérive cardiaque de seulement 3,5%, puis 20km de sortie longue le 25/10 à 4'50/km sans accroc. La VMA du 21/10 a dérapé (21km au lieu de 11, rythme incohérent, dérive 8,7%, RPE 5) — à l'époque ça méritait un signal, mais c'est de l'histoire ancienne : depuis, chaque footing a été propre, et les 3 footings sautés cette semaine (22, 26, 30/10) sont un choix de taper assumé, pas une dérive. Ton déverrouillage du 31/10 à Central Park confirme des jambes fraîches : 4'53/km en RPE 3, ressenti 'Fort'. L'équilibre d'appui est stable à 49,9/50,1% sur les deux dernières séances longues — aucun signal tendon. Le travail est fait, la seule chose qui reste à gérer aujourd'hui c'est l'exécution : départ maîtrisé, décision au km 32 comme prévu.",
+ "signature": "[{\"date\": \"2026-10-30\", \"title\": \"✈️ VOYAGE PARIS → NEW YORK\", \"type\": \"shake\", \"planned_km\": 4.0, \"key\": false, \"status\": \"missed\", \"target_pace\": \"5'25\\\"/km\"}, {\"date\": \"2026-10-31\", \"title\": \"Déverrouillage 25' à Central Park\", \"type\": \"easy\", \"planned_km\": 5.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'25\\\"/km\", \"actual\": {\"km\": 5.0, \"pace_str\": \"4'53\\\"/km\", \"fc\": 141, \"cadence\": 173, \"duration_min\": 24}, \"splits\": \"1:5'42/127/176spm 2:5'12/145/172spm 3:4'08/162/174spm 4:4'38/144/168spm 5:4'46/135/176spm\", \"garmin\": {\"te_aero\": 2.8, \"te_ana\": 0.0, \"load\": 77.6, \"rpe\": 3.0, \"feel_label\": \"Fort\", \"temp_c\": 18, \"flags\": [], \"stance_drift_pct\": -3.6, \"step_drift_pct\": 18.8}, \"score\": {\"points\": 86, \"verdict\": \"success\", \"volume_pct\": 100, \"pace_delta_s\": -32}, \"hr\": {\"avg\": 141, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": null, \"flags\": []}}, {\"date\": \"2026-11-01\", \"title\": \"🗽 TCS NEW YORK CITY MARATHON — objectif 2h55, décision au km 32\", \"type\": \"race\", \"planned_km\": 42.2, \"key\": true, \"status\": \"done\", \"target_pace\": \"4'09\\\"/km\", \"actual\": {\"km\": 42.5, \"pace_str\": \"4'14\\\"/km\", \"fc\": 165, \"cadence\": 177, \"duration_min\": 180}, \"splits\": \"1:4'41/146/182spm 2:3'58/159/184spm 3:3'48/152/184spm 4:3'57/159/184spm 5:3'59/161/182spm 6:3'58/165/182spm 7:3'58/166/180spm 8:3'54/167/180spm 9:3'51/168/178spm 10:4'00/171/180spm 11:3'59/167/180spm 12:4'03/165/180spm 13:4'07/166/180spm 14:4'10/169/178spm 15:4'03/165/178spm 16:4'02/165/180spm 17:4'09/168/178spm 18:4'03/167/178spm 19:3'59/166/178spm 20:4'09/169/176spm 21:4'04/167/178spm 22:4'09/168/180spm 23:4'07/168/178spm 24:4'21/169/178spm 25:4'41/172/178spm 26:3'55/165/178spm 27:4'19/165/176spm 28:4'21/165/176spm 29:4'10/164/176spm 30:4'24/165/176spm (+13 laps)\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 0.4, \"load\": 586.0, \"rpe\": 10.0, \"feel_label\": \"Normal\", \"temp_c\": 20, \"balance_l\": 48.14, \"flags\": [\"stance_fade\", \"step_fade\"], \"stance_drift_pct\": 22.1, \"step_drift_pct\": -5.0}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 101, \"pace_delta_s\": 1}, \"hr\": {\"avg\": 165, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 7.4, \"flags\": []}}]|f514c3c599",
+ "plan_hash": "f514c3c599",
+ "headline": "Sub-3h décroché à New York (~2h58'40) — objectif de fond atteint, fin de course marquée par la fatigue.",
+ "analysis": "Verdict clair : tu passes sous la barre symbolique des 3h, autour de 2h58'40 sur la base de ta moyenne 4'14\"/km. C'est 3 à 4 min au-dessus de ta cible ambitieuse (2h55) et de ta stratégie (2h57), mais l'objectif réel du cycle — sub-3h — est rempli. Les splits racontent une course bien gérée jusqu'au 23e km (3'51 à 4'03\"/km, très stable), puis une dérive nette sur la fin : entre le km 24 et le 30, tu perds 15 à 20\" par km (4'21, 4'19, 4'24 contre 3'58-4'03 au cœur de course), avec une dérive cardiaque à 7,4 % et un allongement du temps de contact au sol de 22 % en dernier tiers — fatigue mécanique réelle, logique sur un marathon couru à RPE 10. En amont, le cycle a tenu : 4 semaines sur 4 en réussite, 4 séances clés sur 5 abouties (seule la piste VMA du 21/10 a déraillé, loin de la course et sans suite), avec un repère fort le 23/10 : allure marathon tenue à 2s de la cible avec une dérive cardiaque contenue à 3,5 %, le signe que le plan d'allure fonctionnait. Le focus maintenant n'est plus l'entraînement mais la récupération : charge de course à 586 (la plus haute du cycle), RPE 10, laisse la dette se résorber avant de reprendre. Pour le prochain objectif, le point à travailler est clair et chiffré : tenir l'allure au-delà du 30e km, ce que les 20 dernières minutes de NYC n'ont pas permis.",
  "forme": {
-  "score": 82,
-  "verdict": "bon",
-  "headline": "Taper réussi, jambes fraîches pour le 2h55",
-  "detail": "Les deux séances clés qui comptaient le plus (allure marathon et sortie longue) sont réussies avec une dérive cardiaque basse de 3,5% sur le travail à allure NYC. La VMA ratée du 21/10 est derrière toi, sans suite depuis. Équilibre d'appui stable à 49,9/50,1%, aucun signal tendon à l'entrée en course.",
+  "score": 80,
+  "verdict": "surveiller",
+  "headline": "Sub-3h en poche, récupération à prioriser maintenant",
+  "detail": "Objectif rempli : ~2h58'40 sur NYC, un cycle qui a tenu ses promesses avec 4 clés sur 5 réussies. Le signal à surveiller n'est pas un échec mais la fatigue de fin de course : 22 % d'allongement du contact au sol et 7,4 % de dérive cardiaque sur les 10 derniers kilomètres. Priorité des prochains jours : repos complet, pas de reprise forcée avant que les jambes répondent.",
   "indicateurs": {
    "fraicheur": {
-    "valeur": "optimale",
-    "trend": "up",
-    "etat": "ok",
-    "note": "taper réussi, jambes fraîches"
+    "valeur": "charge 586",
+    "trend": "down",
+    "etat": "watch",
+    "note": "dette post-marathon"
    },
    "compliance": {
-    "valeur": "2/3 clés (14j)",
+    "valeur": "4/5 clés réussies",
     "trend": "flat",
-    "etat": "watch",
-    "note": "VMA ratée, reste solide"
+    "etat": "ok",
+    "note": "vma isolée ratée J-11"
    },
    "aerobie": {
-    "valeur": "3,5 %",
-    "trend": "flat",
-    "etat": "ok",
-    "note": "dérive maîtrisée à allure NYC"
+    "valeur": "7,4 %",
+    "trend": "up",
+    "etat": "watch",
+    "note": "dérive derniers 10 km"
    },
    "achille": {
-    "valeur": "49,9/50,1 %",
-    "trend": "flat",
-    "etat": "ok",
-    "note": "équilibre stable, rien à signaler"
+    "valeur": "22 %",
+    "trend": "up",
+    "etat": "watch",
+    "note": "contact sol allongé en fin"
    }
   }
  },
