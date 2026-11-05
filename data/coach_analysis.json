@@ -1,39 +1,38 @@
 {
- "generated_at": "2026-11-04T13:18:03",
+ "generated_at": "2026-11-05T13:29:35",
  "model": "claude-sonnet-5",
- "signature": "[{\"date\": \"2026-10-30\", \"title\": \"✈️ VOYAGE PARIS → NEW YORK\", \"type\": \"shake\", \"planned_km\": 4.0, \"key\": false, \"status\": \"missed\", \"target_pace\": \"5'25\\\"/km\"}, {\"date\": \"2026-10-31\", \"title\": \"Déverrouillage 25' à Central Park\", \"type\": \"easy\", \"planned_km\": 5.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'25\\\"/km\", \"actual\": {\"km\": 5.0, \"pace_str\": \"4'53\\\"/km\", \"fc\": 141, \"cadence\": 173, \"duration_min\": 24}, \"splits\": \"1:5'42/127/176spm 2:5'12/145/172spm 3:4'08/162/174spm 4:4'38/144/168spm 5:4'46/135/176spm\", \"garmin\": {\"te_aero\": 2.8, \"te_ana\": 0.0, \"load\": 77.6, \"rpe\": 3.0, \"feel_label\": \"Fort\", \"temp_c\": 18, \"flags\": [], \"stance_drift_pct\": -3.6, \"step_drift_pct\": 18.8}, \"score\": {\"points\": 86, \"verdict\": \"success\", \"volume_pct\": 100, \"pace_delta_s\": -32}, \"hr\": {\"avg\": 141, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": null, \"flags\": []}}, {\"date\": \"2026-11-01\", \"title\": \"🗽 TCS NEW YORK CITY MARATHON — objectif 2h55, décision au km 32\", \"type\": \"race\", \"planned_km\": 42.2, \"key\": true, \"status\": \"done\", \"target_pace\": \"4'09\\\"/km\", \"actual\": {\"km\": 42.5, \"pace_str\": \"4'14\\\"/km\", \"fc\": 165, \"cadence\": 177, \"duration_min\": 180}, \"splits\": \"1:4'41/146/182spm 2:3'58/159/184spm 3:3'48/152/184spm 4:3'57/159/184spm 5:3'59/161/182spm 6:3'58/165/182spm 7:3'58/166/180spm 8:3'54/167/180spm 9:3'51/168/178spm 10:4'00/171/180spm 11:3'59/167/180spm 12:4'03/165/180spm 13:4'07/166/180spm 14:4'10/169/178spm 15:4'03/165/178spm 16:4'02/165/180spm 17:4'09/168/178spm 18:4'03/167/178spm 19:3'59/166/178spm 20:4'09/169/176spm 21:4'04/167/178spm 22:4'09/168/180spm 23:4'07/168/178spm 24:4'21/169/178spm 25:4'41/172/178spm 26:3'55/165/178spm 27:4'19/165/176spm 28:4'21/165/176spm 29:4'10/164/176spm 30:4'24/165/176spm (+13 laps)\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 0.4, \"load\": 586.0, \"rpe\": 10.0, \"feel_label\": \"Normal\", \"temp_c\": 20, \"balance_l\": 48.14, \"flags\": [\"stance_fade\", \"step_fade\"], \"stance_drift_pct\": 22.1, \"step_drift_pct\": -5.0}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 101, \"pace_delta_s\": 1}, \"hr\": {\"avg\": 165, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 7.4, \"flags\": []}}]|1c8012dbfe",
- "plan_hash": "1c8012dbfe",
- "headline": "NYC marathon bouclé en ~3h00 : objectif stratégique quasi tenu, place à la récup maintenant.",
- "analysis": "Course terminée à 4'14/km de moyenne sur 42,5 km, soit environ 3h00 — 3 min au-dessus du 2h55 visé, mais dans la fourchette de la stratégie à 2h57. Les 23 premiers kilomètres sont solides et réguliers autour de 4'/km avec une FC maîtrisée (152-169), avant un passage plus dur entre le 24e et le 30e km (4'21 à 4'41) où tu as clairement géré la décision prévue au km32 plutôt que de t'effondrer. La dérive cardiaque de 7,4 % et le contact au sol qui s'allonge de 22 % en fin de course sont normaux pour un marathon couru à RPE 10 — ce n'est pas un signal d'alarme, c'est la trace mécanique d'un effort complet mené à son terme. En amont, la préparation n'a pas été parfaite : la piste du 21/10 a été ratée (70s trop lent, volume à 191 % du prévu, probablement une sortie mal calibrée), mais les trois séances clés suivantes — allure NYC, sortie longue, seuil d'activation — ont toutes été réussies, preuve que l'ajustement a fonctionné juste avant l'échéance. Le vrai sujet maintenant, ce n'est plus la performance mais la récupération : after un marathon à ce niveau d'engagement, le corps a besoin de vrai repos avant toute reprise. Focus des prochains jours : zéro course avant que les jambes retrouvent de la fraîcheur, et surveillance simple du mollet/tendon vu l'allongement du contact au sol en fin d'épreuve.",
+ "signature": "[{\"date\": \"2026-10-30\", \"title\": \"✈️ VOYAGE PARIS → NEW YORK\", \"type\": \"shake\", \"planned_km\": 4.0, \"key\": false, \"status\": \"missed\", \"target_pace\": \"5'25\\\"/km\"}, {\"date\": \"2026-10-31\", \"title\": \"Déverrouillage 25' à Central Park\", \"type\": \"easy\", \"planned_km\": 5.0, \"key\": false, \"status\": \"done\", \"target_pace\": \"5'25\\\"/km\", \"actual\": {\"km\": 5.0, \"pace_str\": \"4'53\\\"/km\", \"fc\": 141, \"cadence\": 173, \"duration_min\": 24}, \"splits\": \"1:5'42/127/176spm 2:5'12/145/172spm 3:4'08/162/174spm 4:4'38/144/168spm 5:4'46/135/176spm\", \"garmin\": {\"te_aero\": 2.8, \"te_ana\": 0.0, \"load\": 77.6, \"rpe\": 3.0, \"feel_label\": \"Fort\", \"temp_c\": 18, \"flags\": [], \"stance_drift_pct\": -3.6, \"step_drift_pct\": 18.8}, \"score\": {\"points\": 86, \"verdict\": \"success\", \"volume_pct\": 100, \"pace_delta_s\": -32}, \"hr\": {\"avg\": 141, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": null, \"flags\": []}}, {\"date\": \"2026-11-01\", \"title\": \"🗽 TCS NEW YORK CITY MARATHON — objectif 2h55, décision au km 32\", \"type\": \"race\", \"planned_km\": 42.2, \"key\": true, \"status\": \"done\", \"target_pace\": \"4'09\\\"/km\", \"actual\": {\"km\": 42.5, \"pace_str\": \"4'14\\\"/km\", \"fc\": 165, \"cadence\": 177, \"duration_min\": 180}, \"splits\": \"1:4'41/146/182spm 2:3'58/159/184spm 3:3'48/152/184spm 4:3'57/159/184spm 5:3'59/161/182spm 6:3'58/165/182spm 7:3'58/166/180spm 8:3'54/167/180spm 9:3'51/168/178spm 10:4'00/171/180spm 11:3'59/167/180spm 12:4'03/165/180spm 13:4'07/166/180spm 14:4'10/169/178spm 15:4'03/165/178spm 16:4'02/165/180spm 17:4'09/168/178spm 18:4'03/167/178spm 19:3'59/166/178spm 20:4'09/169/176spm 21:4'04/167/178spm 22:4'09/168/180spm 23:4'07/168/178spm 24:4'21/169/178spm 25:4'41/172/178spm 26:3'55/165/178spm 27:4'19/165/176spm 28:4'21/165/176spm 29:4'10/164/176spm 30:4'24/165/176spm (+13 laps)\", \"garmin\": {\"te_aero\": 5.0, \"te_ana\": 0.4, \"load\": 586.0, \"rpe\": 10.0, \"feel_label\": \"Normal\", \"temp_c\": 20, \"balance_l\": 48.14, \"flags\": [\"stance_fade\", \"step_fade\"], \"stance_drift_pct\": 22.1, \"step_drift_pct\": -5.0}, \"score\": {\"points\": 100, \"verdict\": \"success\", \"volume_pct\": 101, \"pace_delta_s\": 1}, \"hr\": {\"avg\": 165, \"cap\": null, \"over_cap\": null, \"decoupling_pct\": 7.4, \"flags\": []}}]|a21fd2f0b4",
+ "headline": "Analyse indisponible (BadRequestError)",
+ "analysis": "Le coach n'a pas pu produire son analyse : Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgjrvrAtnXbEdomMKhent'}. Les indicateurs affichés sont calculés localement sans intervention du modèle. Retentera au prochain build.",
  "forme": {
-  "score": 68,
+  "score": 60,
   "verdict": "surveiller",
-  "headline": "Marathon réussi, fatigue mécanique à digérer",
-  "detail": "Le chrono visé est quasiment tenu (~3h00 pour un objectif 2h55/2h57) grâce à une gestion propre du money time entre le 24e et le 30e km. Le contact au sol qui s'allonge de 22 % en fin de course est la marque d'une fatigue réelle mais attendue sur 42 km à ce rythme — pas un signal tendon en soi, à condition de vraiment couper maintenant. Focus des prochains jours : repos complet, pas de reprise avant que les jambes répondent sans lourdeur.",
+  "headline": "État composé automatiquement (surveiller)",
+  "detail": "Le modèle IA n'a pas répondu — indicateurs calculés à partir des données locales. Erreur : Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '",
   "indicateurs": {
    "fraicheur": {
-    "valeur": "dette élevée",
-    "trend": "down",
-    "etat": "watch",
-    "note": "J+3 post-marathon"
+    "valeur": "95/100 moy.",
+    "trend": "flat",
+    "etat": "ok",
+    "note": "moyenne 5 dernières"
    },
    "compliance": {
-    "valeur": "3/4 clés tenues",
+    "valeur": "64/77 km · 2/2 clés",
     "trend": "flat",
     "etat": "ok",
-    "note": "allure, SL, seuil réussis"
+    "note": "semaine en cours"
    },
    "aerobie": {
-    "valeur": "7,4 %",
+    "valeur": "7.4 %",
     "trend": "flat",
-    "etat": "ok",
-    "note": "dérive normale sur marathon"
+    "etat": "watch",
+    "note": "dernière avec FC"
    },
    "achille": {
-    "valeur": "22 % (fin course)",
-    "trend": "up",
-    "etat": "watch",
-    "note": "fatigue mécanique de fin d'épreuve"
+    "valeur": "stable",
+    "trend": "flat",
+    "etat": "ok",
+    "note": "0 signal(aux)"
    }
   }
  },
