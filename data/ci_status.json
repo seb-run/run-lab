@@ -1,20 +1,20 @@
 {
  "garmin": {
   "ok": true,
-  "at": "2026-11-06T13:13:55",
+  "at": "2026-11-07T11:55:51",
   "message": "0 fichier(s), 2 course(s) vues",
-  "last_ok": "2026-11-06T13:13:55"
+  "last_ok": "2026-11-07T11:55:51"
  },
  "coach": {
   "ok": false,
-  "at": "2026-11-06T13:14:02",
-  "message": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgmjZ3Jhp7Hqy6BR2qev2'}",
+  "at": "2026-11-07T11:55:59",
+  "message": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgoXQgxEbeQqSNVy8LmsC'}",
   "last_ok": "2026-11-04T13:18:03"
  },
  "debrief": {
   "ok": false,
-  "at": "2026-11-06T13:14:03",
-  "message": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgmjZ7SFRRHRd5sbgKbRU'}",
+  "at": "2026-11-07T11:56:00",
+  "message": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgoXQmfzE4jyPc3F8ijWu'}",
   "last_ok": "2026-11-01T17:28:44"
  },
  "coach_validate": {
