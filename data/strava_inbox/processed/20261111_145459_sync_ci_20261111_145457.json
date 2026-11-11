@@ -1,0 +1,172 @@
+{
+ "activities": [
+  {
+   "id": "20777283236",
+   "name": "#191 : blablarun w/ Nour",
+   "description": "J-3 🗽",
+   "sport_type": "Run",
+   "start_local": "2026-10-29T12:11:23",
+   "summary": {
+    "distance": 8010.0,
+    "moving_time": 2480,
+    "elapsed_time": 2526,
+    "elevation_gain": 30.0,
+    "avg_speed": 3.23,
+    "max_speed": 4.4,
+    "avg_cadence": 88.7,
+    "relative_effort": 61.0,
+    "total_calories": 618.0,
+    "kudos_count": 30,
+    "achievement_count": 1,
+    "pr_count": 0
+   },
+   "performance": {
+    "average_heartrate": 148.1,
+    "max_heartrate": 167.0,
+    "average_watts": 349.4,
+    "laps": [
+     {
+      "elapsed_time": 328,
+      "moving_time": 328,
+      "distance": 1000.0,
+      "avg_hr": 133.6,
+      "avg_cadence": 184,
+      "avg_watts": 340.8
+     },
+     {
+      "elapsed_time": 323,
+      "moving_time": 309,
+      "distance": 1000.0,
+      "avg_hr": 148.6,
+      "avg_cadence": 179,
+      "avg_watts": 346.0
+     },
+     {
+      "elapsed_time": 304,
+      "moving_time": 304,
+      "distance": 1000.0,
+      "avg_hr": 145.2,
+      "avg_cadence": 177,
+      "avg_watts": 369.4
+     },
+     {
+      "elapsed_time": 307,
+      "moving_time": 307,
+      "distance": 1000.0,
+      "avg_hr": 146.9,
+      "avg_cadence": 177,
+      "avg_watts": 363.9
+     },
+     {
+      "elapsed_time": 299,
+      "moving_time": 299,
+      "distance": 1000.0,
+      "avg_hr": 148.7,
+      "avg_cadence": 176,
+      "avg_watts": 342.3
+     },
+     {
+      "elapsed_time": 305,
+      "moving_time": 305,
+      "distance": 1000.0,
+      "avg_hr": 152.8,
+      "avg_cadence": 177,
+      "avg_watts": 355.0
+     },
+     {
+      "elapsed_time": 343,
+      "moving_time": 312,
+      "distance": 1000.0,
+      "avg_hr": 155.6,
+      "avg_cadence": 175,
+      "avg_watts": 346.0
+     },
+     {
+      "elapsed_time": 313,
+      "moving_time": 313,
+      "distance": 1000.0,
+      "avg_hr": 154.0,
+      "avg_cadence": 175,
+      "avg_watts": 333.2
+     }
+    ]
+   }
+  },
+  {
+   "id": "20803468103",
+   "name": "#192 : Shakeout 🗽",
+   "description": "",
+   "sport_type": "Run",
+   "start_local": "2026-10-31T08:17:38",
+   "summary": {
+    "distance": 5010.3,
+    "moving_time": 1469,
+    "elapsed_time": 1565,
+    "elevation_gain": 73.0,
+    "avg_speed": 3.411,
+    "max_speed": 4.86,
+    "avg_cadence": 88.9,
+    "relative_effort": 23.0,
+    "total_calories": 359.0,
+    "kudos_count": 39,
+    "achievement_count": 0,
+    "pr_count": 0
+   },
+   "performance": {
+    "average_heartrate": 141.4,
+    "max_heartrate": 172.0,
+    "average_watts": 377.3,
+    "laps": [
+     {
+      "elapsed_time": 351,
+      "moving_time": 342,
+      "distance": 1000.0,
+      "avg_hr": 126.9,
+      "avg_cadence": 184,
+      "avg_watts": 330.6
+     },
+     {
+      "elapsed_time": 387,
+      "moving_time": 312,
+      "distance": 1000.0,
+      "avg_hr": 144.8,
+      "avg_cadence": 176,
+      "avg_watts": 400.8
+     },
+     {
+      "elapsed_time": 259,
+      "moving_time": 248,
+      "distance": 1000.0,
+      "avg_hr": 161.7,
+      "avg_cadence": 177,
+      "avg_watts": 449.4
+     },
+     {
+      "elapsed_time": 279,
+      "moving_time": 278,
+      "distance": 1000.0,
+      "avg_hr": 143.9,
+      "avg_cadence": 174,
+      "avg_watts": 346.2
+     },
+     {
+      "elapsed_time": 286,
+      "moving_time": 286,
+      "distance": 1000.0,
+      "avg_hr": 135.3,
+      "avg_cadence": 176,
+      "avg_watts": 375.1
+     },
+     {
+      "elapsed_time": 2,
+      "moving_time": 2,
+      "distance": 10.27,
+      "avg_hr": 139.0,
+      "avg_cadence": 174,
+      "avg_watts": 381.0
+     }
+    ]
+   }
+  }
+ ]
+}
