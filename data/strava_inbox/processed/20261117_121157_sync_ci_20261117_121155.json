@@ -1,0 +1,96 @@
+{
+ "activities": [
+  {
+   "id": "21020474768",
+   "name": "Course à pied le midi",
+   "description": "",
+   "sport_type": "Run",
+   "start_local": "2026-11-17T12:20:47",
+   "summary": {
+    "distance": 8007.7,
+    "moving_time": 2540,
+    "elapsed_time": 2540,
+    "elevation_gain": 67.0,
+    "avg_speed": 3.153,
+    "max_speed": 4.22,
+    "avg_cadence": 88.8,
+    "relative_effort": 69.0,
+    "total_calories": 621.0,
+    "kudos_count": 0,
+    "achievement_count": 0,
+    "pr_count": 0
+   },
+   "performance": {
+    "average_heartrate": 150.5,
+    "max_heartrate": 167.0,
+    "average_watts": 351.9,
+    "laps": [
+     {
+      "elapsed_time": 328,
+      "moving_time": 328,
+      "distance": 1000.0,
+      "avg_hr": 141.6,
+      "avg_cadence": 180,
+      "avg_watts": 361.8
+     },
+     {
+      "elapsed_time": 319,
+      "moving_time": 319,
+      "distance": 1000.0,
+      "avg_hr": 154.9,
+      "avg_cadence": 179,
+      "avg_watts": 322.2
+     },
+     {
+      "elapsed_time": 315,
+      "moving_time": 315,
+      "distance": 1000.0,
+      "avg_hr": 157.1,
+      "avg_cadence": 178,
+      "avg_watts": 329.2
+     },
+     {
+      "elapsed_time": 310,
+      "moving_time": 310,
+      "distance": 1000.0,
+      "avg_hr": 144.9,
+      "avg_cadence": 178,
+      "avg_watts": 323.5
+     },
+     {
+      "elapsed_time": 314,
+      "moving_time": 315,
+      "distance": 1000.0,
+      "avg_hr": 149.6,
+      "avg_cadence": 177,
+      "avg_watts": 389.3
+     },
+     {
+      "elapsed_time": 314,
+      "moving_time": 314,
+      "distance": 1000.0,
+      "avg_hr": 151.1,
+      "avg_cadence": 176,
+      "avg_watts": 383.0
+     },
+     {
+      "elapsed_time": 312,
+      "moving_time": 312,
+      "distance": 1000.0,
+      "avg_hr": 156.2,
+      "avg_cadence": 177,
+      "avg_watts": 386.7
+     },
+     {
+      "elapsed_time": 325,
+      "moving_time": 325,
+      "distance": 1000.0,
+      "avg_hr": 148.9,
+      "avg_cadence": 176,
+      "avg_watts": 320.8
+     }
+    ]
+   }
+  }
+ ]
+}
