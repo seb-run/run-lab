@@ -1,0 +1,96 @@
+{
+ "activities": [
+  {
+   "id": "21033294596",
+   "name": "Course à pied le midi",
+   "description": "",
+   "sport_type": "Run",
+   "start_local": "2026-11-18T12:16:05",
+   "summary": {
+    "distance": 7321.9,
+    "moving_time": 2255,
+    "elapsed_time": 2290,
+    "elevation_gain": 41.0,
+    "avg_speed": 3.247,
+    "max_speed": 3.7,
+    "avg_cadence": 89.5,
+    "relative_effort": 35.0,
+    "total_calories": 529.0,
+    "kudos_count": 0,
+    "achievement_count": 0,
+    "pr_count": 0
+   },
+   "performance": {
+    "average_heartrate": 141.8,
+    "max_heartrate": 161.0,
+    "average_watts": 357.4,
+    "laps": [
+     {
+      "elapsed_time": 354,
+      "moving_time": 319,
+      "distance": 1000.0,
+      "avg_hr": 138.8,
+      "avg_cadence": 184,
+      "avg_watts": 356.1
+     },
+     {
+      "elapsed_time": 305,
+      "moving_time": 306,
+      "distance": 1000.0,
+      "avg_hr": 133.1,
+      "avg_cadence": 180,
+      "avg_watts": 336.1
+     },
+     {
+      "elapsed_time": 303,
+      "moving_time": 303,
+      "distance": 1000.0,
+      "avg_hr": 139.4,
+      "avg_cadence": 180,
+      "avg_watts": 341.0
+     },
+     {
+      "elapsed_time": 309,
+      "moving_time": 309,
+      "distance": 1000.0,
+      "avg_hr": 145.2,
+      "avg_cadence": 178,
+      "avg_watts": 376.1
+     },
+     {
+      "elapsed_time": 306,
+      "moving_time": 306,
+      "distance": 1000.0,
+      "avg_hr": 142.8,
+      "avg_cadence": 178,
+      "avg_watts": 383.6
+     },
+     {
+      "elapsed_time": 305,
+      "moving_time": 305,
+      "distance": 1000.0,
+      "avg_hr": 136.4,
+      "avg_cadence": 178,
+      "avg_watts": 365.2
+     },
+     {
+      "elapsed_time": 310,
+      "moving_time": 310,
+      "distance": 1000.0,
+      "avg_hr": 153.7,
+      "avg_cadence": 177,
+      "avg_watts": 346.7
+     },
+     {
+      "elapsed_time": 97,
+      "moving_time": 97,
+      "distance": 321.91,
+      "avg_hr": 152.1,
+      "avg_cadence": 177,
+      "avg_watts": 346.6
+     }
+    ]
+   }
+  }
+ ]
+}
