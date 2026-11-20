@@ -1,0 +1,176 @@
+{
+ "activities": [
+  {
+   "id": "21057772994",
+   "name": "Course à pied le midi",
+   "description": "",
+   "sport_type": "Run",
+   "start_local": "2026-11-20T12:01:29",
+   "summary": {
+    "distance": 15109.1,
+    "moving_time": 4124,
+    "elapsed_time": 4402,
+    "elevation_gain": 125.0,
+    "avg_speed": 3.664,
+    "max_speed": 8.3,
+    "avg_cadence": 90.6,
+    "relative_effort": 139.0,
+    "total_calories": 1055.0,
+    "kudos_count": 0,
+    "achievement_count": 15,
+    "pr_count": 5
+   },
+   "performance": {
+    "average_heartrate": 155.5,
+    "max_heartrate": 182.0,
+    "average_watts": 409.9,
+    "laps": [
+     {
+      "elapsed_time": 342,
+      "moving_time": 342,
+      "distance": 1000.0,
+      "avg_hr": 120.3,
+      "avg_cadence": 190,
+      "avg_watts": 340.1
+     },
+     {
+      "elapsed_time": 338,
+      "moving_time": 312,
+      "distance": 1000.0,
+      "avg_hr": 131.3,
+      "avg_cadence": 186,
+      "avg_watts": 357.8
+     },
+     {
+      "elapsed_time": 303,
+      "moving_time": 303,
+      "distance": 1000.0,
+      "avg_hr": 142.4,
+      "avg_cadence": 185,
+      "avg_watts": 395.8
+     },
+     {
+      "elapsed_time": 303,
+      "moving_time": 243,
+      "distance": 685.18,
+      "avg_hr": 139.7,
+      "avg_cadence": 163,
+      "avg_watts": 327.8
+     },
+     {
+      "elapsed_time": 119,
+      "moving_time": 120,
+      "distance": 569.33,
+      "avg_hr": 167.3,
+      "avg_cadence": 186,
+      "avg_watts": 575.9
+     },
+     {
+      "elapsed_time": 240,
+      "moving_time": 240,
+      "distance": 975.12,
+      "avg_hr": 170.0,
+      "avg_cadence": 178,
+      "avg_watts": 454.9
+     },
+     {
+      "elapsed_time": 120,
+      "moving_time": 120,
+      "distance": 580.67,
+      "avg_hr": 173.5,
+      "avg_cadence": 182,
+      "avg_watts": 427.9
+     },
+     {
+      "elapsed_time": 240,
+      "moving_time": 240,
+      "distance": 987.22,
+      "avg_hr": 169.4,
+      "avg_cadence": 179,
+      "avg_watts": 462.3
+     },
+     {
+      "elapsed_time": 120,
+      "moving_time": 120,
+      "distance": 571.49,
+      "avg_hr": 179.0,
+      "avg_cadence": 185,
+      "avg_watts": 544.0
+     },
+     {
+      "elapsed_time": 240,
+      "moving_time": 240,
+      "distance": 968.67,
+      "avg_hr": 172.0,
+      "avg_cadence": 177,
+      "avg_watts": 410.4
+     },
+     {
+      "elapsed_time": 120,
+      "moving_time": 120,
+      "distance": 583.21,
+      "avg_hr": 176.0,
+      "avg_cadence": 184,
+      "avg_watts": 438.4
+     },
+     {
+      "elapsed_time": 240,
+      "moving_time": 240,
+      "distance": 925.05,
+      "avg_hr": 173.7,
+      "avg_cadence": 177,
+      "avg_watts": 484.0
+     },
+     {
+      "elapsed_time": 120,
+      "moving_time": 120,
+      "distance": 580.62,
+      "avg_hr": 176.4,
+      "avg_cadence": 184,
+      "avg_watts": 426.4
+     },
+     {
+      "elapsed_time": 240,
+      "moving_time": 240,
+      "distance": 989.37,
+      "avg_hr": 174.5,
+      "avg_cadence": 183,
+      "avg_watts": 475.5
+     },
+     {
+      "elapsed_time": 309,
+      "moving_time": 309,
+      "distance": 1000.0,
+      "avg_hr": 158.9,
+      "avg_cadence": 180,
+      "avg_watts": 389.7
+     },
+     {
+      "elapsed_time": 317,
+      "moving_time": 291,
+      "distance": 932.41,
+      "avg_hr": 150.5,
+      "avg_cadence": 181,
+      "avg_watts": 382.4
+     },
+     {
+      "elapsed_time": 313,
+      "moving_time": 313,
+      "distance": 1000.0,
+      "avg_hr": 149.4,
+      "avg_cadence": 182,
+      "avg_watts": 352.7
+     },
+     {
+      "elapsed_time": 376,
+      "moving_time": 211,
+      "distance": 760.81,
+      "avg_hr": 148.0,
+      "avg_cadence": 178,
+      "avg_watts": 387.3
+     }
+    ]
+   }
+  }
+ ]
+}
