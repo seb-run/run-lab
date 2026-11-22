@@ -1,0 +1,96 @@
+{
+ "activities": [
+  {
+   "id": "21080542173",
+   "name": "Course à pied le matin",
+   "description": "",
+   "sport_type": "Run",
+   "start_local": "2026-11-22T10:09:53",
+   "summary": {
+    "distance": 8009.8,
+    "moving_time": 2500,
+    "elapsed_time": 2618,
+    "elevation_gain": 36.0,
+    "avg_speed": 3.204,
+    "max_speed": 4.22,
+    "avg_cadence": 90.8,
+    "relative_effort": 48.0,
+    "total_calories": 587.0,
+    "kudos_count": 0,
+    "achievement_count": 0,
+    "pr_count": 0
+   },
+   "performance": {
+    "average_heartrate": 144.4,
+    "max_heartrate": 162.0,
+    "average_watts": 360.1,
+    "laps": [
+     {
+      "elapsed_time": 335,
+      "moving_time": 335,
+      "distance": 1000.0,
+      "avg_hr": 132.3,
+      "avg_cadence": 184,
+      "avg_watts": 342.1
+     },
+     {
+      "elapsed_time": 298,
+      "moving_time": 299,
+      "distance": 1000.0,
+      "avg_hr": 145.4,
+      "avg_cadence": 184,
+      "avg_watts": 386.7
+     },
+     {
+      "elapsed_time": 335,
+      "moving_time": 335,
+      "distance": 1000.0,
+      "avg_hr": 143.0,
+      "avg_cadence": 181,
+      "avg_watts": 340.2
+     },
+     {
+      "elapsed_time": 314,
+      "moving_time": 314,
+      "distance": 1000.0,
+      "avg_hr": 145.7,
+      "avg_cadence": 181,
+      "avg_watts": 363.4
+     },
+     {
+      "elapsed_time": 352,
+      "moving_time": 331,
+      "distance": 1000.0,
+      "avg_hr": 142.1,
+      "avg_cadence": 179,
+      "avg_watts": 330.0
+     },
+     {
+      "elapsed_time": 312,
+      "moving_time": 312,
+      "distance": 1000.0,
+      "avg_hr": 149.5,
+      "avg_cadence": 181,
+      "avg_watts": 350.0
+     },
+     {
+      "elapsed_time": 326,
+      "moving_time": 282,
+      "distance": 1000.0,
+      "avg_hr": 150.5,
+      "avg_cadence": 182,
+      "avg_watts": 384.7
+     },
+     {
+      "elapsed_time": 342,
+      "moving_time": 292,
+      "distance": 1000.0,
+      "avg_hr": 148.5,
+      "avg_cadence": 182,
+      "avg_watts": 393.8
+     }
+    ]
+   }
+  }
+ ]
+}
