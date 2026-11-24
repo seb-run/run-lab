@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-23T16:29:37",
+ "generated_at": "2026-11-24T16:26:54",
  "model": "claude-sonnet-5",
  "signature": "[]|d751713988",
  "headline": "Analyse indisponible (BadRequestError)",
- "analysis": "Le coach n'a pas pu produire son analyse : Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChLBDbnu8vyiUb8tRyyX7'}. Les indicateurs affichés sont calculés localement sans intervention du modèle. Retentera au prochain build.",
+ "analysis": "Le coach n'a pas pu produire son analyse : Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChN4pVY2kbxekGYtjR9JT'}. Les indicateurs affichés sont calculés localement sans intervention du modèle. Retentera au prochain build.",
  "forme": {
   "score": 78,
   "verdict": "bon",
